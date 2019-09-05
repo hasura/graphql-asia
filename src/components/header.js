@@ -5,7 +5,8 @@ import './styles.scss'
 const Header = ({ siteTitle }) => (
   <header>
     <div className="headerWrapper">
-      hi
+      <div className="col-md-6">hi</div>
+      <div className="col-md-6">hi</div>
     </div>
   </header>
 )
