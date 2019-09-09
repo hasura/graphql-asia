@@ -1,5 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Poppins:400,500,600,700&display=swap');
+.transparentBtn {
+  border-radius: 5px;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  opacity: 0.85;
+  font-family: 'Lato';
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  padding: 12px 24px;
+  &:hover {
+    opacity: 1;
+  }
+}
+.whiteBtn {
+  border-radius: 5px;
+  border: 2px solid #ffffff;
+  background-color: #fff;
+  font-family: 'Lato';
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #27216e;
+  padding: 18px 24px;
+}
+.fontNormal {
+  font-weight: normal !important;
+}
+.fontBold {
+  font-weight: bold !important;
+}
+.sectionWrapper {
+  padding: 120px 0;
+}
+.pageHeader {
+  font-family: 'Poppins';
+  font-size: 100px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+.pageDescription {
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+.details {
+  font-family: 'Lato';
+  font-size: 24px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 4.8px;
+  color: #ffffff;
+}
 .headerWrapper {
-  padding: 20px;
-  background-color: #000;
   color: #fff;
+  .navBarDefault {
+    border-radius: 0;
+    border: 0;
+    background-color: transparent;
+    padding-top: 30px;
+    margin-bottom: 0;
+    .navBarCollapse {
+      .navBarRight {
+        display: flex;
+        align-items: center;
+        .navBarList {
+          margin-bottom: 0;
+          a {
+            opacity: 0.85;
+            font-family: 'Lato';
+            font-size: 20px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            text-align: left;
+            color: #ffffff;
+          }
+          .navbarActive {
+            opacity: 1;
+          }
+          a:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+.bgImage {
+  background-image: url('../images/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+/* Top Banner */
+.topBannerWrapper {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  .pageHeader {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .pageDescription {
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  .buttonWrapper {
+    padding-bottom: 60px;
+    text-align: center;
+  }
+  .placeDetails {
+    display: flex;
+    justify-content: center;
+    .details {
+      padding: 0 60px;
+      display: flex;
+      img {
+        margin-right: 16px;
+      }
+    }
+  }
 }
