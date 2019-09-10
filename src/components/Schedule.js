@@ -17,7 +17,7 @@ const Schedule = () => (
         We will have 3 full days packed with <span className={'fontBold'}>workshops, lightning talks, product demos, panel discussions</span> and in depth technical talks about all aspects of GraphQL, with a special section on <span className={'fontBold'}>cloud-native GraphQL</span> usage!
       </div>
       <div className={'scheduleDetailsWrapper'}>
-        <div className={'col-md-4 col-sm-4 col-xs-12 noPadd'}>
+        <div className={'col-md-4 col-sm-4 col-xs-12 noPadd borderRight'}>
           <div className={'scheduleList'}>
             <div className={'listImg'}>
               <img src={workshop} alt={'Workshop'}/>
@@ -30,7 +30,7 @@ const Schedule = () => (
             </div>
           </div>
         </div>
-        <div className={'col-md-4 col-sm-4 col-xs-12 noPadd'}>
+        <div className={'col-md-4 col-sm-4 col-xs-12 noPadd borderRight'}>
           <div className={'scheduleList'}>
             <div className={'listImg'}>
               <img src={talk} alt={'Talk'}/>
@@ -61,7 +61,7 @@ const Schedule = () => (
         <button className={'blueBtn'}>REGISTER <span className={'fontNormal'}>/ $200</span></button>
       </div>
       <div className={'sectionPosition'}>
-        <div className={'purpleGradientBgColor col-md-12 noPadd wd90'}>
+        <div className={'purpleGradientBgColor col-md-12 col-sm-12 col-xs-12 noPadd wd90'}>
           <div className={'graphqlWrapper wd100'}>
             <div className={'col-md-6 col-sm-6 col-xs-12 noPadd'}>
               <div className={'graphQlHeader'}>

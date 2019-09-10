@@ -22,7 +22,7 @@ const Brought = () => (
         BROUGHT TO YOU BY
       </div>
       <div className={'brand'}>
-        <img src={hasuraLogo} alt={'Hasura logo'} />
+        <a href="https://hasura.io/" target="_blank"><img src={hasuraLogo} alt={'Hasura logo'} /></a>
       </div>
     </div>
     <div className={'watermarkImg'}>
