@@ -3,11 +3,14 @@ import React from "react"
 import './styles.scss'
 const calendar = require('../images/calendar.svg');
 const place = require('../images/place.svg');
+const graphqlAsia = require('../images/graphql_Asia2020_heading.svg');
 const TopBanner = () => (
   <div className={'topBannerWrapper'}>
-    <div className={'pageHeader'}>GRAPHQL ASIA<br/>2020</div>
+    <div className={'headerImg'}>
+      <img src={graphqlAsia} alt={'GRAPHQL ASIA 2020'} />
+    </div>
     <div className={'pageDescription'}>
-    Asia’s largest GraphQL conference is back!<br/>Book your tickets now to get an <span className={'fontBold'}>early bird discount!</span>
+      Asia’s largest GraphQL conference is back!<br/>Book your tickets now to get an <span className={'fontBold'}>early bird discount!</span>
     </div>
     <div className={'buttonWrapper'}>
       <button className={'whiteBtn'}>BUY TICKETS <span className={'fontNormal'}>/ $200</span></button>

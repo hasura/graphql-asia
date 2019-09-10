@@ -6,7 +6,7 @@ export default class HTML extends React.Component {
     return (
       <html {...this.props.htmlAttributes}>
         <head>
-          <title>Firebase2GraphQL: Get GraphQL on your Firebase data with Hasura</title>
+          <title>Home | GraphQL Asia</title>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta
@@ -14,7 +14,7 @@ export default class HTML extends React.Component {
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
           <meta title="Graphql Asia" />
-          <meta name="title" content="Graphql Asia" />
+          <meta name="title" content="Home | GraphQL Asia" />
           <meta name="description" content="Graphql Asia" />
           <meta property="og:title" content="Graphql Asia" />
           <meta property="og:description" content="Graphql Asia" />

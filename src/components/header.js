@@ -15,15 +15,15 @@ const Header = ({ siteTitle }) => (
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand navBarBrand" href="#"><img src={logo} alt={'Brand'} /></a>
+            <a class="navbar-brand navBarBrand" href="/"><img src={logo} alt={'Brand'} /></a>
           </div>
           <div class="collapse navbar-collapse navBarCollapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right navBarRight">
-              <li className={'navBarList'}><a href="#">OVERVIEW</a></li>
-              <li className={'navBarList'}><a href="#">SPEAKERS</a></li>
-              <li className={'navBarList'}><a href="#">SCHEDULE</a></li>
-              <li className={'navBarList'}><a href="#">SPONSORS</a></li>
-              <li className={'navBarList'}><a href="#"><button className={'transparentBtn'}>BUY TICKETS</button></a></li>
+              <li className={'navBarList'}><a href="#overview">OVERVIEW</a></li>
+              <li className={'navBarList'}><a href="#speakers">SPEAKERS</a></li>
+              <li className={'navBarList'}><a href="#schedule">SCHEDULE</a></li>
+              <li className={'navBarList'}><a href="#sponsors">SPONSORS</a></li>
+              <li className={'navBarList'}><a href="/"><button className={'transparentBtn'}>BUY TICKETS</button></a></li>
             </ul>
           </div>
         </div>
