@@ -23,7 +23,7 @@ const Header = ({ siteTitle }) => (
               <li className={'navBarList'}><a href="#speakers">SPEAKERS</a></li>
               <li className={'navBarList'}><a href="#schedule">SCHEDULE</a></li>
               <li className={'navBarList'}><a href="#sponsors">SPONSORS</a></li>
-              <li className={'navBarList'}><a href="/"><button className={'transparentBtn'}>BUY TICKETS</button></a></li>
+              <li className={'navBarList'}><a href="#ticket"><button className={'transparentBtn'}>BUY TICKETS</button></a></li>
             </ul>
           </div>
         </div>

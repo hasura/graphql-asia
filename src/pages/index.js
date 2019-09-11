@@ -10,6 +10,7 @@ import Schedule from '../components/Schedule'
 import Sponsors from '../components/Sponsors'
 import Brought from '../components/Brought'
 import Subscribe from '../components/Subscribe'
+import Contact from '../components/Contact'
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -20,6 +21,7 @@ const IndexPage = () => (
     <Sponsors />
     <Brought />
     <Subscribe />
+    <Contact />
   </Layout>
 )
 

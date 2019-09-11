@@ -72,7 +72,7 @@ const Schedule = () => (
                 <span className={'fontBold'}>Learn GraphQL in 2 hours</span> by integrating GraphQL APIs to an app in your favourite frontend framework.
               </div>
               <div className={'buttonWrapper'}>
-                <button className={'transparentBtn'}>GET STARTED</button>
+                <a href="https://learn.hasura.io/" target="_blank" rel="noopener noreferrer"><button className={'transparentBtn'}>GET STARTED</button></a>
               </div>
             </div>
             <div className={'iconsImg'}>
