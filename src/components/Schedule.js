@@ -58,7 +58,7 @@ const Schedule = () => (
         </div>
       </div>
       <div className={'buttonWrapper'}>
-        <button className={'blueBtn'}>REGISTER <span className={'fontNormal'}>/ $200</span></button>
+        <button className={'blueBtn'}>REGISTER</button>
       </div>
       <div className={'sectionPosition'}>
         <div className={'purpleGradientBgColor col-md-12 col-sm-12 col-xs-12 noPadd wd90'}>

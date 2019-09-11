@@ -13,7 +13,7 @@ const TopBanner = () => (
       Asia’s largest GraphQL conference is back!<br/>Book your tickets now to get an <span className={'fontBold'}>early bird discount!</span>
     </div>
     <div className={'buttonWrapper'}>
-      <button className={'whiteBtn'}>BUY TICKETS <span className={'fontNormal'}>/ $200</span></button>
+      <button className={'whiteBtn'}>BUY TICKETS</button>
     </div>
     <div className={'placeDetails'}>
       <div className={'details'}>

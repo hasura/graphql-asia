@@ -13,7 +13,7 @@ const Brought = () => (
         You can get tickets for just the conference or the conference along with one of the dedicated workshops.
       </div>
       <div className={'buttonWrapper'}>
-        <button className={'transparentBtn'}>BUY TICKETS <span className={'fontNormal'}>/ $200</span></button>
+        <button className={'transparentBtn'}>BUY TICKETS</button>
       </div>
       <div className={'pageDescription'}>
         We will also be offering diversity as well as student scholarships. If you’d like to apply, <a href="/">click here</a>
