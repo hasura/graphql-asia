@@ -9,7 +9,7 @@ import Proposals from '../components/Proposals'
 import Schedule from '../components/Schedule'
 import Sponsors from '../components/Sponsors'
 import Brought from '../components/Brought'
-import Subscribe from '../components/Subscribe'
+// import Subscribe from '../components/Subscribe'
 import Contact from '../components/Contact'
 const IndexPage = () => (
   <Layout>
@@ -20,7 +20,7 @@ const IndexPage = () => (
     <Schedule />
     <Sponsors />
     <Brought />
-    <Subscribe />
+    {/* <Subscribe /> */}
     <Contact />
   </Layout>
 )
