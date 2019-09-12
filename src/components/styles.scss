@@ -94,8 +94,8 @@
   border-top: 1px solid rgba(255, 255, 255, 0.6);
 }
 .noPadd {
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 .removePaddBottom {
   padding-bottom: 0 !important;
@@ -269,11 +269,17 @@ img {
 .blueLink {
   a {
     color: #1b1653;
+    &:hover {
+      color: #1b1653;
+    }
   }
 }
 .pinkLink {
   a {
     color: #f81894;
+    &:hover {
+      color: #f81894;
+    }
   }
 }
 .details {
@@ -746,7 +752,7 @@ img {
     font-size: 16px;
   }
   .bgImage {
-    height: 700px;
+    height: 650px;
   }
   .copyRight {
     font-size: 16px;
@@ -759,6 +765,9 @@ img {
   }
   .pageDescription {
     font-size: 20px;
+  }
+  .blueLink, .pinkLink {
+    letter-spacing: 2px;
   }
   .watermarkWrapper {
     .watermarkImgRight {
@@ -800,6 +809,7 @@ img {
       .details {
         padding: 0 20px;
         font-size: 20px;
+        letter-spacing: 2px;
       }
     }
   }
@@ -817,13 +827,14 @@ img {
       .icons {
         img {
           max-height: 35px;
-          margin-right: 35px;
+          margin-right: 30px;
         }
       }
     }
   }
   .scheduleWrapper {
     .sectionPosition {
+      padding-top: 80px;
       .purpleGradientBgColor {
         width: 98%;
         left: 1%;
@@ -1100,9 +1111,19 @@ img {
       padding-bottom: 20px;
     }
     .fieldWrapper {
+      .contactBorRight {
+        border-right: 0;
+      }
       .field {
         margin: 0 auto;
         width: 95%;
+      }
+    }
+    .contactDetails {
+      .contactImg {
+        img {
+          width: 50px;
+        }
       }
     }
   }
