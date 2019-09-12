@@ -24,7 +24,7 @@ const Contact = () => (
             </div>
             <div className={'field'}>
               <label className={'fieldLabel pageDescription'}>Message</label>
-              <textArea type="text" rows="6" />
+              <textarea type="text" rows="6" />
             </div>
             <div className={'pinkLink'}>
               <a href="https://www.graphql-asia.org/" target="_blank" rel="noopener noreferrer">SEND MESSAGE<img src={arrowPink} alt={'Arrow'} /></a>

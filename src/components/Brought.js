@@ -16,7 +16,7 @@ const Brought = () => (
         <button className={'transparentBtn'}>BUY TICKETS</button>
       </div>
       <div className={'pageDescription'}>
-        We will also be offering diversity as well as student scholarships. If you’d like to apply, <a href="/">click here</a>
+        We will also be offering diversity as well as student scholarships. If you’d like to apply, <a href="https://hasurahq.typeform.com/to/ukj62Q" target="_blank" rel="noopener noreferrer">click here</a>
       </div>
       <div className={'sectionHeader removePaddBottom'}>
         BROUGHT TO YOU BY

@@ -24,9 +24,6 @@ const Sponsors = () => (
           <a href="mailto:anubha@hasura.io?subject=Sponsoring GraphQL Asia"> <button className={'blueBtn'}>BECOME A SPONSOR</button></a>
           {/*<button className={'whiteBtn'}>LEARN MORE</button>*/}
         </div>
-        <div className={'sectionSubHeader'}>
-          Past Sponsors
-        </div>
       </div>
       <div className={'col-md-4 col-sm-4 col-xs-12 '}>
         <div className={'overviewImg'}>
@@ -34,6 +31,9 @@ const Sponsors = () => (
         </div>
       </div>
       <div className={'pastSponsorWrapper'}>
+        <div className={'sectionSubHeader'}>
+          Past Sponsors
+        </div>
         <div className={'icons'}>
           <a href="https://www.digitalocean.com" target="_blank" rel="noopener noreferrer"><img src={digitalOcean} alt={'Digital Ocean'}/></a>
           <a href="https://aws.amazon.com/amplify" target="_blank" rel="noopener noreferrer"><img src={amplify} alt={'amplify'}/></a>

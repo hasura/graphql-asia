@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700|Poppins:400,500,600,700&display=swap');
 .lightGrayBgColor {
   background-color: #f6f6f6;
 }
@@ -22,7 +22,7 @@
 }
 .transparentBtnNav, .transparentBtn,  .whiteBtn, .blueBtn{
   border-radius: 5px;
-  font-family: 'Lato';
+  font-family: 'Roboto';
   font-size: 20px;
   font-weight: bold;
   font-style: normal;
@@ -45,14 +45,13 @@
   padding: 12px 24px;
   opacity: 0.85;
 }
-.transparentBtn {
+.transparentBtn, .whiteBtn, .blueBtn {
   padding: 18px 24px;
 }
 .whiteBtn {
   border: 2px solid #ffffff;
   background-color: #fff;
   color: #27216e;
-  padding: 18px 24px;
   &:hover {
     background-color: #27216e;
     color: #fff;
@@ -62,7 +61,6 @@
   background-color: #27216e;
   border: 2px solid #27216e;
   color: #fff;
-  padding: 18px 24px;
   &:hover {
     background-color: #fff;
     color: #27216e;
@@ -103,10 +101,10 @@
   padding-bottom: 0 !important;
 }
 .positionBottom {
-  padding-bottom: 240px;
+  padding-bottom: 240px !important;
 }
 .positionTop {
-  padding-top: 340px;
+  padding-top: 340px !important;
 }
 .displayFlex {
   display: flex !important;
@@ -178,7 +176,7 @@ img {
   color: #ffffff;
 }
 .graphQlDescription {
-  font-family: 'Lato';
+  font-family: 'Roboto';
   font-size: 20px;
   font-weight: normal;
   letter-spacing: normal;
@@ -193,7 +191,7 @@ img {
   letter-spacing: 6px;
 }
 .sectionSubHeader {
-  font-family: 'Lato';
+  font-family: 'Roboto';
   font-size: 32px;
   font-weight: 900;
   font-style: normal;
@@ -201,7 +199,7 @@ img {
   letter-spacing: normal;
 }
 .pageDescription {
-  font-family: 'Lato';
+  font-family: 'Roboto';
   font-size: 24px;
   font-weight: normal;
   font-style: normal;
@@ -236,7 +234,7 @@ img {
   }
 }
 .copyRight {
-  font-family: 'Lato';
+  font-family: 'Roboto';
   font-size: 18px;
   font-weight: normal;
   color: #111111;
@@ -249,7 +247,7 @@ img {
   }
 }
 .blueLink, .pinkLink {
-  font-family: 'Lato';
+  font-family: 'Roboto';
   font-size: 20px;
   font-weight: 900;
   font-style: normal;
@@ -279,7 +277,7 @@ img {
   }
 }
 .details {
-  font-family: 'Lato';
+  font-family: 'Roboto';
   font-size: 24px;
   font-weight: 900;
   font-style: normal;
@@ -296,6 +294,13 @@ img {
     background-color: transparent;
     padding-top: 30px;
     margin-bottom: 0;
+    .navBarHeader {
+      .navBarBrand {
+        img {
+          width: 150px;
+        }
+      }
+    }
     .navBarCollapse {
       .navBarRight {
         display: flex;
@@ -304,7 +309,7 @@ img {
           margin-bottom: 0;
           a {
             opacity: 0.85;
-            font-family: 'Lato';
+            font-family: 'Roboto';
             font-size: 20px;
             font-weight: bold;
             font-style: normal;
@@ -366,14 +371,24 @@ img {
 }
 .watermarkWrapper {
   position: relative;
+  z-index: 1;
   .watermarkImg {
     bottom: 0;
   }
   .watermarkImgTop {
     top: 0;
   }
-  .watermarkImg, .watermarkImgTop {
+  .watermarkImgRight {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    img {
+      height: -webkit-fill-available;
+    }
+  }
+  .watermarkImg, .watermarkImgTop, .watermarkImgRight {
     position: absolute;
+    z-index: -1;
     img {
       width: 100%;
     }
@@ -415,12 +430,11 @@ img {
   }
   .sectionSubHeader {
     color: #2b2b33;
-    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .pastSponsorWrapper {
     clear: both;
-    padding-top: 40px;
-    padding-bottom: 5px;
+    padding-top: 60px;
     .icons {
       img {
         display: inline-block;
@@ -444,6 +458,7 @@ img {
 /* Schedule */
 .scheduleWrapper {
   position: relative;
+  z-index: 2;
   .sectionHeader, .pageDescription {
     text-align: center;
   }
@@ -467,6 +482,7 @@ img {
         text-align: center;
         img {
           max-height: 60px;
+          min-height: 60px;
           display: inline-block;
         }
       }
@@ -519,7 +535,7 @@ img {
     justify-content: center;
     .purpleGradientBgColor {
       border-radius: 20px;
-      width: 1000px;
+      width: 950px;
       margin: 0 auto;
       position: absolute;
       bottom: -240px;
@@ -532,10 +548,6 @@ img {
   background-image: url('../images/ticket-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: 1;
-  .watermarkImg {
-    z-index: -1;
-  }
   .sectionHeader {
     color: #fff;
     padding-bottom: 40px;
@@ -570,10 +582,9 @@ img {
 .formDetails {
   display: flex;
 }
-.subscribeForm
-{
+.subscribeForm {
   padding: 0;
-  font-family: 'Lato';
+  font-family: 'Roboto';
   input {
     background-color: #fff;
     color: #2b2b33;
@@ -638,7 +649,7 @@ img {
         padding: 5px;
         color: #fff;
         font-size: 24px;
-        font-family: 'Lato';
+        font-family: 'Roboto';
         width: 100%;
         background-color: transparent;
         border-radius: 5px;
@@ -710,6 +721,415 @@ img {
           opacity: 1;
           text-decoration: none;
         }
+      }
+    }
+  }
+}
+
+@media ( min-width: 768px ) and (max-width: 991px) {
+  .wd60 {
+    width: 90%;
+  }
+  .positionBottom {
+    padding-bottom: 130px !important;
+  }
+  .positionTop {
+    padding-top: 300px !important;
+  }
+  .transparentBtn,  .whiteBtn, .blueBtn {
+    padding: 16px 20px;
+    letter-spacing: 3px;
+  }
+  .transparentBtnNav {
+    padding: 12px 15px;
+    letter-spacing: 2px;
+    font-size: 16px;
+  }
+  .bgImage {
+    height: 700px;
+  }
+  .copyRight {
+    font-size: 16px;
+  }
+  .sectionWrapper {
+    padding: 70px 0;
+  }
+  .sectionHeader {
+    font-size: 40px;
+  }
+  .pageDescription {
+    font-size: 20px;
+  }
+  .watermarkWrapper {
+    .watermarkImgRight {
+      top: auto;
+      text-align: right;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      img {
+        width: 84%;
+        display: inline-block;
+      }
+    }
+  }
+  .headerWrapper {
+    .navBarDefault {
+      .navBarHeader {
+        .navBarBrand {
+          img {
+            width: 120px;
+          }
+        }
+      }
+      .navBarCollapse {
+        .navBarRight {
+          .navBarList {
+            a {
+              font-size: 16px;
+              padding: 10px 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .topBannerWrapper {
+    padding-bottom: 80px;
+    .placeDetails {
+      .details {
+        padding: 0 20px;
+        font-size: 20px;
+      }
+    }
+  }
+  .overviewWrapper, .sponsorWrapper {
+    .sectionHeader, .pageDescription {
+      padding-bottom: 30px;
+      padding-right: 50px;
+    }
+  }
+  .sponsorWrapper {
+    .sectionSubHeader, .pastSponsorWrapper {
+      padding-top: 30px;
+    }
+    .pastSponsorWrapper {
+      .icons {
+        img {
+          max-height: 35px;
+          margin-right: 35px;
+        }
+      }
+    }
+  }
+  .scheduleWrapper {
+    .sectionPosition {
+      .purpleGradientBgColor {
+        width: 98%;
+        left: 1%;
+      }
+    }
+    .graphqlWrapper {
+      padding: 40px 40px;
+      .graphQlImg {
+        z-index: -1;
+        img {
+          width: 78%;
+        }
+      }
+    }
+  }
+  .broughtWrapper {
+    .sectionHeader, .pageDescription {
+      padding-bottom: 30px;
+    }
+    .pageDescription {
+      width: 65%;
+    }
+    .brand {
+      padding-top: 20px;
+    }
+  }
+  .contactWrapper {
+    .fieldWrapper {
+      .field {
+        width: 95%;
+      }
+    }
+  }
+}
+@media(max-width: 767px) {
+  .wd60 {
+    width: 95%;
+  }
+  .bgImage {
+    height: 480px;
+  }
+  .positionBottom {
+    padding-bottom: 40px !important;
+  }
+  .positionTop {
+    padding-top: 40px !important;
+  }
+  .transparentBtn,  .whiteBtn, .blueBtn {
+    padding: 12px 15px;
+    letter-spacing: 2px;
+    font-size: 18px;
+  }
+  .sectionWrapper {
+    padding: 40px 0;
+  }
+  .sectionHeader {
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+  .pageDescription {
+    font-size: 18px;
+  }
+  .copyRight {
+    font-size: 16px;
+  }
+  .blueLink, .pinkLink {
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+    img {
+      margin-left: 10px;
+    }
+  }
+  .headerWrapper {
+    .navBarDefault {
+      padding-top: 10px;
+      .navBarHeader {
+        display: flex;
+        align-items: center;
+        .navBarToggle {
+          border-color: #fff;
+          &:hover, &:focus {
+            background-color: transparent;
+          }
+          .iconBar {
+            background-color: #fff;
+          }
+        }
+        .navBarBrand {
+          height: auto;
+          flex: 1;
+        }
+      }
+      .navBarCollapse {
+        .navBarRight {
+          display: block;
+          .navBarList {
+            a {
+              font-size: 16px;
+              padding: 10px 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .topBannerWrapper {
+    padding-top: 30px;
+    padding-bottom: 7px;
+    .headerImg {
+      img {
+        width: 80%;
+      }
+    }
+    .pageDescription {
+      padding: 0 10px;
+      padding-bottom: 20px;
+    }
+    .placeDetails {
+      display: block;
+      .details {
+        padding: 0 20px;
+        font-size: 18px;
+        display: block;
+        text-align: center;
+        padding-bottom: 10px;
+        letter-spacing: 2px;
+      }
+    }
+    .buttonWrapper {
+      padding-bottom: 30px;
+    }
+  }
+  .overviewWrapper, .sponsorWrapper {
+    .sectionHeader, .pageDescription {
+      padding: 0 10px;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    .overviewImg {
+      text-align: center;
+      img {
+        width: 90%;
+        display: inline-block;
+      }
+    }
+  }
+  .sponsorWrapper {
+    .buttonWrapper {
+      text-align: center;
+      .blueBtn {
+        margin-right: 0;
+      }
+    }
+    .overviewImg {
+      padding-top: 20px;
+    }
+    .pastSponsorWrapper {
+      padding-top: 30px;
+      .sectionSubHeader {
+        padding-bottom: 20px;
+        text-align: center;
+      }
+      .icons {
+        text-align: center;
+        a {
+          display: block;
+          padding-bottom: 10px;
+        }
+        img {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .proposalsWrapper {
+    .sectionHeader {
+      text-align: center;
+      padding: 0 10px;
+      padding-bottom: 20px;
+    }
+    .pageDescription {
+      width: 100%;
+      padding: 0 10px;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    .buttonWrapper {
+      text-align: center;
+    }
+  }
+  .scheduleWrapper {
+    .sectionPosition {
+      .purpleGradientBgColor {
+        width: 95%;
+        position: static;
+      }
+    }
+    .pageDescription {
+      padding-top: 20px;
+      padding-bottom: 0;
+    }
+    .scheduleDetailsWrapper {
+      width: 100%;
+      float: left;
+      .borderRight {
+        border-right: 0;
+      }
+      .scheduleList {
+        padding-bottom: 20px;
+        .listImg {
+          padding-bottom: 10px;
+        }
+      }
+    }
+    .buttonWrapper {
+      padding-top: 0;
+      padding-bottom: 20px;
+    }
+    .graphqlWrapper {
+      padding: 20px 20px;
+      .graphQlHeader {
+        font-size: 25px;
+        padding-bottom: 20px;
+        text-align: center;
+      }
+      .graphQlDescription {
+        font-size: 16px;
+        text-align: center;
+      }
+      .graphQlImg {
+        position: static;
+        padding-top: 20px;
+      }
+      .iconsImg {
+        width: 100%;
+        right: 0;
+      }
+      .buttonWrapper {
+        text-align: center;
+      }
+    }
+  }
+  .broughtWrapper {
+    .sectionHeader {
+      padding: 0 10px;
+      padding-bottom: 20px;
+      text-align: center;
+    }
+    .pageDescription {
+      width: 100%;
+      padding: 0 10px;
+      text-align: center;
+      padding-bottom: 30px;
+    }
+    .buttonWrapper {
+      text-align: center;
+      padding-bottom: 30px;
+    }
+    .brand {
+      padding-top: 20px;
+      text-align: center;
+      img {
+        width: 175px;
+      }
+    }
+  }
+  .contactWrapper {
+    padding-bottom: 0;
+    .sectionHeader {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    .fieldWrapper {
+      .field {
+        margin: 0 auto;
+        width: 95%;
+      }
+    }
+  }
+  .footerWrapper {
+    .footerContainer {
+      display: block;
+      .footerListWrapper {
+        display: block;
+        text-align: center;
+        padding-bottom: 10px;
+        .copyRight {
+          display: block;
+        }
+        ul
+        {
+          padding-top: 10px;
+          padding-inline-start: 0px;
+          margin-left: 0;
+          li {
+            display: block;
+            padding-bottom: 10px;
+          }
+        }
+      }
+      .socialWrapper {
+        float: none;
+        justify-content: center;
       }
     }
   }

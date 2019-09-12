@@ -63,7 +63,7 @@ const Schedule = () => (
       <div className={'sectionPosition'}>
         <div className={'purpleGradientBgColor col-md-12 col-sm-12 col-xs-12 noPadd wd90'}>
           <div className={'graphqlWrapper wd100'}>
-            <div className={'col-md-6 col-sm-6 col-xs-12 noPadd'}>
+            <div className={'col-md-6 col-sm-7 col-xs-12 noPadd'}>
               <div className={'graphQlHeader'}>
                 New to GraphQL?
               </div>
