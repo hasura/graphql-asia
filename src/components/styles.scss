@@ -66,6 +66,25 @@
     color: #27216e;
   }
 }
+.sendMessageBtn {
+  background-color: transparent;
+  border: 0;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 4px;
+  color: #f81894;
+  padding: 0;
+  border-bottom: 1px solid transparent;
+  img {
+    margin-left: 14px;
+  }
+  &:focus {
+    outline: none;
+  }
+}
 .fontNormal {
   font-weight: normal !important;
 }
@@ -214,6 +233,51 @@ img {
     border-bottom: 1px solid #f81894;
   }
 }
+.successMessage,  .errorMessage{
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.21;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  .successMessageSmall {
+    font-size: 14px;
+    color: #fff;
+  }
+}
+.successMessage {
+  color: #00ff00;
+}
+.errorMessage {
+  color: #ff0000;
+}
+@keyframes blink {
+    0% {
+      opacity: .2;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      opacity: .2;
+    }
+}
+.sendingMessage {
+  span {
+    animation-name: blink;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    &:nth-child(2) {
+      animation-delay: .2s;
+    }
+    &:nth-child(3) {
+      animation-delay: .4s;
+    }
+  }
+}
 .contactName {
   font-family: 'Poppins';
   font-size: 18px;
@@ -352,6 +416,7 @@ img {
     img {
       width: 60%;
       display: inline-block;
+      max-width: 800px;
     }
   }
   .pageDescription {
@@ -380,6 +445,7 @@ img {
   z-index: 1;
   .watermarkImg {
     bottom: 0;
+    min-width: 100%;
   }
   .watermarkImgTop {
     top: 0;
@@ -641,6 +707,10 @@ img {
     padding-bottom: 60px;
   }
   .fieldWrapper {
+    .pageDescription {
+      color: #fff;
+      opacity: .8;
+    }
     .field {
       padding-bottom: 30px;
       width: 90%;
@@ -665,10 +735,8 @@ img {
           border: 2px solid rgba(255, 255, 255, 1);
         }
       }
-      .pageDescription {
-        color: #fff;
-        opacity: .8;
-      }
+
+
     }
   }
   .contactDetails {
@@ -688,6 +756,7 @@ img {
 /* Footer */
 .footerWrapper {
   background-color: #0c0a24;
+  margin-top: -1px;
   .footerContainer {
     padding: 30px 0;
     display: flex;
@@ -721,7 +790,7 @@ img {
       .socialIcon {
         padding: 0 13px;
         a {
-          opacity: 0.8
+          opacity: 0.6
         }
         a:hover {
           opacity: 1;
