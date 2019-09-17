@@ -19,7 +19,7 @@ const Brought = () => (
         We will also be offering diversity as well as student scholarships. If you’d like to apply, <a href="https://hasurahq.typeform.com/to/ukj62Q" target="_blank" rel="noopener noreferrer">click here</a>
       </div>
       <div className={'sectionSubHeader removePaddBottom'}>
-        BROUGHT TO YOU BY
+        Brought to you by
       </div>
       <div className={'brand'}>
         <a href="https://hasura.io/" target="_blank" rel="noopener noreferrer"><img src={hasuraLogo} alt={'Hasura logo'} /></a>

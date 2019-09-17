@@ -1,10 +1,11 @@
 // import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import TopBanner from "../components/TopBanner"
 import './styles.scss'
 const logo = require('../images/logo.svg');
 const Header = ({ siteTitle }) => (
-  <header>
+  <header className={'bgImage'}>
     <div className="headerWrapper">
       <nav className="navbar navbar-default navBarDefault">
         <div className="container">
@@ -29,6 +30,7 @@ const Header = ({ siteTitle }) => (
         </div>
       </nav>
     </div>
+    <TopBanner />
   </header>
 )
 

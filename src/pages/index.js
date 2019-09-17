@@ -3,7 +3,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import TopBanner from "../components/TopBanner"
+
 import Overview from '../components/Overview'
 import Proposals from '../components/Proposals'
 import Schedule from '../components/Schedule'
@@ -14,7 +14,7 @@ import Contact from '../components/Contact'
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <TopBanner />
+
     <Overview />
     <Proposals />
     <Schedule />

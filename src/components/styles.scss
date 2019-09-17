@@ -44,6 +44,7 @@
 .transparentBtnNav {
   padding: 12px 24px;
   opacity: 0.85;
+  font-weight: normal;
 }
 .transparentBtn, .whiteBtn, .blueBtn {
   padding: 18px 24px;
@@ -381,11 +382,11 @@ img {
             opacity: 0.85;
             font-family: 'Roboto';
             font-size: 20px;
-            font-weight: bold;
+            font-weight: normal;
             font-style: normal;
             font-stretch: normal;
             line-height: 1.2;
-            letter-spacing: normal;
+            letter-spacing: 4px;
             text-align: left;
             color: #ffffff;
           }
@@ -817,7 +818,7 @@ img {
   }
   .transparentBtnNav {
     padding: 12px 15px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-size: 16px;
   }
   .bgImage {
@@ -864,8 +865,9 @@ img {
         .navBarRight {
           .navBarList {
             a {
-              font-size: 16px;
+              font-size: 15px;
               padding: 10px 10px;
+              letter-spacing: 1px;
             }
           }
         }
@@ -943,7 +945,7 @@ img {
     width: 95%;
   }
   .bgImage {
-    height: 520px;
+    height: 500px;
   }
   .positionBottom {
     padding-bottom: 40px !important;
@@ -1023,7 +1025,7 @@ img {
     padding-bottom: 7px;
     .headerImg {
       img {
-        width: 80%;
+        width: 65%;
       }
     }
     .pageDescription {
@@ -1042,7 +1044,7 @@ img {
       }
     }
     .buttonWrapper {
-      padding-bottom: 30px;
+      padding-bottom: 20px;
     }
   }
   .overviewWrapper, .sponsorWrapper {
@@ -1226,6 +1228,16 @@ img {
       .socialWrapper {
         float: none;
         justify-content: center;
+      }
+    }
+  }
+}
+@media ( min-width: 1440px ) {
+  .scheduleWrapper {
+    .watermarkImgTop {
+      min-width: 100%;
+      img {
+        max-height: 1038px;
       }
     }
   }

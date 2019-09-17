@@ -20,7 +20,7 @@ const youtubeBrands = require('../images/youtube-brands.svg');
 const Layout = ({ children }) => {
   return (
     <>
-      <div className={'bgImage'}>
+      <div>
         <Header/>
         <div>
           <main>{children}</main>
