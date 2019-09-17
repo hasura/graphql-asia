@@ -18,11 +18,11 @@ const TopBanner = () => (
     <div className={'placeDetails'}>
       <div className={'details'}>
         <img src={calendar} alt={'Calendar icon'} />
-        FEBURARY 21-22, 2020
+        FEBRUARY 20-22, 2020
       </div>
       <div className={'details'}>
         <img src={place} alt={'Place icon'} />
-        CHANCERY, BENGALURU
+        BENGALURU
       </div>
     </div>
   </div>

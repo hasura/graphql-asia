@@ -620,7 +620,7 @@ img {
   background-image: url('../images/ticket-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
-  .sectionHeader {
+  .sectionHeader, .sectionSubHeader {
     color: #fff;
     padding-bottom: 40px;
   }
@@ -920,7 +920,7 @@ img {
     }
   }
   .broughtWrapper {
-    .sectionHeader, .pageDescription {
+    .sectionHeader, .pageDescription, .sectionSubHeader {
       padding-bottom: 30px;
     }
     .pageDescription {
@@ -956,12 +956,18 @@ img {
     letter-spacing: 2px;
     font-size: 18px;
   }
+  .sendMessageBtn {
+    padding: 0 10px;
+  }
   .sectionWrapper {
     padding: 40px 0;
   }
   .sectionHeader {
     font-size: 30px;
     letter-spacing: 3px;
+  }
+  .sectionSubHeader {
+    font-size: 24px;
   }
   .pageDescription {
     font-size: 18px;
@@ -1150,7 +1156,7 @@ img {
     }
   }
   .broughtWrapper {
-    .sectionHeader {
+    .sectionHeader, .sectionSubHeader {
       padding: 0 10px;
       padding-bottom: 20px;
       text-align: center;

@@ -87,7 +87,7 @@ const Schedule = () => (
         </div>
       </div>
     </div>
-    <div className={'watermarkImgTop'}>
+    <div className={'watermarkImgTop hidden-xs'}>
       <img src={scheduleIcon} alt={'Schedule'} />
     </div>
   </div>

@@ -43,7 +43,7 @@ const Sponsors = () => (
         </div>
       </div>
     </div>
-    <div className={'watermarkImg'}>
+    <div className={'watermarkImg hidden-xs'}>
       <img src={sponsors} alt={'Sponsors water mark'}/>
     </div>
   </div>

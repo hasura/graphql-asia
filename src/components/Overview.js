@@ -24,7 +24,7 @@ const Overview = () => (
         </div>
       </div>
     </div>
-    <div className={'watermarkImg'}>
+    <div className={'watermarkImg hidden-xs'}>
       <img src={overview} alt={'overview water mark'}/>
     </div>
   </div>

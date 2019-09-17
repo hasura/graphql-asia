@@ -15,7 +15,7 @@ const Proposals = () => (
           <a href="https://www.papercall.io/graphql-asia" target="_blank" rel="noopener noreferrer"><button className={'transparentBtn'}>SUBMIT A TALK</button></a>
         </div>
     </div>
-    <div className={'watermarkImgRight'}>
+    <div className={'watermarkImgRight hidden-xs'}>
       <img src={proposal} alt={'proposal water mark'}/>
     </div>
   </div>
