@@ -15,7 +15,7 @@ const Overview = () => (
           GraphQL Asia is the largest gathering of the GraphQL community in Asia! With over 500 people expected at the 2020 edition, you’ll meet the creators of leading GraphQL tooling, talk to the experts implementing GraphQL in their companies as well as practitioners and enthusiasts from Asia and the rest of the world.
         </div>
         <div className={'blueLink'}>
-          <a href="https://www.graphql-asia.org/" target="_blank" rel="noopener noreferrer">GRAPHQL ASIA 2019 WEBSITE<img src={arrow} alt={'Arrow'} /></a>
+          <a href="https://graphql.asia/2019" target="_blank" rel="noopener noreferrer">GRAPHQL ASIA 2019 WEBSITE<img src={arrow} alt={'Arrow'} /></a>
         </div>
       </div>
       <div className={'col-md-6 col-sm-5 col-xs-12 noPadd'}>
