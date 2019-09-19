@@ -10,7 +10,7 @@ const TopBanner = () => (
       <img src={graphqlAsia} alt={'GRAPHQL ASIA 2020'} />
     </div>
     <div className={'pageDescription'}>
-      Asia’s largest GraphQL conference is back!<br/>Book your tickets now to get an <span className={'fontBold'}>early bird discount!</span>
+      Asia’s largest GraphQL conference is back!<br/>Limited Super <span className={'fontBold'}>Early Bird Tickets</span> available now!
     </div>
     <div className={'buttonWrapper'}>
       <a href="https://www.townscript.com/e/graphql-asia--2020/booking" target={'_blank'}><button className={'whiteBtn'}>BUY TICKETS</button></a>

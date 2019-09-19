@@ -12,7 +12,7 @@ const Overview = () => (
           OVERVIEW
         </div>
         <div className={'pageDescription'}>
-          The GraphQL Asia 2020 conference that will take place in Bengaluru, is the largest gathering of the community that uses and develops open-source GraphQL.
+          GraphQL Asia is the largest gathering of the GraphQL community in Asia! With over 500 people expected at the 2020 edition, you’ll meet the creators of leading GraphQL tooling, talk to the experts implementing GraphQL in their companies as well as practitioners and enthusiasts from Asia and the rest of the world.
         </div>
         <div className={'blueLink'}>
           <a href="https://www.graphql-asia.org/" target="_blank" rel="noopener noreferrer">GRAPHQL ASIA 2019 WEBSITE<img src={arrow} alt={'Arrow'} /></a>

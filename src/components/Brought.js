@@ -16,7 +16,10 @@ const Brought = () => (
         <a href="https://www.townscript.com/e/graphql-asia--2020/booking" target={'_blank'}><button className={'transparentBtn'}>BUY TICKETS</button></a>
       </div>
       <div className={'pageDescription'}>
-        We will also be offering diversity as well as student scholarships. If you’d like to apply, <a href="https://hasurahq.typeform.com/to/ukj62Q" target="_blank" rel="noopener noreferrer">click here</a>
+        We have scholarships available for students as well as diversity scholarships for under-represented minorities in tech. If you’d like to apply, <a href="https://hasurahq.typeform.com/to/ukj62Q" target="_blank" rel="noopener noreferrer">click here</a>
+      </div>
+      <div className={'pageDescription'}>
+        We will have group discounts for groups of 5 or more starting from the 1st of October.
       </div>
       <div className={'sectionSubHeader removePaddBottom'}>
         Brought to you by
