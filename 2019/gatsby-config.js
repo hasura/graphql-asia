@@ -38,6 +38,7 @@ module.exports = {
     author: "Tobias Meixner",
     description: "GraphQL Asia - Asia's first GraphQL conference"
   },
+  pathPrefix: '/2019',
   plugins: [
     ...productionPlugins,
     {
