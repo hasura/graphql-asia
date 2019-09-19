@@ -13,7 +13,7 @@ const Brought = () => (
         You can get tickets for just the conference or the conference along with one of the dedicated workshops.
       </div>
       <div className={'buttonWrapper'}>
-        <button className={'transparentBtn'}>BUY TICKETS</button>
+        <a href="https://www.townscript.com/e/graphql-asia--2020/booking" target={'_blank'}><button className={'transparentBtn'}>BUY TICKETS</button></a>
       </div>
       <div className={'pageDescription'}>
         We will also be offering diversity as well as student scholarships. If you’d like to apply, <a href="https://hasurahq.typeform.com/to/ukj62Q" target="_blank" rel="noopener noreferrer">click here</a>

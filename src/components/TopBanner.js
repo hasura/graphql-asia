@@ -13,7 +13,7 @@ const TopBanner = () => (
       Asia’s largest GraphQL conference is back!<br/>Book your tickets now to get an <span className={'fontBold'}>early bird discount!</span>
     </div>
     <div className={'buttonWrapper'}>
-      <button className={'whiteBtn'}>BUY TICKETS</button>
+      <a href="https://www.townscript.com/e/graphql-asia--2020/booking" target={'_blank'}><button className={'whiteBtn'}>BUY TICKETS</button></a>
     </div>
     <div className={'placeDetails'}>
       <div className={'details'}>

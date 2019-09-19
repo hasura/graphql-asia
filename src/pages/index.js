@@ -14,7 +14,6 @@ import Contact from '../components/Contact'
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-
     <Overview />
     <Proposals />
     <Schedule />

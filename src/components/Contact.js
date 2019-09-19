@@ -8,7 +8,7 @@ const twitter = require('../images/twitter.svg');
 const location = require('../images/location.svg');
 const config = {
   cors: 'https://cors-anywhere.herokuapp.com/', // <optional> doesn't display the cors error
-  formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSflcGNpAdKqgDE4bjATdQVowP1B6F-f5a3Hwle_bawnEG7Ilw/formResponse'
+  formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSdUe5LxuRVJoschLUq6jcUco2h4BWpao9poc9niAXrn_H5vHw/formResponse'
 };
 const Input = ({ name, label, value, doChange, type='text'}) => {
   return (
@@ -19,9 +19,9 @@ const Input = ({ name, label, value, doChange, type='text'}) => {
   )
 }
 const clearData = {
-  name: { id: 767529832, value: '' },
-  email: { id: 180889245, value: '' },
-  message: { id: 789017340, value: '' }
+  name: { id: 2069001833, value: '' },
+  email: { id: 1788380178, value: '' },
+  message: { id: 1305159953, value: '' }
 }
 class Contact extends React.Component {
   constructor() {

@@ -58,7 +58,7 @@ const Schedule = () => (
         </div>
       </div>
       <div className={'buttonWrapper'}>
-        <button className={'blueBtn'}>REGISTER</button>
+        <a href="https://www.townscript.com/e/graphql-asia--2020/booking" target={'_blank'}><button className={'blueBtn'}>REGISTER</button></a>
       </div>
       <div className={'sectionPosition'}>
         <div className={'purpleGradientBgColor col-md-12 col-sm-12 col-xs-12 noPadd wd90'}>
