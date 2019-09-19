@@ -1,0 +1,668 @@
+///
+/// Forty by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Banner */
+	.homeBanner{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: 0;
+		left: 0;
+		top: 0;
+	}
+	.gatsby-image-wrapper
+	{
+		height: 100%;
+	}
+	#banner {
+		@include vendor('align-items', 'center');
+		// @include vendor('background-image', 'url("../images/bengaluru-castle.png")');
+		@include vendor('display', 'flex');
+		@include padding(0em, 0, (0em, 0, 0, 0));
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-bottom: 0 !important;
+		cursor: default;
+		height: 70vh;
+		// margin-bottom: -3.25em;
+		margin-bottom: -6.25em;
+		max-height: 35em;
+		min-height: 22em;
+		position: relative;
+		top: -3.25em;
+		.inner
+		{
+			margin: 0 0 !important;
+			max-width: 100% !important;
+			width: 100% !important;
+		}
+		.presents
+		{
+			padding-top: 0px;
+	    padding-left: 25px;
+	    color: _palette(bg);
+			font-size: 16px;
+			font-family: _font(family);
+			font-weight: _font(weight-bold-semi);
+			z-index: 10000;
+			padding-top: 30px;
+			a
+			{
+				border-bottom: 1px dotted #fff;
+			}
+			a:hover
+			{
+				color: #fff !important;
+			}
+		}
+		.datedisplay
+		{
+			position: absolute;
+			z-index: 100;
+	    right: 20px;
+	    top: 65px;
+			font-family: _font(family-fixed);
+			font-size: 16px;
+			font-weight: _font(weight-bold);
+			text-align: right;
+			color: _palette(bg);
+			.datetile
+			{
+				font-family: _font(family);
+				font-size: 71px;
+				line-height: 70px;
+			}
+			.daysleft
+			{
+				position: relative;
+				.whiteCircle
+				{
+					width: 14px;
+					height: 14px;
+					right: 0;
+					top: 30px;
+				}
+			}
+		}
+		&:after {
+			@include vendor('transition', 'opacity #{_duration(banner)} ease');
+			@include vendor('transition-delay', '0.75s');
+			@include vendor('pointer-events', 'none');
+			// background-color: _palette(bg);
+			content: '';
+			display: block;
+			height: 100%;
+			left: 0;
+			opacity: 0.85;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+		}
+		.whiteCircle
+		{
+			border-radius: _circle(border-radius);
+			background-color: _palette(bg);
+			position: absolute;
+		}
+		h1 {
+			// font-size: 3.25em;
+			font-size: 100px;
+			font-family: _font(family);
+			font-weight: _font(weight-bold);
+			line-height: 100px;
+			text-transform: _font(text-transform);
+			color: _palette(bg);
+			padding-left: 20px;
+			z-index: -1;
+			padding-top: 15px;
+		}
+		h2 {
+			font-size: 64px;
+			font-family: _font(family);
+			font-weight: _font(weight-semi-bold);
+			margin-bottom: 40px;
+			position: relative;
+			color: _palette(bg);
+			padding-left: 20px;
+			.whiteCircle
+			{
+				width: 40px;
+				height: 40px;
+				left: 400px;
+				top: 80px;
+			}
+		}
+		> .inner {
+			@include vendor('transition', (
+				'opacity 1.5s ease',
+				'transform 0.5s ease-out',
+				'filter 0.5s ease',
+				'-webkit-filter 0.5s ease'
+			));
+			padding: 0 !important;
+			position: relative;
+			z-index: 2;			
+			margin: 0 auto!important;
+			max-width: 70%!important;
+			.image {
+				display: none;
+			}
+			header {
+				width: auto;
+
+				> :first-child {
+					width: auto;
+					&:after {
+						max-width: 100%;
+						height: 0;
+						margin: 0;
+					}
+				}
+			}
+
+			.content {
+				// @include vendor('display', 'flex');
+				@include vendor('display', 'block');
+				@include vendor('align-items', 'center');
+				@include vendor('justify-content', 'center');
+				@include vendor('text-align', 'center');
+				margin: 0 0 _size(element-margin) 0;
+
+				> * {
+					margin-left: 1.5em;
+					margin-bottom: 0;
+				}
+
+				> :first-child {
+					margin-left: 0;
+				}
+				.actions
+				{
+					li
+					{
+						position: relative;
+						.whiteCircle
+						{
+							width: 30px;
+					    height: 30px;
+					    right: -30px;
+					    bottom: -30px;
+						}
+					}
+					.bannerButton
+					{
+						background-color: #fff;
+						color: #34337f;
+						font-family: _font(family-fixed);
+						font-size: 24px;
+						font-weight: _font(weight-bold);
+						text-transform: capitalize;
+						letter-spacing: _font(letter-spacing-normal);
+						line-height: _font(line-height);
+						height: auto;
+						box-shadow: inset 0 0 0 2px _palette(bg);
+						padding: 14px 30px;
+						padding-right: 4.5em;
+						border-radius: 40px;
+						&:hover, &:active {
+							box-shadow: inset 0 0 0 2px _palette(highlight);
+							color: _palette(highlight);
+						}
+						&:before {
+							background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36px" height="24px" viewBox="0 0 36 24" zoomAndPan="disable"><style>line { stroke: #{_palette(fg-btn-bold)}; stroke-width: 2px; }</style><line x1="0" y1="12" x2="34" y2="12" /><line x1="25" y1="4" x2="34" y2="12.5" /><line x1="25" y1="20" x2="34" y2="11.5" /></svg>');
+						}
+						&.next {
+							padding-right: 4em;
+							position: relative;
+
+							&:before, &:after {
+								right: 30px;
+							}
+						}
+					}
+				}
+				p {
+					// font-size: 0.7em;
+					font-family: _font(family-fixed);
+					// font-weight: _font(weight-bold);
+					font-weight: _font(weight-semi-bold);
+					line-height: _font(line-height);
+					padding-top: 30px;
+					font-size: 24px;
+					padding-bottom: 20px;
+					color: _palette(bg);
+					// letter-spacing: _font(letter-spacing-alt);
+					// text-transform: uppercase;
+				}
+			}
+		}
+
+		&.major {
+			height: 75vh;
+			// min-height: 35em;
+			min-height: 44em;
+			max-height: 50em;
+
+			&.alt {
+				opacity: 0.75;
+			}
+		}
+
+		&.style1 { &:after { background-color: _palette(accent1); } }
+		&.style2 { &:after { background-color: _palette(accent2); } }
+		&.style3 { &:after { background-color: _palette(accent3); } }
+		&.style4 { &:after { background-color: _palette(accent4); } }
+		&.style5 { &:after { background-color: _palette(accent5); } }
+		&.style6 { &:after { background-color: _palette(accent6); } }
+
+		.body.is-loading & {
+			&:after {
+				opacity: 1.0;
+			}
+
+			> .inner {
+				@include vendor('filter', 'blur(0.125em)');
+				@include vendor('transform', 'translateX(-0.5em)');
+				opacity: 0;
+			}
+		}
+
+		@include breakpoint(large) {
+			background-attachment: scroll;
+		}
+
+		@include breakpoint(small) {
+			@include padding(3em, 0, (2em, 0, 0, 0));
+			height: auto;
+			margin-bottom: -2.75em;
+			max-height: none;
+			min-height: 0;
+			top: -2.75em;
+
+			h1 {
+				font-size: 2em;
+			}
+
+			> .inner {
+				.content {
+					display: block;
+
+					> * {
+						margin-left: 0;
+						margin-bottom: _size(element-margin);
+					}
+				}
+			}
+
+			&.major {
+				height: auto;
+				min-height: 0;
+				max-height: none;
+			}
+		}
+
+		@include breakpoint(xsmall) {
+			@include padding(4em, 0, (2em, 0, 0, 0));
+			> .inner {
+				.content {
+					p {
+						br {
+							display: none;
+						}
+					}
+				}
+			}
+
+			&.major {
+				@include padding(6em, 0, (2em, 0, 0, 0));
+			}
+		}
+	}
+
+@media screen and (max-width: 1680px) {
+	#banner {
+		.presents
+		{
+			padding-top: 50px;
+		}
+		> .inner {
+			margin: 0 auto!important;
+			max-width: 75%!important;
+			.datedisplay {
+				top: -35px;
+    	right: -100px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1280px) {
+	#banner {
+		> .inner {
+			.datedisplay {
+				top: -35px;
+    	right: -60px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1020px) {
+	#banner.major
+	{
+		min-height: 32em;
+	}
+	#banner {
+		h1 {
+			line-height: normal;
+			font-size: 2em;
+		}
+		h2 {
+			font-size: 1.5em;
+			.whiteCircle
+			{
+				top: 30px;
+				width: 25px;
+				height: 25px;
+				left: 165px
+			}
+		}
+	}
+}
+@media screen and (max-width: 736px) {
+	#banner.major {
+		height: 30em;
+    min-height: 30em;
+    max-height: none;
+		padding: 5em 0 0em 0;
+	}
+	#banner {
+
+		h1 {
+			padding-top: 5px;
+			line-height: normal;
+			font-size: 2.5em;
+		}
+		h2 {
+			font-size: 1.5em;
+			.whiteCircle
+			{
+				width: 25px;
+		    height: 25px;
+		    left: 165px;
+		    top: 30px;
+			}
+		}
+		.content
+		{
+			margin-bottom: 0 !important;
+			padding-top: 20px !important;
+			padding-left: 20px !important;
+			p
+			{
+				padding-bottom: 0;
+			}
+		}
+		.datedisplay
+		{
+			font-size: 12px;
+			right: 10px;
+    	top: 50px;
+			text-align: right;
+			.datetile
+			{
+				font-size: 20px;
+				line-height: normal;
+			}
+			.daysleft
+			{
+				.whiteCircle
+				{
+					width: 10px;
+			    height: 10px;
+			    right: 0;
+			    top: 20px;
+				}
+			}
+		}
+		> .inner {
+			max-width: 90%!important;
+			.content
+			{
+				p
+				{
+					font-size: 20px;
+					padding-bottom: 20px;
+					text-align: left;
+					padding-top: 0;
+				}
+				.actions
+				{
+					text-align: left;
+					li
+					{
+						position: relative;
+						.whiteCircle
+						{
+							width: 25px;
+					    height: 25px;
+					    right: -20px;
+					    bottom: -30px;
+						}
+					}
+					.bannerButton
+					{
+						font-size: 16px;
+						&:before, &:after {
+								background-size: 23px 20px;
+								width: 28px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 480px) {
+	#banner.major {
+		height: 28em;
+    min-height: 28em;
+    max-height: none;
+		padding: 5em 0 0 0;
+	}
+	header.major
+	{
+		margin-bottom: 1em;
+	}
+	#banner {
+		h1 {
+			line-height: normal;
+			font-size: 2.5em;
+		}
+		h2 {
+			font-size: 1em;
+			margin-bottom: 0;
+			.whiteCircle
+			{
+				width: 15px;
+		    height: 15px;
+		    left: 120px;
+		    top: 20px;
+			}
+		}
+		.datedisplay
+		{
+			font-size: 12px;
+			right: 10px;
+    	top: 50px;
+			text-align: right;
+			.datetile
+			{
+				font-size: 20px;
+				line-height: normal;
+			}
+			.daysleft
+			{
+				.whiteCircle
+				{
+					width: 10px;
+			    height: 10px;
+			    right: 0;
+			    top: 20px;
+				}
+			}
+		}
+		> .inner {
+			.content
+			{
+				p
+				{
+					font-size: 16px;
+					padding-bottom: 20px;
+					text-align: left;
+				}
+				.actions
+				{
+					text-align: left;
+					li
+					{
+						position: relative;
+						.whiteCircle
+						{
+							width: 25px;
+					    height: 25px;
+					    right: -20px;
+					    bottom: -30px;
+						}
+					}
+					.bannerButton
+					{
+						font-size: 16px;
+						&:before, &:after {
+								background-size: 23px 20px;
+								width: 28px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/* Landing page speaker section */
+#landingSpeaker
+{
+		padding-top: 50px;
+}
+.speakerListWrppar
+{
+	display: flex;
+  flex-wrap: wrap;
+	.speakerList
+	{
+		.profile
+		{
+			.speakerImage
+			{
+		    display: inline-flex;
+		    -webkit-box-pack: center;
+		    justify-content: center;
+		    -webkit-box-align: center;
+		    align-items: center;
+				img
+				{
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					object-position: center center;
+				}
+			}
+			.speakerProfile
+			{
+				margin-top: 10px;
+				.profileWrapper
+				{
+					display: flex;
+					align-items: flex-end;
+					.profileName
+					{
+						font-weight: bold;
+				    font-size: 18px;
+				    line-height: 1.4;
+				    vertical-align: middle;
+					}
+					.profileLinks
+					{
+						margin-left: 8px;
+				    padding-bottom: 4px;
+				    flex-shrink: 0;
+				    -webkit-box-flex: 1;
+				    flex-grow: 1;
+				    display: flex;
+				    -webkit-box-align: center;
+				    align-items: center;
+						.profileIcon
+						{
+							outline: 0;
+							cursor: pointer;
+					    display: inline-block;
+					    margin-right: 6px;
+					    line-height: 1;
+					    font-size: 15px;
+						}
+					}
+				}
+				.profielBio
+				{
+			    font-size: 16px;
+			    line-height: 1.45;
+			    color: #000;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1070px)
+{
+	.speakerList {
+	    width: calc((100% - 40px) / 4);
+	    margin-right: 10px;
+	    margin-bottom: 40px;
+			.profile
+			{
+				.speakerImage
+				{
+					width: 168px;
+			    height: 168px;
+				}
+			}
+	}
+}
+
+@media screen and (max-width: 1070px)
+{
+	.speakerList {
+			width: calc((100% - 40px) / 2);
+			margin-right: 20px;
+			margin-bottom: 40px;
+			.profile
+			{
+				.speakerImage
+				{
+					width: 128px;
+	    		height: 128px;
+				}
+			}
+	}
+}
+@media screen and (max-width: 736px)
+{
+	#landingSpeaker
+	{
+			padding-top: 0px;
+	}
+}
