@@ -14,7 +14,7 @@ const Schedule = () => (
         SCHEDULE
       </div>
       <div className={'pageDescription wd60'}>
-        We will have 3 full days packed with <span className={'fontBold'}>workshops, lightning talks, product demos, panel discussions</span> and in depth technical talks about all aspects of GraphQL, with a special section on <span className={'fontBold'}>cloud-native GraphQL</span> usage!
+        We will have 3 full days packed with <span className={'fontBold'}>workshops, lightning talks, panel discussions</span> and in depth technical talks about all things GraphQL, with a special focus on <span className={'fontBold'}>cloud-native GraphQL</span>.
       </div>
       <div className={'scheduleDetailsWrapper'}>
         <div className={'col-md-4 col-sm-4 col-xs-12 noPadd borderRight'}>

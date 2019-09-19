@@ -9,7 +9,7 @@ const Proposals = () => (
           CALL FOR PROPOSALS
         </div>
         <div className={'pageDescription'}>
-        Every year, we cater the best set of speakers and curate best talks from the community for you. If you want to apply for being one of the speakers, you can apply here
+          We will curate the best talks from the community and bring them to you! If you’ve been working with GraphQL in any capacity, we’d love to hear from you. We encourage first time speakers to apply. Do write to us if you have any questions.
         </div>
         <div className={'buttonWrapper'}>
           <a href="https://www.papercall.io/graphql-asia" target="_blank" rel="noopener noreferrer"><button className={'transparentBtn'}>SUBMIT A TALK</button></a>

@@ -18,7 +18,7 @@ const Sponsors = () => (
           SPONSORS
         </div>
         <div className={'pageDescription'}>
-          If you are looking for sponsorship opportunities to market your product, designs or services, GraphQL Asia is the best platform to interact with amazing set of CXOs, Team leads, professional and student developers. If you are interested in sponsoring this year’s event, please write to us at <a href="mailto:anubha@hasura.io">anubha@hasura.io</a>
+          GraphQL Asia presents the opportunity to market your product/company to over 500 of the forward thinking engineers and engineering leaders who have made GraphQL one of the most exciting technologies today! If you are interested in sponsoring this year’s event, please write to us at <a href="mailto:anubha@hasura.io">anubha@hasura.io</a>
         </div>
         <div className={'buttonWrapper'}>
           <a href="mailto:anubha@hasura.io?subject=Sponsoring GraphQL Asia"> <button className={'blueBtn'}>BECOME A SPONSOR</button></a>
