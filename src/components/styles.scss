@@ -30,6 +30,9 @@
   line-height: 1.2;
   letter-spacing: 4px;
   text-align: left;
+  &:focus {
+    outline: none;
+  }
 }
 .transparentBtnNav, .transparentBtn {
   border: 2px solid #ffffff;
@@ -230,6 +233,7 @@ img {
     color: #f81894;
   }
   a:hover {
+    color: #f81894;
     text-decoration: none;
     border-bottom: 1px solid #f81894;
   }
@@ -295,6 +299,9 @@ img {
     opacity: 0.88;
     &:hover {
       opacity: 1;
+      color: #ffffff;
+      text-decoration: none;
+      border-bottom: 1px solid #fff;
     }
   }
 }
