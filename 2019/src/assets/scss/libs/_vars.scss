@@ -1,0 +1,64 @@
+// Misc.
+	$misc: (
+		z-index-base:		10000
+	);
+
+// Duration.
+	$duration: (
+		menu:				0.35s,
+		transition:			0.2s,
+		banner:				2.5s
+	);
+
+// Size.
+	$size: (
+		border-radius:		4px,
+		element-height:		2.75em,
+		element-margin:		2em,
+		inner:				1024px//65em
+	);
+// Font.
+	$font:(
+		// family:				('josefin slab', georgia, serif),
+		family: ('Nunito Sans', sans-serif),
+		family-fixed:		('Roboto', sans-serif),
+		weight:				300,
+		weight-bold:		900,
+		weight-bold-semi:		600,
+		weight-semi-bold: 500,
+		letter-spacing:		0.025em,
+		letter-spacing-normal: normal,
+		letter-spacing-nav:	0.25em,
+		line-height: normal,
+		// letter-spacing-alt:	0.25em
+		letter-spacing-alt:	0.5em,
+		text-transform: uppercase,
+	);
+// Palette.
+	$circle: (
+	border-radius: 50%,
+	);
+	$palette: (
+		// bg:					#525252,
+		// bg:					#000,
+		bg:					#fff,
+		// bg-alt:				#3d3d3d,
+		bg-alt:				#fff,
+		// fg:					#ffffff,
+		fg:					#000,
+		// fg-bold:			#ffffff,
+		fg-bold:			#000,
+		fg-btn-bold: #34337f,
+		head-color: #35337f,
+		fg-circle: #e535ab,
+		fg-light:			rgba(255, 244, 253, 0.4),
+		border:				rgba(212,212,255,0.1),
+		border-bg:			rgba(212,212,255,0.035),
+		highlight:			#ff00a9,
+		accent1:			#f573c9,
+		accent2:			#999999,
+		accent3:			#8a8fa7,
+		accent4:			#d17db5,
+		accent5:			#df92c5,
+		accent6:			#adb1c5
+	);

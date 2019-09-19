@@ -1,0 +1,382 @@
+///
+/// Forty by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Spotlights */
+	.workshopDetails
+	{
+		display: flex;
+	}
+	.spotlights {
+		border-top: 0 !important;
+		width: 50%;
+		float: left;
+		padding: 0 30px;
+		& + * {
+			border-top: 0 !important;
+		}
+
+		&:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		.agendaItem{
+			// display: flex;
+			display: block;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			padding-left: 0;
+			border-left: 2px solid #ccc;
+			padding-left: 50px;
+		}
+		&.agenda{
+			margin: 0 auto;
+			max-width: 960px;
+			width: 100%;
+			float: none;
+			.speakerPosition{
+				font-size: 80%;
+			}
+			.addPaddTopLarge
+			{
+				padding-top: 70px;
+			}
+			h4
+			{
+				.active
+				{
+					color: #ff00a9 !important;
+				}
+			}
+			> h2{
+				text-align: center;
+				margin: 1em;
+				// color: white!important;
+			}
+			span, h3, h2, p{
+				// color: white;
+			}
+			> section {
+				header.major{
+					margin: 0;
+				}
+				.speakerSlot{
+					// color: _palette(bg);
+					// position: absolute;
+					// bottom: 0;
+					// background: white;
+					z-index: 99;
+					// border-bottom: 2px solid #777;
+					right: 0;
+					left: 0;
+					text-align: center;
+					width: 100%;
+					position: relative;
+					.pinkCircleSmall
+					{
+						position: absolute;
+						left: -60px;
+						top: 0;
+					}
+				}
+				.speakerTime{
+
+					border-radius: 0;
+					display: block;
+					position: relative;
+					width: 30%;
+					text-align: right;
+					line-height: 150px;
+				}
+				h3{
+					&:after{
+						display: none;
+					}
+				}
+				flex-direction: row!important;
+
+				&.extended{
+					height: 100%;
+				}
+				.inner{
+					text-align: left!important;
+				}
+
+				.agendaItem{
+					// border-bottom: 3px solid #777;
+					background: _palette(bg);
+					.infoIcon{
+						text-align: center!important;
+					}
+					span, h3, h2, p{
+						text-align: left!important;
+
+					}
+					.speakerDescription{
+						display: block;
+					}
+				}
+
+				&:nth-child(2n) {
+					@include vendor('flex-direction', 'row');
+					ul, h3,.talkTitle, p, h4 {
+						text-align: left;
+					}
+					header {
+						margin-left: 0;
+					}
+					> .content {
+						@include vendor('align-items', 'flex-start');
+					}
+				}
+			}
+		}
+		> section {
+			height: 300px;
+			@include vendor('display', 'flex');
+			@include vendor('flex-direction', 'row');
+			background-color: desaturate(lighten(_palette(bg-alt), 2), 1);
+
+			p{
+				// color: rgba(255,255,255,.5);
+				font-size: 80%;
+			}
+			ul, h3, p, h4 {
+				text-align: left;
+			}
+			.talkTitle{
+				text-align: left;
+				font-size: 100%;
+				font-weight: bold;
+				display: flex;
+				font-size: 18px;
+			}
+			.talkAbstract{
+				font-size: 80%;
+			}
+			.newImage {
+				.gatsby-image-wrapper{
+					width: 75px;
+					height: 75px;
+					border-radius: 50%;
+				}
+				background-position: center center;
+				background-size: cover;
+				// border-radius: 0;
+				display: block;
+				position: relative;
+				width: 30%;
+				padding-bottom: 10px;
+				img, .placeholder {
+					border-radius: 0;
+					display: block;
+					width: 100%;
+					object-fit: contain;
+					height: 100%;
+				}
+				.placeholder{
+					background-color: grey;
+				}
+
+
+
+				&:before {
+					background: transparentize(_palette(bg), 0.1);
+					content: '';
+					display: block;
+					height: 100%;
+					left: 0;
+					opacity: 0;
+					position: absolute;
+					top: 0;
+					width: 100%;
+				}
+			}
+
+			> .content {
+				@include vendor('display', 'flex');
+				@include vendor('flex-direction', 'column');
+				@include vendor('justify-content', 'center');
+				@include vendor('align-items', 'center');
+				@include padding(2em, 3em);
+				padding-left: 0;
+				width: 70%;
+
+				> .inner {
+					margin: 0 auto;
+					max-width: 100%;
+					width: _size(inner);
+					text-align: right;
+				}
+			}
+
+			&:nth-child(2n) {
+				@include vendor('flex-direction', 'row-reverse');
+				background-color: desaturate(lighten(_palette(bg-alt), 4), 2);
+				ul, h3,.talkTitle, p, h4 {
+					text-align: right;
+				}
+				header {
+					margin-left: auto;
+				}
+				> .content {
+					@include vendor('align-items', 'flex-end');
+				}
+			}
+		}
+
+		@include breakpoint(xlarge) {
+			> section {
+				.newImage, > .speakerTime {
+					width: 40%;
+				}
+
+				> .content {
+					width: 60%;
+				}
+			}
+		}
+
+		@include breakpoint(large) {
+
+		}
+
+		@include breakpoint(medium) {
+			section{
+				display: block!important;
+				// text-align: center!important;
+				.spotlights
+				{
+						padding: 0 30px;
+				}
+			}
+			.speakerSlot{
+				display: block;
+				font-weight: bold;
+				border: none!important;
+				padding: 1em 0;
+			}
+			&.agenda{
+
+				> section {
+					width: 100%;
+				float: none;
+					.agendaItem{
+						span, p, h3, h4{
+							// text-align: center!important;
+							display: block;
+						}
+					}
+				}
+			}
+			width: 100%;
+			float: none;
+			.speakerTime{
+				float: left;
+			}
+			.agendaItem{
+
+				height: 100%!important;
+				span, p, h3, h4{
+					// text-align: center!important;
+				}
+			}
+			.agendaItem .content{
+				width: 100%;
+				height: 100%;
+				// padding: 3em 1.5em 1em 1.5em;
+			}
+			> section {
+				height: auto;
+				display: block;
+
+				.newImage {
+					.gatsby-image-wrapper{
+						width: 100px;
+						height: 100px;
+					}
+					width: 100px;
+					height: 100px;
+					// text-align: center;
+					img{
+						width: 100%;
+						max-width: 200px;
+						max-height: 200px;
+						object-fit: contain;
+						height: 100%;
+						margin: 0 auto;
+						right: 0;
+					}
+				}
+
+				> .content {
+					@include padding(4em, 3em);
+					width: 100%;
+				}
+				header {
+					// margin: auto!important;
+				}
+				ul, h3,.talkTitle, p, h4 {
+					// text-align: center!important;
+				}
+			}
+		}
+
+		@include breakpoint(small) {
+			.workshopDetails
+			{
+				display: block;
+			}
+			width: 100%;
+			float: none;
+			> section {
+				height: auto;
+				width: 100%;
+				float: none;
+				> .content {
+					@include padding(0, 0);
+				}
+			}
+		}
+}
+@media screen and (max-width: 980px) {
+	.spotlights
+	{
+		.speakerSlot
+		{
+			text-align: left !important;
+		}
+	}
+}
+@media screen and (max-width: 480px) {
+	.workshopDetails
+	{
+		display: block;
+		text-align: center;
+	}
+	.pinkCircleSmall1
+	{
+		left: 10px;
+		display: none;
+	}
+	.spotlights
+	{
+		.agendaItem {
+			padding-left: 30px;
+		}
+		padding: 0 20px;
+		.speakerSlot
+		{
+			text-align: left !important;
+			.pinkCircleSmall
+			{
+				left: -40px !important;
+				top: 15px !important;
+			}
+		}
+	}
+}
