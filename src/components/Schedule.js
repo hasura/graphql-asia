@@ -1,5 +1,5 @@
 import React from "react"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 import './styles.scss'
 const scheduleIcon = require('../images/schedule.svg');
 const workshop = require('../images/workshop.svg');
@@ -58,7 +58,7 @@ const Schedule = () => (
         </div>
       </div>
       <div className={'buttonWrapper'}>
-        <a href="https://www.townscript.com/e/graphql-asia--2020/booking" target={'_blank'}><button className={'blueBtn'}>REGISTER</button></a>
+        <Link to="/tickets"><button className={'blueBtn'}>REGISTER</button></Link>
       </div>
       <div className={'sectionPosition'}>
         <div className={'purpleGradientBgColor col-md-12 col-sm-12 col-xs-12 noPadd wd90'}>

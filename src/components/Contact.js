@@ -60,7 +60,6 @@ class Contact extends React.Component {
           this.setState({isDone: true});
           console.log('clearData', clearData);
           this.setState({inputs: clearData});
-
           this.setState({isSending: false});
           this.setState({isFailure: false});
         }
@@ -108,7 +107,7 @@ class Contact extends React.Component {
                     (this.state.isFormInValid) ?
                     (
                       <div className={'successMessage'}>
-                        <div className={'successMessageSmall'}>Please enter valid inputs.</div>
+                        <div className={'successMessageSmall'}>Please enter valid inputs - All fields are mandatory.</div>
                       </div>) : ''
                   }
                   {
@@ -119,7 +118,7 @@ class Contact extends React.Component {
                     </div>) : ''
                   }
                   {
-                    (this.state.isFailure) ? <div className={'errorMessage'}>Error try again</div> : ''
+                    (this.state.isFailure) ? <div className={'errorMessage'}>Error... Please try again!</div> : ''
                   }
                 </form>
               </div>

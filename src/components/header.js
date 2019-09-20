@@ -1,11 +1,10 @@
 // import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import TopBanner from "../components/TopBanner"
 import './styles.scss'
 const logo = require('../images/logo.svg');
 const Header = ({ siteTitle }) => (
-  <header className={'bgImage'}>
+  <header>
     <div className="headerWrapper">
       <nav className="navbar navbar-default navBarDefault">
         <div className="container">
@@ -20,17 +19,16 @@ const Header = ({ siteTitle }) => (
           </div>
           <div className="collapse navbar-collapse navBarCollapse" id="bs-example-navbar-collapse-1">
             <ul className="nav navbar-nav navbar-right navBarRight">
-              <li className={'navBarList'}><a href="#overview">OVERVIEW</a></li>
-              <li className={'navBarList'}><a href="#speakers">SPEAKERS</a></li>
-              <li className={'navBarList'}><a href="#schedule">SCHEDULE</a></li>
-              <li className={'navBarList'}><a href="#sponsors">SPONSORS</a></li>
-              <li className={'navBarList'}><a href="#ticket"><button className={'transparentBtnNav'}>BUY TICKETS</button></a></li>
+              <li className={'navBarList'}><a href="/#overview">OVERVIEW</a></li>
+              <li className={'navBarList'}><a href="/#speakers">SPEAKERS</a></li>
+              <li className={'navBarList'}><a href="/#schedule">SCHEDULE</a></li>
+              <li className={'navBarList'}><a href="/#sponsors">SPONSORS</a></li>
+              <li className={'navBarList'}><a href="/#ticket">TICKETS</a></li>
             </ul>
           </div>
         </div>
       </nav>
     </div>
-    <TopBanner />
   </header>
 )
 
