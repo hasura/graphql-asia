@@ -27,16 +27,16 @@ const Brought = () => (
       <div className={'col-md-5 col-sm-5 col-xs-12'}>
         <div className={'brandWrapper'}>
           <div className={'sectionSubHeader removePaddBottom'}>
-            Brought to you by
-          </div>
-          <div className={'brand'}>
-            <a href="https://hasura.io/" target="_blank" rel="noopener noreferrer"><img src={hasuraLogo} alt={'Hasura logo'} /></a>
-          </div>
-          <div className={'sectionSubHeader removePaddBottom'}>
             Ticketing partner
           </div>
-          <div className={'brand removePaddBottom'}>
+          <div className={'brand'}>
             <a href="https://www.townscript.com/" target="_blank" rel="noopener noreferrer"><img src={townscriptLogo} alt={'Townscript logo'} /></a>
+          </div>
+          <div className={'sectionSubHeader removePaddBottom'}>
+            Brought to you by
+          </div>
+          <div className={'brand removePaddBottom'}>
+            <a href="https://hasura.io/" target="_blank" rel="noopener noreferrer"><img src={hasuraLogo} alt={'Hasura logo'} /></a>
           </div>
         </div>
       </div>
