@@ -737,6 +737,10 @@ img {
       .fieldLabel {
         display: block;
         padding-bottom: 15px;
+        margin-bottom: 0;
+        input {
+          margin-top: 15px;
+        }
       }
       input {
         height: 60px;
