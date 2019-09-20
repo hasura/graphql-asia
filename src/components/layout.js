@@ -7,6 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import { useEffect } from "react"
 
 import Header from "./header"
 import "./layout.css"
@@ -18,6 +19,17 @@ const facebookBrands = require('../images/facebook-brands.svg');
 const youtubeBrands = require('../images/youtube-brands.svg');
 
 const Layout = ({ children }) => {
+  useEffect( () => {
+    const hash = window.location.hash.replace('#', '');
+    if (hash) {
+      setTimeout( () => {
+        const node = document.getElementById(hash);
+        if (node) {
+          node.scrollIntoView();
+        }
+      }, 500);
+    }
+  }, [])
   return (
     <>
       <div>

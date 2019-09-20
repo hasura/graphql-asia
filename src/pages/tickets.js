@@ -3,13 +3,15 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
-
+import '../components/styles.scss'
+import TicketsTopBanner from '../components/TicketsTopBanner'
 const IndexPage = () => (
   <Layout>
     <SEO title="Tickets" />
-      <iframe title="tickets" src="https://www.townscript.com/widget/graphql-asia--2020" frameBorder="0" height="770" width="100%"></iframe>
-      <button onClick='popup("graphql-asia--2020");' className="tsbutton">Register Now</button>
+      <TicketsTopBanner/>
+      <div className={'ticketsWrapper'}>
+        <iframe title="tickets" src="https://www.townscript.com/widget/graphql-asia--2020" frameBorder="0" height="770" width="100%"></iframe>
+      </div>
   </Layout>
 )
 
