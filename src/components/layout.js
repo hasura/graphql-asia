@@ -20,6 +20,7 @@ const youtubeBrands = require('../images/youtube-brands.svg');
 
 const Layout = ({ children }) => {
   useEffect( () => {
+    console.log('abcd');
     const hash = window.location.hash.replace('#', '');
     if (hash) {
       setTimeout( () => {

@@ -398,6 +398,12 @@ img {
             letter-spacing: 4px;
             text-align: left;
             color: #ffffff;
+            &:focus {
+              outline: none;
+            }
+            &:hover {
+              opacity: 1;
+            }
           }
           .navbarActive {
             opacity: 1;
