@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
       setTimeout( () => {
         const node = document.getElementById(hash);
         if (node) {
-          node.scrollIntoView();
+          node.scrollIntoView({ block: 'start', behavior: 'smooth' })
         }
       }, 500);
     }
