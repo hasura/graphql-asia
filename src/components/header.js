@@ -4,6 +4,17 @@ import React from "react"
 import './styles.scss'
 const logo = require('../images/logo.svg');
 const Header = ({ siteTitle }) => {
+  const scrollToView = (e) => {
+    // e.preventDefault();
+    const element = e.target.getAttribute('srollid');
+    if (window.location.pathname !== '/') {
+      window.location.href = element;
+    }
+    const node = document.getElementById(element.split('#')[1]);
+    console.log('element', window.location.pathname);
+    console.log('element', element);
+    node.scrollIntoView({ block: 'start', behavior: 'smooth' })
+  }
   return (
     <header>
       <div className="headerWrapper">
@@ -20,11 +31,11 @@ const Header = ({ siteTitle }) => {
             </div>
             <div className="collapse navbar-collapse navBarCollapse" id="bs-example-navbar-collapse-1">
               <ul className="nav navbar-nav navbar-right navBarRight">
-                <li className={'navBarList'}><Link to="/#overview">OVERVIEW</Link></li>
-                <li className={'navBarList'}><Link to="/#speakers">SPEAKERS</Link></li>
-                <li className={'navBarList'}><Link to="/#schedule">SCHEDULE</Link></li>
-                <li className={'navBarList'}><Link to="/#sponsors">SPONSORS</Link></li>
-                <li className={'navBarList'}><Link to="/#ticket">TICKETS</Link></li>
+                <li className={'navBarList'}><button onClick={scrollToView} srollid="/#overview">OVERVIEW</button></li>
+                <li className={'navBarList'}><button onClick={scrollToView} srollid="/#speakers">SPEAKERS</button></li>
+                <li className={'navBarList'}><button onClick={scrollToView} srollid="/#schedule">SCHEDULE</button></li>
+                <li className={'navBarList'}><button onClick={scrollToView} srollid="/#sponsors">SPONSORS</button></li>
+                <li className={'navBarList'}><button onClick={scrollToView} srollid="/#ticket">TICKETS</button></li>
               </ul>
             </div>
           </div>

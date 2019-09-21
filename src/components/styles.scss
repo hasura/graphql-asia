@@ -387,7 +387,7 @@ img {
         align-items: center;
         .navBarList {
           margin-bottom: 0;
-          a {
+          button {
             opacity: 0.85;
             font-family: 'Roboto';
             font-size: 20px;
@@ -398,6 +398,10 @@ img {
             letter-spacing: 4px;
             text-align: left;
             color: #ffffff;
+            margin: 10px 15px;
+            padding: 0;
+            background-color: transparent;
+            border: 0;
             &:focus {
               outline: none;
             }
@@ -896,7 +900,7 @@ img {
       .navBarCollapse {
         .navBarRight {
           .navBarList {
-            a {
+            button {
               font-size: 15px;
               padding: 10px 10px;
               letter-spacing: 1px;
@@ -1048,7 +1052,7 @@ img {
         .navBarRight {
           display: block;
           .navBarList {
-            a {
+            button {
               font-size: 16px;
               padding: 10px 10px;
             }
