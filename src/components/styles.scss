@@ -366,6 +366,8 @@ img {
 }
 .headerWrapper {
   color: #fff;
+  position: absolute;
+  width: 100%;
   .navBarDefault {
     border-radius: 0;
     border: 0;
@@ -385,7 +387,7 @@ img {
         align-items: center;
         .navBarList {
           margin-bottom: 0;
-          a {
+          button {
             opacity: 0.85;
             font-family: 'Roboto';
             font-size: 20px;
@@ -396,6 +398,16 @@ img {
             letter-spacing: 4px;
             text-align: left;
             color: #ffffff;
+            margin: 10px 15px;
+            padding: 0;
+            background-color: transparent;
+            border: 0;
+            &:focus {
+              outline: none;
+            }
+            &:hover {
+              opacity: 1;
+            }
           }
           .navbarActive {
             opacity: 1;
@@ -408,16 +420,21 @@ img {
     }
   }
 }
-.bgImage {
+.bgImage, .ticketsBgImage {
   background-color: #25246b;
   background-image: url('../images/bg.png');
   background-repeat: no-repeat;
   background-size: cover;
+}
+.bgImage {
   height: 800px;
+}
+.ticketsBgImage {
+  height: 520px;
 }
 /* Top Banner */
 .topBannerWrapper {
-  padding-top: 80px;
+  padding-top: 200px;
   padding-bottom: 100px;
   .headerImg {
     text-align: center;
@@ -636,7 +653,6 @@ img {
   .pageDescription {
     padding-bottom: 40px;
     color: #fff;
-    width: 50%;
     a {
       color: #fff;
       text-decoration: underline;
@@ -649,8 +665,13 @@ img {
   .buttonWrapper {
     padding-bottom: 40px;
   }
-  .brand {
-    padding-top: 30px;
+  .brandWrapper {
+    float: right;
+    padding-top: 118px;
+    .brand {
+      padding-bottom: 100px;
+      padding-top: 30px;
+    }
   }
 }
 /* Subscribe */
@@ -726,6 +747,10 @@ img {
       .fieldLabel {
         display: block;
         padding-bottom: 15px;
+        margin-bottom: 0;
+        input {
+          margin-top: 15px;
+        }
       }
       input {
         height: 60px;
@@ -832,6 +857,9 @@ img {
   .bgImage {
     height: 650px;
   }
+  .ticketsBgImage {
+    height: 370px;
+  }
   .copyRight {
     font-size: 16px;
   }
@@ -872,7 +900,7 @@ img {
       .navBarCollapse {
         .navBarRight {
           .navBarList {
-            a {
+            button {
               font-size: 15px;
               padding: 10px 10px;
               letter-spacing: 1px;
@@ -883,6 +911,7 @@ img {
     }
   }
   .topBannerWrapper {
+    padding-top: 170px;
     padding-bottom: 80px;
     .placeDetails {
       .details {
@@ -933,11 +962,12 @@ img {
     .sectionHeader, .pageDescription, .sectionSubHeader {
       padding-bottom: 30px;
     }
-    .pageDescription {
-      width: 65%;
-    }
-    .brand {
-      padding-top: 20px;
+    .brandWrapper {
+      padding-top: 82px;
+      .brand {
+        padding-top: 20px;
+        padding-bottom: 80px;
+      }
     }
   }
   .contactWrapper {
@@ -954,6 +984,9 @@ img {
   }
   .bgImage {
     height: 500px;
+  }
+  .ticketsBgImage {
+    height: 280px;
   }
   .positionBottom {
     padding-bottom: 40px !important;
@@ -1019,7 +1052,7 @@ img {
         .navBarRight {
           display: block;
           .navBarList {
-            a {
+            button {
               font-size: 16px;
               padding: 10px 10px;
             }
@@ -1029,7 +1062,7 @@ img {
     }
   }
   .topBannerWrapper {
-    padding-top: 30px;
+    padding-top: 130px;
     padding-bottom: 7px;
     .headerImg {
       img {
@@ -1181,11 +1214,16 @@ img {
       text-align: center;
       padding-bottom: 30px;
     }
-    .brand {
-      padding-top: 20px;
-      text-align: center;
-      img {
-        width: 175px;
+    .brandWrapper {
+      float: none;
+      padding-top: 30px;
+      .brand {
+        padding-top: 10px;
+        padding-bottom: 40px;
+        text-align: center;
+        img {
+          width: 175px;
+        }
       }
     }
   }
@@ -1248,5 +1286,10 @@ img {
         max-height: 1038px;
       }
     }
+  }
+}
+@media (max-width: 450px) {
+  .ticketsBgImage {
+    height: 240px;
   }
 }
