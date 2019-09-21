@@ -11,8 +11,6 @@ const Header = ({ siteTitle }) => {
       window.location.href = element;
     }
     const node = document.getElementById(element.split('#')[1]);
-    console.log('element', window.location.pathname);
-    console.log('element', element);
     node.scrollIntoView({ block: 'start', behavior: 'smooth' })
   }
   return (
