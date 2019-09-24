@@ -1055,8 +1055,9 @@ img {
           margin-bottom: 0;
           margin-top: 0;
           .navBarList {
+            background-color: rgba(221, 221, 221, 0.2);
             button {
-              background-color: rgba(221, 221, 221, 0.2);
+              color: #fff;
               font-size: 16px;
               padding: 10px 10px;
             }
