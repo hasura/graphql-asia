@@ -15,14 +15,14 @@ export default class HTML extends React.Component {
           />
           <meta title="Graphql Asia 2020" />
           <meta name="title" content="GraphQL Asia 2020" />
-          <meta name="description" content="Graphql Asia 2020" />
+          <meta name="description" content="GraphQL Asia is the largest gathering of the GraphQL community in Asia! With over 500 people expected at the 2020 edition, you’ll meet the creators of leading GraphQL tooling, talk to the experts implementing GraphQL in their companies as well as practitioners and enthusiasts from Asia and the rest of the world." />
           <meta property="og:title" content="Graphql Asia 2020" />
-          <meta property="og:description" content="Graphql Asia 2020" />
-          <meta property="og:image" content="https://graphql.asia/static/graphql-asia.png" />
+          <meta property="og:description" content="GraphQL Asia is the largest gathering of the GraphQL community in Asia! With over 500 people expected at the 2020 edition, you’ll meet the creators of leading GraphQL tooling, talk to the experts implementing GraphQL in their companies as well as practitioners and enthusiasts from Asia and the rest of the world." />
+          <meta property="og:image" content="https://graphql.asia/graphql-asia.png" />
           <meta property="twitter:card" content="summary_large_image" />
           <meta property="twitter:title" content="Graphql Asia 2020" />
-          <meta property="twitter:description" content="Graphql Asia 2020" />
-          <meta property="twitter:image" content="https://graphql.asia/static/graphql-asia.png" />
+          <meta property="twitter:description" content="GraphQL Asia is the largest gathering of the GraphQL community in Asia! With over 500 people expected at the 2020 edition, you’ll meet the creators of leading GraphQL tooling, talk to the experts implementing GraphQL in their companies as well as practitioners and enthusiasts from Asia and the rest of the world." />
+          <meta property="twitter:image" content="https://graphql.asia/graphql-asia.png" />
 
           {this.props.headComponents}
           <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
