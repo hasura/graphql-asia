@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `GraphQL Asia`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `GraphQL Asia 2020`,
+    description: "GraphQL Asia is the largest gathering of the GraphQL community in Asia! With over 500 people expected at the 2020 edition, you’ll meet the creators of leading GraphQL tooling, talk to the experts implementing GraphQL in their companies as well as practitioners and enthusiasts from Asia and the rest of the world.",
+    author: `@graphqlasia`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
