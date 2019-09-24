@@ -13,7 +13,7 @@ import Brought from '../components/Brought'
 import Contact from '../components/Contact'
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="GraphQL Asia 2020" />
     <TopBanner />
     <Overview />
     <Proposals />

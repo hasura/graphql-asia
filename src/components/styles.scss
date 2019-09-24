@@ -1049,10 +1049,15 @@ img {
         }
       }
       .navBarCollapse {
+        background-color: #25246b;
         .navBarRight {
           display: block;
+          margin-bottom: 0;
+          margin-top: 0;
           .navBarList {
+            border-bottom: 1px solid rgba(221, 221, 221, .2);
             button {
+              color: #fff;
               font-size: 16px;
               padding: 10px 10px;
             }
