@@ -356,11 +356,11 @@ img {
 }
 .details {
   font-family: 'Roboto';
-  font-size: 23px;
+  font-size: 22px;
   font-weight: 900;
   font-style: normal;
   font-stretch: normal;
-  letter-spacing: 4.8px;
+  letter-spacing: 3.8px;
   color: #ffffff;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
@@ -516,7 +516,7 @@ img {
   }
   .overviewImg {
     img {
-      border-radius: 20px;
+      // border-radius: 20px;
     }
   }
 }
@@ -931,7 +931,7 @@ img {
     .placeDetails {
       .details {
         padding: 0 20px;
-        font-size: 20px;
+        font-size: 19px;
         letter-spacing: 2px;
       }
     }
