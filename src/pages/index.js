@@ -7,6 +7,7 @@ import TopBanner from "../components/TopBanner"
 import Overview from '../components/Overview'
 import Proposals from '../components/Proposals'
 import Schedule from '../components/Schedule'
+import Venue from '../components/Venue'
 import Sponsors from '../components/Sponsors'
 import Brought from '../components/Brought'
 // import Subscribe from '../components/Subscribe'
@@ -18,6 +19,7 @@ const IndexPage = () => (
     <Overview />
     <Proposals />
     <Schedule />
+    <Venue />
     <Sponsors />
     <Brought />
     {/* <Subscribe /> */}

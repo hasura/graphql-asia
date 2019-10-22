@@ -356,7 +356,7 @@ img {
 }
 .details {
   font-family: 'Roboto';
-  font-size: 24px;
+  font-size: 23px;
   font-weight: 900;
   font-style: normal;
   font-stretch: normal;
@@ -458,7 +458,7 @@ img {
     display: flex;
     justify-content: center;
     .details {
-      padding: 0 60px;
+      padding: 0 40px;
       display: flex;
       img {
         margin-right: 16px;
@@ -492,8 +492,12 @@ img {
     }
   }
 }
-/* Overview and Sponsors*/
-.overviewWrapper, .sponsorWrapper {
+/* Venue */
+.venueWrapper {
+
+}
+/* Overview, Sponsors and Venue */
+.overviewWrapper, .sponsorWrapper, .venueWrapper {
   position: relative;
   .sectionHeader, .pageDescription {
     padding-bottom: 60px;
@@ -513,6 +517,17 @@ img {
   .overviewImg {
     img {
       border-radius: 20px;
+    }
+  }
+}
+/* Venue */
+.venueWrapper {
+  .pageDescription {
+    padding-bottom: 0;
+  }
+  .overviewImg {
+    img {
+      border-radius: 0px;
     }
   }
 }
@@ -921,10 +936,15 @@ img {
       }
     }
   }
-  .overviewWrapper, .sponsorWrapper {
+  .overviewWrapper, .sponsorWrapper, .venueWrapper {
     .sectionHeader, .pageDescription {
       padding-bottom: 30px;
       padding-right: 50px;
+    }
+  }
+  .venueWrapper {
+    .pageDescription {
+      padding-bottom: 0;
     }
   }
   .sponsorWrapper {
@@ -1085,7 +1105,7 @@ img {
         font-size: 18px;
         display: block;
         text-align: center;
-        padding-bottom: 10px;
+        padding-bottom: 15px;
         letter-spacing: 2px;
       }
     }
@@ -1093,7 +1113,7 @@ img {
       padding-bottom: 20px;
     }
   }
-  .overviewWrapper, .sponsorWrapper {
+  .overviewWrapper, .sponsorWrapper, .venueWrapper {
     .sectionHeader, .pageDescription {
       padding: 0 10px;
       text-align: center;
