@@ -22,7 +22,7 @@ const TopBanner = () => (
       </div>
       <div className={'details'}>
         <img src={place} alt={'Place icon'} />
-        LEELA PALACE, BENGALURU
+        THE LEELA PALACE, BENGALURU
       </div>
     </div>
   </div>
