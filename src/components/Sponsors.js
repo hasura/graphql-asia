@@ -11,7 +11,7 @@ const atlassian = require('../images/atlassian.svg');
 const github = require('../images/github.svg');
 
 const Sponsors = () => (
-  <div id="sponsors" className={'sponsorWrapper sectionWrapper watermarkWrapper lightGrayBgColor positionTop'}>
+  <div id="sponsors" className={'sponsorWrapper sectionWrapper watermarkWrapper'}>
     <div className={'container noPadd'}>
       <div className={'col-md-8 col-sm-8 col-xs-12 noPadd'}>
         <div className={'sectionHeader'}>
