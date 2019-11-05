@@ -518,6 +518,9 @@ img {
   .sectionHeader {
     color: #27216e;
   }
+  .blueLink {
+    padding-top: 30px;
+  }
   .scheduleBg {
     z-index: -1;
     position: absolute;
@@ -543,6 +546,7 @@ img {
 /* Sponsors */
 .sponsorWrapper {
   .buttonWrapper {
+    padding-top: 30px;
     .blueBtn {
       margin-right: 40px;
     }
@@ -1138,6 +1142,9 @@ img {
       padding: 0 10px;
       text-align: center;
       // padding-bottom: 20px;
+    }
+    .pageDescription {
+      padding-bottom: 20px;
     }
     .overviewImg {
       text-align: center;
