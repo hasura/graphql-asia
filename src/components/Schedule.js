@@ -13,6 +13,7 @@ const Schedule = () => (
       <div className={'sectionHeader'}>
         SCHEDULE
       </div>
+      <div className={'pinkSeperateLine'}></div>
       <div className={'pageDescription wd60'}>
         We will have 3 full days packed with <span className={'fontBold'}>workshops, lightning talks, panel discussions</span> and in depth technical talks about all things GraphQL, with a special focus on <span className={'fontBold'}>cloud-native GraphQL</span>.
       </div>
