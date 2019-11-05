@@ -34,6 +34,14 @@
     outline: none;
   }
 }
+.pinkSeperateLine {
+  width: 32px;
+  height: 4px;
+  background-color: #F81894;
+  border-radius: 4px;
+  margin: 30px 0;
+  margin-top: 15px;
+}
 .transparentBtnNav, .transparentBtn {
   border: 2px solid #ffffff;
   background-color: transparent;
@@ -131,6 +139,10 @@
 }
 .displayFlex {
   display: flex !important;
+}
+.displayEnd {
+  display: flex;
+  align-items: flex-end;
 }
 img {
   margin-bottom: 0 !important;
@@ -497,7 +509,7 @@ img {
 .overviewWrapper, .sponsorWrapper, .venueWrapper {
   position: relative;
   .sectionHeader, .pageDescription {
-    padding-bottom: 60px;
+    // padding-bottom: 60px;
     padding-right: 70px;
   }
   .pageDescription {
@@ -569,11 +581,15 @@ img {
 .scheduleWrapper {
   position: relative;
   z-index: 2;
+  .pinkSeperateLine {
+    margin: 30px auto;
+    margin-top: 15px;
+  }
   .sectionHeader, .pageDescription {
     text-align: center;
   }
   .pageDescription {
-    padding-top: 30px;
+    // padding-top: 30px;
     padding-bottom: 30px
   }
   .sectionHeader {
@@ -996,6 +1012,13 @@ img {
   }
 }
 @media(max-width: 767px) {
+  .displayEnd {
+    display: block;
+  }
+  .pinkSeperateLine {
+    margin: 30px auto;
+    margin-top: 15px;
+  }
   .wd60 {
     width: 95%;
   }
@@ -1114,7 +1137,7 @@ img {
     .sectionHeader, .pageDescription {
       padding: 0 10px;
       text-align: center;
-      padding-bottom: 20px;
+      // padding-bottom: 20px;
     }
     .overviewImg {
       text-align: center;
@@ -1128,6 +1151,7 @@ img {
   .sponsorWrapper {
     .buttonWrapper {
       text-align: center;
+      padding-top: 20px;
       .blueBtn {
         margin-right: 0;
       }
@@ -1183,7 +1207,7 @@ img {
       }
     }
     .pageDescription {
-      padding-top: 20px;
+      // padding-top: 20px;
       padding-bottom: 0;
     }
     .scheduleDetailsWrapper {
