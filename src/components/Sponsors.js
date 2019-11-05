@@ -9,7 +9,7 @@ const amplify = require('../images/amplify.svg');
 const tokopedia = require('../images/tokopedia.svg');
 const atlassian = require('../images/atlassian.svg');
 const github = require('../images/github.svg');
-
+const dgraph = require('../images/dgraph-logo.svg');
 const Sponsors = () => (
   <div id="sponsors" className={'sponsorWrapper sectionWrapper watermarkWrapper'}>
     <div className={'container noPadd'}>
@@ -28,6 +28,14 @@ const Sponsors = () => (
       <div className={'col-md-4 col-sm-4 col-xs-12 '}>
         <div className={'overviewImg'}>
           <img src={graphql} alt={'Graphql'} />
+        </div>
+      </div>
+      <div className={'pastSponsorWrapper'}>
+        <div className={'sectionSubHeader'}>
+          Platinum Sponsors
+        </div>
+        <div className={'platinumIcons'}>
+          <a href="https://dgraph.io/" target="_blank" rel="noopener noreferrer"><img src={dgraph} alt={'Dgraph'}/></a>
         </div>
       </div>
       <div className={'pastSponsorWrapper'}>

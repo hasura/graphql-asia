@@ -492,16 +492,13 @@ img {
     }
   }
 }
-/* Venue */
-.venueWrapper {
 
-}
 /* Overview, Sponsors and Venue */
 .overviewWrapper, .sponsorWrapper, .venueWrapper {
   position: relative;
   .sectionHeader, .pageDescription {
     padding-bottom: 60px;
-    padding-right: 100px;
+    padding-right: 70px;
   }
   .pageDescription {
     line-height: 1.33;
@@ -523,7 +520,7 @@ img {
 /* Venue */
 .venueWrapper {
   .pageDescription {
-    padding-bottom: 0;
+    padding-bottom: 32px;
   }
   .overviewImg {
     img {
@@ -944,7 +941,7 @@ img {
   }
   .venueWrapper {
     .pageDescription {
-      padding-bottom: 0;
+      padding-bottom: 20px;
     }
   }
   .sponsorWrapper {
@@ -1121,6 +1118,7 @@ img {
     }
     .overviewImg {
       text-align: center;
+      padding-top: 20px;
       img {
         width: 90%;
         display: inline-block;
@@ -1151,6 +1149,12 @@ img {
         }
         img {
           margin-right: 0;
+        }
+      }
+      .platinumIcons {
+        text-align: center;
+        img {
+          display: inline-block;
         }
       }
     }
