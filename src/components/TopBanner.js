@@ -10,7 +10,7 @@ const TopBanner = () => (
       <img src={graphqlAsia} alt={'GRAPHQL ASIA 2020'} />
     </div>
     <div className={'pageDescription'}>
-      Asia’s largest GraphQL conference is back!<br/>Limited Super <span className={'fontBold'}>Early Bird Tickets</span> available now!
+      Asia’s largest GraphQL conference is back!
     </div>
     <div className={'buttonWrapper'}>
       <Link to="/tickets"><button className={'whiteBtn'}>BUY TICKETS</button></Link>
@@ -22,7 +22,7 @@ const TopBanner = () => (
       </div>
       <div className={'details'}>
         <img src={place} alt={'Place icon'} />
-        BENGALURU
+        THE LEELA PALACE, BENGALURU
       </div>
     </div>
   </div>

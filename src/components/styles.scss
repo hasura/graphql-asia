@@ -34,6 +34,14 @@
     outline: none;
   }
 }
+.pinkSeperateLine {
+  width: 32px;
+  height: 4px;
+  background-color: #F81894;
+  border-radius: 4px;
+  margin: 30px 0;
+  margin-top: 15px;
+}
 .transparentBtnNav, .transparentBtn {
   border: 2px solid #ffffff;
   background-color: transparent;
@@ -131,6 +139,10 @@
 }
 .displayFlex {
   display: flex !important;
+}
+.displayEnd {
+  display: flex;
+  align-items: flex-end;
 }
 img {
   margin-bottom: 0 !important;
@@ -356,11 +368,11 @@ img {
 }
 .details {
   font-family: 'Roboto';
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 900;
   font-style: normal;
   font-stretch: normal;
-  letter-spacing: 4.8px;
+  letter-spacing: 3.8px;
   color: #ffffff;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
@@ -458,7 +470,7 @@ img {
     display: flex;
     justify-content: center;
     .details {
-      padding: 0 60px;
+      padding: 0 40px;
       display: flex;
       img {
         margin-right: 16px;
@@ -492,18 +504,22 @@ img {
     }
   }
 }
-/* Overview and Sponsors*/
-.overviewWrapper, .sponsorWrapper {
+
+/* Overview, Sponsors and Venue */
+.overviewWrapper, .sponsorWrapper, .venueWrapper {
   position: relative;
   .sectionHeader, .pageDescription {
-    padding-bottom: 60px;
-    padding-right: 100px;
+    // padding-bottom: 60px;
+    padding-right: 70px;
   }
   .pageDescription {
     line-height: 1.33;
   }
   .sectionHeader {
     color: #27216e;
+  }
+  .blueLink {
+    padding-top: 30px;
   }
   .scheduleBg {
     z-index: -1;
@@ -512,13 +528,25 @@ img {
   }
   .overviewImg {
     img {
-      border-radius: 20px;
+      // border-radius: 20px;
+    }
+  }
+}
+/* Venue */
+.venueWrapper {
+  .pageDescription {
+    padding-bottom: 32px;
+  }
+  .overviewImg {
+    img {
+      border-radius: 0px;
     }
   }
 }
 /* Sponsors */
 .sponsorWrapper {
   .buttonWrapper {
+    padding-top: 30px;
     .blueBtn {
       margin-right: 40px;
     }
@@ -557,11 +585,15 @@ img {
 .scheduleWrapper {
   position: relative;
   z-index: 2;
+  .pinkSeperateLine {
+    margin: 30px auto;
+    margin-top: 15px;
+  }
   .sectionHeader, .pageDescription {
     text-align: center;
   }
   .pageDescription {
-    padding-top: 30px;
+    // padding-top: 30px;
     padding-bottom: 30px
   }
   .sectionHeader {
@@ -916,15 +948,20 @@ img {
     .placeDetails {
       .details {
         padding: 0 20px;
-        font-size: 20px;
+        font-size: 19px;
         letter-spacing: 2px;
       }
     }
   }
-  .overviewWrapper, .sponsorWrapper {
+  .overviewWrapper, .sponsorWrapper, .venueWrapper {
     .sectionHeader, .pageDescription {
       padding-bottom: 30px;
       padding-right: 50px;
+    }
+  }
+  .venueWrapper {
+    .pageDescription {
+      padding-bottom: 20px;
     }
   }
   .sponsorWrapper {
@@ -979,6 +1016,13 @@ img {
   }
 }
 @media(max-width: 767px) {
+  .displayEnd {
+    display: block;
+  }
+  .pinkSeperateLine {
+    margin: 30px auto;
+    margin-top: 15px;
+  }
   .wd60 {
     width: 95%;
   }
@@ -1085,7 +1129,7 @@ img {
         font-size: 18px;
         display: block;
         text-align: center;
-        padding-bottom: 10px;
+        padding-bottom: 15px;
         letter-spacing: 2px;
       }
     }
@@ -1093,14 +1137,18 @@ img {
       padding-bottom: 20px;
     }
   }
-  .overviewWrapper, .sponsorWrapper {
+  .overviewWrapper, .sponsorWrapper, .venueWrapper {
     .sectionHeader, .pageDescription {
       padding: 0 10px;
       text-align: center;
+      // padding-bottom: 20px;
+    }
+    .pageDescription {
       padding-bottom: 20px;
     }
     .overviewImg {
       text-align: center;
+      padding-top: 20px;
       img {
         width: 90%;
         display: inline-block;
@@ -1110,6 +1158,7 @@ img {
   .sponsorWrapper {
     .buttonWrapper {
       text-align: center;
+      padding-top: 20px;
       .blueBtn {
         margin-right: 0;
       }
@@ -1131,6 +1180,12 @@ img {
         }
         img {
           margin-right: 0;
+        }
+      }
+      .platinumIcons {
+        text-align: center;
+        img {
+          display: inline-block;
         }
       }
     }
@@ -1159,7 +1214,7 @@ img {
       }
     }
     .pageDescription {
-      padding-top: 20px;
+      // padding-top: 20px;
       padding-bottom: 0;
     }
     .scheduleDetailsWrapper {
