@@ -560,12 +560,17 @@ img {
   }
   .pastSponsorWrapper {
     clear: both;
-    padding-top: 60px;
+    padding-top: 80px;
     .icons {
+      padding-bottom: 40px;
       img {
         display: inline-block;
-        margin-right: 45px;
+        margin-right: 60px;
         max-height: 50px;
+        max-width: 330px;
+      }
+      .gdgb {
+        max-width: 220px;
       }
     }
   }
@@ -1174,9 +1179,10 @@ img {
       }
       .icons {
         text-align: center;
+        padding-bottom: 0;
         a {
           display: block;
-          padding-bottom: 10px;
+          padding-bottom: 15px;
         }
         img {
           margin-right: 0;
