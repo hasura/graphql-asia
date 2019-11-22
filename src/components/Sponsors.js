@@ -3,13 +3,16 @@ import React from "react"
 import './styles.scss'
 const graphql = require('../images/graphql.svg');
 const sponsors = require('../images/sponsors.svg');
-
-const digitalOcean = require('../images/digital-ocean.svg');
-const amplify = require('../images/amplify.svg');
-const tokopedia = require('../images/tokopedia.svg');
-const atlassian = require('../images/atlassian.svg');
-const github = require('../images/github.svg');
 const dgraph = require('../images/dgraph-logo.svg');
+const wt = require('../images/wt.png');
+const cb = require('../images/cb.png');
+const moz = require('../images/moz.png');
+const gs = require('../images/gs.png');
+const js = require('../images/js.png');
+const msp = require('../images/msp.png');
+const gdgb = require('../images/gdgb.png');
+
+
 const Sponsors = () => (
   <div id="sponsors" className={'sponsorWrapper sectionWrapper watermarkWrapper'}>
     <div className={'container noPadd'}>
@@ -41,14 +44,18 @@ const Sponsors = () => (
       </div>
       <div className={'pastSponsorWrapper'}>
         <div className={'sectionSubHeader'}>
-          Past Sponsors
+          Community Partners
         </div>
         <div className={'icons'}>
-          <a href="https://www.digitalocean.com" target="_blank" rel="noopener noreferrer"><img src={digitalOcean} alt={'Digital Ocean'}/></a>
-          <a href="https://aws.amazon.com/amplify" target="_blank" rel="noopener noreferrer"><img src={amplify} alt={'amplify'}/></a>
-          <a href="https://www.tokopedia.com" target="_blank" rel="noopener noreferrer"><img src={tokopedia} alt={'tokopedia'}/></a>
-          <a href="https://www.atlassian.com" target="_blank" rel="noopener noreferrer"><img src={atlassian} alt={'atlassian'}/></a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer"><img src={github} alt={'github'}/></a>
+          <a href="https://twitter.com/wtmblr" target="_blank" rel="noopener noreferrer"><img src={wt} alt={'Women techmakers'}/></a>
+          <a href="https://codingblocks.com/" target="_blank" rel="noopener noreferrer"><img src={cb} alt={'Coding blocks'}/></a>
+          <a href="https://t.me/joinchat/AFfAPD1xS9_WEiXjDfkYGA" target="_blank" rel="noopener noreferrer"><img src={moz} alt={'Mozilla karnataka'}/></a>
+          <a href="https://twitter.com/girlscript1" target="_blank" rel="noopener noreferrer"><img src={gs} alt={'Girl script'}/></a>
+          <a href="https://twitter.com/search?q=js%20lovers&src=typd" target="_blank" rel="noopener noreferrer"><img src={js} alt={'JS lovers'}/></a>
+        </div>
+        <div className={'icons removePaddBottom'}>
+          <a href="https://studentpartners.microsoft.com/en-us" target="_blank" rel="noopener noreferrer"><img src={msp} alt={'Microsoft student partners'}/></a>
+          <a href="https://twitter.com/GDGBLR" target="_blank" rel="noopener noreferrer"><img className={'gdgb'} src={gdgb} alt={'GDG Bangalore'}/></a>
         </div>
       </div>
     </div>
