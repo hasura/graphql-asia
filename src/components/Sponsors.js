@@ -51,7 +51,7 @@ const Sponsors = () => (
           <a href="https://codingblocks.com/" target="_blank" rel="noopener noreferrer"><img src={cb} alt={'Coding blocks'}/></a>
           <a href="https://t.me/joinchat/AFfAPD1xS9_WEiXjDfkYGA" target="_blank" rel="noopener noreferrer"><img src={moz} alt={'Mozilla karnataka'}/></a>
           <a href="https://twitter.com/girlscript1" target="_blank" rel="noopener noreferrer"><img src={gs} alt={'Girl script'}/></a>
-          <a href="https://twitter.com/search?q=js%20lovers&src=typd" target="_blank" rel="noopener noreferrer"><img src={js} alt={'JS lovers'}/></a>
+          <a href="https://twitter.com/jslovers_del" target="_blank" rel="noopener noreferrer"><img src={js} alt={'JS lovers'}/></a>
         </div>
         <div className={'icons removePaddBottom'}>
           <a href="https://studentpartners.microsoft.com/en-us" target="_blank" rel="noopener noreferrer"><img src={msp} alt={'Microsoft student partners'}/></a>
