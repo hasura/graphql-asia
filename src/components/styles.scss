@@ -929,12 +929,14 @@ img {
         font-size: 16px;
         font-weight: normal;
         color: #909090;
+        letter-spacing: 1.6px;
       }
       .organization {
         font-family: 'Poppins';
         font-size: 16px;
         font-weight: 600;
         color: #505050;
+        letter-spacing: 1.6px;
       }
       .socialWrapper {
         display: flex;
@@ -1059,7 +1061,7 @@ img {
           .navBarList {
             button {
               font-size: 15px;
-              padding: 10px 10px;
+              padding: 10px 5px;
               letter-spacing: 1px;
             }
           }
@@ -1136,6 +1138,18 @@ img {
     .fieldWrapper {
       .field {
         width: 95%;
+      }
+    }
+  }
+  .speakersWrapper {
+    .speakersListWrapper {
+      .speakersList {
+        .name {
+          font-size: 20px;
+        }
+        .designation, .organization {
+          font-size: 14px;
+        }
       }
     }
   }
@@ -1460,6 +1474,16 @@ img {
       .socialWrapper {
         float: none;
         justify-content: center;
+      }
+    }
+  }
+  .speakersWrapper {
+    .speakersListWrapper {
+      .speakersList {
+        margin: 15px 0;
+        .speakerImg {
+          padding-bottom: 16px;
+        }
       }
     }
   }

@@ -31,13 +31,14 @@ class Speakers extends React.Component {
           githubLink: 'https://github.com/robzhu',
         },
         {
-          imgSrc: samJulien,
-          name: 'Sam Julien',
-          designation: 'DEVELOPER ADVOCATE ENGINEER',
-          organization: 'AUTH0',
-          twitterLink: 'https://twitter.com/samjulien',
-          githubLink: 'https://github.com/samjulien',
+          imgSrc: sarjeelYusuf,
+          name: 'Sarjeel Yusuf',
+          designation: 'PRODUCT MANAGER',
+          organization: 'ATLASSIAN',
+          twitterLink: 'https://twitter.com/SarjeelY',
+          githubLink: 'https://github.com/AmateurIndian',
         },
+
         {
           imgSrc: vishakhaSingh,
           name: 'Vishakha Singh',
@@ -69,12 +70,20 @@ class Speakers extends React.Component {
           githubLink: 'https://github.com/shipraguptaa',
         },
         {
-          imgSrc: sarjeelYusuf,
-          name: 'Sarjeel Yusuf',
-          designation: 'PRODUCT MANAGER',
-          organization: 'ATLASSIAN',
-          twitterLink: 'https://twitter.com/SarjeelY',
-          githubLink: 'https://github.com/AmateurIndian',
+          imgSrc: ivanGoncharov,
+          name: 'Ivan Goncharov',
+          designation: 'GRAPHQL CONSULTANT',
+          organization: 'APIS.GURU',
+          twitterLink: 'https://twitter.com/E1Goncharov',
+          githubLink: 'https://github.com/IvanGoncharov/',
+        },
+        {
+          imgSrc: samJulien,
+          name: 'Sam Julien',
+          designation: 'DEVELOPER ADVOCATE ENGINEER',
+          organization: 'AUTH0',
+          twitterLink: 'https://twitter.com/samjulien',
+          githubLink: 'https://github.com/samjulien',
         },
         {
           imgSrc: lachlanYoung,
@@ -107,14 +116,6 @@ class Speakers extends React.Component {
           organization: 'NEOSTACK',
           twitterLink: 'https://twitter.com/kiran_abburi',
         },
-        {
-          imgSrc: ivanGoncharov,
-          name: 'Ivan Goncharov',
-          designation: 'GRAPHQL CONSULTANT',
-          organization: 'APIS.GURU',
-          twitterLink: 'https://twitter.com/E1Goncharov',
-          githubLink: 'https://github.com/IvanGoncharov/',
-        },
       ]
     }
   }
@@ -122,7 +123,7 @@ class Speakers extends React.Component {
   render() {
     const speakersContainer = this.state.speakersList.map((list, index) => {
       return (
-        <div className='col-md-3 col-sm-6 col-xs-12 flexContainer'>
+        <div className='col-md-3 col-sm-4 col-xs-12 flexContainer'>
           <div className='speakersList flexList'>
             <div className='speakerImg'>
               <img src={list.imgSrc} alt={list.name}/>
