@@ -160,7 +160,7 @@ class Speakers extends React.Component {
       <div id="speakers" className={'speakersWrapper lightGrayBgColor sectionWrapper watermarkWrapper'}>
         <div className={'container noPadd'}>
             <div className={'sectionHeader'}>
-              Speakers
+              SPEAKERS
             </div>
             <div className={'pinkSeperateLine'}></div>
             <div className={'speakersListWrapper flexBoxWrapper'}>
