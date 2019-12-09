@@ -21,7 +21,7 @@ const Brought = () => (
           We have scholarships available for students as well as diversity scholarships for under-represented minorities in tech. If you’d like to apply, <a href="https://hasurahq.typeform.com/to/ukj62Q" target="_blank" rel="noopener noreferrer">click here</a>
         </div>
         <div className={'pageDescription removePaddBottom'}>
-          We will have group discounts for groups of 5 or more starting from the 1st of November.
+          We have group discounts available for groups of 5 or more.
         </div>
       </div>
       <div className={'col-md-5 col-sm-5 col-xs-12'}>

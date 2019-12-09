@@ -464,7 +464,7 @@ img {
   height: 800px;
 }
 .ticketsBgImage {
-  height: 520px;
+  height: 110px;
 }
 /* Top Banner */
 .topBannerWrapper {
@@ -499,6 +499,9 @@ img {
       }
     }
   }
+}
+.ticketTopBannerWrapper {
+
 }
 .watermarkWrapper {
   position: relative;
@@ -930,6 +933,8 @@ img {
         font-weight: normal;
         color: #909090;
         letter-spacing: 1.6px;
+        text-transform: uppercase;
+        line-height: 1.5;
       }
       .organization {
         font-family: 'Poppins';
@@ -937,6 +942,7 @@ img {
         font-weight: 600;
         color: #505050;
         letter-spacing: 1.6px;
+        line-height: 1.5;
       }
       .socialWrapper {
         display: flex;
@@ -1015,9 +1021,6 @@ img {
   }
   .bgImage {
     height: 650px;
-  }
-  .ticketsBgImage {
-    height: 370px;
   }
   .copyRight {
     font-size: 16px;
@@ -1168,9 +1171,6 @@ img {
   .bgImage {
     height: 500px;
   }
-  .ticketsBgImage {
-    height: 280px;
-  }
   .positionBottom {
     padding-bottom: 40px !important;
   }
@@ -1229,6 +1229,7 @@ img {
         .navBarBrand {
           height: auto;
           flex: 1;
+          padding-left: 15px;
         }
       }
       .navBarCollapse {
@@ -1500,6 +1501,6 @@ img {
 }
 @media (max-width: 450px) {
   .ticketsBgImage {
-    height: 240px;
+    height: 80px;
   }
 }
