@@ -458,6 +458,12 @@ img {
     }
   }
 }
+.ticketsWrapper {
+  padding-bottom: 80px;
+  iframe {
+    margin-bottom: 0;
+  }
+}
 .bgImage, .ticketsBgImage {
   background-color: #25246b;
   background-image: url('../images/bg.png');
@@ -468,7 +474,7 @@ img {
   height: 800px;
 }
 .ticketsBgImage {
-  height: 278px;
+  height: 140px;
 }
 /* Top Banner */
 .topBannerWrapper {
@@ -505,30 +511,22 @@ img {
   }
 }
 .ticketTopBannerWrapper {
-  padding-top: 110px;
+  padding-top: 100px;
   .discountWrapper {
     background-color: rgba(255, 255, 255, .08);
-    padding: 30px 0;
-    text-align: center;
+    padding: 12px 0;
     .discountTitle {
-      font-family: 'Roboto';
-      font-size: 24px;
-      font-weight: bold;
-      color: #fff;
-      padding-bottom: 16px;
       img {
         margin-right: 12px;
       }
     }
     .discountDescription {
       font-family: 'Roboto';
-      opacity: 0.6;
       text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
-      font-size: 20px;
+      font-size: 13px;
       font-weight: normal;
       color: #fff;
-      width: 61%;
-      margin: 0 auto;
+      text-align: center;
       span {
         font-weight: bold;
       }
@@ -1119,10 +1117,12 @@ img {
       }
     }
   }
+  .ticketsBgImage {
+    height: 160px;
+  }
   .ticketTopBannerWrapper {
     .discountWrapper {
       .discountDescription {
-        width: 80%;
       }
     }
   }
@@ -1298,7 +1298,7 @@ img {
     }
   }
   .ticketsBgImage {
-    height: 218px;
+    height: 145px;
   }
   .ticketTopBannerWrapper {
     padding-top: 80px;
@@ -1312,8 +1312,6 @@ img {
         }
       }
       .discountDescription {
-        font-size: 16px;
-        width: 61%;
         opacity: 1;
         text-shadow: 0 2px 6px rgba(0, 0, 0, 1);
       }
@@ -1569,9 +1567,9 @@ img {
   }
 }
 
-@media (max-width: 519px) {
+@media (max-width: 500px) {
   .ticketsBgImage {
-    height: 242px;
+    height: 150px;
   }
   .ticketTopBannerWrapper {
     position: relative;
@@ -1580,6 +1578,7 @@ img {
       bottom: 0;
       .discountDescription {
         width: 95%;
+        margin: 0 auto;
       }
     }
   }
