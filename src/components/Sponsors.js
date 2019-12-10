@@ -5,11 +5,11 @@ const graphql = require('../images/graphql.svg');
 const sponsors = require('../images/sponsors.svg');
 const dgraph = require('../images/dgraph-logo.svg');
 const wt = require('../images/wt.png');
-const cb = require('../images/cb.png');
+// const cb = require('../images/cb.png');
 const moz = require('../images/moz.png');
 const gs = require('../images/gs.png');
-const js = require('../images/js.png');
-const msp = require('../images/msp.png');
+// const js = require('../images/js.png');
+// const msp = require('../images/msp.png');
 const gdgb = require('../images/gdgb.png');
 
 
@@ -48,15 +48,18 @@ const Sponsors = () => (
         </div>
         <div className={'icons'}>
           <a href="https://twitter.com/wtmblr" target="_blank" rel="noopener noreferrer"><img src={wt} alt={'Women techmakers'}/></a>
-          <a href="https://codingblocks.com/" target="_blank" rel="noopener noreferrer"><img src={cb} alt={'Coding blocks'}/></a>
+          {/* <a href="https://codingblocks.com/" target="_blank" rel="noopener noreferrer"><img src={cb} alt={'Coding blocks'}/></a> */}
           <a href="https://t.me/joinchat/AFfAPD1xS9_WEiXjDfkYGA" target="_blank" rel="noopener noreferrer"><img src={moz} alt={'Mozilla karnataka'}/></a>
           <a href="https://twitter.com/girlscript1" target="_blank" rel="noopener noreferrer"><img src={gs} alt={'Girl script'}/></a>
-          <a href="https://twitter.com/jslovers_del" target="_blank" rel="noopener noreferrer"><img src={js} alt={'JS lovers'}/></a>
+          {/* <a href="https://twitter.com/jslovers_del" target="_blank" rel="noopener noreferrer"><img src={js} alt={'JS lovers'}/></a> */}
+          <a href="https://twitter.com/GDGBLR" target="_blank" rel="noopener noreferrer"><img className={'gdgb'} src={gdgb} alt={'GDG Bangalore'}/></a>
         </div>
+        {/*
         <div className={'icons removePaddBottom'}>
           <a href="https://studentpartners.microsoft.com/en-us" target="_blank" rel="noopener noreferrer"><img src={msp} alt={'Microsoft student partners'}/></a>
           <a href="https://twitter.com/GDGBLR" target="_blank" rel="noopener noreferrer"><img className={'gdgb'} src={gdgb} alt={'GDG Bangalore'}/></a>
         </div>
+        */}
       </div>
     </div>
     <div className={'watermarkImg hidden-xs'}>
