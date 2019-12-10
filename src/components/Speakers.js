@@ -96,8 +96,8 @@ class Speakers extends React.Component {
         {
           imgSrc: carlosRufo,
           name: 'Carlos Rufo',
-          designation: 'GraphQL Hong Kong organizer',
-          organization: 'VUE SCHOOL',
+          designation: 'organizer',
+          organization: 'GraphQL Hong Kong',
           twitterLink: 'https://twitter.com/swcarlosrj',
           githubLink: 'https://github.com/swcarlosrj',
         },
