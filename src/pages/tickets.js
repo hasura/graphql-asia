@@ -10,9 +10,7 @@ const IndexPage = () => (
     <SEO title="Tickets | GraphQL Asia 2020" />
       <TicketsTopBanner/>
       <div className={'ticketsWrapper'}>
-        <div className={'container noPadd'}>
-          <iframe title="tickets" src="https://www.townscript.com/widget/graphql-asia--2020" frameBorder="0" height="870" width="100%"></iframe>
-        </div>
+        <iframe title="tickets" src="https://www.townscript.com/widget/graphql-asia--2020" frameBorder="0" height="870" width="100%"></iframe>
       </div>
   </Layout>
 )
