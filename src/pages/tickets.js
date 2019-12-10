@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import '../components/styles.scss'
 import TicketsTopBanner from '../components/TicketsTopBanner'
+// import TownScript from '../components/TownScript'
 const IndexPage = () => (
   <Layout>
     <SEO title="Tickets | GraphQL Asia 2020" />
