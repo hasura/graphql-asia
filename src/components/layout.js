@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
   }, [])
   return (
     <>
-      <div>
+      <div className={'positionRel'}>
         <Header/>
         <div>
           <main>{children}</main>

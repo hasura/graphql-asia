@@ -82,8 +82,6 @@ const Schedule = () => (
             <div className={'graphQlImg'}>
               <img src={hasuraDumbledore} alt={'Hasura dumbledore'}/>
             </div>
-            <div className={'col-md-6 col-sm-6 col-xs-12 noPadd'}>
-            </div>
           </div>
         </div>
       </div>
