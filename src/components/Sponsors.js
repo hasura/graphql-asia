@@ -11,7 +11,7 @@ const gs = require('../images/gs.png');
 const js = require('../images/js.png');
 // const msp = require('../images/msp.png');
 const gdgb = require('../images/gdgb.png');
-
+const reactDay = require('../images/ReactDayBangaloreLogo.svg');
 
 const Sponsors = () => (
   <div id="sponsors" className={'sponsorWrapper sectionWrapper watermarkWrapper'}>
@@ -53,10 +53,10 @@ const Sponsors = () => (
           <a href="https://twitter.com/girlscript1" target="_blank" rel="noopener noreferrer"><img src={gs} alt={'Girl script'}/></a>
           <a href="https://twitter.com/jslovers_del" target="_blank" rel="noopener noreferrer"><img src={js} alt={'JS lovers'}/></a>
           <a href="https://twitter.com/GDGBLR" target="_blank" rel="noopener noreferrer"><img className={'gdgb'} src={gdgb} alt={'GDG Bangalore'}/></a>
+          <a href="https://reactday.in/" target="_blank" rel="noopener noreferrer"><img src={reactDay} alt={'React Day'}/></a>
         </div>
         {/*
         <div className={'icons removePaddBottom'}>
-          <a href="https://studentpartners.microsoft.com/en-us" target="_blank" rel="noopener noreferrer"><img src={msp} alt={'Microsoft student partners'}/></a>
           <a href="https://twitter.com/GDGBLR" target="_blank" rel="noopener noreferrer"><img className={'gdgb'} src={gdgb} alt={'GDG Bangalore'}/></a>
         </div>
         */}
