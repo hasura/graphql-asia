@@ -12,6 +12,7 @@ const js = require('../images/js.png');
 // const msp = require('../images/msp.png');
 const gdgb = require('../images/gdgb.png');
 const reactDay = require('../images/ReactDayBangaloreLogo.svg');
+const graphqllogo = require('../images/graphql-asia-logo.png');
 
 const Sponsors = () => (
   <div id="sponsors" className={'sponsorWrapper sectionWrapper watermarkWrapper'}>
@@ -55,11 +56,9 @@ const Sponsors = () => (
           <a href="https://twitter.com/GDGBLR" target="_blank" rel="noopener noreferrer"><img className={'gdgb'} src={gdgb} alt={'GDG Bangalore'}/></a>
           <a href="https://reactday.in/" target="_blank" rel="noopener noreferrer"><img src={reactDay} alt={'React Day'}/></a>
         </div>
-        {/*
         <div className={'icons removePaddBottom'}>
-          <a href="https://twitter.com/GDGBLR" target="_blank" rel="noopener noreferrer"><img className={'gdgb'} src={gdgb} alt={'GDG Bangalore'}/></a>
+          <a href="https://twitter.com/graphqlblr" target="_blank" rel="noopener noreferrer"><img src={graphqllogo} alt={'GraphQL Bangalore'}/></a>
         </div>
-        */}
       </div>
     </div>
     <div className={'watermarkImg hidden-xs'}>
