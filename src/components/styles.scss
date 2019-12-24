@@ -254,6 +254,16 @@ img {
     border-bottom: 1px solid #f81894;
   }
 }
+.pageDescriptionPink {
+  color: #f81894;
+  font-size: 26px;
+  font-family: 'Roboto';
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+}
 .flexBoxWrapper
 {
   display: flex;
@@ -649,7 +659,7 @@ img {
     margin: 30px auto;
     margin-top: 15px;
   }
-  .sectionHeader, .pageDescription {
+  .sectionHeader, .pageDescription, .pageDescriptionPink {
     text-align: center;
   }
   .pageDescription {
