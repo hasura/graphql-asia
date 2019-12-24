@@ -10,10 +10,13 @@ const Venue = () => (
         </div>
         <div className={'pinkSeperateLine'}></div>
         <div className={'pageDescription'}>
-          The Leela Palace Bengaluru is one of the best 5 star hotels in Bangalore, India stands majestically amidst seven acres of lush gardens and a sparkling lagoon.
+          The conference will take place at The Leela Palace, which is one of the best 5 star hotels in Bengaluru, India and stands majestically amidst seven acres of lush gardens and a sparkling lagoon.
+        </div>
+        <div className={'pageDescription'}>
+          To avail special conference rates for staying at the hotel, please send an email to <a href="mailto:saikat.saha@theleela.com">saikat.saha@theleela.com</a> and <a href="mailto:namrata.gupta@theleela.com">namrata.gupta@theleela.com</a> along with a copy of your ticket.
         </div>
         <div className={'pageDescription removePaddBottom'}>
-          To avail special conference rates for staying at the hotel, please send an email to <a href="mailto:saikat.saha@theleela.com">saikat.saha@theleela.com</a> and <a href="mailto:namrata.gupta@theleela.com">namrata.gupta@theleela.com</a> along with a copy of your ticket.
+          The workshops will be hosted at the <a href="https://theterrace.hasura.io/" target="_blank" rel="noopener noreferrer">Terrace @ Hasura</a>.
         </div>
       </div>
       <div className={'col-md-6 col-sm-5 col-xs-12'}>
