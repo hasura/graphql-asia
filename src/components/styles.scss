@@ -146,7 +146,7 @@
 }
 .displayEnd {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 img {
   margin-bottom: 0 !important;
@@ -253,6 +253,16 @@ img {
     text-decoration: none;
     border-bottom: 1px solid #f81894;
   }
+}
+.pageDescriptionPink {
+  color: #f81894;
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
 }
 .flexBoxWrapper
 {
@@ -589,6 +599,7 @@ img {
 }
 /* Venue */
 .venueWrapper {
+
   .pageDescription {
     padding-bottom: 32px;
   }
@@ -649,7 +660,7 @@ img {
     margin: 30px auto;
     margin-top: 15px;
   }
-  .sectionHeader, .pageDescription {
+  .sectionHeader, .pageDescription, .pageDescriptionPink {
     text-align: center;
   }
   .pageDescription {
@@ -665,6 +676,8 @@ img {
     top: -125px;
   }
   .scheduleDetailsWrapper {
+    width: 70%;
+    margin: 0 auto;
     padding-top: 30px;
     .scheduleList {
       .listImg {
