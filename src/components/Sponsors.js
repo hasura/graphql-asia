@@ -13,6 +13,7 @@ const js = require('../images/js.png');
 const gdgb = require('../images/gdgb.png');
 const reactDay = require('../images/ReactDayBangaloreLogo.svg');
 const graphqllogo = require('../images/graphql-asia-logo.png');
+const awsugblr = require('../images/awsugblr_logo.svg');
 
 const Sponsors = () => (
   <div id="sponsors" className={'sponsorWrapper sectionWrapper watermarkWrapper'}>
@@ -58,6 +59,7 @@ const Sponsors = () => (
         </div>
         <div className={'icons removePaddBottom'}>
           <a href="https://twitter.com/graphqlblr" target="_blank" rel="noopener noreferrer"><img src={graphqllogo} alt={'GraphQL Bangalore'}/></a>
+          <a href="https://www.meetup.com/awsugblr/" target="_blank" rel="noopener noreferrer"><img className="bigImg" src={awsugblr} alt={'AWS UG Bangalore'}/></a>
         </div>
       </div>
     </div>
