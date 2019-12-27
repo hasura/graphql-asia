@@ -49,7 +49,7 @@ const Sponsors = () => (
           Community Partners
         </div>
         <div className={'icons'}>
-          <a href="https://twitter.com/wtmblr" target="_blank" rel="noopener noreferrer"><img src={wt} alt={'Women techmakers'}/></a>
+          <a href="https://twitter.com/wtmblr" target="_blank" rel="noopener noreferrer"><img className="bigImg" src={wt} alt={'Women techmakers'}/></a>
           {/* <a href="https://codingblocks.com/" target="_blank" rel="noopener noreferrer"><img src={cb} alt={'Coding blocks'}/></a> */}
           <a href="https://t.me/joinchat/AFfAPD1xS9_WEiXjDfkYGA" target="_blank" rel="noopener noreferrer"><img src={moz} alt={'Mozilla karnataka'}/></a>
           <a href="https://twitter.com/girlscript1" target="_blank" rel="noopener noreferrer"><img src={gs} alt={'Girl script'}/></a>
