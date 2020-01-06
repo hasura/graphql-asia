@@ -14,6 +14,16 @@ const carlosRufo = require('../images/Carlos-Rufo.png');
 const vilvaAthiban = require('../images/Vilva-Athiban.png');
 const kiranKumar = require('../images/Kiran-Kumar.png');
 const ivanGoncharov = require('../images/Ivan-Goncharov.png');
+
+const monikaJaiswal = require('../images/Monika-Jaiswal.png');
+
+const vijayanSrinivasan = require('../images/Vijayan-Srinivasan.png');
+const balaDutt = require('../images/Bala-Dutt.png');
+const arunLingala = require('../images/Arun-Lingala.png');
+const yogeshDesai = require('../images/Yogesh-Desai.png');
+const abinashMohapatra = require('../images/Abinash-Mohapatra.png');
+const rajatKhare = require('../images/Rajat-Khare.png');
+
 const twitter = require('../images/twitter-pink.svg');
 const github = require('../images/github-pink.svg');
 
@@ -115,6 +125,61 @@ class Speakers extends React.Component {
           designation: 'FOUNDER',
           organization: 'NEOSTACK',
           twitterLink: 'https://twitter.com/kiran_abburi',
+        },
+        {
+          imgSrc: monikaJaiswal,
+          name: 'Monika Jaiswal',
+          designation: 'SOFTWARE DEVELOPMENT ENGINEER',
+          organization: 'EXPEDIA',
+          twitterLink: '',
+        },
+        {
+          imgSrc: vijayanSrinivasan,
+          name: 'Vijayan Srinivasan',
+          designation: 'LEAD ENGINEER',
+          organization: 'INTUIT',
+          twitterLink: 'https://twitter.com/vijayanskp',
+          githubLink: 'https://github.com/vijayan007',
+        },
+        {
+          imgSrc: balaDutt,
+          name: 'Bala Dutt',
+          designation: 'PRINCIPAL ENGINEER',
+          organization: 'INTUIT',
+          twitterLink: 'https://twitter.com/baladutt',
+          githubLink: 'https://github.com/baladutt',
+        },
+        {
+          imgSrc: arunLingala,
+          name: 'Arun Lingala',
+          designation: 'SENIOR SOFTWARE ENGINEER',
+          organization: 'INTUIT',
+          twitterLink: 'https://twitter.com/ArunLingalaCBK',
+          githubLink: 'https://github.com/arunlingala',
+        },
+        {
+          imgSrc: yogeshDesai,
+          name: 'Yogesh Desai',
+          designation: 'SSE',
+          organization: 'TOKOPEDIA',
+          twitterLink: 'https://twitter.com/er_YogeshDesai',
+          githubLink: 'https://github.com/yogesh-desai',
+        },
+        {
+          imgSrc: abinashMohapatra,
+          name: 'Abinash Mohapatra',
+          designation: 'UI ENGINEER',
+          organization: 'FLIPKART',
+          twitterLink: 'https://twitter.com/twistedfork88',
+          githubLink: 'https://github.com/twistedfork88',
+        },
+        {
+          imgSrc: rajatKhare,
+          name: 'Rajat Khare',
+          designation: 'SOFTWARE ARCHITECT',
+          organization: 'INTUIT',
+          twitterLink: 'https://twitter.com/rajatontwit',
+          githubLink: 'https://github.com/kharerajat2014',
         },
       ]
     }
