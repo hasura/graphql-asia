@@ -149,6 +149,8 @@ class Contact extends React.Component {
                 </div>
               </div>
             </div>
+            <div className='footerBorBottom'>
+            </div>
         </div>
       </div>
     )};

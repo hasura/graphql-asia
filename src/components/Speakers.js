@@ -14,8 +14,20 @@ const carlosRufo = require('../images/Carlos-Rufo.png');
 const vilvaAthiban = require('../images/Vilva-Athiban.png');
 const kiranKumar = require('../images/Kiran-Kumar.png');
 const ivanGoncharov = require('../images/Ivan-Goncharov.png');
+const seanGrove = require('../images/Sean-Grove.png');
+
+const monikaJaiswal = require('../images/Monika-Jaiswal.png');
+
+const vijayanSrinivasan = require('../images/Vijayan-Srinivasan.png');
+const balaDutt = require('../images/Bala-Dutt.png');
+const arunLingala = require('../images/Arun-Lingala.png');
+const yogeshDesai = require('../images/Yogesh-Desai.png');
+const abinashMohapatra = require('../images/Abinash-Mohapatra.png');
+const rajatKhare = require('../images/Rajat-Khare.png');
+
 const twitter = require('../images/twitter-pink.svg');
 const github = require('../images/github-pink.svg');
+const linkedIn = require('../images/linkedin-pink.svg');
 
 class Speakers extends React.Component {
   constructor() {
@@ -116,6 +128,69 @@ class Speakers extends React.Component {
           organization: 'NEOSTACK',
           twitterLink: 'https://twitter.com/kiran_abburi',
         },
+        {
+          imgSrc: monikaJaiswal,
+          name: 'Monika Jaiswal',
+          designation: 'SOFTWARE DEVELOPMENT ENGINEER',
+          organization: 'EXPEDIA',
+          linkedInLink: 'https://www.linkedin.com/in/monika-jaiswal-876b24110/',
+        },
+        {
+          imgSrc: vijayanSrinivasan,
+          name: 'Vijayan Srinivasan',
+          designation: 'LEAD ENGINEER',
+          organization: 'INTUIT',
+          twitterLink: 'https://twitter.com/vijayanskp',
+          githubLink: 'https://github.com/vijayan007',
+        },
+        {
+          imgSrc: balaDutt,
+          name: 'Bala Dutt',
+          designation: 'PRINCIPAL ENGINEER',
+          organization: 'INTUIT',
+          twitterLink: 'https://twitter.com/baladutt',
+          githubLink: 'https://github.com/baladutt',
+        },
+        {
+          imgSrc: arunLingala,
+          name: 'Arun Lingala',
+          designation: 'SENIOR SOFTWARE ENGINEER',
+          organization: 'INTUIT',
+          twitterLink: 'https://twitter.com/ArunLingalaCBK',
+          githubLink: 'https://github.com/arunlingala',
+        },
+        {
+          imgSrc: yogeshDesai,
+          name: 'Yogesh Desai',
+          designation: 'SSE',
+          organization: 'TOKOPEDIA',
+          twitterLink: 'https://twitter.com/er_YogeshDesai',
+          githubLink: 'https://github.com/yogesh-desai',
+        },
+        {
+          imgSrc: abinashMohapatra,
+          name: 'Abinash Mohapatra',
+          designation: 'UI ENGINEER',
+          organization: 'FLIPKART',
+          twitterLink: 'https://twitter.com/twistedfork88',
+          githubLink: 'https://github.com/twistedfork88',
+        },
+        {
+          imgSrc: rajatKhare,
+          name: 'Rajat Khare',
+          designation: 'SOFTWARE ARCHITECT',
+          organization: 'INTUIT',
+          twitterLink: 'https://twitter.com/rajatontwit',
+          githubLink: 'https://github.com/kharerajat2014',
+        },
+        {
+          imgSrc: seanGrove,
+          name: 'Sean Grove',
+          designation: 'FOUNDER',
+          organization: 'ONEGRAPH',
+          twitterLink: 'https://twitter.com/sgrove',
+          githubLink: 'https://github.com/sgrove',
+        },
       ]
     }
   }
@@ -149,6 +224,13 @@ class Speakers extends React.Component {
                 (list.twitterLink) ? (
                   <div className='socialIcon'>
                     <a href={list.twitterLink} target="_blank" rel="noopener noreferrer"><img src={twitter} alt={'Twitter'} /></a>
+                  </div>
+                ) : null
+              }
+              {
+                (list.linkedInLink) ? (
+                  <div className='socialIcon'>
+                    <a href={list.linkedInLink} target="_blank" rel="noopener noreferrer"><img src={linkedIn} alt={'Linkedin'} /></a>
                   </div>
                 ) : null
               }

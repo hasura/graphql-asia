@@ -41,7 +41,7 @@ const Layout = ({ children }) => {
               <div className={'footerContainer footerBorTop'}>
                 <div className={'footerListWrapper'}>
                   <div className={'copyRight'}>
-                    <img src={copy} alt={'Copy right icon'} />2019 Hasura. All rights reserved
+                    <img src={copy} alt={'Copy right icon'} />2020 Hasura. All rights reserved
                   </div>
                   <ul>
                     <li className={'copyRight'}><a href="https://www.graphql-asia.org/code-of-conduct" target="_blank" rel="noopener noreferrer">Code of conduct</a></li>
