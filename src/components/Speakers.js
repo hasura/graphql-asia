@@ -14,6 +14,7 @@ const carlosRufo = require('../images/Carlos-Rufo.png');
 const vilvaAthiban = require('../images/Vilva-Athiban.png');
 const kiranKumar = require('../images/Kiran-Kumar.png');
 const ivanGoncharov = require('../images/Ivan-Goncharov.png');
+const seanGrove = require('../images/Sean-Grove.png');
 
 const monikaJaiswal = require('../images/Monika-Jaiswal.png');
 
@@ -26,6 +27,7 @@ const rajatKhare = require('../images/Rajat-Khare.png');
 
 const twitter = require('../images/twitter-pink.svg');
 const github = require('../images/github-pink.svg');
+const linkedIn = require('../images/linkedin-pink.svg');
 
 class Speakers extends React.Component {
   constructor() {
@@ -131,7 +133,7 @@ class Speakers extends React.Component {
           name: 'Monika Jaiswal',
           designation: 'SOFTWARE DEVELOPMENT ENGINEER',
           organization: 'EXPEDIA',
-          twitterLink: '',
+          linkedInLink: 'https://www.linkedin.com/in/monika-jaiswal-876b24110/',
         },
         {
           imgSrc: vijayanSrinivasan,
@@ -181,6 +183,14 @@ class Speakers extends React.Component {
           twitterLink: 'https://twitter.com/rajatontwit',
           githubLink: 'https://github.com/kharerajat2014',
         },
+        {
+          imgSrc: seanGrove,
+          name: 'Sean Grove',
+          designation: 'FOUNDER',
+          organization: 'ONEGRAPH',
+          twitterLink: 'https://twitter.com/sgrove',
+          githubLink: 'https://github.com/sgrove',
+        },
       ]
     }
   }
@@ -214,6 +224,13 @@ class Speakers extends React.Component {
                 (list.twitterLink) ? (
                   <div className='socialIcon'>
                     <a href={list.twitterLink} target="_blank" rel="noopener noreferrer"><img src={twitter} alt={'Twitter'} /></a>
+                  </div>
+                ) : null
+              }
+              {
+                (list.linkedInLink) ? (
+                  <div className='socialIcon'>
+                    <a href={list.linkedInLink} target="_blank" rel="noopener noreferrer"><img src={linkedIn} alt={'Linkedin'} /></a>
                   </div>
                 ) : null
               }
