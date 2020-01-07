@@ -128,6 +128,9 @@
 .footerBorTop {
   border-top: 1px solid rgba(255, 255, 255, 0.6);
 }
+.footerBorBottom {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
 .noPadd {
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -228,6 +231,15 @@ img {
   font-style: normal;
   font-stretch: normal;
   letter-spacing: 6px;
+}
+.thanksDescription {
+  font-family: 'Poppins';
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.83;
+  letter-spacing: normal;
+  color: #fff;
+  opacity: .6;
 }
 .sectionSubHeader {
   font-family: 'Roboto';
@@ -474,7 +486,7 @@ img {
     margin-bottom: 0;
   }
 }
-.bgImage, .ticketsBgImage {
+.bgImage, .ticketsBgImage, .thanksBgImage {
   background-color: #25246b;
   background-image: url('../images/bg.png');
   background-repeat: no-repeat;
@@ -485,6 +497,9 @@ img {
 }
 .ticketsBgImage {
   height: 140px;
+}
+.thanksBgImage {
+  height: 110px;
 }
 /* Top Banner */
 .topBannerWrapper {
@@ -843,11 +858,18 @@ img {
 }
 /* Contact */
 .contactWrapper {
+  padding-bottom: 85px;
   .sectionHeader {
     color: #fff;
     padding-bottom: 60px;
   }
+  .footerBorBottom {
+    padding-top: 50px;
+    clear: both;
+  }
   .fieldWrapper {
+    width: 100%;
+    float: left;
     .pageDescription {
       color: #fff;
       opacity: .8;
@@ -905,6 +927,9 @@ img {
   position: absolute;
   bottom: 0;
   width: 100%;
+  .footerBorTop {
+    border-top: 0;
+  }
   .footerContainer {
     padding: 30px 0;
     display: flex;
@@ -1014,6 +1039,45 @@ img {
     }
   }
 }
+/* Thanks page */
+.thanksWrapper {
+  height: calc(100vh - 195px);
+  background-image: url('../images/thanks-bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  .thanksContainer {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    .sectionHeader {
+      font-size: 32px;
+      color: #fff;
+      opacity: .6;
+      line-height: 1.38;
+      letter-spacing: normal;
+      font-weight: 600;
+      text-align: center;
+      padding-bottom: 16px;
+    }
+    .thanksDescription {
+      text-align: center;
+      padding-bottom: 80px;
+    }
+    .graphQlHeader {
+      font-size: 48px;
+      font-weight: normal;
+      color: #fff;
+      opacity: .9;
+      text-align: center;
+      img {
+        margin-left: 12px;
+        width: 55px;
+      }
+    }
+  }
+}
 @media ( min-width: 992px ) and (max-width: 1199px) {
   .watermarkWrapper{
     .watermarkImgTop {
@@ -1049,6 +1113,30 @@ img {
   }
 }
 @media ( min-width: 768px ) and (max-width: 991px) {
+  .thanksWrapper {
+    min-height: calc(100vh - 195px);
+    height: auto;
+    .thanksContainer {
+      .sectionHeader {
+        font-size: 28px;
+      }
+      .thanksDescription {
+        padding-bottom: 50px;
+        font-size: 20px;
+      }
+      .graphQlHeader {
+        font-size: 36px;
+        img {
+          width: 40px;
+        }
+      }
+    }
+  }
+  .footerWrapper {
+    .footerBorTop {
+      border-top: 1px solid rgba(255, 255, 255, 0.6);
+    }
+  }
   .wd60 {
     width: 90%;
   }
@@ -1223,6 +1311,26 @@ img {
   }
 }
 @media(max-width: 767px) {
+  .thanksWrapper {
+    min-height: calc(100vh - 195px);
+    padding: 50px 0;
+    .thanksContainer {
+      padding: 0 15px;
+      .sectionHeader {
+        font-size: 28px;
+      }
+      .thanksDescription {
+        padding-bottom: 50px;
+        font-size: 20px;
+      }
+      .graphQlHeader {
+        font-size: 36px;
+        img {
+          width: 40px;
+        }
+      }
+    }
+  }
   .displayEnd {
     display: block;
   }
@@ -1318,6 +1426,9 @@ img {
   }
   .ticketsBgImage {
     height: 145px;
+  }
+  .thanksBgImage {
+    height: 100px;
   }
   .ticketTopBannerWrapper {
     padding-top: 80px;
@@ -1515,6 +1626,9 @@ img {
     }
   }
   .contactWrapper {
+    .footerBorBottom {
+      padding-top: 0;
+    }
     padding-bottom: 0;
     .sectionHeader {
       text-align: center;
@@ -1538,6 +1652,10 @@ img {
     }
   }
   .footerWrapper {
+    position: static;
+    .footerBorTop {
+      border-top: 1px solid rgba(255, 255, 255, 0.6);
+    }
     .footerContainer {
       display: block;
       .footerListWrapper {
