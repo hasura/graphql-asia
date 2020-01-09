@@ -9,7 +9,7 @@ import ThanksTopBanner from '../components/ThanksTopBanner'
 const smileEmoji = require('../images/Smiling-Emoji.png');
 const IndexPage = () => (
   <Layout>
-    <SEO title="Tickets | GraphQL Asia 2020" />
+    <SEO title="Thanks | GraphQL Asia 2020" />
       <ThanksTopBanner/>
       <div className='thanksWrapper'>
         <div className={'container noPadd'}>

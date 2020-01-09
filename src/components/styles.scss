@@ -1273,7 +1273,7 @@ img {
   .scheduleWrapper {
     .sectionPosition {
       padding-top: 80px;
-      .purpleGradientBgColor {
+      .blueBgColor {
         width: 98%;
         left: 1%;
       }
@@ -1533,6 +1533,13 @@ img {
           margin-right: 0;
         }
       }
+      .platinumIcons, .goldIcons {
+        text-align: center;
+        img {
+          display: inline-block;
+          width: 90%;
+        }
+      }
     }
   }
   .proposalsWrapper {
@@ -1553,7 +1560,7 @@ img {
   }
   .scheduleWrapper {
     .sectionPosition {
-      .purpleGradientBgColor {
+      .blueBgColor {
         width: 95%;
         position: static;
       }
