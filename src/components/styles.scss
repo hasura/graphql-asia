@@ -5,6 +5,9 @@
 .pinkBgColor {
   background-color: #f81894;
 }
+.blueBgColor {
+  background-color: #001934;
+}
 .blockBgColor {
   background-color: #111111;
 }
@@ -658,6 +661,17 @@ img {
       }
       .mediumImg {
         max-height: 80px;
+      }
+    }
+    .platinumIcons {
+      text-align: center;
+      img {
+        display: inline-block;
+      }
+    }
+    .goldIcons {
+      img {
+        width: 300px;
       }
     }
   }
@@ -1518,12 +1532,6 @@ img {
         }
         img {
           margin-right: 0;
-        }
-      }
-      .platinumIcons {
-        text-align: center;
-        img {
-          display: inline-block;
         }
       }
     }
