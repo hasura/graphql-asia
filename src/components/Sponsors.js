@@ -15,6 +15,7 @@ const reactDay = require('../images/ReactDayBangaloreLogo.svg');
 const graphqllogo = require('../images/graphql-asia-logo.png');
 const awsugblr = require('../images/awsugblr_logo.svg');
 const graphqlHongKong = require('../images/graphql-hongkong-long.png');
+const atlassianlogo = require('../images/atlassian-logo.svg');
 const Sponsors = () => (
   <div id="sponsors" className={'sponsorWrapper sectionWrapper watermarkWrapper'}>
     <div className={'container noPadd'}>
@@ -42,6 +43,14 @@ const Sponsors = () => (
         </div>
         <div className={'platinumIcons'}>
           <a href="https://dgraph.io/" target="_blank" rel="noopener noreferrer"><img src={dgraph} alt={'Dgraph'}/></a>
+        </div>
+      </div>
+      <div className={'pastSponsorWrapper'}>
+        <div className={'sectionSubHeader'}>
+          Gold Sponsors
+        </div>
+        <div className={'goldIcons'}>
+          <a href="https://www.atlassian.com/" target="_blank" rel="noopener noreferrer"><img src={atlassianlogo} alt={'Atlassian'}/></a>
         </div>
       </div>
       <div className={'pastSponsorWrapper'}>
