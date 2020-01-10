@@ -49,7 +49,7 @@ const Schedule = () => (
         <Link to="/tickets"><button className={'blueBtn'}>BUY TICKETS</button></Link>
       </div>
       <div className={'sectionPosition'}>
-        <div className={'purpleGradientBgColor col-md-12 col-sm-12 col-xs-12 noPadd wd90'}>
+        <div className={'blueBgColor col-md-12 col-sm-12 col-xs-12 noPadd wd90'}>
           <div className={'graphqlWrapper wd100'}>
             <div className={'col-md-6 col-sm-7 col-xs-12 noPadd'}>
               <div className={'graphQlHeader'}>
