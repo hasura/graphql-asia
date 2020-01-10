@@ -16,6 +16,7 @@ const graphqllogo = require('../images/graphql-asia-logo.png');
 const awsugblr = require('../images/awsugblr_logo.svg');
 const graphqlHongKong = require('../images/graphql-hongkong-long.png');
 const atlassianlogo = require('../images/atlassian-logo.svg');
+const reactIndia = require('../images/react-india.svg');
 const Sponsors = () => (
   <div id="sponsors" className={'sponsorWrapper sectionWrapper watermarkWrapper'}>
     <div className={'container noPadd'}>
@@ -70,6 +71,7 @@ const Sponsors = () => (
           <a href="https://twitter.com/graphqlblr" target="_blank" rel="noopener noreferrer"><img src={graphqllogo} alt={'GraphQL Bangalore'}/></a>
           <a href="https://www.meetup.com/awsugblr/" target="_blank" rel="noopener noreferrer"><img className="bigImg" src={awsugblr} alt={'AWS UG Bangalore'}/></a>
           <a href="https://www.meetup.com/en-AU/GraphQLHongKong/events/265065562" target="_blank" rel="noopener noreferrer"><img className="mediumImg" src={graphqlHongKong} alt={'GraphQL HongKong'}/></a>
+          <a href="https://www.reactindia.io/" target="_blank" rel="noopener noreferrer"><img className="bigImg" src={reactIndia} alt={'React india'}/></a>
         </div>
       </div>
     </div>

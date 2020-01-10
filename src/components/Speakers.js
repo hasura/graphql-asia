@@ -198,7 +198,7 @@ class Speakers extends React.Component {
   render() {
     const speakersContainer = this.state.speakersList.map((list, index) => {
       return (
-        <div className='col-md-3 col-sm-4 col-xs-12 flexContainer'>
+        <div className='col-md-3 col-sm-4 col-xs-6 flexContainer'>
           <div className='speakersList flexList'>
             <div className='speakerImg'>
               <img src={list.imgSrc} alt={list.name}/>
