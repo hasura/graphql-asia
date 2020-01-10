@@ -1078,6 +1078,43 @@ img {
     }
   }
 }
+/* Details page */
+.detailsBgImage {
+  background-image: url('../images/thanks-bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.detailsTopBannerWrapper {
+  padding-top: 100px;
+  padding-bottom: 60px;
+  .detailsWrapper {
+    padding-top: 100px;
+    display: flex;
+    .profileImg {
+      img {
+        width: 240px;
+        border-radius: 50%;
+      }
+    }
+    .profileWrapper {
+      padding-left: 48px;
+      .profileName {
+        font-family: 'Poppins';
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 0.67;
+        letter-spacing: normal;
+        color: #7c74d5;
+      }
+      .profileDesignation {
+
+      }
+      .profileOrganization {
+
+      }
+    }
+  }
+}
 @media ( min-width: 992px ) and (max-width: 1199px) {
   .watermarkWrapper{
     .watermarkImgTop {
