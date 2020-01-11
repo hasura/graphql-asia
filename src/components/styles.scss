@@ -5,6 +5,9 @@
 .pinkBgColor {
   background-color: #f81894;
 }
+.blueBgColor {
+  background-color: #001934;
+}
 .blockBgColor {
   background-color: #111111;
 }
@@ -660,6 +663,16 @@ img {
         max-height: 80px;
       }
     }
+    .platinumIcons {
+      img {
+        display: inline-block;
+      }
+    }
+    .goldIcons {
+      img {
+        width: 300px;
+      }
+    }
   }
 }
 /* Proposals */
@@ -757,7 +770,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    .purpleGradientBgColor {
+    .blueBgColor {
       border-radius: 20px;
       width: 950px;
       margin: 0 auto;
@@ -1351,7 +1364,7 @@ img {
   .scheduleWrapper {
     .sectionPosition {
       padding-top: 80px;
-      .purpleGradientBgColor {
+      .blueBgColor {
         width: 98%;
         left: 1%;
       }
@@ -1611,10 +1624,11 @@ img {
           margin-right: 0;
         }
       }
-      .platinumIcons {
+      .platinumIcons, .goldIcons {
         text-align: center;
         img {
           display: inline-block;
+          width: 50%;
         }
       }
     }
@@ -1637,7 +1651,7 @@ img {
   }
   .scheduleWrapper {
     .sectionPosition {
-      .purpleGradientBgColor {
+      .blueBgColor {
         width: 95%;
         position: static;
       }

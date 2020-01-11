@@ -138,7 +138,7 @@ class Speakers extends React.Component {
         {
           imgSrc: vijayanSrinivasan,
           name: 'Vijayan Srinivasan',
-          designation: 'LEAD ENGINEER',
+          designation: 'Group Development Manager',
           organization: 'INTUIT',
           twitterLink: 'https://twitter.com/vijayanskp',
           githubLink: 'https://github.com/vijayan007',
@@ -154,7 +154,7 @@ class Speakers extends React.Component {
         {
           imgSrc: arunLingala,
           name: 'Arun Lingala',
-          designation: 'SENIOR SOFTWARE ENGINEER',
+          designation: 'Staff Software Engineer',
           organization: 'INTUIT',
           twitterLink: 'https://twitter.com/ArunLingalaCBK',
           githubLink: 'https://github.com/arunlingala',
@@ -198,7 +198,7 @@ class Speakers extends React.Component {
   render() {
     const speakersContainer = this.state.speakersList.map((list, index) => {
       return (
-        <div className='col-md-3 col-sm-4 col-xs-12 flexContainer'>
+        <div className='col-md-3 col-sm-4 col-xs-6 flexContainer'>
           <div className='speakersList flexList'>
             <div className='speakerImg'>
               <img src={list.imgSrc} alt={list.name}/>
