@@ -1090,10 +1090,13 @@ img {
   .detailsWrapper {
     padding-top: 100px;
     display: flex;
+    align-items: center;
     .profileImg {
+      text-align: right;
       img {
         width: 240px;
         border-radius: 50%;
+        display: inline-block;
       }
     }
     .profileWrapper {
@@ -1105,13 +1108,64 @@ img {
         line-height: 0.67;
         letter-spacing: normal;
         color: #7c74d5;
+        padding-bottom: 8px;
+      }
+      .profileDesignation, .profileOrganization {
+        font-family: 'Poppins';
+        font-size: 24px;
+        line-height: 1.5;
+        letter-spacing: 2.4px;
+        color: #fff;
+        padding-bottom: 8px;
       }
       .profileDesignation {
-
+        font-weight: normal;
+        opacity: 0.6;
       }
       .profileOrganization {
-
+        font-weight: 600;
       }
+      .socialWrapper {
+        display: flex;
+        padding-top: 12px;
+        .socialIcon {
+          padding-right: 24px;
+        }
+      }
+    }
+  }
+}
+.aboutSpeakerWrapper {
+  .title {
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.8px;
+    color: #f81894;
+    text-align: right;
+  }
+  .pageDescription {
+    width: 80%;
+    padding-left: 48px;
+    padding-bottom: 48px;
+  }
+  .speakersTitle {
+    padding-left: 48px;
+    font-family: 'Poppins';
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.38;
+    color: #27216e;
+    padding-bottom: 8px;
+  }
+  .pinkLink {
+    padding-left: 48px;
+    a {
+
+    }
+    a:focus {
+      text-decoration: none;
+      outline: none;
     }
   }
 }
