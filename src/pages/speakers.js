@@ -1,5 +1,6 @@
 import React from "react"
 // import { Link } from "gatsby"
+import { Router } from "@reach/router"
 
 import Layout from "../components/layout"
 import Contact from '../components/Contact'
@@ -10,8 +11,10 @@ import DetailsTopBanner from '../components/DetailsTopBanner'
 const IndexPage = () => (
   <Layout>
     <SEO title="Speakers Details | GraphQL Asia 2020" />
-      <DetailsTopBanner/>
-      <Contact/>
+    <Router>
+      <DetailsTopBanner path="/speakers/:speakerUrl" />
+    </Router>
+    <Contact/>
   </Layout>
 )
 
