@@ -45,18 +45,6 @@ const DetailsTopBanner = () => (
       <div className={'container noPadd'}>
         <div className='aboutSpeakerWrapper'>
           <div className='col-md-4 col-sm-4 col-xs-12 noPadd'>
-            <div className='title'>
-              ABOUT VISHAKHA
-            </div>
-          </div>
-          <div className='col-md-8 col-sm-8 col-xs-12 noPadd'>
-            <div className='pageDescription'>
-              Vishakha is a software engineer at PayPal where she works to make the checkout experience faster and better. She completed her Masters from Georgia Tech specializing in Computer Networks only to later realize her passion for Javascript and UI engineering. She also loves spending time meditating, baking and experimenting with makeup!
-            </div>
-          </div>
-        </div>
-        <div className='aboutSpeakerWrapper'>
-          <div className='col-md-4 col-sm-4 col-xs-12 noPadd'>
             <div className='title titleTop'>
               TALK DETAILS
             </div>
@@ -67,6 +55,18 @@ const DetailsTopBanner = () => (
             </div>
             <div className='pageDescription'>
               At PayPal, we are rebuilding our checkout experience from the ground up. The most important and logical problem we are solving is to make the experience super fast. Come hear our story on how we leveraged GraphQL server to smartly and efficiently present varied regional payment experiences to people all around the globe.
+            </div>
+          </div>
+        </div>
+        <div className='aboutSpeakerWrapper'>
+          <div className='col-md-4 col-sm-4 col-xs-12 noPadd'>
+            <div className='title'>
+              ABOUT VISHAKHA
+            </div>
+          </div>
+          <div className='col-md-8 col-sm-8 col-xs-12 noPadd'>
+            <div className='pageDescription'>
+              Vishakha is a software engineer at PayPal where she works to make the checkout experience faster and better. She completed her Masters from Georgia Tech specializing in Computer Networks only to later realize her passion for Javascript and UI engineering. She also loves spending time meditating, baking and experimenting with makeup!
             </div>
             <div className='pinkLink'>
               <a href="/#speakers">BACK TO SPEAKERS<img src={arrowPink} alt={'Arrow'} /></a>
