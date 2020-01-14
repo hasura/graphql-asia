@@ -1171,6 +1171,8 @@ img {
     color: #f81894;
     text-align: right;
     text-transform: uppercase;
+    -webkit-font-smoothing: auto;
+    font-smooth: auto;
   }
   .titleTop {
     padding-top: 4px;
