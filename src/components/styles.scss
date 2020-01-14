@@ -27,6 +27,9 @@
   position: relative;
   min-height: 100vh;
 }
+.clearBoth {
+  clear: both;
+}
 .transparentBtnNav, .transparentBtn,  .whiteBtn, .blueBtn{
   border-radius: 5px;
   font-family: 'Roboto';
@@ -391,13 +394,17 @@ img {
   display: flex;
   a {
     opacity: .9;
+    img {
+      margin-left: 14px;
+      transition: 200ms;
+    }
     &:hover {
       opacity: 1;
       text-decoration: none;
+      img {
+        transform: translateX(4px);
+      }
     }
-  }
-  img {
-    margin-left: 14px;
   }
 }
 .blueLink {
@@ -409,6 +416,10 @@ img {
   }
 }
 .pinkLink {
+  font-family: 'Poppins';
+  font-size: 18px;
+  letter-spacing: 1.8px;
+  display: flex;
   a {
     color: #f81894;
     &:hover {
@@ -1007,6 +1018,9 @@ img {
         padding-bottom: 32px;
         img {
           box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+          &:hover {
+            box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.16);
+          }
         }
       }
       .name {
@@ -1088,6 +1102,103 @@ img {
         margin-left: 12px;
         width: 55px;
       }
+    }
+  }
+}
+/* Details page */
+.detailsBgImage {
+  background-image: url('../images/thanks-bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.detailsTopBannerWrapper {
+  padding-top: 100px;
+  padding-bottom: 60px;
+  .detailsWrapper {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    .profileImg {
+      text-align: right;
+      img {
+        width: 240px;
+        border-radius: 50%;
+        display: inline-block;
+      }
+    }
+    .profileWrapper {
+      padding-left: 48px;
+      .profileName {
+        font-family: 'Poppins';
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 1.05;
+        letter-spacing: normal;
+        color: #7c74d5;
+        padding-bottom: 8px;
+      }
+      .profileDesignation, .profileOrganization {
+        font-family: 'Poppins';
+        font-size: 24px;
+        line-height: 1.5;
+        letter-spacing: 2.4px;
+        color: #fff;
+        padding-bottom: 8px;
+      }
+      .profileDesignation {
+        font-weight: normal;
+        opacity: 0.6;
+      }
+      .profileOrganization {
+        font-weight: 600;
+      }
+      .socialWrapper {
+        display: flex;
+        padding-top: 12px;
+        .socialIcon {
+          padding-right: 24px;
+        }
+      }
+    }
+  }
+}
+.aboutSpeakerWrapper {
+  .title {
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.8px;
+    color: #f81894;
+    text-align: right;
+    text-transform: uppercase;
+    -webkit-font-smoothing: auto;
+    font-smooth: auto;
+  }
+  .titleTop {
+    padding-top: 4px;
+  }
+  .pageDescription {
+    width: 80%;
+    padding-left: 48px;
+    padding-bottom: 48px;
+  }
+  .speakersTitle {
+    padding-left: 48px;
+    font-family: 'Poppins';
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.38;
+    color: #27216e;
+    padding-bottom: 48px;
+  }
+  .pinkLink {
+    padding-left: 48px;
+    a {
+
+    }
+    a:focus {
+      text-decoration: none;
+      outline: none;
     }
   }
 }
@@ -1322,8 +1433,16 @@ img {
       }
     }
   }
+  .detailsTopBannerWrapper {
+    .detailsWrapper {
+      padding-top: 50px;
+    }
+  }
 }
 @media(max-width: 767px) {
+  .sectionWrapperSmall {
+    padding: 30px 0;
+  }
   .thanksWrapper {
     min-height: calc(100vh - 195px);
     padding: 50px 0;
@@ -1704,6 +1823,57 @@ img {
           padding-bottom: 16px;
         }
       }
+    }
+  }
+  .detailsTopBannerWrapper {
+    padding: 0 15px;
+    padding-bottom: 40px;
+    padding-top: 100px;
+    .detailsWrapper {
+      padding-top: 30px;
+      display: block;
+      .profileImg {
+        text-align: center;
+        padding-bottom: 25px;
+      }
+      .profileWrapper {
+        padding-left: 0;
+        .profileName {
+          text-align: center;
+          font-size: 30px;
+        }
+        .profileDesignation, .profileOrganization {
+          text-align: center;
+          font-size: 20px;
+        }
+        .socialWrapper {
+          justify-content: center;
+        }
+      }
+    }
+  }
+  .aboutSpeakerWrapper {
+    padding: 0 15px;
+    .title {
+      text-align: center;
+      padding-bottom: 10px;
+    }
+    .speakersTitle {
+      text-align: center;
+      padding-left: 0;
+      padding-bottom: 25px;
+      font-size: 26px;
+    }
+    .pageDescription {
+      width: 100%;
+      padding-left: 0;
+      padding-bottom: 25px;
+      text-align: justify;
+    }
+    .pinkLink {
+      padding-left: 0;
+      padding-bottom: 0;
+      text-align: center;
     }
   }
 }
