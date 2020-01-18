@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { workshopState } from './AllState.js';
 import './styles.scss'
 
-const speaker = require('../images/speaker.svg');
+const workshop = require('../images/workshop-watermark.svg');
 const time = require('../images/time.svg');
 const calendarPink = require('../images/calendar-pink.svg');
 const placePink = require('../images/place-pink.svg');
@@ -62,7 +62,7 @@ const Workshops  = (props) => {
           </div>
         </div>
         <div className={'watermarkImg hidden-xs'}>
-          <img src={speaker} alt={'speaker water mark'}/>
+          <img src={workshop} alt={'workshop water mark'}/>
         </div>
       </div>
     );

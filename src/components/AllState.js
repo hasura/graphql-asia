@@ -274,6 +274,9 @@ const workshopState = {
     'time': '4 hrs',
     'level': 'Intermediate',
     'levelImg': intermediate,
+    'workshopDescription': 'React embraces declarative model for building UI\'s.  But data fetching in typical applications is still imperative. GraphQL client libraries like Apollo Client solve this problem and help us use declarative data fetching to build apps and get rid of lot of data fetching boilerplate code. In this workshop, lets build a simple e-commerce app with React and learn how to leverage features of GraphQL & Apollo Client for effective data fetching, state management and real-time updates',
+    'workshopCover': ['What is Apollo Client', 'How to setup Apollo Client in react apps', 'Declarative data fetching with Apollo Client', 'How Apollo cache works', 'Mutations for sending updates to server', 'Subscriptions for real-time updates', 'Local state management with Apollo Client', 'Understanding apollo links and how to use them to enhance Apollo client functionality', 'Debugging with Apollo client devtools', 'Performance optimisations to lookout for Gotcha you might run into with Apollo Client and how to overcome them'],
+    'workshopTakeaway': 'How to leverage features of GraphQL & Apollo Client to build declarative react apps',
   },
 };
 export {speakerState, workshopState}
