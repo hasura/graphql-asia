@@ -28,7 +28,7 @@ const WorkshopTopBanner = (props) => {
             <div className='col-md-8 col-sm-8 col-xs-12 noPadd'>
               <div className='profileWrapper'>
                 <div className='profileName'>
-                  {currentWorkshop.name}
+                  {currentWorkshop.title}
                 </div>
                 <div className='socialWrapper'>
                   <div className='workshopIcon'>
