@@ -105,7 +105,7 @@ const WorkshopTopBanner = (props) => {
           <div className='aboutSpeakerWrapper'>
             <div className='col-md-4 col-sm-4 col-xs-12 noPadd'>
               <div className='title titleTop'>
-                ABOUT THE SPEAKER
+                SPEAKER
               </div>
             </div>
             <div className='col-md-8 col-sm-8 col-xs-12 noPadd'>
