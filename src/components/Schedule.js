@@ -8,7 +8,7 @@ const talk = require('../images/talk.svg');
 const hasuraDumbledore = require('../images/hasura-dumbledore.png');
 const icons = require('../images/icons.svg');
 const Schedule = () => (
-  <div id="schedule" className={'scheduleWrapper sectionWrapper watermarkWrapper positionBottom'}>
+  <div id="schedule" className={'scheduleWrapper lightGrayBgColor sectionWrapper watermarkWrapper positionBottom'}>
     <div className={'container noPadd'}>
       <div className={'sectionHeader'}>
         SCHEDULE

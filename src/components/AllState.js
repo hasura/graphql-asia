@@ -18,6 +18,9 @@ const yogeshDesai = require('../images/Yogesh-Desai.png');
 const abinashMohapatra = require('../images/Abinash-Mohapatra.png');
 const rajatKhare = require('../images/Rajat-Khare.png');
 const seanGrove = require('../images/Sean-Grove.png');
+const beginner = require('../images/beginner.svg');
+const intermediate = require('../images/intermediate.svg');
+
 const speakerState = {
   'robert-zhu': {
     'img': robertZhu,
@@ -247,4 +250,30 @@ const speakerState = {
     'abstract': 'You provide a GraphQL API, and you care deeply about your API DX:You want your developers to be happy, to find the exact information they need at just the right time,and to trust that your documentation is infallible. Only one challenge: that sounds like a lot of work, and - like the rest of us - you\'re lazy. Never worry! Codex is a free, OSS GraphQL documentation suite for busy (ahem) developers like you meant to achieve API documentation nirvana with minimal effort.',
   },
 };
-export {speakerState}
+const workshopState = {
+  'why-graphql': {
+    'title': 'Why GraphQL?',
+    'img': shipraGupta,
+    'name': 'Shipra Gupta',
+    'designation': 'COMPUTER SCIENTIST',
+    'org': 'ADOBE',
+    'time': '40 mins',
+    'level': 'GraphQL Beginner',
+    'levelImg': beginner,
+    'workshopDescription': 'You have heard that GraphQL is an amazing technology but you are not sure why? In this talk you will learn when and why to use GraphQL and how it can fit with existing backend services in your organisation to improve the performance.',
+    'workshopCover': ['How GraphQL helps in improving application performance and organisational agility', 'Compare REST vs GraphQL', 'Demo the benefits offered by GraphQL.'],
+    'workshopTakeaway': 'You will learn when and where to use GraphQL'
+
+  },
+  'building-apps-with-react-apollo-client': {
+    'title': 'Building apps with React & Apollo Client',
+    'img': kiranKumar,
+    'name': 'Kiran Kumar Abburi',
+    'designation': 'FOUNDER',
+    'org': 'NEOSTACK',
+    'time': '4 hrs',
+    'level': 'Intermediate',
+    'levelImg': intermediate,
+  },
+};
+export {speakerState, workshopState}

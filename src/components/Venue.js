@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.scss';
 const leelaPalace = require('../images/leela-palace.png');
 const Venue = () => (
-  <div id="venue" className={'venueWrapper sectionWrapper watermarkWrapper lightGrayBgColor positionTop'}>
+  <div id="venue" className={'venueWrapper sectionWrapper watermarkWrapper positionTop'}>
     <div className={'container noPadd'}>
       <div className={'sectionHeader'}>
         VENUE

@@ -125,6 +125,9 @@
 .borderRight {
   border-right: 1px solid rgba(39, 33, 110, .24);
 }
+.workshopBorderRight {
+  border-right: 2px solid #f81894;
+}
 .contactBorRight {
   border-right: 1px solid rgba(255, 255, 255, 0.6);
 }
@@ -437,6 +440,18 @@ img {
   color: #ffffff;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
+.locationDetails {
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  color: #f81894;
+  img {
+    margin-right: 12px;
+    margin-left: 25px;
+  }
+}
+
 .headerWrapper {
   color: #fff;
   position: absolute;
@@ -1158,29 +1173,84 @@ img {
         .socialIcon {
           padding-right: 24px;
         }
+        .workshopIcon {
+          padding-right: 24px;
+          font-family: 'Roboto';
+          font-size: 20px;
+          color: #fff;
+          span {
+            opacity: 0.48;
+          }
+          img {
+            margin-right: 12px;
+          }
+        }
       }
     }
   }
 }
+.title {
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1.8px;
+  color: #f81894;
+  text-align: right;
+  text-transform: uppercase;
+  -webkit-font-smoothing: auto;
+  font-smooth: auto;
+}
+.titleTop {
+  padding-top: 4px;
+}
 .aboutSpeakerWrapper {
-  .title {
-    font-family: 'Poppins';
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 1.8px;
-    color: #f81894;
-    text-align: right;
-    text-transform: uppercase;
-    -webkit-font-smoothing: auto;
-    font-smooth: auto;
-  }
-  .titleTop {
-    padding-top: 4px;
-  }
   .pageDescription {
     width: 80%;
     padding-left: 48px;
     padding-bottom: 48px;
+    ul {
+      margin: 0 0;
+      li {
+        list-style-type: none;
+        margin-bottom: 0;
+        display: flex;
+        align-items: flex-start;
+        padding-bottom: 8px;
+      }
+    }
+  }
+  .speakersProfile {
+    padding-left: 48px;
+    padding-bottom: 48px;
+    display: flex;
+    align-items: center;
+    .speakerImg {
+      img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+      }
+    }
+    .profile {
+      padding-left: 12px;
+      .name {
+        font-family: 'Poppins';
+        font-size: 20px;
+        font-weight: 600;
+        color: #27216e;
+        padding-bottom: 4px;
+      }
+      .designation, .organization {
+        font-family: 'Poppins';
+        font-size: 16px;
+        font-weight: normal;
+        color: #505050;
+        line-height: 1.38;
+      }
+      .organization {
+        font-weight: 600;
+      }
+    }
   }
   .speakersTitle {
     padding-left: 48px;
@@ -1200,6 +1270,87 @@ img {
       text-decoration: none;
       outline: none;
     }
+  }
+}
+/* Workshop section*/
+.workshopWrapper {
+  .sectionHeader, .pageDescription {
+    text-align: center;
+  }
+  .sectionHeader {
+    color: #27216e;
+  }
+  .pinkSeperateLine {
+    margin: 30px auto;
+    margin-top: 15px;
+  }
+  .locationDateWrapper {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    .locationDetails {
+      padding-right: 25px;
+    }
+  }
+  .workshopListWrapper {
+    padding-bottom: 60px;
+    .workshopList {
+      background-color: #f6f6f6;
+      padding: 32px 24px;
+      margin: 8px 0;
+      display: flex;
+      align-items: center;
+      .workshopProfile {
+        img {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+        }
+      }
+      .workshopTitleWrapper {
+        padding-left: 24px;
+        flex: 1;
+        .workshopTitle {
+          font-family: 'Poppins';
+          font-size: 24px;
+          font-weight: 600;
+          color: #27216e;
+          line-height: 1.33;
+          padding-bottom: 4px;
+          a {
+            color: #27216e;
+            &:hover, &:focus {
+              text-decoration: none;
+              outline: none;
+            }
+          }
+        }
+        .workshopName {
+          font-family: 'Roboto';
+          font-size: 20px;
+          font-weight: normal;
+          line-height: 1.6;
+          color: #7c74d5;
+        }
+      }
+      .timeLevelWrapper {
+        font-family: 'Roboto';
+        font-size: 20px;
+        font-weight: normal;
+        color: #909090;
+        min-width: 230px;
+        .time, .level {
+          padding: 7px 0;
+          img {
+            margin-right: 13px;
+          }
+        }
+      }
+    }
+  }
+  .buttonWrapper {
+    padding-top: 30px;
+    text-align: center;
   }
 }
 @media ( min-width: 992px ) and (max-width: 1199px) {

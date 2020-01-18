@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import TopBanner from "../components/TopBanner"
 import Overview from '../components/Overview'
 import Speakers from '../components/Speakers'
+import Workshops from '../components/Workshops'
 // import Proposals from '../components/Proposals'
 import Schedule from '../components/Schedule'
 import Venue from '../components/Venue'
@@ -19,6 +20,7 @@ const IndexPage = () => (
     <TopBanner />
     <Overview />
     <Speakers/>
+    <Workshops/>
     {/* <Proposals /> */}
     <Schedule />
     <Venue />
