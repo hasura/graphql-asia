@@ -387,12 +387,12 @@ img {
   }
 }
 .blueLink, .pinkLink {
-  font-family: 'Roboto';
-  font-size: 20px;
-  font-weight: 900;
+  font-family: 'Poppins';
+  font-size: 18px;
+  letter-spacing: 1.8px;
+  font-weight: 600;
   font-style: normal;
   font-stretch: normal;
-  letter-spacing: 4px;
   cursor: pointer;
   display: flex;
   a {
@@ -1983,6 +1983,11 @@ img {
     .detailsWrapper {
       padding-top: 30px;
       display: block;
+      .title {
+        text-align: center;
+        padding-top: 0;
+        padding-bottom: 10px;
+      }
       .profileImg {
         text-align: center;
         padding-bottom: 25px;
@@ -1999,6 +2004,10 @@ img {
         }
         .socialWrapper {
           justify-content: center;
+          padding-top: 5px;
+          .socialIcon {
+            padding: 0 12px;
+          }
         }
       }
     }
@@ -2025,6 +2034,48 @@ img {
       padding-left: 0;
       padding-bottom: 0;
       text-align: center;
+    }
+  }
+  .workshopWrapper {
+    padding: 40px 0;
+    .locationDateWrapper {
+      display: block;
+      padding: 20px 0;
+      .locationDetails {
+        padding-right: 0;
+        text-align: center;
+        font-size: 15px;
+        padding: 5px 0;
+        img {
+          margin-left: 0;
+        }
+      }
+      .workshopBorderRight {
+        border-right: 0;
+      }
+    }
+    .workshopListWrapper {
+      padding-bottom: 20px;
+      .workshopList {
+        display: block;
+        .workshopProfile {
+          text-align: center;
+          padding-bottom: 20px;
+          img {
+            display: inline-block;
+          }
+        }
+        .workshopTitleWrapper {
+          .workshopTitle, .workshopName{
+            text-align: center;
+          }
+        }
+        .timeLevelWrapper {
+          .time, .level {
+            text-align: center;
+          }
+        }
+      }
     }
   }
 }
