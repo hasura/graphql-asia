@@ -32,9 +32,9 @@
 }
 .transparentBtnNav, .transparentBtn,  .whiteBtn, .blueBtn{
   border-radius: 5px;
-  font-family: 'Roboto';
-  font-size: 20px;
-  font-weight: bold;
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-weight: 500;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.2;
@@ -276,14 +276,15 @@ img {
   }
 }
 .pageDescriptionPink {
-  color: #f81894;
+  color: #909090;
   font-size: 20px;
-  font-family: 'Roboto';
+  font-family: 'Poppins';
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.21;
   letter-spacing: normal;
+  opacity: .8;
 }
 .flexBoxWrapper
 {
@@ -431,21 +432,21 @@ img {
   }
 }
 .details {
-  font-family: 'Roboto';
+  font-family: 'Poppins';
   font-size: 22px;
   font-weight: 900;
   font-style: normal;
   font-stretch: normal;
   letter-spacing: 3.8px;
   color: #ffffff;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 .locationDetails {
   font-family: 'Poppins';
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 4px;
-  color: #f81894;
+  color: #27216e;
   img {
     margin-right: 12px;
     margin-left: 25px;
@@ -477,10 +478,10 @@ img {
         .navBarList {
           margin-bottom: 0;
           button {
-            opacity: 0.85;
-            font-family: 'Roboto';
-            font-size: 20px;
-            font-weight: normal;
+            opacity: 0.8;
+            font-family: 'Poppins';
+            font-size: 18px;
+            font-weight: 500;
             font-style: normal;
             font-stretch: normal;
             line-height: 1.2;
@@ -496,6 +497,7 @@ img {
             }
             &:hover {
               opacity: 1;
+              font-weight: 500;
             }
           }
           .navbarActive {
@@ -627,7 +629,7 @@ img {
   .sectionHeader {
     color: #27216e;
   }
-  .blueLink {
+  .pinkLink {
     padding-top: 30px;
   }
   .scheduleBg {
@@ -753,6 +755,7 @@ img {
         padding-top: 0px;
         padding-bottom: 10px;
         color: #27216e;
+        font-family: 'Poppins';
       }
     }
   }
@@ -1029,6 +1032,15 @@ img {
   .speakersListWrapper {
     .speakersList {
       margin: 30px 0px;
+      a {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        &:hover, &:focus {
+          text-decoration: none;
+          outline: none;
+        }
+      }
       .speakerImg {
         padding-bottom: 32px;
         img {
@@ -1045,6 +1057,9 @@ img {
         line-height: 1.33;
         color: #27216e;
         padding-bottom: 8px;
+        a {
+          color: #27216e;
+        }
       }
       .designation {
         font-family: 'Poppins';
@@ -1054,6 +1069,9 @@ img {
         letter-spacing: 1.6px;
         text-transform: uppercase;
         line-height: 1.5;
+        a {
+          color: #909090;
+        }
       }
       .organization {
         font-family: 'Poppins';
@@ -1063,6 +1081,9 @@ img {
         letter-spacing: 1.6px;
         text-transform: uppercase;
         line-height: 1.5;
+        a {
+          color: #505050;
+        }
       }
       .socialWrapper {
         display: flex;
@@ -1141,6 +1162,10 @@ img {
         display: inline-block;
       }
     }
+    .title {
+      color: #fff;
+      font-weight: 600;
+    }
     .profileWrapper {
       padding-left: 48px;
       .profileName {
@@ -1192,9 +1217,9 @@ img {
 .title {
   font-family: 'Poppins';
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 600;
   letter-spacing: 1.8px;
-  color: #f81894;
+  color: #909090;
   text-align: right;
   text-transform: uppercase;
   -webkit-font-smoothing: auto;
