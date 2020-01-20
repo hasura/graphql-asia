@@ -10,27 +10,29 @@ const placePink = require('../images/place-pink.svg');
 const Workshops  = (props) => {
     const workshopContainer = Object.keys(workshopState).map((url, index) => {
       return (
-        <div key = {index} className='workshopList'>
-          <div className='workshopProfile'>
-            <img src={workshopState[url].img} alt={workshopState[url].name}/>
+        <Link to={'/workshops/'+url}>
+          <div key = {index} className='workshopList'>
+            <div className='workshopProfile'>
+              <img src={workshopState[url].img} alt={workshopState[url].name}/>
+            </div>
+            <div className='workshopTitleWrapper'>
+              <div className='workshopTitle'>
+                {workshopState[url].title}
+              </div>
+              <div className='workshopName'>
+                {workshopState[url].name}
+              </div>
+            </div>
+            <div className='timeLevelWrapper'>
+              <div className='time'>
+                <img src={time} alt='Time icon'/>{workshopState[url].time}
+              </div>
+              <div className='level'>
+                <img src={workshopState[url].levelImg} alt={workshopState[url].level}/>{workshopState[url].level}
+              </div>
+            </div>
           </div>
-          <div className='workshopTitleWrapper'>
-            <div className='workshopTitle'>
-              <Link to={'/workshops/'+url}>{workshopState[url].title}</Link>
-            </div>
-            <div className='workshopName'>
-              {workshopState[url].name}
-            </div>
-          </div>
-          <div className='timeLevelWrapper'>
-            <div className='time'>
-              <img src={time} alt='Time icon'/>{workshopState[url].time}
-            </div>
-            <div className='level'>
-              <img src={workshopState[url].levelImg} alt={workshopState[url].level}/>{workshopState[url].level}
-            </div>
-          </div>
-        </div>
+        </Link>
       )
     })
     return (
