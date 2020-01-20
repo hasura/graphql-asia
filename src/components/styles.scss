@@ -91,8 +91,8 @@
 .sendMessageBtn {
   background-color: transparent;
   border: 0;
-  font-family: 'Roboto';
-  font-size: 20px;
+  font-family: 'Poppins';
+  font-size: 18px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -1028,6 +1028,7 @@ img {
     padding: 0 15px;
     padding-top: 30px;
     clear: both;
+    text-align: center;
   }
   .speakersListWrapper {
     .speakersList {
@@ -1314,6 +1315,7 @@ img {
   }
   .locationDateWrapper {
     padding: 40px 0;
+    padding-bottom: 60px;
     display: flex;
     justify-content: center;
     .locationDetails {
