@@ -5,8 +5,8 @@ import './styles.scss'
 
 const workshop = require('../images/workshop-watermark.svg');
 const time = require('../images/time.svg');
-const calendarPink = require('../images/calendar-pink.svg');
-const placePink = require('../images/place-pink.svg');
+const calendarBlue = require('../images/calendar-blue.svg');
+const placeBlue = require('../images/place-blue.svg');
 const Workshops  = (props) => {
     const workshopContainer = Object.keys(workshopState).map((url, index) => {
       return (
@@ -47,10 +47,10 @@ const Workshops  = (props) => {
           </div>
           <div className='locationDateWrapper'>
             <div className='locationDetails workshopBorderRight'>
-              <img src={placePink} alt='Place icon'/>THE TERRACE @ HASURA
+              <img src={placeBlue} alt='Place icon'/>THE TERRACE @ HASURA
             </div>
             <div className='locationDetails'>
-              <img src={calendarPink} alt='Calender icon'/>20 FEB, 2020
+              <img src={calendarBlue} alt='Calender icon'/>20 FEB, 2020
             </div>
           </div>
           <div className={'workshopListWrapper'}>
