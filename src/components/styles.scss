@@ -1216,6 +1216,9 @@ img {
         display: flex;
         align-items: flex-start;
         padding-bottom: 8px;
+        img {
+          margin-right: 8px;
+        }
       }
     }
   }
@@ -1294,9 +1297,15 @@ img {
   }
   .workshopListWrapper {
     padding-bottom: 60px;
+    a {
+      &:hover, &:focus {
+        text-decoration: none;
+        outline: none;
+      }
+    }
     .workshopList {
       background-color: #f6f6f6;
-      padding: 32px 24px;
+      padding: 24px 24px;
       margin: 8px 0;
       display: flex;
       align-items: center;
@@ -1345,6 +1354,9 @@ img {
             margin-right: 13px;
           }
         }
+      }
+      &:hover {
+        box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);
       }
     }
   }
