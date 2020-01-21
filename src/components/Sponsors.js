@@ -19,6 +19,7 @@ const atlassianlogo = require('../images/atlassian-logo.svg');
 const reactIndia = require('../images/react-india.png');
 const graphqlSingapore = require('../images/graphql-singapore.png');
 const konfhubLogo = require('../images/konfhub-logo.png');
+const graphqlChandigarh = require('../images/GraphQLChandigarh.png');
 const Sponsors = () => (
   <div id="sponsors" className={'sponsorWrapper sectionWrapper watermarkWrapper'}>
     <div className={'container noPadd'}>
@@ -78,6 +79,7 @@ const Sponsors = () => (
         </div>
         <div className={'icons removePaddBottom'}>
           <a href="https://konfhub.com" target="_blank" rel="noopener noreferrer"><img src={konfhubLogo} alt={'konfhub'}/></a>
+          <a href="https://twitter.com/graphqlchd" target="_blank" rel="noopener noreferrer"><img className="bigImg" src={graphqlChandigarh} alt={'GraphQL Chandigarh'}/></a>
         </div>
       </div>
     </div>
