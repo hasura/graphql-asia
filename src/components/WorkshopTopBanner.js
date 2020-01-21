@@ -102,6 +102,22 @@ const WorkshopTopBanner = (props) => {
               </div>
             ) : null
           }
+          {
+            (currentWorkshop.preRequisites) ? (
+              <div className='aboutSpeakerWrapper'>
+                <div className='col-md-4 col-sm-4 col-xs-12 noPadd'>
+                  <div className='title titleTop'>
+                    Pre-requisites
+                  </div>
+                </div>
+                <div className='col-md-8 col-sm-8 col-xs-12 noPadd'>
+                  <div className='pageDescription'>
+                    {currentWorkshop.preRequisites}
+                  </div>
+                </div>
+              </div>
+            ) : null
+          }
           <div className='aboutSpeakerWrapper'>
             <div className='col-md-4 col-sm-4 col-xs-12 noPadd'>
               <div className='title titleTop'>
