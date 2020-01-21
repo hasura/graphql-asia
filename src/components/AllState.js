@@ -19,6 +19,7 @@ const abinashMohapatra = require('../images/Abinash-Mohapatra.png');
 const rajatKhare = require('../images/Rajat-Khare.png');
 const seanGrove = require('../images/Sean-Grove.png');
 const manishJain = require('../images/manish-jain.jpeg');
+const tiru = require('../images/tiru.jpg');
 const beginner = require('../images/beginner.svg');
 const intermediate = require('../images/intermediate.svg');
 
@@ -289,6 +290,20 @@ const workshopState = {
     'workshopDescription': 'React embraces declarative model for building UI\'s.  But data fetching in typical applications is still imperative. GraphQL client libraries like Apollo Client solve this problem and help us use declarative data fetching to build apps and get rid of lot of data fetching boilerplate code. In this workshop, lets build a simple e-commerce app with React and learn how to leverage features of GraphQL & Apollo Client for effective data fetching, state management and real-time updates',
     'workshopCover': ['What is Apollo Client', 'How to setup Apollo Client in react apps', 'Declarative data fetching with Apollo Client', 'How Apollo cache works', 'Mutations for sending updates to server', 'Subscriptions for real-time updates', 'Local state management with Apollo Client', 'Understanding apollo links and how to use them to enhance Apollo client functionality', 'Debugging with Apollo client devtools', 'Performance optimisations to lookout for Gotcha you might run into with Apollo Client and how to overcome them'],
     'workshopTakeaway': 'How to leverage features of GraphQL & Apollo Client to build declarative react apps',
+  },
+  'build-high-performance-graphql-serverless-apps-with-the-3factor-app-architecture': {
+    'title': 'Build high-performance GraphQL & serverless apps with the 3factor app architecture',
+    'img': tiru,
+    'name': 'Tirumarai Selvan',
+    'designation': 'Product Manager',
+    'org': 'Hasura',
+    'time': '90 mins',
+    'level': 'Intermediate',
+    'levelImg': intermediate,
+    'workshopDescription': '3factor app is an architecture pattern for modern apps. 3factor proposes an architecture pattern which is composed of 3 factors namely 1) realtime GraphQL, 2) reliable eventing and 3) async serverless. You will learn where monolithic architectures fall short and how to build scalable and reliable apps in 3factor style.',
+    'workshopCover': ['Challenges with GraphQL & cloud-native/serverless', 'What is a cloud-native app', 'Event-driven and async architectures', 'Moving from monolithic to event-driven serverless architectures', 'Closing the loop with realtime GraphQL', 'Building a complex food-delivery app in the 3factor pattern'],
+    'workshopTakeaway': 'You will learn how to build a GraphQL backend using Hasura, use GraphQL subscriptions to build a realtime app and how to wire up complex business logic to extend an application.',
+    'preRequisites': 'Backend and/or fullstack application development experience'
   },
 };
 export {speakerState, workshopState}
