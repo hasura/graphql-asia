@@ -69,14 +69,13 @@ const Sponsors = () => (
           <a href="https://twitter.com/jslovers_del" target="_blank" rel="noopener noreferrer"><img src={js} alt={'JS lovers'}/></a>
           <a href="https://twitter.com/GDGBLR" target="_blank" rel="noopener noreferrer"><img className={'gdgb'} src={gdgb} alt={'GDG Bangalore'}/></a>
           <a href="https://reactday.in" target="_blank" rel="noopener noreferrer"><img src={reactDay} alt={'React Day'}/></a>
-          <a href="https://twitter.com/graphqlblr" target="_blank" rel="noopener noreferrer"><img src={graphqllogo} alt={'GraphQL Bangalore'}/></a>
         </div>
         <div className={'icons'}>
+          <a href="https://twitter.com/graphqlblr" target="_blank" rel="noopener noreferrer"><img src={graphqllogo} alt={'GraphQL Bangalore'}/></a>
           <a href="https://www.meetup.com/awsugblr" target="_blank" rel="noopener noreferrer"><img className="bigImg" src={awsugblr} alt={'AWS UG Bangalore'}/></a>
           <a href="https://www.meetup.com/GraphQLHongKong" target="_blank" rel="noopener noreferrer"><img className="mediumImg" src={graphqlHongKong} alt={'GraphQL HongKong'}/></a>
           <a href="https://www.reactindia.io" target="_blank" rel="noopener noreferrer"><img className="bigImg" src={reactIndia} alt={'React india'}/></a>
           <a href="https://www.meetup.com/GraphQL-SG" target="_blank" rel="noopener noreferrer"><img className="mediumImg" src={graphqlSingapore} alt={'Graphql Singapore'}/></a>
-          <a href="https://konfhub.com" target="_blank" rel="noopener noreferrer"><img src={konfhubLogo} alt={'konfhub'}/></a>
         </div>
         <div className={'icons removePaddBottom'}>
           <a href="https://konfhub.com" target="_blank" rel="noopener noreferrer"><img src={konfhubLogo} alt={'konfhub'}/></a>
