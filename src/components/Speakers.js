@@ -17,13 +17,13 @@ const Speakers  = (props) => {
               <Link to={'/speakers/'+url}><img src={speakerState[url].img} alt={speakerState[url].name}/></Link>
             </div>
             <div className='name'>
-              {speakerState[url].name}
+              <Link to={'/speakers/'+url}>{speakerState[url].name}</Link>
             </div>
             <div className='designation flexAlign'>
-              {speakerState[url].designation}
+                <Link to={'/speakers/'+url}>{speakerState[url].designation}</Link>
             </div>
             <div className='organization'>
-              {speakerState[url].org}
+                <Link to={'/speakers/'+url}>{speakerState[url].org}</Link>
             </div>
             <div className='socialWrapper'>
               {

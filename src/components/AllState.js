@@ -18,6 +18,10 @@ const yogeshDesai = require('../images/Yogesh-Desai.png');
 const abinashMohapatra = require('../images/Abinash-Mohapatra.png');
 const rajatKhare = require('../images/Rajat-Khare.png');
 const seanGrove = require('../images/Sean-Grove.png');
+const manishJain = require('../images/manish-jain.jpeg');
+const beginner = require('../images/beginner.svg');
+const intermediate = require('../images/intermediate.svg');
+
 const speakerState = {
   'robert-zhu': {
     'img': robertZhu,
@@ -246,5 +250,45 @@ const speakerState = {
     'title': 'Be lazy and get promoted with great GraphQL documentation',
     'abstract': 'You provide a GraphQL API, and you care deeply about your API DX:You want your developers to be happy, to find the exact information they need at just the right time,and to trust that your documentation is infallible. Only one challenge: that sounds like a lot of work, and - like the rest of us - you\'re lazy. Never worry! Codex is a free, OSS GraphQL documentation suite for busy (ahem) developers like you meant to achieve API documentation nirvana with minimal effort.',
   },
+  'manish-jain': {
+    'img': manishJain,
+    'name': 'Manish Jain',
+    'designation': 'FOUNDER',
+    'org': 'DGRAPH',
+    'twitterLink': 'https://twitter.com/manishrjain',
+    'githubLink': 'https://manishrjain.github.io/',
+    'title': 'Back to GraphQL',
+    'description': 'At Dgraph we love GraphQL, so much that we built our graph database around the language. Early on, we decided we should modify the language in order to make it a better graph query language, therefore creating GraphQL+-. That decision was not without an important trade-off. By abandoning the specification we also made it harder to interact with the rest of the very rich GraphQL ecosystem. We recently decided to provide a GraphQL compliant spec API in addition to the existing GraphQL+- one, and our plans now include migrating some of the constructs we added to GraphQL+- back into GraphQL without breaking compatibility.How can  we build recursive queries, group by values, or structurally change a  response to our queries in GraphQL? Well, that’s the great question we are answering at Dgraph and we want to share our solutions, prototypes, and future ideas.',
+    'about': 'Manish Jain is the founder of Dgraph Labs and the author of Dgraph, Badger, and Ristretto. He got thrust into real-time distributed systems right out of college, working in Web Search and Knowledge Graph infrastructure group at Google for 6.5 years. He led various projects to consolidate and serve all structured data including the knowledge graph right behind web search by building a graph indexing and serving system. After leaving Google, he decided to use this knowledge to build a scalable graph database, which could be used by big and small companies alike to serve the increasingly complex data warranted by today\'s applications. He has given multiple talks at various Go meetups and conferences, most notably in Gophercon Shanghai where he presented in front of a thousand developers.'
+  },
 };
-export {speakerState}
+const workshopState = {
+  'why-graphql': {
+    'title': 'Why GraphQL?',
+    'img': shipraGupta,
+    'name': 'Shipra Gupta',
+    'designation': 'COMPUTER SCIENTIST',
+    'org': 'ADOBE',
+    'time': '40 mins',
+    'level': 'GraphQL Beginner',
+    'levelImg': beginner,
+    'workshopDescription': 'You have heard that GraphQL is an amazing technology but you are not sure why? In this talk you will learn when and why to use GraphQL and how it can fit with existing backend services in your organisation to improve the performance.',
+    'workshopCover': ['How GraphQL helps in improving application performance and organisational agility', 'Compare REST vs GraphQL', 'Demo the benefits offered by GraphQL.'],
+    'workshopTakeaway': 'You will learn when and where to use GraphQL'
+
+  },
+  'building-apps-with-react-apollo-client': {
+    'title': 'Building apps with React & Apollo Client',
+    'img': kiranKumar,
+    'name': 'Kiran Kumar Abburi',
+    'designation': 'FOUNDER',
+    'org': 'NEOSTACK',
+    'time': '4 hrs',
+    'level': 'Intermediate',
+    'levelImg': intermediate,
+    'workshopDescription': 'React embraces declarative model for building UI\'s.  But data fetching in typical applications is still imperative. GraphQL client libraries like Apollo Client solve this problem and help us use declarative data fetching to build apps and get rid of lot of data fetching boilerplate code. In this workshop, lets build a simple e-commerce app with React and learn how to leverage features of GraphQL & Apollo Client for effective data fetching, state management and real-time updates',
+    'workshopCover': ['What is Apollo Client', 'How to setup Apollo Client in react apps', 'Declarative data fetching with Apollo Client', 'How Apollo cache works', 'Mutations for sending updates to server', 'Subscriptions for real-time updates', 'Local state management with Apollo Client', 'Understanding apollo links and how to use them to enhance Apollo client functionality', 'Debugging with Apollo client devtools', 'Performance optimisations to lookout for Gotcha you might run into with Apollo Client and how to overcome them'],
+    'workshopTakeaway': 'How to leverage features of GraphQL & Apollo Client to build declarative react apps',
+  },
+};
+export {speakerState, workshopState}

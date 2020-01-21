@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20.7" height="25.5" viewBox="0 0 20.7 25.5">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#909090;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}
+        </style>
+    </defs>
+    <g id="streamline-icon-chicken-hatch_40x40" data-name="streamline-icon-chicken-hatch@40x40" transform="translate(.75 .75)">
+        <path id="Path_5098" d="M24.2 22.112a9.6 9.6 0 0 1-19.2 0v-1.218a.8.8 0 0 1 .8-.8.816.816 0 0 1 .3.057l2.413.965a.8.8 0 0 0 .863-.177l1.533-1.539a.8.8 0 0 1 1.045-.074l2.165 1.623a.8.8 0 0 0 .96 0l2.165-1.623a.8.8 0 0 1 1.045.074l1.468 1.474a.8.8 0 0 0 .977.121l2.253-1.351a.8.8 0 0 1 1.1.277.791.791 0 0 1 .113.406z" class="cls-1" data-name="Path 5098" transform="translate(-5 -7.712)"/>
+        <path id="Path_5099" d="M10 10.87v-3.2a6.4 6.4 0 0 1 12.8 0v3.2" class="cls-1" data-name="Path 5099" transform="translate(-6.8 -1.27)"/>
+        <path id="Path_5100" d="M32.323 7.52l-2.4 1.6 2.4 1.6" class="cls-1" data-name="Path 5100" transform="translate(-13.972 -3.52)"/>
+        <path id="Path_5101" d="M20.625 8.77a.4.4 0 0 1 .4.4" class="cls-1" data-name="Path 5101" transform="translate(-10.625 -3.97)"/>
+        <path id="Path_5102" d="M20 9.17a.4.4 0 0 1 .4-.4" class="cls-1" data-name="Path 5102" transform="translate(-10.4 -3.97)"/>
+        <path id="Path_5103" d="M20.4 9.8a.4.4 0 0 1-.4-.4" class="cls-1" data-name="Path 5103" transform="translate(-10.4 -4.195)"/>
+        <path id="Path_5104" d="M21.025 9.4a.4.4 0 0 1-.4.4" class="cls-1" data-name="Path 5104" transform="translate(-10.625 -4.195)"/>
+    </g>
+</svg>
