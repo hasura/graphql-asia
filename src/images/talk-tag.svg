@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12.145" height="17.718" viewBox="0 0 12.145 17.718">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#f81894;stroke-linecap:round;stroke-linejoin:round}
+        </style>
+    </defs>
+    <g id="streamline-icon-single-neutral-podium_24x24_1_" data-name="streamline-icon-single-neutral-podium@24x24 (1)" transform="translate(.5 .5)">
+        <path id="Path_5166" d="M4.5 15.75h11.145" class="cls-1" data-name="Path 5166" transform="translate(-4.5 -4.605)"/>
+        <path id="Path_5167" d="M13.63 21.323H8.057L7.5 15.75h6.687z" class="cls-1" data-name="Path 5167" transform="translate(-5.271 -4.605)"/>
+        <path id="Path_5168" d="M11.229.75A2.229 2.229 0 1 1 9 2.979 2.229 2.229 0 0 1 11.229.75z" class="cls-1" data-name="Path 5168" transform="translate(-5.656 -.75)"/>
+        <path id="Path_5169" d="M14.187 11.594a3.344 3.344 0 0 0-6.687 0" class="cls-1" data-name="Path 5169" transform="translate(-5.271 -2.677)"/>
+    </g>
+</svg>

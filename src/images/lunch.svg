@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60.127" height="60.518" viewBox="0 0 60.127 60.518">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#27216e;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.5px}
+        </style>
+    </defs>
+    <g id="streamline-icon-pie_60x60" data-name="streamline-icon-pie@60x60" transform="translate(.064 .518)">
+        <path id="Path_5150" d="M15 10c-3.75 3.75 3.75 6.25 0 10" class="cls-1" data-name="Path 5150"/>
+        <path id="Path_5151" d="M45 10c3.75 3.75-3.75 6.25 0 10" class="cls-1" data-name="Path 5151"/>
+        <path id="Path_5152" d="M30 1.25c-7.5 7.5 7.485 10 0 17.5" class="cls-1" data-name="Path 5152"/>
+        <path id="Path_5153" d="M58.628 44.75C54.878 33.11 42.675 26.25 30 26.25S5.135 33.107 1.372 44.75a2.5 2.5 0 0 0 1.155 2.95A9.826 9.826 0 0 0 7.5 48.75c5.7 0 7.655-2.618 11.43-2.618S24.9 48.75 30 48.75s7.292-2.618 11.07-2.618S46.8 48.75 52.5 48.75a9.8 9.8 0 0 0 4.972-1.05 2.5 2.5 0 0 0 1.156-2.95z" class="cls-1" data-name="Path 5153"/>
+        <path id="Path_5154" d="M30 32.5v5" class="cls-1" data-name="Path 5154"/>
+        <path id="Path_5155" d="M23.75 32.5l-2.5 3.75" class="cls-1" data-name="Path 5155"/>
+        <path id="Path_5156" d="M36.25 32.5l2.5 3.75" class="cls-1" data-name="Path 5156"/>
+        <path id="Path_5157" d="M52.5 48.75l-5.515 8.825a2.5 2.5 0 0 1-2.12 1.175h-29.73a2.5 2.5 0 0 1-2.12-1.175L7.5 48.75" class="cls-1" data-name="Path 5157"/>
+    </g>
+</svg>
