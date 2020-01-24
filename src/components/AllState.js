@@ -22,7 +22,12 @@ const manishJain = require('../images/manish-jain.jpeg');
 const tiru = require('../images/tiru.jpg');
 const beginner = require('../images/beginner.svg');
 const intermediate = require('../images/intermediate.svg');
-
+const communityTag = require('../images/community-tag.svg');
+const talkTag = require('../images/talk-tag.svg');
+const registration = require('../images/registration.svg');
+const lunch = require('../images/lunch.svg');
+const tea = require('../images/tea.svg');
+const dinner = require('../images/dinner.svg');
 const speakerState = {
   'robert-zhu': {
     'img': robertZhu,
@@ -306,4 +311,118 @@ const workshopState = {
     'preRequisites': 'Backend and/or fullstack application development experience'
   },
 };
-export {speakerState, workshopState}
+const scheduleStateDayOne = {
+  'registration': {
+    'type': 'break',
+    'img': registration,
+    'title': 'Registration',
+    'duration': '1 hr 30 mins',
+    'scheduleTime': '10:00 AM - 11:30 AM',
+  },
+  'vishakha-singh': {
+    'img': vishakhaSingh,
+    'name': 'Vishakha Singh',
+    'title': 'How we improved PayPal checkout conversions using GraphQL',
+    'duration': '30 mins',
+    'tag': 'Talk',
+    'scheduleTime': '10:00 AM - 11:30 AM',
+    'tagImg': talkTag,
+  },
+  'robert-zhu': {
+    'img': robertZhu,
+    'name': 'Robert Zhu',
+    'title': 'A Peek at the Future of GraphQL',
+    'duration': '30 mins',
+    'tag': 'Talk',
+    'scheduleTime': '11:30 AM - 01:00 PM',
+    'tagImg': communityTag,
+  },
+  'lunch': {
+    'type': 'break',
+    'img': lunch,
+    'title': 'Lunch',
+    'duration': '30 mins',
+    'scheduleTime': '10:00 AM - 11:30 AM',
+  },
+  'tea-break': {
+    'type': 'break',
+    'img': tea,
+    'title': 'Tea Break',
+    'duration': '30 mins',
+    'scheduleTime': '10:00 AM - 11:30 AM',
+  },
+  'dinner': {
+    'type': 'break',
+    'img': dinner,
+    'title': 'Dinner',
+    'duration': '30 mins',
+    'scheduleTime': '10:00 AM - 11:30 AM',
+  },
+}
+const scheduleStateDayTwo = {
+  'registration': {
+    'type': 'break',
+    'img': registration,
+    'title': 'Registration',
+    'duration': '1 hr 30 mins',
+    'scheduleTime': '10:00 AM - 11:30 AM',
+  },
+  'vishakha-singh': {
+    'img': vishakhaSingh,
+    'name': 'Vishakha Singh',
+    'title': 'How we improved PayPal checkout conversions using GraphQL',
+    'duration': '30 mins',
+    'tag': 'Talk',
+    'scheduleTime': '10:00 AM - 11:30 AM',
+    'tagImg': talkTag,
+  },
+  'robert-zhu': {
+    'img': robertZhu,
+    'name': 'Robert Zhu',
+    'title': 'A Peek at the Future of GraphQL',
+    'duration': '30 mins',
+    'tag': 'Talk',
+    'scheduleTime': '11:30 AM - 01:00 PM',
+    'tagImg': communityTag,
+  },
+  'shipra-gupta': {
+    'img': shipraGupta,
+    'name': 'Shipra Gupta',
+    'title': 'GraphQL as an API',
+    'duration': '30 mins',
+    'tag': 'Talk',
+    'scheduleTime': '11:30 AM - 01:00 PM',
+    'tagImg': communityTag,
+  },
+  'ivan-goncharov': {
+    'img': ivanGoncharov,
+    'name': 'Ivan Goncharov',
+    'title': 'Hidden gems of GraphQL query',
+    'duration': '30 mins',
+    'tag': 'Talk',
+    'scheduleTime': '10:00 AM - 11:30 AM',
+    'tagImg': talkTag,
+  },
+  'lunch': {
+    'type': 'break',
+    'img': lunch,
+    'title': 'Lunch',
+    'duration': '30 mins',
+    'scheduleTime': '10:00 AM - 11:30 AM',
+  },
+  'tea-break': {
+    'type': 'break',
+    'img': tea,
+    'title': 'Tea Break',
+    'duration': '30 mins',
+    'scheduleTime': '10:00 AM - 11:30 AM',
+  },
+  'dinner': {
+    'type': 'break',
+    'img': dinner,
+    'title': 'Dinner',
+    'duration': '30 mins',
+    'scheduleTime': '10:00 AM - 11:30 AM',
+  },
+}
+export {speakerState, workshopState, scheduleStateDayOne, scheduleStateDayTwo}
