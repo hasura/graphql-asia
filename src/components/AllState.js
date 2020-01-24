@@ -6,6 +6,7 @@ const gagoFrigerio = require('../images/Gago-Frigerio.png');
 const shipraGupta = require('../images/Shipra-Gupta.png');
 const ivanGoncharov = require('../images/Ivan-Goncharov.png');
 const samJulien = require('../images/Sam-Julien.png');
+const christian = require('../images/Christian.jpg');
 const lachlanYoung = require('../images/Lachlan-Young.png');
 const carlosRufo = require('../images/Carlos-Rufo.png');
 const vilvaAthiban = require('../images/Vilva-Athiban.png');
@@ -114,6 +115,17 @@ const speakerState = {
     'abstract': 'IoT was meant to revolutionize how we were meant to integrate tech into our lives. However, IoT adoption is dismal due to a myriad of problems. The solution lies in the way we service our IoT devices on the data and compute layer, and a serverless GraphQL architecture has all the solutions.',
     'description': 'Crux of the Matter There are several challenges to the IoT model that has hampered its use, albeit major innovative strides made over the years. These issues include security, infrastructure, lack of standardization between devices, cost and development. All these barriers are hampering the implementation of crucial and valuable IoT solutions. However, novel technologies in the domain of software are providing solutions to these problems and one such technology is GraphQL on a serverless platform providing data and compute services to IoT devices. Serverless Benefits Serverless is a perfect platform for IoT devices, especially those that are not used frequently. This is because of the serverless postulates that AWS Lambda manifests. These include: * The Abstraction of server responsibility. * Scalability * Pay-as-you-go model The three properties of a serverless architecture would greatly benefit IoT adoption. IoT developers now would no longer need to worry about setting up and maintaining their own servers within their architecture. This job can now be abstracted to the cloud vendor. This easier development, assured scalability and potentially lower costs. GraphQL in the Mix GraphQL and is a syntax defining the way data is handled. With GraphQL schemas clients can get the exact data that they requested, IoT devices can be added to the network without worrying about new end-points and enhancements to data retrieval and processing. This promotes the standardization of IoT devices and the ease and reliability of development. Furthermore, since GraphQL is simply the syntax and concept, there are several developer tools to choose from. However, AppSync provides unmatched benefits for IoT, calling for its use in the IoT architecture. These benefits include offline-support, batch processing, automatic code gen and ease in serverless Lambda integration. All of this further mitigates the problems of IoT and advocates for its adoption. Hence this session is aimed at outlining the problems of IoT and describing the solutions of a serverless GraphQL backend in hopes of redefining the way IoT developers implement their solutions.',
     'about': 'An aspiring stand-up comedian thrown into the field of serverless right after graduation, Sarjeel had been working on serverless monitoring at Thundra.io for about a year. In 2019 he made the switch to Atlassian, but his passion still lies in serverless technology as is manifest in his articles exploring the realm of serverless from automatic monitoring to IoT in serverless and GraphQL processing Lambda functions. Sarjeel can usually be found in cafes discussing Eastern philosophy versus Western philosophy and laughing at the comedies of life.',
+  },
+  'christian-nwamba': {
+    'img': christian,
+    'name': 'Christian Nwamba',
+    'designation': 'Senior Cloud Advocate',
+    'org': 'Microsoft',
+    'twitterLink': 'https://twitter.com/codebeast',
+    'githubLink': 'https://github.com/christiannwamba',
+    'title': 'Extending GraphQL APIs with Actions and Serverless',
+    'description': 'The event-driven nature of actions and serverless combined with the flexibility of Hasura, empowers you to take any GraphQL API and extend it infinitely. This means you can go as deep as calling a HTTP endpoint when an entity changes in your database or as high-level as sending an email when a mutation is received. This talk will give an overview as well as a deep dive of strategies to extend a GraphQL API.',
+    'about': 'Christian is a Senior Cloud Advocate at Microsoft focussing on Startups, JavaScript and Azure. His time is mostly spent on working with developers to figure how stuff work. He does this through workshops, conferences and online contents. Christian is currently working on Herm, a GraphQL workshop to that teaches how to solve advanced business logic problems with GraphQL and Serverless. Christian thinks he will make a good DJ someday.',
   },
   'lachlan-young': {
     'img': lachlanYoung,
