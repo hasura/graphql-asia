@@ -677,12 +677,12 @@ img {
       padding-bottom: 40px;
       img {
         display: inline-block;
-        margin-right: 60px;
-        max-height: 50px;
+        margin-right: 50px;
+        max-height: 45px;
         max-width: 330px;
       }
       .gdgb {
-        max-width: 220px;
+        max-width: 210px;
       }
       .bigImg {
         max-height: 100px;
@@ -699,6 +699,10 @@ img {
     .goldIcons {
       img {
         width: 300px;
+      }
+      .smallImg {
+        max-height: 85px;
+        width: auto;
       }
     }
   }
@@ -1569,6 +1573,7 @@ img {
         img {
           max-height: 35px;
           margin-right: 30px;
+          margin-bottom: 20px !important;
         }
       }
     }
