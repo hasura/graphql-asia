@@ -20,7 +20,7 @@ const reactIndia = require('../images/react-india.png');
 const graphqlSingapore = require('../images/graphql-singapore.png');
 const konfhubLogo = require('../images/konfhub-logo.png');
 const graphqlChandigarh = require('../images/GraphQLChandigarh.png');
-const awsAmplify =require('../images/aws-amplify-logo-large.png');
+const awsAmplify =require('../images/aws-amplify-logo.svg');
 const Sponsors = () => (
   <div id="sponsors" className={'sponsorWrapper sectionWrapper watermarkWrapper'}>
     <div className={'container noPadd'}>
