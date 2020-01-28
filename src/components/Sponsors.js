@@ -20,7 +20,7 @@ const reactIndia = require('../images/react-india.png');
 const graphqlSingapore = require('../images/graphql-singapore.png');
 const konfhubLogo = require('../images/konfhub-logo.png');
 const graphqlChandigarh = require('../images/GraphQLChandigarh.png');
-const awsAmplify =require('../images/aws-amplify-logo.svg');
+const awsAmplify =require('../images/aws-amplify-logo-large.png');
 const Sponsors = () => (
   <div id="sponsors" className={'sponsorWrapper sectionWrapper watermarkWrapper'}>
     <div className={'container noPadd'}>
@@ -60,10 +60,10 @@ const Sponsors = () => (
       </div>
       <div className={'pastSponsorWrapper'}>
         <div className={'sectionSubHeader'}>
-          Silver Sponsors
+          Bronze Sponsors
         </div>
         <div className={'goldIcons'}>
-          <a href="https://aws.amazon.com/amplify/" target="_blank" rel="noopener noreferrer"><img className='smallImg' src={awsAmplify} alt={'AWS Amplify'}/></a>
+          <a href="https://aws.amazon.com/amplify/" target="_blank" rel="noopener noreferrer"><img className='extraSmallImg' src={awsAmplify} alt={'AWS Amplify'}/></a>
         </div>
       </div>
       <div className={'pastSponsorWrapper'}>
