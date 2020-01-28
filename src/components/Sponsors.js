@@ -60,10 +60,10 @@ const Sponsors = () => (
       </div>
       <div className={'pastSponsorWrapper'}>
         <div className={'sectionSubHeader'}>
-          Silver Sponsors
+          Bronze Sponsors
         </div>
         <div className={'goldIcons'}>
-          <a href="https://aws.amazon.com/amplify/" target="_blank" rel="noopener noreferrer"><img className='smallImg' src={awsAmplify} alt={'AWS Amplify'}/></a>
+          <a href="https://aws.amazon.com/amplify/" target="_blank" rel="noopener noreferrer"><img className='extraSmallImg' src={awsAmplify} alt={'AWS Amplify'}/></a>
         </div>
       </div>
       <div className={'pastSponsorWrapper'}>

@@ -23,7 +23,7 @@ const manishJain = require('../images/manish-jain.jpeg');
 const tiru = require('../images/tiru.jpg');
 const beginner = require('../images/beginner.svg');
 const intermediate = require('../images/intermediate.svg');
-
+const dgraph = require('../images/dgraph.svg');
 const speakerState = {
   'robert-zhu': {
     'img': robertZhu,
@@ -284,7 +284,7 @@ const workshopState = {
     'name': 'Shipra Gupta',
     'designation': 'COMPUTER SCIENTIST',
     'org': 'ADOBE',
-    'time': '40 mins',
+    'time': '1 hr',
     'level': 'GraphQL Beginner',
     'levelImg': beginner,
     'workshopDescription': 'You have heard that GraphQL is an amazing technology but you are not sure why? In this talk you will learn when and why to use GraphQL and how it can fit with existing backend services in your organisation to improve the performance.',
@@ -298,7 +298,7 @@ const workshopState = {
     'name': 'Kiran Kumar Abburi',
     'designation': 'FOUNDER',
     'org': 'NEOSTACK',
-    'time': '4 hrs',
+    'time': '2 hrs',
     'level': 'Intermediate',
     'levelImg': intermediate,
     'workshopDescription': 'React embraces declarative model for building UI\'s.  But data fetching in typical applications is still imperative. GraphQL client libraries like Apollo Client solve this problem and help us use declarative data fetching to build apps and get rid of lot of data fetching boilerplate code. In this workshop, lets build a simple e-commerce app with React and learn how to leverage features of GraphQL & Apollo Client for effective data fetching, state management and real-time updates',
@@ -311,7 +311,7 @@ const workshopState = {
     'name': 'Tirumarai Selvan',
     'designation': 'Product Manager',
     'org': 'Hasura',
-    'time': '90 mins',
+    'time': '2 hr',
     'level': 'Intermediate',
     'levelImg': intermediate,
     'workshopDescription': '3factor app is an architecture pattern for modern apps. 3factor proposes an architecture pattern which is composed of 3 factors namely 1) realtime GraphQL, 2) reliable eventing and 3) async serverless. You will learn where monolithic architectures fall short and how to build scalable and reliable apps in 3factor style.',
@@ -319,5 +319,16 @@ const workshopState = {
     'workshopTakeaway': 'You will learn how to build a GraphQL backend using Hasura, use GraphQL subscriptions to build a realtime app and how to wire up complex business logic to extend an application.',
     'preRequisites': 'Backend and/or fullstack application development experience'
   },
+  'building-scalable-graphal-apps-with-react-and-dgraph': {
+    'title': 'Building scalable GraphQL apps with React and Dgraph',
+    'img': dgraph,
+    'name': 'Dgraph',
+    'time': '3 hrs',
+    'level': 'Intermediate',
+    'levelImg': intermediate,
+    'workshopDescriptionList': ['If you want to get started with GraphQL in minutes and don\'t want to worry much about the server-side, this workshop is for you.', 'That said you might still have questions that bother you regarding the scalability and performance of your GraphQL API, as your application grows and becomes more complex. Don\'t worry we will address all these questions in this fun-filled workshop.', 'So what exactly is GraphQL and why do we even need to bother about it?', 'The official website defines GraphQL as "A query language for your API".Putting it in perspective we can say that we have a single REST endpoint to get or send data from/to the server which the client asks for. It encourages front-developers to model their application data as a graph, and its intuitive Graph query language makes data fetching for even the most complex UI simple, giving them fine-grained control over their data and typed description for their APIs.', 'GraphQL is great for front-end developers, but you first need a GraphQL API served by a GraphQL web server and a storage engine backed by a database. So we will be using Dgraph for the server-side, which is an open-source, distributed, native GraphQL database with a native GraphQL API.', 'Dgraph gives you a GraphQL API in just two steps on submitting a text file containing the GraphQL schema.  Along with its simplicity and ease of use, it’s a powerful distributed graph storage engine guarantees efficient reads and writes for your GraphQL queries, even as your data is growing in its size and complexity.', 'Join us as we learn to build a GraphQL web application using ReactJS and Apollo on the client-side and Dgraph\'s GraphQL API on the server-side.'],
+    'workshopTakeaway': 'You will learn to build ReactJS and GraphQL applications, how to create GraphQL APIs with ease using Dgraph and the benefits of using Dgraph to build their GraphQL application.',
+    'workshopIdeal': ['Front-end developers who want to learn about GraphQL.', 'Developers who want to learn about Dgraph a distributed, native GraphQL database with a native GraphQL API.']
+  }
 };
 export {speakerState, workshopState}
