@@ -63,6 +63,31 @@ const WorkshopTopBanner = (props) => {
             ) : null
           }
           {
+
+            (currentWorkshop.workshopDescriptionList) ? (
+              <div className='aboutSpeakerWrapper'>
+                <div className='col-md-4 col-sm-4 col-xs-12 noPadd'>
+                  <div className='title titleTop'>
+                    WORKSHOP DESCRIPTION
+                  </div>
+                </div>
+                <div className='col-md-8 col-sm-8 col-xs-12 noPadd'>
+                  <div className='pageDescription'>
+                    <ul>
+                    {
+                      currentWorkshop.workshopDescriptionList.map((list, index) => {
+                        return (
+                          <li>{list}</li>
+                        )
+                      })
+                    }
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            ) : null
+          }
+          {
             (currentWorkshop.workshopCover) ? (
               <div className='aboutSpeakerWrapper'>
                 <div className='col-md-4 col-sm-4 col-xs-12 noPadd'>
@@ -117,6 +142,31 @@ const WorkshopTopBanner = (props) => {
                 </div>
               </div>
             ) : null
+          }
+          {
+            (currentWorkshop.workshopIdeal) ? (
+              <div className='aboutSpeakerWrapper'>
+                <div className='col-md-4 col-sm-4 col-xs-12 noPadd'>
+                  <div className='title titleTop'>
+                    Ideal audience for this workshop
+                  </div>
+                </div>
+                <div className='col-md-8 col-sm-8 col-xs-12 noPadd'>
+                  <div className='pageDescription'>
+                  <ul>
+                  {
+                    currentWorkshop.workshopIdeal.map((list, index) => {
+                      return (
+                        <li key={index}>{list}</li>
+                      )
+                    })
+                  }
+                  </ul>
+                  </div>
+                </div>
+              </div>
+            ) : null
+
           }
           <div className='aboutSpeakerWrapper'>
             <div className='col-md-4 col-sm-4 col-xs-12 noPadd'>

@@ -19,7 +19,7 @@ class ScheduleSection extends React.Component {
              <div key={scheduleStateDayOne[url].name} className='scheduleListBreak'>
                <div className='scheduleBorderLeft'></div>
                <div className='scheduleProfile'>
-                 <img className='borderRadiusRemove' src={scheduleStateDayOne[url].img} alt={scheduleStateDayOne[url].name}/>
+                 <img className={((scheduleStateDayOne[url].maxHeight) ? 'borderRadiusRemove scheduleProfileImg' : 'borderRadiusRemove')} src={scheduleStateDayOne[url].img} alt={scheduleStateDayOne[url].name}/>
                </div>
                <div className='scheduledetails'>
                  <div className='scheduleTitle'>
@@ -75,7 +75,7 @@ class ScheduleSection extends React.Component {
              <div key={scheduleStateDayTwo[url].name} className='scheduleListBreak'>
                <div className='scheduleBorderLeft'></div>
                <div className='scheduleProfile'>
-                 <img className='borderRadiusRemove' src={scheduleStateDayTwo[url].img} alt={scheduleStateDayTwo[url].name}/>
+                 <img  className={((scheduleStateDayOne[url].maxHeight) ? 'borderRadiusRemove scheduleProfileImg' : 'borderRadiusRemove')} src={scheduleStateDayTwo[url].img} alt={scheduleStateDayTwo[url].name}/>
                </div>
                <div className='scheduledetails'>
                  <div className='scheduleTitle'>

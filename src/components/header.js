@@ -31,7 +31,7 @@ const Header = ({ siteTitle }) => {
               <ul className="nav navbar-nav navbar-right navBarRight">
                 <li className={'navBarList'}><button onClick={scrollToView} srollid="/#overview">OVERVIEW</button></li>
                 <li className={'navBarList'}><button onClick={scrollToView} srollid="/#speakers">SPEAKERS</button></li>
-                <li className={'navBarList'}><button onClick={scrollToView} srollid="/#schedule">SCHEDULE</button></li>
+                <li className={'navBarList'}><Link to="/schedule"><button>SCHEDULE</button></Link></li>
                 <li className={'navBarList'}><button onClick={scrollToView} srollid="/#sponsors">SPONSORS</button></li>
                 <li className={'navBarList'}><button onClick={scrollToView} srollid="/#ticket">TICKETS</button></li>
               </ul>
