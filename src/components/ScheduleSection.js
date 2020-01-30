@@ -7,7 +7,14 @@ class ScheduleSection extends React.Component {
   constructor() {
     super();
     this.state = { tabIndex: 0 };
+    this.scrollToTabs = this.scrollToTabs.bind(this);
   }
+  scrollToTabs(index) {
+    this.setState({ tabIndex: index})
+    const element = document.getElementById("tabsView");
+    element.scrollIntoView({behavior: "smooth"});
+  }
+
    render() {
      const tag = require('../images/tag.svg');
      const clock = require('../images/clock.svg');
@@ -125,7 +132,7 @@ class ScheduleSection extends React.Component {
      })
      return (
        <div className='scheduleTabWrapper'>
-        <Tabs className='commonTabWrapper' selectedIndex={this.state.tabIndex} onSelect={tabIndex => this.setState({ tabIndex })}>
+        <Tabs id="tabsView" className='commonTabWrapper' selectedIndex={this.state.tabIndex} onSelect={tabIndex => this.setState({ tabIndex })}>
           <TabList className='commonTabNav'>
             <Tab className={'commonTabList commonTabListBor' + (( this.state.tabIndex === 0 ) ? ' commonTabListActive' : '')}>
               21 FEB, 2020
@@ -143,10 +150,10 @@ class ScheduleSection extends React.Component {
         </Tabs>
         <div className='commonTabWrapper removePaddBottom'>
           <div className='commonTabNav removePaddBottom'>
-            <div className={'commonTabList commonTabListBor' + (( this.state.tabIndex === 0 ) ? ' commonTabListActive' : '')} onClick={() => this.setState({ tabIndex: 0})}>
+            <div className={'commonTabList commonTabListBor' + (( this.state.tabIndex === 0 ) ? ' commonTabListActive' : '')} onClick={() => this.scrollToTabs(0)}>
               21 FEB, 2020
             </div>
-            <div className={'commonTabList' + (( this.state.tabIndex === 1 ) ? ' commonTabListActive' : '')} onClick={() => this.setState({ tabIndex: 1})}>
+            <div className={'commonTabList' + (( this.state.tabIndex === 1 ) ? ' commonTabListActive' : '')} onClick={() => this.scrollToTabs(1)}>
               22 FEB, 2020
             </div>
           </div>
