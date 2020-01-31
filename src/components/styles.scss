@@ -518,7 +518,10 @@ img {
     margin-bottom: 0;
   }
 }
-.bgImage, .ticketsBgImage, .thanksBgImage {
+.notFoundWrapper {
+  padding-top: 200px;
+}
+.bgImage, .ticketsBgImage, .thanksBgImage, .notFoundBgImage {
   background-color: #25246b;
   background-image: url('../images/bg.png');
   background-repeat: no-repeat;
@@ -532,6 +535,9 @@ img {
 }
 .thanksBgImage {
   height: 110px;
+}
+.notFoundBgImage {
+  height: 120px;
 }
 /* Top Banner */
 .topBannerWrapper {
