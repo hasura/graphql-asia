@@ -32,6 +32,7 @@ const tea = require('../images/tea.svg');
 // const dinner = require('../images/dinner.svg');
 const dgraph = require('../images/dgraph.svg');
 const hasura = require('../images/hasura-icon.svg');
+const allSpeakers = ['robert-zhu'];
 const speakerState = {
   'robert-zhu': {
     'img': robertZhu,
@@ -688,4 +689,4 @@ const scheduleStateDayTwo = {
     'scheduleTime': '05:30 PM - 05:45 PM',
   },
 }
-export {speakerState, workshopState, scheduleStateDayOne, scheduleStateDayTwo}
+export {speakerState, workshopState, scheduleStateDayOne, scheduleStateDayTwo, allSpeakers}

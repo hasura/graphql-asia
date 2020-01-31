@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import './styles.scss'
+import Layout from './layout';
 // const graphqlAsia = require('../images/graphql_Asia2020_heading.svg');
 // const megaphone = require('../images/megaphone.svg');
 import { workshopState } from './AllState.js';
@@ -10,13 +11,13 @@ const time = require('../images/time.svg');
 const expand = require('../images/expand-more-pink.svg');
 
 const WorkshopTopBanner = (props) => {
-  const workshopUrl = props.workshopUrl;
+  const workshopUrl = props.pageContext.slug;
   const currentWorkshop = workshopState[workshopUrl];
   if(!currentWorkshop) {
     window.location.href = "/404";
   }
   return (
-    <div>
+    <Layout>
       <div className='detailsTopBannerWrapper detailsBgImage'>
         <div className={'container noPadd'}>
           <div className='detailsWrapper'>
@@ -203,7 +204,7 @@ const WorkshopTopBanner = (props) => {
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   )
 };
 
