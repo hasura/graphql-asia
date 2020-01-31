@@ -688,4 +688,8 @@ const scheduleStateDayTwo = {
     'scheduleTime': '05:30 PM - 05:45 PM',
   },
 }
+<<<<<<< HEAD
 export {speakerState, workshopState, scheduleStateDayOne, scheduleStateDayTwo}
+=======
+export {speakerState, workshopState, scheduleStateDayOne, scheduleStateDayTwo, allSpeakers}
+>>>>>>> origin/page-build-fix

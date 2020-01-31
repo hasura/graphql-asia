@@ -17,7 +17,7 @@ const SpeakerPage = (props) => {
     } catch (error) {
 
     }
-    console.log(speakerPicture)
+    // console.log(speakerPicture)
     return(
   <Layout>
     <Helmet>
@@ -100,7 +100,7 @@ const SpeakerPage = (props) => {
                       <p>{props.pageContext.talkAbstract}</p>
                       <h5>Timings: {props.pageContext.time} (Day {props.pageContext.day})</h5>
                       <p>&lt; <Link to="/agenda">Back to Agenda page</Link></p>
-                    </div>                    
+                    </div>
                     </header>
 
                     <div style={{
@@ -409,13 +409,13 @@ export const query1 = graphql`
         }
       }
     }
-    
+
     PeriNikhil: file(relativePath: { eq: "PeriNikhil.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
-    }  
+    }
   }
 `

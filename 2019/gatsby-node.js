@@ -1,6 +1,6 @@
 const path = require('path')
 const speakerData = require('./src/data/data.json')
-exports.onCreateWebpackConfig = async ({ actions }) => {  
+exports.onCreateWebpackConfig = async ({ actions }) => {
     var webpackCustomConfig = null
     if (process.env.GATSBY_STAGE === 'production') {
         webpackCustomConfig = {
@@ -8,12 +8,12 @@ exports.onCreateWebpackConfig = async ({ actions }) => {
         }
     }
     actions.setWebpackConfig({
-      ...webpackCustomConfig,          
+      ...webpackCustomConfig,
     })
 }
 exports.createPages = async ({ graphql, actions }) => {
-    console.log('actions', actions)
-    const { createPage, createNode } = actions    
+    // console.log('actions', actions)
+    const { createPage, createNode } = actions
     const speakers = JSON.parse( JSON.stringify(speakerData) )
     const speakerPageTemplate = path.resolve("src/page-templates/speaker.js")
     speakerData.forEach(speaker => {
@@ -22,13 +22,13 @@ exports.createPages = async ({ graphql, actions }) => {
                 createPage({
                     path: `/speaker/${speaker.speakerId}`,
                     component: speakerPageTemplate,
-                    context: {   
-                        ...speaker              
+                    context: {
+                        ...speaker
                     },
                 })
-            }            
+            }
         } catch (error) {
-            
-        }        
-    });  
+
+        }
+    });
 }
