@@ -1,5 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
+
+import Header from './header'
+import Footer from './footer'
+import Contact from './Contact'
 import './styles.scss'
 // const graphqlAsia = require('../images/graphql_Asia2020_heading.svg');
 // const megaphone = require('../images/megaphone.svg');
@@ -11,13 +15,14 @@ const linkedIn = require('../images/linkedin-pink.svg');
 const arrowPink = require('../images/arrow-pink.svg');
 
 const DetailsTopBanner = (props) => {
-  const speakerUrl = props.speakerUrl;
+  const speakerUrl = props.pageContext.slug;
   const currentSpeaker = speakerState[speakerUrl];
   if(!currentSpeaker) {
     window.location.href = "/404";
   }
   return (
-    <div>
+    <div className={'positionRel'}>
+      <Header />
       <div className='detailsTopBannerWrapper detailsBgImage'>
         <div className={'container noPadd'}>
           <div className='detailsWrapper'>
@@ -142,6 +147,8 @@ const DetailsTopBanner = (props) => {
           </div>
         </div>
       </div>
+      <Contact />
+      <Footer />
     </div>
   )
 };
