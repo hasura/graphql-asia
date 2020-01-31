@@ -46,7 +46,7 @@ const Schedule = () => (
         </div>
       </div>
       <div className={'buttonWrapper'}>
-        <Link to="/tickets"><button className={'blueBtn'}>BUY TICKETS</button></Link>
+        <Link to="/schedule"><button className={'blueBtn'}>SCHEDULE</button></Link>
       </div>
       <div className={'sectionPosition'}>
         <div className={'blueBgColor col-md-12 col-sm-12 col-xs-12 noPadd wd90'}>
