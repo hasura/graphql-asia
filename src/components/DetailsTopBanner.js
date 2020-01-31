@@ -1,9 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Header from "./header"
-import Footer from "./footer"
-import Contact from "./Contact"
+import Header from './header'
+import Footer from './footer'
+import Contact from './Contact'
 import './styles.scss'
 // const graphqlAsia = require('../images/graphql_Asia2020_heading.svg');
 // const megaphone = require('../images/megaphone.svg');
