@@ -373,7 +373,7 @@ const scheduleStateDayOne = {
     'duration': '30 mins',
     'tag': 'Long Talk',
     'scheduleTime': '09:15 AM - 09:45 AM',
-    'tagImg': talktag,
+    'tagImg': talkTag,
   },
   'robert-zhu': {
     'img': robertZhu,
@@ -623,7 +623,6 @@ const scheduleStateDayTwo = {
     'tagImg': talkTag,
   },
   'panel': {
-    'type': 'break',
     'img': graphqlasia,
     'maxHeight': true,
     'name': 'Book My Show, Swiggy, Flipkart, Myntra, Treebo',
