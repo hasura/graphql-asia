@@ -501,6 +501,9 @@ img {
               font-weight: 500;
             }
           }
+          a {
+            padding: 0 0;
+          }
           .navbarActive {
             opacity: 1;
           }
@@ -1881,12 +1884,13 @@ img {
     }
   }
   .headerWrapper {
-    z-index: 1;
+    z-index: 100;
     .navBarDefault {
       padding-top: 10px;
       .navBarHeader {
         display: flex;
         align-items: center;
+        padding-bottom: 10px;
         .navBarToggle {
           border-color: #fff;
           &:hover, &:focus {
@@ -2042,6 +2046,8 @@ img {
     }
   }
   .scheduleWrapper {
+    padding-top: 110px;
+    padding-bottom: 30px;
     .sectionPosition {
       .blueBgColor {
         width: 95%;
