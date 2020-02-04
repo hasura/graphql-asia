@@ -31,7 +31,7 @@ const lunch = require('../images/lunch.svg');
 const tea = require('../images/tea.svg');
 // const dinner = require('../images/dinner.svg');
 const dgraph = require('../images/dgraph.svg');
-const hasura = require('../images/hasura-icon.svg');
+// const hasura = require('../images/hasura-icon.svg');
 const graphqlasia = require('../images/graphql-asia-logo-icon.png');
 const speakerState = {
   'robert-zhu': {
@@ -366,6 +366,7 @@ const scheduleStateDayOne = {
     'scheduleTime': '09:00 AM - 09:15 AM',
   },
   'hasura': {
+    'type': 'break',
     'img': graphqlasia,
     'maxHeight': true,
     'name': 'TBD',
@@ -498,7 +499,7 @@ const scheduleStateDayOne = {
     'tagImg': talkTag,
   },
   'hasura-2': {
-    'img': hasura,
+    'img': graphqlasia,
     'type': 'break',
     'maxHeight': true,
     'name': 'TBD',
@@ -588,7 +589,7 @@ const scheduleStateDayTwo = {
     'tagImg': talkTag,
   },
   'hasura-3': {
-    'img': hasura,
+    'img': graphqlasia,
     'type': 'break',
     'maxHeight': true,
     'name': 'TBD',
@@ -626,6 +627,7 @@ const scheduleStateDayTwo = {
     'tagImg': talkTag,
   },
   'panel': {
+    'type': 'break',
     'img': graphqlasia,
     'maxHeight': true,
     'name': 'TBD',
