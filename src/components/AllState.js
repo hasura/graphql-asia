@@ -589,9 +589,10 @@ const scheduleStateDayTwo = {
   },
   'hasura-3': {
     'img': hasura,
+    'type': 'break',
     'maxHeight': true,
-    'name': 'Hasura',
-    'title': 'AuthZ',
+    'name': 'TBD',
+    'title': 'TBD',
     'duration': '20 mins',
     'tag': 'Short Talk',
     'scheduleTime': '12:30 PM - 12:50 PM',
