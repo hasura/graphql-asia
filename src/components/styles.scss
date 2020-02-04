@@ -1659,7 +1659,6 @@ img {
   .headerWrapper {
     .navBarDefault {
       .navBarHeader {
-        padding-bottom: 10px;
         .navBarBrand {
           img {
             width: 120px;
@@ -1891,6 +1890,7 @@ img {
       .navBarHeader {
         display: flex;
         align-items: center;
+        padding-bottom: 10px;
         .navBarToggle {
           border-color: #fff;
           &:hover, &:focus {
