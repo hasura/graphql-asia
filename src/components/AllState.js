@@ -502,7 +502,7 @@ const scheduleStateDayOne = {
     'type': 'break',
     'maxHeight': true,
     'name': 'TBD',
-    'title': 'TDB',
+    'title': 'TBD',
     'duration': '30 mins',
     'tag': 'Long Talk',
     'scheduleTime': '05:00 PM - 05:30 PM',
