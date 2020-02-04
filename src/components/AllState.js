@@ -523,7 +523,7 @@ const scheduleStateDayTwo = {
     'img': graphqlasia,
     'maxHeight': true,
     'title': 'Opening Address',
-    'duration': '15 mins',
+    'duration': '10 mins',
     'scheduleTime': '08:50 AM - 09:00 AM',
   },
   'abinash-mohapatra': {
