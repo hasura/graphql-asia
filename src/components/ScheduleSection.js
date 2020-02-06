@@ -53,9 +53,22 @@ class ScheduleSection extends React.Component {
                      {scheduleStateDayOne[url].title}
                    </div>
                    <div className='talkWrapper'>
-                     <div className='talk name'>
-                       <img src={scheduleStateDayOne[url].tagImg} alt="Tag icon"/> {scheduleStateDayOne[url].name}
-                     </div>
+                    {
+                      (scheduleStateDayOne[url].multiple && scheduleStateDayOne[url].multiple === 'multipleSpeakers') ? (
+                        scheduleStateDayOne[url].name.map((names, index) => {
+                          return (
+                            <div key={index} className='talk name'>
+                              <img src={scheduleStateDayOne[url].tagImg} alt="Tag icon"/> {names}
+                            </div>
+                          )
+                        })
+                      ) : (
+                        <div className='talk name'>
+                          <img src={scheduleStateDayOne[url].tagImg} alt="Tag icon"/> {scheduleStateDayOne[url].name}
+                        </div>
+                      )
+                    }
+
                      <div className='talk'>
                        <img src={clock} alt="clock"/> {scheduleStateDayOne[url].duration}
                      </div>
@@ -99,7 +112,7 @@ class ScheduleSection extends React.Component {
                </div>
              </div>
            ) : (
-             <Link to={'/speakers/'+url}>
+             <Link to={(scheduleStateDayTwo[url].panel && scheduleStateDayTwo[url].panel === 'panel') ? '/panel/'+url : '/speakers/'+url}>
                <div key={scheduleStateDayTwo[url].name} className='scheduleListWrapper scheduleListBgGray'>
                  <div className='scheduleProfile'>
                    <img src={scheduleStateDayTwo[url].img} alt={scheduleStateDayTwo[url].name}/>
@@ -109,9 +122,22 @@ class ScheduleSection extends React.Component {
                      {scheduleStateDayTwo[url].title}
                    </div>
                    <div className='talkWrapper'>
-                     <div className='talk name'>
-                       <img src={scheduleStateDayTwo[url].tagImg} alt="Tag icon"/> {scheduleStateDayTwo[url].name}
-                     </div>
+                     {
+                       (scheduleStateDayTwo[url].multiple && scheduleStateDayTwo[url].multiple === 'multipleSpeakers') ? (
+                         scheduleStateDayTwo[url].name.map((names, index) => {
+                           console.log(scheduleStateDayTwo[url].name);
+                           return (
+                             <div key={index} className='talk name'>
+                               <img src={scheduleStateDayTwo[url].tagImg} alt="Tag icon"/> {names}
+                             </div>
+                           )
+                         })
+                       ) : (
+                         <div className='talk name'>
+                           <img src={scheduleStateDayTwo[url].tagImg} alt="Tag icon"/> {scheduleStateDayTwo[url].name}
+                         </div>
+                       )
+                     }
                      <div className='talk'>
                        <img src={clock} alt="clock"/> {scheduleStateDayTwo[url].duration}
                      </div>

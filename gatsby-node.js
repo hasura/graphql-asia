@@ -5,8 +5,9 @@
  */
 
 // You can delete this file if you're not using it
-const allSpeakers = ['robert-zhu', 'manish-jain', 'vishakha-singh', 'radoslav-stankov', 'gago-frigerio', 'shipra-gupta', 'ivan-goncharov', 'sarjeel-yusuf', 'christian-nwamba', 'lachlan-young', 'carlos-rufo', 'sam-julien', 'kiran-kumar-abburi', 'monika-jaiswal', 'vijayan-srinivasan', 'bala-dutt', 'arun-lingala', 'yogesh-desai', 'abinash-mohapatra', 'rajat-khare', 'sean-grove', 'vilva-athiban', 'sauradyuti-coondu'];
+const allSpeakers = ['robert-zhu', 'manish-jain', 'vishakha-singh', 'radoslav-stankov', 'gago-frigerio', 'shipra-gupta', 'ivan-goncharov', 'sarjeel-yusuf', 'christian-nwamba', 'lachlan-young', 'carlos-rufo', 'sam-julien', 'kiran-kumar-abburi', 'monika-jaiswal', 'vijayan-srinivasan', 'bala-dutt', 'arun-lingala', 'yogesh-desai', 'abinash-mohapatra', 'rajat-khare', 'sean-grove', 'vilva-athiban', 'sauradyuti-coondu', 'rajat-khare-arun-lingala', 'vijayan-srinivasan-bala-dutt'];
 const allWorkshops = ['why-graphql', 'building-apps-with-react-apollo-client', 'build-high-performance-graphql-serverless-apps-with-the-3factor-app-architecture', 'building-scalable-graphal-apps-with-react-and-dgraph']
+const allPanel = ['graphql-adoption']
 const path = require('path');
 
 exports.onCreatePage = async ({ page, actions }) => {
@@ -52,5 +53,15 @@ exports.onCreatePage = async ({ page, actions }) => {
     })
   });
 
-
+  allPanel.forEach((panel, index) => {
+    createPage({
+      path: '/panel/' + panel,
+      component: path.resolve(`./src/components/PanelTopBanner.js`),
+      context: {
+        // Data passed to context is available
+        // in page queries as GraphQL variables.
+        slug: panel,
+      },
+    })
+  });
 }
