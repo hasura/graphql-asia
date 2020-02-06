@@ -20,10 +20,10 @@ class ScheduleSection extends React.Component {
      const clock = require('../images/clock.svg');
      const scheduleListDayOne = Object.keys(scheduleStateDayOne).map((url, index) => {
        return (
-         <div>
+         <div key={url+index}>
          {
            (scheduleStateDayOne[url].type && scheduleStateDayOne[url].type === 'break') ? (
-             <div key={scheduleStateDayOne[url].name} className='scheduleListBreak'>
+             <div className='scheduleListBreak'>
                <div className='scheduleBorderLeft'></div>
                <div className='scheduleProfile'>
                  <img className={((scheduleStateDayOne[url].maxHeight) ? 'borderRadiusRemove scheduleProfileImg' : 'borderRadiusRemove')} src={scheduleStateDayOne[url].img} alt={scheduleStateDayOne[url].name}/>
@@ -74,15 +74,15 @@ class ScheduleSection extends React.Component {
          </div>
        )
      })
-     const scheduleListDayTwo = Object.keys(scheduleStateDayTwo).map((url) => {
+     const scheduleListDayTwo = Object.keys(scheduleStateDayTwo).map((url, index) => {
        return (
-         <div>
+         <div key={url+index}>
          {
            (scheduleStateDayTwo[url].type && scheduleStateDayTwo[url].type === 'break') ? (
-             <div key={scheduleStateDayTwo[url].name} className='scheduleListBreak'>
+             <div className='scheduleListBreak'>
                <div className='scheduleBorderLeft'></div>
                <div className='scheduleProfile'>
-                 <img  className={((scheduleStateDayOne[url].maxHeight) ? 'borderRadiusRemove scheduleProfileImg' : 'borderRadiusRemove')} src={scheduleStateDayTwo[url].img} alt={scheduleStateDayTwo[url].name}/>
+                 <img  className={((scheduleStateDayTwo[url].maxHeight) ? 'borderRadiusRemove scheduleProfileImg' : 'borderRadiusRemove')} src={scheduleStateDayTwo[url].img} alt={scheduleStateDayTwo[url].name}/>
                </div>
                <div className='scheduledetails'>
                  <div className='scheduleTitle'>
