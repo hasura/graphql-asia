@@ -22,10 +22,20 @@ const seanGrove = require('../images/Sean-Grove.png');
 const manishJain = require('../images/manish-jain.jpeg');
 const tiru = require('../images/tiru.jpg');
 const sauradyutiCoondu = require('../images/Sauradyuti-Coondu.jpg');
+
+const rajatArun = require('../images/Rajat-Arun.png');
+const vijayanBala = require('../images/Vijayan-Bala.png');
+const ankitaAbineshAshwin = require('../images/Ankita-Abinesh-Ashwin.png');
+const ankitaMasand = require('../images/Ankita-Masand.png');
+const ashwinGoyal = require('../images/Ashwin-Goyal.png');
+const tanmai = require('../images/Tanmai.png');
+
+
 const beginner = require('../images/beginner.svg');
 const intermediate = require('../images/intermediate.svg');
 const communityTag = require('../images/community-tag.svg');
 const talkTag = require('../images/talk-tag.svg');
+const panelTalk = require('../images/panel-talk.svg');
 const registration = require('../images/registration.svg');
 const lunch = require('../images/lunch.svg');
 const tea = require('../images/tea.svg');
@@ -293,6 +303,66 @@ const speakerState = {
     'githubLink': 'https://github.com/Sauradyuti',
     'title': 'Building performant GraphQL servers',
     'abstract': 'The results of searching for "GraphQL performance" on Google will surely raise doubts in the mind of a GraphQL adopter. Is GraphQL really less performant than REST or is it just a myth? What makes GraphQL slow? How can the performance be improved? There are numerous information on how to build a GraphQL server, but not so on how to build an efficient one. Let\'s build efficient GraphQL servers!',
+  },
+  'rajat-khare-arun-lingala': {
+    'multiple': 'multipleSpeakers',
+    'profile': [
+      {
+        'img': rajatKhare,
+        'name': 'Rajat Khare',
+        'designation': 'SOFTWARE ARCHITECT',
+        'org': 'INTUIT',
+        'twitterLink': 'https://twitter.com/rajatontwit',
+        'githubLink': 'https://github.com/kharerajat2014',
+      },
+      {
+        'img': arunLingala,
+        'name': 'Arun Lingala',
+        'designation': 'Staff Software Engineer',
+        'org': 'INTUIT',
+        'twitterLink': 'https://twitter.com/ArunLingalaCBK',
+        'githubLink': 'https://github.com/arunlingala',
+      }
+    ],
+    'profileDetails': [
+      {
+        'name': 'Rajat Khare',
+        'about': 'Rajat is a Software Architect with Intuit. He has been with Intuit for 9 years in IDC and has worked across Intuit’s QuickBooks ecosystem of products and offerings. Rajat has been working on GraphQL ecosystem since its inception around 2015 and has built multiple applications and services using GraphQL over the last 4 years. Rajat is passionate about fueling technology innovation having deep impact on customers and business. He has 4+ filed patents Rajat is an avid external and internal speaker in conferences and enjoys sharing the great work happening in the engineering teams he works with , and coaching engineers to do the same as well.',
+      }
+    ],
+    'title': 'AutoFIT, a framework to automatically inject failures per request invocation to test fault tolerant/resilient GraphQL APIs',
+    'abstract': 'How do you test your failure modes explicitly on GraphQL?. How can you take control of writing Automated Integration tests that simulate failure cases and test your resiliency and fallbacks. ? We talk about an approach we have used called AutoFIT that helps make this happen!',
+    'description': 'As we design GraphQL interfaces that are a connection of types, it becomes very critical to think of all the failure points that can happen and how they will manifest on the GraphQL response. Its also important that as we plan automated Integration Testing on GraphQL interfaces that runs in CI/CD pipelines to be able to represent both success and failure test cases. Existing approaches have been hard and usually need the whole environment in a failure more to be able to simulate or mock error cases from downstream dependencies. In this talk we talk about a failure injection approach that can inject desired failures in context of a GraphQL query or mutation so that they stay contained to the request and can be run repeatedly in CI/CD environments!',
+  },
+  'vijayan-srinivasan-bala-dutt': {
+    'multiple': 'multipleSpeakers',
+    'profile': [
+      {
+        'img': vijayanSrinivasan,
+        'name': 'Vijayan Srinivasan',
+        'designation': 'Group Development Manager',
+        'org': 'INTUIT',
+        'twitterLink': 'https://twitter.com/vijayanskp',
+        'githubLink': 'https://github.com/vijayan007',
+      },
+      {
+        'img': balaDutt,
+        'name': 'Bala Dutt',
+        'designation': 'PRINCIPAL ENGINEER',
+        'org': 'INTUIT',
+        'twitterLink': 'https://twitter.com/baladutt',
+        'githubLink': 'https://github.com/baladutt',
+      }
+    ],
+    'profileDetails': [
+      {
+        'name': 'Vijayan Srinivasan',
+        'about': 'Leading Engineering for Intuit Identity Platform in India. Having 20 years of industry experience in building large scale platforms. Worked on startups and enterprises like Oracle, Yahoo! and Intuit!',
+      }
+    ],
+    'title': 'Authorization for GraphQL @ Intuit',
+    'abstract': 'Intuit is transforming all it’s APIs from SOAP and REST to GraphQL. My team is responsible for defining the Authorization mechanism for whole of Intuit, This talk will cover how we use Attribute Based Access Control (ABAC) to provide authorization for Intuit APIs which are public and private.',
+    'description': 'Intuit’s Data stewardship principles secure user’s PII, financial and tax information. Dimensionality of authorization enforcing this includes access mode (e.g. OLTP, OLAP, Big data and messaging), APIs (e.g. Restful, GraphQL), clients (device, desktop, web, first party, second party and third party), platforms(e.g. Java, Node, .NET), deployments (e.g. monoliths, micro-services, gateway, service mesh), complex rules (for variety of usecases, global products with local compliance and multiple domains) and subjects from internal (enterprise), B2B and B2C. Intuit’s vision for security with agility is to decentralize policy authoring over multiple products while addressing strict performance needs. Domain local policies authored by thousands of developers should work with global policies set at domain or company level by security experts. Multiple authorizations for multiple resources per request are either by design of the product or due to micro-services architecture. Hence low latency requirement, not sacrificing demand for complex multiple policies. Design with learning from building and operating the solution will be presented. Modular and multi-strategy design was chosen. Scaling with respect to requests vs entities (subjects, resources) is discussed. Tactics enable for shorter story cycle time for developers with a first-use experience and robust governance. PIPs as microservices feed into policy in a scalable, performant way with strong consistency needs in multi-region deployments. Solution has remote and local execution of policy. Extensibility is built in as ABAC landscape evolves, better engines come up, AI is factored in or innovations are absorbed. AuthZ for GraphQL GraphQL landscape at Intuit 100’s of entities Home built vs other implementations of GraphQL platform Different programming languages for entity providers How is GraphQL authorization same or different from REST API based authorization It is API – so same Batching of multiple requests Data about fields and entities being access Dimensions of GraphQL AuthZ Programming model Annotation based authorization Declarative externalized authorization Enforcement point Method based authorization Gateway based authorization Decision model RBAC ABAC',
   },
 };
 const workshopState = {
@@ -579,9 +649,10 @@ const scheduleStateDayTwo = {
     'scheduleTime': '11:30 AM - 12:00 PM',
     'tagImg': talkTag,
   },
-  'vijayan-srinivasan': {
-    'img': vijayanSrinivasan,
-    'name': 'Vijayan Srinivasan',
+  'vijayan-srinivasan-bala-dutt': {
+    'multiple': 'multipleSpeakers',
+    'img': vijayanBala,
+    'name': ['Vijayan Srinivasan', 'Bala Dutt'],
     'title': 'Authorization for GraphQL @ Intuit',
     'duration': '30 mins',
     'tag': 'Long Talk',
@@ -626,16 +697,16 @@ const scheduleStateDayTwo = {
     'scheduleTime': '02:10 PM - 02:30 PM',
     'tagImg': talkTag,
   },
-  'panel': {
-    'type': 'break',
-    'img': graphqlasia,
-    'maxHeight': true,
-    'name': 'TBD',
-    'title': 'TBD',
+  'graphql-adoption': {
+    'panel': 'panel',
+    'multiple': 'multipleSpeakers',
+    'img': ankitaAbineshAshwin,
+    'name': ['Ankita Masand', 'Abinash Mohapatra', 'Ashwin Goyal'],
+    'title': 'Approaches to GraphQL adoption',
     'duration': '45 mins',
     'tag': 'Talk',
     'scheduleTime': '02:30 PM - 03:15 PM',
-    'tagImg': communityTag,
+    'tagImg': panelTalk,
   },
   'sarjeel-yusuf': {
     'img': sarjeelYusuf,
@@ -653,9 +724,10 @@ const scheduleStateDayTwo = {
     'duration': '30 mins',
     'scheduleTime': '03:45 PM - 04:15 PM',
   },
-  'rajat-khare': {
-    'img': rajatKhare,
-    'name': 'Rajat Khare',
+  'rajat-khare-arun-lingala': {
+    'multiple': 'multipleSpeakers',
+    'img': rajatArun,
+    'name': ['Rajat Khare', 'Arun Lingala'],
     'title': 'AutoFIT, a framework to automatically inject failures per request invocation to test fault tolerant/resilient GraphQL APIs',
     'duration': '30 mins',
     'tag': 'Long Talk',
@@ -689,4 +761,36 @@ const scheduleStateDayTwo = {
     'scheduleTime': '05:45 PM - 06:00 PM',
   },
 }
-export {speakerState, workshopState, scheduleStateDayOne, scheduleStateDayTwo}
+const panelState = {
+  'graphql-adoption': {
+    'title': 'Approaches to GraphQL adoption',
+    'time': '45 mins',
+    'subTitle': 'A panel discussion by engineers at Flipkart, Swiggy & Treebo',
+    'panelDescription': 'Join engineers from some of India’s biggest startups as they discuss the stories behind how GraphQL was adopted at their companies. The panel will cover a range of topics from adoption stories, why graphql, tech buy-in, advantages and challenges.',
+    'moderatorImg': tanmai,
+    'moderatorName': 'Tanmai Gopal',
+    'moderatorDesignation': 'CEO',
+    'moderatorOrg': 'HASURA',
+    'panelMembers': [
+      {
+        'img': ankitaMasand,
+        'name': 'Ankita Masand',
+        'designation': 'SENIOR FRONT-END ENGINEER',
+        'org': 'TREEBO',
+      },
+      {
+        'img': abinashMohapatra,
+        'name': 'Abinash Mohapatra',
+        'designation': 'UI ENGINEER',
+        'org': 'FLIPKART',
+      },
+      {
+        'img': ashwinGoyal,
+        'name': 'Ashwin Goyal',
+        'designation': 'NEW INITIATIVES',
+        'org': 'SWIGGY',
+      },
+    ],
+  },
+}
+export {speakerState, workshopState, scheduleStateDayOne, scheduleStateDayTwo, panelState}
