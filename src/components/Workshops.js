@@ -10,8 +10,8 @@ const placeBlue = require('../images/place-blue.svg');
 const Workshops  = (props) => {
     const workshopContainer = Object.keys(workshopState).map((url, index) => {
       return (
-        <Link to={'/workshops/'+url}>
-          <div key = {index} className='workshopList'>
+        <Link key = {index} to={'/workshops/'+url}>
+          <div className='workshopList'>
             <div className='workshopProfile'>
               <img src={workshopState[url].img} alt={workshopState[url].name}/>
             </div>

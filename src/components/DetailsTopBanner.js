@@ -17,8 +17,6 @@ const arrowPink = require('../images/arrow-pink.svg');
 const DetailsTopBanner = (props) => {
   const speakerUrl = props.pageContext.slug;
   const currentSpeaker = speakerState[speakerUrl];
-  console.log(currentSpeaker);
-  console.log(speakerUrl);
   if(!currentSpeaker) {
     window.location.href = "/404";
   }
@@ -228,7 +226,7 @@ const DetailsTopBanner = (props) => {
           <div className={'clearBoth aboutSpeakerWrapper'}>
             <div className={'col-md-offset-4 col-sm-offset-4'}>
               <div className='pinkLink '>
-                <Link to="/#speakers">BACK TO SPEAKERS<img src={arrowPink} alt={'Arrow'} /></Link>
+                <Link to={'/schedule?day='+currentSpeaker.day}>CHECK OUT THE SCHEDULE<img src={arrowPink} alt={'Arrow'} /></Link>
               </div>
             </div>
           </div>

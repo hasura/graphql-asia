@@ -9,6 +9,9 @@ import { panelState } from './AllState.js';
 
 const arrowPink = require('../images/arrow-pink.svg');
 const time = require('../images/time.svg');
+const twitter = require('../images/twitter-pink.svg');
+const github = require('../images/github-pink.svg');
+const linkedIn = require('../images/linkedin-pink.svg');
 
 const WorkshopTopBanner = (props) => {
   const panelUrl = props.pageContext.slug;
@@ -20,9 +23,9 @@ const WorkshopTopBanner = (props) => {
     <Layout>
       <div className='detailsTopBannerWrapper detailsBgImage'>
         <div className={'container noPadd'}>
-          <div className='detailsWrapper'>
+          <div className='panelDetailsWrapper'>
             <div className='col-md-4 col-sm-4 col-xs-12 noPadd'>
-              <div className='title titleTop'>
+              <div className='title titleTopPanel'>
                 PANEL DISCUSSION
               </div>
             </div>
@@ -51,7 +54,7 @@ const WorkshopTopBanner = (props) => {
             (currentPanel.subTitle) ? (
             <div className={'clearBoth aboutSpeakerWrapper'}>
               <div className={'col-md-offset-4 col-sm-offset-4'}>
-                <div class="speakersTitle">
+                <div className="speakersTitle">
                   {currentPanel.subTitle}
                 </div>
               </div>
@@ -100,6 +103,29 @@ const WorkshopTopBanner = (props) => {
                             <div className='organization'>
                               {memberDetails.org}
                             </div>
+                            <div className='socialWrapper'>
+                              {
+                                (memberDetails.githubLink) ? (
+                                  <div className='socialIcon'>
+                                    <a href={memberDetails.githubLink} target="_blank" rel="noopener noreferrer"><img src={github} alt={'Github'} /></a>
+                                  </div>
+                                ) : null
+                              }
+                              {
+                                (memberDetails.twitterLink) ? (
+                                  <div className='socialIcon'>
+                                    <a href={memberDetails.twitterLink} target="_blank" rel="noopener noreferrer"><img src={twitter} alt={'Twitter'} /></a>
+                                  </div>
+                                ) : null
+                              }
+                              {
+                                (memberDetails.linkedInLink) ? (
+                                  <div className='socialIcon'>
+                                    <a href={memberDetails.linkedInLink} target="_blank" rel="noopener noreferrer"><img src={linkedIn} alt={'LinkedIn'} /></a>
+                                  </div>
+                                ) : null
+                              }
+                            </div>
                           </div>
                         </div>
                       )
@@ -130,6 +156,29 @@ const WorkshopTopBanner = (props) => {
                   <div className='organization'>
                     {currentPanel.moderatorOrg}
                   </div>
+                  <div className='socialWrapper'>
+                    {
+                      (currentPanel.moderatorGithubLink) ? (
+                        <div className='socialIcon'>
+                          <a href={currentPanel.moderatorGithubLink} target="_blank" rel="noopener noreferrer"><img src={github} alt={'Github'} /></a>
+                        </div>
+                      ) : null
+                    }
+                    {
+                      (currentPanel.moderatorTwitterLink) ? (
+                        <div className='socialIcon'>
+                          <a href={currentPanel.moderatorTwitterLink} target="_blank" rel="noopener noreferrer"><img src={twitter} alt={'Twitter'} /></a>
+                        </div>
+                      ) : null
+                    }
+                    {
+                      (currentPanel.moderatorLinkedInLink) ? (
+                        <div className='socialIcon'>
+                          <a href={currentPanel.moderatorLinkedInLink} target="_blank" rel="noopener noreferrer"><img src={linkedIn} alt={'LinkedIn'} /></a>
+                        </div>
+                      ) : null
+                    }
+                  </div>
                 </div>
               </div>
             </div>
@@ -138,7 +187,7 @@ const WorkshopTopBanner = (props) => {
           <div className={'clearBoth aboutSpeakerWrapper'}>
             <div className={'col-md-offset-4 col-sm-offset-4'}>
               <div className='pinkLink '>
-                <Link to="/schedule">BACK TO SCHEDULE<img src={arrowPink} alt={'Arrow'} /></Link>
+                <Link to={'/schedule?day='+currentPanel.day}>BACK TO SCHEDULE<img src={arrowPink} alt={'Arrow'} /></Link>
               </div>
             </div>
           </div>
