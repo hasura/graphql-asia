@@ -64,9 +64,13 @@ class ScheduleSection extends React.Component {
                      <div className='talk'>
                        <img src={clock} alt="clock"/> {scheduleStateDayOne[url].duration}
                      </div>
-                     <div className='talk'>
-                       <img src={tag} alt="tag"/> {scheduleStateDayOne[url].tag}
-                     </div>
+                     {
+                       (scheduleStateDayOne[url].tag) ? (
+                         <div className='talk'>
+                           <img src={tag} alt="tag"/> {scheduleStateDayOne[url].tag}
+                         </div>
+                       ) : null
+                     }
                    </div>
                  </div>
                  <div className='timeWrapper'>
@@ -120,9 +124,13 @@ class ScheduleSection extends React.Component {
                      <div className='talk'>
                        <img src={clock} alt="clock"/> {scheduleStateDayTwo[url].duration}
                      </div>
-                     <div className='talk'>
-                       <img src={tag} alt="tag"/> {scheduleStateDayTwo[url].tag}
-                     </div>
+                     {
+                       (scheduleStateDayTwo[url].tag) ? (
+                         <div className='talk'>
+                           <img src={tag} alt="tag"/> {scheduleStateDayTwo[url].tag}
+                         </div>
+                       ) : null
+                     }
                    </div>
                  </div>
                  <div className='timeWrapper'>

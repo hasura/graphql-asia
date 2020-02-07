@@ -25,7 +25,7 @@ const sauradyutiCoondu = require('../images/Sauradyuti-Coondu.jpg');
 
 const rajatArun = require('../images/Rajat-Arun.png');
 const vijayanBala = require('../images/Vijayan-Bala.png');
-const ankitaAbineshAshwin = require('../images/Ankita-Abinesh-Ashwin.png');
+const ankitaAbineshAshwinTanmai = require('../images/Ankita-Abinesh-Ashwin-Tanmai.png');
 const ankitaMasand = require('../images/Ankita-Masand.png');
 const ashwinGoyal = require('../images/Ashwin-Goyal.png');
 const tanmai = require('../images/Tanmai.png');
@@ -721,11 +721,10 @@ const scheduleStateDayTwo = {
   'graphql-adoption': {
     'panel': 'panel',
     'multiple': 'multipleSpeakers',
-    'img': ankitaAbineshAshwin,
-    'name': 'Ankita Masand, Abinash Mohapatra, Ashwin Goyal',
+    'img': ankitaAbineshAshwinTanmai,
+    'name': 'Ankita Masand, Abinash Mohapatra, Ashwin Goyal, Tanmai Gopal',
     'title': 'Panel Discussion: Approaches to GraphQL adoption',
     'duration': '45 mins',
-    'tag': 'Panel Discussion',
     'scheduleTime': '02:30 PM - 03:15 PM',
     'tagImg': panelTalk,
   },
