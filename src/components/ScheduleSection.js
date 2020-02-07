@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { scheduleStateDayOne, scheduleStateDayTwo } from './AllState.js';
 import './styles.scss'
+
 class ScheduleSection extends React.Component {
   constructor() {
     super();
@@ -14,7 +15,11 @@ class ScheduleSection extends React.Component {
     const element = document.getElementById("tabsView");
     element.scrollIntoView({behavior: "smooth"});
   }
-
+  componentDidMount() {
+    const queryParams = new URLSearchParams(this.props.location.search);
+    const queryParamDay = queryParams.get('day');
+    this.setState({tabIndex: (parseInt(queryParamDay) - 1) || 0});
+  }
    render() {
      const tag = require('../images/tag.svg');
      const clock = require('../images/clock.svg');
@@ -59,9 +64,13 @@ class ScheduleSection extends React.Component {
                      <div className='talk'>
                        <img src={clock} alt="clock"/> {scheduleStateDayOne[url].duration}
                      </div>
-                     <div className='talk'>
-                       <img src={tag} alt="tag"/> {scheduleStateDayOne[url].tag}
-                     </div>
+                     {
+                       (scheduleStateDayOne[url].tag) ? (
+                         <div className='talk'>
+                           <img src={tag} alt="tag"/> {scheduleStateDayOne[url].tag}
+                         </div>
+                       ) : null
+                     }
                    </div>
                  </div>
                  <div className='timeWrapper'>
@@ -99,7 +108,7 @@ class ScheduleSection extends React.Component {
                </div>
              </div>
            ) : (
-             <Link to={'/speakers/'+url}>
+             <Link to={(scheduleStateDayTwo[url].panel && scheduleStateDayTwo[url].panel === 'panel') ? '/panel/'+url : '/speakers/'+url}>
                <div key={scheduleStateDayTwo[url].name} className='scheduleListWrapper scheduleListBgGray'>
                  <div className='scheduleProfile'>
                    <img src={scheduleStateDayTwo[url].img} alt={scheduleStateDayTwo[url].name}/>
@@ -115,9 +124,13 @@ class ScheduleSection extends React.Component {
                      <div className='talk'>
                        <img src={clock} alt="clock"/> {scheduleStateDayTwo[url].duration}
                      </div>
-                     <div className='talk'>
-                       <img src={tag} alt="tag"/> {scheduleStateDayTwo[url].tag}
-                     </div>
+                     {
+                       (scheduleStateDayTwo[url].tag) ? (
+                         <div className='talk'>
+                           <img src={tag} alt="tag"/> {scheduleStateDayTwo[url].tag}
+                         </div>
+                       ) : null
+                     }
                    </div>
                  </div>
                  <div className='timeWrapper'>
