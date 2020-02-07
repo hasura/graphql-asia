@@ -5,8 +5,7 @@ import './styles.scss'
 // const megaphone = require('../images/megaphone.svg');
 // import { workshopState } from './AllState.js';
 import ScheduleSection from './ScheduleSection';
-const ScheduleTopBanner = () => {
-
+const ScheduleTopBanner = ({location}) => {
   return (
     <div>
       <div className='scheduleWrapper detailsBgImage'>
@@ -17,7 +16,9 @@ const ScheduleTopBanner = () => {
       </div>
       <div className='sectionWrapperSmall'>
         <div className={'container noPadd'}>
-          <ScheduleSection/>
+          <ScheduleSection
+            location={ location }
+          />
         </div>
       </div>
     </div>

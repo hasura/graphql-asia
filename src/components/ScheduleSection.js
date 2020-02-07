@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { scheduleStateDayOne, scheduleStateDayTwo } from './AllState.js';
 import './styles.scss'
+
 class ScheduleSection extends React.Component {
   constructor() {
     super();
@@ -14,7 +15,11 @@ class ScheduleSection extends React.Component {
     const element = document.getElementById("tabsView");
     element.scrollIntoView({behavior: "smooth"});
   }
-
+  componentDidMount() {
+    const queryParams = new URLSearchParams(this.props.location.search);
+    const queryParamDay = queryParams.get('day');
+    this.setState({tabIndex: (parseInt(queryParamDay) - 1) || 0});
+  }
    render() {
      const tag = require('../images/tag.svg');
      const clock = require('../images/clock.svg');
@@ -53,22 +58,9 @@ class ScheduleSection extends React.Component {
                      {scheduleStateDayOne[url].title}
                    </div>
                    <div className='talkWrapper'>
-                    {
-                      (scheduleStateDayOne[url].multiple && scheduleStateDayOne[url].multiple === 'multipleSpeakers') ? (
-                        scheduleStateDayOne[url].name.map((names, index) => {
-                          return (
-                            <div key={index} className='talk name'>
-                              <img src={scheduleStateDayOne[url].tagImg} alt="Tag icon"/> {names}
-                            </div>
-                          )
-                        })
-                      ) : (
-                        <div className='talk name'>
-                          <img src={scheduleStateDayOne[url].tagImg} alt="Tag icon"/> {scheduleStateDayOne[url].name}
-                        </div>
-                      )
-                    }
-
+                     <div className='talk name'>
+                       <img src={scheduleStateDayOne[url].tagImg} alt="Tag icon"/> {scheduleStateDayOne[url].name}
+                     </div>
                      <div className='talk'>
                        <img src={clock} alt="clock"/> {scheduleStateDayOne[url].duration}
                      </div>
@@ -122,22 +114,9 @@ class ScheduleSection extends React.Component {
                      {scheduleStateDayTwo[url].title}
                    </div>
                    <div className='talkWrapper'>
-                     {
-                       (scheduleStateDayTwo[url].multiple && scheduleStateDayTwo[url].multiple === 'multipleSpeakers') ? (
-                         scheduleStateDayTwo[url].name.map((names, index) => {
-                           console.log(scheduleStateDayTwo[url].name);
-                           return (
-                             <div key={index} className='talk name'>
-                               <img src={scheduleStateDayTwo[url].tagImg} alt="Tag icon"/> {names}
-                             </div>
-                           )
-                         })
-                       ) : (
-                         <div className='talk name'>
-                           <img src={scheduleStateDayTwo[url].tagImg} alt="Tag icon"/> {scheduleStateDayTwo[url].name}
-                         </div>
-                       )
-                     }
+                     <div className='talk name'>
+                       <img src={scheduleStateDayTwo[url].tagImg} alt="Tag icon"/> {scheduleStateDayTwo[url].name}
+                     </div>
                      <div className='talk'>
                        <img src={clock} alt="clock"/> {scheduleStateDayTwo[url].duration}
                      </div>
