@@ -184,10 +184,30 @@ const WorkshopTopBanner = (props) => {
             </div>
           </div>
           </div>
+          {
+            (currentPanel.bios) ? (
+                currentPanel.bios.map((bios, key) => {
+                  return (
+                    <div key={key} className='aboutSpeakerWrapper'>
+                      <div className='col-md-4 col-sm-4 col-xs-12 noPadd'>
+                        <div className='title titleTop'>
+                          ABOUT {bios.name}
+                        </div>
+                      </div>
+                      <div className='col-md-8 col-sm-8 col-xs-12 noPadd'>
+                        <div className='pageDescription'>
+                          {bios.description}
+                        </div>
+                      </div>
+                    </div>
+                  )
+                })
+           ) : null
+          }
           <div className={'clearBoth aboutSpeakerWrapper'}>
             <div className={'col-md-offset-4 col-sm-offset-4'}>
               <div className='pinkLink '>
-                <Link to={'/schedule?day='+currentPanel.day}>BACK TO SCHEDULE<img src={arrowPink} alt={'Arrow'} /></Link>
+                <Link to={'/schedule?day='+currentPanel.day}>CHECK OUT THE SCHEDULE<img src={arrowPink} alt={'Arrow'} /></Link>
               </div>
             </div>
           </div>

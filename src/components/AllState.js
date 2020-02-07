@@ -820,6 +820,12 @@ const panelState = {
         'linkedInLink': 'https://www.linkedin.com/in/ashwingo/',
       },
     ],
+    'bios': [
+      {
+        'name': 'Tanmai Gopal',
+        'description': 'Tanmai Gopal is the CEO, co-founder of Hasura. He is a StackOverflow powered fullstack developer whose areas of interest and work span react, GraphQL, nodejs, haskell, docker, postgres & kubernetes. He is passionate about making it easy to build complex things and is the instructor of India\'s largest MOOC imad.tech with over 250,000 students.'
+      },
+    ],
   },
 }
 export {speakerState, workshopState, scheduleStateDayOne, scheduleStateDayTwo, panelState}
