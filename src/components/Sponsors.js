@@ -21,6 +21,9 @@ const graphqlSingapore = require('../images/graphql-singapore.png');
 const konfhubLogo = require('../images/konfhub-logo.png');
 const graphqlChandigarh = require('../images/GraphQLChandigarh.png');
 const awsAmplify =require('../images/aws-amplify-logo-large.png');
+const vueBlr = require('../images/vueblr-logo.svg');
+const womenWhoCode = require('../images/women-who-code-mumbai.png');
+
 const Sponsors = () => (
   <div id="sponsors" className={'sponsorWrapper sectionWrapper watermarkWrapper'}>
     <div className={'container noPadd'}>
@@ -89,6 +92,8 @@ const Sponsors = () => (
         <div className={'icons removePaddBottom'}>
           <a href="https://konfhub.com" target="_blank" rel="noopener noreferrer"><img src={konfhubLogo} alt={'konfhub'}/></a>
           <a href="https://twitter.com/graphqlchd" target="_blank" rel="noopener noreferrer"><img className="bigImg" src={graphqlChandigarh} alt={'GraphQL Chandigarh'}/></a>
+          <a href="https://www.womenwhocode.com/mumbai" target="_blank" rel="noopener noreferrer"><img className="bigImg" src={womenWhoCode} alt={'Women Who Code Mumbai'}/></a>
+          <a href="https://blr.vue.community/" target="_blank" rel="noopener noreferrer"><img className="bigImg" src={vueBlr} alt={'Vue Bangalore'}/></a>
         </div>
       </div>
     </div>
