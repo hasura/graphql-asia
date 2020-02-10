@@ -22,8 +22,8 @@ const seanGrove = require('../images/Sean-Grove.png');
 const manishJain = require('../images/manish-jain.jpeg');
 const tiru = require('../images/tiru.jpg');
 const sauradyutiCoondu = require('../images/Sauradyuti-Coondu.jpg');
-const ankitamasand = require('../images/ankita-masand.png');
-const ashwingoyal = require('../images/ashwin.png');
+const ankitaMasand = require('../images/ankita-masand.png');
+const ashwinGoyal = require('../images/ashwin.png');
 const rajatArun = require('../images/Rajat-Arun.png');
 const vijayanBala = require('../images/Vijayan-Bala.png');
 const ankitaAbineshAshwinTanmai = require('../images/Ankita-Abinesh-Ashwin-Tanmai.png');
@@ -321,6 +321,22 @@ const speakerState = {
     'abstract': 'The results of searching for "GraphQL performance" on Google will surely raise doubts in the mind of a GraphQL adopter. Is GraphQL really less performant than REST or is it just a myth? What makes GraphQL slow? How can the performance be improved? There are numerous information on how to build a GraphQL server, but not so on how to build an efficient one. Let\'s build efficient GraphQL servers!',
     'day': 1,
   },
+  'ankita-masand': {
+    'img': ankitaMasand,
+    'name': 'Ankita Masand',
+    'designation': 'Senior Frontend Engineer',
+    'org': 'Treebo',
+    'isPanel': true,
+    'twitterLink': 'https://twitter.com/ankitamasand'
+  },
+  'ashwin-goyal': {
+    'img': ashwinGoyal,
+    'name': 'Ashwin Goyal',
+    'designation': 'New Initiatives',
+    'org': 'Swiggy',
+    'isPanel': true,
+    'linkedInLink': 'https://www.linkedin.com/in/ashwingo/'
+  },
   'rajat-khare-arun-lingala': {
     'multiple': 'multipleSpeakers',
     'profile': [
@@ -382,23 +398,7 @@ const speakerState = {
     'abstract': 'Intuit is transforming all it’s APIs from SOAP and REST to GraphQL. My team is responsible for defining the Authorization mechanism for whole of Intuit, This talk will cover how we use Attribute Based Access Control (ABAC) to provide authorization for Intuit APIs which are public and private.',
     'description': 'Intuit’s Data stewardship principles secure user’s PII, financial and tax information. Dimensionality of authorization enforcing this includes access mode (e.g. OLTP, OLAP, Big data and messaging), APIs (e.g. Restful, GraphQL), clients (device, desktop, web, first party, second party and third party), platforms(e.g. Java, Node, .NET), deployments (e.g. monoliths, micro-services, gateway, service mesh), complex rules (for variety of usecases, global products with local compliance and multiple domains) and subjects from internal (enterprise), B2B and B2C. Intuit’s vision for security with agility is to decentralize policy authoring over multiple products while addressing strict performance needs. Domain local policies authored by thousands of developers should work with global policies set at domain or company level by security experts. Multiple authorizations for multiple resources per request are either by design of the product or due to micro-services architecture. Hence low latency requirement, not sacrificing demand for complex multiple policies. Design with learning from building and operating the solution will be presented. Modular and multi-strategy design was chosen. Scaling with respect to requests vs entities (subjects, resources) is discussed. Tactics enable for shorter story cycle time for developers with a first-use experience and robust governance. PIPs as microservices feed into policy in a scalable, performant way with strong consistency needs in multi-region deployments. Solution has remote and local execution of policy. Extensibility is built in as ABAC landscape evolves, better engines come up, AI is factored in or innovations are absorbed. AuthZ for GraphQL GraphQL landscape at Intuit 100’s of entities Home built vs other implementations of GraphQL platform Different programming languages for entity providers How is GraphQL authorization same or different from REST API based authorization It is API – so same Batching of multiple requests Data about fields and entities being access Dimensions of GraphQL AuthZ Programming model Annotation based authorization Declarative externalized authorization Enforcement point Method based authorization Gateway based authorization Decision model RBAC ABAC',
     'day': 2,
-  },
-  'ankita-masand': {
-    'img': ankitamasand,
-    'name': 'Ankita Masand',
-    'designation': 'Senior Frontend Engineer',
-    'org': 'Treebo',
-    'isPanel': true,
-    'twitterLink': 'https://twitter.com/ankitamasand'
-  },
-  'ashwin-goyal': {
-    'img': ashwingoyal,
-    'name': 'Ashwin Goyal',
-    'designation': 'New Initiatives',
-    'org': 'Swiggy',
-    'isPanel': true,
-    'linkedInLink': 'https://www.linkedin.com/in/ashwingo/'
-  },
+  }
 };
 const workshopState = {
   'why-graphql': {
