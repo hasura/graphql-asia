@@ -22,19 +22,12 @@ const seanGrove = require('../images/Sean-Grove.png');
 const manishJain = require('../images/manish-jain.jpeg');
 const tiru = require('../images/tiru.jpg');
 const sauradyutiCoondu = require('../images/Sauradyuti-Coondu.jpg');
-<<<<<<< HEAD
 const ankitamasand = require('../images/ankita-masand.png');
 const ashwingoyal = require('../images/ashwin.png');
-=======
-
 const rajatArun = require('../images/Rajat-Arun.png');
 const vijayanBala = require('../images/Vijayan-Bala.png');
 const ankitaAbineshAshwinTanmai = require('../images/Ankita-Abinesh-Ashwin-Tanmai.png');
-const ankitaMasand = require('../images/Ankita-Masand.png');
-const ashwinGoyal = require('../images/Ashwin-Goyal.png');
 const tanmai = require('../images/Tanmai.png');
-
->>>>>>> master
 
 const beginner = require('../images/beginner.svg');
 const intermediate = require('../images/intermediate.svg');
