@@ -17,9 +17,6 @@ const Brought = () => (
         <div className={'buttonWrapper'}>
           <Link to="/tickets"><button className={'transparentBtn'}>BUY TICKETS</button></Link>
         </div>
-        <div className={'pageDescription'}>
-          We have scholarships available for students as well as diversity scholarships for under-represented minorities in tech. If you’d like to apply, <a href="https://hasurahq.typeform.com/to/ukj62Q" target="_blank" rel="noopener noreferrer">click here</a>
-        </div>
         <div className={'pageDescription removePaddBottom'}>
           We have group discounts available for groups of 5 or more.
         </div>

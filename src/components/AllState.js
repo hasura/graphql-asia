@@ -22,6 +22,9 @@ const seanGrove = require('../images/Sean-Grove.png');
 const manishJain = require('../images/manish-jain.jpeg');
 const tiru = require('../images/tiru.jpg');
 const sauradyutiCoondu = require('../images/Sauradyuti-Coondu.jpg');
+const ankitamasand = require('../images/ankita-masand.png');
+const ashwingoyal = require('../images/ashwin.png');
+
 const beginner = require('../images/beginner.svg');
 const intermediate = require('../images/intermediate.svg');
 const communityTag = require('../images/community-tag.svg');
@@ -293,6 +296,22 @@ const speakerState = {
     'githubLink': 'https://github.com/Sauradyuti',
     'title': 'Building performant GraphQL servers',
     'abstract': 'The results of searching for "GraphQL performance" on Google will surely raise doubts in the mind of a GraphQL adopter. Is GraphQL really less performant than REST or is it just a myth? What makes GraphQL slow? How can the performance be improved? There are numerous information on how to build a GraphQL server, but not so on how to build an efficient one. Let\'s build efficient GraphQL servers!',
+  },
+  'ankita-masand': {
+    'img': ankitamasand,
+    'name': 'Ankita Masand',
+    'designation': 'Senior Frontend Engineer',
+    'org': 'Treebo',
+    'isPanel': true,
+    'twitterLink': 'https://twitter.com/ankitamasand'
+  },
+  'ashwin-goyal': {
+    'img': ashwingoyal,
+    'name': 'Ashwin Goyal',
+    'designation': 'New Initiatives',
+    'org': 'Swiggy',
+    'isPanel': true,
+    'linkedInLink': 'https://www.linkedin.com/in/ashwingo/'
   },
 };
 const workshopState = {
