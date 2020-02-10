@@ -501,6 +501,9 @@ img {
               font-weight: 500;
             }
           }
+          a {
+            padding: 0 0;
+          }
           .navbarActive {
             opacity: 1;
           }
@@ -1167,9 +1170,11 @@ img {
   padding-top: 100px;
   padding-bottom: 60px;
   .detailsWrapper {
-    padding-top: 100px;
     display: flex;
     align-items: center;
+  }
+  .detailsWrapper, .panelDetailsWrapper {
+    padding-top: 100px;
     .profileImg {
       text-align: right;
       img {
@@ -1250,6 +1255,9 @@ img {
 .titleTop {
   padding-top: 4px;
 }
+.titleTopPanel {
+  padding-top: 12px;
+}
 .aboutSpeakerWrapper {
   .pageDescription {
     width: 80%;
@@ -1279,6 +1287,20 @@ img {
         width: 80px;
         height: 80px;
         border-radius: 50%;
+      }
+    }
+    .socialWrapper {
+      display: flex;
+      padding-top: 12px;
+      .socialIcon {
+        padding-right: 16px;
+        a {
+          opacity: 0.6
+        }
+        a:hover {
+          opacity: 1;
+          text-decoration: none;
+        }
       }
     }
     .profile {
@@ -1773,7 +1795,7 @@ img {
     }
   }
   .detailsTopBannerWrapper {
-    .detailsWrapper {
+    .detailsWrapper, .panelDetailsWrapper {
       padding-top: 50px;
     }
   }
@@ -1881,12 +1903,13 @@ img {
     }
   }
   .headerWrapper {
-    z-index: 1;
+    z-index: 100;
     .navBarDefault {
       padding-top: 10px;
       .navBarHeader {
         display: flex;
         align-items: center;
+        padding-bottom: 10px;
         .navBarToggle {
           border-color: #fff;
           &:hover, &:focus {
@@ -2042,6 +2065,8 @@ img {
     }
   }
   .scheduleWrapper {
+    padding-top: 110px;
+    padding-bottom: 30px;
     .sectionPosition {
       .blueBgColor {
         width: 95%;
@@ -2193,7 +2218,7 @@ img {
     padding: 0 15px;
     padding-bottom: 40px;
     padding-top: 100px;
-    .detailsWrapper {
+    .detailsWrapper, .panelDetailsWrapper {
       padding-top: 30px;
       display: block;
       .title {

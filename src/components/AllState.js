@@ -22,19 +22,31 @@ const seanGrove = require('../images/Sean-Grove.png');
 const manishJain = require('../images/manish-jain.jpeg');
 const tiru = require('../images/tiru.jpg');
 const sauradyutiCoondu = require('../images/Sauradyuti-Coondu.jpg');
+<<<<<<< HEAD
 const ankitamasand = require('../images/ankita-masand.png');
 const ashwingoyal = require('../images/ashwin.png');
+=======
+
+const rajatArun = require('../images/Rajat-Arun.png');
+const vijayanBala = require('../images/Vijayan-Bala.png');
+const ankitaAbineshAshwinTanmai = require('../images/Ankita-Abinesh-Ashwin-Tanmai.png');
+const ankitaMasand = require('../images/Ankita-Masand.png');
+const ashwinGoyal = require('../images/Ashwin-Goyal.png');
+const tanmai = require('../images/Tanmai.png');
+
+>>>>>>> master
 
 const beginner = require('../images/beginner.svg');
 const intermediate = require('../images/intermediate.svg');
 const communityTag = require('../images/community-tag.svg');
 const talkTag = require('../images/talk-tag.svg');
+const panelTalk = require('../images/panel-talk.svg');
 const registration = require('../images/registration.svg');
 const lunch = require('../images/lunch.svg');
 const tea = require('../images/tea.svg');
 // const dinner = require('../images/dinner.svg');
 const dgraph = require('../images/dgraph.svg');
-const hasura = require('../images/hasura-icon.svg');
+// const hasura = require('../images/hasura-icon.svg');
 const graphqlasia = require('../images/graphql-asia-logo-icon.png');
 const speakerState = {
   'robert-zhu': {
@@ -46,6 +58,7 @@ const speakerState = {
     'githubLink': 'https://github.com/robzhu',
     'title': 'A Peek at the Future of GraphQL',
     'abstract': 'Since the formation of the GraphQL Foundation last year in March, we have been working on creating a resilient process to govern the GraphQL ecosystem and language evolution. In this talk, I will discuss the roles and responsibilities of the GraphQL Foundation, Working-group, and steering committee. Then I will discuss upcoming improvements to GraphQL ecosystem projects such as GraphQL.org and GraphiQL. Finally, we will dive deep into the most promising proposals for additions to the specification. By the end of the talk, you\'ll have a good sense for the direction that we are taking GraphQL in the next few years.',
+    'day': 1,
   },
   'manish-jain': {
     'img': manishJain,
@@ -56,7 +69,8 @@ const speakerState = {
     'githubLink': 'https://manishrjain.github.io/',
     'title': 'Back to GraphQL',
     'description': 'At Dgraph we love GraphQL, so much that we built our graph database around the language. Early on, we decided we should modify the language in order to make it a better graph query language, therefore creating GraphQL+-. That decision was not without an important trade-off. By abandoning the specification we also made it harder to interact with the rest of the very rich GraphQL ecosystem. We recently decided to provide a GraphQL compliant spec API in addition to the existing GraphQL+- one, and our plans now include migrating some of the constructs we added to GraphQL+- back into GraphQL without breaking compatibility.How can  we build recursive queries, group by values, or structurally change a  response to our queries in GraphQL? Well, that’s the great question we are answering at Dgraph and we want to share our solutions, prototypes, and future ideas.',
-    'about': 'Manish Jain is the founder of Dgraph Labs and the author of Dgraph, Badger, and Ristretto. He got thrust into real-time distributed systems right out of college, working in Web Search and Knowledge Graph infrastructure group at Google for 6.5 years. He led various projects to consolidate and serve all structured data including the knowledge graph right behind web search by building a graph indexing and serving system. After leaving Google, he decided to use this knowledge to build a scalable graph database, which could be used by big and small companies alike to serve the increasingly complex data warranted by today\'s applications. He has given multiple talks at various Go meetups and conferences, most notably in Gophercon Shanghai where he presented in front of a thousand developers.'
+    'about': 'Manish Jain is the founder of Dgraph Labs and the author of Dgraph, Badger, and Ristretto. He got thrust into real-time distributed systems right out of college, working in Web Search and Knowledge Graph infrastructure group at Google for 6.5 years. He led various projects to consolidate and serve all structured data including the knowledge graph right behind web search by building a graph indexing and serving system. After leaving Google, he decided to use this knowledge to build a scalable graph database, which could be used by big and small companies alike to serve the increasingly complex data warranted by today\'s applications. He has given multiple talks at various Go meetups and conferences, most notably in Gophercon Shanghai where he presented in front of a thousand developers.',
+    'day': 1,
   },
 
   'vishakha-singh': {
@@ -68,6 +82,7 @@ const speakerState = {
     'title': 'How we improved PayPal checkout conversions using GraphQL',
     'abstract': 'At PayPal, we are rebuilding our checkout experience from ground up. Most important problem we are solving is to make the experience super fast. Come hear our story on how we leveraged GQL server to smartly and efficiently present varied regional payment experiences to people all around the globe.',
     'about': 'Vishakha is a software engineer at PayPal where she works to make the checkout experience faster and better. She completed her Masters from Georgia Tech specializing in Computer Networks only to later realize her passion for Javascript and UI engineering. She also loves spending time meditating, baking and experimenting with makeup!',
+    'day': 1,
   },
   'radoslav-stankov': {
     'img': radoslavStankov,
@@ -80,6 +95,7 @@ const speakerState = {
     'abstract': 'Lessons learned from 4 years running GraphQL on top of Ruby on Rails. The talk will focus on concrete problems and their solutions.',
     'description': 'Show all mistakes and solution to problems, I have encountered during the last year and a half when replacing Product Hunt REST API with GraphQL. Show how GraphQL can improve the application structure of a Rails application. So it is effortless for backend developers to develop and maintain features. Integrating GraphQL with Rails resolver first schema design application structure authorization optimization and performance monitoring making frontend and backend tools to play well with each other',
     'about': 'Web developer with 15+ years of experience, currently is head of engineering at Product Hunt (by Angel List). Lately, he is juggling between Ruby, Javascript, and Elixir projects, with the belief that it’s equally important to work both on the frontend and on the backend. Organizer of React.Sofia meetup, React.NotAConf conference.',
+    'day': 1,
   },
   'gago-frigerio': {
     'img': gagoFrigerio,
@@ -92,6 +108,7 @@ const speakerState = {
     'abstract': 'As the size of your schema grows you start to ask yourself some common questions. Who owns what parts of the schema? How do you share common functionality across the graph? Modules to the rescue! We have answered these questions and more with a modular approach to GraphQL - come and see how!',
     'description': 'To get the most out of GraphQL, most organizations end up exposing a single graph that provides a unified interface for querying all of your backing data. As your graph grows, however, it can become inefficient or even difficult to represent the graph without running into organizational problems such as schema management and ownership across the organization. To remedy this, you can divide your schema into modules that are composable, portable, and reusable, all while retaining clear and strong ownership within the graph. How does this actually work? Modules are stand-alone sections of the graph that are designed to be composed together. This gives us the flexibility to fully decouple the parts of the graph that the organization cares about (Who owns this type? Who owns this resolver? How do we share common functionality? ) from the construction of the graph itself. An extra added benefit is that modules let you prepare for federation without the operational overhead. We have built a brand new GraphQL stack using a modular approach with the intent to optimize for developer experience, ownership, and schema design. Using a combination of open-source tools such as graphql-code-generator, graphql-modules, along with some of our own custom tooling, we have been able to construct modules that are both fully isolated as well as easily composable. This approach has been invaluable in growing our graph and will likely be helpful for you too!',
     'about': 'I’m from Argentina and I work on the Developer Experience team at Coursera. I love dogs more than I love humans, playing pool and drinking dark beer.',
+    'day': 2,
   },
   'shipra-gupta': {
     'img': shipraGupta,
@@ -103,6 +120,7 @@ const speakerState = {
     'abstract': 'Have you heard of the term GraphQL, and not sure what it is about? Ever had to choose between API comfortable for users and “the right REST” API? Does your client make multiple rest requests corresponding to one click on UI? Do you want to reduce latency because of multiple REST calls over network.',
     'description': 'Have you heard of the term GraphQL, and not sure what it is about? Ever had to choose between API comfortable for users and “the right REST” API? Does your client make multiple rest requests corresponding to one click on UI? One backend service and multiple clients with different data requirements because of which you end up overfetching or underfetching the data? Do you own and maintain a fleet of REST endpoints and are tired of constantly checking with the client teams, on the usage of these endpoints or on the return types in the responses? Do you want to remove client teams’ dependencies on API teams? Did you have to maintain different versions of an api? ##REST vs GraphQL With a REST API, you would typically gather the data by accessing multiple endpoints. In the example, these could be /users/ endpoint to fetch the initial user data. Secondly, there’s likely to be a /users//posts endpoint that returns all the posts for a user. The third endpoint will then be the /users//followers that returns a list of followers per user. In GraphQL on the other hand, you’d simply send a single query to the GraphQL server that includes the concrete data requirements. Advantages Increased performance minimizes server round trips by aggregating data(schema stiching) from multiple source in a single request which reduces network overhead Optimum Payload- No more overfetching or underfetching of data by specifying the required data. Conditionally load or mutate data according to different client needs using resolvers. Increased developer experience With GraphQL, Client engineers don’t have to spend time to ask the API team to add or modify something. GraphQL is self-documenting which means less time trying to figure out how to use an undocumented API. Client engineers have all the control and request only things they need without modifications on the backend. This is truly liberating. Evolve your API without versions In GraphQL there are no API versions as there used to be in REST. Add new fields and types to your GraphQL API without impacting existing queries. Aging fields can be deprecated and hidden from tools. Thus a client receives a deprecation warning when querying a deprecated field. After a while, the deprecated field may be removed from the schema when not many clients are using it anymore. By using a single evolving version, GraphQL APIs give apps continuous access to new features and encourage cleaner, more maintainable server code. Improved Security, Strong Types and Validation GraphQL schemas are defined using the GraphQL Schema Definition Language (SDL). This schema serves as the contract(Single source of truth) between the client and the server to define how a client can access the data. Once the schema is defined, the teams working on frontend and backends can do their work without further communication since they both are aware of the definite structure of the data that’s sent over the network. GraphQL offers enhanced security over JSON RESTful APIs for two main reasons: a strongly typed schema (e.g., data and type validation) and an ability to filter sensitive data (no unintentionally leaked data). Graceful degradation during a service outage In microservices, it is common that requesting data fails because one of the underlying services is temporarily unavailable. GraphQL solves this problem elegantly by allowing resolvers to report errors to the client without terminating the entire request. In this way, clients can be made aware of service outages when requesting data, and react to the data that is available. Then they can potentially retry only the failing portion of the request at a future time by simply modifying the client query to backfill the missing data. Rich open source community Today, reference implementations of the GraphQL specification are available in various languages and there’s a plethora of GraphQL clients. In addition, lots of tooling provide seamless workflows and make for an amazing developer experience when building GraphQL APIs.',
     'about': 'I work as Computer Scientist in Adobe. I am a part of GraphQL service team since its inception and have designed, developed and implemented GraphQL service in Adobe which is successfully running in production. At Adobe, we found that there were multiple REST calls over network to load one page which was impacting performance and customer experience. In our journey of improving performance, GraphQL played a major role and I want to share my experience with everyone.',
+    'day': 2,
   },
   'ivan-goncharov': {
     'img': ivanGoncharov,
@@ -115,6 +133,7 @@ const speakerState = {
     'abstract': 'We all love GraphQL query syntax because it’s simple and easy to learn. At the same time, it has a few useful features that are typically overlooked. If you think that you already know everything about GraphQL queries this talk is for you. Warning: spoilers from GraphQL Specification',
     'description': 'We all love GraphQL query syntax because it’s simple and easy to learn. At the same time, it has a few useful features that are typically overlooked. If you think that you already know everything about GraphQL queries this talk is for you. Warning: this talk will contain spoilers from GraphQL Specification I will talk about: * Implicit conversion of arguments * Default values for query arguments * Using block strings in arguments * extending query results and errors',
     'about': 'Ivan is the maintainer of graphql-js, an active contributor to GraphQL Specification and works as contractor for GraphQL Foundation.',
+    'day': 1,
   },
   'sarjeel-yusuf': {
     'img': sarjeelYusuf,
@@ -127,6 +146,7 @@ const speakerState = {
     'abstract': 'IoT was meant to revolutionize how we were meant to integrate tech into our lives. However, IoT adoption is dismal due to a myriad of problems. The solution lies in the way we service our IoT devices on the data and compute layer, and a serverless GraphQL architecture has all the solutions.',
     'description': 'Crux of the Matter There are several challenges to the IoT model that has hampered its use, albeit major innovative strides made over the years. These issues include security, infrastructure, lack of standardization between devices, cost and development. All these barriers are hampering the implementation of crucial and valuable IoT solutions. However, novel technologies in the domain of software are providing solutions to these problems and one such technology is GraphQL on a serverless platform providing data and compute services to IoT devices. Serverless Benefits Serverless is a perfect platform for IoT devices, especially those that are not used frequently. This is because of the serverless postulates that AWS Lambda manifests. These include: * The Abstraction of server responsibility. * Scalability * Pay-as-you-go model The three properties of a serverless architecture would greatly benefit IoT adoption. IoT developers now would no longer need to worry about setting up and maintaining their own servers within their architecture. This job can now be abstracted to the cloud vendor. This easier development, assured scalability and potentially lower costs. GraphQL in the Mix GraphQL and is a syntax defining the way data is handled. With GraphQL schemas clients can get the exact data that they requested, IoT devices can be added to the network without worrying about new end-points and enhancements to data retrieval and processing. This promotes the standardization of IoT devices and the ease and reliability of development. Furthermore, since GraphQL is simply the syntax and concept, there are several developer tools to choose from. However, AppSync provides unmatched benefits for IoT, calling for its use in the IoT architecture. These benefits include offline-support, batch processing, automatic code gen and ease in serverless Lambda integration. All of this further mitigates the problems of IoT and advocates for its adoption. Hence this session is aimed at outlining the problems of IoT and describing the solutions of a serverless GraphQL backend in hopes of redefining the way IoT developers implement their solutions.',
     'about': 'An aspiring stand-up comedian thrown into the field of serverless right after graduation, Sarjeel had been working on serverless monitoring at Thundra.io for about a year. In 2019 he made the switch to Atlassian, but his passion still lies in serverless technology as is manifest in his articles exploring the realm of serverless from automatic monitoring to IoT in serverless and GraphQL processing Lambda functions. Sarjeel can usually be found in cafes discussing Eastern philosophy versus Western philosophy and laughing at the comedies of life.',
+    'day': 2,
   },
   'christian-nwamba': {
     'img': christian,
@@ -138,6 +158,7 @@ const speakerState = {
     'title': 'Extending GraphQL APIs with Actions and Serverless',
     'description': 'The event-driven nature of actions and serverless combined with the flexibility of Hasura, empowers you to take any GraphQL API and extend it infinitely. This means you can go as deep as calling a HTTP endpoint when an entity changes in your database or as high-level as sending an email when a mutation is received. This talk will give an overview as well as a deep dive of strategies to extend a GraphQL API.',
     'about': 'Christian is a Senior Cloud Advocate at Microsoft focussing on Startups, JavaScript and Azure. His time is mostly spent on working with developers to figure how stuff work. He does this through workshops, conferences and online contents. Christian is currently working on Herm, a GraphQL workshop to that teaches how to solve advanced business logic problems with GraphQL and Serverless. Christian thinks he will make a good DJ someday.',
+    'day': 2,
   },
   'lachlan-young': {
     'img': lachlanYoung,
@@ -150,6 +171,7 @@ const speakerState = {
     'abstract': 'Being the new kid In town, GraphQL certainly has it’s appeal to gen-pop of our tech jungle. But how do you integrate and/or replace the king without alienating the rest of your subjects? Join me in discussing the philosophy behind API design and how/why it is imperative to the success of a product.',
     'description': 'GraphQL is rolling out quicker and quicker as the community around it grows and improves what was once just a vision. Yet each addition to our tech stack, brings with it its own core problems, most notably of which is how to replace the old? To date one of the biggest barriers to entry with a GraphQL API is the technical debt of maintaining two APIs or alternatively, the consequences of deprecating the Industry standard in its favour. Fortunately, we can look to our predecessors as this is not the first time our API standard has been challenged. Whilst GraphQL itself is intended to be a layer, connecting two sides of an intricately woven coin of routes, operations and responses. GraphQL faces the same problems REST initially did when attempting to scrub itself clean of SOAP, XML and the like. On the menu today we will be starting with a smooth overview of previous successors, followed by an in-depth comparison of working with both a Server-less private GraphQL Api and, a monolithic Versioned API designed for private and public consumption alike. For dessert a few war stories chased with a generous helping of philosophy around the importance of APIs and how they truly dictate the balance between success and failure of a product.',
     'about': 'When I’m not taking long walks on the beach or pursuing some ridiculous side project with the excuse of ‘learning a new skillset’ cough weebg cough, you’ll find me 9-5 overselling my skills and thriving under the pressure at Tanda. I’m a self taught programmer who has a degree in game development and included in my skillset is the ability to not take myself to seriously. I got my start creating a White Label API for a company called Fabric and programming quickly became my full time hobby. For the last two years I have been fortunate enough to find myself on a multitude of different projects including computational pointcloud calculations with C++, web development with Polymer, Full Stack React development, a GraphQL React native app and finally, a monolithic powerhouse utilising all my past experience to build a platform using Ruby, NodeJs, React, GraphQL and React. The saying goes “find something you love and do it on the weekends”. I found that out after I found full time employment and I am the living embodyment that one size does not fit all. I;m at a stage in my ‘journey’ if you will, where I am looking to give back whilst the beginning is still fresh. If I can help you with that at all, please don’t hesitate to reach out.',
+    'day': 1,
   },
   'carlos-rufo': {
     'img': carlosRufo,
@@ -161,6 +183,7 @@ const speakerState = {
     'title': 'From Over-fetching to Over-typing',
     'abstract': 'GraphQL comes with capabilities to ask for whatever you need & get exactly that avoiding over-fetching. When using static types we might face a similar problem, over-type the codebase. In this demo-based talk I’ll go trough my experience adding type-safety over clients & how to avoid over-typing.',
     'about': 'Polyglot Engineer • @GraphQLHongKong organizer • http://api.spacex.land author • he/him',
+    'day': 2,
   },
   'sam-julien': {
     'img': samJulien,
@@ -173,6 +196,7 @@ const speakerState = {
     'abstract': 'Are you confused about how to add authentication to your GraphQL API? You’re not alone! Learning authentication can be tough, so let’s demystify it with some practical teaching on how to use JSON Web Tokens (JWTs) with your GraphQL APIs.',
     'description': 'Are you confused about how to add authentication to your GraphQL API? You’re not alone! It’s no secret that learning authentication is hard enough on its own, let alone while trying to understand how it fits with GraphQL. Let’s demystify authentication with some practical teaching on how to use JSON Web Tokens (JWTs) to add authentication to your GraphQL APIs! We’ll cover registering users, logging them in and out, and keeping their sessions alive. We’ll also discuss options to consider when choosing an authentication strategy and whether any considerations need to be made for using your API with a traditional web application versus a single-page application (SPA). This talk will use JavaScript examples, but the principles will apply to other backend technologies. By the end, you’ll feel a whole lot better about tackling authentication!',
     'about': 'Sam Julien is an Angular GDE and Collaborator, a Developer Advocate Engineer at Auth0, and the creator of UpgradingAngularJS.com. He’s also the author of “Up and Running with Gatsby” on Thinkster.io. His favorite thing in the world is being outside drinking good scotch next to a fire he built himself.',
+    'day': 1,
   },
   'kiran-kumar-abburi': {
     'img': kiranKumar,
@@ -184,6 +208,7 @@ const speakerState = {
     'abstract': 'GraphQL is good interface to build modern API’s. Some of its features like directives, introspection enable us to build tools that solve common network problems. In this talk, I will take a deep dive into GraphQL directives and explain how to abstract common patterns into custom directives.',
     'description': 'GraphQL is good interface to build modern API’s. Some of its features like directives, introspection enable us to build tools that solve common network problems in apps. In this talk, I will take a deep dive into GraphQL directives and explain how to abstract common patterns into custom directives. This talk broadly divided into 2 parts 1) How to use schema directives to solve problems on server 2) How to use query directives to solve problems on client',
     'about': 'Kiran Abburi is founder of neostack.com and organizer of React Bangalore',
+    'day': 1,
   },
   'monika-jaiswal': {
     'img': monikaJaiswal,
@@ -195,6 +220,7 @@ const speakerState = {
     'abstract': 'Do you want to know how we have used Graphql at Vrbo (Expedia)? What are the challenges we faced during migration? How do we maintain it within teams across the globe ? Or simply what is Graphql and how can we use it in production? This talk will provide all these answers and learnings as takeaway!',
     'description': 'Expedia group has around 25 brands under its hood. Vrbo, is one of them and one of the most renowned vacation rental sites in US. We extensively use Graphql with catalyst applications and have in house term, ‘partials’ where we have broken one single layer into multiple small fragments. We have developed multiple modules for integrating partials into the catalyst application and have hosted on ‘artifactory’ for anyone inside the organisation to download and use. We are in progress for some open source projects as well. This and several other features that we have implemented here will be a content of this talk!',
     'about': 'A BITS Pilani graduate, with 3+ years of experience and working as a Software Development Engineer at Expedia currently, I am passionate about technology in general, specific to technologies in frontend and Graphql . I am also leading the Women in Technology initiative at Vrbo India and am working extensively towards encouraging more women in STEM .',
+    'day': 2,
   },
   'vijayan-srinivasan': {
     'img': vijayanSrinivasan,
@@ -240,6 +266,7 @@ const speakerState = {
     'title': 'GraphQL as an API Gateway for E-commerce at Scale with Tooling.',
     'abstract': '"As many companies started using GraphQL in production with different requirements, it is now important that one should know what are the best practises for production environment. Different domain has different use-cases and according to the importance of it the implementation may vary. We at Tokopedia, #1 Indonesian e-commerce have implemented GraphQL as an API Gateway. The main part is the scale of the Tokopedia in production. Due to very high scale we need to tackle a lot of problems and implement various features. This talk is mainly focussing on all of such things like Tooling needed, Observability, features like SingleFlight, Cache, Circuit Breakers, Rate limiters, Error Handling, Security Features, multi-DC/multi-cloud enability. This talk will be an in-depth discussion of all of the above things and how to implement these on a big scale for E-commerce domain.',
     'description': 'Like Facebook, when they wanted to expand in Africa and Asia where network connectivity of 2G-3G is an issue; GraphQL was born. At Tokopedia, we had the same kind of problem as Indonesia is a country of 18,307 islands and network connectivity in all the regions is an issue. That’s why we started implementing GraphQL which enable us to achieve efficiency in network calls. We have GraphQL layer as an API Gateway. With the help of the GraphQL we were able to get the 60K Request Per Second in within just 2-3 months of development. We are also probably the biggest GraphQL implementation as an API Gateway in Asia region. GraphQL helped us to carry out all the events very smoothly by avoiding downtimes. Let’s go deeper by getting to know the company background and the scale at which company is operating. We had a lot of services already running in the production environment at scale. It was the year of 2017, we started to implement the GraphQL as a microservice in the organization. From a small service, GraphQL layer became one of the super-critical services at Tokopedia in a very short amount of time. We also has a very unique requirement of tooling in terms of code-generators. Let’s dive deep into each of the features. GQLTools: We have the very unique tool, we call is as GQLTools, which takes service curl calls as input and generate schema and resolvers automatically. This is probably not available in the market as it is highly specific to use-case of “GraphQL as an API Gateway for E-commerce domain”. Basically, GQLTools automate the integration process of any micro-service at GraphQL layer, we started developing and automating our GQLTools which ultimately grew and evolved with time. Currently, we have automated everything end-to-end including development, unit and integration testing. SingleFlight: Many a times it happens that a user sends multiple duplicate requests and results in unnecessary traffic on network bandwidth. It also puts an unnecessary load on the microservice. SingleFlight helps a lot in such scenarios and we implemented it at the GraphQL layer. Caching: Caching also helps a lot to reduce load on the microservice and enhance the overall speed resulting enhance user experience. We had implemented no. of caching techniques like in-memory caches and it helped us in great way in terms of performance. Caching also helps to maintain user experience for a while although service is down. At scale of Tokopedia, we had implemented a couple of caching mechanisms and tried to improve those as per our custom requirements. Circuit Breakers and rate limiters: Circuit Breakers and rate limiters help in managing the traffic scenarios and a must have to guard the backend service. If any service goes down due to some issue, Circuit Breakers comes into actions and blocks the requests going to the service. It closes back once the service is up again. Rate limiters helps by blocking any excessive errors requests coming to the service. Security: Security features like HMAC, CSRF helps to improve overall security in the environment and across all the organization. It enhances security greatly by avoiding any attacks from the outside body. Error handling is also another important aspect in terms of the handling of different scenarios and requests. Observability Platform: We required many things to track and observe as we started getting all the traffic at one place. It also helped a lot to improve performance and speed of the services and reduce latencies. The authentication came at one place reducing the load on accounts service and improving overall ecosystem. We also got a sense of traffic routes and were able to improve it in terms of performance. We have built an in-house platform similar to Optics of Apollo. It is a complete ecosystem of Dashboards, alerts to the services, actions items needed on the different events like query counts, RPS, fluctuations in the traffic. At last overall the talk will be sharing overall journey of GraphQL in Tokopedia until now.',
+    'day': 2,
   },
   'abinash-mohapatra': {
     'img': abinashMohapatra,
@@ -252,6 +279,7 @@ const speakerState = {
     'abstract': 'Have you been working on a project from scratch, severely timeboxed, uncompromising on DX, UX, security and performance. I am and Flipkart Ads Platform is just about that. We help advertisers create ads on our platform and we used GraphQL to serve our demands and give them the best experience.',
     'description': 'INTRO It was early 2019 and, we, Flipkart (one of the largest eCommerce companies in India) set out to build the “Flipkart Ads Platform”. It was a beastly task and we wanted to make everything right. Things that were important for us were: 1. Consumer-centricity - UX and polished UI is one of the core principles for building products at Flipkart. 2. Solving data centric problems - Solving overfetching/underfetching and the n+1 problem. 3. Reduce overall code bloat - Coming from facebook flux lib, to over redux, we feel that there’s considerable code bloat for fundamental operations like data fetching. We wanted to explore more and promising alternatives if they existed. 4. Developer experience - DX is usually one more than ever, neglected area in a fast paced team. Be it dependencies on backend teams for data or the lack of a rigid contract signed in blood that potentially doesn’t cause a big fatal crash on production, things like these do reduce the overall productivity of the developer over a span of time. TECH STACK Our team had expertise in React, Styled Components for UI and we stuck by them. For areas mentioned above, we chose Apollo, for our server and client implementation. To add, an SDL first (we create schemas first, then implement resolvers) approach with TypeScript was chosen. To help with the development, we used tooling like: Graphql-code-generator (to generate TS types from our graphql schemas), graphql-import, Merge-graphql-schemas and lodash merge to distribute our schemas and resolvers. This helps ensure separation of concerns between various schemas and resolvers, while finally stitching them before instantiating Apollo Server. To summarise our architecture, UI/client talks to an Apollo Server. The apollo server in turn talks to various data provider systems via REST, collates and massage the response and sends it back to the client. TYPESCRIPT and GRAPHQL GraphQL is a typed system i.e the server’s schema (input request types or server response) have a well defined type. However, with TS in the system, it’d be a mess to re-create the types/interfaces defined on the server for TS. As discussed, we follow a SDL first development approach i.e. we define our server graphql schemas first. Now that we have our schemas, it’d be great if we could automatically create the corresponding TS interfaces or say make our resolvers typed. To help with this, we used “graphql-code-generator” tool. To add, this tool also generates react apollo components and HOCs with TS typings. This saves a lot of bandwidth for creating TS interfaces and resolver typings. This tool works with developer defined plugins that runs on a graphql schemas to generate TS interfaces. For e.g. a sample config file for the tool: schema: http://localhost:3000/graphql documents: ./src/*/.graphql generates: ./src/types.ts: plugins: - typescript - typescript-react-apollo FILES in GRAPHQL Files are an important entity in our ecosystem. Apollo Server 2.0 now provides a custom “Upload” scalar which serves file uploads. On the client, Apollo allows multipart requests for file uploads. On the server, the multipart request is processed and the resolver is provided with an upload argument that resolves into an object containing a “stream”. This is particularly important as we can pipe the stream to our data servers directly. Downloading files is however, still unsupported and is implemented via a traditional REST call. AUTHORISATION GraphQL greatly serves as a gateway for data aggregation. Our application however is role based, thereby requiring stringent access control. We needed to run URL and API auth for every request. We evaluated if we can run this on our apollo server as well. However, we wanted to keep the process as declarative as possible. For this, we used “custom directives” available in Apollo Server 2.0. For e.g. declare @auth on FIELD_DEFINITION type X { flight_number: ID details: String @auth(requires: [“P1”]) } ensures that the filed will resolve to a value that’s dictated via the “@auth” directive. The implementation of the directive is to extend the “SchemaDirectiveVisitor” class available in Apollo Server. Implementing two main methods “visitFieldDefinition” and/or “visitObject” help in controlling how the resolver for the types (against which the directive is used) should resolve into. For e.g.: class AuthDirective extends SchemaDirectiveVisitor { public visitFieldDefinition(field: GraphQLField<any, any>) { // …… } } To add, we use the custom directive not just at a field level, but at type levels as well: type Y @auth(requires:[“P3”, “P4”]) { ….. Z: String @auth(requires:[“P4”]) } // or type Query { getX: X @auth(requires:[“P1”]) } To however use/apply the directive, Apollo needs to know about it and hence we pass the directive’s class to Apollo server’s constructor: const server = new ApolloServer({ typeDefs, resolvers, schemaDirectives: { auth: AuthDirective } }); Custom directives truly abstract away the heavy-lifting from developers and make it abundantly clear regarding the needs/requirements for a given field/type. STATE MANAGEMENT and PERFORMANCE CACHING For Apollo Client (AC), we use the InMemoryCache for caching and state management. However it’s important to evaluate the query performance. AC implements normalisation (converting the graph into a flat data structure while storing) for queries that it writes/reads to/from the cache. It does incur significant costs (data dependent) while normalisation and is NOT opt-out enabled. Hermes, is one potential alternate which stores data as a “normalised graph” instead of a “normalised map”. This looks promising and we’re evaluating if our current data volume would cause any performance regression. NETWORK BATCHING Our pages are made of segments which each segment potentially having its own data provider. This situation ends up in having multiple network calls from the client thereby increasing roundtrips. (Conditional) Batching network requests helps reduce the overall number of requests to our servers and thereby RTT. However, batching comes at a cost. The performance of a batch is as good as the slowest request in the batch. By “Conditional”, we mean use batching only when needed and to not batch for important/expensive/computationally-intensive requests. OPTIMISTIC RESPONSE To have a fast, 0 latency server response for mutations, we resort to “Optimistic response” wherein we add a manually created mutation response so that the UI changes could be instantly done.This also helps reduce number of network calls as the updated result (inclusive of the current mutation) is already present at the client. REACT and PERFORMANCE a. HOOKS - We use React hooks implementation over class based. For reasons related to better composability, a PULL based approach vs a PUSH based and also the fact that Hooks minify better. For e.g. Promise.resolve().then(value => getValue(value)); // PUSH // vs const value = await getSomeValue(); // PULL b. MEMOIZATION - React hooks provide memoization techniques for components using “React.memo”, while functions/callbacks can be memoized using “useCallback” hook. Computationally expensive items could be memoized using “useMemo” hook. CONCLUSION Building our ads platform has been nothing less than a roller coaster ride. When we look back at our fundamental pillars of development i.e. UI/UX, DX, Data etc. it seems we did do some justice to them. We’re not resting and are looking forward (and eagerly waiting for) to: 1. Experimenting with Hermes cache 2. Migrating our apollo client code from render props to hooks for further code bloat reduction and maintainability (and consistency).',
     'about': 'I am Abinash. I am a UI engineer at Flipkart. I began my career here with building Flipkart Lite, India’s first large scale eCommerce PWA. My areas of focus in FK Lite have been mostly on performance, service workers, animations etc. I am a “customer first” centric developer and for me, UX is paramount. I have also worked on client side image processing like resizing, resampling. My areas of interest include Service Workers, Performance, Animations, JS/Storage Parallelism using Workers, WebAssembly. Recently I have been intrigued by GraphQL and have been working on it for around close to a year. Apart from this, I talk about Sneakers and bikes too !! And who doesn’t love Sneakers and bikes, as they say “You never see a motorcycle outside a psychiatrist’s office."',
+    'day': 2,
   },
   'rajat-khare': {
     'img': rajatKhare,
@@ -274,6 +302,7 @@ const speakerState = {
     'githubLink': 'https://github.com/sgrove',
     'title': 'Be lazy and get promoted with great GraphQL documentation',
     'abstract': 'You provide a GraphQL API, and you care deeply about your API DX:You want your developers to be happy, to find the exact information they need at just the right time,and to trust that your documentation is infallible. Only one challenge: that sounds like a lot of work, and - like the rest of us - you\'re lazy. Never worry! Codex is a free, OSS GraphQL documentation suite for busy (ahem) developers like you meant to achieve API documentation nirvana with minimal effort.',
+    'day': 2,
   },
   'vilva-athiban': {
     'img': vilvaAthiban,
@@ -286,6 +315,7 @@ const speakerState = {
     'abstract': 'People started using Apollo / GraphQL in production and many use it with ReactJS. This talk will be a 25-minute live coding, where we will be building the Query components (HOC, hooks and Render props component) of react-apollo. This will enable users to get better insights about using it',
     'description': 'People started using Apollo / GraphQL in production and many use it with ReactJS. This talk will be a 25-minute live coding, where we will be building the Query components (HOC, hooks and Render props component) of react-apollo. This will enable users to get better insights and implement more performant code for their products. Understanding libraries’ internals will always lead us to increase in creativity and I will try to invoke it',
     'about': 'Vilva is a Javascript developer and GraphQL enthusiast. He works for Omio. He loves to preach interesting tech topics with humor. He is on a mission to make the browser a better place to visit.',
+    'day': 1,
   },
   'sauradyuti-coondu': {
     'img': sauradyutiCoondu,
@@ -296,6 +326,69 @@ const speakerState = {
     'githubLink': 'https://github.com/Sauradyuti',
     'title': 'Building performant GraphQL servers',
     'abstract': 'The results of searching for "GraphQL performance" on Google will surely raise doubts in the mind of a GraphQL adopter. Is GraphQL really less performant than REST or is it just a myth? What makes GraphQL slow? How can the performance be improved? There are numerous information on how to build a GraphQL server, but not so on how to build an efficient one. Let\'s build efficient GraphQL servers!',
+    'day': 1,
+  },
+  'rajat-khare-arun-lingala': {
+    'multiple': 'multipleSpeakers',
+    'profile': [
+      {
+        'img': rajatKhare,
+        'name': 'Rajat Khare',
+        'designation': 'SOFTWARE ARCHITECT',
+        'org': 'INTUIT',
+        'twitterLink': 'https://twitter.com/rajatontwit',
+        'githubLink': 'https://github.com/kharerajat2014',
+      },
+      {
+        'img': arunLingala,
+        'name': 'Arun Lingala',
+        'designation': 'Staff Software Engineer',
+        'org': 'INTUIT',
+        'twitterLink': 'https://twitter.com/ArunLingalaCBK',
+        'githubLink': 'https://github.com/arunlingala',
+      }
+    ],
+    'profileDetails': [
+      {
+        'name': 'Rajat Khare',
+        'about': 'Rajat is a Software Architect with Intuit. He has been with Intuit for 9 years in IDC and has worked across Intuit’s QuickBooks ecosystem of products and offerings. Rajat has been working on GraphQL ecosystem since its inception around 2015 and has built multiple applications and services using GraphQL over the last 4 years. Rajat is passionate about fueling technology innovation having deep impact on customers and business. He has 4+ filed patents Rajat is an avid external and internal speaker in conferences and enjoys sharing the great work happening in the engineering teams he works with , and coaching engineers to do the same as well.',
+      }
+    ],
+    'title': 'AutoFIT, a framework to automatically inject failures per request invocation to test fault tolerant/resilient GraphQL APIs',
+    'abstract': 'How do you test your failure modes explicitly on GraphQL?. How can you take control of writing Automated Integration tests that simulate failure cases and test your resiliency and fallbacks. ? We talk about an approach we have used called AutoFIT that helps make this happen!',
+    'description': 'As we design GraphQL interfaces that are a connection of types, it becomes very critical to think of all the failure points that can happen and how they will manifest on the GraphQL response. Its also important that as we plan automated Integration Testing on GraphQL interfaces that runs in CI/CD pipelines to be able to represent both success and failure test cases. Existing approaches have been hard and usually need the whole environment in a failure more to be able to simulate or mock error cases from downstream dependencies. In this talk we talk about a failure injection approach that can inject desired failures in context of a GraphQL query or mutation so that they stay contained to the request and can be run repeatedly in CI/CD environments!',
+    'day': 2,
+  },
+  'vijayan-srinivasan-bala-dutt': {
+    'multiple': 'multipleSpeakers',
+    'profile': [
+      {
+        'img': vijayanSrinivasan,
+        'name': 'Vijayan Srinivasan',
+        'designation': 'Group Development Manager',
+        'org': 'INTUIT',
+        'twitterLink': 'https://twitter.com/vijayanskp',
+        'githubLink': 'https://github.com/vijayan007',
+      },
+      {
+        'img': balaDutt,
+        'name': 'Bala Dutt',
+        'designation': 'PRINCIPAL ENGINEER',
+        'org': 'INTUIT',
+        'twitterLink': 'https://twitter.com/baladutt',
+        'githubLink': 'https://github.com/baladutt',
+      }
+    ],
+    'profileDetails': [
+      {
+        'name': 'Vijayan Srinivasan',
+        'about': 'Leading Engineering for Intuit Identity Platform in India. Having 20 years of industry experience in building large scale platforms. Worked on startups and enterprises like Oracle, Yahoo! and Intuit!',
+      }
+    ],
+    'title': 'Authorization for GraphQL @ Intuit',
+    'abstract': 'Intuit is transforming all it’s APIs from SOAP and REST to GraphQL. My team is responsible for defining the Authorization mechanism for whole of Intuit, This talk will cover how we use Attribute Based Access Control (ABAC) to provide authorization for Intuit APIs which are public and private.',
+    'description': 'Intuit’s Data stewardship principles secure user’s PII, financial and tax information. Dimensionality of authorization enforcing this includes access mode (e.g. OLTP, OLAP, Big data and messaging), APIs (e.g. Restful, GraphQL), clients (device, desktop, web, first party, second party and third party), platforms(e.g. Java, Node, .NET), deployments (e.g. monoliths, micro-services, gateway, service mesh), complex rules (for variety of usecases, global products with local compliance and multiple domains) and subjects from internal (enterprise), B2B and B2C. Intuit’s vision for security with agility is to decentralize policy authoring over multiple products while addressing strict performance needs. Domain local policies authored by thousands of developers should work with global policies set at domain or company level by security experts. Multiple authorizations for multiple resources per request are either by design of the product or due to micro-services architecture. Hence low latency requirement, not sacrificing demand for complex multiple policies. Design with learning from building and operating the solution will be presented. Modular and multi-strategy design was chosen. Scaling with respect to requests vs entities (subjects, resources) is discussed. Tactics enable for shorter story cycle time for developers with a first-use experience and robust governance. PIPs as microservices feed into policy in a scalable, performant way with strong consistency needs in multi-region deployments. Solution has remote and local execution of policy. Extensibility is built in as ABAC landscape evolves, better engines come up, AI is factored in or innovations are absorbed. AuthZ for GraphQL GraphQL landscape at Intuit 100’s of entities Home built vs other implementations of GraphQL platform Different programming languages for entity providers How is GraphQL authorization same or different from REST API based authorization It is API – so same Batching of multiple requests Data about fields and entities being access Dimensions of GraphQL AuthZ Programming model Annotation based authorization Declarative externalized authorization Enforcement point Method based authorization Gateway based authorization Decision model RBAC ABAC',
+    'day': 2,
   },
   'ankita-masand': {
     'img': ankitamasand,
@@ -385,6 +478,7 @@ const scheduleStateDayOne = {
     'scheduleTime': '09:00 AM - 09:15 AM',
   },
   'hasura': {
+    'type': 'break',
     'img': graphqlasia,
     'maxHeight': true,
     'name': 'TBD',
@@ -517,7 +611,7 @@ const scheduleStateDayOne = {
     'tagImg': talkTag,
   },
   'hasura-2': {
-    'img': hasura,
+    'img': graphqlasia,
     'type': 'break',
     'maxHeight': true,
     'name': 'TBD',
@@ -597,9 +691,10 @@ const scheduleStateDayTwo = {
     'scheduleTime': '11:30 AM - 12:00 PM',
     'tagImg': talkTag,
   },
-  'vijayan-srinivasan': {
-    'img': vijayanSrinivasan,
-    'name': 'Vijayan Srinivasan',
+  'vijayan-srinivasan-bala-dutt': {
+    'multiple': 'multipleSpeakers',
+    'img': vijayanBala,
+    'name': 'Vijayan Srinivasan, Bala Dutt',
     'title': 'Authorization for GraphQL @ Intuit',
     'duration': '30 mins',
     'tag': 'Long Talk',
@@ -607,7 +702,7 @@ const scheduleStateDayTwo = {
     'tagImg': talkTag,
   },
   'hasura-3': {
-    'img': hasura,
+    'img': graphqlasia,
     'type': 'break',
     'maxHeight': true,
     'name': 'TBD',
@@ -644,15 +739,15 @@ const scheduleStateDayTwo = {
     'scheduleTime': '02:10 PM - 02:30 PM',
     'tagImg': talkTag,
   },
-  'panel': {
-    'img': graphqlasia,
-    'maxHeight': true,
-    'name': 'TBD',
-    'title': 'TBD',
+  'graphql-adoption': {
+    'panel': 'panel',
+    'multiple': 'multipleSpeakers',
+    'img': ankitaAbineshAshwinTanmai,
+    'name': 'Ankita Masand, Abinash Mohapatra, Ashwin Goyal, Tanmai Gopal',
+    'title': 'Panel Discussion: Approaches to GraphQL adoption',
     'duration': '45 mins',
-    'tag': 'Talk',
     'scheduleTime': '02:30 PM - 03:15 PM',
-    'tagImg': communityTag,
+    'tagImg': panelTalk,
   },
   'sarjeel-yusuf': {
     'img': sarjeelYusuf,
@@ -670,9 +765,10 @@ const scheduleStateDayTwo = {
     'duration': '30 mins',
     'scheduleTime': '03:45 PM - 04:15 PM',
   },
-  'rajat-khare': {
-    'img': rajatKhare,
-    'name': 'Rajat Khare',
+  'rajat-khare-arun-lingala': {
+    'multiple': 'multipleSpeakers',
+    'img': rajatArun,
+    'name': 'Rajat Khare, Arun Lingala',
     'title': 'AutoFIT, a framework to automatically inject failures per request invocation to test fault tolerant/resilient GraphQL APIs',
     'duration': '30 mins',
     'tag': 'Long Talk',
@@ -706,4 +802,52 @@ const scheduleStateDayTwo = {
     'scheduleTime': '05:45 PM - 06:00 PM',
   },
 }
-export {speakerState, workshopState, scheduleStateDayOne, scheduleStateDayTwo}
+const panelState = {
+  'graphql-adoption': {
+    'title': 'Approaches to GraphQL adoption',
+    'time': '45 mins',
+    'subTitle': 'A panel discussion by engineers at Flipkart, Swiggy & Treebo',
+    'panelDescription': 'Join engineers from some of India’s biggest startups as they discuss the stories behind how GraphQL was adopted at their companies. The panel will cover a range of topics from adoption stories, why graphql, tech buy-in, advantages and challenges.',
+    'moderatorImg': tanmai,
+    'moderatorName': 'Tanmai Gopal',
+    'moderatorDesignation': 'CEO',
+    'moderatorOrg': 'HASURA',
+    'moderatorTwitterLink': 'https://twitter.com/tanmaigo',
+    'moderatorGithubLink': 'https://github.com/coco98',
+    'day': 2,
+    'panelMembers': [
+      {
+        'img': ankitaMasand,
+        'name': 'Ankita Masand',
+        'designation': 'SENIOR FRONT-END ENGINEER',
+        'org': 'TREEBO',
+        'twitterLink': 'https://twitter.com/ankitamasand',
+        'githubLink': 'https://github.com/ankitamasand',
+      },
+      {
+        'img': abinashMohapatra,
+        'name': 'Abinash Mohapatra',
+        'designation': 'UI ENGINEER',
+        'org': 'FLIPKART',
+        'twitterLink': 'https://twitter.com/twistedfork88',
+        'githubLink': 'https://github.com/twistedfork88',
+      },
+      {
+        'img': ashwinGoyal,
+        'name': 'Ashwin Goyal',
+        'designation': 'NEW INITIATIVES',
+        'org': 'SWIGGY',
+        'linkedInLink': 'https://www.linkedin.com/in/ashwingo/',
+      },
+    ],
+    /*
+    'bios': [
+      {
+        'name': 'Tanmai Gopal',
+        'description': 'Tanmai Gopal is the CEO, co-founder of Hasura. He is a StackOverflow powered fullstack developer whose areas of interest and work span react, GraphQL, nodejs, haskell, docker, postgres & kubernetes. He is passionate about making it easy to build complex things and is the instructor of India\'s largest MOOC imad.tech with over 250,000 students.'
+      },
+    ],
+    */
+  },
+}
+export {speakerState, workshopState, scheduleStateDayOne, scheduleStateDayTwo, panelState}
