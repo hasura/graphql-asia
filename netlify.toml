@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/2019/*"
+  to = "https://graphql-asia-2019-site.netlify.com/:splat"
+  status = 200
+  force = true

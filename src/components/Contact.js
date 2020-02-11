@@ -8,7 +8,7 @@ const twitter = require('../images/twitter.svg');
 const location = require('../images/location.svg');
 const config = {
   cors: 'https://cors-anywhere.herokuapp.com/', // <optional> doesn't display the cors error
-  formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSdUe5LxuRVJoschLUq6jcUco2h4BWpao9poc9niAXrn_H5vHw/formResponse'
+  formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSdfBUtkb_blWT097EGc1GFwU3xPfH6cgjebkvhoVaxcApWl5w/formResponse'
 };
 const Input = ({ name, label, value, doChange, type='text'}) => {
   return (
@@ -19,9 +19,9 @@ const Input = ({ name, label, value, doChange, type='text'}) => {
   )
 }
 const clearData = {
-  name: { id: 2069001833, value: '' },
-  email: { id: 1788380178, value: '' },
-  message: { id: 1305159953, value: '' }
+  name: { id: 530905603, value: '' },
+  email: { id: 1915601994, value: '' },
+  message: { id: 312714891, value: '' }
 }
 class Contact extends React.Component {
   constructor() {
@@ -60,7 +60,6 @@ class Contact extends React.Component {
           this.setState({isDone: true});
           console.log('clearData', clearData);
           this.setState({inputs: clearData});
-
           this.setState({isSending: false});
           this.setState({isFailure: false});
         }
@@ -108,7 +107,7 @@ class Contact extends React.Component {
                     (this.state.isFormInValid) ?
                     (
                       <div className={'successMessage'}>
-                        <div className={'successMessageSmall'}>Please enter valid inputs.</div>
+                        <div className={'successMessageSmall'}>Please enter valid inputs - All fields are mandatory.</div>
                       </div>) : ''
                   }
                   {
@@ -119,7 +118,7 @@ class Contact extends React.Component {
                     </div>) : ''
                   }
                   {
-                    (this.state.isFailure) ? <div className={'errorMessage'}>Error try again</div> : ''
+                    (this.state.isFailure) ? <div className={'errorMessage'}>Error... Please try again!</div> : ''
                   }
                 </form>
               </div>
@@ -129,7 +128,7 @@ class Contact extends React.Component {
                     <img src={mail} alt={'Mail'} />
                   </div>
                   <div className={'contactName'}>
-                    <a href="mailto:anubha@hasura.io">anubha@hasura.io</a>
+                    <a href="mailto:hello@graphql.asia">hello@graphql.asia</a>
                   </div>
                 </div>
                 <div className={'contactDetails contactBorBottom'}>
@@ -149,6 +148,8 @@ class Contact extends React.Component {
                   </div>
                 </div>
               </div>
+            </div>
+            <div className='footerBorBottom'>
             </div>
         </div>
       </div>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15.488" height="15.547" viewBox="0 0 15.488 15.547">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#909090;stroke-linecap:round;stroke-linejoin:round}
+        </style>
+    </defs>
+    <g id="streamline-icon-tags-1_16x16" data-name="streamline-icon-tags-1@16x16" transform="translate(-.257 -.256)">
+        <path id="Path_5206" d="M.757 1.756v4.172a2 2 0 0 0 .586 1.414L9.1 15.1a.5.5 0 0 0 .844-.255l.817-4.084 4.084-.817A.5.5 0 0 0 15.1 9.1L7.343 1.342A2 2 0 0 0 5.929.756H1.757a1 1 0 0 0-1 1z" class="cls-1" data-name="Path 5206"/>
+        <path id="Path_5207" d="M4.257 3.256a1 1 0 1 1-1 1 1 1 0 0 1 1-1z" class="cls-1" data-name="Path 5207"/>
+    </g>
+</svg>

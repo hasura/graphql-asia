@@ -5,6 +5,9 @@
 .pinkBgColor {
   background-color: #f81894;
 }
+.blueBgColor {
+  background-color: #001934;
+}
 .blockBgColor {
   background-color: #111111;
 }
@@ -20,16 +23,34 @@
   width: 60%;
   margin: 0 auto;
 }
+.positionRel {
+  position: relative;
+  min-height: 100vh;
+}
+.clearBoth {
+  clear: both;
+}
 .transparentBtnNav, .transparentBtn,  .whiteBtn, .blueBtn{
   border-radius: 5px;
-  font-family: 'Roboto';
-  font-size: 20px;
-  font-weight: bold;
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-weight: 500;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.2;
   letter-spacing: 4px;
   text-align: left;
+  &:focus {
+    outline: none;
+  }
+}
+.pinkSeperateLine {
+  width: 32px;
+  height: 4px;
+  background-color: #F81894;
+  border-radius: 4px;
+  margin: 30px 0;
+  margin-top: 15px;
 }
 .transparentBtnNav, .transparentBtn {
   border: 2px solid #ffffff;
@@ -70,8 +91,8 @@
 .sendMessageBtn {
   background-color: transparent;
   border: 0;
-  font-family: 'Roboto';
-  font-size: 20px;
+  font-family: 'Poppins';
+  font-size: 18px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -104,6 +125,9 @@
 .borderRight {
   border-right: 1px solid rgba(39, 33, 110, .24);
 }
+.workshopBorderRight {
+  border-right: 2px solid #27216e;
+}
 .contactBorRight {
   border-right: 1px solid rgba(255, 255, 255, 0.6);
 }
@@ -112,6 +136,9 @@
 }
 .footerBorTop {
   border-top: 1px solid rgba(255, 255, 255, 0.6);
+}
+.footerBorBottom {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 }
 .noPadd {
   padding-left: 0 !important;
@@ -128,6 +155,10 @@
 }
 .displayFlex {
   display: flex !important;
+}
+.displayEnd {
+  display: flex;
+  align-items: center;
 }
 img {
   margin-bottom: 0 !important;
@@ -210,6 +241,15 @@ img {
   font-stretch: normal;
   letter-spacing: 6px;
 }
+.thanksDescription {
+  font-family: 'Poppins';
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.83;
+  letter-spacing: normal;
+  color: #fff;
+  opacity: .6;
+}
 .sectionSubHeader {
   font-family: 'Roboto';
   font-size: 32px;
@@ -230,8 +270,41 @@ img {
     color: #f81894;
   }
   a:hover {
+    color: #f81894;
     text-decoration: none;
     border-bottom: 1px solid #f81894;
+  }
+}
+.pageDescriptionPink {
+  color: #909090;
+  font-size: 20px;
+  font-family: 'Poppins';
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+  opacity: .8;
+}
+.flexBoxWrapper
+{
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  clear: both;
+  .flexContainer
+  {
+    display: flex;
+    .flexList
+    {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      .flexAlign
+      {
+        flex: 1 0 auto;
+      }
+    }
   }
 }
 .successMessage,  .errorMessage{
@@ -295,6 +368,9 @@ img {
     opacity: 0.88;
     &:hover {
       opacity: 1;
+      color: #ffffff;
+      text-decoration: none;
+      border-bottom: 1px solid #fff;
     }
   }
 }
@@ -312,23 +388,27 @@ img {
   }
 }
 .blueLink, .pinkLink {
-  font-family: 'Roboto';
-  font-size: 20px;
-  font-weight: 900;
+  font-family: 'Poppins';
+  font-size: 18px;
+  letter-spacing: 1.8px;
+  font-weight: 600;
   font-style: normal;
   font-stretch: normal;
-  letter-spacing: 4px;
   cursor: pointer;
   display: flex;
   a {
     opacity: .9;
+    img {
+      margin-left: 14px;
+      transition: 200ms;
+    }
     &:hover {
       opacity: 1;
       text-decoration: none;
+      img {
+        transform: translateX(4px);
+      }
     }
-  }
-  img {
-    margin-left: 14px;
   }
 }
 .blueLink {
@@ -340,6 +420,10 @@ img {
   }
 }
 .pinkLink {
+  font-family: 'Poppins';
+  font-size: 18px;
+  letter-spacing: 1.8px;
+  display: flex;
   a {
     color: #f81894;
     &:hover {
@@ -348,17 +432,32 @@ img {
   }
 }
 .details {
-  font-family: 'Roboto';
-  font-size: 24px;
+  font-family: 'Poppins';
+  font-size: 22px;
   font-weight: 900;
   font-style: normal;
   font-stretch: normal;
-  letter-spacing: 4.8px;
+  letter-spacing: 3.8px;
   color: #ffffff;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
+.locationDetails {
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  color: #27216e;
+  img {
+    margin-right: 12px;
+    margin-left: 25px;
+  }
+}
+
 .headerWrapper {
   color: #fff;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
   .navBarDefault {
     border-radius: 0;
     border: 0;
@@ -367,6 +466,7 @@ img {
     margin-bottom: 0;
     .navBarHeader {
       .navBarBrand {
+        padding: 0 0;
         img {
           width: 150px;
         }
@@ -378,17 +478,31 @@ img {
         align-items: center;
         .navBarList {
           margin-bottom: 0;
-          a {
-            opacity: 0.85;
-            font-family: 'Roboto';
-            font-size: 20px;
-            font-weight: normal;
+          button {
+            opacity: 0.8;
+            font-family: 'Poppins';
+            font-size: 18px;
+            font-weight: 500;
             font-style: normal;
             font-stretch: normal;
             line-height: 1.2;
             letter-spacing: 4px;
             text-align: left;
             color: #ffffff;
+            margin: 10px 15px;
+            padding: 0;
+            background-color: transparent;
+            border: 0;
+            &:focus {
+              outline: none;
+            }
+            &:hover {
+              opacity: 1;
+              font-weight: 500;
+            }
+          }
+          a {
+            padding: 0 0;
           }
           .navbarActive {
             opacity: 1;
@@ -401,15 +515,36 @@ img {
     }
   }
 }
-.bgImage {
+.ticketsWrapper {
+  padding-bottom: 80px;
+  iframe {
+    margin-bottom: 0;
+  }
+}
+.notFoundWrapper {
+  padding-top: 200px;
+}
+.bgImage, .ticketsBgImage, .thanksBgImage, .notFoundBgImage {
+  background-color: #25246b;
   background-image: url('../images/bg.png');
   background-repeat: no-repeat;
   background-size: cover;
+}
+.bgImage {
   height: 800px;
+}
+.ticketsBgImage {
+  height: 140px;
+}
+.thanksBgImage {
+  height: 110px;
+}
+.notFoundBgImage {
+  height: 120px;
 }
 /* Top Banner */
 .topBannerWrapper {
-  padding-top: 80px;
+  padding-top: 200px;
   padding-bottom: 100px;
   .headerImg {
     text-align: center;
@@ -433,10 +568,33 @@ img {
     display: flex;
     justify-content: center;
     .details {
-      padding: 0 60px;
+      padding: 0 40px;
       display: flex;
       img {
         margin-right: 16px;
+      }
+    }
+  }
+}
+.ticketTopBannerWrapper {
+  padding-top: 100px;
+  .discountWrapper {
+    background-color: rgba(255, 255, 255, .08);
+    padding: 12px 0;
+    .discountTitle {
+      img {
+        margin-right: 12px;
+      }
+    }
+    .discountDescription {
+      font-family: 'Roboto';
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      font-size: 13px;
+      font-weight: normal;
+      color: #fff;
+      text-align: center;
+      span {
+        font-weight: bold;
       }
     }
   }
@@ -445,11 +603,11 @@ img {
   position: relative;
   z-index: 1;
   .watermarkImg {
-    bottom: 0;
+    bottom: -3px;
     min-width: 100%;
   }
   .watermarkImgTop {
-    top: 0;
+    bottom: 220px;
   }
   .watermarkImgRight {
     top: 0;
@@ -467,18 +625,22 @@ img {
     }
   }
 }
-/* Overview and Sponsors*/
-.overviewWrapper, .sponsorWrapper {
+
+/* Overview, Sponsors and Venue */
+.overviewWrapper, .sponsorWrapper, .venueWrapper {
   position: relative;
   .sectionHeader, .pageDescription {
-    padding-bottom: 60px;
-    padding-right: 100px;
+    // padding-bottom: 60px;
+    padding-right: 70px;
   }
   .pageDescription {
     line-height: 1.33;
   }
   .sectionHeader {
     color: #27216e;
+  }
+  .pinkLink {
+    padding-top: 30px;
   }
   .scheduleBg {
     z-index: -1;
@@ -487,13 +649,26 @@ img {
   }
   .overviewImg {
     img {
-      border-radius: 20px;
+      // border-radius: 20px;
+    }
+  }
+}
+/* Venue */
+.venueWrapper {
+
+  .pageDescription {
+    padding-bottom: 32px;
+  }
+  .overviewImg {
+    img {
+      border-radius: 0px;
     }
   }
 }
 /* Sponsors */
 .sponsorWrapper {
   .buttonWrapper {
+    padding-top: 30px;
     .blueBtn {
       margin-right: 40px;
     }
@@ -507,12 +682,41 @@ img {
   }
   .pastSponsorWrapper {
     clear: both;
-    padding-top: 60px;
+    padding-top: 80px;
     .icons {
+      padding-bottom: 40px;
       img {
         display: inline-block;
-        margin-right: 45px;
-        max-height: 50px;
+        margin-right: 50px;
+        max-height: 45px;
+        max-width: 330px;
+      }
+      .gdgb {
+        max-width: 210px;
+      }
+      .bigImg {
+        max-height: 100px;
+      }
+      .mediumImg {
+        max-height: 80px;
+      }
+    }
+    .platinumIcons {
+      img {
+        display: inline-block;
+      }
+    }
+    .goldIcons {
+      img {
+        width: 300px;
+      }
+      .smallImg {
+        max-height: 85px;
+        width: auto;
+      }
+      .extraSmallImg {
+        max-height: 65px;
+        width: auto;
       }
     }
   }
@@ -532,11 +736,15 @@ img {
 .scheduleWrapper {
   position: relative;
   z-index: 2;
-  .sectionHeader, .pageDescription {
+  .pinkSeperateLine {
+    margin: 30px auto;
+    margin-top: 15px;
+  }
+  .sectionHeader, .pageDescription, .pageDescriptionPink {
     text-align: center;
   }
   .pageDescription {
-    padding-top: 30px;
+    // padding-top: 30px;
     padding-bottom: 30px
   }
   .sectionHeader {
@@ -548,6 +756,8 @@ img {
     top: -125px;
   }
   .scheduleDetailsWrapper {
+    width: 70%;
+    margin: 0 auto;
     padding-top: 30px;
     .scheduleList {
       .listImg {
@@ -563,6 +773,7 @@ img {
         padding-top: 0px;
         padding-bottom: 10px;
         color: #27216e;
+        font-family: 'Poppins';
       }
     }
   }
@@ -606,7 +817,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    .purpleGradientBgColor {
+    .blueBgColor {
       border-radius: 20px;
       width: 950px;
       margin: 0 auto;
@@ -628,7 +839,6 @@ img {
   .pageDescription {
     padding-bottom: 40px;
     color: #fff;
-    width: 50%;
     a {
       color: #fff;
       text-decoration: underline;
@@ -641,8 +851,13 @@ img {
   .buttonWrapper {
     padding-bottom: 40px;
   }
-  .brand {
-    padding-top: 30px;
+  .brandWrapper {
+    float: right;
+    padding-top: 118px;
+    .brand {
+      padding-bottom: 100px;
+      padding-top: 30px;
+    }
   }
 }
 /* Subscribe */
@@ -703,11 +918,18 @@ img {
 }
 /* Contact */
 .contactWrapper {
+  padding-bottom: 85px;
   .sectionHeader {
     color: #fff;
     padding-bottom: 60px;
   }
+  .footerBorBottom {
+    padding-top: 50px;
+    clear: both;
+  }
   .fieldWrapper {
+    width: 100%;
+    float: left;
     .pageDescription {
       color: #fff;
       opacity: .8;
@@ -718,6 +940,10 @@ img {
       .fieldLabel {
         display: block;
         padding-bottom: 15px;
+        margin-bottom: 0;
+        input {
+          margin-top: 15px;
+        }
       }
       input {
         height: 60px;
@@ -758,6 +984,12 @@ img {
 .footerWrapper {
   background-color: #0c0a24;
   margin-top: -1px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  .footerBorTop {
+    border-top: 0;
+  }
   .footerContainer {
     padding: 30px 0;
     display: flex;
@@ -801,10 +1033,601 @@ img {
     }
   }
 }
+/* Speakers section */
+.speakersWrapper {
+  .sectionHeader {
+    color: #27216e;
+    padding: 0 15px;
+  }
+  .pinkSeperateLine {
+    margin: 30px 15px;
+  }
+  .pageDescription {
+    padding: 0 15px;
+    padding-top: 30px;
+    clear: both;
+    text-align: center;
+  }
+  .speakersListWrapper {
+    .speakersList {
+      margin: 30px 0px;
+      a {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        &:hover, &:focus {
+          text-decoration: none;
+          outline: none;
+        }
+      }
+      .speakerImg {
+        padding-bottom: 32px;
+        img {
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+          &:hover {
+            box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.16);
+          }
+        }
+      }
+      .name {
+        font-family: 'Poppins';
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.33;
+        color: #27216e;
+        padding-bottom: 8px;
+        a {
+          color: #27216e;
+        }
+      }
+      .designation {
+        font-family: 'Poppins';
+        font-size: 16px;
+        font-weight: normal;
+        color: #909090;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        line-height: 1.5;
+        a {
+          color: #909090;
+        }
+      }
+      .organization {
+        font-family: 'Poppins';
+        font-size: 16px;
+        font-weight: 600;
+        color: #505050;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        line-height: 1.5;
+        a {
+          color: #505050;
+        }
+      }
+      .socialWrapper {
+        display: flex;
+        align-items: center;
+        padding-top: 16px;
+        .socialIcon {
+          padding-right: 24px;
+          img {
+            opacity: 0.6;
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* Thanks page */
+.thanksWrapper {
+  height: calc(100vh - 195px);
+  background-image: url('../images/thanks-bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  .thanksContainer {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    .sectionHeader {
+      font-size: 32px;
+      color: #fff;
+      opacity: .6;
+      line-height: 1.38;
+      letter-spacing: normal;
+      font-weight: 600;
+      text-align: center;
+      padding-bottom: 16px;
+    }
+    .thanksDescription {
+      text-align: center;
+      padding-bottom: 80px;
+    }
+    .graphQlHeader {
+      font-size: 48px;
+      font-weight: normal;
+      color: #fff;
+      opacity: .9;
+      text-align: center;
+      img {
+        margin-left: 12px;
+        width: 55px;
+      }
+    }
+  }
+}
+/* Details page */
+.detailsBgImage {
+  background-image: url('../images/thanks-bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.detailsTopBannerWrapper {
+  padding-top: 100px;
+  padding-bottom: 60px;
+  .detailsWrapper {
+    display: flex;
+    align-items: center;
+  }
+  .detailsWrapper, .panelDetailsWrapper {
+    padding-top: 100px;
+    .profileImg {
+      text-align: right;
+      img {
+        width: 240px;
+        border-radius: 50%;
+        display: inline-block;
+      }
+    }
+    .title {
+      color: #fff;
+      opacity: .8;
+    }
+    .profileWrapper {
+      padding-left: 48px;
+      .profileName {
+        font-family: 'Poppins';
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 1.25;
+        letter-spacing: normal;
+        color: #7c74d5;
+        padding-bottom: 8px;
+      }
+      .sectionHeader {
+        color: #7c74d5;
+        letter-spacing: normal;
+        text-align: center;
+      }
+      .profileDesignation, .profileOrganization {
+        font-family: 'Poppins';
+        font-size: 24px;
+        line-height: 1.5;
+        letter-spacing: 2.4px;
+        color: #fff;
+        padding-bottom: 8px;
+        text-transform: uppercase;
+      }
+      .profileDesignation {
+        font-weight: normal;
+        opacity: 0.6;
+      }
+      .profileOrganization {
+        font-weight: 600;
+      }
+      .socialWrapper {
+        display: flex;
+        padding-top: 12px;
+        .socialIcon {
+          padding-right: 24px;
+        }
+        .workshopIcon {
+          padding-right: 24px;
+          font-family: 'Roboto';
+          font-size: 20px;
+          color: #fff;
+          span {
+            opacity: 0.48;
+          }
+          img {
+            margin-right: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+.title {
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1.8px;
+  color: #909090;
+  text-align: right;
+  text-transform: uppercase;
+  -webkit-font-smoothing: auto;
+  font-smooth: auto;
+}
+.titleTop {
+  padding-top: 4px;
+}
+.titleTopPanel {
+  padding-top: 12px;
+}
+.aboutSpeakerWrapper {
+  .pageDescription {
+    width: 80%;
+    padding-left: 48px;
+    padding-bottom: 48px;
+    ul {
+      margin: 0 0;
+      li {
+        list-style-type: none;
+        margin-bottom: 0;
+        display: flex;
+        align-items: flex-start;
+        padding-bottom: 8px;
+        img {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+  .speakersProfile {
+    padding-left: 48px;
+    padding-bottom: 48px;
+    display: flex;
+    align-items: center;
+    .speakerImg {
+      img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+      }
+    }
+    .socialWrapper {
+      display: flex;
+      padding-top: 12px;
+      .socialIcon {
+        padding-right: 16px;
+        a {
+          opacity: 0.6
+        }
+        a:hover {
+          opacity: 1;
+          text-decoration: none;
+        }
+      }
+    }
+    .profile {
+      padding-left: 12px;
+      .name {
+        font-family: 'Poppins';
+        font-size: 20px;
+        font-weight: 600;
+        color: #27216e;
+        padding-bottom: 4px;
+      }
+      .designation, .organization {
+        font-family: 'Poppins';
+        font-size: 16px;
+        font-weight: normal;
+        color: #505050;
+        line-height: 1.38;
+        text-transform: uppercase;
+      }
+      .organization {
+        font-weight: 600;
+      }
+    }
+  }
+  .speakersTitle {
+    padding-left: 48px;
+    font-family: 'Poppins';
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.38;
+    color: #27216e;
+    padding-bottom: 48px;
+  }
+  .pinkLink {
+    padding-left: 48px;
+    a {
 
+    }
+    a:focus {
+      text-decoration: none;
+      outline: none;
+    }
+  }
+}
+/* Workshop section*/
+.workshopWrapper {
+  .sectionHeader, .pageDescription {
+    text-align: center;
+  }
+  .sectionHeader {
+    color: #27216e;
+  }
+  .pinkSeperateLine {
+    margin: 30px auto;
+    margin-top: 15px;
+  }
+  .locationDateWrapper {
+    padding: 40px 0;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    .locationDetails {
+      padding-right: 25px;
+    }
+  }
+  .workshopListWrapper {
+    padding-bottom: 60px;
+    a {
+      &:hover, &:focus {
+        text-decoration: none;
+        outline: none;
+      }
+    }
+    .workshopList {
+      background-color: #f6f6f6;
+      padding: 24px 24px;
+      margin: 8px 0;
+      display: flex;
+      align-items: center;
+      .workshopProfile {
+        img {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+        }
+      }
+      .workshopTitleWrapper {
+        padding-left: 24px;
+        flex: 1;
+        .workshopTitle {
+          font-family: 'Poppins';
+          font-size: 24px;
+          font-weight: 600;
+          color: #27216e;
+          line-height: 1.33;
+          padding-bottom: 4px;
+          a {
+            color: #27216e;
+            &:hover, &:focus {
+              text-decoration: none;
+              outline: none;
+            }
+          }
+        }
+        .workshopName {
+          font-family: 'Roboto';
+          font-size: 20px;
+          font-weight: normal;
+          line-height: 1.6;
+          color: #7c74d5;
+        }
+      }
+      .timeLevelWrapper {
+        font-family: 'Roboto';
+        font-size: 20px;
+        font-weight: normal;
+        color: #909090;
+        min-width: 230px;
+        .time, .level {
+          padding: 7px 0;
+          img {
+            margin-right: 13px;
+          }
+        }
+      }
+      &:hover {
+        box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);
+      }
+    }
+  }
+  .buttonWrapper {
+    padding-top: 30px;
+    text-align: center;
+  }
+}
+/* Schedule page */
+.scheduleWrapper {
+  padding-top: 220px;
+  padding-bottom: 60px;
+  .sectionHeader {
+    color: #7c74d5;
+    letter-spacing: normal;
+    text-align: center;
+  }
+}
+.commonTabWrapper {
+  padding-bottom: 50px;
+  .commonTabNav {
+    margin: 0;
+    text-align: center;
+    padding-bottom: 40px;
+    .commonTabList {
+      font-family: 'Poppins';
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 2.4px;
+      color: #1b1653;
+      padding: 0 22px;
+      margin-bottom: 0;
+      list-style-type: none;
+      display: inline-block;
+      cursor: pointer;
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        color: #f81894;
+        opacity: .8;
+      }
+    }
+    .commonTabListActive {
+      color: #f81894;
+    }
+    .commonTabListBor {
+      border-right: solid 1px #dddddd;
+    }
+  }
+  .commonTabPanel {
+    a {
+      &:hover, &:focus {
+        outline: none;
+        text-decoration: none;
+      }
+    }
+    .scheduleListBgGray {
+      background-color: #f6f6f6;
+      &:hover {
+        box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);
+      }
+    }
+    .scheduleListBreak {
+      background-color: #fff;
+      border: solid 1px #dddddd;
+      position: relative;
+      .scheduleBorderLeft {
+        width: 4px;
+        height: 32px;
+        background-color: #f81894;
+        position: absolute;
+        left: 0;
+      }
+    }
+    .scheduleListWrapper, .scheduleListBreak {
+      padding: 24px 40px;
+      margin: 8px 0;
+      display: flex;
+      align-items: center;
+      .scheduleProfile {
+        img {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+        }
+        .borderRadiusRemove {
+          max-height: 60px;
+          border-radius: 0;
+        }
+        .scheduleProfileImg {
+          max-height: none;
+        }
+      }
+      .scheduledetails {
+        padding-left: 40px;
+        flex: 1;
+        .scheduleTitle {
+          font-family: 'Roboto';
+          font-size: 24px;
+          font-weight: bold;
+          color: #27216e;
+          padding-bottom: 8px;
+        }
+        .talkWrapper {
+          display: flex;
+          .talk {
+            font-family: 'Roboto';
+            font-size: 16px;
+            font-weight: normal;
+            color: #909090;
+            display: flex;
+            align-items: center;
+            padding-right: 24px;
+            img {
+              margin-right: 8px;
+            }
+          }
+          .name {
+            color: #f81894;
+          }
+        }
+      }
+      .timeWrapper {
+        min-width: 220px;
+        font-family: 'Poppins';
+        font-size: 20px;
+        font-weight: 600;
+        color: #27216e;
+        text-align: right;
+      }
+    }
+  }
+}
+@media ( min-width: 992px ) and (max-width: 1199px) {
+  .watermarkWrapper{
+    .watermarkImgTop {
+      bottom: 220px;
+    }
+  }
+  .headerWrapper {
+    .navBarDefault {
+      .navBarCollapse {
+        .navBarRight {
+          .navBarList {
+            button {
+              font-size: 18px;
+              padding: 10px 10px;
+              letter-spacing: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .speakersWrapper {
+    .speakersListWrapper {
+      .speakersList {
+        .name {
+          font-size: 20px;
+        }
+        .designation, .organization {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
 @media ( min-width: 768px ) and (max-width: 991px) {
+  .thanksWrapper {
+    min-height: calc(100vh - 195px);
+    height: auto;
+    .thanksContainer {
+      .sectionHeader {
+        font-size: 28px;
+      }
+      .thanksDescription {
+        padding-bottom: 50px;
+        font-size: 20px;
+      }
+      .graphQlHeader {
+        font-size: 36px;
+        img {
+          width: 40px;
+        }
+      }
+    }
+  }
+  .footerWrapper {
+    .footerBorTop {
+      border-top: 1px solid rgba(255, 255, 255, 0.6);
+    }
+  }
   .wd60 {
     width: 90%;
+  }
+  .watermarkWrapper{
+    .watermarkImgTop {
+      bottom: 180px;
+    }
   }
   .positionBottom {
     padding-bottom: 130px !important;
@@ -864,9 +1687,9 @@ img {
       .navBarCollapse {
         .navBarRight {
           .navBarList {
-            a {
+            button {
               font-size: 15px;
-              padding: 10px 10px;
+              padding: 10px 5px;
               letter-spacing: 1px;
             }
           }
@@ -875,19 +1698,34 @@ img {
     }
   }
   .topBannerWrapper {
+    padding-top: 170px;
     padding-bottom: 80px;
     .placeDetails {
       .details {
         padding: 0 20px;
-        font-size: 20px;
+        font-size: 19px;
         letter-spacing: 2px;
       }
     }
   }
-  .overviewWrapper, .sponsorWrapper {
+  .ticketsBgImage {
+    height: 160px;
+  }
+  .ticketTopBannerWrapper {
+    .discountWrapper {
+      .discountDescription {
+      }
+    }
+  }
+  .overviewWrapper, .sponsorWrapper, .venueWrapper {
     .sectionHeader, .pageDescription {
       padding-bottom: 30px;
       padding-right: 50px;
+    }
+  }
+  .venueWrapper {
+    .pageDescription {
+      padding-bottom: 20px;
     }
   }
   .sponsorWrapper {
@@ -899,6 +1737,7 @@ img {
         img {
           max-height: 35px;
           margin-right: 30px;
+          margin-bottom: 20px !important;
         }
       }
     }
@@ -906,7 +1745,7 @@ img {
   .scheduleWrapper {
     .sectionPosition {
       padding-top: 80px;
-      .purpleGradientBgColor {
+      .blueBgColor {
         width: 98%;
         left: 1%;
       }
@@ -919,17 +1758,21 @@ img {
           width: 78%;
         }
       }
+      .graphQlDescription {
+        padding-right: 50px;
+      }
     }
   }
   .broughtWrapper {
     .sectionHeader, .pageDescription, .sectionSubHeader {
       padding-bottom: 30px;
     }
-    .pageDescription {
-      width: 65%;
-    }
-    .brand {
-      padding-top: 20px;
+    .brandWrapper {
+      padding-top: 82px;
+      .brand {
+        padding-top: 20px;
+        padding-bottom: 80px;
+      }
     }
   }
   .contactWrapper {
@@ -939,8 +1782,80 @@ img {
       }
     }
   }
+  .speakersWrapper {
+    .speakersListWrapper {
+      .speakersList {
+        .name {
+          font-size: 20px;
+        }
+        .designation, .organization {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .detailsTopBannerWrapper {
+    .detailsWrapper, .panelDetailsWrapper {
+      padding-top: 50px;
+    }
+  }
+  .commonTabWrapper {
+    .commonTabNav {
+      .commonTabList {
+        font-size: 20px;
+      }
+    }
+    .commonTabPanel {
+      .scheduleListBreak, .scheduleListWrapper {
+        .scheduledetails {
+          .scheduleTitle {
+            font-size: 20px;
+          }
+          .talkWrapper {
+            .talk {
+              font-size: 14px;
+            }
+          }
+        }
+        .timeWrapper {
+          min-width: 180px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
 }
 @media(max-width: 767px) {
+  .sectionWrapperSmall {
+    padding: 30px 0;
+  }
+  .thanksWrapper {
+    min-height: calc(100vh - 195px);
+    padding: 50px 0;
+    .thanksContainer {
+      padding: 0 15px;
+      .sectionHeader {
+        font-size: 28px;
+      }
+      .thanksDescription {
+        padding-bottom: 50px;
+        font-size: 20px;
+      }
+      .graphQlHeader {
+        font-size: 36px;
+        img {
+          width: 40px;
+        }
+      }
+    }
+  }
+  .displayEnd {
+    display: block;
+  }
+  .pinkSeperateLine {
+    margin: 30px auto;
+    margin-top: 15px;
+  }
   .wd60 {
     width: 95%;
   }
@@ -988,11 +1903,13 @@ img {
     }
   }
   .headerWrapper {
+    z-index: 100;
     .navBarDefault {
       padding-top: 10px;
       .navBarHeader {
         display: flex;
         align-items: center;
+        padding-bottom: 10px;
         .navBarToggle {
           border-color: #fff;
           &:hover, &:focus {
@@ -1005,13 +1922,19 @@ img {
         .navBarBrand {
           height: auto;
           flex: 1;
+          padding-left: 15px;
         }
       }
       .navBarCollapse {
+        background-color: #25246b;
         .navBarRight {
           display: block;
+          margin-bottom: 0;
+          margin-top: 0;
           .navBarList {
-            a {
+            border-bottom: 1px solid rgba(221, 221, 221, .2);
+            button {
+              color: #fff;
               font-size: 16px;
               padding: 10px 10px;
             }
@@ -1020,8 +1943,31 @@ img {
       }
     }
   }
+  .ticketsBgImage {
+    height: 145px;
+  }
+  .thanksBgImage {
+    height: 100px;
+  }
+  .ticketTopBannerWrapper {
+    padding-top: 80px;
+    .discountWrapper {
+      padding: 15px 0;
+      // background-color: rgba(255, 255, 255, .1);
+      .discountTitle {
+        font-size: 18px;
+        img {
+          width: 30px;
+        }
+      }
+      .discountDescription {
+        opacity: 1;
+        text-shadow: 0 2px 6px rgba(0, 0, 0, 1);
+      }
+    }
+  }
   .topBannerWrapper {
-    padding-top: 30px;
+    padding-top: 130px;
     padding-bottom: 7px;
     .headerImg {
       img {
@@ -1039,7 +1985,7 @@ img {
         font-size: 18px;
         display: block;
         text-align: center;
-        padding-bottom: 10px;
+        padding-bottom: 15px;
         letter-spacing: 2px;
       }
     }
@@ -1047,14 +1993,18 @@ img {
       padding-bottom: 20px;
     }
   }
-  .overviewWrapper, .sponsorWrapper {
+  .overviewWrapper, .sponsorWrapper, .venueWrapper {
     .sectionHeader, .pageDescription {
       padding: 0 10px;
       text-align: center;
+      // padding-bottom: 20px;
+    }
+    .pageDescription {
       padding-bottom: 20px;
     }
     .overviewImg {
       text-align: center;
+      padding-top: 20px;
       img {
         width: 90%;
         display: inline-block;
@@ -1064,6 +2014,7 @@ img {
   .sponsorWrapper {
     .buttonWrapper {
       text-align: center;
+      padding-top: 20px;
       .blueBtn {
         margin-right: 0;
       }
@@ -1079,12 +2030,20 @@ img {
       }
       .icons {
         text-align: center;
+        padding-bottom: 0;
         a {
           display: block;
-          padding-bottom: 10px;
+          padding-bottom: 25px;
         }
         img {
           margin-right: 0;
+        }
+      }
+      .platinumIcons, .goldIcons {
+        text-align: center;
+        img {
+          display: inline-block;
+          width: 50%;
         }
       }
     }
@@ -1106,14 +2065,16 @@ img {
     }
   }
   .scheduleWrapper {
+    padding-top: 110px;
+    padding-bottom: 30px;
     .sectionPosition {
-      .purpleGradientBgColor {
+      .blueBgColor {
         width: 95%;
         position: static;
       }
     }
     .pageDescription {
-      padding-top: 20px;
+      // padding-top: 20px;
       padding-bottom: 0;
     }
     .scheduleDetailsWrapper {
@@ -1173,15 +2134,23 @@ img {
       text-align: center;
       padding-bottom: 30px;
     }
-    .brand {
-      padding-top: 20px;
-      text-align: center;
-      img {
-        width: 175px;
+    .brandWrapper {
+      float: none;
+      padding-top: 30px;
+      .brand {
+        padding-top: 10px;
+        padding-bottom: 40px;
+        text-align: center;
+        img {
+          width: 175px;
+        }
       }
     }
   }
   .contactWrapper {
+    .footerBorBottom {
+      padding-top: 0;
+    }
     padding-bottom: 0;
     .sectionHeader {
       text-align: center;
@@ -1205,6 +2174,10 @@ img {
     }
   }
   .footerWrapper {
+    position: static;
+    .footerBorTop {
+      border-top: 1px solid rgba(255, 255, 255, 0.6);
+    }
     .footerContainer {
       display: block;
       .footerListWrapper {
@@ -1231,6 +2204,176 @@ img {
       }
     }
   }
+  .speakersWrapper {
+    .speakersListWrapper {
+      .speakersList {
+        margin: 15px 0;
+        .speakerImg {
+          padding-bottom: 16px;
+        }
+      }
+    }
+  }
+  .detailsTopBannerWrapper {
+    padding: 0 15px;
+    padding-bottom: 40px;
+    padding-top: 100px;
+    .detailsWrapper, .panelDetailsWrapper {
+      padding-top: 30px;
+      display: block;
+      .title {
+        text-align: center;
+        padding-top: 0;
+        padding-bottom: 10px;
+      }
+      .profileImg {
+        text-align: center;
+        padding-bottom: 25px;
+      }
+      .profileWrapper {
+        padding-left: 0;
+        .profileName {
+          text-align: center;
+          font-size: 30px;
+        }
+        .profileDesignation, .profileOrganization {
+          text-align: center;
+          font-size: 20px;
+        }
+        .socialWrapper {
+          justify-content: center;
+          padding-top: 5px;
+          .socialIcon {
+            padding: 0 12px;
+          }
+        }
+      }
+    }
+  }
+  .aboutSpeakerWrapper {
+    padding: 0 15px;
+    .title {
+      text-align: center;
+      padding-bottom: 10px;
+    }
+    .speakersTitle {
+      text-align: center;
+      padding-left: 0;
+      padding-bottom: 25px;
+      font-size: 26px;
+    }
+    .pageDescription {
+      width: 100%;
+      padding-left: 0;
+      padding-bottom: 25px;
+      text-align: justify;
+    }
+    .pinkLink {
+      padding-left: 0;
+      padding-bottom: 0;
+      text-align: center;
+    }
+  }
+  .workshopWrapper {
+    padding: 40px 0;
+    .locationDateWrapper {
+      display: block;
+      padding: 20px 0;
+      .locationDetails {
+        padding-right: 0;
+        text-align: center;
+        font-size: 15px;
+        padding: 5px 0;
+        img {
+          margin-left: 0;
+        }
+      }
+      .workshopBorderRight {
+        border-right: 0;
+      }
+    }
+    .workshopListWrapper {
+      padding-bottom: 20px;
+      .workshopList {
+        display: block;
+        .workshopProfile {
+          text-align: center;
+          padding-bottom: 20px;
+          img {
+            display: inline-block;
+          }
+        }
+        .workshopTitleWrapper {
+          .workshopTitle, .workshopName{
+            text-align: center;
+          }
+        }
+        .timeLevelWrapper {
+          .time, .level {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .scheduleTabWrapper {
+    padding: 0 15px;
+  }
+  .commonTabWrapper {
+    padding-bottom: 20px;
+    .commonTabNav {
+      padding-bottom: 20px;
+      .commonTabList {
+        font-size: 17px;
+        padding: 0 15px;
+        letter-spacing: 1px;
+
+      }
+    }
+    .commonTabPanel {
+      .scheduleListBreak {
+        .scheduleBorderLeft {
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+      .scheduleListBreak, .scheduleListWrapper {
+        display: block;
+        padding: 15px 15px;
+        .scheduleProfile {
+          text-align: center;
+          padding-bottom: 20px;
+          img {
+            display: inline-block;
+          }
+        }
+        .scheduledetails {
+          padding-left: 0;
+          .scheduleTitle {
+            font-size: 20px;
+            text-align: center;
+            padding-bottom: 20px;
+          }
+          .talkWrapper {
+            text-align: center;
+            display: block;
+            .talk {
+              font-size: 14px;
+              padding-right: 0;
+              padding-bottom: 8px;
+              display: flex;
+              justify-content: center;
+            }
+          }
+        }
+        .timeWrapper {
+          min-width: 180px;
+          font-size: 16px;
+          text-align: center;
+        }
+      }
+    }
+  }
 }
 @media ( min-width: 1440px ) {
   .scheduleWrapper {
@@ -1238,6 +2381,23 @@ img {
       min-width: 100%;
       img {
         max-height: 1038px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .ticketsBgImage {
+    height: 150px;
+  }
+  .ticketTopBannerWrapper {
+    position: relative;
+    .discountWrapper {
+      position: absolute;
+      bottom: 0;
+      .discountDescription {
+        width: 95%;
+        margin: 0 auto;
       }
     }
   }

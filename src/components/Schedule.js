@@ -1,67 +1,55 @@
 import React from "react"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 import './styles.scss'
 const scheduleIcon = require('../images/schedule.svg');
 const workshop = require('../images/workshop.svg');
 const talk = require('../images/talk.svg');
-const breaks = require('../images/breaks.svg');
+// const breaks = require('../images/breaks.svg');
 const hasuraDumbledore = require('../images/hasura-dumbledore.png');
 const icons = require('../images/icons.svg');
 const Schedule = () => (
-  <div id="schedule" className={'scheduleWrapper sectionWrapper watermarkWrapper positionBottom'}>
+  <div id="schedule" className={'scheduleWrapper lightGrayBgColor sectionWrapper watermarkWrapper positionBottom'}>
     <div className={'container noPadd'}>
       <div className={'sectionHeader'}>
         SCHEDULE
       </div>
+      <div className={'pinkSeperateLine'}></div>
       <div className={'pageDescription wd60'}>
         We will have 3 full days packed with <span className={'fontBold'}>workshops, lightning talks, panel discussions</span> and in depth technical talks about all things GraphQL, with a special focus on <span className={'fontBold'}>cloud-native GraphQL</span>.
       </div>
       <div className={'scheduleDetailsWrapper'}>
-        <div className={'col-md-4 col-sm-4 col-xs-12 noPadd borderRight'}>
+        <div className={'col-md-6 col-sm-6 col-xs-12 noPadd borderRight'}>
           <div className={'scheduleList'}>
             <div className={'listImg'}>
               <img src={workshop} alt={'Workshop'}/>
             </div>
             <div className={'pageDescription'}>
-              1 Full day of
+              1 Full day of <span className="fontBold">workshops</span>
             </div>
-            <div className={'pageDescription fontBold letterSpacing'}>
-              WORKSHOPS
+            <div className={'pageDescriptionPink'}>
+              20 FEB, 2020
             </div>
           </div>
         </div>
-        <div className={'col-md-4 col-sm-4 col-xs-12 noPadd borderRight'}>
+        <div className={'col-md-6 col-sm-6 col-xs-12 noPadd'}>
           <div className={'scheduleList'}>
             <div className={'listImg'}>
               <img src={talk} alt={'Talk'}/>
             </div>
             <div className={'pageDescription'}>
-              2 Full days of
+              2 Full days of <span className="fontBold">talks</span>
             </div>
-            <div className={'pageDescription fontBold letterSpacing'}>
-              TALKS
-            </div>
-          </div>
-        </div>
-        <div className={'col-md-4 col-sm-4 col-xs-12 noPadd'}>
-          <div className={'scheduleList'}>
-            <div className={'listImg'}>
-              <img src={breaks} alt={'Breaks'}/>
-            </div>
-            <div className={'pageDescription'}>
-              Breaks for
-            </div>
-            <div className={'pageDescription fontBold letterSpacing'}>
-              NETWORKING
+            <div className={'pageDescriptionPink'}>
+              21-22 FEB, 2020
             </div>
           </div>
         </div>
       </div>
       <div className={'buttonWrapper'}>
-        <a href="https://www.townscript.com/e/graphql-asia--2020/booking" target={'_blank'}><button className={'blueBtn'}>REGISTER</button></a>
+        <Link to="/schedule"><button className={'blueBtn'}>SCHEDULE</button></Link>
       </div>
       <div className={'sectionPosition'}>
-        <div className={'purpleGradientBgColor col-md-12 col-sm-12 col-xs-12 noPadd wd90'}>
+        <div className={'blueBgColor col-md-12 col-sm-12 col-xs-12 noPadd wd90'}>
           <div className={'graphqlWrapper wd100'}>
             <div className={'col-md-6 col-sm-7 col-xs-12 noPadd'}>
               <div className={'graphQlHeader'}>
@@ -80,8 +68,6 @@ const Schedule = () => (
             </div>
             <div className={'graphQlImg'}>
               <img src={hasuraDumbledore} alt={'Hasura dumbledore'}/>
-            </div>
-            <div className={'col-md-6 col-sm-6 col-xs-12 noPadd'}>
             </div>
           </div>
         </div>
