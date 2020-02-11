@@ -10,6 +10,9 @@ import { workshopState } from './AllState.js';
 const arrowPink = require('../images/arrow-pink.svg');
 const time = require('../images/time.svg');
 const expand = require('../images/expand-more-pink.svg');
+const twitter = require('../images/twitter-pink.svg');
+const github = require('../images/github-pink.svg');
+const linkedIn = require('../images/linkedin-pink.svg');
 
 const WorkshopTopBanner = (props) => {
   const workshopUrl = props.pageContext.slug;
@@ -176,6 +179,54 @@ const WorkshopTopBanner = (props) => {
                 SPEAKER
               </div>
             </div>
+            {currentWorkshop.multipleSpeakers ? (
+            <div className='col-md-8 col-sm-8 col-xs-12 noPadd'>
+              {
+                currentWorkshop.multipleSpeakers.map((memberDetails, index) => {
+                  return (
+                    <div key={index} className='speakersProfile'>
+                      <div className='speakerImg'>
+                        <img src={memberDetails.img} alt={memberDetails.name}/>
+                      </div>
+                      <div className='profile'>
+                        <div className='name'>
+                          {memberDetails.name}
+                        </div>
+                        <div className='designation'>
+                          {memberDetails.designation}
+                        </div>
+                        <div className='organization'>
+                          {memberDetails.org}
+                        </div>
+                        <div className='socialWrapper'>
+                          {
+                            (memberDetails.githubLink) ? (
+                              <div className='socialIcon'>
+                                <a href={memberDetails.githubLink} target="_blank" rel="noopener noreferrer"><img src={github} alt={'Github'} /></a>
+                              </div>
+                            ) : null
+                          }
+                          {
+                            (memberDetails.twitterLink) ? (
+                              <div className='socialIcon'>
+                                <a href={memberDetails.twitterLink} target="_blank" rel="noopener noreferrer"><img src={twitter} alt={'Twitter'} /></a>
+                              </div>
+                            ) : null
+                          }
+                          {
+                            (memberDetails.linkedInLink) ? (
+                              <div className='socialIcon'>
+                                <a href={memberDetails.linkedInLink} target="_blank" rel="noopener noreferrer"><img src={linkedIn} alt={'LinkedIn'} /></a>
+                              </div>
+                            ) : null
+                          }
+                        </div>
+                      </div>
+                    </div>
+                  )
+                })
+              }
+            </div>) : (
             <div className='col-md-8 col-sm-8 col-xs-12 noPadd'>
               <div className='speakersProfile'>
                 <div className='speakerImg'>
@@ -193,7 +244,7 @@ const WorkshopTopBanner = (props) => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> )}
           </div>
           </div>
           <div className={'clearBoth aboutSpeakerWrapper'}>
