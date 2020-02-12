@@ -28,6 +28,8 @@ const rajatArun = require('../images/Rajat-Arun.png');
 const vijayanBala = require('../images/Vijayan-Bala.png');
 const ankitaAbineshAshwinTanmai = require('../images/Ankita-Abinesh-Ashwin-Tanmai.png');
 const tanmai = require('../images/Tanmai.png');
+const apoorv = require('../images/apoorv.jpg');
+const michael = require('../images/michael.png');
 
 const beginner = require('../images/beginner.svg');
 const intermediate = require('../images/intermediate.svg');
@@ -443,14 +445,29 @@ const workshopState = {
     'preRequisites': 'Backend and/or fullstack application development experience'
   },
   'building-scalable-graphal-apps-with-react-and-dgraph': {
-    'title': 'Building scalable GraphQL apps with React and Dgraph',
+    'title': 'Building scalable GraphQL apps with ease using Dgraph',
     'img': dgraph,
     'name': 'Dgraph',
+    'multipleSpeakers': [{
+        'name': 'Apoorv Vardhan',
+        'designation': 'Technical Writer',
+        'img': apoorv,
+        'twitterLink': 'https://twitter.com/vardhanapoorv16',
+        'githubLink': 'https://github.com/vardhanapoorv​',
+        'org': 'Dgraph'
+    },
+    {
+        'name': 'Michael Compton',
+        'designation': 'GraphQL Lead',
+        'img': michael,
+        'githubLink': '​https://github.com/MichaelJCompton​',
+        'org': 'Dgraph'
+    }],
     'time': '3 hrs',
     'level': 'Intermediate',
     'levelImg': intermediate,
-    'workshopDescriptionList': ['If you want to get started with GraphQL in minutes and don\'t want to worry much about the server-side, this workshop is for you.', 'That said you might still have questions that bother you regarding the scalability and performance of your GraphQL API, as your application grows and becomes more complex. Don\'t worry we will address all these questions in this fun-filled workshop.', 'So what exactly is GraphQL and why do we even need to bother about it?', 'The official website defines GraphQL as "A query language for your API".Putting it in perspective we can say that we have a single REST endpoint to get or send data from/to the server which the client asks for. It encourages front-developers to model their application data as a graph, and its intuitive Graph query language makes data fetching for even the most complex UI simple, giving them fine-grained control over their data and typed description for their APIs.', 'GraphQL is great for front-end developers, but you first need a GraphQL API served by a GraphQL web server and a storage engine backed by a database. So we will be using Dgraph for the server-side, which is an open-source, distributed, native GraphQL database with a native GraphQL API.', 'Dgraph gives you a GraphQL API in just two steps on submitting a text file containing the GraphQL schema.  Along with its simplicity and ease of use, it’s a powerful distributed graph storage engine guarantees efficient reads and writes for your GraphQL queries, even as your data is growing in its size and complexity.', 'Join us as we learn to build a GraphQL web application using ReactJS and Apollo on the client-side and Dgraph\'s GraphQL API on the server-side.'],
-    'workshopTakeaway': 'You will learn to build ReactJS and GraphQL applications, how to create GraphQL APIs with ease using Dgraph and the benefits of using Dgraph to build their GraphQL application.',
+    'workshopDescriptionList': ['If you want to get started with GraphQL in minutes and don\'t want to worry much about the server-side, this workshop is for you.That said you might still have questions that bother you regarding the scalability and performance of your GraphQL API, as your application grows and becomes more complex. Don\'t worry we will address all these questions in this fun-filled workshop.', 'So what exactly is GraphQL and why do we even need to bother about it?The official website defines GraphQL as \"A query language for your API".Putting it in perspective we can say that we have a single REST endpoint to get or send data from/to the server which the client asks for. It encourages front-developers to model their application data as a graph, and its intuitive Graph query language makes data fetching for even the most complex UI simple, giving them fine-grained control over their data and typed description for their APIs.', 'GraphQL is great for front-end developers, but you first need a GraphQL API served by a GraphQL web server and a storage engine backed by a database. So we will be using Dgraph for the server-side, which is an open-source, distributed, native GraphQL database with a native GraphQL API.Dgraph gives you a GraphQL API in just two steps on submitting a text file containing the GraphQL schema. Along with its simplicity and ease of use, it’s a powerful distributed graph storage engine guarantees efficient reads and writes for your GraphQL queries, even as your data is growing in its size and complexity.', 'Join us as we learn to build a highly scalable, performant GraphQL applications using Dgraph\'s GraphQL API.'],
+    'workshopTakeaway': 'Learn to create GraphQL APIs with ease using Dgraph. Benefits of using Dgraph to build their GraphQL application. Learn to create a NodeJS server with Auth0 integration on top of Dgraph’s GraphQL API.',
     'workshopIdeal': ['Front-end developers who want to learn about GraphQL.', 'Developers who want to learn about Dgraph a distributed, native GraphQL database with a native GraphQL API.']
   }
 };
