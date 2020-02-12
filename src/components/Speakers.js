@@ -66,9 +66,6 @@ const Speakers  = (props) => {
             <div className={'speakersListWrapper flexBoxWrapper'}>
               {speakersContainer}
             </div>
-            <div className='pageDescription'>
-              More speakers to be announced soon!
-            </div>
         </div>
         <div className={'watermarkImg hidden-xs'}>
           <img src={speaker} alt={'speaker water mark'}/>
