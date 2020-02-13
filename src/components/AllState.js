@@ -30,6 +30,7 @@ const ankitaAbineshAshwinTanmai = require('../images/Ankita-Abinesh-Ashwin-Tanma
 const tanmai = require('../images/Tanmai.png');
 const apoorv = require('../images/apoorv.jpg');
 const michael = require('../images/michael.png');
+const dgraphSpeakers = require('../images/dgraph-speakers.png');
 
 const beginner = require('../images/beginner.svg');
 const intermediate = require('../images/intermediate.svg');
@@ -40,7 +41,6 @@ const registration = require('../images/registration.svg');
 const lunch = require('../images/lunch.svg');
 const tea = require('../images/tea.svg');
 // const dinner = require('../images/dinner.svg');
-const dgraph = require('../images/dgraph.svg');
 // const hasura = require('../images/hasura-icon.svg');
 const graphqlasia = require('../images/graphql-asia-logo-icon.png');
 const speakerState = {
@@ -446,7 +446,7 @@ const workshopState = {
   },
   'building-scalable-graphal-apps-with-react-and-dgraph': {
     'title': 'Building scalable GraphQL apps with ease using Dgraph',
-    'img': dgraph,
+    'img': dgraphSpeakers,
     'name': 'Dgraph',
     'multipleSpeakers': [{
         'name': 'Apoorv Vardhan',
