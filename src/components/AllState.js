@@ -453,14 +453,14 @@ const workshopState = {
         'designation': 'Technical Writer',
         'img': apoorv,
         'twitterLink': 'https://twitter.com/vardhanapoorv16',
-        'githubLink': 'https://github.com/vardhanapoorv​',
+        'githubLink': 'https://github.com/vardhanapoorv',
         'org': 'Dgraph'
     },
     {
         'name': 'Michael Compton',
         'designation': 'GraphQL Lead',
         'img': michael,
-        'githubLink': '​https://github.com/MichaelJCompton​',
+        'githubLink': 'https://github.com/MichaelJCompton'
         'org': 'Dgraph'
     }],
     'time': '3 hrs',
