@@ -460,7 +460,7 @@ const workshopState = {
         'name': 'Michael Compton',
         'designation': 'GraphQL Lead',
         'img': michael,
-        'githubLink': 'https://github.com/MichaelJCompton'
+        'githubLink': 'https://github.com/MichaelJCompton',
         'org': 'Dgraph'
     }],
     'time': '3 hrs',
