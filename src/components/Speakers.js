@@ -11,8 +11,8 @@ const linkedIn = require('../images/linkedin-pink.svg');
 const Speakers  = (props) => {
     const speakersContainer = Object.keys(speakerState).map((url, index) => {
       let speakerUrl = '/speakers/'+url;
-      if(speakerState[url].isPanel) {
-        speakerUrl = '/panel/graphql-adoption';
+      if(speakerState[url].panelUrl) {
+        speakerUrl = speakerState[url].panelUrl;
       }
       return (
         <div key = {index} className='col-md-3 col-sm-4 col-xs-6 flexContainer'>
