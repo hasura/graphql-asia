@@ -32,6 +32,7 @@ const Header = ({ siteTitle }) => {
                 <li className={'navBarList'}><button onClick={scrollToView} srollid="/#overview">OVERVIEW</button></li>
                 <li className={'navBarList'}><button onClick={scrollToView} srollid="/#speakers">SPEAKERS</button></li>
                 <li className={'navBarList'}><Link to="/schedule"><button>SCHEDULE</button></Link></li>
+                <li className={'navBarList'}><button onClick={scrollToView} srollid="/#workshops">WORKSHOPS</button></li>
                 <li className={'navBarList'}><button onClick={scrollToView} srollid="/#sponsors">SPONSORS</button></li>
                 <li className={'navBarList'}><button onClick={scrollToView} srollid="/#ticket">TICKETS</button></li>
               </ul>

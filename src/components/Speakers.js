@@ -10,20 +10,24 @@ const linkedIn = require('../images/linkedin-pink.svg');
 
 const Speakers  = (props) => {
     const speakersContainer = Object.keys(speakerState).map((url, index) => {
+      let speakerUrl = '/speakers/'+url;
+      if(speakerState[url].isPanel) {
+        speakerUrl = '/panel/graphql-adoption';
+      }
       return (
         <div key = {index} className='col-md-3 col-sm-4 col-xs-6 flexContainer'>
           <div className='speakersList flexList'>
             <div className='speakerImg'>
-              <Link to={'/speakers/'+url}><img src={speakerState[url].img} alt={speakerState[url].name}/></Link>
+              <Link to={speakerUrl}><img src={speakerState[url].img} alt={speakerState[url].name}/></Link>
             </div>
             <div className='name'>
-              <Link to={'/speakers/'+url}>{speakerState[url].name}</Link>
+              <Link to={speakerUrl}>{speakerState[url].name}</Link>
             </div>
             <div className='designation flexAlign'>
-                <Link to={'/speakers/'+url}>{speakerState[url].designation}</Link>
+                <Link to={speakerUrl}>{speakerState[url].designation}</Link>
             </div>
             <div className='organization'>
-                <Link to={'/speakers/'+url}>{speakerState[url].org}</Link>
+                <Link to={speakerUrl}>{speakerState[url].org}</Link>
             </div>
             <div className='socialWrapper'>
               {
@@ -61,9 +65,6 @@ const Speakers  = (props) => {
             <div className={'pinkSeperateLine'}></div>
             <div className={'speakersListWrapper flexBoxWrapper'}>
               {speakersContainer}
-            </div>
-            <div className='pageDescription'>
-              More speakers to be announced soon!
             </div>
         </div>
         <div className={'watermarkImg hidden-xs'}>
