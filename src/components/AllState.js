@@ -6,12 +6,9 @@ const gagoFrigerio = require('../images/Gago-Frigerio.png');
 const shipraGupta = require('../images/Shipra-Gupta.png');
 const ivanGoncharov = require('../images/Ivan-Goncharov.png');
 const samJulien = require('../images/Sam-Julien.png');
-const christian = require('../images/Christian.jpg');
 const lachlanYoung = require('../images/Lachlan-Young.png');
-const carlosRufo = require('../images/Carlos-Rufo.png');
 const vilvaAthiban = require('../images/Vilva-Athiban.png');
 const kiranKumar = require('../images/Kiran-Kumar.png');
-const monikaJaiswal = require('../images/Monika-Jaiswal.png');
 const vijayanSrinivasan = require('../images/Vijayan-Srinivasan.png');
 const balaDutt = require('../images/Bala-Dutt.png');
 const arunLingala = require('../images/Arun-Lingala.png');
@@ -27,10 +24,17 @@ const ashwinGoyal = require('../images/ashwin.png');
 const rajatArun = require('../images/Rajat-Arun.png');
 const vijayanBala = require('../images/Vijayan-Bala.png');
 const ankitaAbineshAshwinTanmai = require('../images/Ankita-Abinesh-Ashwin-Tanmai.png');
-const tanmai = require('../images/Tanmai.png');
+const tanmai = require('../images/Tanmai.jpg');
 const apoorv = require('../images/apoorv.jpg');
 const michael = require('../images/michael.png');
 const dgraphSpeakers = require('../images/dgraph-speakers.png');
+const ankitMuchhala = require('../images/Ankit-Muchhala.jpg');
+
+const ameyBanarse = require('../images/Amey-Banarse.jpg');
+const michaelCompton = require('../images/Michael-Compton.jpg');
+const karthicRao = require('../images/Karthic-Rao.jpg');
+const shahidhMuhammed = require('../images/Shahidh-Muhammed.jpg');
+const anonRay = require('../images/Anon-Ray.png');
 
 const beginner = require('../images/beginner.svg');
 const intermediate = require('../images/intermediate.svg');
@@ -67,7 +71,6 @@ const speakerState = {
     'about': 'Manish Jain is the founder of Dgraph Labs and the author of Dgraph, Badger, and Ristretto. He got thrust into real-time distributed systems right out of college, working in Web Search and Knowledge Graph infrastructure group at Google for 6.5 years. He led various projects to consolidate and serve all structured data including the knowledge graph right behind web search by building a graph indexing and serving system. After leaving Google, he decided to use this knowledge to build a scalable graph database, which could be used by big and small companies alike to serve the increasingly complex data warranted by today\'s applications. He has given multiple talks at various Go meetups and conferences, most notably in Gophercon Shanghai where he presented in front of a thousand developers.',
     'day': 1,
   },
-
   'vishakha-singh': {
     'img': vishakhaSingh,
     'name': 'Vishakha Singh',
@@ -143,18 +146,6 @@ const speakerState = {
     'about': 'An aspiring stand-up comedian thrown into the field of serverless right after graduation, Sarjeel had been working on serverless monitoring at Thundra.io for about a year. In 2019 he made the switch to Atlassian, but his passion still lies in serverless technology as is manifest in his articles exploring the realm of serverless from automatic monitoring to IoT in serverless and GraphQL processing Lambda functions. Sarjeel can usually be found in cafes discussing Eastern philosophy versus Western philosophy and laughing at the comedies of life.',
     'day': 2,
   },
-  'christian-nwamba': {
-    'img': christian,
-    'name': 'Christian Nwamba',
-    'designation': 'Senior Cloud Advocate',
-    'org': 'Microsoft',
-    'twitterLink': 'https://twitter.com/codebeast',
-    'githubLink': 'https://github.com/christiannwamba',
-    'title': 'Extending GraphQL APIs with Actions and Serverless',
-    'description': 'The event-driven nature of actions and serverless combined with the flexibility of Hasura, empowers you to take any GraphQL API and extend it infinitely. This means you can go as deep as calling a HTTP endpoint when an entity changes in your database or as high-level as sending an email when a mutation is received. This talk will give an overview as well as a deep dive of strategies to extend a GraphQL API.',
-    'about': 'Christian is a Senior Cloud Advocate at Microsoft focussing on Startups, JavaScript and Azure. His time is mostly spent on working with developers to figure how stuff work. He does this through workshops, conferences and online contents. Christian is currently working on Herm, a GraphQL workshop to that teaches how to solve advanced business logic problems with GraphQL and Serverless. Christian thinks he will make a good DJ someday.',
-    'day': 2,
-  },
   'lachlan-young': {
     'img': lachlanYoung,
     'name': 'Lachlan Young',
@@ -167,18 +158,6 @@ const speakerState = {
     'description': 'GraphQL is rolling out quicker and quicker as the community around it grows and improves what was once just a vision. Yet each addition to our tech stack, brings with it its own core problems, most notably of which is how to replace the old? To date one of the biggest barriers to entry with a GraphQL API is the technical debt of maintaining two APIs or alternatively, the consequences of deprecating the Industry standard in its favour. Fortunately, we can look to our predecessors as this is not the first time our API standard has been challenged. Whilst GraphQL itself is intended to be a layer, connecting two sides of an intricately woven coin of routes, operations and responses. GraphQL faces the same problems REST initially did when attempting to scrub itself clean of SOAP, XML and the like. On the menu today we will be starting with a smooth overview of previous successors, followed by an in-depth comparison of working with both a Server-less private GraphQL Api and, a monolithic Versioned API designed for private and public consumption alike. For dessert a few war stories chased with a generous helping of philosophy around the importance of APIs and how they truly dictate the balance between success and failure of a product.',
     'about': 'When I’m not taking long walks on the beach or pursuing some ridiculous side project with the excuse of ‘learning a new skillset’ cough weebg cough, you’ll find me 9-5 overselling my skills and thriving under the pressure at Tanda. I’m a self taught programmer who has a degree in game development and included in my skillset is the ability to not take myself to seriously. I got my start creating a White Label API for a company called Fabric and programming quickly became my full time hobby. For the last two years I have been fortunate enough to find myself on a multitude of different projects including computational pointcloud calculations with C++, web development with Polymer, Full Stack React development, a GraphQL React native app and finally, a monolithic powerhouse utilising all my past experience to build a platform using Ruby, NodeJs, React, GraphQL and React. The saying goes “find something you love and do it on the weekends”. I found that out after I found full time employment and I am the living embodyment that one size does not fit all. I;m at a stage in my ‘journey’ if you will, where I am looking to give back whilst the beginning is still fresh. If I can help you with that at all, please don’t hesitate to reach out.',
     'day': 1,
-  },
-  'carlos-rufo': {
-    'img': carlosRufo,
-    'name': 'Carlos Rufo',
-    'designation': 'Organizer',
-    'org': 'GraphQL Hong Kong',
-    'twitterLink': 'https://twitter.com/swcarlosrj',
-    'githubLink': 'https://github.com/swcarlosrj',
-    'title': 'From Over-fetching to Over-typing',
-    'abstract': 'GraphQL comes with capabilities to ask for whatever you need & get exactly that avoiding over-fetching. When using static types we might face a similar problem, over-type the codebase. In this demo-based talk I’ll go trough my experience adding type-safety over clients & how to avoid over-typing.',
-    'about': 'Polyglot Engineer • @GraphQLHongKong organizer • http://api.spacex.land author • he/him',
-    'day': 2,
   },
   'sam-julien': {
     'img': samJulien,
@@ -204,18 +183,6 @@ const speakerState = {
     'description': 'GraphQL is good interface to build modern API’s. Some of its features like directives, introspection enable us to build tools that solve common network problems in apps. In this talk, I will take a deep dive into GraphQL directives and explain how to abstract common patterns into custom directives. This talk broadly divided into 2 parts 1) How to use schema directives to solve problems on server 2) How to use query directives to solve problems on client',
     'about': 'Kiran Abburi is founder of neostack.com and organizer of React Bangalore',
     'day': 1,
-  },
-  'monika-jaiswal': {
-    'img': monikaJaiswal,
-    'name': 'Monika Jaiswal',
-    'designation': 'SOFTWARE DEVELOPMENT ENGINEER',
-    'org': 'EXPEDIA',
-    'linkedInLink': 'https://www.linkedin.com/in/monika-jaiswal-876b24110/',
-    'title': 'GraphQL at Expedia (Vrbo)',
-    'abstract': 'Do you want to know how we have used Graphql at Vrbo (Expedia)? What are the challenges we faced during migration? How do we maintain it within teams across the globe ? Or simply what is Graphql and how can we use it in production? This talk will provide all these answers and learnings as takeaway!',
-    'description': 'Expedia group has around 25 brands under its hood. Vrbo, is one of them and one of the most renowned vacation rental sites in US. We extensively use Graphql with catalyst applications and have in house term, ‘partials’ where we have broken one single layer into multiple small fragments. We have developed multiple modules for integrating partials into the catalyst application and have hosted on ‘artifactory’ for anyone inside the organisation to download and use. We are in progress for some open source projects as well. This and several other features that we have implemented here will be a content of this talk!',
-    'about': 'A BITS Pilani graduate, with 3+ years of experience and working as a Software Development Engineer at Expedia currently, I am passionate about technology in general, specific to technologies in frontend and Graphql . I am also leading the Women in Technology initiative at Vrbo India and am working extensively towards encouraging more women in STEM .',
-    'day': 2,
   },
   'vijayan-srinivasan': {
     'img': vijayanSrinivasan,
@@ -328,7 +295,7 @@ const speakerState = {
     'name': 'Ankita Masand',
     'designation': 'Senior Frontend Engineer',
     'org': 'Treebo',
-    'isPanel': true,
+    'panelUrl': '/panel/graphql-adoption',
     'twitterLink': 'https://twitter.com/ankitamasand'
   },
   'ashwin-goyal': {
@@ -336,8 +303,78 @@ const speakerState = {
     'name': 'Ashwin Goyal',
     'designation': 'New Initiatives',
     'org': 'Swiggy',
-    'isPanel': true,
+    'panelUrl': '/panel/graphql-adoption',
     'linkedInLink': 'https://www.linkedin.com/in/ashwingo/'
+  },
+  'ankit-muchhala': {
+    'img': ankitMuchhala,
+    'name': 'Ankit Muchhala',
+    'designation': 'Technical Lead',
+    'org': 'Postman',
+    'twitterLink': 'https://twitter.com/ankit_muchhala',
+    'githubLink': 'https://github.com/ankit-m',
+    'title': 'REST to GraphQL - A structured thinking approach',
+    'description': 'Everyone says it is easy to layer GraphQL on top of REST. Is it really? There are fundamental changes in thought processes which are often neglected, leading to poor schema design. This talk presents a structured approach to thinking in GraphQL and designing user centric schemas. The primary goal of the talk is to present a structured approach to thinking in GraphQL with something I like to call "Activities To Be Done (ATBDs)". I highlight a stepwise process to design a truly "graph-based" schema. We will also see how this approach helps various personas and facilitates in identifying "control points" for a schema.',
+  },
+  'anon-ray': {
+    'img': anonRay,
+    'name': 'Anon Ray',
+    'designation': 'Software Engineer',
+    'org': 'Hasura',
+    'twitterLink': 'https://twitter.com/rayanon',
+    'githubLink': 'https://github.com/ecthiender',
+    'title': 'Building a flexible & performant authorization rule engine for GraphQL',
+    'abstract': 'There are various ways of implementing authorization for a GraphQL server.  In this talk, I’ll review different approaches and problems. Eg: authz might result in making multiple calls to the database not just to resolve data but also  to fetch authorisation constraints. I will finally share our learnings in building a flexible rule engine in Hasura that avoids these pitfalls.',
+    'description': 'In this talk, we will review approaches and challenges of implementing authorization in your GraphQL server. We will survey well-known patterns of authorization. I will then share our learnings from building the rule engine we have built at Hasura, describe how it avoids performance pitfalls and the pros and cons of this approach.',
+  },
+  'amey-banarse': {
+    'img': ameyBanarse,
+    'name': 'Amey Banarse',
+    'designation': 'Principal Data Architect',
+    'org': 'YugaByte DB',
+    'twitterLink': 'https://twitter.com/ameybanarse',
+    'githubLink': 'https://github.com/ameyb',
+    'title': 'Turbocharging scalability of GraphQL services with a Distributed SQL DB',
+    'description': 'GraphQL, with its roots in some of the biggest internet companies like Facebook, was created to simplify cloud-native application development without compromising performance or security. However, the ability to scale out on-demand, the need for high availability and tolerating cloud outages are omnipresent in cloud-native architectures. Hasura is a popular, open-source GraphQL engine that works on top of a PostgreSQL database to instantly give you a production-ready GraphQL API. However, vanilla PostgreSQL is not horizontally scalable or highly available. YugabyteDB, an open-source, distributed SQL database was built to support all PostgreSQL features with full wire-compatibility to address exactly these needs - massive scalability, high availability and geo-distribution of data. In this talk, we will look at what features are needed in a distributed SQL database to support a GraphQL engine like Hasura. We will also look at the open-source distributed SQL DB landscape, and how YugabyteDB has been optimized for scaling the Hasura GraphQL engine.'
+  },
+  'michael-compton': {
+    'img': michaelCompton,
+    'name': 'Michael Compton',
+    'designation': 'GraphQL Lead',
+    'org': 'Dgraph',
+    'githubLink': 'https://github.com/MichaelJCompton​',
+    'panelUrl': '/panel/graphql-on-databases',
+  },
+  'shahidh-muhammed': {
+    'img': shahidhMuhammed,
+    'name': 'Shahidh K Muhammed',
+    'designation': 'Engineer',
+    'org': 'Hasura',
+    'twitterLink': 'https://twitter.com/shahidh_k',
+    'githubLink': 'https://github.com/shahidhk',
+    'title': 'API management & governance for GraphQL',
+    'description': 'API management and governance is a critical part of API adoption and delivery in any organisation. In this talk, we\'ll be taking a look at what API management is like for GraphQL APIs. We\'ll go through different aspects like lifecycle management, developer engagement, monitoring, caching, traffic management etc. in a GraphQL context. We will compare and contrast to REST solutions, understand different approaches that the ecosystem is taking and I will also share my learnings from our work at Hasura.'
+  },
+  'tanmai-gopal': {
+    'img': tanmai,
+    'name': 'Tanmai Gopal',
+    'designation': 'CEO',
+    'org': 'Hasura',
+    'twitterLink': 'https://twitter.com/tanmaigo',
+    'githubLink': 'https://github.com/coco98',
+    'title': 'Accelerating product & data delivery in 2020',
+    'description': 'Coming soon.',
+    'about': 'Tanmai Gopal is the CEO, co-founder of Hasura. He is a StackOverflow powered fullstack developer whose areas of interest and work span react, GraphQL, nodejs, haskell, docker, postgres & kubernetes. He is passionate about making it easy to build complex things and is the instructor of India\'s largest MOOC imad.tech with over 250,000 students.',
+  },
+  'karthic-rao': {
+    'img': karthicRao,
+    'name': 'Karthic Rao',
+    'designation': 'Developer Relations Lead',
+    'org': 'Dgraph Labs',
+    'twitterLink': 'https://twitter.com/hackintoshrao',
+    'githubLink': 'https://github.com/hackintoshrao',
+    'title': 'Building GraphQL APIs for a twitter clone just 5 minutes',
+    'description': 'Coming soon.',
   },
   'rajat-khare-arun-lingala': {
     'multiple': 'multipleSpeakers',
@@ -400,7 +437,7 @@ const speakerState = {
     'abstract': 'Intuit is transforming all it’s APIs from SOAP and REST to GraphQL. My team is responsible for defining the Authorization mechanism for whole of Intuit, This talk will cover how we use Attribute Based Access Control (ABAC) to provide authorization for Intuit APIs which are public and private.',
     'description': 'Intuit’s Data stewardship principles secure user’s PII, financial and tax information. Dimensionality of authorization enforcing this includes access mode (e.g. OLTP, OLAP, Big data and messaging), APIs (e.g. Restful, GraphQL), clients (device, desktop, web, first party, second party and third party), platforms(e.g. Java, Node, .NET), deployments (e.g. monoliths, micro-services, gateway, service mesh), complex rules (for variety of usecases, global products with local compliance and multiple domains) and subjects from internal (enterprise), B2B and B2C. Intuit’s vision for security with agility is to decentralize policy authoring over multiple products while addressing strict performance needs. Domain local policies authored by thousands of developers should work with global policies set at domain or company level by security experts. Multiple authorizations for multiple resources per request are either by design of the product or due to micro-services architecture. Hence low latency requirement, not sacrificing demand for complex multiple policies. Design with learning from building and operating the solution will be presented. Modular and multi-strategy design was chosen. Scaling with respect to requests vs entities (subjects, resources) is discussed. Tactics enable for shorter story cycle time for developers with a first-use experience and robust governance. PIPs as microservices feed into policy in a scalable, performant way with strong consistency needs in multi-region deployments. Solution has remote and local execution of policy. Extensibility is built in as ABAC landscape evolves, better engines come up, AI is factored in or innovations are absorbed. AuthZ for GraphQL GraphQL landscape at Intuit 100’s of entities Home built vs other implementations of GraphQL platform Different programming languages for entity providers How is GraphQL authorization same or different from REST API based authorization It is API – so same Batching of multiple requests Data about fields and entities being access Dimensions of GraphQL AuthZ Programming model Annotation based authorization Declarative externalized authorization Enforcement point Method based authorization Gateway based authorization Decision model RBAC ABAC',
     'day': 2,
-  }
+  },
 };
 const workshopState = {
   'why-graphql': {
@@ -487,12 +524,10 @@ const scheduleStateDayOne = {
     'duration': '15 mins',
     'scheduleTime': '09:00 AM - 09:15 AM',
   },
-  'hasura': {
-    'type': 'break',
-    'img': graphqlasia,
-    'maxHeight': true,
-    'name': 'TBD',
-    'title': 'TBD',
+  'tanmai-gopal': {
+    'img': tanmai,
+    'name': 'Tanmai Gopal',
+    'title': 'Accelerating product & data delivery in 2020',
     'duration': '30 mins',
     'tag': 'Long Talk',
     'scheduleTime': '09:15 AM - 09:45 AM',
@@ -502,9 +537,9 @@ const scheduleStateDayOne = {
     'img': robertZhu,
     'name': 'Robert Zhu',
     'title': 'A Peek at the Future of GraphQL',
-    'duration': '30 mins',
+    'duration': '45 mins',
     'tag': 'Long Talk',
-    'scheduleTime': '09:45 AM - 10:15 PM',
+    'scheduleTime': '09:45 AM - 10:30 PM',
     'tagImg': talkTag,
   },
   'lachlan-young': {
@@ -513,7 +548,7 @@ const scheduleStateDayOne = {
     'title': 'How to convince your boss to use GraphQL',
     'duration': '30 mins',
     'tag': 'Long Talk',
-    'scheduleTime': '10:15 AM - 10:45 PM',
+    'scheduleTime': '10:30 AM - 11:00 PM',
     'tagImg': talkTag,
   },
   'tea-break': {
@@ -521,7 +556,7 @@ const scheduleStateDayOne = {
     'img': tea,
     'title': 'Tea Break',
     'duration': '30 mins',
-    'scheduleTime': '10:45 AM - 11:15 AM',
+    'scheduleTime': '11:00 AM - 11:30 AM',
   },
   'vishakha-singh': {
     'img': vishakhaSingh,
@@ -529,7 +564,7 @@ const scheduleStateDayOne = {
     'title': 'How we improved PayPal checkout conversions using GraphQL',
     'duration': '30 mins',
     'tag': 'Long Talk',
-    'scheduleTime': '11:15 AM - 11:45 AM',
+    'scheduleTime': '11:30 AM - 12:00 PM',
     'tagImg': talkTag,
   },
   'radoslav-stankov': {
@@ -538,16 +573,16 @@ const scheduleStateDayOne = {
     'title': '3 Year GraphQL in Production at Product Hunt',
     'duration': '30 mins',
     'tag': 'Long Talk',
-    'scheduleTime': '11:45 AM - 12:15 PM',
+    'scheduleTime': '12:00 PM - 12:30 PM',
     'tagImg': talkTag,
   },
-  'vilva-athiban': {
-    'img': vilvaAthiban,
-    'name': 'Vilva Athiban P B',
-    'title': 'Build a GraphQL Client for React in 25 minutes',
+  'shahidh-muhammed': {
+    'img': shahidhMuhammed,
+    'name': 'Shahidh K Muhammed',
+    'title': 'API management & governance for GraphQL',
     'duration': '30 mins',
     'tag': 'Long Talk',
-    'scheduleTime': '12:15 PM - 12:45 PM',
+    'scheduleTime': '12:30 PM - 01:00 PM',
     'tagImg': talkTag,
   },
   'lunch': {
@@ -555,7 +590,7 @@ const scheduleStateDayOne = {
     'img': lunch,
     'title': 'Lunch',
     'duration': '1 hr 15 mins',
-    'scheduleTime': '12:45 PM - 02:00 PM',
+    'scheduleTime': '01:00 PM - 02:30 PM',
   },
   'ivan-goncharov': {
     'img': ivanGoncharov,
@@ -563,7 +598,7 @@ const scheduleStateDayOne = {
     'title': 'Hidden gems of GraphQL query',
     'duration': '10 mins',
     'tag': 'Lightning talk',
-    'scheduleTime': '2:00 PM - 2:10 PM',
+    'scheduleTime': '2:30 PM - 2:40 PM',
     'tagImg': talkTag,
   },
   'manish-jain': {
@@ -572,18 +607,17 @@ const scheduleStateDayOne = {
     'title': 'Back to GraphQL',
     'duration': '20 mins',
     'tag': 'Short Talk',
-    'scheduleTime': '2:10 PM - 2:30 PM',
+    'scheduleTime': '2:40 PM - 3:00 PM',
     'tagImg': talkTag,
   },
-  'panel-discussion': {
+  'graphql-on-databases': {
     'img': graphqlasia,
-    'type': 'break',
     'maxHeight': true,
-    'name': 'TBD',
-    'title': 'TBD',
+    'name': 'Robert Zhu, Michael Compton, Tanmai Gopal',
+    'title': 'GraphQL on Databases',
     'duration': '45 mins',
     'tag': 'Talk',
-    'scheduleTime': '02:30 PM - 03:15 PM',
+    'scheduleTime': '03:00 PM - 03:45 PM',
     'tagImg': communityTag,
   },
   'kiran-kumar-abburi': {
@@ -592,7 +626,7 @@ const scheduleStateDayOne = {
     'title': 'Potential of GraphQL Directives',
     'duration': '20 mins',
     'tag': 'Short Talk',
-    'scheduleTime': '03:15 PM - 03:35 PM',
+    'scheduleTime': '03:45 PM - 04:05 PM',
     'tagImg': talkTag,
   },
   'coffee-break': {
@@ -600,15 +634,24 @@ const scheduleStateDayOne = {
     'img': tea,
     'title': 'Tea Break',
     'duration': '25 mins',
-    'scheduleTime': '03:35 PM - 04:00 PM',
+    'scheduleTime': '04:05 PM - 04:30 PM',
   },
-  'sam-julien': {
-    'img': samJulien,
-    'name': 'Sam Julien',
-    'title': 'Becoming a “Secret” Agent: Securing Your GraphQL Backend with JWTs',
-    'duration': '30 mins',
-    'tag': 'Long Talk',
-    'scheduleTime': '04:00 PM - 04:30 PM',
+  'ankit-muchhala': {
+    'img': ankitMuchhala,
+    'name': 'Ankit Muchhala',
+    'title': 'REST to GraphQL - A structured thinking approach',
+    'duration': '10 mins',
+    'tag': 'Short Talk',
+    'scheduleTime': '04:30 PM - 04:40 PM',
+    'tagImg': talkTag,
+  },
+  'amey-banarse': {
+    'img': ameyBanarse,
+    'name': 'Amey Banarse',
+    'title': 'Turbocharging scalability of GraphQL services with a Distributed SQL DB',
+    'duration': '10 mins',
+    'tag': 'Short Talk',
+    'scheduleTime': '04:45 PM - 04:55 PM',
     'tagImg': talkTag,
   },
   'sauradyuti-coondu': {
@@ -617,18 +660,16 @@ const scheduleStateDayOne = {
     'title': 'Building performant GraphQL servers',
     'duration': '30 mins',
     'tag': 'Long Talk',
-    'scheduleTime': '04:30 PM - 05:00 PM',
+    'scheduleTime': '05:00 PM - 05:30 PM',
     'tagImg': talkTag,
   },
-  'hasura-2': {
-    'img': graphqlasia,
-    'type': 'break',
-    'maxHeight': true,
-    'name': 'TBD',
-    'title': 'TBD',
+  'vilva-athiban': {
+    'img': vilvaAthiban,
+    'name': 'Vilva Athiban P B',
+    'title': 'Build a GraphQL Client for React in 25 minutes',
     'duration': '30 mins',
     'tag': 'Long Talk',
-    'scheduleTime': '05:00 PM - 05:30 PM',
+    'scheduleTime': '05:30 PM - 06:00 PM',
     'tagImg': talkTag,
   },
   'closing-address': {
@@ -637,7 +678,7 @@ const scheduleStateDayOne = {
     'maxHeight': true,
     'title': 'Closing Address',
     'duration': '15 mins',
-    'scheduleTime': '05:30 PM - 05:45 PM',
+    'scheduleTime': '06:00 PM - 06:15 PM',
   },
 }
 const scheduleStateDayTwo = {
@@ -692,10 +733,10 @@ const scheduleStateDayTwo = {
     'duration': '40 mins',
     'scheduleTime': '10:50 AM - 11:30 AM',
   },
-  'monika-jaiswal': {
-    'img': monikaJaiswal,
-    'name': 'Monika Jaiswal',
-    'title': 'GraphQL at Expedia (Vrbo)',
+  'sam-julien': {
+    'img': samJulien,
+    'name': 'Sam Julien',
+    'title': 'Becoming a “Secret” Agent: Securing Your GraphQL Backend with JWTs',
     'duration': '30 mins',
     'tag': 'Long Talk',
     'scheduleTime': '11:30 AM - 12:00 PM',
@@ -711,15 +752,24 @@ const scheduleStateDayTwo = {
     'scheduleTime': '12:00 PM - 12:30 PM',
     'tagImg': talkTag,
   },
-  'hasura-3': {
-    'img': graphqlasia,
-    'type': 'break',
-    'maxHeight': true,
-    'name': 'TBD',
-    'title': 'TBD',
+  'anon-ray': {
+    'img': anonRay,
+    'name': 'Anon Ray',
+    'title': 'Building a flexible & performant authorization rule engine for GraphQL',
     'duration': '20 mins',
     'tag': 'Short Talk',
     'scheduleTime': '12:30 PM - 12:50 PM',
+    'tagImg': talkTag,
+  },
+  'sean-grove-2': {
+    'type': 'break',
+    'bosrderRadius': true,
+    'img': seanGrove,
+    'name': 'Sean Grove',
+    'title': 'Authentication with AuthGuardian',
+    'duration': '10 mins',
+    'tag': 'Short Talk',
+    'scheduleTime': '12:50 PM - 01:00 PM',
     'tagImg': talkTag,
   },
   'lunch': {
@@ -727,26 +777,16 @@ const scheduleStateDayTwo = {
     'img': lunch,
     'title': 'Lunch',
     'duration': '1 hr 10 mins',
-    'scheduleTime': '12:50 PM - 02:00 PM',
+    'scheduleTime': '01:00 PM - 02:30 PM',
   },
-  'tbd-1': {
-    'type': 'break',
-    'img': graphqlasia,
-    'maxHeight': true,
-    'name': 'TBD',
-    'title': 'TBD',
-    'duration': '10 mins',
-    'tag': 'Talk',
-    'scheduleTime': '02:00 PM - 02:10 PM',
-    'tagImg': communityTag,
-  },
-  'carlos-rufo': {
-    'img': carlosRufo,
-    'name': 'Carlos Rufo',
-    'title': 'From Over-fetching to Over-typing',
-    'duration': '20 mins',
-    'tag': 'Short Talk',
-    'scheduleTime': '02:10 PM - 02:30 PM',
+  'rajat-khare-arun-lingala': {
+    'multiple': 'multipleSpeakers',
+    'img': rajatArun,
+    'name': 'Rajat Khare, Arun Lingala',
+    'title': 'AutoFIT, a framework to automatically inject failures per request invocation to test fault tolerant/resilient GraphQL APIs',
+    'duration': '30 mins',
+    'tag': 'Long Talk',
+    'scheduleTime': '02:30 PM - 03:00 PM',
     'tagImg': talkTag,
   },
   'graphql-adoption': {
@@ -756,17 +796,8 @@ const scheduleStateDayTwo = {
     'name': 'Ankita Masand, Abinash Mohapatra, Ashwin Goyal, Tanmai Gopal',
     'title': 'Panel Discussion: Approaches to GraphQL adoption',
     'duration': '45 mins',
-    'scheduleTime': '02:30 PM - 03:15 PM',
+    'scheduleTime': '03:00 PM - 03:45 PM',
     'tagImg': panelTalk,
-  },
-  'sarjeel-yusuf': {
-    'img': sarjeelYusuf,
-    'name': 'Sarjeel Yusuf',
-    'title': 'Better IoT with Serverless GraphQL',
-    'duration': '30 mins',
-    'tag': 'Long Talk',
-    'scheduleTime': '03:15 PM - 03:45 PM',
-    'tagImg': talkTag,
   },
   'coffee-break': {
     'type': 'break',
@@ -775,14 +806,21 @@ const scheduleStateDayTwo = {
     'duration': '30 mins',
     'scheduleTime': '03:45 PM - 04:15 PM',
   },
-  'rajat-khare-arun-lingala': {
-    'multiple': 'multipleSpeakers',
-    'img': rajatArun,
-    'name': 'Rajat Khare, Arun Lingala',
-    'title': 'AutoFIT, a framework to automatically inject failures per request invocation to test fault tolerant/resilient GraphQL APIs',
+  'karthic-rao': {
+    'img': karthicRao,
+    'title': 'Building GraphQL APIs for a Twitter clone in just 5 minutes',
+    'duration': '10 mins',
+    'tag': 'Short Talk',
+    'scheduleTime': '04:15 PM - 04:25 PM',
+    'tagImg': talkTag,
+  },
+  'sarjeel-yusuf': {
+    'img': sarjeelYusuf,
+    'name': 'Sarjeel Yusuf',
+    'title': 'Better IoT with Serverless GraphQL',
     'duration': '30 mins',
     'tag': 'Long Talk',
-    'scheduleTime': '04:15 PM - 04:45 PM',
+    'scheduleTime': '04:30 PM - 05:00 PM',
     'tagImg': talkTag,
   },
   'shipra-gupta': {
@@ -791,16 +829,7 @@ const scheduleStateDayTwo = {
     'title': 'GraphQL as an API gateway in microservices architecture',
     'duration': '30 mins',
     'tag': 'Long Talk',
-    'scheduleTime': '04:45 PM - 05:15 PM',
-    'tagImg': talkTag,
-  },
-  'christian-nwamba': {
-    'img': christian,
-    'name': 'Christian Nwamba',
-    'title': 'Extending GraphQL APIs with Actions and Serverless',
-    'duration': '30 mins',
-    'tag': 'Long Talk',
-    'scheduleTime': '05:15 PM - 05:45 PM',
+    'scheduleTime': '05:00 PM - 05:30 PM',
     'tagImg': talkTag,
   },
   'closing-address': {
@@ -809,7 +838,7 @@ const scheduleStateDayTwo = {
     'maxHeight': true,
     'title': 'Closing Address',
     'duration': '15 mins',
-    'scheduleTime': '05:45 PM - 06:00 PM',
+    'scheduleTime': '05:30 PM - 05:45 PM',
   },
 }
 const panelState = {
@@ -859,5 +888,34 @@ const panelState = {
     ],
     */
   },
+  'graphql-on-databases': {
+    'title': 'GraphQL on Databases',
+    'time': '45 mins',
+    'panelDescription': 'GraphQL is a great data API and is emerging as a natural fit for data centric use-cases. How are companies adopting GraphQL with their databases today? Hear from the folks at AWS AppSync, Dgraph and Hasura as they discuss different GraphQL approaches, and compare their experiences with 3 different types of databases NoSQL (Dynamo), Graph (Dgraph) & SQL (Postgres).',
+    'moderatorImg': tanmai,
+    'moderatorName': 'Tanmai Gopal',
+    'moderatorDesignation': 'CEO',
+    'moderatorOrg': 'HASURA',
+    'moderatorTwitterLink': 'https://twitter.com/tanmaigo',
+    'moderatorGithubLink': 'https://github.com/coco98',
+    'day': 1,
+    'panelMembers': [
+      {
+        'img': robertZhu,
+        'name': 'Robert Zhu',
+        'designation': 'PRINCIPAL TECHNICAL EVANGELIST',
+        'org': 'AWS',
+        'twitterLink': 'https://twitter.com/rbzhu/',
+        'githubLink': 'https://github.com/robzhu',
+      },
+      {
+        'img': michaelCompton,
+        'name': 'Michael Compton',
+        'designation': 'GraphQL Lead',
+        'org': 'Dgraph',
+        'githubLink': 'https://github.com/MichaelJCompton​',
+      },
+    ],
+  }
 }
 export {speakerState, workshopState, scheduleStateDayOne, scheduleStateDayTwo, panelState}
