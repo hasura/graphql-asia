@@ -5,7 +5,7 @@
  */
 
 // You can delete this file if you're not using it
-const allSpeakers = ['robert-zhu', 'manish-jain', 'vishakha-singh', 'radoslav-stankov', 'gago-frigerio', 'shipra-gupta', 'ivan-goncharov', 'sarjeel-yusuf', 'christian-nwamba', 'lachlan-young', 'carlos-rufo', 'sam-julien', 'kiran-kumar-abburi', 'monika-jaiswal', 'vijayan-srinivasan', 'bala-dutt', 'arun-lingala', 'yogesh-desai', 'abinash-mohapatra', 'rajat-khare', 'sean-grove', 'vilva-athiban', 'sauradyuti-coondu', 'rajat-khare-arun-lingala', 'vijayan-srinivasan-bala-dutt', 'ankit-muchhala', 'anon-ray', 'amey-banarse', 'shahidh-muhammed', 'tanmai-gopal'];
+const allSpeakers = ['robert-zhu', 'manish-jain', 'vishakha-singh', 'radoslav-stankov', 'gago-frigerio', 'shipra-gupta', 'ivan-goncharov', 'sarjeel-yusuf', 'lachlan-young', 'sam-julien', 'kiran-kumar-abburi', 'vijayan-srinivasan', 'bala-dutt', 'arun-lingala', 'yogesh-desai', 'abinash-mohapatra', 'rajat-khare', 'sean-grove', 'vilva-athiban', 'sauradyuti-coondu', 'rajat-khare-arun-lingala', 'vijayan-srinivasan-bala-dutt', 'ankit-muchhala', 'anon-ray', 'amey-banarse', 'shahidh-muhammed', 'tanmai-gopal', 'karthic-rao'];
 const allWorkshops = ['why-graphql', 'building-apps-with-react-apollo-client', 'build-high-performance-graphql-serverless-apps-with-the-3factor-app-architecture', 'building-scalable-graphal-apps-with-react-and-dgraph']
 const allPanel = ['graphql-adoption', 'graphql-on-databases']
 const path = require('path');
