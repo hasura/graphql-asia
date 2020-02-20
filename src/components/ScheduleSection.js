@@ -31,7 +31,7 @@ class ScheduleSection extends React.Component {
              <div className='scheduleListBreak'>
                <div className='scheduleBorderLeft'></div>
                <div className='scheduleProfile'>
-                 <img className={((scheduleStateDayOne[url].maxHeight) ? 'borderRadiusRemove scheduleProfileImg' : 'borderRadiusRemove')} src={scheduleStateDayOne[url].img} alt={scheduleStateDayOne[url].name}/>
+                 <img className={((scheduleStateDayOne[url].maxHeight) ? 'borderRadiusRemove scheduleProfileImg' : 'borderRadiusRemove') + ' ' + ((scheduleStateDayOne[url].bosrderRadius) ? 'borderRadius' : '')} src={scheduleStateDayOne[url].img} alt={scheduleStateDayOne[url].name}/>
                </div>
                <div className='scheduledetails'>
                  <div className='scheduleTitle'>
@@ -48,7 +48,7 @@ class ScheduleSection extends React.Component {
                </div>
              </div>
            ) : (
-             <Link to={'/speakers/'+url}>
+             <Link to={(scheduleStateDayOne[url].panel && scheduleStateDayOne[url].panel === 'panel') ? '/panel/'+url : '/speakers/'+url}>
                <div key={scheduleStateDayOne[url].name} className='scheduleListWrapper scheduleListBgGray'>
                  <div className='scheduleProfile'>
                    <img src={scheduleStateDayOne[url].img} alt={scheduleStateDayOne[url].name}/>
@@ -91,7 +91,7 @@ class ScheduleSection extends React.Component {
              <div className='scheduleListBreak'>
                <div className='scheduleBorderLeft'></div>
                <div className='scheduleProfile'>
-                 <img  className={((scheduleStateDayTwo[url].maxHeight) ? 'borderRadiusRemove scheduleProfileImg' : 'borderRadiusRemove')} src={scheduleStateDayTwo[url].img} alt={scheduleStateDayTwo[url].name}/>
+                 <img  className={((scheduleStateDayTwo[url].maxHeight) ? 'borderRadiusRemove scheduleProfileImg' : 'borderRadiusRemove') + ' ' + ((scheduleStateDayTwo[url].bosrderRadius) ? 'borderRadius' : '')} src={scheduleStateDayTwo[url].img} alt={scheduleStateDayTwo[url].name}/>
                </div>
                <div className='scheduledetails'>
                  <div className='scheduleTitle'>
