@@ -38,7 +38,7 @@ const anonRay = require('../images/Anon-Ray.png');
 
 const beginner = require('../images/beginner.svg');
 const intermediate = require('../images/intermediate.svg');
-const communityTag = require('../images/community-tag.svg');
+// const communityTag = require('../images/community-tag.svg');
 const talkTag = require('../images/talk-tag.svg');
 const panelTalk = require('../images/panel-talk.svg');
 const registration = require('../images/registration.svg');
@@ -611,6 +611,8 @@ const scheduleStateDayOne = {
     'tagImg': talkTag,
   },
   'graphql-on-databases': {
+    'panel': 'panel',
+    'multiple': 'multipleSpeakers',
     'img': graphqlasia,
     'maxHeight': true,
     'name': 'Robert Zhu, Michael Compton, Tanmai Gopal',
@@ -618,7 +620,7 @@ const scheduleStateDayOne = {
     'duration': '45 mins',
     'tag': 'Talk',
     'scheduleTime': '03:00 PM - 03:45 PM',
-    'tagImg': communityTag,
+    'tagImg': panelTalk,
   },
   'kiran-kumar-abburi': {
     'img': kiranKumar,
