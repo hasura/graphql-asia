@@ -539,7 +539,7 @@ const scheduleStateDayOne = {
     'title': 'A Peek at the Future of GraphQL',
     'duration': '45 mins',
     'tag': 'Long Talk',
-    'scheduleTime': '09:45 AM - 10:30 PM',
+    'scheduleTime': '09:45 AM - 10:30 AM',
     'tagImg': talkTag,
   },
   'lachlan-young': {
