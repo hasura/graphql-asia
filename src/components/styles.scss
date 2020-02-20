@@ -1566,6 +1566,37 @@ img {
     }
   }
 }
+/* Health guidelines */
+.healthWrapper {
+  padding-top: 220px;
+  padding-bottom: 60px;
+  .sectionHeader {
+    text-align: left;
+    color: #7c74d5;
+    letter-spacing: normal;
+  }
+}
+.healthDescriptionWrapper {
+  .thanksDescription {
+    color: #27216e;
+    opacity: 1;
+    font-weight: bold;
+    line-height: 1.33;
+    padding-bottom: 40px;
+  }
+  .pageDescription {
+    line-height: 1.33;
+    color: #505050;
+    padding-bottom: 24px;
+    span {
+      font-weight: 500;
+      color: #2b2b33;
+    }
+  }
+  .pinkLink {
+    padding-top: 16px;
+  }
+}
 @media ( min-width: 992px ) and (max-width: 1199px) {
   .watermarkWrapper{
     .watermarkImgTop {
@@ -1694,6 +1725,7 @@ img {
             button {
               font-size: 15px;
               padding: 10px 5px;
+              margin: 0px 4px;
               letter-spacing: 1px;
             }
           }
@@ -1827,6 +1859,9 @@ img {
         }
       }
     }
+  }
+  .healthWrapper {
+    padding-top: 160px;
   }
 }
 @media(max-width: 767px) {
@@ -2376,6 +2411,20 @@ img {
           text-align: center;
         }
       }
+    }
+  }
+  .healthWrapper {
+    padding-top: 110px;
+    .sectionHeader {
+      text-align: center;
+    }
+  }
+  .healthDescriptionWrapper {
+    .thanksDescription, .pageDescription {
+      text-align: center;
+    }
+    .pinkLink {
+      padding-bottom: 0;
     }
   }
 }
