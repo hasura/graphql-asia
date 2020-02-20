@@ -12,7 +12,7 @@ const HealthTopBanner = () => {
           </div>
         </div>
       </div>
-      <div className='sectionWrapper'>
+      <div className='sectionWrapperMedium'>
         <div className={'container noPadd'}>
           <div className='wd60 healthDescriptionWrapper'>
             <div className='thanksDescription'>

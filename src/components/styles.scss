@@ -119,6 +119,9 @@
 .sectionWrapper {
   padding: 120px 0;
 }
+.sectionWrapperMedium {
+  padding: 80px 0;
+}
 .sectionWrapperSmall {
   padding: 50px 0;
 }
@@ -1571,7 +1574,7 @@ img {
   padding-top: 220px;
   padding-bottom: 60px;
   .sectionHeader {
-    text-align: left;
+    text-align: center;
     color: #7c74d5;
     letter-spacing: normal;
   }
@@ -1583,6 +1586,7 @@ img {
     font-weight: bold;
     line-height: 1.33;
     padding-bottom: 40px;
+    font-family: 'Roboto';
   }
   .pageDescription {
     line-height: 1.33;
@@ -1632,6 +1636,9 @@ img {
   }
 }
 @media ( min-width: 768px ) and (max-width: 991px) {
+  .sectionWrapperMedium {
+    padding: 60px 0;
+  }
   .thanksWrapper {
     min-height: calc(100vh - 195px);
     height: auto;
@@ -1867,6 +1874,9 @@ img {
 @media(max-width: 767px) {
   .sectionWrapperSmall {
     padding: 30px 0;
+  }
+  .sectionWrapperMedium {
+    padding: 40px 0;
   }
   .thanksWrapper {
     min-height: calc(100vh - 195px);
