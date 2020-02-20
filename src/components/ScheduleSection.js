@@ -48,7 +48,7 @@ class ScheduleSection extends React.Component {
                </div>
              </div>
            ) : (
-             <Link to={'/speakers/'+url}>
+             <Link to={(scheduleStateDayOne[url].panel && scheduleStateDayOne[url].panel === 'panel') ? '/panel/'+url : '/speakers/'+url}>
                <div key={scheduleStateDayOne[url].name} className='scheduleListWrapper scheduleListBgGray'>
                  <div className='scheduleProfile'>
                    <img src={scheduleStateDayOne[url].img} alt={scheduleStateDayOne[url].name}/>
