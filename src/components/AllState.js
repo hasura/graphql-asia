@@ -167,10 +167,10 @@ const speakerState = {
     'twitterLink': 'https://twitter.com/samjulien',
     'githubLink': 'https://github.com/samjulien',
     'title': 'Becoming a “Secret” Agent: Securing Your GraphQL Backend with JWTs',
-    'abstract': 'Are you confused about how to add authentication to your GraphQL API? You’re not alone! Learning authentication can be tough, so let’s demystify it with some practical teaching on how to use JSON Web Tokens (JWTs) with your GraphQL APIs.',
-    'description': 'Are you confused about how to add authentication to your GraphQL API? You’re not alone! It’s no secret that learning authentication is hard enough on its own, let alone while trying to understand how it fits with GraphQL. Let’s demystify authentication with some practical teaching on how to use JSON Web Tokens (JWTs) to add authentication to your GraphQL APIs! We’ll cover registering users, logging them in and out, and keeping their sessions alive. We’ll also discuss options to consider when choosing an authentication strategy and whether any considerations need to be made for using your API with a traditional web application versus a single-page application (SPA). This talk will use JavaScript examples, but the principles will apply to other backend technologies. By the end, you’ll feel a whole lot better about tackling authentication!',
+    'abstract': 'Are you confused about authentication and authorization relate to your GraphQL API? You’re not alone! Learning auth can be tough, so let’s demystify it with some practical teaching on how to use JSON Web Tokens (JWTs) with your GraphQL APIs.',
+    'description': 'Are you confused about authentication and authorization relate to your GraphQL API? You’re not alone! It’s no secret that learning auth is hard enough on its own, let alone while trying to understand how it fits with GraphQL. Let’s demystify authentication with some practical teaching on how to use JSON Web Tokens (JWTs) to add authentication to your GraphQL APIs! We’ll first shed light on some auth terminology and talk about the problem of delegated access. We’ll also discuss options to consider when choosing an authorization strategy and whether any considerations need to be made for using your GraphQL backend with a frontend on the same server versus on an external server along with multiple APIs. We’ll then step through how to handle authorization in your GraphQL server, including several options for handling access to protected data. This talk will use JavaScript examples, but the principles will apply to other backend technologies. By the end, you’ll feel a whole lot better about tackling auth in GraphQL!',
     'about': 'Sam Julien is an Angular GDE and Collaborator, a Developer Advocate Engineer at Auth0, and the creator of UpgradingAngularJS.com. He’s also the author of “Up and Running with Gatsby” on Thinkster.io. His favorite thing in the world is being outside drinking good scotch next to a fire he built himself.',
-    'day': 1,
+    'day': 2,
   },
   'kiran-kumar-abburi': {
     'img': kiranKumar,
@@ -315,6 +315,7 @@ const speakerState = {
     'githubLink': 'https://github.com/ankit-m',
     'title': 'REST to GraphQL - A structured thinking approach',
     'description': 'Everyone says it is easy to layer GraphQL on top of REST. Is it really? There are fundamental changes in thought processes which are often neglected, leading to poor schema design. This talk presents a structured approach to thinking in GraphQL and designing user centric schemas. The primary goal of the talk is to present a structured approach to thinking in GraphQL with something I like to call "Activities To Be Done (ATBDs)". I highlight a stepwise process to design a truly "graph-based" schema. We will also see how this approach helps various personas and facilitates in identifying "control points" for a schema.',
+    'day': 1,
   },
   'anon-ray': {
     'img': anonRay,
@@ -326,6 +327,7 @@ const speakerState = {
     'title': 'Building a flexible & performant authorization rule engine for GraphQL',
     'abstract': 'There are various ways of implementing authorization for a GraphQL server.  In this talk, I’ll review different approaches and problems. Eg: authz might result in making multiple calls to the database not just to resolve data but also  to fetch authorisation constraints. I will finally share our learnings in building a flexible rule engine in Hasura that avoids these pitfalls.',
     'description': 'In this talk, we will review approaches and challenges of implementing authorization in your GraphQL server. We will survey well-known patterns of authorization. I will then share our learnings from building the rule engine we have built at Hasura, describe how it avoids performance pitfalls and the pros and cons of this approach.',
+    'day': 2,
   },
   'amey-banarse': {
     'img': ameyBanarse,
@@ -335,7 +337,8 @@ const speakerState = {
     'twitterLink': 'https://twitter.com/ameybanarse',
     'githubLink': 'https://github.com/ameyb',
     'title': 'Turbocharging scalability of GraphQL services with a Distributed SQL DB',
-    'description': 'GraphQL, with its roots in some of the biggest internet companies like Facebook, was created to simplify cloud-native application development without compromising performance or security. However, the ability to scale out on-demand, the need for high availability and tolerating cloud outages are omnipresent in cloud-native architectures. Hasura is a popular, open-source GraphQL engine that works on top of a PostgreSQL database to instantly give you a production-ready GraphQL API. However, vanilla PostgreSQL is not horizontally scalable or highly available. YugabyteDB, an open-source, distributed SQL database was built to support all PostgreSQL features with full wire-compatibility to address exactly these needs - massive scalability, high availability and geo-distribution of data. In this talk, we will look at what features are needed in a distributed SQL database to support a GraphQL engine like Hasura. We will also look at the open-source distributed SQL DB landscape, and how YugabyteDB has been optimized for scaling the Hasura GraphQL engine.'
+    'description': 'GraphQL, with its roots in some of the biggest internet companies like Facebook, was created to simplify cloud-native application development without compromising performance or security. However, the ability to scale out on-demand, the need for high availability and tolerating cloud outages are omnipresent in cloud-native architectures. Hasura is a popular, open-source GraphQL engine that works on top of a PostgreSQL database to instantly give you a production-ready GraphQL API. However, vanilla PostgreSQL is not horizontally scalable or highly available. YugabyteDB, an open-source, distributed SQL database was built to support all PostgreSQL features with full wire-compatibility to address exactly these needs - massive scalability, high availability and geo-distribution of data. In this talk, we will look at what features are needed in a distributed SQL database to support a GraphQL engine like Hasura. We will also look at the open-source distributed SQL DB landscape, and how YugabyteDB has been optimized for scaling the Hasura GraphQL engine.',
+    'day': 1,
   },
   'michael-compton': {
     'img': michaelCompton,
@@ -353,7 +356,8 @@ const speakerState = {
     'twitterLink': 'https://twitter.com/shahidh_k',
     'githubLink': 'https://github.com/shahidhk',
     'title': 'API management & governance for GraphQL',
-    'description': 'API management and governance is a critical part of API adoption and delivery in any organisation. In this talk, we\'ll be taking a look at what API management is like for GraphQL APIs. We\'ll go through different aspects like lifecycle management, developer engagement, monitoring, caching, traffic management etc. in a GraphQL context. We will compare and contrast to REST solutions, understand different approaches that the ecosystem is taking and I will also share my learnings from our work at Hasura.'
+    'description': 'API management and governance is a critical part of API adoption and delivery in any organisation. In this talk, we\'ll be taking a look at what API management is like for GraphQL APIs. We\'ll go through different aspects like lifecycle management, developer engagement, monitoring, caching, traffic management etc. in a GraphQL context. We will compare and contrast to REST solutions, understand different approaches that the ecosystem is taking and I will also share my learnings from our work at Hasura.',
+    'day': 1,
   },
   'tanmai-gopal': {
     'img': tanmai,
@@ -365,6 +369,7 @@ const speakerState = {
     'title': 'Accelerating product & data delivery in 2020',
     'description': 'Coming soon.',
     'about': 'Tanmai Gopal is the CEO, co-founder of Hasura. He is a StackOverflow powered fullstack developer whose areas of interest and work span react, GraphQL, nodejs, haskell, docker, postgres & kubernetes. He is passionate about making it easy to build complex things and is the instructor of India\'s largest MOOC imad.tech with over 250,000 students.',
+    'day': 1,
   },
   'karthic-rao': {
     'img': karthicRao,
@@ -375,6 +380,7 @@ const speakerState = {
     'githubLink': 'https://github.com/hackintoshrao',
     'title': 'Building GraphQL APIs for a twitter clone just 5 minutes',
     'description': 'Coming soon.',
+    'day': 2,
   },
   'rajat-khare-arun-lingala': {
     'multiple': 'multipleSpeakers',
