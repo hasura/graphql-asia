@@ -548,7 +548,7 @@ const scheduleStateDayOne = {
     'title': 'How to convince your boss to use GraphQL',
     'duration': '30 mins',
     'tag': 'Long Talk',
-    'scheduleTime': '10:30 AM - 11:00 PM',
+    'scheduleTime': '10:30 AM - 11:00 AM',
     'tagImg': talkTag,
   },
   'tea-break': {
