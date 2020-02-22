@@ -816,6 +816,7 @@ const scheduleStateDayTwo = {
   },
   'karthic-rao': {
     'img': karthicRao,
+    'name': 'Karthic Rao',
     'title': 'Building GraphQL APIs for a Twitter clone in just 5 minutes',
     'duration': '10 mins',
     'tag': 'Short Talk',
