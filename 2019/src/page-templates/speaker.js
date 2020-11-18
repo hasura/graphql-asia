@@ -1,118 +1,139 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
-import Img from "gatsby-image"
-import{Link} from 'gatsby'
+import Img from 'gatsby-image'
+import { Link } from 'gatsby'
 
 const SpeakerPage = (props) => {
-    var speakerName = ''
-    var speakerPicture = null
-    try {
-    speakerPicture = props.data[props.pageContext.speakerPicture].childImageSharp.fluid
-    } catch (error) {
-
-    }
-    try {
-        speakerName = props.pageContext.speakerName
-    } catch (error) {
-
-    }
-    // console.log(speakerPicture)
-    return(
-  <Layout>
-    <Helmet>
-      <title>{speakerName} - GraphQL Asia</title>
-      <meta name="description" content="GraphQL Asia Speakers" />
-    </Helmet>
-    <div id="main" className="alt">
+  var speakerName = ''
+  var speakerPicture = null
+  try {
+    speakerPicture =
+      props.data[props.pageContext.speakerPicture].childImageSharp.fluid
+  } catch (error) {}
+  try {
+    speakerName = props.pageContext.speakerName
+  } catch (error) {}
+  // console.log(speakerPicture)
+  return (
+    <Layout>
+      <Helmet>
+        <title>{speakerName} - GraphQL Asia</title>
+        <meta name="description" content="GraphQL Asia Speakers" />
+      </Helmet>
+      <div id="main" className="alt">
         <section id="one">
-            <div className="inner">
-                <header style={{
-                    width: '100%',
-                    minHeight: '300px',
-                }} className="major workshopDetails">
-                    <div className="image workleft" style={{
-                        width:'225px',
-                        height:'225px',
-                        minWidth: '225px',
-                        objectFit: 'cover',
-                        maxWidth: '300px',
-                    }}>
-                    {
-                        speakerPicture ?
-                        <Img style={{
+          <div className="inner">
+            <header
+              style={{
+                width: '100%',
+                minHeight: '300px',
+              }}
+              className="major workshopDetails"
+            >
+              <div
+                className="image workleft"
+                style={{
+                  width: '225px',
+                  height: '225px',
+                  minWidth: '225px',
+                  objectFit: 'cover',
+                  maxWidth: '300px',
+                }}
+              >
+                {speakerPicture ? (
+                  <Img style={{}} fluid={speakerPicture} alt={speakerName} />
+                ) : null}
+              </div>
+              <div>
+                <h1
+                  style={{
+                    margin: '0',
+                    paddingTop: '50px',
+                  }}
+                >
+                  {speakerName}
+                </h1>
+                <h3
+                  style={{
+                    fontSize: '18px',
+                    color: '#777',
+                    textTransform: 'uppercase',
+                  }}
+                >
+                  {props.pageContext.speakerPosition}
+                </h3>
+                {props.pageContext.twitter ? (
+                  <a
+                    style={{
+                      textIndent: '-1000px',
+                      fontSize: '26px',
+                    }}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href={`https://twitter.com/${props.pageContext.twitter}`}
+                    className="fa-twitter icon"
+                  >
+                    &nbsp;
+                  </a>
+                ) : null}
+                <h2
+                  style={{
+                    fontSize: '18px',
+                    color: '#e535ab',
+                    textTransform: 'uppercase',
+                  }}
+                >
+                  About
+                </h2>
+                <p>{props.pageContext.speakerDescription}</p>
+                {/* <p>Day {props.pageContext.day} at {props.pageContext.time}</p> */}
+                <h2
+                  style={{
+                    fontSize: '18px',
+                    color: '#e535ab',
+                    position: 'relative',
+                    textTransform: 'uppercase',
+                  }}
+                >
+                  {props.pageContext.type === 'workshop' ? 'Workshop' : 'Talk'}
+                  <div
+                    style={{
+                      left: '-40px',
+                      top: '5px',
+                      position: 'absolute',
+                    }}
+                    className="pinkCircleSmall pinkCircleSmall1"
+                  ></div>
+                </h2>
+                <h3
+                  style={{
+                    fontSize: '18px',
+                  }}
+                >
+                  {props.pageContext.talkTitle}
+                </h3>
+                <p>{props.pageContext.talkAbstract}</p>
+                <h5>
+                  Timings: {props.pageContext.time} (Day {props.pageContext.day}
+                  )
+                </h5>
+                <p>
+                  &lt; <Link to="/agenda">Back to Agenda page</Link>
+                </p>
+              </div>
+            </header>
 
-                        }} fluid={speakerPicture} alt={speakerName} />
-                        :null
-                    }
-                    </div>
-                    <div>
-                      <h1
-                      style={{
-                          margin: '0',
-                          paddingTop: '50px',
-                      }}
-                      >{speakerName}
-
-                      </h1>
-                      <h3 style={{
-                          fontSize: '18px',
-                          color: "#777",
-                          textTransform: 'uppercase',
-                      }}>{props.pageContext.speakerPosition}</h3>
-                      {
-                          props.pageContext.twitter ?
-                          <a style={{
-                              textIndent: '-1000px',
-                              fontSize: '26px',
-                          }} rel="noopener noreferrer" target="_blank" href={`https://twitter.com/${props.pageContext.twitter}`} className="fa-twitter icon">&nbsp;</a>
-                          :null
-                      }
-                      <h2 style={{
-                          fontSize: '18px',
-                          color: '#e535ab',
-                          textTransform: 'uppercase',
-                      }}>About</h2>
-                      <p>
-                      {props.pageContext.speakerDescription}
-                      </p>
-                      {/* <p>Day {props.pageContext.day} at {props.pageContext.time}</p> */}
-                      <h2 style={{
-                          fontSize: '18px',
-                          color: '#e535ab',
-                          position: 'relative',
-                          textTransform: 'uppercase',
-                      }}>
-                      {
-                        props.pageContext.type==='workshop'?
-                        'Workshop':'Talk'
-                      }
-                      <div style={{
-                          left: '-40px',
-                          top: '5px',
-                          position: 'absolute',
-                      }}
-                      className="pinkCircleSmall pinkCircleSmall1"></div>
-                      </h2>
-                      <h3 style={{
-                          fontSize: '18px',
-                      }}>{props.pageContext.talkTitle}</h3>
-                      <p>{props.pageContext.talkAbstract}</p>
-                      <h5>Timings: {props.pageContext.time} (Day {props.pageContext.day})</h5>
-                      <p>&lt; <Link to="/agenda">Back to Agenda page</Link></p>
-                    </div>
-                    </header>
-
-                    <div style={{
-                        clear:'both'
-                        }} />
-
-            </div>
+            <div
+              style={{
+                clear: 'both',
+              }}
+            />
+          </div>
         </section>
-
-    </div>
-  </Layout >
-)
+      </div>
+    </Layout>
+  )
 }
 
 export default SpeakerPage
@@ -147,7 +168,9 @@ export const query1 = graphql`
         }
       }
     }
-    GraphQLAsiaRajoshiTobias: file(relativePath: { eq: "GraphQL-Asia-Rajoshi-Tobias.png" }) {
+    GraphQLAsiaRajoshiTobias: file(
+      relativePath: { eq: "GraphQL-Asia-Rajoshi-Tobias.png" }
+    ) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid

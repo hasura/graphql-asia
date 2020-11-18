@@ -1,10 +1,10 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import { Link } from 'gatsby';
 
-import Header from './header'
-import Footer from './footer'
-import Contact from './Contact'
-import './styles.scss'
+import Header from './header';
+import Footer from './footer';
+import Contact from './Contact';
+import './styles.scss';
 // const graphqlAsia = require('../images/graphql_Asia2020_heading.svg');
 // const megaphone = require('../images/megaphone.svg');
 import { speakerState } from './AllState.js';
@@ -17,216 +17,193 @@ const arrowPink = require('../images/arrow-pink.svg');
 const DetailsTopBanner = (props) => {
   const speakerUrl = props.pageContext.slug;
   const currentSpeaker = speakerState[speakerUrl];
-  if(!currentSpeaker) {
-    window.location.href = "/404";
+  if (!currentSpeaker) {
+    window.location.href = '/404';
   }
   return (
     <div className={'positionRel'}>
       <Header />
-      <div className='detailsTopBannerWrapper detailsBgImage'>
+      <div className="detailsTopBannerWrapper detailsBgImage">
         <div className={'container noPadd'}>
-          {
-            (currentSpeaker.multiple && currentSpeaker.multiple === 'multipleSpeakers') ? (
-                <div>
-                  {
-                    currentSpeaker.profile.map((profile, index) => {
-                      return (
-                        <div key={index} className='detailsWrapper'>
-                          <div className='col-md-4 col-sm-4 col-xs-12 noPadd'>
-                            <div className='profileImg'>
-                              <img src={profile.img} alt={profile.name}/>
+          {currentSpeaker.multiple && currentSpeaker.multiple === 'multipleSpeakers' ? (
+            <div>
+              {currentSpeaker.profile.map((profile, index) => {
+                return (
+                  <div key={index} className="detailsWrapper">
+                    <div className="col-md-4 col-sm-4 col-xs-12 noPadd">
+                      <div className="profileImg">
+                        <img src={profile.img} alt={profile.name} />
+                      </div>
+                    </div>
+                    <div className="col-md-8 col-sm-8 col-xs-12 noPadd">
+                      <div className="profileWrapper">
+                        <div className="profileName">{profile.name}</div>
+                        <div className="profileDesignation">{profile.designation}</div>
+                        <div className="profileOrganization">{profile.org}</div>
+                        <div className="socialWrapper">
+                          {profile.githubLink ? (
+                            <div className="socialIcon">
+                              <a
+                                href={profile.githubLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <img src={github} alt={'Github'} />
+                              </a>
                             </div>
-                          </div>
-                          <div className='col-md-8 col-sm-8 col-xs-12 noPadd'>
-                            <div className='profileWrapper'>
-                              <div className='profileName'>
-                                {profile.name}
-                              </div>
-                              <div className='profileDesignation'>
-                                {profile.designation}
-                              </div>
-                              <div className='profileOrganization'>
-                                {profile.org}
-                              </div>
-                              <div className='socialWrapper'>
-                                {
-                                  (profile.githubLink) ? (
-                                    <div className='socialIcon'>
-                                      <a href={profile.githubLink} target="_blank" rel="noopener noreferrer"><img src={github} alt={'Github'} /></a>
-                                    </div>
-                                  ) : null
-                                }
-                                {
-                                  (profile.twitterLink) ? (
-                                    <div className='socialIcon'>
-                                      <a href={profile.twitterLink} target="_blank" rel="noopener noreferrer"><img src={twitter} alt={'Twitter'} /></a>
-                                    </div>
-                                  ) : null
-                                }
-                                {
-                                  (profile.linkedInLink) ? (
-                                    <div className='socialIcon'>
-                                      <a href={profile.linkedInLink} target="_blank" rel="noopener noreferrer"><img src={linkedIn} alt={'LinkedIn'} /></a>
-                                    </div>
-                                  ) : null
-                                }
-                              </div>
+                          ) : null}
+                          {profile.twitterLink ? (
+                            <div className="socialIcon">
+                              <a
+                                href={profile.twitterLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <img src={twitter} alt={'Twitter'} />
+                              </a>
                             </div>
-                          </div>
+                          ) : null}
+                          {profile.linkedInLink ? (
+                            <div className="socialIcon">
+                              <a
+                                href={profile.linkedInLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <img src={linkedIn} alt={'LinkedIn'} />
+                              </a>
+                            </div>
+                          ) : null}
                         </div>
-                      )
-                    })
-                  }
-                </div>
-            ) : (
-              <div className='detailsWrapper'>
-                <div className='col-md-4 col-sm-4 col-xs-12 noPadd'>
-                  <div className='profileImg'>
-                    <img src={currentSpeaker.img} alt={currentSpeaker.name}/>
+                      </div>
+                    </div>
                   </div>
+                );
+              })}
+            </div>
+          ) : (
+            <div className="detailsWrapper">
+              <div className="col-md-4 col-sm-4 col-xs-12 noPadd">
+                <div className="profileImg">
+                  <img src={currentSpeaker.img} alt={currentSpeaker.name} />
                 </div>
-                <div className='col-md-8 col-sm-8 col-xs-12 noPadd'>
-                  <div className='profileWrapper'>
-                    <div className='profileName'>
-                      {currentSpeaker.name}
-                    </div>
-                    <div className='profileDesignation'>
-                      {currentSpeaker.designation}
-                    </div>
-                    <div className='profileOrganization'>
-                      {currentSpeaker.org}
-                    </div>
-                    <div className='socialWrapper'>
-                      {
-                        (currentSpeaker.githubLink) ? (
-                          <div className='socialIcon'>
-                            <a href={currentSpeaker.githubLink} target="_blank" rel="noopener noreferrer"><img src={github} alt={'Github'} /></a>
-                          </div>
-                        ) : null
-                      }
-                      {
-                        (currentSpeaker.twitterLink) ? (
-                          <div className='socialIcon'>
-                            <a href={currentSpeaker.twitterLink} target="_blank" rel="noopener noreferrer"><img src={twitter} alt={'Twitter'} /></a>
-                          </div>
-                        ) : null
-                      }
-                      {
-                        (currentSpeaker.linkedInLink) ? (
-                          <div className='socialIcon'>
-                            <a href={currentSpeaker.linkedInLink} target="_blank" rel="noopener noreferrer"><img src={linkedIn} alt={'LinkedIn'} /></a>
-                          </div>
-                        ) : null
-                      }
-                    </div>
+              </div>
+              <div className="col-md-8 col-sm-8 col-xs-12 noPadd">
+                <div className="profileWrapper">
+                  <div className="profileName">{currentSpeaker.name}</div>
+                  <div className="profileDesignation">{currentSpeaker.designation}</div>
+                  <div className="profileOrganization">{currentSpeaker.org}</div>
+                  <div className="socialWrapper">
+                    {currentSpeaker.githubLink ? (
+                      <div className="socialIcon">
+                        <a
+                          href={currentSpeaker.githubLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <img src={github} alt={'Github'} />
+                        </a>
+                      </div>
+                    ) : null}
+                    {currentSpeaker.twitterLink ? (
+                      <div className="socialIcon">
+                        <a
+                          href={currentSpeaker.twitterLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <img src={twitter} alt={'Twitter'} />
+                        </a>
+                      </div>
+                    ) : null}
+                    {currentSpeaker.linkedInLink ? (
+                      <div className="socialIcon">
+                        <a
+                          href={currentSpeaker.linkedInLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <img src={linkedIn} alt={'LinkedIn'} />
+                        </a>
+                      </div>
+                    ) : null}
                   </div>
                 </div>
               </div>
-            )
-          }
-
+            </div>
+          )}
         </div>
       </div>
-      <div className='sectionWrapperSmall'>
+      <div className="sectionWrapperSmall">
         <div className={'container noPadd'}>
           <div className={'clearBoth'}>
-          {
-            (currentSpeaker.title) ? (
-              <div className='aboutSpeakerWrapper'>
-                <div className='col-md-4 col-sm-4 col-xs-12 noPadd'>
-                  <div className='title titleTop'>
-                    Talk Title
-                  </div>
+            {currentSpeaker.title ? (
+              <div className="aboutSpeakerWrapper">
+                <div className="col-md-4 col-sm-4 col-xs-12 noPadd">
+                  <div className="title titleTop">Talk Title</div>
                 </div>
-                <div className='col-md-8 col-sm-8 col-xs-12 noPadd'>
-                  <div className='speakersTitle'>
-                    {currentSpeaker.title}
-                  </div>
+                <div className="col-md-8 col-sm-8 col-xs-12 noPadd">
+                  <div className="speakersTitle">{currentSpeaker.title}</div>
                 </div>
               </div>
-            ) : null
-          }
-          {
-            (currentSpeaker.abstract) ? (
-              <div className='aboutSpeakerWrapper'>
-                <div className='col-md-4 col-sm-4 col-xs-12 noPadd'>
-                  <div className='title titleTop'>
-                    Talk Abstract
-                  </div>
+            ) : null}
+            {currentSpeaker.abstract ? (
+              <div className="aboutSpeakerWrapper">
+                <div className="col-md-4 col-sm-4 col-xs-12 noPadd">
+                  <div className="title titleTop">Talk Abstract</div>
                 </div>
-                <div className='col-md-8 col-sm-8 col-xs-12 noPadd'>
-                  <div className='pageDescription'>
-                    {currentSpeaker.abstract}
-                  </div>
+                <div className="col-md-8 col-sm-8 col-xs-12 noPadd">
+                  <div className="pageDescription">{currentSpeaker.abstract}</div>
                 </div>
               </div>
-            ): null
-          }
-          {
-            (currentSpeaker.description) ? (
-              <div className='aboutSpeakerWrapper'>
-                <div className='col-md-4 col-sm-4 col-xs-12 noPadd'>
-                  <div className='title titleTop'>
-                    Talk Description
-                  </div>
+            ) : null}
+            {currentSpeaker.description ? (
+              <div className="aboutSpeakerWrapper">
+                <div className="col-md-4 col-sm-4 col-xs-12 noPadd">
+                  <div className="title titleTop">Talk Description</div>
                 </div>
-                <div className='col-md-8 col-sm-8 col-xs-12 noPadd'>
-                  <div className='pageDescription'>
-                    {currentSpeaker.description}
-                  </div>
+                <div className="col-md-8 col-sm-8 col-xs-12 noPadd">
+                  <div className="pageDescription">{currentSpeaker.description}</div>
                 </div>
               </div>
-            ) : null
-          }
-          {
-            (currentSpeaker.multiple && currentSpeaker.multiple === 'multipleSpeakers') ? (
+            ) : null}
+            {currentSpeaker.multiple && currentSpeaker.multiple === 'multipleSpeakers' ? (
               <div>
-                {
-                  currentSpeaker.profileDetails.map((profileDetails, index) => {
-                    return (
-                      <div className='aboutSpeakerWrapper'>
-                        <div className='col-md-4 col-sm-4 col-xs-12 noPadd'>
-                          <div className='title'>
-                            ABOUT {profileDetails.name}
-                          </div>
-                        </div>
-                        <div className='col-md-8 col-sm-8 col-xs-12 noPadd'>
-                          <div className='pageDescription'>
-                            {profileDetails.about}
-                          </div>
-                        </div>
+                {currentSpeaker.profileDetails.map((profileDetails, index) => {
+                  return (
+                    <div className="aboutSpeakerWrapper">
+                      <div className="col-md-4 col-sm-4 col-xs-12 noPadd">
+                        <div className="title">ABOUT {profileDetails.name}</div>
                       </div>
-                    )
-                  })
-                }
-
+                      <div className="col-md-8 col-sm-8 col-xs-12 noPadd">
+                        <div className="pageDescription">{profileDetails.about}</div>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             ) : (
               <div>
-                {
-                  (currentSpeaker.about) ? (
-                    <div className='aboutSpeakerWrapper'>
-                      <div className='col-md-4 col-sm-4 col-xs-12 noPadd'>
-                        <div className='title'>
-                          ABOUT {currentSpeaker.name}
-                        </div>
-                      </div>
-                      <div className='col-md-8 col-sm-8 col-xs-12 noPadd'>
-                        <div className='pageDescription'>
-                          {currentSpeaker.about}
-                        </div>
-                      </div>
+                {currentSpeaker.about ? (
+                  <div className="aboutSpeakerWrapper">
+                    <div className="col-md-4 col-sm-4 col-xs-12 noPadd">
+                      <div className="title">ABOUT {currentSpeaker.name}</div>
                     </div>
-                  ) : null
-                }
+                    <div className="col-md-8 col-sm-8 col-xs-12 noPadd">
+                      <div className="pageDescription">{currentSpeaker.about}</div>
+                    </div>
+                  </div>
+                ) : null}
               </div>
-            )
-          }
+            )}
           </div>
           <div className={'clearBoth aboutSpeakerWrapper'}>
             <div className={'col-md-offset-4 col-sm-offset-4'}>
-              <div className='pinkLink '>
-                <Link to={'/schedule?day='+currentSpeaker.day}>CHECK OUT THE SCHEDULE<img src={arrowPink} alt={'Arrow'} /></Link>
+              <div className="pinkLink ">
+                <Link to={'/schedule?day=' + currentSpeaker.day}>
+                  CHECK OUT THE SCHEDULE
+                  <img src={arrowPink} alt={'Arrow'} />
+                </Link>
               </div>
             </div>
           </div>
@@ -235,7 +212,7 @@ const DetailsTopBanner = (props) => {
       <Contact />
       <Footer />
     </div>
-  )
+  );
 };
 
-export default DetailsTopBanner
+export default DetailsTopBanner;

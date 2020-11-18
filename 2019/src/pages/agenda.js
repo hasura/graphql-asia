@@ -4,7 +4,6 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import SpeakerList from '../components/SpeakerList'
 
-
 const Speakers = (props) => (
   <Layout>
     <Helmet>
@@ -12,30 +11,22 @@ const Speakers = (props) => (
       <meta name="description" content="GraphQL Asia Agenda" />
     </Helmet>
     <div id="main" className="alt">
-        <section id="one">
-            <div className="inner removePaddBottom">
-                <header className="major removeMarBottom">
-                    <h1 className="removeMarBottom">
-                      Agenda
-                    </h1>
-                </header>
-            </div>
-        </section>
+      <section id="one">
+        <div className="inner removePaddBottom">
+          <header className="major removeMarBottom">
+            <h1 className="removeMarBottom">Agenda</h1>
+          </header>
+        </div>
+      </section>
     </div>
 
     <div id="speakerlist">
       <SpeakerList isAgenda={true} data={props.data} />
     </div>
-
-  </Layout >
+  </Layout>
 )
 
 export default Speakers
-
-
-
-
-
 
 export const agendaQuery = graphql`
   query {
@@ -67,7 +58,9 @@ export const agendaQuery = graphql`
         }
       }
     }
-    GraphQLAsiaRajoshiTobias: file(relativePath: { eq: "GraphQL-Asia-Rajoshi-Tobias.png" }) {
+    GraphQLAsiaRajoshiTobias: file(
+      relativePath: { eq: "GraphQL-Asia-Rajoshi-Tobias.png" }
+    ) {
       childImageSharp {
         fluid(maxWidth: 200) {
           ...GatsbyImageSharpFluid
@@ -343,6 +336,6 @@ export const agendaQuery = graphql`
           ...GatsbyImageSharpFluid
         }
       }
-    }  
+    }
   }
 `

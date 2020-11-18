@@ -1,16 +1,17 @@
 module.exports = {
   siteMetadata: {
-    title: `GraphQL Asia 2020`,
-    description: "GraphQL Asia is the largest gathering of the GraphQL community in Asia! With over 500 people expected at the 2020 edition, you’ll meet the creators of leading GraphQL tooling, talk to the experts implementing GraphQL in their companies as well as practitioners and enthusiasts from Asia and the rest of the world.",
+    title: `GraphQL Asia 2021`,
+    description:
+      'GraphQL Asia is the largest gathering of the GraphQL community in Asia! With over 500 people expected at the 2021 edition, you’ll meet the creators of leading GraphQL tooling, talk to the experts implementing GraphQL in their companies as well as practitioners and enthusiasts from Asia and the rest of the world.',
     author: `@graphqlasia`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
-      resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
+      resolve: 'gatsby-plugin-webpack-bundle-analyser-v2',
       options: {
         devMode: true,
-        defaultSizes: "gzip",
+        defaultSizes: 'gzip',
       },
     },
     {
@@ -39,10 +40,10 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: `UA-148609270-1`,
-      }
+      },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};

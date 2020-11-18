@@ -1,5 +1,5 @@
-import React from "react"
-import './styles.scss'
+import React from 'react';
+import './styles.scss';
 
 const copy = require('../images/copyright.svg');
 const twitterBrands = require('../images/twitter-brands.svg');
@@ -14,23 +14,44 @@ const Footer = () => {
         <div className={'footerContainer footerBorTop'}>
           <div className={'footerListWrapper'}>
             <div className={'copyRight'}>
-              <img src={copy} alt={'Copy right icon'} />2020 Hasura. All rights reserved
+              <img src={copy} alt={'Copy right icon'} />
+              2020 Hasura. All rights reserved
             </div>
             <ul>
-              <li className={'copyRight'}><a href="https://www.graphql-asia.org/code-of-conduct" target="_blank" rel="noopener noreferrer">Code of conduct</a></li>
+              <li className={'copyRight'}>
+                <a
+                  href="https://www.graphql-asia.org/code-of-conduct"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Code of conduct
+                </a>
+              </li>
               {/*
               <li className={'copyRight'}><a href="/">Refund policy</a></li>
               <li className={'copyRight'}><a href="/">Diversity</a></li>
               */}
-              <li className={'copyRight fontBold'}><a href="https://learn.hasura.io/" target="_blank" rel="noopener noreferrer">New to GraphQL?</a></li>
+              <li className={'copyRight fontBold'}>
+                <a href="https://learn.hasura.io/" target="_blank" rel="noopener noreferrer">
+                  New to GraphQL?
+                </a>
+              </li>
             </ul>
           </div>
           <div className={'socialWrapper'}>
             <div className={'socialIcon'}>
-              <a href="https://twitter.com/graphqlasia" target="_blank" rel="noopener noreferrer"><img src={twitterBrands} alt={'Twitter brands'} /></a>
+              <a href="https://twitter.com/graphqlasia" target="_blank" rel="noopener noreferrer">
+                <img src={twitterBrands} alt={'Twitter brands'} />
+              </a>
             </div>
             <div className={'socialIcon'}>
-              <a href="https://www.facebook.com/graphqlasia" target="_blank" rel="noopener noreferrer"><img src={facebookBrands} alt={'Facebook brands'} /></a>
+              <a
+                href="https://www.facebook.com/graphqlasia"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={facebookBrands} alt={'Facebook brands'} />
+              </a>
             </div>
             {/*
             <div className={'socialIcon'}>
@@ -38,13 +59,19 @@ const Footer = () => {
             </div>
             */}
             <div className={'socialIcon'}>
-              <a href="https://www.youtube.com/channel/UCXMN61PUm8_U-GYMIxffQkA" target="_blank" rel="noopener noreferrer"><img src={youtubeBrands} alt={'Youtube brands'} /></a>
+              <a
+                href="https://www.youtube.com/channel/UCXMN61PUm8_U-GYMIxffQkA"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={youtubeBrands} alt={'Youtube brands'} />
+              </a>
             </div>
           </div>
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

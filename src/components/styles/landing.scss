@@ -1,0 +1,11 @@
+@import '../styles/globalStyles.scss';
+
+.landing-div {
+  min-height: 100vh;
+  width: 100%;
+  background: #202020;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 7%;
+}

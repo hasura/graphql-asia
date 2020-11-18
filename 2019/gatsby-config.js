@@ -1,42 +1,38 @@
 const path = require(`path`)
 var productionPlugins = []
-if(process.env.GATSBY_STAGE&&process.env.GATSBY_STAGE==='production'){
-  productionPlugins.push(
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-129727991-1",
-        // Puts tracking script in the head instead of the body
-        head: true,
-        // Setting this parameter is optional
-        anonymize: true,
-        // Setting this parameter is also optional
-        respectDNT: true,
-        // Avoids sending pageview hits from custom paths
-        // exclude: [],
-        // Enables Google Optimize using your container Id
-        // optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
-        // Any additional create only fields (optional)
-        // sampleRate: 5,
-        // siteSpeedSampleRate: 10,
-        // cookieDomain: "example.com",
-      },
+if (process.env.GATSBY_STAGE && process.env.GATSBY_STAGE === 'production') {
+  productionPlugins.push({
+    resolve: `gatsby-plugin-google-analytics`,
+    options: {
+      trackingId: 'UA-129727991-1',
+      // Puts tracking script in the head instead of the body
+      head: true,
+      // Setting this parameter is optional
+      anonymize: true,
+      // Setting this parameter is also optional
+      respectDNT: true,
+      // Avoids sending pageview hits from custom paths
+      // exclude: [],
+      // Enables Google Optimize using your container Id
+      // optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
+      // Any additional create only fields (optional)
+      // sampleRate: 5,
+      // siteSpeedSampleRate: 10,
+      // cookieDomain: "example.com",
     },
-  )
-  productionPlugins.push(
-    {
-      resolve: `gatsby-plugin-facebook-pixel`,
-      options: {
-        pixelId: '432447416966399',
-      },
-    }
-  ) 
+  })
+  productionPlugins.push({
+    resolve: `gatsby-plugin-facebook-pixel`,
+    options: {
+      pixelId: '432447416966399',
+    },
+  })
 }
 module.exports = {
   siteMetadata: {
-    title: "GraphQL Asia",
-    author: "Tobias Meixner",
-    description: "GraphQL Asia - Asia's first GraphQL conference"
+    title: 'GraphQL Asia',
+    author: 'Tobias Meixner',
+    description: "GraphQL Asia - Asia's first GraphQL conference",
   },
   pathPrefix: '/2019',
   plugins: [
@@ -47,12 +43,11 @@ module.exports = {
         fonts: [
           {
             family: `Roboto`,
-            
           },
           {
             family: `Nunito`,
-            variants: [`400`,`800`,`800i`,`900`,`900i`]
-          }
+            variants: [`400`, `800`, `800i`, `900`, `900i`],
+          },
         ],
       },
     },
@@ -67,10 +62,10 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: path.join(__dirname, `src`,`assets`, `images`),
+        path: path.join(__dirname, `src`, `assets`, `images`),
       },
     },
-    `gatsby-transformer-sharp`, 
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
