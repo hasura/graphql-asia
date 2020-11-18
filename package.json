@@ -26,6 +26,13 @@
     "react-tabs": "^3.1.0"
   },
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.13.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.5",
     "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.16",
     "prettier": "^2.1.2"
   },
@@ -36,7 +43,8 @@
   "scripts": {
     "build": "npx --node-arg '-r esm' gatsby build",
     "develop": "npx --node-arg '-r esm' gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "format": "prettier --write \"src/**/*.{js,jsx,css,json}\"",
+    "lint": "eslint --fix \"src/**/*.{js,jsx}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
