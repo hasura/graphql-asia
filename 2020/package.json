@@ -1,0 +1,50 @@
+{
+  "name": "graphql-asia",
+  "private": true,
+  "description": "GraphQL Asia 2020 Website",
+  "version": "0.1.0",
+  "author": "Praveen <praveen@hasura.io>",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "esm": "^3.2.25",
+    "gatsby": "^2.15.7",
+    "gatsby-image": "^2.2.17",
+    "gatsby-plugin-google-analytics": "^2.1.17",
+    "gatsby-plugin-manifest": "^2.2.13",
+    "gatsby-plugin-offline": "^2.2.10",
+    "gatsby-plugin-react-helmet": "^3.1.6",
+    "gatsby-plugin-sass": "^2.1.13",
+    "gatsby-plugin-sharp": "^2.2.19",
+    "gatsby-source-filesystem": "^2.1.21",
+    "gatsby-transformer-sharp": "^2.2.13",
+    "node-sass": "^4.12.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-helmet": "^5.2.1",
+    "react-mailchimp-subscribe": "^2.1.0",
+    "react-tabs": "^3.1.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "npx --node-arg '-r esm' gatsby build",
+    "develop": "npx --node-arg '-r esm' gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hasura/graphql-asia"
+  },
+  "bugs": {
+    "url": "https://github.com/hasura/graphql-asia/issues"
+  }
+}

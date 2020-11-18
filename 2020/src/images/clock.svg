@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.604" height="16.604" viewBox="0 0 16.604 16.604">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#909090;stroke-linecap:round;stroke-linejoin:round}
+        </style>
+    </defs>
+    <g id="streamline-icon-time-clock-circle-1_24x24" data-name="streamline-icon-time-clock-circle-1@24x24" transform="translate(.5 .5)">
+        <path id="Path_5115" d="M9.3 1.5a7.8 7.8 0 1 1-7.8 7.8 7.8 7.8 0 0 1 7.8-7.8z" class="cls-1" data-name="Path 5115" transform="translate(-1.5 -1.5)"/>
+        <path id="Path_5116" d="M11.615 10.5a1.115 1.115 0 1 1-1.115 1.115 1.115 1.115 0 0 1 1.115-1.115z" class="cls-1" data-name="Path 5116" transform="translate(-3.813 -3.813)"/>
+        <path id="Path_5117" d="M12 9.151V5.25" class="cls-1" data-name="Path 5117" transform="translate(-4.198 -2.464)"/>
+        <path id="Path_5118" d="M13.061 13.061l2 2" class="cls-1" data-name="Path 5118" transform="translate(-4.471 -4.471)"/>
+    </g>
+</svg>
