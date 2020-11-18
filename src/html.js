@@ -4,29 +4,29 @@ import PropTypes from 'prop-types';
 export default class HTML extends React.Component {
   render() {
     return (
-      <html {...this.props.htmlAttributes}>
+      <html {...this.props.htmlAttributes} lang="en-us">
         <head>
-          <title>GraphQL Asia 2020</title>
+          <title>GraphQL Asia 2021</title>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-          <meta title="Graphql Asia 2020" />
-          <meta name="title" content="GraphQL Asia 2020" />
+          <meta title="Graphql Asia 2021" />
+          <meta name="title" content="GraphQL Asia 2021" />
           <meta
             name="description"
-            content="GraphQL Asia is the largest gathering of the GraphQL community in Asia! With over 500 people expected at the 2020 edition, you’ll meet the creators of leading GraphQL tooling, talk to the experts implementing GraphQL in their companies as well as practitioners and enthusiasts from Asia and the rest of the world."
+            content="GraphQL Asia is the largest gathering of the GraphQL community in Asia! With over 500 people expected at the 2021 edition, you’ll meet the creators of leading GraphQL tooling, talk to the experts implementing GraphQL in their companies as well as practitioners and enthusiasts from Asia and the rest of the world."
           />
-          <meta property="og:title" content="Graphql Asia 2020" />
+          <meta property="og:title" content="Graphql Asia 2021" />
           <meta
             property="og:description"
-            content="GraphQL Asia is the largest gathering of the GraphQL community in Asia! With over 500 people expected at the 2020 edition, you’ll meet the creators of leading GraphQL tooling, talk to the experts implementing GraphQL in their companies as well as practitioners and enthusiasts from Asia and the rest of the world."
+            content="GraphQL Asia is the largest gathering of the GraphQL community in Asia! With over 500 people expected at the 2021 edition, you’ll meet the creators of leading GraphQL tooling, talk to the experts implementing GraphQL in their companies as well as practitioners and enthusiasts from Asia and the rest of the world."
           />
           <meta property="og:image" content="https://graphql.asia/graphql-asia.png" />
           <meta property="twitter:card" content="summary_large_image" />
-          <meta property="twitter:title" content="Graphql Asia 2020" />
+          <meta property="twitter:title" content="Graphql Asia 2021" />
           <meta
             property="twitter:description"
-            content="GraphQL Asia is the largest gathering of the GraphQL community in Asia! With over 500 people expected at the 2020 edition, you’ll meet the creators of leading GraphQL tooling, talk to the experts implementing GraphQL in their companies as well as practitioners and enthusiasts from Asia and the rest of the world."
+            content="GraphQL Asia is the largest gathering of the GraphQL community in Asia! With over 500 people expected at the 2021 edition, you’ll meet the creators of leading GraphQL tooling, talk to the experts implementing GraphQL in their companies as well as practitioners and enthusiasts from Asia and the rest of the world."
           />
           <meta property="twitter:image" content="https://graphql.asia/graphql-asia.png" />
 

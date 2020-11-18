@@ -1,7 +1,7 @@
 {
   "name": "graphql-asia",
   "private": true,
-  "description": "GraphQL Asia 2020 Website",
+  "description": "GraphQL Asia 2021 Website",
   "version": "0.1.0",
   "author": "Praveen <praveen@hasura.io>",
   "dependencies": {
