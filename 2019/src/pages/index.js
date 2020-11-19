@@ -16,7 +16,7 @@ class HomeIndex extends React.Component {
     return (
       <Layout>
         <Helmet
-          title="GraphQL Asia - Conference"
+          title="GraphQL Asia 2019 - Conference"
           meta={[
             {
               name: 'description',
