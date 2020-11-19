@@ -37,20 +37,6 @@ module.exports = {
   pathPrefix: '/2019',
   plugins: [
     ...productionPlugins,
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Roboto`,
-          },
-          {
-            family: `Nunito`,
-            variants: [`400`, `800`, `800i`, `900`, `900i`],
-          },
-        ],
-      },
-    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-fullstory`,
