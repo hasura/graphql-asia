@@ -20,7 +20,7 @@ const FooterSection = () => (
       </a>
     </div>
     <div className="landing-footer-nav">
-      <a href="https://graphql.asia/2020" target="_blank" rel="noopener noreferrer">
+      <a href="https://graphql.asia" target="_blank" rel="noopener noreferrer">
         GraphQL Asia 2020<span className="right-arrow">→</span>
       </a>
     </div>
