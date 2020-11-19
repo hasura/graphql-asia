@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700|Poppins:400,500,600,700|Darker+Grotesque:400,500,600,700,800&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 h1,
 .h1,
 h2,
@@ -38,37 +42,49 @@ h6,
   align-items: center;
 }
 
-.primary-cta {
-  width: auto;
+.btn {
   padding: 0 44px;
+  width: auto;
   height: 80px;
+  white-space: nowrap;
   line-height: 70px;
-  background: linear-gradient(154.02deg, #f81872 23.56%, #27216e 145.22%);
   border-radius: 8px;
   outline: none;
-  border: none;
   font-family: Darker Grotesque;
   font-weight: 600;
   font-size: 24px;
   color: #f8f8f8;
-  white-space: nowrap;
+
+  &:hover {
+    box-shadow: rgba(248, 24, 114, 0.24) 0px 6px 10px;
+  }
 }
 
-.secondary-cta {
-  width: auto;
-  padding: 0 44px;
-  height: 80px;
-  line-height: 70px;
+.btn-primary {
+  @extend .btn;
+
+  background: linear-gradient(154.02deg, #f81872 23.56%, #27216e 145.22%);
+  border: none;
+}
+
+.btn-secondary {
+  @extend .btn;
+
+  background: transparent;
   border: 2px solid #f81872;
-  border-radius: 8px;
-  outline: none;
-  font-family: Darker Grotesque;
-  font-weight: 600;
-  font-size: 24px;
-  color: #f8f8f8;
-  white-space: nowrap;
 }
 
 .mr-24 {
   margin-right: 24px;
+}
+
+.mt-8 {
+  margin-top: 8%;
+}
+
+a,
+a:hover,
+a:focus,
+a:visited {
+  text-decoration: none;
 }
