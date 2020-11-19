@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700|Poppins:400,500,600,700|Darker+Grotesque:400,500,600,700,800&display=swap');
 
-* {
+*,
+body {
   box-sizing: border-box;
 }
 
@@ -87,4 +88,21 @@ a:hover,
 a:focus,
 a:visited {
   text-decoration: none;
+}
+
+// Mobile optimizations
+
+@media screen and (max-width: 600px) {
+  .btn {
+    padding: 0;
+    height: 55px;
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+    width: 92%;
+  }
+
+  .right-arrow {
+    font-size: 14px !important;
+  }
 }

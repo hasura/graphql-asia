@@ -4,8 +4,8 @@ import graphqlAsiaImg from '../../images/graphqlAsia.png';
 import '../styles/landing.scss';
 
 const ButtonSection = () => (
-  <div className="flex justify-content-center mt-8">
-    <button className="btn-primary mr-24">
+  <div className="landing-cta-div mt-8">
+    <button className="btn-primary signup-btn">
       Signup to know About early-bird tickets<span className="right-arrow">→</span>
     </button>
     <button className="btn-secondary">Submit your CFP</button>
@@ -13,7 +13,7 @@ const ButtonSection = () => (
 );
 
 const FooterSection = () => (
-  <div className="flex align-items-center justify-content-center mt-8">
+  <div className="footer-section-div mt-8">
     <div className="landing-footer-nav">
       <a href="https://graphql.asia/2019" target="_blank" rel="noopener noreferrer">
         GraphQL Asia 2019<span className="right-arrow">→</span>

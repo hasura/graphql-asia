@@ -2,7 +2,9 @@
 
 .landing-div {
   min-height: 100vh;
+  max-height: 100%;
   width: 100%;
+  overflow-x: hidden;
   background: #202020;
   display: flex;
   justify-content: center;
@@ -31,7 +33,7 @@
   line-height: 96%;
   text-align: center;
   color: #a8a8a8;
-  margin-top: 30px;
+  margin-top: 3.5%;
 }
 
 .landing-cta-div {
@@ -70,8 +72,72 @@
   }
 }
 
+.landing-cta-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-btn {
+  margin-right: 24px;
+}
+
+.footer-section-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (min-width: 1000px) {
   #heading-desc {
     padding-right: 7%;
+  }
+}
+
+// Mobile optimizations
+
+@media screen and (max-width: 600px) {
+  .landing-div {
+    padding-top: 10%;
+  }
+
+  #graphql-asia-logo {
+    width: 180px;
+  }
+
+  #main-heading {
+    font-size: 50px;
+    margin-top: 4.2%;
+    line-height: 1.2;
+  }
+
+  #heading-desc {
+    font-size: 22px;
+  }
+
+  .footer-section-div {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 50px;
+  }
+
+  .landing-footer-nav {
+    border: none;
+    margin: 0 0 35px 0;
+    padding: 0;
+
+    a {
+      font-size: 18px;
+    }
+  }
+
+  .landing-cta-div {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .signup-btn {
+    margin: 0 0 20px 0;
   }
 }
