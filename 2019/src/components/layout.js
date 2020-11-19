@@ -30,7 +30,7 @@ class Layout extends React.Component {
         className={`body ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}
       >
         <Helmet
-          title="GraphQL Asia - Conference"
+          title="GraphQL Asia 2019 - Conference"
           meta={[
             {
               name: 'description',

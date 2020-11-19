@@ -30,7 +30,7 @@ if (process.env.GATSBY_STAGE && process.env.GATSBY_STAGE === 'production') {
 }
 module.exports = {
   siteMetadata: {
-    title: 'GraphQL Asia',
+    title: 'GraphQL Asia 2019',
     author: 'Tobias Meixner',
     description: "GraphQL Asia - Asia's first GraphQL conference",
   },
