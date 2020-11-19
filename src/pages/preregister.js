@@ -20,6 +20,10 @@ const IndexPage = ({ location }) => {
     }
   }, [location.search]);
 
+  if (isAliId) {
+    return <h1>Thank you for signing up!</h1>
+  }
+
   return (
     <div className="landing-div">
       <div className="form-wrapper-div">
