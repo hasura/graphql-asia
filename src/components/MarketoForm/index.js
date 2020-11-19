@@ -58,6 +58,9 @@ export function MarketoForm({ formId, marketoHost, id, styleClass, onSubmitCB })
         <p id="email-agreement-text">
           *By submitting this form, I agree to receive emails from Hasura
         </p>
+        <div className="policy-text mt-12">
+          &copy; 2020 Hasura Inc. All rights reserved | <a href="https://hasura.io/legal/hasura-privacy-policy/" target="_blank" rel="noopener noreferrer">Privacy policy</a>
+        </div>
       </div>
     </div>
   );
