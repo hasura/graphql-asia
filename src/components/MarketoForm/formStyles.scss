@@ -255,6 +255,15 @@
   color: #a8a8a8;
 }
 
+#email-agreement-text {
+  font-family: Darker Grotesque;
+  font-weight: 600;
+  font-size: 20px;
+  color: #717780;
+  margin: 8px 0px 30px 0px;
+  text-align: center;
+}
+
 @media (max-width: 767px) {
   .marketoFormWrapper {
     padding: 16px !important;

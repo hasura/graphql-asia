@@ -55,6 +55,9 @@ export function MarketoForm({ formId, marketoHost, id, styleClass, onSubmitCB })
           }
         } className={styleClass} id={`mktoForm_${formId}`}>
         </form>
+        <p id="email-agreement-text">
+          *By submitting this form, I agree to receive emails from Hasura
+        </p>
       </div>
     </div>
   );
