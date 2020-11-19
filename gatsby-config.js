@@ -6,6 +6,13 @@ module.exports = {
     author: `@graphqlasia`,
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-5559CHV",
+        includeInDevelopment: false,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: 'gatsby-plugin-webpack-bundle-analyser-v2',
@@ -34,12 +41,6 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/favicon.svg`, // This path is relative to the root of the site.
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: `UA-148609270-1`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
