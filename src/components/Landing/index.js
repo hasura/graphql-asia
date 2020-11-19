@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 import graphqlAsiaImg from '../../images/graphqlAsia.png';
 import twitterIcon from '../../images/twitter.svg';
@@ -6,9 +7,11 @@ import '../styles/landing.scss';
 
 const ButtonSection = () => (
   <div className="landing-cta-div mt-8">
-    <button className="btn-primary signup-btn">
-      Signup to know about early-bird tickets<span className="right-arrow">→</span>
-    </button>
+    <Link to="/preregister">
+      <button className="btn-primary signup-btn">
+        Signup to know about early-bird tickets<span className="right-arrow">→</span>
+      </button>
+    </Link>
     <button className="btn-secondary">Submit your CFP</button>
   </div>
 );
