@@ -56,6 +56,7 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 96%;
+    white-space: nowrap;
 
     color: #a8a8a8;
 
@@ -67,6 +68,7 @@
 
 #graphql-asia-link {
   border: none;
+
   a {
     line-height: 10px;
   }
@@ -86,6 +88,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -94,9 +97,9 @@
   }
 }
 
-// Mobile optimizations
+// Mobile optimizations + landscape mode.
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .landing-div {
     padding-top: 10%;
   }
