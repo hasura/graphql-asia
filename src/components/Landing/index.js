@@ -7,7 +7,9 @@ import '../styles/landing.scss';
 
 const ButtonSection = () => (
   <div className="landing-cta-div mt-7">
-    <button className="btn-primary">Submit a Talk</button>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdIKOPK9VaxhJptC7f2zk1PsvQMkxE7W7Jl1-xemCea9JpZng/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
+      <button className="btn-primary">Submit a Talk</button>
+    </a>
     <Link to="/preregister">
       <button className="btn-secondary signup-btn">
         Sign Up for Alerts<span className="right-arrow">→</span>
