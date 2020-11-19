@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-import graphqlAsiaImg from '../../images/graphqlAsia.png';
-import './formStyles.scss';
-
 const marketoScriptId = 'mktoForms';
 
 export function MarketoForm({ formId, marketoHost, id, styleClass, onSubmitCB }) {
@@ -41,27 +38,24 @@ export function MarketoForm({ formId, marketoHost, id, styleClass, onSubmitCB })
     document.getElementsByTagName('head')[0].appendChild(s);
   };
 
+  if (!isLoaded) {
+    return <h1>Loading....</h1>
+  }
+
   return (
-    <div className="landing-div">
-      <div className="form-wrapper-div">
-        <img src={graphqlAsiaImg} alt="graphql-asia-2021" id="graphql-asia-logo" />
-        <p id="form-desc">Online Conference | Feb 2021 </p>
-        <form onSubmit={
-          (e) => {
-            e.preventDefault();
-            if (onSubmitCB) {
-              onSubmitCB()
-            }
+    <div>
+      <form onSubmit={
+        (e) => {
+          e.preventDefault();
+          if (onSubmitCB) {
+            onSubmitCB()
           }
-        } className={styleClass} id={`mktoForm_${formId}`}>
-        </form>
-        <p id="email-agreement-text">
-          *By submitting this form, I agree to receive emails from Hasura
+        }
+      } className={styleClass} id={`mktoForm_${formId}`}>
+      </form>
+      <p id="email-agreement-text">
+        *By submitting this form, I agree to receive emails from Hasura
         </p>
-        <div className="policy-text mt-12">
-          &copy; 2020 Hasura Inc. All rights reserved | <a href="https://hasura.io/legal/hasura-privacy-policy/" target="_blank" rel="noopener noreferrer">Privacy policy</a>
-        </div>
-      </div>
     </div>
   );
 }
