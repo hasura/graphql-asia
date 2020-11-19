@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+
+import graphqlAsiaImg from '../../images/graphqlAsia.png';
 import './formStyles.scss';
 
 const marketoScriptId = 'mktoForms';
@@ -40,15 +42,20 @@ export function MarketoForm({ formId, marketoHost, id, styleClass, onSubmitCB })
   };
 
   return (
-    <div>
-      <form onSubmit={
-        (e) => {
-          e.preventDefault();
-          if (onSubmitCB) {
-            onSubmitCB()
+    <div className="landing-div">
+      <div className="form-wrapper-div">
+        <img src={graphqlAsiaImg} alt="graphql-asia-2021" id="graphql-asia-logo" />
+        <p id="form-desc">Online Conference | Feb 2021 </p>
+        <form onSubmit={
+          (e) => {
+            e.preventDefault();
+            if (onSubmitCB) {
+              onSubmitCB()
+            }
           }
-        }
-      } className={styleClass} id={`mktoForm_${formId}`}></form>
+        } className={styleClass} id={`mktoForm_${formId}`}>
+        </form>
+      </div>
     </div>
   );
 }

@@ -1,12 +1,17 @@
+@import '../styles/landing.scss';
+
+.form-wrapper-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .marketoFormWrapper {
   width: 100% !important;
   max-width: 550px;
   border-radius: 8px;
-  background-color: #fff;
-  padding: 32px;
-  margin: 0 auto;
-  position: relative;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.16);
+  background-color: transparent;
+
   .mktoFormRow {
     .mktoFieldDescriptor {
       float: none;
@@ -34,9 +39,10 @@
           width: 100% !important;
           height: 48px;
           border-radius: 5px;
-          color: #505050;
+          color: #fff;
           font-weight: 400;
-          border: solid 1px #dddddd;
+          border: solid 1.5px transparent;
+          background: #474747 !important;
           padding: 0 0 !important;
           text-indent: 12px;
           font-size: 16px;
@@ -50,7 +56,7 @@
             position: absolute; // take it out of document flow
             opacity: 0; // hide it
             & + label:before {
-              border: 2px solid #e4e4e4;
+              border: 1.5px solid #f81872;
             }
             & + label {
               position: relative;
@@ -58,7 +64,7 @@
               margin: 16px 0px;
               display: flex;
               align-items: center;
-              color: #717780;
+              color: #f81872;
               font-size: 14px;
               font-family: 'Poppins';
               font-weight: 400;
@@ -88,16 +94,16 @@
             // Disabled box.
             &:disabled + label:before {
               box-shadow: none;
-              background: #ddd;
+              background: #f81872;
             }
             // Box hover
             &:hover + label:before {
-              // border: 2px solid #2EB67D;
+              // border: 1.5px solid #2EB67D;
             }
             // Box checked
             &:checked + label:before {
               // background: #5C94C8;
-              // border: 2px solid #5C94C8;
+              // border: 1.5px solid #5C94C8;
             }
             &:checked + .checkBoxLabel {
               color: #5c94c8;
@@ -136,13 +142,13 @@
         .mktoField:hover,
         textarea:hover,
         select:hover {
-          border: 1px solid #111b29;
+          border: 1.5px solid #f81872;
         }
         .mktoField:focus,
         textarea:focus,
         select:focus {
           outline: none;
-          border: 1px solid #0093a5;
+          border: 1.5px solid #f81872;
         }
         .mktoField:-webkit-autofill {
           -webkit-animation-name: autofill;
@@ -156,19 +162,20 @@
         .mktoField:-webkit-autofill:focus,
         .mktoField:-webkit-autofill:active {
           -webkit-box-shadow: 0 0 0 35px #fff inset !important;
-          -webkit-text-fill-color: #505050 !important;
+          -webkit-text-fill-color: #fff !important;
           font-size: 16px;
-          caret-color: #505050;
+          caret-color: #ffff;
           color: #fff !important;
         }
 
         .mktoField:-internal-autofill-selected {
-          color: #505050 !important;
+          color: #fff !important;
           font-size: 16px;
         }
       }
     }
   }
+
   .mktoButtonRow {
     display: block;
     .mktoButtonWrap {
@@ -181,35 +188,62 @@
         width: 100%;
         border: 0;
         cursor: pointer;
-        transition: all 0.2s ease-in-out;
-        background-color: rgba(92, 148, 200, 0.86) !important;
+        // transition: all 0.1s ease-in-out;
         background-image: none !important;
+        background: linear-gradient(154.02deg, #f81872 23.56%, #27216e 145.22%) !important;
         color: #fff !important;
         transition: all 0.2s ease-in-out;
         border: 0 !important;
-        &:hover {
-          background-color: rgba(92, 148, 200, 1);
-        }
         &:focus {
           outline: none;
         }
         &:hover {
-          transform: scale(0.98);
+          // transform: scale(0.98);
+          box-shadow: rgba(248, 24, 114, 0.24) 0px 6px 10px;
         }
       }
     }
   }
 }
 
-.webinarMarAuto {
-  margin: 0 0;
-  margin-left: auto;
-  max-width: 500px;
+#form-desc {
+  font-family: Darker Grotesque;
+  font-weight: 700;
+  margin: 16px 0 25px 0;
+  font-size: 24px;
+  color: #a8a8a8;
+}
+
+::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+::-moz-placeholder {
+  color: #a8a8a8;
+}
+:-ms-input-placeholder {
+  color: #a8a8a8;
+}
+:-moz-placeholder {
+  color: #a8a8a8;
 }
 
 @media (max-width: 767px) {
   .marketoFormWrapper {
     padding: 16px !important;
     margin-top: 20px !important;
+  }
+
+  .form-wrapper-div {
+    width: 95%;
+  }
+}
+
+@media (min-width: 780px) {
+  .marketoFormWrapper {
+    min-width: 500px;
+  }
+
+  .webinarMarAuto {
+    max-width: 500px;
   }
 }
