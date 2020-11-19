@@ -87,7 +87,7 @@ a,
 a:hover,
 a:focus,
 a:visited {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 // Mobile optimizations
