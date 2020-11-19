@@ -1,6 +1,7 @@
 import React from 'react';
 
 import graphqlAsiaImg from '../../images/graphqlAsia.png';
+import twitterIcon from '../../images/twitter.svg';
 import '../styles/landing.scss';
 
 const ButtonSection = () => (
@@ -26,6 +27,7 @@ const FooterSection = () => (
     </div>
     <div className="landing-footer-nav" id="graphql-asia-link">
       <a href="https://twitter.com/graphqlasia" target="_blank" rel="noopener noreferrer">
+        <img src={twitterIcon} alt="twitter-graphqlasia" id="twitter-icon" />
         @graphqlasia
         </a>
     </div>
