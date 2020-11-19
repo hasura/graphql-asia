@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 6.5%;
+  padding-top: 5%;
 }
 
 #graphql-asia-logo {
@@ -22,7 +22,7 @@
   font-size: 100px;
   color: #f8f8f8;
   text-align: center;
-  margin-top: 4.2%;
+  margin-top: 3%;
   font-family: 'Darker Grotesque';
 }
 
@@ -34,10 +34,6 @@
   text-align: center;
   color: #a8a8a8;
   margin-top: 3.5%;
-}
-
-.landing-cta-div {
-  margin-top: 9%;
 }
 
 .right-arrow {
@@ -89,11 +85,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
 }
 
 #twitter-icon {
   margin-right: 8px;
+}
+
+.policy-text {
+  font-family: Darker Grotesque;
+  font-weight: 600;
+  font-size: 20px;
+  color: #717780;
+  margin-bottom: 30px;
+  text-align: center;
+
+  a {
+    color: #a8a8a8 !important;
+
+    &:hover {
+      color: #f81872 !important;
+    }
+  }
 }
 
 @media screen and (min-width: 1000px) {

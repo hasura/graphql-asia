@@ -6,7 +6,7 @@ import twitterIcon from '../../images/twitter.svg';
 import '../styles/landing.scss';
 
 const ButtonSection = () => (
-  <div className="landing-cta-div mt-8">
+  <div className="landing-cta-div mt-7">
     <button className="btn-primary">Submit a Talk</button>
     <Link to="/preregister">
       <button className="btn-secondary signup-btn">
@@ -17,22 +17,27 @@ const ButtonSection = () => (
 );
 
 const FooterSection = () => (
-  <div className="footer-section-div mt-8">
-    <div className="landing-footer-nav">
-      <a href="https://graphql.asia/2019" target="_blank" rel="noopener noreferrer">
-        GraphQL Asia 2019<span className="right-arrow">→</span>
-      </a>
-    </div>
-    <div className="landing-footer-nav">
-      <a href="https://graphql.asia" target="_blank" rel="noopener noreferrer">
-        GraphQL Asia 2020<span className="right-arrow">→</span>
-      </a>
-    </div>
-    <div className="landing-footer-nav" id="graphql-asia-link">
-      <a href="https://twitter.com/graphqlasia" target="_blank" rel="noopener noreferrer">
-        <img src={twitterIcon} alt="twitter-graphqlasia" id="twitter-icon" />
+  <div className="flex flex-direction-column align-items-center">
+    <div className="footer-section-div mt-7">
+      <div className="landing-footer-nav">
+        <a href="https://graphql.asia/2019" target="_blank" rel="noopener noreferrer">
+          GraphQL Asia 2019<span className="right-arrow">→</span>
+        </a>
+      </div>
+      <div className="landing-footer-nav">
+        <a href="https://graphql.asia" target="_blank" rel="noopener noreferrer">
+          GraphQL Asia 2020<span className="right-arrow">→</span>
+        </a>
+      </div>
+      <div className="landing-footer-nav" id="graphql-asia-link">
+        <a href="https://twitter.com/graphqlasia" target="_blank" rel="noopener noreferrer">
+          <img src={twitterIcon} alt="twitter-graphqlasia" id="twitter-icon" />
         @graphqlasia
         </a>
+      </div>
+    </div>
+    <div className="policy-text mt-7">
+      &copy; 2020 Hasura Inc. All rights reserved | <a href="https://twitter.com/graphqlasia" target="_blank" rel="noopener noreferrer">Privacy policy</a>
     </div>
   </div>
 );
