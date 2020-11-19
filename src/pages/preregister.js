@@ -21,7 +21,7 @@ const IndexPage = ({ location }) => {
   }, [location.search]);
 
   if (isAliId) {
-    return <h1>Thank you for signing up!</h1>
+    return <h1 id="marketo-form-id">Thank you for signing up!</h1>
   }
 
   return (
