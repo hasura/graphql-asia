@@ -33,11 +33,11 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "npx --node-arg '-r esm' gatsby build",
+    "build": "npx --node-arg '-r esm' gatsby build --prefix-paths",
     "develop": "npx --node-arg '-r esm' gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
-    "serve": "gatsby serve",
+    "serve": "gatsby serve --prefix-paths",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "repository": {
