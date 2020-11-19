@@ -16,7 +16,7 @@ const IndexPage = ({ location }) => {
 
     if (searchAliId || searchAliId === '') {
       setIsAliId(true);
-      document.getElementById('marketo-form-id').scrollIntoView({ behavior: "smooth", block: "start", inline: "start" });
+      // document.getElementById('marketo-form-id').scrollIntoView({ behavior: "smooth", block: "start", inline: "start" });
     }
   }, [location.search]);
 
