@@ -7,12 +7,12 @@ import '../styles/landing.scss';
 
 const ButtonSection = () => (
   <div className="landing-cta-div mt-8">
+    <button className="btn-primary">Submit a Talk</button>
     <Link to="/preregister">
-      <button className="btn-primary signup-btn">
-        Signup to know about early-bird tickets<span className="right-arrow">→</span>
+      <button className="btn-secondary signup-btn">
+        Sign Up for Alerts<span className="right-arrow">→</span>
       </button>
     </Link>
-    <button className="btn-secondary">Submit your CFP</button>
   </div>
 );
 

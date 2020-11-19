@@ -46,7 +46,7 @@ h6,
 .btn {
   padding: 0 44px;
   width: auto;
-  height: 80px;
+  height: 79px;
   white-space: nowrap;
   line-height: 70px;
   border-radius: 8px;
@@ -55,6 +55,7 @@ h6,
   font-weight: 600;
   font-size: 24px;
   color: #f8f8f8;
+  min-width: 254px;
 
   &:hover {
     box-shadow: rgba(248, 24, 114, 0.24) 0px 6px 10px;
@@ -102,7 +103,8 @@ a:focus-visible {
     line-height: 50px;
     font-size: 16px;
     text-align: center;
-    width: 92%;
+    min-width: 300px;
+    max-width: 350px;
   }
 
   .right-arrow {
