@@ -1,5 +1,5 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from 'react'
+import PropTypes from 'prop-types'
 
 export default class HTML extends React.Component {
   render() {
@@ -23,8 +23,8 @@ export default class HTML extends React.Component {
           />
           {this.props.postBodyComponents}
           <script
-  dangerouslySetInnerHTML={{
-    __html: `
+            dangerouslySetInnerHTML={{
+              __html: `
     _linkedin_partner_id = "541067";
     window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
     window._linkedin_data_partner_ids.push(_linkedin_partner_id);
@@ -35,8 +35,8 @@ export default class HTML extends React.Component {
     b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
     s.parentNode.insertBefore(b, s);})();
         `,
-  }}
-/>
+            }}
+          />
         </body>
       </html>
     )

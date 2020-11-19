@@ -8,65 +8,62 @@ const Speaker = (props) => {
     <div className="speakerList">
       <div className="profile">
         <div className="speakerImage">
-          <img src={props.speakerImage} alt="profile"/>
+          <img src={props.speakerImage} alt="profile" />
         </div>
         <div className="speakerProfile">
           <div className="profileWrapper">
             <div className="profileName">
-              {
-                props.speakerId?
-              <Link to={`/speaker/${props.speakerId}`}>
-              {props.speakerName}
-              </Link>
-              :
-              props.speakerName
-              }
-              
+              {props.speakerId ? (
+                <Link to={`/speaker/${props.speakerId}`}>
+                  {props.speakerName}
+                </Link>
+              ) : (
+                props.speakerName
+              )}
             </div>
           </div>
-          <div className="profielBio">
-            {props.speakerBio}
-          </div>
+          <div className="profielBio">{props.speakerBio}</div>
         </div>
       </div>
     </div>
   )
-};
-const LandingSpeaker = ({data}) => {
+}
+const LandingSpeaker = ({ data }) => {
   var landingSpeakerList = []
-  const sortedSpeakers = [...speakerData].filter((v=>v.featured===true)).sort((a,b)=>a.sortOrder-b.sortOrder)  
-  sortedSpeakers.forEach(speaker => {
-    const speakerData =  speaker
+  const sortedSpeakers = [...speakerData]
+    .filter((v) => v.featured === true)
+    .sort((a, b) => a.sortOrder - b.sortOrder)
+  sortedSpeakers.forEach((speaker) => {
+    const speakerData = speaker
     try {
-    if(data[speakerData.speakerPicture+'1']){
-      landingSpeakerList.push(
-      <Speaker 
-        key={'s'+speakerData.speakerId}
-        speakerId={speakerData.speakerId}
-        speakerName={speakerData.speakerName} 
-        speakerImage={data[speakerData.speakerPicture+'1'].childImageSharp.fluid.src} 
-        speakerBio={speakerData.speakerPosition}
-      />
-    )
-    }      
+      if (data[speakerData.speakerPicture + '1']) {
+        landingSpeakerList.push(
+          <Speaker
+            key={'s' + speakerData.speakerId}
+            speakerId={speakerData.speakerId}
+            speakerName={speakerData.speakerName}
+            speakerImage={
+              data[speakerData.speakerPicture + '1'].childImageSharp.fluid.src
+            }
+            speakerBio={speakerData.speakerPosition}
+          />
+        )
+      }
     } catch (error) {
       console.error(error)
-    }    
-  });
+    }
+  })
   return (
     <section id="landingSpeaker" className="major">
       <div className="inner">
         <header className="major">
-            <h2>
-              Speakers 2019
-            </h2>
+          <h2>Speakers 2019</h2>
         </header>
-        <div className="speakerListWrppar">
-          {landingSpeakerList}          
-        </div>
+        <div className="speakerListWrppar">{landingSpeakerList}</div>
       </div>
     </section>
-)}
+  )
+}
 
 const query = graphql`
   query {
@@ -231,7 +228,9 @@ const query = graphql`
         }
       }
     }
-    SidharthaChatterjee1: file(relativePath: { eq: "SidharthaChatterjee.jpg" }) {
+    SidharthaChatterjee1: file(
+      relativePath: { eq: "SidharthaChatterjee.jpg" }
+    ) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
@@ -293,15 +292,14 @@ const query = graphql`
           ...GatsbyImageSharpFluid
         }
       }
-    }  
-      
+    }
   }
 `
 
-export default props => (
+export default (props) => (
   <StaticQuery
     query={query}
-    render={data => <LandingSpeaker data={data} {...props} />}
+    render={(data) => <LandingSpeaker data={data} {...props} />}
   />
 )
 
