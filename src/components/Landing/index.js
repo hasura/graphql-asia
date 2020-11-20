@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import graphqlAsiaImg from '../../images/graphqlAsia.png';
+import graphqlAsiaImg from '../../images/graphqlAsiaLogo.png';
 import twitterIcon from '../../images/twitter.svg';
 import '../styles/landing.scss';
 
