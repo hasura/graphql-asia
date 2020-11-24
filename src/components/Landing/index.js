@@ -39,7 +39,7 @@ const FooterSection = () => (
       </div>
     </div>
     <div className="policy-text mt-7">
-      &copy; 2020 Hasura Inc. All rights reserved | <a href="https://hasura.io/legal/hasura-privacy-policy/" target="_blank" rel="noopener noreferrer">Privacy policy</a>
+      &copy; {(new Date().getFullYear())} Hasura Inc. All rights reserved | <a href="https://hasura.io/legal/hasura-privacy-policy/" target="_blank" rel="noopener noreferrer">Privacy policy</a> | <Link to='/code-of-conduct/'>Code of Conduct</Link>
     </div>
   </div>
 );
