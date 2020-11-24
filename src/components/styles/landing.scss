@@ -35,7 +35,26 @@
   color: #a8a8a8;
   margin-top: 3.5%;
 }
-
+.heading-desc-small {
+  font-family: Darker Grotesque;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  color: #a8a8a8;
+  margin-top: 3.5%;
+  a {
+    color: #f81872;
+    &:hover {
+      color: #f81872;
+    }
+  }
+}
+.textLeft {
+  text-align: left !important;
+}
+.whiteColor {
+  color: #fff !important;
+}
 .right-arrow {
   margin-left: 7px;
   font-size: 20px;
