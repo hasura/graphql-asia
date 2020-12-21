@@ -1,13 +1,15 @@
 import React from 'react';
 
-import { Landing } from '../components/Landing';
+import TopBanner from '../components/Homepage/TopBanner';
+import Conference from '../components/Homepage/Conference';
 import { SEO } from '../components/seo';
-
-const IndexPage = () => (
-  <div>
+import Layout from '../components/Layout';
+const IndexPage = props => (
+  <Layout>
     <SEO title="GraphQL Asia 2021" />
-    <Landing />
-  </div>
+    <TopBanner/>
+    <Conference />
+  </Layout>
 );
 
 export default IndexPage;

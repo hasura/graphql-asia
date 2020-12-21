@@ -1,0 +1,134 @@
+body {
+  font-family: 'Darker Grotesque';
+  font-size: 20px;
+  font-weight: bold;
+}
+.mainWrapper {
+  max-width: 1248px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.mainGridWrapper {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 0px 100px;
+}
+.sectionWrapperBottom {
+  padding-bottom: 100px;
+}
+.sectionWrapper {
+  padding: 80px 0;
+}
+.lightModeBorBottom {
+  border-bottom: 1px solid #181818;
+}
+.darkModeBorBottom {
+  border-bottom: 1px solid #F5E7D3;
+}
+.mainTitle {
+  font-size: 96px;
+  color: #C63939;
+  font-weight: bold;
+  line-height: 96%;
+}
+.articleTitle {
+  font-size: 64px;
+  color: #C63939;
+}
+.articleSubTitle {
+  font-size: 40px;
+  color: #C63939;
+}
+.articleSectionTitle {
+  font-size: 32px;
+}
+.commonLink {
+  font-size: 24px;
+}
+.articleDesc {
+  font-size: 20px;
+  line-height: 170%;
+}
+.commonBtn {
+  width: 210px;
+  font-size: 18px;
+  line-height: 170%;
+  text-align: center;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15);
+  transition: all .3s ease-in-out;
+  border: 0;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    margin-right: 8px;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+.ml-20 {
+  margin-left: 20px;
+}
+.mr-20 {
+  margin-right: 20px;
+}
+.darkBtn {
+  background-color: #C63939;
+  color: #F5E7D3;
+  &:hover {
+    background-color: #F5E7D3;
+    color: #C63939;
+  }
+}
+.lightBtn {
+  background-color: #F5E7D3;
+  color: #C63939;
+  &:hover {
+    background-color: #FFFFFF;
+  }
+}
+.lightModeLayout, .darkModeLayout {
+  background-repeat: repeat;
+  min-height: 100vh;
+}
+.lightModeLayout {
+  background-color: #F5E7D3;
+  background-image: url('./images/dark-sqaure.svg');
+}
+.darkModeLayout {
+  background-color: #000;
+  background-image: url('./images/dark-sqaure.svg');
+}
+.leftSidebarWrapper {
+  position: fixed;
+}
+.socialIconWrapper {
+  position: fixed;
+  bottom: 30px;
+}
+.topBannerWrapper {
+  width: 550px;
+  margin: 0 auto;
+  .mainTitle {
+    padding-bottom: 48px;
+  }
+  .articleDesc {
+    padding-bottom: 60px;
+  }
+  .buttonWrapper {
+    display: flex;
+  }
+}
+.conferenceWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 170px;
+  .articleSubTitle {
+    padding-bottom: 24px;
+  }
+  .articleDesc {
+    padding-bottom: 60px;
+  }
+}
