@@ -1,9 +1,9 @@
 import React from "react";
 import '../Common/Styles.scss';
+const lightRrrow = require('../Common/images/light-arrow.svg')
 const Conference = props => {
-  console.log(props)
   return (
-    <div className='conferenceWrapper sectionWrapper'>
+    <div id='conference' className={'conferenceWrapper sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom')}>
       <div>
         <div className='articleSubTitle'>The Conference</div>
         <div className='articleDesc'>
@@ -13,12 +13,22 @@ const Conference = props => {
           Check out our past conferences for more on us.
         </div>
       </div>
-      <div>
+      <div className='alignSelfEnd'>
         <div className='commonLinkWrapper'>
-          <div className='commonLink'>
-            <a>
+          <div className='commonLink pr-90'>
+            <a href='https://graphql.asia/2019/' target='_blank' rel='noopener noreferrer'>
               GraphQL 19
-              <div className='arrow'></div>
+              <div className='arrow'>
+                <img src={lightRrrow} alt='Arrow'/>
+              </div>
+            </a>
+          </div>
+          <div className='commonLink'>
+            <a href='https://graphql.asia/2020/' target='_blank' rel='noopener noreferrer'>
+              GraphQL 20
+              <div className='arrow'>
+                <img src={lightRrrow} alt='Arrow'/>
+              </div>
             </a>
           </div>
         </div>
