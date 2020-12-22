@@ -1,6 +1,7 @@
 import React from "react";
 import '../Common/Styles.scss';
 const lightRrrow = require('../Common/images/light-arrow.svg')
+const darkRrrow = require('../Common/images/dark-arrow.svg')
 const Conference = props => {
   return (
     <div id='conference' className={'conferenceWrapper sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom')}>
@@ -19,7 +20,7 @@ const Conference = props => {
             <a href='https://graphql.asia/2019/' target='_blank' rel='noopener noreferrer'>
               GraphQL 19
               <div className='arrow'>
-                <img src={lightRrrow} alt='Arrow'/>
+                <img src={(!props.isLightMode) ? lightRrrow : darkRrrow} alt='Arrow'/>
               </div>
             </a>
           </div>
@@ -27,7 +28,7 @@ const Conference = props => {
             <a href='https://graphql.asia/2020/' target='_blank' rel='noopener noreferrer'>
               GraphQL 20
               <div className='arrow'>
-                <img src={lightRrrow} alt='Arrow'/>
+                <img src={(!props.isLightMode) ? lightRrrow : darkRrrow} alt='Arrow'/>
               </div>
             </a>
           </div>
