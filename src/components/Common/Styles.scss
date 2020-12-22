@@ -72,6 +72,7 @@
       transition: all .3s ease-in-out;
     }
     &:hover {
+      color: #C63939;
       .arrow {
         transform: translateX(4px);
       }
