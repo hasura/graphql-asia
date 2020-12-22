@@ -18,7 +18,9 @@ const LeftSidebar = ({isLightMode}) => {
   return (
     <div className='leftSidebarWrapper'>
       <div className='brand'>
-        <img src={(!isLightMode) ? brandDarkMode : brandLightMode} alt='Brand' />
+        <Link to='/'>
+          <img src={(!isLightMode) ? brandDarkMode : brandLightMode} alt='Brand' />
+        </Link>
       </div>
       <div className='commonLink'>
         24th & 25th Feb’21

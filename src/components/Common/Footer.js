@@ -9,6 +9,9 @@ const Footer = props => {
         <li className={((!props.isLightMode) ? 'darkModeBorRight' : 'lightModeBorRight')}><a href='mailto:events@hasura.io'>Sponsor GraphQL Asia 2021</a></li>
         <li><a href='mailto:events@hasura.io'>Contact us</a></li>
       </ul>
+      <div className='articleDesc'>
+        © {(new Date().getFullYear())} Hasura Inc. All rights reserved
+      </div>
     </div>
   );
 };
