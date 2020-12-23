@@ -3,7 +3,7 @@ import {Link} from 'gatsby';
 import '../Common/Styles.scss';
 const CodeOfConductTopBanner = props => {
   return (
-    <div className={'codeOfContentWrapper sectionWrapperBottom mt-40 ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom')}>
+    <div className='codeOfContentWrapper sectionWrapperBottom mt-40'>
       <div className='mainSubTitle'>
         Code of Conduct
       </div>

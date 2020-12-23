@@ -2,7 +2,6 @@
   width: 100% !important;
   max-width: 600px;
   position: relative;
-  box-shadow: 0 6px 24px rgba(0,0,0,.1);
   .mktoFormRow {
     .mktoFieldDescriptor {
       float: none;
@@ -18,7 +17,7 @@
         }
         .mktoLabel {
           display: none;
-          font-size: 16px;
+          font-size: 1em;
           line-height: 220%;
           font-weight: 400;
           color: #717780;
@@ -36,7 +35,7 @@
           border: 1px solid #FFFFFF;
           padding: 0 0 !important;
           text-indent: 12px;
-          font-size: 16px;
+          font-size: 1em;
           z-index: 1;
         }
         .mktoCheckboxList, .mktoRadioList {
@@ -46,7 +45,7 @@
             position: absolute; // take it out of document flow
             opacity: 0; // hide it
             & + label:before {
-              border: 2px solid #E4E4E4;
+              border: 1px solid #717780;
             }
             & + label {
               position: relative;
@@ -55,9 +54,9 @@
               display: flex;
               align-items: center;
               color: #717780;
-              font-size: 14px;
-              font-family: 'Poppins';
-              font-weight: 400;
+              font-size: 1.25em;
+              font-family: 'Darker Grotesque';
+              font-weight: bold;
               z-index: 1;
               &:first-child {
                 margin-top: 0;
@@ -68,8 +67,8 @@
               content: '';
               display: inline-block;
               vertical-align: text-top;
-              width: 20px;
-              height: 20px;
+              width: 24px;
+              height: 24px;
               background: transparent;
               border-radius: 4px;
               margin-right: 16px;
@@ -102,11 +101,12 @@
             &:checked + label:after {
               content: '';
               position: absolute;
-              left: 7px;
+              left: 9px;
               top: 4px;
               width: 6px;
-              height: 10px;
-              border: solid #2EB67D;
+              height: 12px;
+              border: solid #717780;
+              border-width: 0 2px 2px 0;
               -webkit-transform: rotate(45deg);
               -ms-transform: rotate(45deg);
               transform: rotate(45deg);
@@ -155,7 +155,7 @@
           -webkit-animation-fill-mode: both;
           -webkit-box-shadow: 0 0 0px 1000px white inset;
           background-color: transparent;
-          font-size: 16px;
+          font-size: 1em;
         }
         .mktoField:-webkit-autofill,
         .mktoField:-webkit-autofill:hover,
@@ -163,14 +163,14 @@
         .mktoField:-webkit-autofill:active  {
           -webkit-box-shadow: 0 0 0 35px #fff inset !important;
           -webkit-text-fill-color: #505050 !important;
-          font-size: 16px;
+          font-size: 1em;
           caret-color: #505050;
           color: #fff !important;
         }
 
         .mktoField:-internal-autofill-selected {
           color: #505050 !important;
-          font-size: 16px;
+          font-size: 1em;
         }
       }
     }
@@ -181,7 +181,7 @@
       margin-left: 0 !important;
       .mktoButton {
         padding: 5px 20px !important;
-        font-size: 18px !important;
+        font-size: 1.25em !important;
         font-weight: normal;
         width: 100%;
         border: 0;

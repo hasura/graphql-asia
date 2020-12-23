@@ -11,7 +11,7 @@ const Partners = props => {
     <div>
       <div id='sponsor-us' className={'communityPartnersWrapper sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom')}>
         <div className='articleTitle'>Sponsor us</div>
-        <div className='articleDesc'>
+        <div className='articleSectionTitle'>
           If you are interested in sponsoring GraphQL Asia,<br/>reach out to Harsha at <a href='mailto:events@hasura.io'>events@hasura.io</a>
         </div>
       </div>

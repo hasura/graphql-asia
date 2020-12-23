@@ -22,9 +22,6 @@ const LeftSidebar = ({isLightMode}) => {
           <img src={(!isLightMode) ? brandDarkMode : brandLightMode} alt='Brand' />
         </Link>
       </div>
-      <div className='commonLink'>
-        24th & 25th Feb’21
-      </div>
       <ul className='articleDesc'>
         <li><a href='https://docs.google.com/forms/d/e/1FAIpQLSdIKOPK9VaxhJptC7f2zk1PsvQMkxE7W7Jl1-xemCea9JpZng/viewform?usp=sf_link' target='_blank' rel='noopener noreferrer'>Submit a Proposal</a></li>
         <li><Link to='#conference/'>Previous Conferences</Link></li>

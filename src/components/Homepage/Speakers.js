@@ -28,11 +28,13 @@ const Speakers = props => {
       <div className='speakersHeader'>
         <div className='articleTitle'>People who’ve spoken at GQLA in the past.</div>
         <div className='buttonWrapper alignSelfEnd'>
-          <button className='commonBtn darkBtn'>
-            <img className='submitIcon' src={submitBtnIcon} alt='Icon' />
-            <img className='submitIconHover' src={submitBtnIconHover} alt='Icon' />
-            Submit a Proposal
-          </button>
+          <a href='https://docs.google.com/forms/d/e/1FAIpQLSdIKOPK9VaxhJptC7f2zk1PsvQMkxE7W7Jl1-xemCea9JpZng/viewform?usp=sf_link' target='_blank' rel='noopener noreferrer'>
+            <button className='commonBtn darkBtn'>
+              <img className='submitIcon' src={submitBtnIcon} alt='Icon' />
+              <img className='submitIconHover' src={submitBtnIconHover} alt='Icon' />
+              Submit a Proposal
+            </button>
+          </a>
         </div>
       </div>
       <div className='speakersListWrapper threeColumsWrapper'>

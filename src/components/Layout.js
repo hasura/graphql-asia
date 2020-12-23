@@ -53,8 +53,8 @@ const Layout = ({ children }) => {
   }
   return (
     <div className={((!isLightMode) ? 'darkModeLayout' : 'lightModeLayout')}>
-      <img className='pattern' src={(!isLightMode) ? patternDark : patternLight} alt='Pattern' />
       <div className='mainWrapper'>
+        <img className='pattern' src={(!isLightMode) ? patternDark : patternLight} alt='Pattern' />
         <div className='modeChangeWrapper'>
           <img
             onClick={()=>{removeDarkMode()}}
@@ -77,7 +77,7 @@ const Layout = ({ children }) => {
                 </React.Fragment>
               ))
             }
-            <Footer />
+            <Footer isLightMode = {isLightMode}/>
           </div>
         </div>
       </div>
