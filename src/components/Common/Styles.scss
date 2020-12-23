@@ -552,6 +552,43 @@ ul {
 .notFoundWrapper {
   min-height: 500px;
 }
+@media (min-width: 901px) and (max-width: 1439px) {
+  .commonBtn {
+    font-size: 18px;
+  }
+  .mainTitle {
+    font-size: 72px;
+  }
+  .modeChangeWrapper {
+    right: 32px;
+  }
+  .articleSubTitle, .articleTitle {
+    font-size: 38px;
+  }
+  .articleSectionTitle {
+    font-size: 24px;
+  }
+  .articleDesc {
+    font-size: 18px;
+  }
+  .commonLink {
+    font-size: 22px;
+    a {
+      .arrow {
+        width: 12px;
+      }
+    }
+  }
+  .mainWrapper {
+    padding: 100px 32px;
+    .pattern {
+      width: 120px;
+    }
+  }
+  .codeOfContentWrapper {
+    width: 500px;
+  }
+}
 @media(max-width: 900px) {
   .mobileShow {
     display: block !important;
@@ -578,6 +615,9 @@ ul {
   }
   .articleSubTitle, .articleTitle {
     font-size: 38px;
+  }
+  .mainSubTitle {
+    font-size: 40px;
   }
   .articleSectionTitle {
     font-size: 24px;
@@ -724,6 +764,21 @@ ul {
     img {
       width: 100%;
     }
+  }
+  .codeOfContentWrapper {
+    width: 100%;
+    .buttonWrapper {
+      position: fixed;
+      bottom: 32px;
+      width: calc(100% - 64px);
+      z-index: 1;
+      .commonBtn {
+        width: 100%;
+      }
+    }
+  }
+  .registerWrapper {
+    width: 100%;
   }
 }
 @media(min-width: 1440px) {

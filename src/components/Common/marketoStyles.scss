@@ -256,15 +256,11 @@
     }
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 900px) {
   .marketoFormWrapper {
-    padding: 32px;
-  }
-}
-@media (max-width: 767px) {
-  .marketoFormWrapper {
-    padding: 24px !important;
+    padding: 0 !important;
     margin-top: 20px !important;
+    max-width: 600px;
   }
   .subscribeNewsletterForm {
     display: block;
