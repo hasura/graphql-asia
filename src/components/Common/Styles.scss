@@ -2,7 +2,7 @@ body {
   box-sizing: border-box;
   font-family: 'Darker Grotesque' !important;
   font-size: 1.25em;
-  font-size: 1.1vw;
+  font-size: 1.1vw !important;
   font-weight: bold;
 }
 .mainWrapper {
@@ -453,8 +453,11 @@ ul {
   }
   .partnersBrandWrapper {
     padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 100px;
     img {
-      margin-right: 100px;
+      width: 100%;
     }
   }
 }
@@ -580,6 +583,25 @@ ul {
   .registerWrapper {
     width: 1000px;
   }
+  .speakersWrapper {
+    .speakersHeader {
+      grid-template-columns: 1fr 450px;
+    }
+  }
+  .joinGraphQLWrapper {
+    grid-template-columns: 1fr 350px;
+  }
+  .commonLink {
+    a {
+      .arrow {
+        width: 50px;
+        img {
+          width: 20px;
+          margin-left: 24px;
+        }
+      }
+    }
+  }
 }
 @media(min-width: 3440px) {
   .lightModeLayout, .darkModeLayout {
@@ -599,5 +621,47 @@ ul {
   }
   .registerWrapper {
     width: 1000px;
+  }
+  .speakersWrapper {
+    .speakersHeader {
+      grid-template-columns: 1fr 450px;
+    }
+  }
+  .joinGraphQLWrapper {
+    grid-template-columns: 1fr 400px;
+  }
+  .threeColumsWrapper {
+    .threeColumsList:nth-child(3n + 4) {
+      margin-top: -90px;
+    }
+    .threeColumsList:nth-child(3n + 2) {
+      margin-top: 30px;
+    }
+    .threeColumsList:nth-child(3n) {
+      margin-top: 160px;
+    }
+    .threeColumsList:nth-child(2) {
+      margin-top: 160px;
+    }
+    .threeColumsList:nth-child(3) {
+      margin-top: 360px;
+    }
+  }
+  .commonBtn {
+    img {
+      width: 35px;
+      margin-right: 24px;
+    }
+  }
+  .socialIconWrapper {
+    a {
+      width: 50px;
+      margin: 0 24px;
+    }
+  }
+  .modeChangeWrapper {
+    img {
+      width: 80px;
+    }
   }
 }

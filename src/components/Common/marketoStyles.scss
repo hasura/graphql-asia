@@ -278,3 +278,63 @@
     }
   }
 }
+@media(min-width: 2560px) {
+  .marketoFormWrapper {
+    .mktoFormRow {
+      .mktoFieldDescriptor {
+        .mktoFieldWrap {
+          .mktoLabel {
+            font-size: 1.5em;
+          }
+          .mktoField {
+            font-size: 1.5em;
+          }
+          .mktoCheckboxList, .mktoRadioList {
+            input[type='checkbox'], input[type='radio'] {
+              & + label {
+                font-size: 1.5em;
+              }
+            }
+          }
+        }
+      }
+    }
+    .mktoButtonRow {
+      .mktoButtonWrap {
+        .mktoButton {
+          font-size: 1.5em !important;
+        }
+      }
+    }
+  }
+}
+@media(min-width: 3440px) {
+  .marketoFormWrapper {
+    .mktoFormRow {
+      .mktoFieldDescriptor {
+        .mktoFieldWrap {
+          .mktoLabel {
+            font-size: 2em;
+          }
+          .mktoField {
+            font-size: 2em;
+          }
+          .mktoCheckboxList, .mktoRadioList {
+            input[type='checkbox'], input[type='radio'] {
+              & + label {
+                font-size: 2em;
+              }
+            }
+          }
+        }
+      }
+    }
+    .mktoButtonRow {
+      .mktoButtonWrap {
+        .mktoButton {
+          font-size: 2em !important;
+        }
+      }
+    }
+  }
+}
