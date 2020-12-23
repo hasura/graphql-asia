@@ -11,6 +11,7 @@ const lightIconDarkMode = require('./Common/images/light-icon-dark-mode.svg');
 
 const darkIconLightMode = require('./Common/images/dark-icon-light-mode.svg');
 const lightIconLightMode = require('./Common/images/light-icon-light-mode.svg');
+const footerPattern = require('./Common/images/footer-pattern.svg');
 const Layout = ({ children }) => {
   const getLightModeFromLocalStorage = () => {
     if (typeof window !== 'undefined') {
@@ -76,6 +77,9 @@ const Layout = ({ children }) => {
             <Footer isLightMode = {isLightMode}/>
           </div>
         </div>
+      </div>
+      <div className='footerPattern'>
+        <img src={footerPattern} alt='pattern' />
       </div>
     </div>
   );

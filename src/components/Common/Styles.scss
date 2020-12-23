@@ -5,6 +5,12 @@ body {
   font-size: 1.1vw !important;
   font-weight: bold;
 }
+.footerPattern {
+  display: none;
+}
+.mobileShow {
+  display: none !important;
+}
 .mainWrapper {
   // max-width: 1248px;
   padding: 100px 0;
@@ -16,6 +22,9 @@ ul {
   li {
     list-style-type: none;
   }
+}
+.fontBold {
+  font-weight: bold !important;
 }
 .wd25 {
   width: 25%;
@@ -82,25 +91,27 @@ ul {
   font-size: 6em;
   color: #C63939;
   font-weight: bold;
-  line-height: 100%;
+  line-height: 96%;
 }
 .mainSubTitle {
   font-size: 3.25em;
   font-weight: bold;
-  line-height: 100%;
+  line-height: 96%;
 }
 .articleTitle {
   font-size: 3.2em;
   color: #C63939;
-  line-height: 100%;
+  line-height: 96%;
 }
 .articleSubTitle {
   font-size: 2.5em;
   color: #C63939;
+  line-height: 96%;
 }
 .articleSectionTitle {
   font-size: 2em;
   font-weight: 500;
+  line-height: 120%;
   a {
     text-decoration: underline;
   }
@@ -118,19 +129,22 @@ ul {
       transition: all .3s ease-in-out;
       width: 22px;
       .arrowIconHover {
-        display: none;
+        position: absolute;
+        top: 19px;
+        left: -10px;
+        transition: all .3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
       }
     }
     &:hover {
       color: #C63939;
       text-decoration: none !important;
       .arrow {
-        transform: translateX(4px);
+        transform: translateX(10px);
         .arrowIconHover {
-          display: block;
-        }
-        .arrowIcon {
-          display: none;
+          opacity: 1;
+          visibility: visible;
         }
       }
     }
@@ -204,12 +218,13 @@ ul {
 .lightBtn {
   background-color: #F5E7D3;
   color: #C63939;
-  background: linear-gradient(to right, #FFFFFF 50%, #F5E7D3 50%);
+  background: linear-gradient(to right, #C63939 50%, #F5E7D3 50%);
   background-size: 201% 100%;
   background-position: right bottom;
   transition: all .3s ease-out;
   &:hover {
     background-position: left bottom;
+    color: #F5E7D3;
   }
 }
 .alignSelfEnd {
@@ -384,6 +399,9 @@ ul {
   .articleSubTitle {
     padding-bottom: 24px;
   }
+  .articleSectionTitle {
+    padding-right: 50px;
+  }
   .commonLinkWrapper {
     padding-top: 12px;
     display: flex;
@@ -410,7 +428,7 @@ ul {
 .speakersWrapper {
   .speakersHeader {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     gap: 0px 120px;
     padding-bottom: 80px;
     .buttonWrapper {
@@ -448,8 +466,8 @@ ul {
   }
 }
 .communityPartnersWrapper {
-  .articleTitle {
-    padding-bottom: 40px;
+  .articleSubTitle {
+    padding-bottom: 24px;
   }
   .partnersBrandWrapper {
     padding-top: 20px;
@@ -463,7 +481,7 @@ ul {
 }
 .joinGraphQLWrapper {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2fr 1fr;
   gap: 0px 120px;
   .buttonWrapper {
     .commonBtn {
@@ -486,6 +504,9 @@ ul {
         padding-right: 0;
       }
     }
+  }
+  .footerLogoWrapper {
+    display: none;
   }
 }
 .codeOfContentWrapper {
@@ -530,6 +551,180 @@ ul {
 }
 .notFoundWrapper {
   min-height: 500px;
+}
+@media(max-width: 900px) {
+  .mobileShow {
+    display: block !important;
+  }
+  .threeColumsWrapper {
+    .threeColumsList:nth-child(even) {
+      margin-top: 24px;
+    }
+    .threeColumsList:nth-child(odd) {
+      margin-top: -24px;
+    }
+  }
+  .sectionWrapperBottom {
+      padding-bottom: 60px;
+  }
+  .sectionWrapper {
+    padding: 60px 0;
+  }
+  .commonBtn {
+    font-size: 18px;
+  }
+  .mainTitle {
+    font-size: 72px;
+  }
+  .articleSubTitle, .articleTitle {
+    font-size: 38px;
+  }
+  .articleSectionTitle {
+    font-size: 24px;
+  }
+  .articleDesc {
+    font-size: 18px;
+  }
+  .commonLink {
+    font-size: 22px;
+    a {
+      .arrow {
+        width: 12px;
+      }
+    }
+  }
+  .mainWrapper {
+    padding: 32px;
+    padding-bottom: 0;
+    .pattern {
+      display: none;
+    }
+  }
+  .modeChangeWrapper {
+    right: 32px;
+    top: 32px;
+  }
+  .mainGridWrapper {
+    display: block;
+  }
+  .videoWrapper {
+    img {
+      width: 100%;
+    }
+  }
+  .leftSidebarWrapper {
+    position: static;
+    padding-bottom: 60px;
+    .brand {
+      margin-top: 0px;
+      padding-bottom: 4px;
+      a {
+        img {
+          width: 95px;
+        }
+      }
+    }
+    .articleDesc {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    ul.articleDesc, .socialIconWrapper {
+      display: none;
+    }
+  }
+  .topBannerWrapper {
+    margin-top: 0;
+    width: 100%;
+    .articleSectionTitle {
+      padding-bottom: 48px;
+    }
+    .buttonWrapper {
+      display: block;
+      width: 100%;
+      .commonBtn {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+      .lightBtn {
+        position: fixed;
+        bottom: 32px;
+        width: calc(100% - 64px);
+        z-index: 1;
+      }
+    }
+  }
+  .conferenceWrapper {
+    grid-template-columns: 1fr;
+  }
+  .speakersWrapper {
+    .speakersHeader {
+      grid-template-columns: 1fr;
+      .buttonWrapper {
+        display: none;
+      }
+    }
+    .buttonWrapper {
+      padding-top: 40px;
+      .commonBtn {
+        width: 100%;
+      }
+    }
+    .speakersListWrapper {
+      grid-template-columns: 1fr 1fr;
+      gap: 0px 24px;
+      width: 500px;
+    }
+  }
+  .joinGraphQLWrapper {
+    grid-template-columns: 1fr;
+    .buttonWrapper {
+      display: none;
+    }
+  }
+  .speakersWrapperOverflow {
+    overflow: auto;
+  }
+  .communityPartnersWrapper {
+    .partnersBrandWrapper {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 40px;
+    }
+  }
+  .footerWrapper {
+    ul.articleDesc {
+      .darkModeBorRight, .lightModeBorRight {
+        border-right: 0;
+      }
+      li {
+        display: block;
+        padding: 4px 0;
+        text-align: center;
+      }
+    }
+    .articleDesc {
+      padding-bottom: 20px;
+      text-align: center;
+    }
+    .footerLogoWrapper {
+      padding-bottom: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .socialIconWrapper {
+        position: static;
+        a {
+          margin: 0 14px;
+        }
+      }
+    }
+  }
+  .footerPattern {
+    display: block;
+    img {
+      width: 100%;
+    }
+  }
 }
 @media(min-width: 1440px) {
   .mainGridWrapper {

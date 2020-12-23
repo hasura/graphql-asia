@@ -10,13 +10,13 @@ const Partners = props => {
   return (
     <div>
       <div id='sponsor-us' className={'communityPartnersWrapper sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom')}>
-        <div className='articleTitle'>Sponsor us</div>
+        <div className='articleSubTitle'>Sponsor us</div>
         <div className='articleSectionTitle'>
           If you are interested in sponsoring GraphQL Asia,<br/>reach out to Harsha at <a href='mailto:events@hasura.io'>events@hasura.io</a>
         </div>
       </div>
       <div className={'communityPartnersWrapper sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom')}>
-        <div className='articleTitle'>Community Partners</div>
+        <div className='articleSubTitle'>Community Partners</div>
         <div className='partnersBrandWrapper'>
           <a href='https://www.meetup.com/ReactJS-Bangalore/' target='_blank' rel='noopener noreferrer'>
             <img src={(!props.isLightMode) ? reactBangaloreDark : reactBangaloreLight} alt='React bangalore' />

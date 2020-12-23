@@ -1,10 +1,11 @@
 import React from "react";
 import '../Common/Styles.scss';
-const lightRrrow = require('../Common/images/light-arrow.svg');
-const darkRrrow = require('../Common/images/dark-arrow.svg');
+const lightArrow = require('../Common/images/light-arrow.svg');
+const darkArrow = require('../Common/images/dark-arrow.svg');
 
-const lightRrrowHover = require('../Common/images/light-arrow-hover.svg');
-const darkRrrowHover = require('../Common/images/dark-arrow-hover.svg');
+
+const lightArrowLine = require('../Common/images/light-arrow-line.svg');
+const darkarrowLine = require('../Common/images/dark-arrow-line.svg');
 
 const Conference = props => {
   return (
@@ -20,12 +21,12 @@ const Conference = props => {
           Check out our past conferences for more on us.
         </div>
         <div className='commonLinkWrapper'>
-          <div className='commonLink pr-70'>
+          <div className='commonLink'>
             <a href='https://graphql.asia/2019/' target='_blank' rel='noopener noreferrer'>
               GraphQL 19
               <div className='arrow'>
-                <img className='arrowIcon' src={(!props.isLightMode) ? lightRrrow : darkRrrow} alt='Arrow'/>
-                <img className='arrowIconHover' src={(!props.isLightMode) ? lightRrrowHover : darkRrrowHover} alt='Arrow'/>
+                <img className='arrowIcon' src={(!props.isLightMode) ? lightArrow : darkArrow} alt='Arrow'/>
+                <img className='arrowIconHover' src={(!props.isLightMode) ? lightArrowLine : darkarrowLine} alt='Arrow'/>
               </div>
             </a>
           </div>
@@ -33,8 +34,8 @@ const Conference = props => {
             <a href='https://graphql.asia/2020/' target='_blank' rel='noopener noreferrer'>
               GraphQL 20
               <div className='arrow'>
-                <img className='arrowIcon' src={(!props.isLightMode) ? lightRrrow : darkRrrow} alt='Arrow'/>
-                <img className='arrowIconHover' src={(!props.isLightMode) ? lightRrrowHover : darkRrrowHover} alt='Arrow'/>
+                <img className='arrowIcon' src={(!props.isLightMode) ? lightArrow : darkArrow} alt='Arrow'/>
+                <img className='arrowIconHover' src={(!props.isLightMode) ? lightArrowLine : darkarrowLine} alt='Arrow'/>
               </div>
             </a>
           </div>
