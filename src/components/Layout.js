@@ -14,7 +14,7 @@ const lightIconLightMode = require('./Common/images/light-icon-light-mode.svg');
 const Layout = ({ children }) => {
   const getLightModeFromLocalStorage = () => {
     if (typeof window !== undefined) {
-      if ("localStorage" in window.localStorage && "getItem" in window.localStorage) {
+      if ("localStorage" in window && window.localStorage && "getItem" in window.localStorage) {
         const lightModeConsent = window.localStorage.getItem("lightModeConsent");
         if (lightModeConsent === null) {
           return false;
@@ -25,7 +25,6 @@ const Layout = ({ children }) => {
         }
       }
     }
-    return false;
   }
   const [isLightMode, setIsLightMode] = useState(getLightModeFromLocalStorage());
   useEffect(() => {
