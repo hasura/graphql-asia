@@ -27,9 +27,9 @@
         }
         #Lbltemp1 {
           display: block;
-          font-size: 1.25em;
+          font-size: 1.5em;
           font-family: 'Darker Grotesque';
-          font-weight: bold;
+          font-weight: 500;
         }
         .mktoField {
           width: 100% !important;
@@ -41,7 +41,7 @@
           border: 1px solid #FFFFFF;
           padding: 0 0 !important;
           text-indent: 12px;
-          font-size: 1em;
+          font-size: 1.25em;
           z-index: 1;
         }
         .mktoCheckboxList, .mktoRadioList {
@@ -60,9 +60,9 @@
               display: flex;
               align-items: center;
               color: #717780;
-              font-size: 1.25em;
+              font-size: 1.5em;
               font-family: 'Darker Grotesque';
-              font-weight: bold;
+              font-weight: 500;
               z-index: 1;
               &:first-child {
                 margin-top: 0;

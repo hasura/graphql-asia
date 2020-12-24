@@ -31,7 +31,7 @@ const CodeOfConductTopBanner = props => {
         If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff immediately - please see the section below on how to report CoC violations.<br/><br/>
         Conference staff will be happy to assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.<br/><br/>
         We expect participants to follow these rules at all times during conference events and workshop venues and conference-related social events.<br/><br/>
-        Original source and credit: <a className='redColor' href='http://2012.jsconf.us/#/about' target='_blank' rel='noopener noreferrer'>http://2012.jsconf.us/#/about</a> & <a className='redColor' href='https://geekfeminism.wikia.org/wiki/Conference_anti-harassment/Policy' target='_blank' rel='noopener noreferrer'>The Ada Initiative</a><br/><br/>
+        Original source and credit: <a href='http://2012.jsconf.us/#/about' target='_blank' rel='noopener noreferrer'>http://2012.jsconf.us/#/about</a> & <a className='redColor' href='https://geekfeminism.wikia.org/wiki/Conference_anti-harassment/Policy' target='_blank' rel='noopener noreferrer'>The Ada Initiative</a><br/><br/>
         This work is licensed under a Creative Commons Attribution 3.0 Unported License
       </div>
     </div>
