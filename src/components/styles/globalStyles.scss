@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700|Poppins:400,500,600,700|Darker+Grotesque:400,500,600,700,800&display=swap');
-
 *,
 body {
   box-sizing: border-box;
+  font-family: 'Darker Grotesque' !important;
+  font-size: 1.25em;
+  font-weight: bold;
+  font-size: 1.25vw;
 }
-
+a {
+  cursor: pointer;
+}
 h1,
 .h1,
 h2,
@@ -43,25 +47,6 @@ h6,
   align-items: center;
 }
 
-.btn {
-  padding: 0 44px;
-  width: auto;
-  height: 79px;
-  white-space: nowrap;
-  line-height: 70px;
-  border-radius: 8px;
-  outline: none;
-  font-family: Darker Grotesque;
-  font-weight: 600;
-  font-size: 24px;
-  color: #f8f8f8;
-  min-width: 254px;
-
-  &:hover {
-    box-shadow: rgba(248, 24, 114, 0.24) 0px 6px 10px;
-  }
-}
-
 .btn-primary {
   @extend .btn;
 
@@ -86,32 +71,4 @@ h6,
 
 .mt-12 {
   margin-top: 12%;
-}
-
-a,
-a:active,
-a:hover,
-a:focus,
-a:visited,
-a:focus-within,
-a:focus-visible {
-  text-decoration: none !important;
-}
-
-// Mobile optimizations
-
-@media screen and (max-width: 800px) {
-  .btn {
-    padding: 0;
-    height: 55px;
-    line-height: 50px;
-    font-size: 16px;
-    text-align: center;
-    min-width: 300px;
-    max-width: 350px;
-  }
-
-  .right-arrow {
-    font-size: 14px !important;
-  }
 }
