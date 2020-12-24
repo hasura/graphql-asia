@@ -26,7 +26,7 @@ const Speakers = props => {
   return (
     <div className={'speakersWrapper sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom')}>
       <div className='speakersHeader'>
-        <div className='articleTitle'>People who’ve spoken at GQLA in the past.</div>
+        <div className='articleTitle'>Past Speakers at GraphQL Asia</div>
         <div className='buttonWrapper alignSelfEnd'>
           <a href='https://docs.google.com/forms/d/e/1FAIpQLSdIKOPK9VaxhJptC7f2zk1PsvQMkxE7W7Jl1-xemCea9JpZng/viewform?usp=sf_link' target='_blank' rel='noopener noreferrer'>
             <button className='commonBtn darkBtn'>
