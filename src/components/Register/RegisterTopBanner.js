@@ -45,6 +45,9 @@ const RegisterTopBanner = ({ location }) => {
             <div className='mainSubTitle'>
               Register for GraphQL Asia 2021
             </div>
+            <div className='articleDesc removePaddTop pb-10'>
+              What is your name and how do we reach you?
+            </div>
             <MarketoForm formId="1067" marketoHost={marketoHost} id="631-HMN-492" styleClass="marketoFormWrapper" />
             <div className='articleDesc'>
               Submitting this form means you agree to the <a href='#'>Terms and Conditions</a> and <a href='#'>Email Policy</a>.

@@ -274,6 +274,11 @@ ul {
     .marketoFormWrapper {
       .mktoFormRow {
         .mktoFieldDescriptor {
+          .mktoFieldWrap {
+            #Lbltemp1 {
+              color: #181818;
+            }
+          }
           .mktoCheckboxList {
             input[type='checkbox'] {
               & + label {
@@ -313,6 +318,11 @@ ul {
     .marketoFormWrapper {
       .mktoFormRow {
         .mktoFieldDescriptor {
+          .mktoFieldWrap {
+            #Lbltemp1 {
+              color: #F5E7D3;
+            }
+          }
           .mktoCheckboxList {
             input[type='checkbox'] {
               & + label {
@@ -528,6 +538,9 @@ ul {
   }
   .articleDesc {
     padding-top: 16px;
+  }
+  .pb-10 {
+    padding-bottom: 10px;
   }
   ul.articleDesc {
     li {

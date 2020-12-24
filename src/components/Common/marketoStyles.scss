@@ -20,10 +20,16 @@
           font-size: 1em;
           line-height: 220%;
           font-weight: 400;
-          color: #717780;
+          // color: #717780;
           font-weight: 400;
           float: none;
           width: 100% !important;
+        }
+        #Lbltemp1 {
+          display: block;
+          font-size: 1.25em;
+          font-family: 'Darker Grotesque';
+          font-weight: bold;
         }
         .mktoField {
           width: 100% !important;
