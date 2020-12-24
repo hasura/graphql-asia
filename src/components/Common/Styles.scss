@@ -389,7 +389,7 @@ ul {
   }
 }
 .topBannerWrapper {
-  width: 550px;
+  width: 700px;
   margin-top: -40px;
   .mainTitle {
     padding-bottom: 48px;
@@ -602,6 +602,17 @@ ul {
   }
   .codeOfContentWrapper {
     width: 500px;
+  }
+  .mainGridWrapper {
+    grid-template-columns: 170px 1fr;
+  }
+  .topBannerWrapper {
+    width: 600px;
+  }
+  .videoWrapper {
+    img {
+      width: 100%;
+    }
   }
 }
 @media(max-width: 900px) {
@@ -919,7 +930,7 @@ ul {
     grid-gap: 192px;
   }
   .topBannerWrapper {
-    width: 1000px;
+    width: 1500px;
   }
   .codeOfContentWrapper {
     width: 1000px;
