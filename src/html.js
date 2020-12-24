@@ -31,7 +31,7 @@ export default class HTML extends React.Component {
           <meta property="twitter:image" content="https://graphql.asia/graphql-asia.png" />
 
           {this.props.headComponents}
-          <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
+          <link rel="shortcut icon" href="./images/favicon.svg" type="image/svg" />
           <link
             rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
