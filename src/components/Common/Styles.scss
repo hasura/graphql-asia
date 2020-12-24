@@ -481,6 +481,9 @@ ul {
   .articleSubTitle {
     padding-bottom: 24px;
   }
+  .articleSectionTitle {
+    padding-right: 170px;
+  }
   .partnersBrandWrapper {
     padding-top: 20px;
     display: grid;
@@ -637,7 +640,7 @@ ul {
     font-size: 18px;
   }
   .mainTitle {
-    font-size: 72px;
+    font-size: 56px;
   }
   .articleSubTitle, .articleTitle {
     font-size: 38px;
@@ -758,6 +761,9 @@ ul {
     overflow: auto;
   }
   .communityPartnersWrapper {
+    .articleSectionTitle {
+      padding-right: 0;
+    }
     .partnersBrandWrapper {
       grid-template-columns: 1fr 1fr;
       grid-gap: 40px;
@@ -820,6 +826,12 @@ ul {
   }
 }
 @media (min-width: 1920px) {
+  .sectionWrapper {
+    padding: 120px 0;
+  }
+  .sectionWrapperBottom {
+    padding-bottom: 120px;
+  }
   .mainGridWrapper {
     margin: 0 8%;
     grid-gap: 96px;
@@ -845,6 +857,11 @@ ul {
       }
     }
   }
+  .videoWrapper {
+    img {
+      width: 100%;
+    }
+  }
   .socialIconWrapper {
     a {
       width: 35px;
@@ -865,6 +882,12 @@ ul {
   }
 }
 @media(min-width: 2560px) {
+  .sectionWrapper {
+    padding: 200px 0;
+  }
+  .sectionWrapperBottom {
+    padding-bottom: 200px;
+  }
   .lightModeLayout, .darkModeLayout {
     .pattern {
       width: 350px;
@@ -879,6 +902,11 @@ ul {
   }
   .codeOfContentWrapper {
     width: 1000px;
+  }
+  .videoWrapper {
+    img {
+      width: 100%;
+    }
   }
   .registerWrapper {
     width: 1000px;
@@ -920,6 +948,12 @@ ul {
   }
 }
 @media(min-width: 3440px) {
+  .sectionWrapper {
+    padding: 250px 0;
+  }
+  .sectionWrapperBottom {
+    padding-bottom: 250px;
+  }
   .lightModeLayout, .darkModeLayout {
     .pattern {
       width: 450px;
@@ -934,6 +968,11 @@ ul {
   }
   .codeOfContentWrapper {
     width: 1000px;
+  }
+  .videoWrapper {
+    img {
+      width: 100%;
+    }
   }
   .registerWrapper {
     width: 1000px;

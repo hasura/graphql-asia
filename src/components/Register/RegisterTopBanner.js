@@ -37,7 +37,7 @@ const RegisterTopBanner = ({ location }) => {
             </ul>
             <div className='commonLink'>
               <a href='https://www.addevent.com/event/wJ5798313'>
-                <img src={add} alt='Add' />Add to Calendar
+                <img className='addIcon' src={add} alt='Add' />Add to Calendar
               </a>
             </div>
           </Fragment>
