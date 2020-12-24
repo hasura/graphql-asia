@@ -280,21 +280,33 @@
     }
   }
 }
-@media(min-width: 2560px) {
+@media(min-width: 1920px) {
   .marketoFormWrapper {
     .mktoFormRow {
       .mktoFieldDescriptor {
         .mktoFieldWrap {
           .mktoLabel {
-            font-size: 1.5em;
+            font-size: 2em !important;
           }
           .mktoField {
-            font-size: 1.5em;
+            font-size: 2em;
           }
           .mktoCheckboxList, .mktoRadioList {
             input[type='checkbox'], input[type='radio'] {
+              & + label:before {
+                border: 3px solid #717780;
+                width: 32px;
+                height: 32px;
+              }
               & + label {
-                font-size: 1.5em;
+                font-size: 2em;
+              }
+              &:checked + label:after {
+                left: 13px;
+                top: 5px;
+                width: 6px;
+                height: 20px;
+                border-width: 0 3px 3px 0;
               }
             }
           }
@@ -304,7 +316,51 @@
     .mktoButtonRow {
       .mktoButtonWrap {
         .mktoButton {
-          font-size: 1.5em !important;
+          font-size: 1.75em !important;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+@media(min-width: 2560px) {
+  .marketoFormWrapper {
+    .mktoFormRow {
+      .mktoFieldDescriptor {
+        .mktoFieldWrap {
+          .mktoLabel {
+            font-size: 3em !important;
+          }
+          .mktoField {
+            font-size: 1.5em;
+          }
+          .mktoCheckboxList, .mktoRadioList {
+            input[type='checkbox'], input[type='radio'] {
+              & + label:before {
+                border: 3px solid #717780;
+                width: 32px;
+                height: 32px;
+              }
+              & + label {
+                font-size: 3em;
+              }
+              &:checked + label:after {
+                left: 13px;
+                top: 11px;
+                width: 6px;
+                height: 20px;
+                border-width: 0 3px 3px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .mktoButtonRow {
+      .mktoButtonWrap {
+        .mktoButton {
+          font-size: 3em !important;
+          height: auto;
         }
       }
     }
@@ -316,15 +372,27 @@
       .mktoFieldDescriptor {
         .mktoFieldWrap {
           .mktoLabel {
-            font-size: 2em;
+            font-size: 3.5em !important;
           }
           .mktoField {
             font-size: 2em;
           }
           .mktoCheckboxList, .mktoRadioList {
             input[type='checkbox'], input[type='radio'] {
+              & + label:before {
+                border: 3px solid #717780;
+                width: 32px;
+                height: 32px;
+              }
               & + label {
-                font-size: 2em;
+                font-size: 3.5em;
+              }
+              &:checked + label:after {
+                left: 13px;
+                top: 14px;
+                width: 6px;
+                height: 20px;
+                border-width: 0 3px 3px 0;
               }
             }
           }
@@ -334,7 +402,8 @@
     .mktoButtonRow {
       .mktoButtonWrap {
         .mktoButton {
-          font-size: 2em !important;
+          font-size: 3.5em !important;
+          height: auto;
         }
       }
     }

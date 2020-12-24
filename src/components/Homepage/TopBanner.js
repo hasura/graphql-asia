@@ -6,9 +6,9 @@ const submitBtnIconHover = require('../Common/images/submit-btn-icon-hover.svg')
 const TopBanner = props => {
   return (
     <div className='topBannerWrapper sectionWrapperBottom'>
-      <div className='mainTitle'>GraphQL Asia 2021</div>
+      <div className='mainTitle'>Asia's Largest GraphQL Conf is Back</div>
       <div className='articleSectionTitle'>
-        Asia’s largest GraphQL Conference is back! And this time we’re accepting talks & workshops in multiple Asian languages.
+        Join us on 24th & 25th Feb for the third edition of GraphQL Asia happening online and free! And this time we're accepting talks & workshops in multiple Asian languages.
       </div>
       <div className='buttonWrapper'>
         <a href='https://docs.google.com/forms/d/e/1FAIpQLSdIKOPK9VaxhJptC7f2zk1PsvQMkxE7W7Jl1-xemCea9JpZng/viewform?usp=sf_link' target='_blank' rel='noopener noreferrer'>

@@ -39,14 +39,14 @@ const LeftSidebar = ({isLightMode}) => {
             altText = 'Discord'
           />
         </a>
-        <a href='https://www.linkedin.com/company/hasura/' target='_blank' rel='noopener noreferrer'>
+        <a href='https://www.linkedin.com/company/graphql-asia' target='_blank' rel='noopener noreferrer'>
           <IconHover
             baseImgSrc = {(!isLightMode) ? linkedinDarkMode : linkedinLightMode}
             hoverImgSrc = {linkedinHover}
             altText = 'Discord'
           />
         </a>
-        <a href='https://twitter.com/hasurahq' target='_blank' rel='noopener noreferrer'>
+        <a href='https://twitter.com/graphqlasia' target='_blank' rel='noopener noreferrer'>
           <IconHover
             baseImgSrc = {(!isLightMode) ? twitterDarkMode: twitterLightMode}
             hoverImgSrc = {twitterHover}

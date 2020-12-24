@@ -826,6 +826,13 @@ ul {
   }
   .registerWrapper {
     width: 800px;
+    ul.articleDesc {
+      li {
+        img {
+          margin-top: 20px;
+        }
+      }
+    }
   }
   .socialIconWrapper {
     a {
@@ -835,6 +842,14 @@ ul {
   .modeChangeWrapper {
     img {
       width: 60px;
+    }
+  }
+  .commonLink {
+    a {
+      .addIcon {
+        width: 20px;
+        margin-right: 20px !important;
+      }
     }
   }
 }
@@ -856,6 +871,13 @@ ul {
   }
   .registerWrapper {
     width: 1000px;
+    ul.articleDesc {
+      li {
+        img {
+          margin-top: 24px;
+        }
+      }
+    }
   }
   .speakersWrapper {
     .speakersHeader {
@@ -867,6 +889,10 @@ ul {
   }
   .commonLink {
     a {
+      .addIcon {
+        width: 25px;
+        margin-right: 20px !important;
+      }
       .arrow {
         width: 50px;
         img {
@@ -900,6 +926,16 @@ ul {
   }
   .registerWrapper {
     width: 1000px;
+    ul.articleDesc {
+      li {
+        img {
+          margin-top: 32px;
+          width: 25px;
+          min-width: 25px;
+          margin-right: 30px;
+        }
+      }
+    }
   }
   .speakersWrapper {
     .speakersHeader {
@@ -930,6 +966,14 @@ ul {
     img {
       width: 35px;
       margin-right: 24px;
+    }
+  }
+  .commonLink {
+    a {
+      .addIcon {
+        width: 30px;
+        margin-right: 20px !important;
+      }
     }
   }
   .socialIconWrapper {
