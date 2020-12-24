@@ -27,8 +27,8 @@ const LeftSidebar = ({isLightMode}) => {
       </div>
       <ul className='articleDesc'>
         <li><a href='https://docs.google.com/forms/d/e/1FAIpQLSdIKOPK9VaxhJptC7f2zk1PsvQMkxE7W7Jl1-xemCea9JpZng/viewform?usp=sf_link' target='_blank' rel='noopener noreferrer'>Submit a Proposal</a></li>
-        <li><Link to='/#conference/'>Previous Conferences</Link></li>
-        <li><Link to='/#sponsor-us/'>Sponsorship</Link></li>
+        <li><Link to='/#conference'>Previous Conferences</Link></li>
+        <li><Link to='/#sponsorship'>Sponsorship</Link></li>
         <li><Link to='/code-of-conduct/'>Code of Conduct</Link></li>
       </ul>
       <div className='socialIconWrapper'>

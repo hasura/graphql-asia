@@ -9,7 +9,7 @@ const graphQLBangaloreLight = require('../Common/images/graphql-bangalore-light.
 const Partners = props => {
   return (
     <div>
-      <div id='sponsor-us' className={'communityPartnersWrapper sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom')}>
+      <div id='sponsorship' className={'communityPartnersWrapper sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom')}>
         <div className='articleSubTitle'>Sponsorship</div>
         <div className='articleSectionTitle'>
           If you are interested in sponsoring GraphQL Asia, reach out to Harsha at <a href='mailto:events@hasura.io'>events@hasura.io</a>
