@@ -50,7 +50,7 @@ const RegisterTopBanner = ({ location }) => {
             </div>
             <MarketoForm formId="1067" marketoHost={marketoHost} id="631-HMN-492" styleClass="marketoFormWrapper" />
             <div className='articleDesc'>
-              Submitting this form means you agree to the <a href='#'>Terms and Conditions</a> and <a href='#'>Email Policy</a>.
+              Submitting this form means you agree to the <a href='https://hasura.io/legal/website-terms-of-use/'>Terms and Conditions</a> and <a href='https://hasura.io/legal/hasura-privacy-policy/'>Privacy Policy</a>.
             </div>
           </Fragment>
         )
