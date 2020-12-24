@@ -5,7 +5,7 @@ const JoinGraphQLCommunity = props => {
   return (
     <div className={'joinGraphQLWrapper sectionWrapper'}>
       <div className='articleTitle'>
-        Join the largest GraphQL community on this side of the earth.
+        Join the largest GraphQL conference on this side of the earth.
       </div>
       <div className='buttonWrapper alignSelfEnd'>
         <Link to='/register/'><button className='commonBtn lightBtn'>Register Now</button></Link>

@@ -42,7 +42,7 @@ const speakersDetails = [
     speakersDesignation: (
       <span>
         Staff Software Engineer,
-        <br />Airbnb<br/>( Spoke at EGC 2020 )
+        <br />Airbnb
       </span>
     ),
   },

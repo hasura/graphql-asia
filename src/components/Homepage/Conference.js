@@ -11,9 +11,9 @@ const Conference = props => {
   return (
     <div id='conference' className={'conferenceWrapper sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom')}>
       <div>
-        <div className='articleSubTitle'>The Conference</div>
+        <div className='articleSubTitle'>About GraphQL Asia</div>
         <div className='articleDesc'>
-          With participation from virtually every corner of the continent, GraphQL Asia is well on its way to becoming Asia’s foremost conference in this domain.
+          GraphQL Asia is back for a third edition in 2021. Join Engineers from every part of the continent and learn how they are pushing GraphQL to its limits. Featuring talks and workshops - whether you’re curious or a GraphQL pro - you will learn something new.
         </div>
       </div>
       <div className='alignSelfEnd'>

@@ -21,7 +21,7 @@ export default class HTML extends React.Component {
             property="og:description"
             content="GraphQL Asia is the largest gathering of the GraphQL community in Asia! Meet the creators of leading GraphQL tooling, talk to the experts implementing GraphQL in their companies as well as practitioners and enthusiasts from Asia and the rest of the world."
           />
-          <meta property="og:image" content="https://graphql.asia/graphql-asia.png" />
+          <meta property="og:image" content="https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-asia.png" />
           <meta property="twitter:card" content="summary_large_image" />
           <meta property="twitter:title" content="Graphql Asia 2021" />
           <meta
