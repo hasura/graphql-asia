@@ -400,14 +400,9 @@
           .mktoField:-webkit-autofill:focus,
           .mktoField:-webkit-autofill:active  {
             font-size: 2em !important;
-            position: relative;
           }
           .mktoField:-internal-autofill-selected {
             font-size: 2em;
-            position: relative;
-          }
-          .mktoField:-webkit-autofill:focus {
-            display: none;
           }
           .mktoCheckboxList, .mktoRadioList {
             input[type='checkbox'], input[type='radio'] {
