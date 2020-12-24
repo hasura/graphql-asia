@@ -127,10 +127,12 @@ ul {
     .arrow {
       margin-left: 12px;
       transition: all .3s ease-in-out;
-      width: 22px;
+      height: 21px;
+      display: flex;
+      align-items: center;
       .arrowIconHover {
         position: absolute;
-        top: 19px;
+        top: 9px;
         left: -10px;
         transition: all .3s ease-in-out;
         opacity: 0;
@@ -511,7 +513,7 @@ ul {
 }
 .codeOfContentWrapper {
   width: 610px;
-  .mainSubTitle, .articleTitle {
+  .mainSubTitle, .articleSubTitle {
     padding-bottom: 32px;
   }
   .articleDesc {
@@ -575,7 +577,7 @@ ul {
     font-size: 22px;
     a {
       .arrow {
-        width: 12px;
+        // width: 12px;
       }
     }
   }
@@ -629,7 +631,7 @@ ul {
     font-size: 22px;
     a {
       .arrow {
-        width: 12px;
+        // width: 12px;
       }
     }
   }
@@ -696,6 +698,12 @@ ul {
   }
   .conferenceWrapper {
     grid-template-columns: 1fr;
+    .articleDesc {
+      padding-bottom: 40px;
+    }
+    .articleSectionTitle {
+      padding-right: 0;
+    }
   }
   .speakersWrapper {
     .speakersHeader {
@@ -851,6 +859,11 @@ ul {
         img {
           width: 20px;
           margin-left: 24px;
+        }
+        .arrowIconHover {
+          width: 34px;
+          left: -18px;
+          top: 7px;
         }
       }
     }
