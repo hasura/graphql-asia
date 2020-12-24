@@ -291,6 +291,15 @@
           .mktoField {
             font-size: 2em;
           }
+          .mktoField:-webkit-autofill,
+          .mktoField:-webkit-autofill:hover,
+          .mktoField:-webkit-autofill:focus,
+          .mktoField:-webkit-autofill:active  {
+            font-size: 2em !important;
+          }
+          .mktoField:-internal-autofill-selected {
+            font-size: 2em;
+          }
           .mktoCheckboxList, .mktoRadioList {
             input[type='checkbox'], input[type='radio'] {
               & + label:before {
@@ -332,6 +341,15 @@
             font-size: 3em !important;
           }
           .mktoField {
+            font-size: 1.5em;
+          }
+          .mktoField:-webkit-autofill,
+          .mktoField:-webkit-autofill:hover,
+          .mktoField:-webkit-autofill:focus,
+          .mktoField:-webkit-autofill:active  {
+            font-size: 1.5em !important;
+          }
+          .mktoField:-internal-autofill-selected {
             font-size: 1.5em;
           }
           .mktoCheckboxList, .mktoRadioList {
@@ -376,6 +394,20 @@
           }
           .mktoField {
             font-size: 2em;
+          }
+          .mktoField:-webkit-autofill,
+          .mktoField:-webkit-autofill:hover,
+          .mktoField:-webkit-autofill:focus,
+          .mktoField:-webkit-autofill:active  {
+            font-size: 2em !important;
+            position: relative;
+          }
+          .mktoField:-internal-autofill-selected {
+            font-size: 2em;
+            position: relative;
+          }
+          .mktoField:-webkit-autofill:focus {
+            display: none;
           }
           .mktoCheckboxList, .mktoRadioList {
             input[type='checkbox'], input[type='radio'] {
