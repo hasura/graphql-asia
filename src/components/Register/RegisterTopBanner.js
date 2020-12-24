@@ -35,7 +35,7 @@ const RegisterTopBanner = ({ location }) => {
               <li><img src={redBox} alt='Box' /><span>In case you have any questions please reach out to Harsha at <a href='mailto:events@hasura.io'>events@hasura.io</a>.</span></li>
             </ul>
             <div className='commonLink'>
-              <a>
+              <a href='https://www.addevent.com/event/wJ5798313'>
                 <img src={add} alt='Add' />Add to Calendar
               </a>
             </div>
