@@ -8,6 +8,32 @@ body {
   font-size: 1.1vw !important;
   font-weight: bold;
 }
+.topnav {
+  display: none;
+}
+.navBarToggle {
+  border-radius: 4px;
+  padding: 0px 0px;
+  position: absolute;
+  right: 0px;
+  top: 70px;
+  .iconBar {
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 1px;
+    margin: 0 auto;
+    margin-top: 5px;
+    background-color: #F5E7D3 !important;
+    transition: all .3s ease-in-out;
+  }
+  .iconBar:first-child {
+    margin-top: 0px;
+  }
+  &:focus {
+    outline: none;
+  }
+}
 .footerPattern {
   display: none;
 }
@@ -622,6 +648,92 @@ ul {
   }
 }
 @media(max-width: 900px) {
+  #viewport {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .topnav {
+    position: relative;
+    display: block;
+    .visibleMobile {
+      width: 100%;
+      max-width: 300px;
+      background: #181818;
+      box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.6);
+      position: absolute;
+      top: 100px;
+      overflow: auto;
+      right: 0;
+      transform: translateX(380px);
+      transition: transform 0.3s ease-out;
+      z-index: 100;
+      .navBarULMobile {
+        font-weight: bold;
+        li {
+          border-bottom: 1px solid #F5E7D3;
+          padding: 20px 40px;
+          a {
+            text-decoration: none;
+          }
+          &:last-child {
+            border-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  .topnav.responsive {
+    #menuClick span:nth-child(1) {
+      top: 0px;
+      -webkit-transform-origin: left center;
+      -moz-transform-origin: left center;
+      -o-transform-origin: left center;
+      transform-origin: left center;
+    }
+
+    #menuClick span:nth-child(2) {
+      top: 18px;
+      -webkit-transform-origin: left center;
+      -moz-transform-origin: left center;
+      -o-transform-origin: left center;
+      transform-origin: left center;
+    }
+
+    #menuClick span:nth-child(3) {
+      top: 36px;
+      -webkit-transform-origin: left center;
+      -moz-transform-origin: left center;
+      -o-transform-origin: left center;
+      transform-origin: left center;
+    }
+
+    #menuClick.open span:nth-child(1) {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+      top: -3px;
+      left: 8px;
+    }
+
+    #menuClick.open span:nth-child(2) {
+      width: 0%;
+      opacity: 0;
+    }
+
+    #menuClick.open span:nth-child(3) {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      top: 39px;
+      left: 8px;
+    }
+  }
+  .topnav.responsive .visibleMobile {
+    transform: translateX(32px);
+  }
   .mobileShow {
     display: block !important;
   }

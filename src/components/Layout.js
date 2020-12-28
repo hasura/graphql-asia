@@ -1,4 +1,5 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useRef} from "react";
+import {Link} from 'gatsby';
 import PropTypes from "prop-types";
 import './Common/Styles.scss';
 import LeftSidebar from './Common/LeftSidebar';
@@ -12,6 +13,23 @@ const lightIconDarkMode = require('./Common/images/light-icon-dark-mode.svg');
 const darkIconLightMode = require('./Common/images/dark-icon-light-mode.svg');
 const lightIconLightMode = require('./Common/images/light-icon-light-mode.svg');
 const footerPattern = require('./Common/images/footer-pattern.svg');
+function openMenuBar() {
+  var x = document.getElementById("navbar");
+  var hamburgerMenu = document.getElementById('menuClick');
+  if (x.className === 'topnav') {
+    x.className += ' responsive';
+    hamburgerMenu.className += ' open';
+    document.body.style.overflow = 'hidden';
+    document.getElementById('viewport').style.overflow = 'hidden';
+  } else {
+    if (x.className === 'topnav responsive') {
+      x.className = 'topnav';
+      hamburgerMenu.className = 'navBarToggle';
+      document.body.style.overflow = null;
+      document.getElementById('viewport').style.overflow = null;
+    }
+  }
+}
 const Layout = ({ children }) => {
   const getLightModeFromLocalStorage = () => {
     if (typeof window !== 'undefined') {
@@ -29,9 +47,24 @@ const Layout = ({ children }) => {
     return false;
   }
   const [isLightMode, setIsLightMode] = useState(getLightModeFromLocalStorage());
+  const wrapperRef = useRef(null);
   useEffect(() => {
+    document.addEventListener("click", handleClickOutside, false);
     setIsLightMode(getLightModeFromLocalStorage());
+    return () => {
+      document.removeEventListener("click", handleClickOutside, false);
+    };
   },[]);
+  const handleClickOutside = event => {
+    if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
+      var x = document.getElementById("navbar");
+      if (x.className === "topnav responsive") {
+        x.className = "topnav";
+        document.body.style.overflow = null;
+        document.getElementById("viewport").style.overflow = null;
+      }
+    }
+  };
   const removeDarkMode = () => {
     if (typeof window !== undefined) {
       window.localStorage.setItem("lightModeConsent", "true");
@@ -49,9 +82,28 @@ const Layout = ({ children }) => {
     }
   }
   return (
-    <div className={((!isLightMode) ? 'darkModeLayout' : 'lightModeLayout')}>
+    <div id='viewport' className={((!isLightMode) ? 'darkModeLayout' : 'lightModeLayout')}>
       <div className='mainWrapper'>
         <img className='pattern' src={(!isLightMode) ? patternDark : patternLight} alt='Pattern' />
+        <div id="navbar" className="topnav" ref={wrapperRef}>
+          {/*eslint-disable-next-line*/}
+          <div className="navBarToggle" aria-label="button" role="button" tabIndex="0"
+            onClick={() => openMenuBar()}
+            id="menuClick"
+          >
+            <span className='iconBar'></span>
+            <span className='iconBar'></span>
+            <span className='iconBar'></span>
+          </div>
+          <div className='visibleMobile'>
+            <ul className='navBarULMobile articleDesc'>
+              <li><a onClick={() => openMenuBar()} href='https://docs.google.com/forms/d/e/1FAIpQLSdIKOPK9VaxhJptC7f2zk1PsvQMkxE7W7Jl1-xemCea9JpZng/viewform?usp=sf_link' target='_blank' rel='noopener noreferrer'>Submit a Proposal</a></li>
+              <li><Link onClick={() => openMenuBar()} to='/#conference'>Previous Conferences</Link></li>
+              <li><Link onClick={() => openMenuBar()} to='/#sponsorship'>Sponsorship</Link></li>
+              <li><Link onClick={() => openMenuBar()} to='/code-of-conduct/'>Code of Conduct</Link></li>
+            </ul>
+          </div>
+        </div>
         <div className='modeChangeWrapper'>
           <img
             onClick={()=>{removeDarkMode()}}
