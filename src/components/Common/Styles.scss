@@ -381,7 +381,8 @@ ul {
     a {
       display: block;
       img {
-        width: 140px;
+        // width: 140px;
+        width: 100%;
       }
     }
   }
@@ -964,15 +965,15 @@ ul {
   .topBannerWrapper {
     width: 800px;
   }
-  .leftSidebarWrapper {
-    .brand {
-      a {
-        img {
-          width: 162px;
-        }
-      }
-    }
-  }
+  // .leftSidebarWrapper {
+  //   .brand {
+  //     a {
+  //       img {
+  //         width: 162px;
+  //       }
+  //     }
+  //   }
+  // }
   .lightModeLayout, .darkModeLayout {
     .pattern {
       width: 300px;
@@ -1034,15 +1035,15 @@ ul {
   .topBannerWrapper {
     width: 1000px;
   }
-  .leftSidebarWrapper {
-    .brand {
-      a {
-        img {
-          width: 210px;
-        }
-      }
-    }
-  }
+  // .leftSidebarWrapper {
+  //   .brand {
+  //     a {
+  //       img {
+  //         width: 210px;
+  //       }
+  //     }
+  //   }
+  // }
   .codeOfContentWrapper {
     width: 1000px;
   }
@@ -1109,15 +1110,15 @@ ul {
   .topBannerWrapper {
     width: 1500px;
   }
-  .leftSidebarWrapper {
-    .brand {
-      a {
-        img {
-          width: 280px;
-        }
-      }
-    }
-  }
+  // .leftSidebarWrapper {
+  //   .brand {
+  //     a {
+  //       img {
+  //         width: 280px;
+  //       }
+  //     }
+  //   }
+  // }
   .codeOfContentWrapper {
     width: 1000px;
   }
