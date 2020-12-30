@@ -24,7 +24,6 @@ body {
     border-radius: 1px;
     margin: 0 auto;
     margin-top: 5px;
-    background-color: #F5E7D3 !important;
     transition: all .3s ease-in-out;
   }
   .iconBar:first-child {
@@ -279,6 +278,11 @@ ul {
 .lightModeLayout {
   background-color: #F5E7D3;
   background-image: url('./images/lighter-sqaure.svg');
+  .navBarToggle {
+    .iconBar {
+      background-color: #181818 !important;
+    }
+  }
   .joinGraphQLWrapper {
     .articleTitle {
       color: #181818;
@@ -323,6 +327,11 @@ ul {
 .darkModeLayout {
   background-color: #000;
   background-image: url('./images/dark-square.svg');
+  .navBarToggle {
+    .iconBar {
+      background-color: #F5E7D3 !important;
+    }
+  }
   .joinGraphQLWrapper {
     .articleTitle {
       color: #F5E7D3;
@@ -675,6 +684,7 @@ ul {
           padding: 20px 40px;
           a {
             text-decoration: none;
+            color: #F5E7D3;
           }
           &:last-child {
             border-bottom: 0;
