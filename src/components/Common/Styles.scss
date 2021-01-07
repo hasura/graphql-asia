@@ -390,7 +390,7 @@ ul {
     font-size: 1.25em;
   }
   ul.articleDesc {
-    padding-top: 90px;
+    padding-top: 80px;
     padding-inline-start: 0px;
     line-height: 100%;
     font-weight: bold;
@@ -406,9 +406,17 @@ ul {
     }
   }
 }
-.socialIconWrapper {
+.leftSidebarFooterWrapper {
   position: fixed;
   bottom: 30px;
+  .poweredBrand {
+    padding-bottom: 16px;
+    img {
+      width: 100%;
+    }
+  }
+}
+.socialIconWrapper {
   display: flex;
   a {
     margin: 0 16px;

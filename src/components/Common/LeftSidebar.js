@@ -13,7 +13,8 @@ const twitterLightMode = require('./images/twitter-light-mode.svg');
 const discordHover = require('./images/discord-hover.svg');
 const linkedinHover = require('./images/linkedin-hover.svg');
 const twitterHover = require('./images/twitter-hover.svg');
-
+const poweredLogoLightMode = require('./images/powered-logo-light-mode.svg');
+const poweredLogoDarkMode = require('./images/powered-logo-dark-mode.svg');
 const LeftSidebar = ({isLightMode}) => {
   return (
     <div className='leftSidebarWrapper'>
@@ -31,28 +32,33 @@ const LeftSidebar = ({isLightMode}) => {
         <li><Link to='/#sponsorship'>Sponsorship</Link></li>
         <li><Link to='/code-of-conduct/'>Code of Conduct</Link></li>
       </ul>
-      <div className='socialIconWrapper'>
-        <a href='https://discord.com/invite/hasura' target='_blank' rel='noopener noreferrer'>
-          <IconHover
-            baseImgSrc = {(!isLightMode) ? discordDarkMode : discordLightMode}
-            hoverImgSrc = {discordHover}
-            altText = 'Discord'
-          />
-        </a>
-        <a href='https://www.linkedin.com/company/graphql-asia' target='_blank' rel='noopener noreferrer'>
-          <IconHover
-            baseImgSrc = {(!isLightMode) ? linkedinDarkMode : linkedinLightMode}
-            hoverImgSrc = {linkedinHover}
-            altText = 'Discord'
-          />
-        </a>
-        <a href='https://twitter.com/graphqlasia' target='_blank' rel='noopener noreferrer'>
-          <IconHover
-            baseImgSrc = {(!isLightMode) ? twitterDarkMode: twitterLightMode}
-            hoverImgSrc = {twitterHover}
-            altText = 'Discord'
-          />
-        </a>
+      <div className='leftSidebarFooterWrapper'>
+        <div className='poweredBrand'>
+          <a href='https://hasura.io/'><img src={(!isLightMode) ? poweredLogoDarkMode : poweredLogoLightMode} alt='Powered Logo' /></a>
+        </div>
+        <div className='socialIconWrapper'>
+          <a href='https://discord.com/invite/hasura' target='_blank' rel='noopener noreferrer'>
+            <IconHover
+              baseImgSrc = {(!isLightMode) ? discordDarkMode : discordLightMode}
+              hoverImgSrc = {discordHover}
+              altText = 'Discord'
+            />
+          </a>
+          <a href='https://www.linkedin.com/company/graphql-asia' target='_blank' rel='noopener noreferrer'>
+            <IconHover
+              baseImgSrc = {(!isLightMode) ? linkedinDarkMode : linkedinLightMode}
+              hoverImgSrc = {linkedinHover}
+              altText = 'Discord'
+            />
+          </a>
+          <a href='https://twitter.com/graphqlasia' target='_blank' rel='noopener noreferrer'>
+            <IconHover
+              baseImgSrc = {(!isLightMode) ? twitterDarkMode: twitterLightMode}
+              hoverImgSrc = {twitterHover}
+              altText = 'Discord'
+            />
+          </a>
+        </div>
       </div>
     </div>
   );
