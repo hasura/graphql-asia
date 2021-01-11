@@ -27,6 +27,7 @@ const Speakers = props => {
     <div className={'speakersWrapper sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom')}>
       <div className='speakersHeader'>
         <div className='articleTitle'>Speakers</div>
+        {/*
         <div className='buttonWrapper alignSelfEnd'>
           <a href='https://docs.google.com/forms/d/e/1FAIpQLSdIKOPK9VaxhJptC7f2zk1PsvQMkxE7W7Jl1-xemCea9JpZng/viewform?usp=sf_link' target='_blank' rel='noopener noreferrer'>
             <button className='commonBtn darkBtn'>
@@ -36,6 +37,7 @@ const Speakers = props => {
             </button>
           </a>
         </div>
+        */}
       </div>
       <div className='speakersWrapperOverflow'>
         <div className='speakersListWrapper threeColumsWrapper'>
@@ -45,6 +47,7 @@ const Speakers = props => {
       <div className='articleSubTitle moreSpeakers'>
         More speakers coming soon!
       </div>
+      {/*
       <div className='buttonWrapper mobileShow'>
         <a href='https://docs.google.com/forms/d/e/1FAIpQLSdIKOPK9VaxhJptC7f2zk1PsvQMkxE7W7Jl1-xemCea9JpZng/viewform?usp=sf_link' target='_blank' rel='noopener noreferrer'>
           <button className='commonBtn darkBtn'>
@@ -54,6 +57,7 @@ const Speakers = props => {
           </button>
         </a>
       </div>
+      */}
     </div>
   );
 };
