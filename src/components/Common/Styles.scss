@@ -622,6 +622,28 @@ ul {
 .notFoundWrapper {
   min-height: 500px;
 }
+.workshopWrapper {
+  .articleSubTitle {
+    padding-bottom: 20px;
+  }
+  ul {
+    li {
+      display: flex;
+      align-items: flex-start;
+      padding: 20px 0;
+      img {
+        margin-right: 30px;
+        margin-top: 12px;
+      }
+      .articleDesc {
+        padding-top: 16px;
+        a {
+          color: #C63939;
+        }
+      }
+    }
+  }
+}
 @media (min-width: 901px) and (max-width: 1439px) {
   .commonBtn {
     font-size: 18px;
