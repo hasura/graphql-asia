@@ -5,6 +5,7 @@ import Video from '../components/Homepage/Video';
 import Speakers from '../components/Homepage/Speakers';
 import Partners from '../components/Homepage/Partners';
 import JoinGraphQLCommunity from '../components/Homepage/JoinGraphQLCommunity';
+import Workshop from '../components/Homepage/Workshop';
 import { SEO } from '../components/seo';
 import Layout from '../components/Layout';
 const IndexPage = props => (
@@ -14,6 +15,7 @@ const IndexPage = props => (
     <Video />
     <Conference />
     <Speakers />
+    <Workshop />
     <Partners />
     <JoinGraphQLCommunity />
   </Layout>
