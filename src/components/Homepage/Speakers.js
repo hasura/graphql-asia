@@ -42,7 +42,7 @@ const Speakers = props => {
           {speakersList}
         </div>
       </div>
-      <div className='commonLink moreSpeakers'>
+      <div className='articleSubTitle moreSpeakers'>
         More speakers coming soon!
       </div>
       <div className='buttonWrapper mobileShow'>
