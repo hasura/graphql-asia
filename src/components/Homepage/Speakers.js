@@ -26,7 +26,7 @@ const Speakers = props => {
   return (
     <div className={'speakersWrapper sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom')}>
       <div className='speakersHeader'>
-        <div className='articleTitle'>Past Speakers at GraphQL Asia</div>
+        <div className='articleTitle'>Speakers</div>
         <div className='buttonWrapper alignSelfEnd'>
           <a href='https://docs.google.com/forms/d/e/1FAIpQLSdIKOPK9VaxhJptC7f2zk1PsvQMkxE7W7Jl1-xemCea9JpZng/viewform?usp=sf_link' target='_blank' rel='noopener noreferrer'>
             <button className='commonBtn darkBtn'>
@@ -41,6 +41,9 @@ const Speakers = props => {
         <div className='speakersListWrapper threeColumsWrapper'>
           {speakersList}
         </div>
+      </div>
+      <div className='commonLink moreSpeakers'>
+        More speakers coming soon!
       </div>
       <div className='buttonWrapper mobileShow'>
         <a href='https://docs.google.com/forms/d/e/1FAIpQLSdIKOPK9VaxhJptC7f2zk1PsvQMkxE7W7Jl1-xemCea9JpZng/viewform?usp=sf_link' target='_blank' rel='noopener noreferrer'>
