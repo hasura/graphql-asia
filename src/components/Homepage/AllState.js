@@ -42,7 +42,7 @@ const speakersDetails = [
     speakersImg: tanmaiGopal,
     speakersDesignation: (
       <span>
-        Co-founder,
+        CEO / Co-founder,
         <br />Hasura
       </span>
     ),
