@@ -1,30 +1,37 @@
 import React from "react";
+import {Link} from 'gatsby';
 import '../Common/Styles.scss';
 const submitBtnIcon = require('../Common/images/submit-btn-icon.svg');
 const submitBtnIconHover = require('../Common/images/submit-btn-icon-hover.svg');
+const arrow = require('../Common/images/arrow.svg');
 import { speakersDetails } from './AllState.js'
 const Speakers = props => {
   const speakersList = speakersDetails.map((speakers, index) => {
     return (
       <div key={index} className='speakersList threeColumsList'>
-        <div className='speakersListContainer'>
-          <div className='speakersImg'>
-            <img src={speakers.speakersImg} alt={speakers.speakersName} />
-          </div>
-          <div className='speakersProfileWrapper'>
-            <div className='commonLink'>
-              {speakers.speakersName}
+        <Link to={speakers.talkPageUrl}>
+          <div className='speakersListContainer'>
+            <div className='speakersImg'>
+              <img src={speakers.speakersImg} alt={speakers.speakersName} />
             </div>
-            <div className='articleDesc'>
-              {speakers.speakersDesignation}
+            <div className='speakersProfileWrapper'>
+              <div className='commonLink'>
+                {speakers.speakersName}
+              </div>
+              <div className='articleDesc'>
+                {speakers.speakersDesignation}
+              </div>
+            </div>
+            <div className='speakerArrow'>
+              <img src={arrow} alt='Arrow' />
             </div>
           </div>
-        </div>
+        </Link>
       </div>
     )
   })
   return (
-    <div className={'speakersWrapper sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom')}>
+    <div id='speakers' className={'speakersWrapper sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom')}>
       <div className='speakersHeader'>
         <div className='articleTitle'>Speakers</div>
         {/*

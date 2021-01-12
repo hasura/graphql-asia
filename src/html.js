@@ -10,26 +10,6 @@ export default class HTML extends React.Component {
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-          <meta title="Graphql Asia 2021" />
-          <meta name="title" content="GraphQL Asia 2021" />
-          <meta
-            name="description"
-            content="GraphQL Asia is the largest gathering of the GraphQL community in Asia! Meet the creators of leading GraphQL tooling, talk to the experts implementing GraphQL in their companies as well as practitioners and enthusiasts from Asia and the rest of the world."
-          />
-          <meta property="og:title" content="Graphql Asia 2021" />
-          <meta
-            property="og:description"
-            content="GraphQL Asia is the largest gathering of the GraphQL community in Asia! Meet the creators of leading GraphQL tooling, talk to the experts implementing GraphQL in their companies as well as practitioners and enthusiasts from Asia and the rest of the world."
-          />
-          <meta property="og:image" content="https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-asia.png" />
-          <meta property="twitter:card" content="summary_large_image" />
-          <meta property="twitter:title" content="Graphql Asia 2021" />
-          <meta
-            property="twitter:description"
-            content="GraphQL Asia is the largest gathering of the GraphQL community in Asia! Meet the creators of leading GraphQL tooling, talk to the experts implementing GraphQL in their companies as well as practitioners and enthusiasts from Asia and the rest of the world."
-          />
-          <meta property="twitter:image" content="https://graphql.asia/graphql-asia.png" />
-
           {this.props.headComponents}
           <link rel="shortcut icon" href="./images/favicon.svg" type="image/svg" />
           <link

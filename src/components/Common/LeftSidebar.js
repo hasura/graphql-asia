@@ -27,10 +27,11 @@ const LeftSidebar = ({isLightMode}) => {
         24th & 25th Feb
       </div>
       <ul className='articleDesc'>
-        <li><a href='https://docs.google.com/forms/d/e/1FAIpQLSdIKOPK9VaxhJptC7f2zk1PsvQMkxE7W7Jl1-xemCea9JpZng/viewform?usp=sf_link' target='_blank' rel='noopener noreferrer'>Submit a Proposal</a></li>
-        <li><Link to='/#conference'>Previous Conferences</Link></li>
-        <li><Link to='/#sponsorship'>Sponsorship</Link></li>
+        <li><Link to='/#speakers'>Speakers</Link></li>
+        <li><Link to='/#talks'>Talks</Link></li>
+        <li><Link to='/#workshops'>Workshops</Link></li>
         <li><Link to='/code-of-conduct/'>Code of Conduct</Link></li>
+        <li><Link to='/#sponsorship'>Sponsorship</Link></li>
       </ul>
       <div className='leftSidebarFooterWrapper'>
         <div className='poweredBrand'>
