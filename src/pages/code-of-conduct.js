@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 import { SEO } from '../components/seo';
 import CodeOfConductTopBanner from '../components/CodeOfConduct/CodeOfConductTopBanner';
 import graphqlAsiaImg from '../images/graphqlAsiaLogo.png';
-const CodeOfConduct = () => {
+const CodeOfConduct = props => {
   return (
     <Layout location={props.location}>
       <SEO
