@@ -27,9 +27,9 @@ const LeftSidebar = ({isLightMode}) => {
         24th & 25th Feb
       </div>
       <ul className='articleDesc'>
-        <li><Link to='/#speakers'>Speakers</Link></li>
-        <li><Link to='/#talks'>Talks</Link></li>
         <li><Link to='/#workshops'>Workshops</Link></li>
+        <li><Link to='/#talks'>Talks</Link></li>
+        <li><Link to='/#speakers'>Speakers</Link></li>
         <li><Link to='/code-of-conduct/'>Code of Conduct</Link></li>
         <li><Link to='/#sponsorship'>Sponsorship</Link></li>
       </ul>
