@@ -15,13 +15,13 @@ const Talks = props => {
                 <Fragment key={index}>
                   {
                     !talksList.isWorkshop ? (
-                      <li className={((!props.isLightMode) ? 'darkModeListBorBottom' : 'lightModeListBorBottom')}>
+                      <li>
                         <Link to={talksList.url}>
                           <div className='articleSectionTitle fontBold'>
                             {talksList.title}
                           </div>
                           <div className='articleDesc fontBold'>
-                            Given by{' '}
+                            Speaker:{' '}
                             <span>
                             {
                               talksList.speakersList.map((name, index) => {

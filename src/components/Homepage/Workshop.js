@@ -15,7 +15,7 @@ const Workshop = props => {
                 <Fragment key={index}>
                   {
                     talksList.isWorkshop ? (
-                      <li className={((!props.isLightMode) ? 'darkModeListBorBottom' : 'lightModeListBorBottom')}>
+                      <li>
                         <Link to={talksList.url}>
                           <div className='articleSectionTitle fontBold'>
                             {talksList.title}

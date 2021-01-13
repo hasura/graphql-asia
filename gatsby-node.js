@@ -9,6 +9,8 @@ const detailsPage = [
   '/talks/the-state-of-graphql/',
   '/talks/evolution-of-graphql-at-tokopedia-with-increase-in-scale/',
   '/workshops/server-side-authentication-in-graphql/',
+  '/workshops/sql-server-and-graphql/',
+  '/workshops/graphql-fundamentals-workshop/',
   '/talks/building-high-performing-applications-using-graphql-for-heterogeneous-system/',
   '/talks/graphql-error-handling-done-right/',
 ];

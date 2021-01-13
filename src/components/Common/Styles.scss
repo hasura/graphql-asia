@@ -11,6 +11,14 @@ body {
 .topnav {
   display: none;
 }
+.btnFixedPos {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  .darkBtn {
+    width: 210px;
+  }
+}
 .navBarToggle {
   border-radius: 4px;
   padding: 0px 0px;
@@ -609,9 +617,15 @@ ul {
   .articleSubTitle {
     padding-bottom: 24px;
   }
-  .articleSectionTitle {
-    padding-right: 170px;
+  .communityPartnersHeader {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 0px 60px;
+    .articleSectionTitle {
+      padding-right: 0px;
+    }
   }
+
   .partnersBrandWrapper {
     padding-top: 20px;
     display: grid;
@@ -699,12 +713,13 @@ ul {
   min-height: 500px;
 }
 .workshopWrapper {
+  width: 80%;
   .articleSubTitle {
     padding-bottom: 20px;
   }
   ul {
     li {
-      padding: 20px;
+      padding: 24px 20px;
       position: relative;
       a {
         &:hover {
@@ -716,11 +731,18 @@ ul {
       }
       &:hover {
         transition: all 0.3s ease-out 0s;
+        .articleSectionTitle, .articleDesc {
+          transform: translateX(0px);
+        }
         .workshopArrow {
           right: 0px;
           opacity: 1;
           visibility: visible;
         }
+      }
+      .articleSectionTitle, .articleDesc {
+        transform: translateX(-20px);
+        transition: all .3s ease-in-out;
       }
       .articleDesc {
         padding-top: 16px;
@@ -757,9 +779,18 @@ ul {
       li {
         display: flex;
         align-items: flex-start;
+        padding: 8px 0;
         img {
           margin-top: 10px;
           margin-right: 20px;
+        }
+        ul {
+          padding-inline-start: 20px;
+          li {
+            padding: 2px 0;
+            display: list-item;
+            list-style-type: circle;
+          }
         }
       }
     }
@@ -791,6 +822,27 @@ ul {
       display: flex;
       .shareIcon {
         margin: 0 12px;
+        position: relative;
+        img {
+          cursor: pointer;
+        }
+        .copiedWrapper {
+          font-size: 14px;
+          border-radius: 4px;
+          padding: 3px 5px;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          top: -32px;
+        }
+        .copiedLightMode {
+          background-color: #181818;
+          color: #F5E7D3;
+        }
+        .copiedDarkMode {
+          background-color: #F5E7D3;
+          color: #181818;
+        }
       }
     }
   }
