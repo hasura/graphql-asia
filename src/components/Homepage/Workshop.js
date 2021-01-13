@@ -1,48 +1,93 @@
-import React from "react";
+import React, {Fragment} from "react";
+import {Link} from 'gatsby';
 import '../Common/Styles.scss';
-const star = require('../Common/images/star.svg');
+import { detailsPage } from '../Homepage/AllState.js'
+const arrow = require('../Common/images/arrow.svg');
 const Workshop = props => {
   return (
-    <div className={'sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom')}>
+    <div id='workshops' className={'sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom')}>
       <div className='workshopWrapper'>
         <div className='articleSubTitle'>Workshops</div>
         <ul>
-          <li>
-            <img src={star} alt='Star'/>
-            <span>
-              <div className='articleSectionTitle fontBold'>
-                Server-side Authentication in GraphQL
-              </div>
-              <div className='articleDesc'>
-                A hands-on workshop about handling authentication and authorization in GraphQL. During this 3 hour workshop you’ll learn how to add authentication to a GraphQL server using JWTs, and handle query responses with user roles. As a bonus we’ll be adding an authentication server with Auth0.
-              </div>
-              <div className='articleDesc fontBold'>
-                Presented by <a href='https://twitter.com/gethackteam' target='_blank' rel='noopener noreferrer'>Roy Derks</a>
-              </div>
-            </span>
-          </li>
-          <li>
-            <img src={star} alt='Star'/>
-            <span>
-              <div className='articleSectionTitle fontBold'>
-                SQL Server & GraphQL
-              </div>
-              <div className='articleDesc'>
-                More info coming soon
-              </div>
-            </span>
-          </li>
-          <li>
-            <img src={star} alt='Star'/>
-            <span>
-              <div className='articleSectionTitle fontBold'>
-                GraphQL Fundamentals Workshop
-              </div>
-              <div className='articleDesc'>
-                More info coming soon
-              </div>
-            </span>
-          </li>
+          {
+            detailsPage.map((talksList, index) => {
+              return (
+                <Fragment key={index}>
+                  {
+                    talksList.isWorkshop ? (
+                      <li>
+                        <Link to={talksList.url}>
+                          <div className='articleSectionTitle fontBold'>
+                            {talksList.title}
+                          </div>
+                          {
+                            talksList.description ? (
+                              <Fragment>
+                              {
+                                talksList.description.map((desc, index) => {
+                                  return (
+                                    <div key={index} className='articleDesc pb-40'>
+                                      {
+                                        desc.desc ? (
+                                          desc.desc
+                                        ) : null
+                                      }
+                                      {
+                                        desc.list ? (
+                                          <ul>
+                                            {
+                                              desc.list.map((list, subIndex) => {
+                                                return (
+                                                  <li key={subIndex}>
+                                                    <img src={star} alt='star' />
+                                                    {list}
+                                                  </li>
+                                                )
+                                              })
+                                            }
+                                          </ul>
+                                        ) : null
+                                      }
+                                    </div>
+                                  )
+                                })
+                              }
+                              </Fragment>
+                            ) : null
+                          }
+                          {
+                            !talksList.comingSoon ? (
+                              <div className='articleDesc fontBold'>
+                                Presented by{' '}
+                                <span>
+                                {
+                                  talksList.speakersList.map((name, index) => {
+                                    return (
+                                      <Fragment key={index}>
+                                        { name.speakersName }
+                                        { index < (talksList.speakersList.length - 1) ? ', ' : '' }
+                                      </Fragment>
+                                    )
+                                  })
+                                }
+                                </span>
+                              </div>
+                            ) : null
+                          }
+                          <div className='articleDesc fontBold readMore'>
+                            <span>Read More </span><span className='readMoreArrow'>→</span>
+                          </div>
+                          <div className='workshopArrow'>
+                            <img src={arrow} alt='Arrow' />
+                          </div>
+                        </Link>
+                      </li>
+                    ) : null
+                  }
+                </Fragment>
+              )
+            })
+          }
         </ul>
       </div>
     </div>

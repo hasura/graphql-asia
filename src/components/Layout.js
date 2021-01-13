@@ -30,7 +30,7 @@ function openMenuBar() {
     }
   }
 }
-const Layout = ({ children }) => {
+const Layout = ({ children, location }) => {
   const getLightModeFromLocalStorage = () => {
     if (typeof window !== 'undefined') {
       if ("localStorage" in window && window.localStorage && "getItem" in window.localStorage) {
@@ -81,10 +81,16 @@ const Layout = ({ children }) => {
       }
     }
   }
+  const path = location.pathname;
+  const isPattern = path === "/" || path === "/code-of-conduct/"  || path === '/register/' || path === '/404'? true : false;
   return (
     <div id='viewport' className={((!isLightMode) ? 'darkModeLayout' : 'lightModeLayout')}>
       <div className='mainWrapper'>
-        <img className='pattern' src={(!isLightMode) ? patternDark : patternLight} alt='Pattern' />
+        {
+          isPattern ? (
+            <img className='pattern' src={(!isLightMode) ? patternDark : patternLight} alt='Pattern' />
+          ) : null
+        }
         <div id="navbar" className="topnav" ref={wrapperRef}>
           {/*eslint-disable-next-line*/}
           <div className="navBarToggle" aria-label="button" role="button" tabIndex="0"
@@ -97,10 +103,11 @@ const Layout = ({ children }) => {
           </div>
           <div className='visibleMobile'>
             <ul className='navBarULMobile articleDesc'>
-              <li><a onClick={() => openMenuBar()} href='https://docs.google.com/forms/d/e/1FAIpQLSdIKOPK9VaxhJptC7f2zk1PsvQMkxE7W7Jl1-xemCea9JpZng/viewform?usp=sf_link' target='_blank' rel='noopener noreferrer'>Submit a Proposal</a></li>
-              <li><Link onClick={() => openMenuBar()} to='/#conference'>Previous Conferences</Link></li>
-              <li><Link onClick={() => openMenuBar()} to='/#sponsorship'>Sponsorship</Link></li>
-              <li><Link onClick={() => openMenuBar()} to='/code-of-conduct/'>Code of Conduct</Link></li>
+              <li><Link to='/#speakers' onClick={() => openMenuBar()}>Speakers</Link></li>
+              <li><Link to='/#workshops' onClick={() => openMenuBar()}>Workshops</Link></li>
+              <li><Link to='/#talks' onClick={() => openMenuBar()}>Talks</Link></li>
+              <li><Link to='/code-of-conduct/' onClick={() => openMenuBar()}>Code of Conduct</Link></li>
+              <li><Link to='/#sponsorship' onClick={() => openMenuBar()}>Sponsorship</Link></li>
             </ul>
           </div>
         </div>

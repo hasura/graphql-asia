@@ -2,17 +2,29 @@ import React from "react";
 import '../Common/Styles.scss';
 const reactBangaloreDark = require('../Common/images/react-bangalore-dark.svg');
 const graphQLBangaloreDark = require('../Common/images/graphql-bangalore-dark.svg');
-
-
 const reactBangaloreLight = require('../Common/images/react-bangalore-light.svg');
 const graphQLBangaloreLight = require('../Common/images/graphql-bangalore-light.svg');
+const download = require('../Common/images/download.svg');
+const downloadHover = require('../Common/images/download-hover.svg');
+
 const Partners = props => {
   return (
     <div>
       <div id='sponsorship' className={'communityPartnersWrapper sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom')}>
         <div className='articleSubTitle'>Sponsorship</div>
-        <div className='articleSectionTitle'>
-          If you are interested in sponsoring GraphQL Asia, reach out to Harsha at <a href='mailto:events@hasura.io'>events@hasura.io</a>
+        <div className='communityPartnersHeader'>
+          <div className='articleSectionTitle'>
+            If you are interested in sponsoring GraphQL Asia, reach out to Harsha at <a href='mailto:events@hasura.io'>events@hasura.io</a>
+          </div>
+          <div className='buttonWrapper alignSelfEnd'>
+            <a href="/GQLA-Sponsorship-brochure.pdf" download>
+              <button className='commonBtn darkBtn'>
+                <img className='submitIcon' src={download} alt='Icon' />
+                <img className='submitIconHover' src={downloadHover} alt='Icon' />
+                Download Brochure
+              </button>
+            </a>
+          </div>
         </div>
       </div>
       <div className={'communityPartnersWrapper sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom')}>

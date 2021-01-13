@@ -6,16 +6,23 @@ import Speakers from '../components/Homepage/Speakers';
 import Partners from '../components/Homepage/Partners';
 import JoinGraphQLCommunity from '../components/Homepage/JoinGraphQLCommunity';
 import Workshop from '../components/Homepage/Workshop';
+import Talks from '../components/Homepage/Talks';
 import { SEO } from '../components/seo';
 import Layout from '../components/Layout';
 const IndexPage = props => (
-  <Layout>
-    <SEO title="GraphQL Asia 2021" />
+  <Layout location={props.location}>
+  <SEO
+    title='GraphQL Asia 2021'
+    description='GraphQL Asia is the largest gathering of the GraphQL community in Asia! Meet the creators of leading GraphQL tooling, talk to the experts implementing GraphQL in their companies as well as practitioners and enthusiasts from Asia and the rest of the world.'
+    metaImg='https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-asia.png'
+    canonicalLink='https://graphql.asia/'
+  />
     <TopBanner/>
     <Video />
     <Conference />
     <Speakers />
     <Workshop />
+    <Talks />
     <Partners />
     <JoinGraphQLCommunity />
   </Layout>
