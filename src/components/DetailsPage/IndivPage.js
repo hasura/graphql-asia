@@ -272,7 +272,7 @@ const IndivPage = props => {
         </div>
         <div className='backBtnWrapper'>
           <div className={((!props.isLightMode) ? 'lightLine' : 'darkLine')}></div>
-          <Link to='/#speakers'><button className='commonBtn darkBtn'>← Back to Speakers</button></Link>
+          <Link to={props.currentDetailsPage.backLink}><button className='commonBtn darkBtn'>← {props.currentDetailsPage.isWorkshop ? 'Back to Workshop' : 'Back to Talks'}</button></Link>
         </div>
       </div>
       <div className='buttonWrapper btnFixedPos'>

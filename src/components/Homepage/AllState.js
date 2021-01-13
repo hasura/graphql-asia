@@ -96,6 +96,7 @@ const detailsPage = [
     },
     title: 'The State of GraphQL ',
     speakersTitle: 'About the speakers',
+    backLink: '/#talks',
     description: [
       {
         desc: 'Coming Soon',
@@ -144,6 +145,7 @@ const detailsPage = [
     },
     title: 'Evolution of GraphQL@Tokopedia with increase in Scale',
     speakersTitle: 'About the speaker',
+    backLink: '/#talks',
     description: [
       {
         desc: 'Are you planning to use GraphQL and have questions about how you can use it,  will it scale as you continue to grow, what all hurdles you can face and what all benefits you can get if you adapt it, then do hear out our story on how we leveraged GraphQL on an API Gateway. Since the inception of the GraphQL at Tokopedia, we have been working on creating a resilient process to govern the GraphQL ecosystem. We\'ll see how our GraphQL system evolved as we continued to grow to 400K RPS at the peak, to having more than 150+ services/modules integrated. How GraphQL modules can help setup clearly defined ownership and have seperation of concerns and thereby making our system more resilient, maintainable and observable. Just having GraphQL does not ensure its usability, we had to make the integration process more engaging, seamless and pain-free for our engineers. We will be showing how we have developed automation and tooling around our GraphQL ecosystem to achieve this. We\'ll also be discussing caching in our GraphQL ecosystem. In the end, I\'ll be talking about a few GraphQL features which we are exploring for our use case and soon to be used in our production system (Subscription and Federation)'
@@ -180,6 +182,7 @@ const detailsPage = [
     title: 'Server-side Authentication in GraphQL',
     isWorkshop: true,
     speakersTitle: 'Presented by',
+    backLink: '/#workshops',
     description: [
       {
         desc: 'A hands-on workshop about handling authentication and authorization in GraphQL. During this 3 hour workshop you’ll learn how to add authentication to a GraphQL server using JWTs, and handle query responses with user roles. As a bonus we’ll be adding an authentication server with Auth0.'
@@ -226,6 +229,7 @@ const detailsPage = [
       metaImg: "https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-asia.png",
     },
     title: 'GraphQL on SQL Server with Hasura',
+    backLink: '/#workshops',
     isWorkshop: true,
     comingSoon: true,
     description: [
@@ -243,6 +247,7 @@ const detailsPage = [
       metaImg: "https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-asia.png",
     },
     title: 'Introduction to Hasura',
+    backLink: '/#workshops',
     isWorkshop: true,
     comingSoon: true,
     description: [
@@ -264,6 +269,7 @@ const detailsPage = [
     },
     title: 'Building high performing applications using GraphQL for heterogeneous system',
     speakersTitle: 'About the speakers',
+    backLink: '/#talks',
     description: [
       {
         desc: 'The user experience, performance, scalability etc all of these are essential for modern day applications. With increasingly heterogenous applications and consumers like legacy system, multiple microservices, mobile application client, third party applications, etc, catering to each of them would be challenging as every user interface or consumers fields of interest would differ resulting in different APIs or unwanted calls and data flow over the network. Learn how GraphQL comes to rescue to cater variety of consumers without compromising on performance or user experience. GraphQL helps with rapid development time due to it iterative manner development and also to build scalable, high performing APIs.',
@@ -311,6 +317,7 @@ const detailsPage = [
     },
     title: 'GraphQL Error Handling Done Right',
     speakersTitle: 'About the speaker',
+    backLink: '/#talks',
     description: [
       {
         desc: 'GraphQL is particularly good at resource aggregation and partial data delivery. At the same time, these characteristics also make GraphQL error handling, reporting, alerting and triaging complicated. In this talk, I will go over the challenges we discovered with GraphQL reliability at Facebook, and what we did to overcome them.',
