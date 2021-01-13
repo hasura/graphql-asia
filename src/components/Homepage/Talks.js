@@ -33,7 +33,7 @@ const Talks = props => {
                                 )
                               })
                             }
-                            </span> | Track: <span>English</span>
+                            </span> | Language: <span>English</span>
                           </div>
                           <div className='workshopArrow'>
                             <img src={arrow} alt='Arrow' />

@@ -159,6 +159,7 @@ const detailsPage = [
         speakersUrl: '/speakers/aditi-singh/',
         speakersName: 'Aditi	Singh',
         speakersImg: aditi,
+        speakersBio: 'Senior Software Engineer, creator and maintainer of GraphQL based API Gateway at Tokopedia.',
         speakersDesignation: (
           <span>
             Senior Software Engineer,
@@ -206,6 +207,7 @@ const detailsPage = [
         speakersUrl: '/speakers/roy-derks/',
         speakersName: 'Roy Derks',
         speakersImg: royDerks,
+        speakersBio: 'Roy Derks is a serial startup CTO, developer, author and conference speaker from Amsterdam. Currently leading the engineering teams at Vandebron, on a mission to provide the world with renewable energy.',
         speakersDesignation: (
           <span>
             Leading the Engineering teams,
@@ -274,6 +276,7 @@ const detailsPage = [
         speakersUrl: '/speakers/sunitha/',
         speakersName: 'Sunitha N',
         speakersImg: sunitha,
+        speakersBio: 'Sunitha has a overall of 10+ years of experience in IT industry. Currently, she is working at SAP as a Senior Developer for Strategic Procurement related products. She has experience in building enterprise and cloud applications for domains like Healthcare, Telecom and procurement. Her interests are towards solving problems and Micro service architecture.',
         speakersDesignation: (
           <span>
             Tech Lead,
@@ -285,6 +288,7 @@ const detailsPage = [
         speakersUrl: '/speakers/kumaraswamy-gowda/',
         speakersName: 'Kumaraswamy Gowda',
         speakersImg: kumaraswamy,
+        speakersBio: 'Kumar holds a MTech degree in Computer Science from NIT Surathkal, India. He is currently working as a Principal software engineer for Strategic Procurement related products in SAP Ariba. He has a overall of 13+ years of development experience from organizations like Oracle, JP Morgan, IBM Software labs. His expertise are in building enterprise and cloud application for domains like pharmaceutical, software tools and procurement. His interests are towards Microservice architecture and Machine Learning algorithms. He loves going on long rides on bike and conquering peaks during weekend treks.',
         speakersDesignation: (
           <span>
             Principal Software Engineer,
@@ -328,6 +332,7 @@ const detailsPage = [
         speakersUrl: '/speakers/kewei-qu/',
         speakersName: 'Kewei Qu',
         speakersImg: keweiQu,
+        speakersBio: 'Kewei is a software engineer at Facebook. She currently works on GraphQL reliability, efficiency and performance. Her day to day work helps various product teams across Facebook and Instagram to scale with GraphQL and allow end users get the most value of the App experiences.',
         speakersDesignation: (
           <span>
             Software Engineer,

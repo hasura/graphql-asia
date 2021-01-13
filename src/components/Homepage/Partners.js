@@ -21,7 +21,7 @@ const Partners = props => {
               <button className='commonBtn darkBtn'>
                 <img className='submitIcon' src={download} alt='Icon' />
                 <img className='submitIconHover' src={downloadHover} alt='Icon' />
-                Submit a Proposal
+                Download Brochure
               </button>
             </a>
           </div>
