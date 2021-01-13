@@ -16,7 +16,7 @@ const DetailsPage = props => {
   //   }
   // }
   return (
-    <Layout>
+    <Layout location={props.location}>
       <SEO
         title={currentDetailsPage.metaTags.title}
         description={currentDetailsPage.metaTags.description}

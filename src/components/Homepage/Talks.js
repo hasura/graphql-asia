@@ -3,6 +3,8 @@ import {Link} from 'gatsby';
 import '../Common/Styles.scss';
 import { detailsPage } from '../Homepage/AllState.js'
 const arrow = require('../Common/images/arrow.svg');
+const lightArrow = require('../Common/images/light-arrow.svg');
+const darkArrow = require('../Common/images/dark-arrow.svg');
 const Talks = props => {
   return (
     <div id='talks' className={'sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom')}>
@@ -34,6 +36,9 @@ const Talks = props => {
                               })
                             }
                             </span> | Language: <span>English</span>
+                          </div>
+                          <div className='articleDesc fontBold readMore'>
+                            <span>Read More </span><span className='readMoreArrow'>→</span>
                           </div>
                           <div className='workshopArrow'>
                             <img src={arrow} alt='Arrow' />

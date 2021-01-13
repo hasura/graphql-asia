@@ -74,6 +74,9 @@ const Workshop = props => {
                               </div>
                             ) : null
                           }
+                          <div className='articleDesc fontBold readMore'>
+                            <span>Read More </span><span className='readMoreArrow'>→</span>
+                          </div>
                           <div className='workshopArrow'>
                             <img src={arrow} alt='Arrow' />
                           </div>

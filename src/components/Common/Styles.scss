@@ -13,10 +13,11 @@ body {
 }
 .btnFixedPos {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 14%;
+  right: 4%;
   .darkBtn {
-    width: 210px;
+    width: 264px;
+    height: 64px;
   }
 }
 .navBarToggle {
@@ -781,6 +782,13 @@ ul {
           color: #C63939;
         }
       }
+      .readMore {
+        display: none;
+        .readMoreArrow {
+          margin-top: 3px;
+          margin-left: 8px;
+        }
+      }
       .workshopArrow {
         position: absolute;
         right: 30px;
@@ -838,7 +846,11 @@ ul {
         padding-right: 40px;
         img {
           width: 236px;
+          filter: grayscale(100%);
         }
+      }
+      .articleDesc {
+        padding-top: 7px;
       }
     }
   }
@@ -1273,12 +1285,27 @@ ul {
     width: calc(100% - 64px);
     margin: 0 auto;
     z-index: 10;
+    right: 0;
+    left: 0;
+    bottom: 5%;
     .darkBtn {
       width: 100%;
     }
   }
   .workshopWrapper {
     width: 100%;
+    ul {
+      li {
+        .readMore {
+          display: flex;
+          padding-top: 8px;
+          .readMoreArrow {
+            margin-top: 3px;
+            margin-left: 8px;
+          }
+        }
+      }
+    }
   }
 }
 @media(min-width: 1440px) {
