@@ -366,6 +366,22 @@ ul {
       }
     }
   }
+  .speakersWrapper {
+    .speakersListWrapper {
+      .speakersList {
+        .speakersListContainer {
+          &:hover {
+            .speakersProfileWrapper {
+              background-color: #181818;
+              .articleDesc {
+                color: #F5E7D3;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 .darkModeLayout {
   background-color: #000;
@@ -425,6 +441,22 @@ ul {
           }
           .articleDesc {
             color: #181818;
+          }
+        }
+      }
+    }
+  }
+  .speakersWrapper {
+    .speakersListWrapper {
+      .speakersList {
+        .speakersListContainer {
+          &:hover {
+            .speakersProfileWrapper {
+              background-color: #F5E7D3;
+              .articleDesc {
+                color: #181818;
+              }
+            }
           }
         }
       }
@@ -574,11 +606,7 @@ ul {
         position: relative;
         &:hover {
           .speakersProfileWrapper {
-            background-color: #fff;
             transform: translateY(-30px);
-            .articleDesc {
-              color: #181818;
-            }
           }
           .speakerArrow {
             right: 0px;
