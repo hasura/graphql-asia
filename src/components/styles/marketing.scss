@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .flex {
@@ -22,7 +23,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 100px 100px 0;
+  padding: 100px 7% 0;
 }
 
 .mt-20 {
@@ -44,12 +45,14 @@
 .marketing-footer-section {
   display: flex;
   justify-content: space-between;
-  padding: 48px 100px 72px;
+  padding: 48px 7% 72px;
 }
 
 .marketing-landing-banner {
-  padding: 85px;
+  padding: 7%;
   font-family: Darker Grotesque;
+  display: flex;
+  justify-content: space-between;
   // border-bottom: 1px solid #f5e7d3;
 
   h2 {
@@ -59,6 +62,7 @@
     color: #c63939;
     margin: 24px 0px 16px;
     white-space: pre-wrap;
+    padding: 0;
   }
 
   p {
@@ -68,6 +72,38 @@
     line-height: 170%;
     color: #f5e7d3;
   }
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.pr-10 {
+  padding-right: 10px;
+}
+
+.pr-20 {
+  padding-right: 20px !important;
+}
+
+.pl-20 {
+  padding-left: 20px !important;
+}
+
+.pl-30 {
+  padding-left: 30px !important;
+}
+
+.pl-40 {
+  padding-left: 40px !important;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
 }
 
 .mb-50 {
@@ -84,4 +120,71 @@
 
 .noPadd {
   padding: 0;
+}
+
+.signup-form-wrapper {
+  background: #c63939;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 600px;
+
+  img {
+    width: 100%;
+  }
+
+  .signup-form-div {
+    padding: 48px 60px;
+
+    h2 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 120%;
+      color: #f5e7d3;
+      margin: 0;
+    }
+
+    p {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 220%;
+      text-transform: uppercase;
+      padding: 24px 0px 24px;
+    }
+
+    form {
+      width: 100%;
+      display: flex;
+      height: 53px;
+      border: none;
+
+      input {
+        width: 100%;
+        background: #f5e7d3;
+        padding: 0 14px;
+        border: none;
+        font-size: 18px;
+        color: #000;
+        outline: none;
+      }
+
+      button {
+        background: #000;
+        color: #f5e7d3;
+        border: none;
+        padding: 0 48px;
+      }
+    }
+  }
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.space-between {
+  justify-content: space-between;
 }
