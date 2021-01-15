@@ -46,3 +46,42 @@
   justify-content: space-between;
   padding: 48px 100px 72px;
 }
+
+.marketing-landing-banner {
+  padding: 85px;
+  font-family: Darker Grotesque;
+  // border-bottom: 1px solid #f5e7d3;
+
+  h2 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 120%;
+    color: #c63939;
+    margin: 24px 0px 16px;
+    white-space: pre-wrap;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 170%;
+    color: #f5e7d3;
+  }
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mr-50 {
+  margin-right: 50px;
+}
+
+.ml-30 {
+  margin-left: 30px;
+}
+
+.noPadd {
+  padding: 0;
+}
