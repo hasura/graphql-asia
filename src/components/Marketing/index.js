@@ -2,6 +2,7 @@ import React from 'react';
 
 import gqlaImg from '../Common/images/logo-dark-mode.svg';
 import hasuraLogo from '../Common/images/powered-logo-dark-mode.svg';
+import workshopIllustration from '../Common/images/pattern-dark.svg';
 import '../Common/Styles.scss';
 import '../styles/marketing.scss';
 
@@ -9,12 +10,14 @@ import graphQLIcon from './images/graphql_icon.svg';
 import confIcon from './images/conferences_icon.svg';
 import chatIcon from './images/languages_icon.svg';
 import workshopIcon from './images/workshop_icon.svg';
+import workshopBulletIcon from './images/workshop_bullet.svg';
 import formIllustration from './images/form_illustration.png';
 
 const HeaderSection = () => (
   <div className="marketing-header-section">
     <div className="col-md-3 noPadd">
       <img src={gqlaImg} alt="graphql-asia" />
+      <div className="articleDesc redColor fontBold">24th &amp; 25th Feb</div>
     </div>
     <div className="mainHeading col-md-7 noPadd pr-20">
       Asia&apos;s largest GraphQL Conf is back
@@ -77,6 +80,49 @@ const TopBanner = () => (
   </div>
 );
 
+const WorkShops = () => (
+  <div className="workshops-section-wrapper">
+    <div className="workshops-section col-md-12 noPadd">
+      <div className="flex col-md-12 noPadd">
+        <h2 className="col-md-3 noPadd">Workshops</h2>
+        <div className="workshops col-md-9 noPadd">
+          <div className="flex workshop-div">
+            <img src={workshopBulletIcon} alt="workshop" />
+            <div>
+              <h2>Server-side Authentication in GraphQL</h2>
+              <p>
+                Given by <span className="red-text">Roy Derks</span> |{' '}
+                <span className="red-text">Vandebron</span>
+              </p>
+            </div>
+          </div>
+          <div className="flex workshop-div">
+            <img src={workshopBulletIcon} alt="workshop" />
+            <div>
+              <h2>GraphQL on SQL Server with Hasura</h2>
+              <p>More info coming soon</p>
+            </div>
+          </div>
+          <div className="flex workshop-div">
+            <img src={workshopBulletIcon} alt="workshop" />
+            <div>
+              <h2>Introduction to Hasura</h2>
+              <p>
+                Given by <span className="red-text">Hasura</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        className="workshop-illustration"
+        src={workshopIllustration}
+        alt="graphql-asia-illustration"
+      />
+    </div>
+  </div>
+);
+
 const FooterSection = () => {
   const currentYear = new Date().getFullYear();
 
@@ -100,6 +146,7 @@ export const MarketingPage = () => (
   <div id="viewport" className="darkModeLayout advertisement-site-wrapper">
     <HeaderSection />
     <TopBanner />
+    <WorkShops />
     <FooterSection />
   </div>
 );

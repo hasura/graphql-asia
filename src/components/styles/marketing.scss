@@ -12,6 +12,10 @@
   display: flex;
 }
 
+.red-text {
+  color: #c63939;
+}
+
 .mainHeading {
   font-size: 5em;
   color: #c63939;
@@ -24,6 +28,10 @@
   display: flex;
   justify-content: space-between;
   padding: 100px 7% 0;
+
+  img {
+    padding-bottom: 10px;
+  }
 }
 
 .mt-20 {
@@ -187,4 +195,58 @@
 
 .space-between {
   justify-content: space-between;
+}
+
+.workshops-section-wrapper {
+  padding: 0 7%;
+
+  .workshops-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0 50px 0;
+    border-top: 1px solid #f5e7d3;
+    border-bottom: 1px solid #f5e7d3;
+
+    h2 {
+      font-family: Darker Grotesque;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 120%;
+      margin: 0;
+      color: #c63939;
+    }
+
+    .workshop-illustration {
+      right: 0;
+      margin-right: -8.25%;
+    }
+
+    .workshops {
+      padding-left: 38px;
+
+      .workshop-div {
+        align-items: flex-start;
+        padding-top: 10px;
+        margin-bottom: 30px;
+
+        img {
+          margin: 12px 25px 0 0;
+        }
+
+        h2 {
+          font-weight: 600;
+          font-size: 30px;
+          line-height: 120%;
+          color: #f5e7d3;
+        }
+
+        p {
+          font-size: 18px;
+          font-weight: 600;
+          color: #f5e7d3;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
 }
