@@ -1,1 +1,15 @@
-@import '../styles/globalStyles.scss';
+// @import '../styles/globalStyles.scss';
+
+.mainHeading {
+  font-size: 5em;
+  color: #c63939;
+  font-weight: bold;
+  line-height: 96%;
+}
+
+.marketing-header-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 100px 0;
+}
