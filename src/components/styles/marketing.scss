@@ -250,3 +250,43 @@
     }
   }
 }
+
+.talks-wrapper-div {
+  padding: 70px 7%;
+}
+
+.talks-wrapper {
+  align-items: flex-start;
+
+  h2 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 120%;
+    margin: 0;
+    color: #c63939;
+  }
+
+  .talks-section {
+    padding-left: 20px;
+
+    .talk-div {
+      img {
+        margin: 12px 25px 0 0;
+      }
+
+      h2 {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 120%;
+        color: #f5e7d3;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: 600;
+        color: #f5e7d3;
+        margin-top: 5px;
+      }
+    }
+  }
+}

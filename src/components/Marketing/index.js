@@ -123,6 +123,22 @@ const WorkShops = () => (
   </div>
 );
 
+const Talks = () => (
+  <div className="talks-wrapper-div">
+    <div className="talks-wrapper flex col-md-12 noPadd">
+      <h2 className="col-md-3 noPadd">Talks</h2>
+      <div className="talks-section col-md-9 noPadd">
+        <div className="flex talk-div">
+          <img src={workshopBulletIcon} alt="workshop" />
+          <div>
+            <h2>The State of GraphQL</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
 const FooterSection = () => {
   const currentYear = new Date().getFullYear();
 
@@ -147,6 +163,7 @@ export const MarketingPage = () => (
     <HeaderSection />
     <TopBanner />
     <WorkShops />
+    <Talks />
     <FooterSection />
   </div>
 );
