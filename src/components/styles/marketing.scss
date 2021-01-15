@@ -1,5 +1,16 @@
 // @import '../styles/globalStyles.scss';
 
+.advertisement-site-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
 .mainHeading {
   font-size: 5em;
   color: #c63939;
@@ -12,4 +23,26 @@
   display: flex;
   justify-content: space-between;
   padding: 100px 100px 0;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.light-hr {
+  border: 0;
+  margin: 0;
+  border-top: 25px solid #f6e6d3;
+}
+
+.red-hr {
+  border: 0;
+  margin: 0;
+  border-top: 10px solid #c63939;
+}
+
+.marketing-footer-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 48px 100px 72px;
 }

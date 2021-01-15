@@ -20,8 +20,28 @@ const HeaderSection = () => (
   </div>
 );
 
+const FooterSection = () => {
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <div className="mt-20">
+      <hr className="light-hr" />
+      <hr className="red-hr" />
+      <div className="marketing-footer-section flex">
+        <div className="articleDesc">{`© ${currentYear} Hasura Inc. All rights reserved`}</div>
+        <div className="poweredBrand">
+          <a href="https://hasura.io/">
+            <img src={hasuraLogo} alt="Powered Logo" />
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 export const MarketingPage = () => (
-  <div id="viewport" className="darkModeLayout">
+  <div id="viewport" className="darkModeLayout advertisement-site-wrapper">
     <HeaderSection />
+    <FooterSection />
   </div>
 );
