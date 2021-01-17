@@ -152,6 +152,31 @@ const Talks = () => {
         },
       ],
     },
+    {
+      headline: 'Building high performing applications using GraphQL for heterogeneous system',
+      speakers: [
+        {
+          speaker: 'Sunitha N',
+          speakerImg: danSchafer,
+          description: 'Tech Lead, SAP',
+        },
+        {
+          speaker: 'Kumaraswamy Gowda',
+          speakerImg: danSchafer,
+          description: 'Principal Software Engineer, SAP',
+        },
+      ],
+    },
+    {
+      headline: 'GraphQL Error Handling Done Right',
+      speakers: [
+        {
+          speaker: 'Kewei Qe ',
+          speakerImg: danSchafer,
+          description: 'Senior Software Engineer, Facebook',
+        },
+      ],
+    },
   ];
 
   return (
@@ -160,7 +185,7 @@ const Talks = () => {
         <h2 className="col-md-3 noPadd">Talks</h2>
         <div className="talks-section col-md-9 noPadd flex">
           {speakersData.map(({ headline, speakers }) => (
-            <div className="talk-div flex col-md-6" key={headline}>
+            <div className="talk-div col-md-6" key={headline}>
               <img src={workshopBulletIcon} alt="workshop" />
               <div className="flex flex-column">
                 <h2>{headline}</h2>
@@ -176,6 +201,9 @@ const Talks = () => {
               </div>
             </div>
           ))}
+          <div className="flex flex-end col-md-12">
+            <p className="more-speakers-section">More speakers coming soon</p>
+          </div>
         </div>
       </div>
     </div>
