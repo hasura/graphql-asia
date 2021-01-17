@@ -14,6 +14,11 @@ import workshopBulletIcon from './images/workshop_bullet.svg';
 import formIllustration from './images/form_illustration.png';
 
 import danSchafer from '../Common/images/dan-schafer.png';
+import aditi from '../Common/images/aditi.png';
+import tanmaiGopal from '../Common/images/tanmai-gopal.png';
+import sunitha from '../Common/images/sunitha.png';
+import kumaraswamy from '../Common/images/kumaraswamy.png';
+import keweiQu from '../Common/images/kewei-qu.png';
 
 const HeaderSection = () => (
   <div className="marketing-header-section">
@@ -137,7 +142,7 @@ const Talks = () => {
         },
         {
           speaker: 'Tanmai Gopal',
-          speakerImg: danSchafer,
+          speakerImg: tanmaiGopal,
           description: 'CEO / Co-founder, Hasura',
         },
       ],
@@ -147,7 +152,7 @@ const Talks = () => {
       speakers: [
         {
           speaker: 'Aditi Singh',
-          speakerImg: danSchafer,
+          speakerImg: aditi,
           description: 'Senior Software Engineer, Tokopedia',
         },
       ],
@@ -157,12 +162,12 @@ const Talks = () => {
       speakers: [
         {
           speaker: 'Sunitha N',
-          speakerImg: danSchafer,
+          speakerImg: sunitha,
           description: 'Tech Lead, SAP',
         },
         {
           speaker: 'Kumaraswamy Gowda',
-          speakerImg: danSchafer,
+          speakerImg: kumaraswamy,
           description: 'Principal Software Engineer, SAP',
         },
       ],
@@ -172,7 +177,7 @@ const Talks = () => {
       speakers: [
         {
           speaker: 'Kewei Qe ',
-          speakerImg: danSchafer,
+          speakerImg: keweiQu,
           description: 'Senior Software Engineer, Facebook',
         },
       ],

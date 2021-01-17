@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 const danSchafer = require('../Common/images/dan-schafer.png');
 const aditi = require('../Common/images/aditi.png');
 const royDerks = require('../Common/images/roy-derks.png');
@@ -14,7 +14,8 @@ const speakersDetails = [
     speakersDesignation: (
       <span>
         GraphQL Co-Creator / Director of Engineering,
-        <br />Facebook
+        <br />
+        Facebook
       </span>
     ),
   },
@@ -25,7 +26,8 @@ const speakersDetails = [
     speakersDesignation: (
       <span>
         Senior Software Engineer,
-        <br />Tokopedia
+        <br />
+        Tokopedia
       </span>
     ),
   },
@@ -36,7 +38,8 @@ const speakersDetails = [
     speakersDesignation: (
       <span>
         Leading the Engineering teams,
-        <br />Vandebron
+        <br />
+        Vandebron
       </span>
     ),
   },
@@ -47,29 +50,34 @@ const speakersDetails = [
     speakersDesignation: (
       <span>
         CEO / Co-founder,
-        <br />Hasura
+        <br />
+        Hasura
       </span>
     ),
   },
   {
-    talkPageUrl: '/talks/building-high-performing-applications-using-graphql-for-heterogeneous-system/',
+    talkPageUrl:
+      '/talks/building-high-performing-applications-using-graphql-for-heterogeneous-system/',
     speakersName: 'Sunitha N',
     speakersImg: sunitha,
     speakersDesignation: (
       <span>
         Tech Lead,
-        <br />SAP
+        <br />
+        SAP
       </span>
     ),
   },
   {
-    talkPageUrl: '/talks/building-high-performing-applications-using-graphql-for-heterogeneous-system/',
+    talkPageUrl:
+      '/talks/building-high-performing-applications-using-graphql-for-heterogeneous-system/',
     speakersName: 'Kumaraswamy Gowda',
     speakersImg: kumaraswamy,
     speakersDesignation: (
       <span>
         Principal Software Engineer,
-        <br />SAP
+        <br />
+        SAP
       </span>
     ),
   },
@@ -80,11 +88,12 @@ const speakersDetails = [
     speakersDesignation: (
       <span>
         Software Engineer,
-        <br />Facebook
+        <br />
+        Facebook
       </span>
     ),
   },
-]
+];
 const detailsPage = [
   {
     url: '/talks/the-state-of-graphql/',
@@ -92,7 +101,7 @@ const detailsPage = [
       title: 'The State of GraphQL',
       canonicalUrl: 'https://graphql.asia/talks/the-state-of-graphql/',
       description: 'Coming Soon',
-      metaImg: "https://graphql-engine-cdn.hasura.io/assets/graphql-asia/the-state-of-graphql.png",
+      metaImg: 'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/the-state-of-graphql.png',
     },
     title: 'The State of GraphQL ',
     speakersTitle: 'About the speakers',
@@ -113,7 +122,8 @@ const detailsPage = [
         speakersUrl: '/speakers/dan-schafer/',
         speakersName: 'Dan Schafer',
         speakersImg: danSchafer,
-        speakersBio: 'Dan Schafer is a Director of Engineering at Facebook and a co-creator of GraphQL. He worked on the original GraphQL API for Facebook News Feed, developed Facebook’s GraphQL API Design principles, expanded GraphQL to support Mutations and Subscriptions, and contributed to the initial release of the GraphQL specification and reference implementation. Currently, he’s a Director of Engineering on the Product Foundation team at Facebook, focused on building end-to-end frameworks for development of Facebook’s family of apps.',
+        speakersBio:
+          'Dan Schafer is a Director of Engineering at Facebook and a co-creator of GraphQL. He worked on the original GraphQL API for Facebook News Feed, developed Facebook’s GraphQL API Design principles, expanded GraphQL to support Mutations and Subscriptions, and contributed to the initial release of the GraphQL specification and reference implementation. Currently, he’s a Director of Engineering on the Product Foundation team at Facebook, focused on building end-to-end frameworks for development of Facebook’s family of apps.',
         speakersDesignation: (
           <span>
             GraphQL Co-Creator / Director of Engineering,
@@ -125,11 +135,13 @@ const detailsPage = [
         speakersUrl: '/speakers/tanmai-gopal/',
         speakersName: 'Tanmai Gopal',
         speakersImg: tanmaiGopal,
-        speakersBio: 'Tanmai Gopal is the CEO and co-founder of Hasura. He is a StackOverflow powered fullstack developer whose areas of interest and work span React, GraphQL, Nodejs, Haskell, Docker, Postgres & Kubernetes. He is passionate about making it easy to build complex things and is the instructor of India\'s largest MOOC imad.tech with over 250,000 students.',
+        speakersBio:
+          "Tanmai Gopal is the CEO and co-founder of Hasura. He is a StackOverflow powered fullstack developer whose areas of interest and work span React, GraphQL, Nodejs, Haskell, Docker, Postgres & Kubernetes. He is passionate about making it easy to build complex things and is the instructor of India's largest MOOC imad.tech with over 250,000 students.",
         speakersDesignation: (
           <span>
             CEO / Co-founder,
-            <br />Hasura
+            <br />
+            Hasura
           </span>
         ),
       },
@@ -139,29 +151,35 @@ const detailsPage = [
     url: '/talks/evolution-of-graphql-at-tokopedia-with-increase-in-scale/',
     metaTags: {
       title: 'Evolution of GraphQL@Tokopedia with increase in Scale',
-      canonicalUrl: 'https://graphql.asia/talks/evolution-of-graphql-at-tokopedia-with-increase-in-scale/',
-      description: 'Are you planning to use GraphQL and have questions about how you can use it,  will it scale as you continue to grow, what all hurdles you can face and what all benefits you can get if you adapt it, then do hear out our story on how we leveraged GraphQL on an API Gateway.',
-      metaImg: "https://graphql-engine-cdn.hasura.io/assets/graphql-asia/evolution-of-graphql-at-tokopedia-with-increase-in-scale.png",
+      canonicalUrl:
+        'https://graphql.asia/talks/evolution-of-graphql-at-tokopedia-with-increase-in-scale/',
+      description:
+        'Are you planning to use GraphQL and have questions about how you can use it,  will it scale as you continue to grow, what all hurdles you can face and what all benefits you can get if you adapt it, then do hear out our story on how we leveraged GraphQL on an API Gateway.',
+      metaImg:
+        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/evolution-of-graphql-at-tokopedia-with-increase-in-scale.png',
     },
     title: 'Evolution of GraphQL@Tokopedia with increase in Scale',
     speakersTitle: 'About the speaker',
     backLink: '/#talks',
     description: [
       {
-        desc: 'Are you planning to use GraphQL and have questions about how you can use it,  will it scale as you continue to grow, what all hurdles you can face and what all benefits you can get if you adapt it, then do hear out our story on how we leveraged GraphQL on an API Gateway. Since the inception of the GraphQL at Tokopedia, we have been working on creating a resilient process to govern the GraphQL ecosystem. We\'ll see how our GraphQL system evolved as we continued to grow to 400K RPS at the peak, to having more than 150+ services/modules integrated. How GraphQL modules can help setup clearly defined ownership and have seperation of concerns and thereby making our system more resilient, maintainable and observable. Just having GraphQL does not ensure its usability, we had to make the integration process more engaging, seamless and pain-free for our engineers. We will be showing how we have developed automation and tooling around our GraphQL ecosystem to achieve this. We\'ll also be discussing caching in our GraphQL ecosystem. In the end, I\'ll be talking about a few GraphQL features which we are exploring for our use case and soon to be used in our production system (Subscription and Federation)'
+        desc:
+          "Are you planning to use GraphQL and have questions about how you can use it,  will it scale as you continue to grow, what all hurdles you can face and what all benefits you can get if you adapt it, then do hear out our story on how we leveraged GraphQL on an API Gateway. Since the inception of the GraphQL at Tokopedia, we have been working on creating a resilient process to govern the GraphQL ecosystem. We'll see how our GraphQL system evolved as we continued to grow to 400K RPS at the peak, to having more than 150+ services/modules integrated. How GraphQL modules can help setup clearly defined ownership and have seperation of concerns and thereby making our system more resilient, maintainable and observable. Just having GraphQL does not ensure its usability, we had to make the integration process more engaging, seamless and pain-free for our engineers. We will be showing how we have developed automation and tooling around our GraphQL ecosystem to achieve this. We'll also be discussing caching in our GraphQL ecosystem. In the end, I'll be talking about a few GraphQL features which we are exploring for our use case and soon to be used in our production system (Subscription and Federation)",
       },
     ],
     takeaways: [
       {
-        desc: 'Are you planning to use GraphQL and have questions about how you can use it,  will it scale as you continue to grow, what all hurdles you can face and what all benefits you can get if you adapt it, then do hear out the talk on how we leveraged GraphQL on an API Gateway.'
-      }
+        desc:
+          'Are you planning to use GraphQL and have questions about how you can use it,  will it scale as you continue to grow, what all hurdles you can face and what all benefits you can get if you adapt it, then do hear out the talk on how we leveraged GraphQL on an API Gateway.',
+      },
     ],
     speakersList: [
       {
         speakersUrl: '/speakers/aditi-singh/',
         speakersName: 'Aditi	Singh',
         speakersImg: aditi,
-        speakersBio: 'Senior Software Engineer, creator and maintainer of GraphQL based API Gateway at Tokopedia.',
+        speakersBio:
+          'Senior Software Engineer, creator and maintainer of GraphQL based API Gateway at Tokopedia.',
         speakersDesignation: (
           <span>
             Senior Software Engineer,
@@ -176,8 +194,10 @@ const detailsPage = [
     metaTags: {
       title: 'Server-side Authentication in GraphQL',
       canonicalUrl: 'https://graphql.asia/workshops/server-side-authentication-in-graphql/',
-      description: 'A hands-on workshop about handling authentication and authorization in GraphQL. During this 3 hour workshop you’ll learn how to add authentication to a GraphQL server using JWTs, and handle query responses with user roles. As a bonus we’ll be adding an authentication server with Auth0.',
-      metaImg: "https://graphql-engine-cdn.hasura.io/assets/graphql-asia/server-side-authentication-in-graphql.png",
+      description:
+        'A hands-on workshop about handling authentication and authorization in GraphQL. During this 3 hour workshop you’ll learn how to add authentication to a GraphQL server using JWTs, and handle query responses with user roles. As a bonus we’ll be adding an authentication server with Auth0.',
+      metaImg:
+        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/server-side-authentication-in-graphql.png',
     },
     title: 'Server-side Authentication in GraphQL',
     isWorkshop: true,
@@ -185,24 +205,18 @@ const detailsPage = [
     backLink: '/#workshops',
     description: [
       {
-        desc: 'A hands-on workshop about handling authentication and authorization in GraphQL. During this 3 hour workshop you’ll learn how to add authentication to a GraphQL server using JWTs, and handle query responses with user roles. As a bonus we’ll be adding an authentication server with Auth0.'
+        desc:
+          'A hands-on workshop about handling authentication and authorization in GraphQL. During this 3 hour workshop you’ll learn how to add authentication to a GraphQL server using JWTs, and handle query responses with user roles. As a bonus we’ll be adding an authentication server with Auth0.',
       },
     ],
     contents: [
       {
         title: 'The contents:',
-        list: [
-          'Authentication with JWTs',
-          'Handling query responses and user roles',
-          'Auth0',
-        ],
+        list: ['Authentication with JWTs', 'Handling query responses and user roles', 'Auth0'],
       },
       {
         title: 'Prerequisites:',
-        list: [
-          'JavaScript (preferably TypeScript)',
-          'GraphQL',
-        ],
+        list: ['JavaScript (preferably TypeScript)', 'GraphQL'],
       },
     ],
     speakersList: [
@@ -210,7 +224,8 @@ const detailsPage = [
         speakersUrl: '/speakers/roy-derks/',
         speakersName: 'Roy Derks',
         speakersImg: royDerks,
-        speakersBio: 'Roy Derks is a serial startup CTO, developer, author and conference speaker from Amsterdam. Currently leading the engineering teams at Vandebron, on a mission to provide the world with renewable energy.',
+        speakersBio:
+          'Roy Derks is a serial startup CTO, developer, author and conference speaker from Amsterdam. Currently leading the engineering teams at Vandebron, on a mission to provide the world with renewable energy.',
         speakersDesignation: (
           <span>
             Leading the Engineering teams,
@@ -226,7 +241,7 @@ const detailsPage = [
       title: 'GraphQL on SQL Server with Hasura',
       canonicalUrl: 'https://graphql.asia/workshops/graphql-on-sql-server-with-hasura/',
       description: 'GraphQL on SQL Server with Hasura.',
-      metaImg: "https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-asia.png",
+      metaImg: 'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-asia.png',
     },
     title: 'GraphQL on SQL Server with Hasura',
     backLink: '/#workshops',
@@ -234,7 +249,7 @@ const detailsPage = [
     comingSoon: true,
     description: [
       {
-        desc: 'More info coming soon'
+        desc: 'More info coming soon',
       },
     ],
   },
@@ -243,8 +258,9 @@ const detailsPage = [
     metaTags: {
       title: 'Introduction to Hasura',
       canonicalUrl: 'https://graphql.asia/workshops/introduction-to-hasura/',
-      description: 'Hasura makes developers superhuman and simplifies app development with its open-source real-time API engine to instantly create reusable, real-time GraphQL and REST APIs from your new and existing data',
-      metaImg: "https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-asia.png",
+      description:
+        'Hasura makes developers superhuman and simplifies app development with its open-source real-time API engine to instantly create reusable, real-time GraphQL and REST APIs from your new and existing data',
+      metaImg: 'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-asia.png',
     },
     title: 'Introduction to Hasura',
     backLink: '/#workshops',
@@ -252,10 +268,12 @@ const detailsPage = [
     comingSoon: true,
     description: [
       {
-        desc: 'Hasura makes developers superhuman and simplifies app development with its open-source real-time API engine to instantly create reusable, real-time GraphQL and REST APIs from your new and existing data',
+        desc:
+          'Hasura makes developers superhuman and simplifies app development with its open-source real-time API engine to instantly create reusable, real-time GraphQL and REST APIs from your new and existing data',
       },
       {
-        desc: 'This workshop will help new users get familiar with Hasura by building a fully functional realtime backend with Hasura.',
+        desc:
+          'This workshop will help new users get familiar with Hasura by building a fully functional realtime backend with Hasura.',
       },
     ],
   },
@@ -263,33 +281,40 @@ const detailsPage = [
     url: '/talks/building-high-performing-applications-using-graphql-for-heterogeneous-system/',
     metaTags: {
       title: 'Building high performing applications using GraphQL for heterogeneous system',
-      canonicalUrl: 'https://graphql.asia/talks/building-high-performing-applications-using-graphql-for-heterogeneous-system/',
-      description: 'The user experience, performance, scalability etc all of these are essential for modern day applications. With increasingly heterogenous applications and consumers like legacy system, multiple microservices, mobile application client, third party applications, etc, catering to each of them would be challenging as every user interface or consumers fields of interest would differ resulting in different APIs or unwanted calls and data flow over the network.',
-      metaImg: "https://graphql-engine-cdn.hasura.io/assets/graphql-asia/building-high-performing-applications-using-graphql-for-heterogeneous-system.png",
+      canonicalUrl:
+        'https://graphql.asia/talks/building-high-performing-applications-using-graphql-for-heterogeneous-system/',
+      description:
+        'The user experience, performance, scalability etc all of these are essential for modern day applications. With increasingly heterogenous applications and consumers like legacy system, multiple microservices, mobile application client, third party applications, etc, catering to each of them would be challenging as every user interface or consumers fields of interest would differ resulting in different APIs or unwanted calls and data flow over the network.',
+      metaImg:
+        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/building-high-performing-applications-using-graphql-for-heterogeneous-system.png',
     },
     title: 'Building high performing applications using GraphQL for heterogeneous system',
     speakersTitle: 'About the speakers',
     backLink: '/#talks',
     description: [
       {
-        desc: 'The user experience, performance, scalability etc all of these are essential for modern day applications. With increasingly heterogenous applications and consumers like legacy system, multiple microservices, mobile application client, third party applications, etc, catering to each of them would be challenging as every user interface or consumers fields of interest would differ resulting in different APIs or unwanted calls and data flow over the network. Learn how GraphQL comes to rescue to cater variety of consumers without compromising on performance or user experience. GraphQL helps with rapid development time due to it iterative manner development and also to build scalable, high performing APIs.',
+        desc:
+          'The user experience, performance, scalability etc all of these are essential for modern day applications. With increasingly heterogenous applications and consumers like legacy system, multiple microservices, mobile application client, third party applications, etc, catering to each of them would be challenging as every user interface or consumers fields of interest would differ resulting in different APIs or unwanted calls and data flow over the network. Learn how GraphQL comes to rescue to cater variety of consumers without compromising on performance or user experience. GraphQL helps with rapid development time due to it iterative manner development and also to build scalable, high performing APIs.',
       },
     ],
     takeaways: [
       {
-        desc: 'Learn how GraphQL comes to rescue to cater variety of consumers without compromising on performance or user experience. GraphQL helps with rapid development time due to its iterative manner development and also to build scalable, high performing APIs. Learn also how GraphQL enabled us in SAP Ariba procurement applications to provide better user experience for our customers'
-      }
+        desc:
+          'Learn how GraphQL comes to rescue to cater variety of consumers without compromising on performance or user experience. GraphQL helps with rapid development time due to its iterative manner development and also to build scalable, high performing APIs. Learn also how GraphQL enabled us in SAP Ariba procurement applications to provide better user experience for our customers',
+      },
     ],
     speakersList: [
       {
         speakersUrl: '/speakers/sunitha/',
         speakersName: 'Sunitha N',
         speakersImg: sunitha,
-        speakersBio: 'Sunitha has a overall of 10+ years of experience in IT industry. Currently, she is working at SAP as a Senior Developer for Strategic Procurement related products. She has experience in building enterprise and cloud applications for domains like Healthcare, Telecom and procurement. Her interests are towards solving problems and Micro service architecture.',
+        speakersBio:
+          'Sunitha has a overall of 10+ years of experience in IT industry. Currently, she is working at SAP as a Senior Developer for Strategic Procurement related products. She has experience in building enterprise and cloud applications for domains like Healthcare, Telecom and procurement. Her interests are towards solving problems and Micro service architecture.',
         speakersDesignation: (
           <span>
             Tech Lead,
-            <br />SAP
+            <br />
+            SAP
           </span>
         ),
       },
@@ -297,11 +322,13 @@ const detailsPage = [
         speakersUrl: '/speakers/kumaraswamy-gowda/',
         speakersName: 'Kumaraswamy Gowda',
         speakersImg: kumaraswamy,
-        speakersBio: 'Kumar holds a MTech degree in Computer Science from NIT Surathkal, India. He is currently working as a Principal software engineer for Strategic Procurement related products in SAP Ariba. He has a overall of 13+ years of development experience from organizations like Oracle, JP Morgan, IBM Software labs. His expertise are in building enterprise and cloud application for domains like pharmaceutical, software tools and procurement. His interests are towards Microservice architecture and Machine Learning algorithms. He loves going on long rides on bike and conquering peaks during weekend treks.',
+        speakersBio:
+          'Kumar holds a MTech degree in Computer Science from NIT Surathkal, India. He is currently working as a Principal software engineer for Strategic Procurement related products in SAP Ariba. He has a overall of 13+ years of development experience from organizations like Oracle, JP Morgan, IBM Software labs. His expertise are in building enterprise and cloud application for domains like pharmaceutical, software tools and procurement. His interests are towards Microservice architecture and Machine Learning algorithms. He loves going on long rides on bike and conquering peaks during weekend treks.',
         speakersDesignation: (
           <span>
             Principal Software Engineer,
-            <br />SAP
+            <br />
+            SAP
           </span>
         ),
       },
@@ -312,45 +339,56 @@ const detailsPage = [
     metaTags: {
       title: 'GraphQL Error Handling Done Right',
       canonicalUrl: 'https://graphql.asia/talks/graphql-error-handling-done-right/',
-      description: 'GraphQL is particularly good at resource aggregation and partial data delivery. At the same time, these characteristics also make GraphQL error handling, reporting, alerting and triaging complicated. In this talk, I will go over the challenges we discovered with GraphQL reliability at Facebook, and what we did to overcome them.',
-      metaImg: "https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-error-handling-done-right.png",
+      description:
+        'GraphQL is particularly good at resource aggregation and partial data delivery. At the same time, these characteristics also make GraphQL error handling, reporting, alerting and triaging complicated. In this talk, I will go over the challenges we discovered with GraphQL reliability at Facebook, and what we did to overcome them.',
+      metaImg:
+        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-error-handling-done-right.png',
     },
     title: 'GraphQL Error Handling Done Right',
     speakersTitle: 'About the speaker',
     backLink: '/#talks',
     description: [
       {
-        desc: 'GraphQL is particularly good at resource aggregation and partial data delivery. At the same time, these characteristics also make GraphQL error handling, reporting, alerting and triaging complicated. In this talk, I will go over the challenges we discovered with GraphQL reliability at Facebook, and what we did to overcome them.',
+        desc:
+          'GraphQL is particularly good at resource aggregation and partial data delivery. At the same time, these characteristics also make GraphQL error handling, reporting, alerting and triaging complicated. In this talk, I will go over the challenges we discovered with GraphQL reliability at Facebook, and what we did to overcome them.',
       },
     ],
     takeaways: [
       {
         list: [
-          <span>Learn how to surmount challenges presented with GraphQL “errors” collections, including:
+          <span>
+            Learn how to surmount challenges presented with GraphQL “errors” collections, including:
             <ul>
-              <li>Errors over-aggregation and under-aggregation are typical problems with alerting.</li>
-              <li>Traditional triaging using stack traces may not work well with certain GraphQL errors.</li>
+              <li>
+                Errors over-aggregation and under-aggregation are typical problems with alerting.
+              </li>
+              <li>
+                Traditional triaging using stack traces may not work well with certain GraphQL
+                errors.
+              </li>
             </ul>
           </span>,
           'How to come up with creative solutions that leverage GraphQL schema and Machine Learning.',
           'How Facebook experiments with expressing criticality in GraphQL.',
-        ]
-      }
+        ],
+      },
     ],
     speakersList: [
       {
         speakersUrl: '/speakers/kewei-qu/',
         speakersName: 'Kewei Qu',
         speakersImg: keweiQu,
-        speakersBio: 'Kewei is a software engineer at Facebook. She currently works on GraphQL reliability, efficiency and performance. Her day to day work helps various product teams across Facebook and Instagram to scale with GraphQL and allow end users get the most value of the App experiences.',
+        speakersBio:
+          'Kewei is a software engineer at Facebook. She currently works on GraphQL reliability, efficiency and performance. Her day to day work helps various product teams across Facebook and Instagram to scale with GraphQL and allow end users get the most value of the App experiences.',
         speakersDesignation: (
           <span>
             Software Engineer,
-            <br />Facebook
+            <br />
+            Facebook
           </span>
         ),
       },
     ],
   },
-]
+];
 export { speakersDetails, detailsPage };
