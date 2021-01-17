@@ -12,6 +12,14 @@
   display: flex;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
 .red-text {
   color: #c63939;
 }
@@ -36,6 +44,14 @@
 
 .mt-20 {
   margin-top: 20px;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.mt-30 {
+  margin-top: 30px;
 }
 
 .light-hr {
@@ -217,7 +233,6 @@
     }
 
     .workshop-illustration {
-      right: 0;
       margin-right: -8.25%;
     }
 
@@ -267,11 +282,19 @@
   }
 
   .talks-section {
-    padding-left: 20px;
+    // padding-left: 15px;
 
     .talk-div {
+      align-items: flex-start;
+
       img {
         margin: 12px 25px 0 0;
+      }
+
+      .speaker-img {
+        width: 69px;
+        filter: grayscale(100%);
+        margin: 0;
       }
 
       h2 {
@@ -286,6 +309,23 @@
         font-weight: 600;
         color: #f5e7d3;
         margin-top: 5px;
+        margin-bottom: 0;
+      }
+
+      .speaker-details {
+        margin-left: 24px;
+
+        h2 {
+          color: #c63939;
+          font-weight: 600;
+          font-size: 18px;
+        }
+
+        p {
+          color: #f5e7d3;
+          font-weight: 600;
+          font-size: 18px;
+        }
       }
     }
   }

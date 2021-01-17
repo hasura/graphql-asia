@@ -13,6 +13,8 @@ import workshopIcon from './images/workshop_icon.svg';
 import workshopBulletIcon from './images/workshop_bullet.svg';
 import formIllustration from './images/form_illustration.png';
 
+import danSchafer from '../Common/images/dan-schafer.png';
+
 const HeaderSection = () => (
   <div className="marketing-header-section">
     <div className="col-md-3 noPadd">
@@ -123,21 +125,62 @@ const WorkShops = () => (
   </div>
 );
 
-const Talks = () => (
-  <div className="talks-wrapper-div">
-    <div className="talks-wrapper flex col-md-12 noPadd">
-      <h2 className="col-md-3 noPadd">Talks</h2>
-      <div className="talks-section col-md-9 noPadd">
-        <div className="flex talk-div">
-          <img src={workshopBulletIcon} alt="workshop" />
-          <div>
-            <h2>The State of GraphQL</h2>
-          </div>
+const Talks = () => {
+  const speakersData = [
+    {
+      headline: 'The State of GraphQL',
+      speakers: [
+        {
+          speaker: 'Dan Schafer',
+          speakerImg: danSchafer,
+          description: 'GraphQL Co-Creator / Director of Engineering, Facebook',
+        },
+        {
+          speaker: 'Tanmai Gopal',
+          speakerImg: danSchafer,
+          description: 'CEO / Co-founder, Hasura',
+        },
+      ],
+    },
+    {
+      headline: 'Evolution of GraphQL at Tokopedia with increase in Scale',
+      speakers: [
+        {
+          speaker: 'Aditi Singh',
+          speakerImg: danSchafer,
+          description: 'Senior Software Engineer, Tokopedia',
+        },
+      ],
+    },
+  ];
+
+  return (
+    <div className="talks-wrapper-div">
+      <div className="talks-wrapper flex col-md-12 noPadd">
+        <h2 className="col-md-3 noPadd">Talks</h2>
+        <div className="talks-section col-md-9 noPadd flex">
+          {speakersData.map(({ headline, speakers }) => (
+            <div className="talk-div flex col-md-6" key={headline}>
+              <img src={workshopBulletIcon} alt="workshop" />
+              <div className="flex flex-column">
+                <h2>{headline}</h2>
+                {speakers.map(({ speaker, speakerImg, description }) => (
+                  <div className="flex align-center mt-30" key={speaker}>
+                    <img src={speakerImg} alt={speaker} className="speaker-img" />
+                    <div className="flex flex-column speaker-details">
+                      <h2>{speaker}</h2>
+                      <p>{description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 const FooterSection = () => {
   const currentYear = new Date().getFullYear();
