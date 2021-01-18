@@ -1,13 +1,18 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 import { Footer } from './Footer';
 import redBox from '../Common/images/red-box.svg';
 import add from '../Common/images/add.svg';
+import gqlaImg from '../Common/images/logo-dark-mode.svg';
 
 export const Thankyou = () => (
   <div id="viewport" className="darkModeLayout advertisement-site-wrapper">
-    <div className="registerWrapper sectionWrapper removePaddTop thankyou-wrapper">
-      <Fragment>
+    <div className="registerWrapper sectionWrapper removePaddTop thankyou-wrapper flex">
+      <div className="col-md-3 noPadd">
+        <img src={gqlaImg} alt="graphql-asia" id="gqla-logo" />
+        <div className="articleDesc redColor fontBold">24th &amp; 25th Feb</div>
+      </div>
+      <div>
         <div className="mainSubTitle">Thank you for registering for GraphQL Asia!</div>
         <div className="articleDesc removePaddTop">
           Here are a couple of things before you go on with your day:
@@ -40,7 +45,7 @@ export const Thankyou = () => (
             Add to Calendar
           </a>
         </div>
-      </Fragment>
+      </div>
     </div>
     <Footer />
   </div>
