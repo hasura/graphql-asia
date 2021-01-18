@@ -1,6 +1,7 @@
 import React from 'react';
 
 import hasuraLogo from '../Common/images/powered-logo-dark-mode.svg';
+import footerPattern from '../Common/images/footer-pattern.svg';
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -16,6 +17,9 @@ export const Footer = () => {
             <img src={hasuraLogo} alt="Powered Logo" />
           </a>
         </div>
+      </div>
+      <div className="footerPattern">
+        <img src={footerPattern} alt="pattern" />
       </div>
     </div>
   );

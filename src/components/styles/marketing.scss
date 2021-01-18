@@ -406,4 +406,16 @@
   .workshop-illustration {
     display: none;
   }
+
+  .marketing-footer-section {
+    padding: 32px 7% 60px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+
+    .articleDesc {
+      margin-top: 20px;
+    }
+  }
 }
