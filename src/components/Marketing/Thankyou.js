@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 import { Footer } from './Footer';
 import redBox from '../Common/images/red-box.svg';
@@ -9,7 +10,9 @@ export const Thankyou = () => (
   <div id="viewport" className="darkModeLayout advertisement-site-wrapper">
     <div className="registerWrapper sectionWrapper removePaddTop thankyou-wrapper flex">
       <div className="col-md-3 noPadd">
-        <img src={gqlaImg} alt="graphql-asia" id="gqla-logo" />
+        <Link to="/">
+          <img src={gqlaImg} alt="graphql-asia" id="gqla-logo" />
+        </Link>
         <div className="articleDesc redColor fontBold">24th &amp; 25th Feb</div>
       </div>
       <div>
