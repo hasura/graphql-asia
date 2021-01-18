@@ -9,13 +9,15 @@ import '../Common/Styles.scss';
 import '../styles/marketing.scss';
 
 export const MarketingPage = () => {
-  const [width, setWidth] = React.useState(window.innerWidth);
+  const [width, setWidth] = React.useState(undefined);
 
   const handleWindowResize = () => {
     setWidth(window.innerWidth);
   };
 
   React.useEffect(() => {
+    setWidth(window.innerWidth);
+
     window.addEventListener('resize', handleWindowResize);
     return () => window.removeEventListener('resize', handleWindowResize);
   }, []);
