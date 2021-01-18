@@ -351,6 +351,30 @@
   margin-top: -60px;
 }
 
+#register-form {
+  .mktoFormRow {
+    // width: 100%;
+
+    input {
+      min-width: 280px;
+      width: 100% !important;
+    }
+  }
+
+  button {
+    white-space: nowrap !important;
+    height: 56px;
+    background: #000 !important;
+    min-width: 170px;
+    padding: 0 40px !important;
+  }
+
+  button:hover {
+    // color: #000 !important;
+    // background: #f5e7d3 !important;
+  }
+}
+
 // Mobile Optimizations ****************** //
 
 @media screen and (max-width: 600px) {
