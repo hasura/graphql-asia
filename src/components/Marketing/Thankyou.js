@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 
+import { Footer } from './Footer';
 import redBox from '../Common/images/red-box.svg';
 import add from '../Common/images/add.svg';
 
@@ -41,5 +42,6 @@ export const Thankyou = () => (
         </div>
       </Fragment>
     </div>
+    <Footer />
   </div>
 );

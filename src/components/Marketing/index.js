@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { navigate } from 'gatsby';
 
 import { Header } from './Header';
 import { TopBanner } from './TopBanner';
 import { Workshops } from './Workshops';
 import { Talks } from './Talks';
 import { Footer } from './Footer';
-// import { Thankyou } from './Thankyou';
+import { Thankyou } from './Thankyou';
 import '../Common/Styles.scss';
 import '../styles/marketing.scss';
 
@@ -39,8 +38,7 @@ export const MarketingPage = ({ location }) => {
   const isMobile = width < 600;
 
   if (isAliId) {
-    return navigate(`/register/?aliId=${searchAliId}`);
-    // return null;
+    return <Thankyou />;
   }
 
   return (
