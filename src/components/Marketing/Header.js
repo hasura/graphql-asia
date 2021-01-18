@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 import gqlaImg from '../Common/images/logo-dark-mode.svg';
 import hasuraLogo from '../Common/images/powered-logo-dark-mode.svg';
@@ -19,6 +20,13 @@ export const Header = ({ isMobile }) => {
           </div>
         </div>
         <div className="mainHeading col-md-12 noPadd">Asia&apos;s largest GraphQL Conf is back</div>
+        <div className="buttonWrapper">
+          <Link to="/register/">
+            <button className="commonBtn darkBtn" style={{ margin: '30px 0 50px 0' }}>
+              Register Now
+            </button>
+          </Link>
+        </div>
       </div>
     );
   }
