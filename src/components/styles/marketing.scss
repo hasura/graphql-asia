@@ -374,4 +374,23 @@
       margin: 50px 0;
     }
   }
+
+  .marketing-landing-banner {
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .banner-section {
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+
+    .marketing-headlight-div {
+      margin: 0;
+      margin-bottom: 48px;
+    }
+  }
+
+  .signup-form-wrapper {
+    display: none;
+  }
 }

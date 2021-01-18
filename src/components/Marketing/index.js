@@ -25,7 +25,7 @@ export const MarketingPage = () => {
   return (
     <div id="viewport" className="darkModeLayout advertisement-site-wrapper">
       <Header isMobile={isMobile} />
-      <TopBanner />
+      <TopBanner isMobile={isMobile} />
       <Workshops />
       <Talks />
       <Footer />
