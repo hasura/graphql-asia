@@ -14,12 +14,7 @@ export function MarketoForm({ formId, marketoHost, id, styleClass, onSubmitCB })
   }, []);
 
   useEffect(() => {
-    isLoaded &&
-      window.MktoForms2.loadForm(
-        marketoHost,
-        id,
-        formId
-      );
+    isLoaded && window.MktoForms2.loadForm(marketoHost, id, formId);
   }, [isLoaded, formId, marketoHost, id]);
 
   const loadScript = () => {
@@ -39,23 +34,24 @@ export function MarketoForm({ formId, marketoHost, id, styleClass, onSubmitCB })
   };
 
   if (!isLoaded) {
-    return <h1>Loading....</h1>
+    return <h1>Loading....</h1>;
   }
 
   return (
     <div>
-      <form onSubmit={
-        (e) => {
+      <form
+        onSubmit={(e) => {
           e.preventDefault();
           if (onSubmitCB) {
-            onSubmitCB()
+            onSubmitCB();
           }
-        }
-      } className={styleClass} id={`mktoForm_${formId}`}>
-      </form>
+        }}
+        className={styleClass}
+        id={`mktoForm_${formId}`}
+      ></form>
       <p id="email-agreement-text">
         *By submitting this form, I agree to receive emails from Hasura
-        </p>
+      </p>
     </div>
   );
 }
