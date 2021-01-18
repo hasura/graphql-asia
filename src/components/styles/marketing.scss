@@ -162,6 +162,7 @@
   flex-direction: column;
   justify-content: space-between;
   max-width: 600px;
+  max-height: 450px;
 
   img {
     width: 100%;
@@ -378,6 +379,25 @@
 .thankyou-wrapper {
   width: 85%;
   margin: 100px auto 0;
+}
+
+// Tablet / Ipad optimizations ********** //
+
+@media screen and (max-width: 1050px) {
+  .main-landing-section {
+    display: flex;
+    flex-direction: column;
+
+    .banner-section {
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+
+    .marketing-headlight-div {
+      margin: 0;
+      margin-bottom: 48px;
+    }
+  }
 }
 
 // Mobile Optimizations ****************** //

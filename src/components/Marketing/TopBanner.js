@@ -9,7 +9,7 @@ import workshopIcon from './images/workshop_icon.svg';
 export const TopBanner = () => {
   return (
     <div className="marketing-landing-banner">
-      <div className="col-md-6 noPadd">
+      <div className="col-md-6 noPadd main-landing-section">
         <div className="flex mb-40 space-between banner-section">
           <div className="marketing-headlight-div col-md-6 col-xs-12 noPadd pr-20">
             <img src={graphQLIcon} alt="graphql-fireside-chat" />
