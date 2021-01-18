@@ -393,4 +393,17 @@
   .signup-form-wrapper {
     display: none;
   }
+
+  .workshop-wrapper-div {
+    flex-direction: column;
+  }
+
+  .workshops {
+    padding-left: 0px !important;
+    margin-top: 48px;
+  }
+
+  .workshop-illustration {
+    display: none;
+  }
 }

@@ -6,9 +6,9 @@ import workshopIllustration from '../Common/images/pattern-dark.svg';
 export const Workshops = () => (
   <div className="workshops-section-wrapper">
     <div className="workshops-section col-md-12 noPadd">
-      <div className="flex col-md-12 noPadd">
+      <div className="flex col-md-12 col-xs-12 noPadd workshop-wrapper-div">
         <h2 className="col-md-3 noPadd">Workshops</h2>
-        <div className="workshops col-md-9 noPadd">
+        <div className="workshops col-md-9 col-xs-12 noPadd">
           <div className="flex workshop-div">
             <img src={workshopBulletIcon} alt="workshop" />
             <div>
