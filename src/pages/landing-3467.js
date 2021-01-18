@@ -2,6 +2,6 @@ import React from 'react';
 
 import { MarketingPage } from '../components/Marketing';
 
-const Marketing = () => <MarketingPage />;
+const Marketing = (props) => <MarketingPage location={props.location} />;
 
 export default Marketing;
