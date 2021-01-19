@@ -1005,6 +1005,31 @@ ul {
   }
 }
 @media(max-width: 900px) {
+  .landingThankWrapper {
+    .landingThankShareWrapper {
+      display: inline-block;
+      background-image: none;
+      margin-top: 40px;
+      padding: 18px 24px;
+      border-radius: 4px;
+      .articleDesc {
+        padding-bottom: 10px;
+      }
+      .shareIconWrapper {
+        .shareIcon {
+          &:first-child {
+            margin-left: 0;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+  .wd80 {
+    width: 100%;
+  }
   #viewport {
     height: 100vh;
     overflow-x: hidden;

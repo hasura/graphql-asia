@@ -1,10 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'gatsby';
-
+import { RegisterForm } from './RegisterForm';
 import gqlaImg from '../Common/images/logo-dark-mode.svg';
 import hasuraLogo from '../Common/images/powered-logo-dark-mode.svg';
-
+import registerPattern from '../Common/images/register-pattern.svg';
+import close from '../Common/images/close.svg';
 export const Header = ({ isMobile }) => {
+  const [isShowForm, setIsShowForm] = useState(false)
   if (isMobile) {
     return (
       <div className="marketing-header-section">
@@ -21,11 +23,16 @@ export const Header = ({ isMobile }) => {
         </div>
         <div className="mainHeading col-md-12 noPadd">Asia&apos;s largest GraphQL Conf is back</div>
         <div className="buttonWrapper">
-          <Link to="/register/">
-            <button className="commonBtn darkBtn" style={{ margin: '30px 0 50px 0' }}>
-              Register Now
-            </button>
-          </Link>
+          <button onClick={()=> setIsShowForm(true)} className="commonBtn darkBtn">
+            Register Now
+          </button>
+        </div>
+        <div className={'mobile-signup-form-wrapper' + ((isShowForm) ? ' show-signup-form-wrapper' : '')}>
+          {/*eslint-disable-next-line*/}
+          <div className='mobileShowPattern closeBtn' onClick={()=> setIsShowForm(false)}>
+            <img src={close} alt='Close' />
+          </div>
+          <RegisterForm />
         </div>
       </div>
     );
