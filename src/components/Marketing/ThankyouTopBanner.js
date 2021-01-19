@@ -12,7 +12,7 @@ const whatsappLightMode = require('../Common/images/whatsapp-light-mode.svg');
 const linkedinLightMode = require('../Common/images/linkedin-light-mode.svg');
 const twitterLightMode = require('../Common/images/twitter-light-mode.svg');
 
-const redBox = require('../Common/images/red-box.svg');
+const star = require('../Common/images/star.svg');
 const add = require('../Common/images/add.svg');
 const ThankyouTopBanner = props => {
   const [isCopied, setIsCopiedToggle] = useState(false);
@@ -38,7 +38,7 @@ const ThankyouTopBanner = props => {
         </div>
         <ul className="articleDesc">
           <li>
-            <img src={redBox} alt="Box" />
+            <img src={star} alt="Star" />
             <span>
               Check your inbox for a confirmation email. If you have not got one, please email
               Harsha at <a href="mailto:events@hasura.io">events@hasura.io</a> with the subject
@@ -46,7 +46,7 @@ const ThankyouTopBanner = props => {
             </span>
           </li>
           <li>
-            <img src={redBox} alt="Box" />
+            <img src={star} alt="Star" />
             <span>
               We will send you more information on workshop topics, speakers, schedule and how to
               attend the conference around the{' '}
@@ -54,7 +54,7 @@ const ThankyouTopBanner = props => {
             </span>
           </li>
           <li>
-            <img src={redBox} alt="Box" />
+            <img src={star} alt="Star" />
             <span>And of course, add the conference to your calendar below</span>
           </li>
         </ul>
@@ -69,7 +69,7 @@ const ThankyouTopBanner = props => {
             Invite your friends
           </div>
           <div className='shareIconWrapper'>
-            <CopyToClipboard text={`https://graphql.asia/landing-3467`} onCopy={onCopy}>
+            <CopyToClipboard text={`https://graphql.asia/`} onCopy={onCopy}>
               <div className='shareIcon'>
                 <IconHover
                   baseImgSrc = {copyDarkMode}
@@ -81,7 +81,7 @@ const ThankyouTopBanner = props => {
             </CopyToClipboard>
             <a className='shareIcon'
               href={
-                `https://wa.me/?text=https://graphql.asia/landing-3467`
+                `https://wa.me/?text=https://graphql.asia/`
               }
                data-action="share/whatsapp/share"
             >
@@ -93,7 +93,7 @@ const ThankyouTopBanner = props => {
           </a>
             <a className='shareIcon'
               href={
-                `https://twitter.com/intent/tweet?&text=Asia's largest GraphQL Conf is back&url=https://graphql.asia/landing-3467`
+                `https://twitter.com/intent/tweet?&text=Super excited to be attending GraphQL Asia 2021! Join me there #GraphQL&url=https://graphql.asia/`
               }
               target="_blank"
               rel="noopener noreferrer"
@@ -106,7 +106,7 @@ const ThankyouTopBanner = props => {
             </a>
             <a className='shareIcon'
                href={
-                  `http://www.linkedin.com/shareArticle?mini=true&url=https://graphql.asia/landing-3467&title=Asia's largest GraphQL Conf is back&summary=Asia's largest GraphQL Conf is back&source=https://graphql.asia/landing-3467`
+                  `http://www.linkedin.com/shareArticle?mini=true&url=https://graphql.asia/&title=Super excited to be attending GraphQL Asia 2021! Join me there #GraphQL&summary=Super excited to be attending GraphQL Asia 2021! Join me there #GraphQL&source=https://graphql.asia/`
                 }
                 target="_blank"
                 rel="noopener noreferrer"

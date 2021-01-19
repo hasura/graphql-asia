@@ -5,6 +5,7 @@ import { detailsPage } from '../Homepage/AllState.js'
 const arrow = require('../Common/images/arrow.svg');
 const lightArrow = require('../Common/images/light-arrow.svg');
 const darkArrow = require('../Common/images/dark-arrow.svg');
+const star = require('../Common/images/star.svg');
 const Talks = props => {
   return (
     <div id='talks' className={'sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom') + ((props.wdClass) ? ' wd80' : '')}>
@@ -18,6 +19,7 @@ const Talks = props => {
                   {
                     !talksList.isWorkshop ? (
                       <li>
+                        <img src={star} alt="Star" />
                         <Link to={talksList.url}>
                           <div className='articleSectionTitle fontBold'>
                             {talksList.title}

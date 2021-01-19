@@ -3,6 +3,7 @@ import {Link} from 'gatsby';
 import '../Common/Styles.scss';
 import { detailsPage } from '../Homepage/AllState.js'
 const arrow = require('../Common/images/arrow.svg');
+const star = require('../Common/images/star.svg');
 const Workshop = props => {
   console.log(props)
   return (
@@ -17,6 +18,7 @@ const Workshop = props => {
                   {
                     talksList.isWorkshop ? (
                       <li>
+                        <img src={star} alt="Star" />
                         <Link to={talksList.url}>
                           <div className='articleSectionTitle fontBold'>
                             {talksList.title}
