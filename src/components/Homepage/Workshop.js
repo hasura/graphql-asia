@@ -59,7 +59,7 @@ const Workshop = props => {
                           }
                           {
                             !talksList.comingSoon ? (
-                              <div className='articleDesc fontBold'>
+                              <div className='articleDesc fontBold500'>
                                 Presented by{' '}
                                 <span>
                                 {
@@ -76,7 +76,7 @@ const Workshop = props => {
                               </div>
                             ) : null
                           }
-                          <div className='articleDesc fontBold readMore'>
+                          <div className='articleDesc fontBold500 readMore'>
                             <span>Read More </span><span className='readMoreArrow'>→</span>
                           </div>
                           <div className='workshopArrow'>

@@ -24,7 +24,7 @@ const Talks = props => {
                           <div className='articleSectionTitle fontBold'>
                             {talksList.title}
                           </div>
-                          <div className='articleDesc fontBold'>
+                          <div className='articleDesc fontBold500'>
                             Speaker:{' '}
                             <span>
                             {
@@ -39,7 +39,7 @@ const Talks = props => {
                             }
                             </span> | Language: <span>English</span>
                           </div>
-                          <div className='articleDesc fontBold readMore'>
+                          <div className='articleDesc fontBold500 readMore'>
                             <span>Read More </span><span className='readMoreArrow'>→</span>
                           </div>
                           <div className='workshopArrow'>

@@ -63,6 +63,9 @@ ul {
 .fontBold {
   font-weight: bold !important;
 }
+.fontBold500 {
+  font-weight: 600 !important;
+}
 .wd25 {
   width: 25%;
 }
@@ -802,9 +805,6 @@ ul {
   width: 80%;
   .articleSubTitle {
     padding-bottom: 20px;
-  }
-  .fontBold {
-    font-weight: 600 !important;
   }
   ul {
     li {

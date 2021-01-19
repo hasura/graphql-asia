@@ -18,7 +18,7 @@ const Speakers = props => {
               <div className='commonLink'>
                 {speakers.speakersName}
               </div>
-              <div className='articleDesc fontBold'>
+              <div className='articleDesc fontBold500'>
                 {speakers.speakersDesignation}
               </div>
             </div>
