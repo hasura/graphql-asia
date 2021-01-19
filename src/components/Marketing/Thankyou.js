@@ -12,15 +12,9 @@ import gqlaImg from '../Common/images/logo-dark-mode.svg';
 export const Thankyou = ({location}) => {
   return (
     <Layout location={location}>
-      <div className='wd70'>
-        <ThankyouTopBanner />
-      </div>
-      <div className='wd70'>
-        <Workshop />
-      </div>
-      <div className='wd70'>
-        <Talks />
-      </div>
+      <ThankyouTopBanner />
+      <Workshop wdClass = 'wd60'/>
+      <Talks  wdClass = 'wd60'/>
     </Layout>
   );
 }

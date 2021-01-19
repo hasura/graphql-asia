@@ -15,7 +15,7 @@ export const RegisterForm = () => (
           formId="1117"
           marketoHost={marketoHost}
           id="631-HMN-492"
-          styleClass="marketoFormWrapper"
+          styleClass="marketoFormWrapper graphQLMktoForm"
         />
       </div>
     </div>

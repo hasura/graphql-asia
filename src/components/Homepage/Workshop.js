@@ -4,8 +4,9 @@ import '../Common/Styles.scss';
 import { detailsPage } from '../Homepage/AllState.js'
 const arrow = require('../Common/images/arrow.svg');
 const Workshop = props => {
+  console.log(props)
   return (
-    <div id='workshops' className={'sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom')}>
+    <div id='workshops' className={'sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom') + ((props.wdClass) ? ' wd80' : '')}>
       <div className='workshopWrapper'>
         <div className='articleSubTitle'>Workshops</div>
         <ul>

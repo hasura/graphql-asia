@@ -7,7 +7,7 @@ const lightArrow = require('../Common/images/light-arrow.svg');
 const darkArrow = require('../Common/images/dark-arrow.svg');
 const Talks = props => {
   return (
-    <div id='talks' className={'sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom')}>
+    <div id='talks' className={'sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom') + ((props.wdClass) ? ' wd80' : '')}>
       <div className='workshopWrapper'>
         <div className='articleSubTitle'>Talks</div>
         <ul>

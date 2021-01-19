@@ -375,7 +375,33 @@
     // background: #f5e7d3 !important;
   }
 }
-
+.graphQLMktoForm {
+  .mktoFormRow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: calc(100% - 150px);
+    .mktoFieldDescriptor {
+      .mktoFieldWrap {
+        .mktoField {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+      }
+    }
+  }
+  .mktoButtonRow {
+    width: 150px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    .mktoButtonWrap {
+      .mktoButton {
+        padding: 10px 25px !important;
+      }
+    }
+  }
+}
 .thankyou-wrapper {
   width: 85%;
   margin: 100px auto 0;

@@ -31,91 +31,93 @@ const ThankyouTopBanner = props => {
   return (
 
     <div className="registerWrapper landingThankWrapper">
-      <div className="mainSubTitle">Thank you for registering for GraphQL Asia!</div>
-      <div className="articleDesc removePaddTop">
-        Here are a couple of things before you go on with your day:
-      </div>
-      <ul className="articleDesc">
-        <li>
-          <img src={redBox} alt="Box" />
-          <span>
-            Check your inbox for a confirmation email. If you have not got one, please email
-            Harsha at <a href="mailto:events@hasura.io">events@hasura.io</a> with the subject
-            line <span className="redColor">”GQLA 2021 Registration Error“</span>.
-          </span>
-        </li>
-        <li>
-          <img src={redBox} alt="Box" />
-          <span>
-            We will send you more information on workshop topics, speakers, schedule and how to
-            attend the conference around the{' '}
-            <span className="redColor">3rd week of January</span>.
-          </span>
-        </li>
-        <li>
-          <img src={redBox} alt="Box" />
-          <span>And of course, add the conference to your calendar below</span>
-        </li>
-      </ul>
-      <div className="commonLink">
-        <a href="https://www.addevent.com/event/wJ5798313">
-          <img className="addIcon" src={add} alt="Add" />
-          Add to Calendar
-        </a>
-      </div>
-      <div className='landingThankShareWrapper'>
-        <div className='articleDesc fontBold'>
-          Invite your friends
+      <div className='wd80'>
+        <div className="mainSubTitle">Thank you for registering for GraphQL Asia!</div>
+        <div className="articleDesc removePaddTop">
+          Here are a couple of things before you go on with your day:
         </div>
-        <div className='shareIconWrapper'>
-          <CopyToClipboard text={`https://graphql.asia/landing-3467`} onCopy={onCopy}>
-            <div className='shareIcon'>
-              <IconHover
-                baseImgSrc = {copyDarkMode}
-                hoverImgSrc = {copyLightMode}
-                altText = 'Discord'
-              />
-              {renderCopyIcon()}
-            </div>
-          </CopyToClipboard>
-          <a className='shareIcon'
-            href={
-              `https://wa.me/?text=https://graphql.asia/landing-3467`
-            }
-             data-action="share/whatsapp/share"
-          >
-          <IconHover
-            baseImgSrc = {whatsappDarkMode}
-            hoverImgSrc = {whatsappLightMode}
-            altText = 'Discord'
-          />
-        </a>
-          <a className='shareIcon'
-            href={
-              `https://twitter.com/intent/tweet?&text=Asia's largest GraphQL Conf is back&url=https://graphql.asia/landing-3467`
-            }
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+        <ul className="articleDesc">
+          <li>
+            <img src={redBox} alt="Box" />
+            <span>
+              Check your inbox for a confirmation email. If you have not got one, please email
+              Harsha at <a href="mailto:events@hasura.io">events@hasura.io</a> with the subject
+              line <span className="redColor">”GQLA 2021 Registration Error“</span>.
+            </span>
+          </li>
+          <li>
+            <img src={redBox} alt="Box" />
+            <span>
+              We will send you more information on workshop topics, speakers, schedule and how to
+              attend the conference around the{' '}
+              <span className="redColor">3rd week of January</span>.
+            </span>
+          </li>
+          <li>
+            <img src={redBox} alt="Box" />
+            <span>And of course, add the conference to your calendar below</span>
+          </li>
+        </ul>
+        <div className="commonLink">
+          <a href="https://www.addevent.com/event/wJ5798313">
+            <img className="addIcon" src={add} alt="Add" />
+            Add to Calendar
+          </a>
+        </div>
+        <div className='landingThankShareWrapper'>
+          <div className='articleDesc fontBold'>
+            Invite your friends
+          </div>
+          <div className='shareIconWrapper'>
+            <CopyToClipboard text={`https://graphql.asia/landing-3467`} onCopy={onCopy}>
+              <div className='shareIcon'>
+                <IconHover
+                  baseImgSrc = {copyDarkMode}
+                  hoverImgSrc = {copyLightMode}
+                  altText = 'Discord'
+                />
+                {renderCopyIcon()}
+              </div>
+            </CopyToClipboard>
+            <a className='shareIcon'
+              href={
+                `https://wa.me/?text=https://graphql.asia/landing-3467`
+              }
+               data-action="share/whatsapp/share"
+            >
             <IconHover
-              baseImgSrc = {twitterDarkMode}
-              hoverImgSrc = {twitterLightMode}
+              baseImgSrc = {whatsappDarkMode}
+              hoverImgSrc = {whatsappLightMode}
               altText = 'Discord'
             />
           </a>
-          <a className='shareIcon'
-             href={
-                `http://www.linkedin.com/shareArticle?mini=true&url=https://graphql.asia/landing-3467&title=Asia's largest GraphQL Conf is back&summary=Asia's largest GraphQL Conf is back&source=https://graphql.asia/landing-3467`
+            <a className='shareIcon'
+              href={
+                `https://twitter.com/intent/tweet?&text=Asia's largest GraphQL Conf is back&url=https://graphql.asia/landing-3467`
               }
               target="_blank"
               rel="noopener noreferrer"
-          >
-            <IconHover
-              baseImgSrc = {linkedinDarkMode}
-              hoverImgSrc = {linkedinLightMode}
-              altText = 'Discord'
-            />
-          </a>
+            >
+              <IconHover
+                baseImgSrc = {twitterDarkMode}
+                hoverImgSrc = {twitterLightMode}
+                altText = 'Discord'
+              />
+            </a>
+            <a className='shareIcon'
+               href={
+                  `http://www.linkedin.com/shareArticle?mini=true&url=https://graphql.asia/landing-3467&title=Asia's largest GraphQL Conf is back&summary=Asia's largest GraphQL Conf is back&source=https://graphql.asia/landing-3467`
+                }
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+              <IconHover
+                baseImgSrc = {linkedinDarkMode}
+                hoverImgSrc = {linkedinLightMode}
+                altText = 'Discord'
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>
