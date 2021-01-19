@@ -69,6 +69,9 @@ ul {
 .wd20 {
   width: 20%;
 }
+.wd70 {
+  width: 70%;
+}
 .wdinner60 {
   width: 60%;
   padding-left: 40px;
@@ -737,6 +740,51 @@ ul {
       align-items: center;
       img {
         margin-right: 8px;
+      }
+    }
+  }
+}
+.landingThankWrapper {
+  width: 80%;
+  .landingThankShareWrapper {
+    display: flex;
+    align-items: center;
+    background-color: #C63939;
+    background-image: url('../Common/images/share-pattern.svg');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    padding: 18px 32px;
+    margin-top: 60px;
+    .articleDesc {
+      padding-top: 0;
+      color: #F5E7D3;
+      padding-right: 24px;
+    }
+    .shareIconWrapper {
+      display: flex;
+      .shareIcon {
+        margin: 0 12px;
+        position: relative;
+        img {
+          cursor: pointer;
+        }
+        .copiedWrapper {
+          font-size: 14px;
+          border-radius: 4px;
+          padding: 3px 5px;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          top: -32px;
+        }
+        .copiedLightMode {
+          background-color: #181818;
+          color: #F5E7D3;
+        }
+        .copiedDarkMode {
+          background-color: #F5E7D3;
+          color: #181818;
+        }
       }
     }
   }

@@ -38,16 +38,18 @@ export const MarketingPage = ({ location }) => {
   const isMobile = width < 600;
 
   if (isAliId) {
-    return <Thankyou />;
+    return <Thankyou location={location}/>;
   }
 
   return (
-    <div id="viewport" className="darkModeLayout advertisement-site-wrapper">
-      <Header isMobile={isMobile} />
-      <TopBanner isMobile={isMobile} />
-      <Workshops />
-      <Talks />
-      <Footer />
+    <div>
+      <div id="viewport" className="darkModeLayout advertisement-site-wrapper">
+        <Header isMobile={isMobile} />
+        <TopBanner isMobile={isMobile} />
+        <Workshops />
+        <Talks />
+        <Footer />
+      </div>
     </div>
   );
 };
