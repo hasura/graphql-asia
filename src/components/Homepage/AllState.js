@@ -477,7 +477,6 @@ const talkDetailsPage = [
       },
     ],
   },
-
   {
     url: '/talks/monorepo-development-using-hasura-role-and-graphql-code-generator/',
     metaTags: {
@@ -487,7 +486,7 @@ const talkDetailsPage = [
       description:
         'When your system grows above a certain size, you may need to handle multiple privileges, such as users and administrators. Hasura GraphQL Engine allows you to manage GraphQL permissions through a mechanism of roles and permissions. Based on the actual experience of using Hasura for the development of Digi Chime, we will talk about how to use Hasura roles, precautions for implementation, and efficient development method in combination with GraphQL Code Generator in monorepo configuration.',
       metaImg:
-        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/building-high-performing-applications-using-graphql-for-heterogeneous-system.png',
+        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/monorepo-development-using-hasura-role-and-graphql-code-generator.png',
     },
     title: 'Monorepo development using Hasura role and GraphQL Code Generator',
     speakersTitle: 'About the speakers',
@@ -539,7 +538,7 @@ const talkDetailsPage = [
       description:
         'How Pratilipi build an intelligent caching layer over GraphQL gateway, leveraging their CDC patterns, to serve to millions of users with a fraction of the infrastructure cost.',
       metaImg:
-        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/building-high-performing-applications-using-graphql-for-heterogeneous-system.png',
+        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/intelligent-caching-with-graphql-gateway-using-cdc.png',
     },
     title: 'Intelligent Caching with GraphQL Gateway using CDC',
     speakersTitle: 'About the speakers',
@@ -583,7 +582,7 @@ const talkDetailsPage = [
       description:
         'When your infrastructure grow and your API gets out of control. Your manager tells you to implement GraphQL... this talk is going to show you the way.',
       metaImg:
-        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/building-high-performing-applications-using-graphql-for-heterogeneous-system.png',
+        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/connect-your-enterprise-to-cloud-with-hasura-and-apache-kafka.png',
     },
     title: 'Connect your enterprise to Cloud with Hasura and Apache Kafka',
     speakersTitle: 'About the speakers',
@@ -643,7 +642,7 @@ const talkDetailsPage = [
       description:
         'When your infrastructure grow and your API gets out of control. Your manager tells you to implement GraphQL... this talk is going to show you the way.',
       metaImg:
-        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/building-high-performing-applications-using-graphql-for-heterogeneous-system.png',
+        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-wrong-answers-only.png',
     },
     title: 'GraphQL: Wrong Answers Only!',
     speakersTitle: 'About the speakers',
@@ -700,7 +699,7 @@ const talkDetailsPage = [
       description:
         'The Schema Stitching library was completely overhauled last year after becoming a project of The Guild. Learn about the new features it offers for building a distributed service graph, and how it has reemerged as a directly-comparable alternative to Apollo Federation.',
       metaImg:
-        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/building-high-performing-applications-using-graphql-for-heterogeneous-system.png',
+        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/reintroducing-schema-stitching-in-2021.png',
     },
     title: 'Reintroducing Schema Stitching in 2021',
     speakersTitle: 'About the speakers',
@@ -744,7 +743,7 @@ const talkDetailsPage = [
       description:
         'Weaviate is using GraphQL to provide user-friendly data interaction. Weaviate is a vector search engine, and all search (e.g. semantic, contextual) search is done via its GraphQL API. We\'ve put a lot of thought in the design of the GraphQL API, which results in good user and developer experience. In this talk, we will take you along in the journey of how our GraphQL implementation was shaped according to user needs and software requirements, and show a demo of the current design for Weaviate.',
       metaImg:
-        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/building-high-performing-applications-using-graphql-for-heterogeneous-system.png',
+        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-at-weaviate.png',
     },
     title: 'GraphQL at Weaviate',
     speakersTitle: 'About the speakers',
@@ -791,7 +790,7 @@ const talkDetailsPage = [
       description:
         'Are you trying to get your client app ready for GraphQL adoption or just curious about what the migration journey could look like? This talk will go over the strategy to go from REST api to GraphQL on your React applications.',
       metaImg:
-        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/building-high-performing-applications-using-graphql-for-heterogeneous-system.png',
+        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/client-side-migration-strategy-from-rest-to-graphql.png',
     },
     title: 'Client-side migration strategy: from REST to GraphQL',
     speakersTitle: 'About the speakers',
@@ -838,7 +837,7 @@ const talkDetailsPage = [
       description:
         'At the Central Tech Team at Samagra - a governance consulting team working in four different states in India - we\'ve been trying to create a culture of using open-source, scalable and fast (bleeding-edge) tech for government use cases. What we\'ve done so far - enable tracking and monitoring of student and teacher attendance in all public schools of Haryana; building the technology architecture behind Mission Prerna, Uttar Pradesh\'s mission to transform basic education and enable tech systems that allowed Himachal Pradesh to be declared the country\'s best state in terms of learning continuity in 2020, according to the Annual State of Education Report. How do we do it - and how does GraphQL fit into the picture?',
       metaImg:
-        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/building-high-performing-applications-using-graphql-for-heterogeneous-system.png',
+        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/adding-bleeding-edge-tech-to-archaic-government-graphql-for-govtech.png',
     },
     title: 'Adding bleeding-edge tech to archaic government: GraphQL for GovTech',
     speakersTitle: 'About the speakers',
@@ -881,7 +880,7 @@ const talkDetailsPage = [
       description:
         'GraphQL Federation is great scalable architecture, but also has its own issues. In this talk, we will discuss about current approaches, challenges and the future of GraphQL Federation',
       metaImg:
-        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/building-high-performing-applications-using-graphql-for-heterogeneous-system.png',
+        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-federation-challenges-and-future.png',
     },
     title: 'GraphQL Federation: Challenges and Future',
     speakersTitle: 'About the speakers',
@@ -924,7 +923,7 @@ const talkDetailsPage = [
       description:
         'How a team in Tesco chose to follow iterative approach to adopting GraphQL and removing flakiness from their existing NodeJS endpoints',
       metaImg:
-        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/building-high-performing-applications-using-graphql-for-heterogeneous-system.png',
+        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/adopting-graphql-in-a-legacy-nodejs-api.png',
     },
     title: 'Adopting GraphQL in a legacy NodeJS API',
     speakersTitle: 'About the speakers',
@@ -1031,7 +1030,7 @@ const workshopDetailsPage = [
       canonicalUrl: 'https://graphql.asia/workshops/introduction-to-hasura/',
       description:
         'Hasura makes developers superhuman and simplifies app development with its open-source real-time API engine to instantly create reusable, real-time GraphQL and REST APIs from your new and existing data',
-      metaImg: 'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-asia.png',
+      metaImg: 'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/introduction-to-hasura.png',
     },
     title: 'Introduction to Hasura',
     backLink: '/workshops/',
@@ -1070,7 +1069,7 @@ const workshopDetailsPage = [
       description:
         'The adoption rate of the Jamstack is increasing at a tremendous pace. At its core, sites created with the Jamstack utilise static sites generated by various tools. Some of these tools utilise GraphQL heavily from querying metadata to querying dynamic page content. As part of this workshop attendees will have the opportunity to familiarise themselves with Gatsby.js and learn how to build a Jamstack application while leveraging GraphQL and learning about the core pillars of the Jamstack.',
       metaImg:
-        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/server-side-authentication-in-graphql.png',
+        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-in-the-jamstack.png',
     },
     title: 'GraphQL in the Jamstack',
     isWorkshop: true,
@@ -1112,7 +1111,7 @@ const workshopDetailsPage = [
       description:
         'The adoption rate of the Jamstack is increasing at a tremendous pace. At its core, sites created with the Jamstack utilise static sites generated by various tools. Some of these tools utilise GraphQL heavily from querying metadata to querying dynamic page content. As part of this workshop attendees will have the opportunity to familiarise themselves with Gatsby.js and learn how to build a Jamstack application while leveraging GraphQL and learning about the core pillars of the Jamstack.',
       metaImg:
-        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/server-side-authentication-in-graphql.png',
+        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/type-safe-graphql-apps-with-typescript.png',
     },
     title: 'Type-safe GraphQL apps with TypeScript',
     isWorkshop: true,
