@@ -505,6 +505,9 @@ ul {
         }
       }
     }
+    .active {
+      text-decoration: underline;
+    }
   }
 }
 .leftSidebarFooterWrapper {
@@ -807,6 +810,7 @@ ul {
     padding-bottom: 20px;
   }
   ul {
+    margin-bottom: 80px;
     li {
       padding: 24px 20px;
       position: relative;
@@ -961,17 +965,17 @@ ul {
       }
     }
   }
-  .backBtnWrapper {
+}
+.backBtnWrapper {
+  position: relative;
+  .darkBtn {
+    width: 250px;
+    display: inline-block;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
     position: relative;
-    .darkBtn {
-      width: 250px;
-      display: inline-block;
-      z-index: 10;
-      transition: all 0.3s ease-in-out;
-      position: relative;
-      &:hover {
-        transform: translateX(20px);
-      }
+    &:hover {
+      transform: translateX(20px);
     }
   }
 }
@@ -1479,12 +1483,10 @@ ul {
       }
     }
   }
-  .detailsPageWrapper {
-    .backBtnWrapper {
-      .darkBtn {
-        width: auto;
-        padding: 15px 50px;
-      }
+  .backBtnWrapper {
+    .darkBtn {
+      width: auto;
+      padding: 15px 50px;
     }
   }
 }

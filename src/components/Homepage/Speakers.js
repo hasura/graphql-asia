@@ -1,37 +1,24 @@
-import React from "react";
+import React, {Fragment} from "react";
 import {Link} from 'gatsby';
 import '../Common/Styles.scss';
+import { speakersDetails } from './AllState.js'
+import IndivSpeaker from './IndivSpeaker';
 const submitBtnIcon = require('../Common/images/submit-btn-icon.svg');
 const submitBtnIconHover = require('../Common/images/submit-btn-icon-hover.svg');
-const arrow = require('../Common/images/arrow.svg');
-import { speakersDetails } from './AllState.js'
 const Speakers = props => {
   const speakersList = speakersDetails.map((speakers, index) => {
     return (
-      <div key={index} className='speakersList threeColumsList'>
-        <Link to={speakers.talkPageUrl}>
-          <div className='speakersListContainer'>
-            <div className='speakersImg'>
-              <img src={speakers.speakersImg} alt={speakers.speakersName} />
-            </div>
-            <div className='speakersProfileWrapper'>
-              <div className='commonLink'>
-                {speakers.speakersName}
-              </div>
-              <div className='articleDesc fontBold500'>
-                {speakers.speakersDesignation}
-              </div>
-            </div>
-            <div className='speakerArrow'>
-              <img src={arrow} alt='Arrow' />
-            </div>
-          </div>
-        </Link>
-      </div>
+      <Fragment>
+        {
+          index < 6  ? (
+            <IndivSpeaker key={index} speakers={speakers} />
+          ) : null
+        }
+      </Fragment>
     )
   })
   return (
-    <div id='speakers' className={'speakersWrapper sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom')}>
+    <div id='speakers' className='speakersWrapper sectionWrapper removePaddBottom'>
       <div className='speakersHeader'>
         <div className='articleTitle'>Speakers</div>
         {/*
@@ -51,8 +38,9 @@ const Speakers = props => {
           {speakersList}
         </div>
       </div>
-      <div className='articleSubTitle moreSpeakers'>
-        More speakers coming soon!
+      <div className='backBtnWrapper'>
+        <div className={((!props.isLightMode) ? 'lightLine' : 'darkLine')}></div>
+        <Link to='/speakers/'><button className='commonBtn darkBtn'>View all Speakers →</button></Link>
       </div>
       {/*
       <div className='buttonWrapper mobileShow'>

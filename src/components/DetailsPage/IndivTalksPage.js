@@ -19,7 +19,7 @@ const whatsappHover = require('../Common/images/whatsapp-hover.svg');
 const linkedinHover = require('../Common/images/linkedin-hover.svg');
 const twitterHover = require('../Common/images/twitter-hover.svg');
 
-const IndivPage = props => {
+const IndivTalksPage = props => {
   const [isCopied, setIsCopiedToggle] = useState(false);
   const onCopy = () => {
     setIsCopiedToggle(true);
@@ -282,4 +282,4 @@ const IndivPage = props => {
   );
 };
 
-export default IndivPage;
+export default IndivTalksPage;

@@ -154,7 +154,7 @@ const Layout = ({ children, location }) => {
         </div>
         <div className="mainGridWrapper">
           <div>
-            <LeftSidebar isLightMode={isLightMode} />
+            <LeftSidebar isLightMode={isLightMode} location={location}/>
           </div>
           <div>
             {children.map((child, index) => (

@@ -15,7 +15,8 @@ const linkedinHover = require('./images/linkedin-hover.svg');
 const twitterHover = require('./images/twitter-hover.svg');
 const poweredLogoLightMode = require('./images/powered-logo-light-mode.svg');
 const poweredLogoDarkMode = require('./images/powered-logo-dark-mode.svg');
-const LeftSidebar = ({isLightMode}) => {
+const LeftSidebar = ({isLightMode, location}) => {
+  const path = location.pathname;
   return (
     <div className='leftSidebarWrapper'>
       <div className='brand'>
@@ -27,10 +28,10 @@ const LeftSidebar = ({isLightMode}) => {
         24th & 25th Feb
       </div>
       <ul className='articleDesc'>
-        <li><Link to='/#speakers'>Speakers</Link></li>
-        <li><Link to='/#workshops'>Workshops</Link></li>
-        <li><Link to='/#talks'>Talks</Link></li>
-        <li><Link to='/code-of-conduct/'>Code of Conduct</Link></li>
+        <li className={((path === '/speakers/') ? 'active' : '')}><Link to='/speakers/'>Speakers</Link></li>
+        <li className={((path === '/workshops/') ? 'active' : '')}><Link to='/workshops/'>Workshops</Link></li>
+        <li className={((path === '/talks/') ? 'active' : '')}><Link to='/talks/'>Talks</Link></li>
+        <li className={((path === '/code-of-conduct/') ? 'active' : '')}><Link to='/code-of-conduct/'>Code of Conduct</Link></li>
         <li><Link to='/#sponsorship'>Sponsorship</Link></li>
       </ul>
       <div className='leftSidebarFooterWrapper'>

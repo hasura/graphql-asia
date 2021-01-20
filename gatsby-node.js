@@ -5,28 +5,53 @@
  */
 // You can delete this file if you're not using it
 
-const detailsPage = [
+const talkDetailsPage = [
   '/talks/the-state-of-graphql/',
   '/talks/evolution-of-graphql-at-tokopedia-with-increase-in-scale/',
+  '/talks/building-high-performing-applications-using-graphql-for-heterogeneous-system/',
+  '/talks/graphql-error-handling-done-right/',
+  '/talks/monorepo-development-using-hasura-role-and-graphql-code-generator/',
+  '/talks/intelligent-caching-with-graphql-gateway-using-cdc/',
+  '/talks/connect-your-enterprise-to-cloud-with-hasura-and-apache-kafka/',
+  '/talks/graphql-wrong-answers-only/',
+  '/talks/reintroducing-schema-stitching-in-2021/',
+  '/talks/graphql-at-weaviate/',
+  '/talks/client-side-migration-strategy-from-rest-to-graphql/',
+  '/talks/adding-bleeding-edge-tech-to-archaic-government-graphql-for-govtech/',
+  '/talks/graphql-federation-challenges-and-future/',
+  '/talks/adopting-graphql-in-a-legacy-nodejs-api/',
+];
+const workshopDetailsPage = [
   '/workshops/server-side-authentication-in-graphql/',
   '/workshops/graphql-on-sql-server-with-hasura/',
   '/workshops/introduction-to-hasura/',
-  '/talks/building-high-performing-applications-using-graphql-for-heterogeneous-system/',
-  '/talks/graphql-error-handling-done-right/',
-];
-
+  '/workshops/graphql-in-the-jamstack/',
+  '/workshops/type-safe-graphql-apps-with-typescript/',
+]
 const path = require("path");
 
 exports.onCreatePage = async ({ page, actions }) => {
   const { createPage } = actions;
-  detailsPage.forEach((talks, index) => {
+  talkDetailsPage.forEach((talks, index) => {
     createPage({
       path: talks,
-      component: path.resolve(`./src/components/DetailsPage/DetailsPage.js`),
+      component: path.resolve(`./src/components/DetailsPage/TalkDetailsPage.js`),
       context: {
         // Data passed to context is available
         // in page queries as GraphQL variables.
         slug: talks,
+      },
+    });
+  });
+
+  workshopDetailsPage.forEach((workshop, index) => {
+    createPage({
+      path: workshop,
+      component: path.resolve(`./src/components/DetailsPage/WorkshopDetailsPage.js`),
+      context: {
+        // Data passed to context is available
+        // in page queries as GraphQL variables.
+        slug: workshop,
       },
     });
   });
