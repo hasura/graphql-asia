@@ -1,55 +1,20 @@
 import React from 'react';
 import { Link } from 'gatsby';
-
+import Workshop from '../Homepage/Workshop'
+import Talks from '../Homepage/Talks'
+import Layout from '../Layout';
 import { Footer } from './Footer';
 import redBox from '../Common/images/red-box.svg';
 import add from '../Common/images/add.svg';
+import ThankyouTopBanner from './ThankyouTopBanner';
 import gqlaImg from '../Common/images/logo-dark-mode.svg';
 
-export const Thankyou = () => (
-  <div id="viewport" className="darkModeLayout advertisement-site-wrapper">
-    <div className="registerWrapper sectionWrapper removePaddTop thankyou-wrapper flex">
-      <div className="col-md-3 noPadd">
-        <Link to="/">
-          <img src={gqlaImg} alt="graphql-asia" id="gqla-logo" />
-        </Link>
-        <div className="articleDesc redColor fontBold">24th &amp; 25th Feb</div>
-      </div>
-      <div>
-        <div className="mainSubTitle">Thank you for registering for GraphQL Asia!</div>
-        <div className="articleDesc removePaddTop">
-          Here are a couple of things before you go on with your day:
-        </div>
-        <ul className="articleDesc">
-          <li>
-            <img src={redBox} alt="Box" />
-            <span>
-              Check your inbox for a confirmation email. If you have not got one, please email
-              Harsha at <a href="mailto:events@hasura.io">events@hasura.io</a> with the subject line{' '}
-              <span className="redColor">”GQLA 2021 Registration Error“</span>.
-            </span>
-          </li>
-          <li>
-            <img src={redBox} alt="Box" />
-            <span>
-              We will send you more information on workshop topics, speakers, schedule and how to
-              attend the conference around the <span className="redColor">3rd week of January</span>
-              .
-            </span>
-          </li>
-          <li>
-            <img src={redBox} alt="Box" />
-            <span>And of course, add the conference to your calendar below</span>
-          </li>
-        </ul>
-        <div className="commonLink">
-          <a href="https://www.addevent.com/event/wJ5798313">
-            <img className="addIcon" src={add} alt="Add" />
-            Add to Calendar
-          </a>
-        </div>
-      </div>
-    </div>
-    <Footer />
-  </div>
-);
+export const Thankyou = ({location}) => {
+  return (
+    <Layout location={location}>
+      <ThankyouTopBanner />
+      <Workshop wdClass = 'wd60'/>
+      <Talks  wdClass = 'wd60'/>
+    </Layout>
+  );
+}

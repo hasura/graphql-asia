@@ -151,7 +151,8 @@
 }
 
 .noPadd {
-  padding: 0;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .signup-form-wrapper {
@@ -355,9 +356,7 @@
 #register-form {
   .mktoFormRow {
     // width: 100%;
-
     input {
-      min-width: 260px;
       width: 100% !important;
     }
   }
@@ -375,7 +374,33 @@
     // background: #f5e7d3 !important;
   }
 }
-
+.graphQLMktoForm {
+  .mktoFormRow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: calc(100% - 150px);
+    .mktoFieldDescriptor {
+      .mktoFieldWrap {
+        .mktoField {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+      }
+    }
+  }
+  .mktoButtonRow {
+    width: 150px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    .mktoButtonWrap {
+      .mktoButton {
+        padding: 10px 25px !important;
+      }
+    }
+  }
+}
 .thankyou-wrapper {
   width: 85%;
   margin: 100px auto 0;
@@ -399,14 +424,26 @@
     }
   }
 }
-
+.mobileShowPattern {
+  display: none;
+}
 // Mobile Optimizations ****************** //
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
+  .mobileHidePattern {
+    display: none;
+  }
+  .mobileShowPattern {
+    display: block;
+  }
   .marketing-header-section {
     padding: 32px 7% 0;
     flex-direction: column;
-
+    p {
+      font-size: 20px;
+      line-height: 220%;
+      color: #F5E7D3;
+    }
     #gqla-logo {
       width: 90px;
       padding: 0;
@@ -414,6 +451,7 @@
 
     .articleDesc {
       white-space: nowrap;
+      font-size: 16px;
     }
 
     .mainHeading {
@@ -421,6 +459,88 @@
       font-size: 54px;
       line-height: 96%;
       margin: 50px 0;
+      margin-bottom: 24px;
+    }
+    .buttonWrapper {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      left: 0;
+      z-index: 1;
+      .darkBtn {
+        width: 100%;
+      }
+    }
+    .mobile-signup-form-wrapper {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      left: 0;
+      z-index: 10;
+      background-color: #c63939;
+      transition: all .3s ease-in-out;
+      .closeBtn {
+        background-color: #F5E7D3;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        height: 46px;
+        width: 46px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        img {
+          width: 15px;
+          padding-bottom: 0;
+        }
+      }
+    }
+    .show-signup-form-wrapper {
+      transform: translateY(0);
+    }
+    .signup-form-wrapper {
+      display: block;
+      height: auto;
+      position: relative;
+      img {
+        padding-bottom: 0;
+        height: 46px;
+      }
+      .signup-form-div {
+        padding: 15px 32px;
+        padding-top: 5px;
+        h2 {
+          font-size: 32px;
+          line-height: 120%;
+        }
+        p {
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 220%;
+          color: #F5E7D3;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          margin-bottom: 0;
+        }
+        form {
+          display: block;
+          height: auto;
+        }
+      }
+
+      .graphQLMktoForm {
+        width: 100% !important;
+        .mktoFormRow {
+          position: static;
+          width: 100% !important;
+        }
+        .mktoButtonRow {
+          position: static;
+          width: 100% !important;
+        }
+      }
     }
   }
 
@@ -438,11 +558,6 @@
       margin-bottom: 48px;
     }
   }
-
-  .signup-form-wrapper {
-    display: none;
-  }
-
   .workshop-wrapper-div {
     flex-direction: column;
   }
@@ -459,7 +574,7 @@
   .marketing-footer-section {
     padding: 32px 7% 60px;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column-reverse;
 

@@ -4,7 +4,7 @@ import '../Common/Styles.scss';
 
 const marketoHost = 'https://page.hasura.io';
 
-const redBox = require('../Common/images/red-box.svg');
+const star = require('../Common/images/star.svg');
 
 const add = require('../Common/images/add.svg');
 
@@ -32,7 +32,7 @@ const RegisterTopBanner = ({ location }) => {
           </div>
           <ul className="articleDesc">
             <li>
-              <img src={redBox} alt="Box" />
+              <img src={star} alt="Star" />
               <span>
                 Check your inbox for a confirmation email. If you have not got one, please email
                 Harsha at <a href="mailto:events@hasura.io">events@hasura.io</a> with the subject
@@ -40,7 +40,7 @@ const RegisterTopBanner = ({ location }) => {
               </span>
             </li>
             <li>
-              <img src={redBox} alt="Box" />
+              <img src={star} alt="Star" />
               <span>
                 We will send you more information on workshop topics, speakers, schedule and how to
                 attend the conference around the{' '}
@@ -48,7 +48,7 @@ const RegisterTopBanner = ({ location }) => {
               </span>
             </li>
             <li>
-              <img src={redBox} alt="Box" />
+              <img src={star} alt="Star" />
               <span>And of course, add the conference to your calendar below</span>
             </li>
           </ul>

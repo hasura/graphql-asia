@@ -5,9 +5,10 @@ import { detailsPage } from '../Homepage/AllState.js'
 const arrow = require('../Common/images/arrow.svg');
 const lightArrow = require('../Common/images/light-arrow.svg');
 const darkArrow = require('../Common/images/dark-arrow.svg');
+const star = require('../Common/images/star.svg');
 const Talks = props => {
   return (
-    <div id='talks' className={'sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom')}>
+    <div id='talks' className={'sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom') + ((props.wdClass) ? ' wd80' : '')}>
       <div className='workshopWrapper'>
         <div className='articleSubTitle'>Talks</div>
         <ul>
@@ -18,11 +19,12 @@ const Talks = props => {
                   {
                     !talksList.isWorkshop ? (
                       <li>
+                        <img src={star} alt="Star" />
                         <Link to={talksList.url}>
                           <div className='articleSectionTitle fontBold'>
                             {talksList.title}
                           </div>
-                          <div className='articleDesc fontBold'>
+                          <div className='articleDesc fontBold500'>
                             Speaker:{' '}
                             <span>
                             {
@@ -37,7 +39,7 @@ const Talks = props => {
                             }
                             </span> | Language: <span>English</span>
                           </div>
-                          <div className='articleDesc fontBold readMore'>
+                          <div className='articleDesc fontBold500 readMore'>
                             <span>Read More </span><span className='readMoreArrow'>→</span>
                           </div>
                           <div className='workshopArrow'>

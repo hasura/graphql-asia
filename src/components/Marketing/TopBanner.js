@@ -6,7 +6,7 @@ import confIcon from './images/conferences_icon.svg';
 import chatIcon from './images/languages_icon.svg';
 import workshopIcon from './images/workshop_icon.svg';
 
-export const TopBanner = () => {
+export const TopBanner = ({isMobile}) => {
   return (
     <div className="marketing-landing-banner">
       <div className="col-md-6 noPadd main-landing-section">
@@ -39,9 +39,16 @@ export const TopBanner = () => {
           </div>
         </div>
       </div>
-      <div className="col-md-6 flex flex-end noPadd pl-40">
-        <RegisterForm />
-      </div>
+      {
+        !isMobile ? (
+          <div className="col-md-6 flex flex-end noPadd pl-40">
+            <RegisterForm isMobile={isMobile}
+              title = 'Join us for the third edition of GraphQL Asia!'
+              desc='24th & 25th Feb | Online | Free'
+            />
+          </div>
+        ) : null
+      }
     </div>
   );
 };

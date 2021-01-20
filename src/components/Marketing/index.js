@@ -35,19 +35,21 @@ export const MarketingPage = ({ location }) => {
     return () => window.removeEventListener('resize', handleWindowResize);
   }, []);
 
-  const isMobile = width < 600;
+  const isMobile = width < 901;
 
   if (isAliId) {
-    return <Thankyou />;
+    return <Thankyou location={location}/>;
   }
 
   return (
-    <div id="viewport" className="darkModeLayout advertisement-site-wrapper">
-      <Header isMobile={isMobile} />
-      <TopBanner isMobile={isMobile} />
-      <Workshops />
-      <Talks />
-      <Footer />
+    <div>
+      <div id="viewport" className="darkModeLayout advertisement-site-wrapper">
+        <Header isMobile={isMobile} />
+        <TopBanner isMobile={isMobile} />
+        <Workshops />
+        <Talks />
+        <Footer />
+      </div>
     </div>
   );
 };
