@@ -151,7 +151,8 @@
 }
 
 .noPadd {
-  padding: 0;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .signup-form-wrapper {
@@ -450,6 +451,7 @@
 
     .articleDesc {
       white-space: nowrap;
+      font-size: 16px;
     }
 
     .mainHeading {
