@@ -42,7 +42,10 @@ export const TopBanner = ({isMobile}) => {
       {
         !isMobile ? (
           <div className="col-md-6 flex flex-end noPadd pl-40">
-            <RegisterForm isMobile={isMobile}/>
+            <RegisterForm isMobile={isMobile}
+              title = 'Join us for the third edition of GraphQL Asia!'
+              desc='24th & 25th Feb | Online | Free'
+            />
           </div>
         ) : null
       }

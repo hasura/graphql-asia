@@ -355,9 +355,7 @@
 #register-form {
   .mktoFormRow {
     // width: 100%;
-
     input {
-      min-width: 260px;
       width: 100% !important;
     }
   }
@@ -430,7 +428,7 @@
 }
 // Mobile Optimizations ****************** //
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .mobileHidePattern {
     display: none;
   }
@@ -440,7 +438,11 @@
   .marketing-header-section {
     padding: 32px 7% 0;
     flex-direction: column;
-
+    p {
+      font-size: 20px;
+      line-height: 220%;
+      color: #F5E7D3;
+    }
     #gqla-logo {
       width: 90px;
       padding: 0;
@@ -455,6 +457,7 @@
       font-size: 54px;
       line-height: 96%;
       margin: 50px 0;
+      margin-bottom: 24px;
     }
     .buttonWrapper {
       position: fixed;
@@ -474,7 +477,6 @@
       z-index: 10;
       background-color: #c63939;
       transition: all .3s ease-in-out;
-      transform: translateY(471px);
       .closeBtn {
         background-color: #F5E7D3;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -505,7 +507,8 @@
         height: 46px;
       }
       .signup-form-div {
-        padding: 32px;
+        padding: 15px 32px;
+        padding-top: 5px;
         h2 {
           font-size: 32px;
           line-height: 120%;

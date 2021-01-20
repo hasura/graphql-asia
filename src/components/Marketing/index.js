@@ -35,7 +35,7 @@ export const MarketingPage = ({ location }) => {
     return () => window.removeEventListener('resize', handleWindowResize);
   }, []);
 
-  const isMobile = width < 600;
+  const isMobile = width < 901;
 
   if (isAliId) {
     return <Thankyou location={location}/>;
