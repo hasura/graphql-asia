@@ -39,9 +39,7 @@ export const Footer = () => {
           <div className="articleDesc">{`© ${currentYear} Hasura Inc. All rights reserved`}</div>
         </div>
         <div className="poweredBrand">
-          <a href="https://hasura.io/">
-            <img src={hasuraLogo} alt="Powered Logo" />
-          </a>
+          <img src={hasuraLogo} alt="Powered Logo" />
         </div>
       </div>
       <div className="footerPattern">
