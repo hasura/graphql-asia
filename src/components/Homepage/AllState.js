@@ -20,7 +20,7 @@ const pranayKalro = require('../Common/images/pranay-kalro.png');
 const tamasPiros = require('../Common/images/tamas-piros.png');
 const aaronPowell = require('../Common/images/aaron-powell.png');
 const praveenDuriaraju = require('../Common/images/praveen-duriaraju.png');
-
+const brookeSwanson = require('../Common/images/brooke-swanson.png');
 const speakersDetails = [
   {
     talkPageUrl: '/talks/the-state-of-graphql/',
@@ -194,13 +194,25 @@ const speakersDetails = [
   },
   {
     talkPageUrl: '/talks/adding-bleeding-edge-tech-to-archaic-government-graphql-for-govtech/',
-    speakersName: 'Bharat	Kashyap',
+    speakersName: 'Bharat Kashyap',
     speakersImg: bharatKashyap,
     speakersDesignation: (
       <span>
         Software Engineer,
         <br />
         Samagra Development Associates
+      </span>
+    ),
+  },
+  {
+    talkPageUrl: '/talks/a-tale-of-inherited-projects-and-why-we-kept-hasura/',
+    speakersName: 'Brooke Swanson',
+    speakersImg: brookeSwanson,
+    speakersDesignation: (
+      <span>
+        Software Engineer,
+        <br />
+        Outpace
       </span>
     ),
   },
@@ -680,6 +692,7 @@ const talkDetailsPage = [
         speakersUrl: '/speakers/peter-piekarczyk/',
         speakersName: 'Peter Piekarczyk',
         speakersImg: peterPiekarczyk,
+        speakersBio: 'Peter Piekarczyk has always been a builder. He started his first agency when he was 12 selling website templates on eBay. He\'s the co-founder and CTO of YC backed Draftbit, a platform that helps you build mobile apps with any backend (including Hasura!) Peter is Expo\'s first user and has helped grow the React Native community over the years.',
         speakersDesignation: (
           <span>
             Co-Founder & CTO,
@@ -735,17 +748,17 @@ const talkDetailsPage = [
     ],
   },
   {
-    url: '/talks/graphql-at-weaviate/',
+    url: '/talks/data-science-with-weaviate-and-graphql/',
     metaTags: {
-      title: 'GraphQL at Weaviate',
+      title: 'Data Science with Weaviate and GraphQL',
       canonicalUrl:
-        'https://graphql.asia/talks/graphql-at-weaviate/',
+        'https://graphql.asia/talks/data-science-with-weaviate-and-graphql/',
       description:
         'Weaviate is using GraphQL to provide user-friendly data interaction. Weaviate is a vector search engine, and all search (e.g. semantic, contextual) search is done via its GraphQL API. We\'ve put a lot of thought in the design of the GraphQL API, which results in good user and developer experience. In this talk, we will take you along in the journey of how our GraphQL implementation was shaped according to user needs and software requirements, and show a demo of the current design for Weaviate.',
       metaImg:
-        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-at-weaviate.png',
+        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/data-science-with-weaviate-and-graphql.png',
     },
-    title: 'GraphQL at Weaviate',
+    title: 'Data Science with Weaviate and GraphQL',
     speakersTitle: 'About the speakers',
     backLink: '/talks/',
     language: 'English',
@@ -871,16 +884,60 @@ const talkDetailsPage = [
       },
     ],
   },
+
   {
-    url: '/talks/graphql-federation-challenges-and-future/',
+    url: '/talks/a-tale-of-inherited-projects-and-why-we-kept-hasura/',
     metaTags: {
-      title: 'GraphQL Federation: Challenges and Future',
+      title: 'A Tale of Inherited Projects and why we kept Hasura',
       canonicalUrl:
-        'https://graphql.asia/talks/graphql-federation-challenges-and-future/',
+        'https://graphql.asia/talks/a-tale-of-inherited-projects-and-why-we-kept-hasura/',
+      description:
+        'In late 2019 my team inherited a proof of concept system that felt impossible to pick apart. We had a tight deadline and looking at an infrastructure map that inexplicably included Kafka it was hard not to question the inclusion of a new piece of tech like Hasura. Couldn\'t everything be a simple REST service at the end of the day? Eventually we decided to cut our losses and start from scratch. The only thing that survived our hard refresh was Hasura. This talk will go through our journey, touching on: why we decided to keep Hasura, our learnings along the way, and the gotchas that, well got us.',
+      metaImg:
+        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/a-tale-of-inherited-projects-and-why-we-kept-hasura.png',
+    },
+    title: 'A Tale of Inherited Projects and why we kept Hasura',
+    speakersTitle: 'About the speakers',
+    backLink: '/talks/',
+    language: 'English',
+    description: [
+      {
+        desc:
+          'In late 2019 my team inherited a proof of concept system that felt impossible to pick apart. We had a tight deadline and looking at an infrastructure map that inexplicably included Kafka it was hard not to question the inclusion of a new piece of tech like Hasura. Couldn\'t everything be a simple REST service at the end of the day? Eventually we decided to cut our losses and start from scratch. The only thing that survived our hard refresh was Hasura. This talk will go through our journey, touching on: why we decided to keep Hasura, our learnings along the way, and the gotchas that, well got us.',
+      },
+    ],
+    takeaways: [
+      {
+        desc: 'Hasura is a pretty neat sharp tool. A team full of RESTful veterans can level up in a graphql world quickly. The interplay between postgres + hasura (graphql) + React + a simple backend service, makes for a resilient, easy to support service.'
+      },
+    ],
+    speakersList: [
+      {
+        speakersUrl: '/speakers/brooke-swanson/',
+        speakersName: 'Brooke Swanson',
+        speakersImg: brookeSwanson,
+        speakersBio:
+          'I\'m a Madison, Wisconsin based software developer. In a non pandemic world you can find me in a local coffee shop, writing code, reading fantasy, or looking at cat pictures. I\'ve been closing parens professionally for a little over 3 years. Although I\'m based in the midwest I spend much of my time traveling.',
+        speakersDesignation: (
+          <span>
+            Software Engineer,
+            <br />
+            Outpace
+          </span>
+        ),
+      },
+    ],
+  },
+  {
+    url: '/talks/graphql-and-microservices-the-different-approaches-and-challenges/',
+    metaTags: {
+      title: 'GraphQL & Microservices - the different approaches & challenges',
+      canonicalUrl:
+        'https://graphql.asia/talks/graphql-and-microservices-the-different-approaches-and-challenges/',
       description:
         'GraphQL Federation is great scalable architecture, but also has its own issues. In this talk, we will discuss about current approaches, challenges and the future of GraphQL Federation',
       metaImg:
-        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-federation-challenges-and-future.png',
+        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-and-microservices-the-different-approaches-and-challenges.png',
     },
     title: 'GraphQL Federation: Challenges and Future',
     speakersTitle: 'About the speakers',
@@ -1120,20 +1177,30 @@ const workshopDetailsPage = [
     description: [
       {
         desc:
-          'When building with GraphQL you define the schema up front and this can be really handy go use when it comes to writing the queries, resolvers, etc., especially if it’s in TypeScript.',
+          'In this workshop we’re going to look at how to bring type-safety to our GraphQL apps using TypeScript. For our server, we’ll look at how we can share types between the schema, resolvers and data access layer. Then we’ll take a look at how to share those types across to our client application (we’ll use React in the workshop).',
       },
       {
         desc:
-          'So, how do you go about doing the type generation? We’ll take a look at a tool that can generate you the TypeScript types, then implement our backend using them before looking at how they can plug into the front end with React Hooks.',
+          'It\'ll be a hands on workshop, so be prepared to get ready to implement your own type safe JavaScript GraphQL application.',
+      },
+    ],
+    contents: [
+      {
+        title: 'Prerequisites:',
+        desc: 'A VS Code Devcontainer (https://code.visualstudio.com/docs/remote/containers) will be provided that contains all dependencies ready to go. If attendees are unable to use a VS Code Devcontainer, they will need to have',
+        list: [
+          'Node.js 12',
+          'An editor',
+          'Latest version of the Azure Function Core Tools (https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local#v2) to run the GraphQL server'
+        ],
       },
       {
-        desc:
-          'We’ll cap off by learning how to model our storage platform effectively using its own types and combine them with the GraphQL schema types.',
+        desc: 'Some prior knowledge of TypeScript will be beneficial, but not required. An Azure account will be needed if they wish to deploy it at the end of the workshop.'
       },
     ],
     takeaways: [
       {
-        desc: 'How easy you can add type-safety to GraphQL applications at both the client and server side of the app.',
+        desc: 'At the end of the workshop, attendees should have an understanding of the options for creating type-safe GraphQL applications, and how to have that type-safety applied to the client and server components.',
       },
     ],
     speakersList: [

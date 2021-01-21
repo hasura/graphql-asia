@@ -141,9 +141,13 @@ const IndivTalksPage = props => {
                 props.currentDetailsPage.contents.map((desc, index) => {
                   return (
                     <Fragment key={index}>
-                      <div className='articleSectionTitle fontBold'>
-                        {desc.title}
-                      </div>
+                      {
+                        desc.title ? (
+                          <div className='articleSectionTitle fontBold'>
+                            {desc.title}
+                          </div>
+                        ) : null
+                      }
                       <div key={index} className='articleDesc pb-40'>
                         {
                           desc.desc ? (

@@ -15,11 +15,12 @@ const talkDetailsPage = [
   '/talks/connect-your-enterprise-to-cloud-with-hasura-and-apache-kafka/',
   '/talks/graphql-wrong-answers-only/',
   '/talks/reintroducing-schema-stitching-in-2021/',
-  '/talks/graphql-at-weaviate/',
+  '/talks/data-science-with-weaviate-and-graphql/',
   '/talks/client-side-migration-strategy-from-rest-to-graphql/',
   '/talks/adding-bleeding-edge-tech-to-archaic-government-graphql-for-govtech/',
-  '/talks/graphql-federation-challenges-and-future/',
+  '/talks/graphql-and-microservices-the-different-approaches-and-challenges/',
   '/talks/adopting-graphql-in-a-legacy-nodejs-api/',
+  '/talks/a-tale-of-inherited-projects-and-why-we-kept-hasura/',
 ];
 const workshopDetailsPage = [
   '/workshops/server-side-authentication-in-graphql/',

@@ -622,6 +622,11 @@ ul {
           .speakersProfileWrapper {
             transform: translateY(-30px);
           }
+          .speakersImg {
+            img {
+              filter: grayscale(0);
+            }
+          }
           .speakerArrow {
             right: 0px;
             opacity: 1;
@@ -630,6 +635,7 @@ ul {
         }
         .speakersImg {
           img {
+            transition: all 0.3s ease-in-out;
             width: 90%;
             filter: grayscale(100%);
           }
