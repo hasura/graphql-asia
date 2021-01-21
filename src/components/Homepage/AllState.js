@@ -169,7 +169,7 @@ const speakersDetails = [
     ),
   },
   {
-    talkPageUrl: '/talks/graphql-at-weaviate/',
+    talkPageUrl: '/talks/data-science-with-weaviate-and-graphql/',
     speakersName: 'Laura Ham',
     speakersImg: lauraHam,
     speakersDesignation: (
@@ -217,7 +217,7 @@ const speakersDetails = [
     ),
   },
   {
-    talkPageUrl: '/talks/graphql-federation-challenges-and-future/',
+    talkPageUrl: '/talks/graphql-and-microservices-the-different-approaches-and-challenges/',
     speakersName: 'Toan	Nguyen',
     speakersImg: toanNguyen,
     speakersDesignation: (
