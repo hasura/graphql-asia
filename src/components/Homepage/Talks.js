@@ -1,52 +1,23 @@
 import React, {Fragment} from "react";
 import {Link} from 'gatsby';
 import '../Common/Styles.scss';
-import { detailsPage } from '../Homepage/AllState.js'
+import IndivTalk from './IndivTalk';
+import { talkDetailsPage } from '../Homepage/AllState.js'
 const arrow = require('../Common/images/arrow.svg');
-const lightArrow = require('../Common/images/light-arrow.svg');
-const darkArrow = require('../Common/images/dark-arrow.svg');
 const star = require('../Common/images/star.svg');
 const Talks = props => {
   return (
-    <div id='talks' className={'sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom') + ((props.wdClass) ? ' wd80' : '')}>
+    <div id='talks' className={'sectionWrapper removePaddBottom ' + ((props.wdClass) ? ' wd80' : '')}>
       <div className='workshopWrapper'>
         <div className='articleSubTitle'>Talks</div>
         <ul>
           {
-            detailsPage.map((talksList, index) => {
+            talkDetailsPage.map((talksList, index) => {
               return (
                 <Fragment key={index}>
                   {
-                    !talksList.isWorkshop ? (
-                      <li>
-                        <img src={star} alt="Star" />
-                        <Link to={talksList.url}>
-                          <div className='articleSectionTitle fontBold'>
-                            {talksList.title}
-                          </div>
-                          <div className='articleDesc fontBold500'>
-                            Speaker:{' '}
-                            <span>
-                            {
-                              talksList.speakersList.map((name, index) => {
-                                return (
-                                  <Fragment key={index}>
-                                    { name.speakersName }
-                                    { index < (talksList.speakersList.length - 1) ? ', ' : '' }
-                                  </Fragment>
-                                )
-                              })
-                            }
-                            </span> | Language: <span>English</span>
-                          </div>
-                          <div className='articleDesc fontBold500 readMore'>
-                            <span>Read More </span><span className='readMoreArrow'>→</span>
-                          </div>
-                          <div className='workshopArrow'>
-                            <img src={arrow} alt='Arrow' />
-                          </div>
-                        </Link>
-                      </li>
+                    index < 6  ? (
+                      <IndivTalk key={index} talksList={talksList} />
                     ) : null
                   }
                 </Fragment>
@@ -54,6 +25,14 @@ const Talks = props => {
             })
           }
         </ul>
+        <div className='backBtnWrapper'>
+          <div className={((!props.isLightMode) ? 'lightLine' : 'darkLine')}></div>
+          <Link to='/talks/'>
+            <button className='commonBtn darkBtn'>
+              View all Talks
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -272,6 +272,9 @@ ul {
   .submitIconHover {
     display: none;
   }
+  .mart-4 {
+    margin-top: -4px;
+  }
   &:hover {
     background-position: left bottom;
     color: #c63939;
@@ -279,7 +282,7 @@ ul {
       display: none;
     }
     .submitIconHover {
-      display: block;
+      display: inline-block;
     }
   }
 }
@@ -505,6 +508,9 @@ ul {
         }
       }
     }
+    .active {
+      text-decoration: underline;
+    }
   }
 }
 .leftSidebarFooterWrapper {
@@ -619,6 +625,11 @@ ul {
           .speakersProfileWrapper {
             transform: translateY(-30px);
           }
+          .speakersImg {
+            img {
+              filter: grayscale(0);
+            }
+          }
           .speakerArrow {
             right: 0px;
             opacity: 1;
@@ -627,6 +638,7 @@ ul {
         }
         .speakersImg {
           img {
+            transition: all 0.3s ease-in-out;
             width: 90%;
             filter: grayscale(100%);
           }
@@ -807,6 +819,7 @@ ul {
     padding-bottom: 20px;
   }
   ul {
+    margin-bottom: 80px;
     li {
       padding: 24px 20px;
       position: relative;
@@ -961,17 +974,17 @@ ul {
       }
     }
   }
-  .backBtnWrapper {
+}
+.backBtnWrapper {
+  position: relative;
+  .darkBtn {
+    width: 300px;
+    display: inline-block;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
     position: relative;
-    .darkBtn {
-      width: 250px;
-      display: inline-block;
-      z-index: 10;
-      transition: all 0.3s ease-in-out;
-      position: relative;
-      &:hover {
-        transform: translateX(20px);
-      }
+    &:hover {
+      transform: translateX(20px);
     }
   }
 }
@@ -1030,6 +1043,12 @@ ul {
   }
 }
 @media (max-width: 900px) {
+  .backBtnWrapper {
+    .darkBtn {
+      width: auto;
+      padding: 10px 30px;
+    }
+  }
   .landingThankWrapper {
     .landingThankShareWrapper {
       display: inline-block;
@@ -1351,7 +1370,7 @@ ul {
   .detailsPageWrapper {
     width: 100%;
     .pl-40 {
-      padding-left: 0;
+      padding-left: 0 !important;
     }
     .articleSectionTitle {
       padding-bottom: 8px;
@@ -1479,12 +1498,10 @@ ul {
       }
     }
   }
-  .detailsPageWrapper {
-    .backBtnWrapper {
-      .darkBtn {
-        width: auto;
-        padding: 15px 50px;
-      }
+  .backBtnWrapper {
+    .darkBtn {
+      width: auto;
+      padding: 15px 50px;
     }
   }
 }

@@ -17,7 +17,7 @@ const poweredLogoLightMode = require('./images/powered-logo-light-mode.svg');
 const poweredLogoDarkMode = require('./images/powered-logo-dark-mode.svg');
 const Footer = ({isLightMode}) => {
   return (
-    <div className={'footerWrapper sectionWrapper removePaddBottom ' + ((!isLightMode) ? 'darkModeBorTop' : 'lightModeBorTop')}>
+    <div className='footerWrapper sectionWrapper removePaddBottom'>
       <ul className='articleDesc'>
         <li className={((!isLightMode) ? 'darkModeBorRight' : 'lightModeBorRight')}><Link to='/code-of-conduct/'>Code Of Conduct</Link></li>
         <li className={((!isLightMode) ? 'darkModeBorRight' : 'lightModeBorRight')}><a href='mailto:events@hasura.io'>Sponsor GraphQL Asia 2021</a></li>

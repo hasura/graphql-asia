@@ -19,7 +19,11 @@ const whatsappHover = require('../Common/images/whatsapp-hover.svg');
 const linkedinHover = require('../Common/images/linkedin-hover.svg');
 const twitterHover = require('../Common/images/twitter-hover.svg');
 
-const IndivPage = props => {
+
+const lightBackArrow = require('../Common/images/back-arrow-light.svg');
+const darkBackArrow = require('../Common/images/back-arrow-dark.svg');
+
+const IndivTalksPage = props => {
   const [isCopied, setIsCopiedToggle] = useState(false);
   const onCopy = () => {
     setIsCopiedToggle(true);
@@ -141,9 +145,13 @@ const IndivPage = props => {
                 props.currentDetailsPage.contents.map((desc, index) => {
                   return (
                     <Fragment key={index}>
-                      <div className='articleSectionTitle fontBold'>
-                        {desc.title}
-                      </div>
+                      {
+                        desc.title ? (
+                          <div className='articleSectionTitle fontBold'>
+                            {desc.title}
+                          </div>
+                        ) : null
+                      }
                       <div key={index} className='articleDesc pb-40'>
                         {
                           desc.desc ? (
@@ -272,7 +280,13 @@ const IndivPage = props => {
         </div>
         <div className='backBtnWrapper'>
           <div className={((!props.isLightMode) ? 'lightLine' : 'darkLine')}></div>
-          <Link to={props.currentDetailsPage.backLink}><button className='commonBtn darkBtn'>← {props.currentDetailsPage.isWorkshop ? 'Back to Workshop' : 'Back to Talks'}</button></Link>
+          <Link to={props.currentDetailsPage.backLink}>
+            <button className='commonBtn darkBtn'>
+              <img className='submitIcon mart-4' src={lightBackArrow} alt='Arrow' />
+              <img className='submitIconHover mart-4' src={darkBackArrow} alt='Arrow' />
+              {props.currentDetailsPage.isWorkshop ? 'Back to Workshop' : 'Back to Talks'}
+            </button>
+          </Link>
         </div>
       </div>
       <div className='buttonWrapper btnFixedPos'>
@@ -282,4 +296,4 @@ const IndivPage = props => {
   );
 };
 
-export default IndivPage;
+export default IndivTalksPage;

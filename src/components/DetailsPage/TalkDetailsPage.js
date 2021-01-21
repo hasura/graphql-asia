@@ -3,12 +3,12 @@ import { Link } from 'gatsby';
 import '../Common/Styles.scss';
 import { SEO } from '../seo';
 import Layout from '../Layout';
-import IndivPage from './IndivPage';
-import { detailsPage } from '../Homepage/AllState.js'
+import IndivTalksPage from './IndivTalksPage';
+import { talkDetailsPage } from '../Homepage/AllState.js'
 
-const DetailsPage = props => {
+const TalkDetailsPage = props => {
   const detailsPageUrl = props.pageContext.slug;
-  const currentDetailsPageFilter = detailsPage.filter((b) => b.url === detailsPageUrl)
+  const currentDetailsPageFilter = talkDetailsPage.filter((b) => b.url === detailsPageUrl)
   const currentDetailsPage = currentDetailsPageFilter[0];
   // if (!currentDetailsPage) {
   //   if (typeof window !== undefined) {
@@ -23,8 +23,8 @@ const DetailsPage = props => {
         metaImg={currentDetailsPage.metaTags.metaImg}
         canonicalLink={currentDetailsPage.metaTags.canonicalUrl}
       />
-      <IndivPage currentDetailsPage={currentDetailsPage}/>
+      <IndivTalksPage currentDetailsPage={currentDetailsPage}/>
     </Layout>
   );
 };
-export default DetailsPage;
+export default TalkDetailsPage;
