@@ -17,7 +17,7 @@ const talkDetailsPage = [
   '/talks/reintroducing-schema-stitching-in-2021/',
   '/talks/data-science-with-weaviate-and-graphql/',
   '/talks/client-side-migration-strategy-from-rest-to-graphql/',
-  '/talks/adding-bleeding-edge-tech-to-archaic-government-graphql-for-govtech/',
+  // '/talks/adding-bleeding-edge-tech-to-archaic-government-graphql-for-govtech/',
   '/talks/graphql-and-microservices-the-different-approaches-and-challenges/',
   '/talks/adopting-graphql-in-a-legacy-nodejs-api/',
   '/talks/a-tale-of-inherited-projects-and-why-we-kept-hasura/',

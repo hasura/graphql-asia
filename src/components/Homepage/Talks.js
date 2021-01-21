@@ -27,7 +27,11 @@ const Talks = props => {
         </ul>
         <div className='backBtnWrapper'>
           <div className={((!props.isLightMode) ? 'lightLine' : 'darkLine')}></div>
-          <Link to='/talks/'><button className='commonBtn darkBtn'>View all Talks →</button></Link>
+          <Link to='/talks/'>
+            <button className='commonBtn darkBtn'>
+              View all Talks
+            </button>
+          </Link>
         </div>
       </div>
     </div>

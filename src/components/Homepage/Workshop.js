@@ -21,7 +21,11 @@ const Workshop = props => {
         </ul>
         <div className='backBtnWrapper'>
           <div className={((!props.isLightMode) ? 'lightLine' : 'darkLine')}></div>
-          <Link to='/workshops/'><button className='commonBtn darkBtn'>View all Workshops →</button></Link>
+          <Link to='/workshops/'>
+            <button className='commonBtn darkBtn'>
+              View all Workshops
+            </button>
+          </Link>
         </div>
       </div>
     </div>

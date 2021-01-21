@@ -40,7 +40,11 @@ const Speakers = props => {
       </div>
       <div className='backBtnWrapper'>
         <div className={((!props.isLightMode) ? 'lightLine' : 'darkLine')}></div>
-        <Link to='/speakers/'><button className='commonBtn darkBtn'>View all Speakers →</button></Link>
+        <Link to='/speakers/'>
+          <button className='commonBtn darkBtn'>
+            View all Speakers
+          </button>
+        </Link>
       </div>
       {/*
       <div className='buttonWrapper mobileShow'>

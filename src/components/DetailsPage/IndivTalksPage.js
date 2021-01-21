@@ -19,6 +19,10 @@ const whatsappHover = require('../Common/images/whatsapp-hover.svg');
 const linkedinHover = require('../Common/images/linkedin-hover.svg');
 const twitterHover = require('../Common/images/twitter-hover.svg');
 
+
+const lightBackArrow = require('../Common/images/back-arrow-light.svg');
+const darkBackArrow = require('../Common/images/back-arrow-dark.svg');
+
 const IndivTalksPage = props => {
   const [isCopied, setIsCopiedToggle] = useState(false);
   const onCopy = () => {
@@ -276,7 +280,13 @@ const IndivTalksPage = props => {
         </div>
         <div className='backBtnWrapper'>
           <div className={((!props.isLightMode) ? 'lightLine' : 'darkLine')}></div>
-          <Link to={props.currentDetailsPage.backLink}><button className='commonBtn darkBtn'>← {props.currentDetailsPage.isWorkshop ? 'Back to Workshop' : 'Back to Talks'}</button></Link>
+          <Link to={props.currentDetailsPage.backLink}>
+            <button className='commonBtn darkBtn'>
+              <img className='submitIcon mart-4' src={lightBackArrow} alt='Arrow' />
+              <img className='submitIconHover mart-4' src={darkBackArrow} alt='Arrow' />
+              {props.currentDetailsPage.isWorkshop ? 'Back to Workshop' : 'Back to Talks'}
+            </button>
+          </Link>
         </div>
       </div>
       <div className='buttonWrapper btnFixedPos'>

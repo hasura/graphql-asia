@@ -272,6 +272,9 @@ ul {
   .submitIconHover {
     display: none;
   }
+  .mart-4 {
+    margin-top: -4px;
+  }
   &:hover {
     background-position: left bottom;
     color: #c63939;
@@ -279,7 +282,7 @@ ul {
       display: none;
     }
     .submitIconHover {
-      display: block;
+      display: inline-block;
     }
   }
 }
@@ -1040,6 +1043,12 @@ ul {
   }
 }
 @media (max-width: 900px) {
+  .backBtnWrapper {
+    .darkBtn {
+      width: auto;
+      padding: 10px 30px;
+    }
+  }
   .landingThankWrapper {
     .landingThankShareWrapper {
       display: inline-block;
