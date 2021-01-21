@@ -7,7 +7,7 @@ const arrow = require('../Common/images/arrow.svg');
 const star = require('../Common/images/star.svg');
 const Workshop = props => {
   return (
-    <div id='workshops' className={'sectionWrapper removePaddBottom' + ((props.wdClass) ? ' wd80' : '')}>
+    <div id='workshops' className={'sectionWrapper removePaddBottom' + ((!props.isLightMode) ? ' darkModeBorBottom' : ' lightModeBorBottom') + ((props.wdClass) ? ' wd80' : '')}>
       <div className='workshopWrapper'>
         <div className='articleSubTitle'>Workshops</div>
         <ul>
@@ -19,14 +19,6 @@ const Workshop = props => {
             })
           }
         </ul>
-        <div className='backBtnWrapper'>
-          <div className={((!props.isLightMode) ? 'lightLine' : 'darkLine')}></div>
-          <Link to='/workshops/'>
-            <button className='commonBtn darkBtn'>
-              View all Workshops
-            </button>
-          </Link>
-        </div>
       </div>
     </div>
   );
