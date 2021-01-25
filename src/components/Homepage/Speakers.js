@@ -8,10 +8,10 @@ const submitBtnIconHover = require('../Common/images/submit-btn-icon-hover.svg')
 const Speakers = props => {
   const speakersList = speakersDetails.map((speakers, index) => {
     return (
-      <Fragment>
+      <Fragment key={index}>
         {
           index < 6  ? (
-            <IndivSpeaker key={index} speakers={speakers} />
+            <IndivSpeaker speakers={speakers} />
           ) : null
         }
       </Fragment>

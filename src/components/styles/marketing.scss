@@ -105,7 +105,10 @@
     color: #f5e7d3;
   }
 }
-
+.noPadd {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
 .ml-20 {
   margin-left: 20px;
 }
@@ -148,11 +151,6 @@
 
 .ml-30 {
   margin-left: 30px;
-}
-
-.noPadd {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
 }
 
 .signup-form-wrapper {

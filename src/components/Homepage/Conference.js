@@ -9,7 +9,7 @@ const darkarrowLine = require('../Common/images/dark-arrow-line.svg');
 
 const Conference = props => {
   return (
-    <div id='conference' className={'conferenceWrapper sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom')}>
+    <div id='about' className={'conferenceWrapper sectionWrapper'}>
       <div>
         <div className='articleSubTitle'>About GraphQL Asia</div>
         <div className='articleDesc'>

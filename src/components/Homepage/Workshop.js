@@ -14,7 +14,7 @@ const Workshop = props => {
           {
             workshopDetailsPage.map((workshopList, index) => {
               return (
-                <IndivWorkshop workshopList ={ workshopList } />
+                <IndivWorkshop key={index} workshopList ={ workshopList } />
               )
             })
           }

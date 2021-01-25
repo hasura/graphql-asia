@@ -15,14 +15,20 @@ const IndivTalk = ({talksList}) => {
           Speaker:{' '}
           <span>
           {
-            talksList.speakersList.map((name, index) => {
-              return (
-                <Fragment key={index}>
-                  { name.speakersName }
-                  { index < (talksList.speakersList.length - 1) ? ', ' : '' }
-                </Fragment>
-              )
-            })
+            talksList.speakersList ? (
+              <Fragment>
+                {
+                  talksList.speakersList.map((name, index) => {
+                    return (
+                      <Fragment key={index}>
+                        { name.speakersName }
+                        { index < (talksList.speakersList.length - 1) ? ', ' : '' }
+                      </Fragment>
+                    )
+                  })
+                }
+              </Fragment>
+            ) : null
           }
           </span> | Language: <span>{talksList.language}</span>
         </div>

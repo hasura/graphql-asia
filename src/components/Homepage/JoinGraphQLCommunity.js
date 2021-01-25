@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import '../Common/Styles.scss';
 const JoinGraphQLCommunity = props => {
   return (
-    <div className={'joinGraphQLWrapper sectionWrapper'}>
+    <div className={'joinGraphQLWrapper sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom')}>
       <div className='articleTitle'>
         Join the largest GraphQL conference on this side of the earth.
       </div>
