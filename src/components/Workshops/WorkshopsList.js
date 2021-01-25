@@ -8,7 +8,13 @@ const darkBackArrow = require('../Common/images/back-arrow-dark.svg');
 const WorkshopsList = props => {
   const workshopsListState = workshopDetailsPage.map((workshops, index) => {
     return (
-      <IndivWorkshop key={index} workshopList={workshops} />
+      <Fragment key={index}>
+        {
+          workshops.isWorkshop ? (
+            <IndivWorkshop workshopList={workshops} />
+          ) : null
+        }
+      </Fragment>
     )
   })
   return (

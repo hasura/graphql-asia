@@ -15,6 +15,7 @@ const TalkDetailsPage = props => {
   //     window.location.href = "/404";
   //   }
   // }
+  console.log(currentDetailsPage);
   return (
     <Layout location={props.location}>
       <SEO
