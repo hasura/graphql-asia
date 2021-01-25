@@ -25,8 +25,8 @@ export const Workshops = () => (
                                 {
                                   talksDetails.speakersList.map((name, index) => {
                                     return (
-                                      <Fragment>
-                                        Given by <span key={index}>
+                                      <Fragment key={index}>
+                                        Given by <span>
                                           { name.speakersName }
                                           { index < (talksDetails.speakersList.length - 1) ? ', ' : '' }
                                         </span> |{' '}
