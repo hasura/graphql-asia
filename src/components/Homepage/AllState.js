@@ -624,9 +624,9 @@ const talkDetailsPage = [
           'I write GraphQL backends for living. In free time I\'m creating new ideas for GraphQL frontend libraries and tools. I have been maintaining numerous GraphQL libraries and creating starter templates for GraphQL and enterprise developers',
         speakersDesignation: (
           <span>
-            Principal Software Engineer, EnterpriseAPI,
+            Principal Software Engineer, AeroGear,
             <br />
-            IBM
+            Red Hat
           </span>
         ),
       },
