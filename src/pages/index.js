@@ -1,7 +1,7 @@
 import React from 'react';
 import TopBanner from '../components/Homepage/TopBanner';
 import Conference from '../components/Homepage/Conference';
-import Video from '../components/Homepage/Video';
+// import Video from '../components/Homepage/Video';
 import Speakers from '../components/Homepage/Speakers';
 import Partners from '../components/Homepage/Partners';
 import JoinGraphQLCommunity from '../components/Homepage/JoinGraphQLCommunity';
@@ -18,13 +18,13 @@ const IndexPage = (props) => (
       canonicalLink="https://graphql.asia/"
     />
     <TopBanner />
-    <Video />
-    <Conference />
+    {/* <Video /> */}
     <Speakers />
     <Workshop />
     <Talks />
     <Partners />
     <JoinGraphQLCommunity />
+    <Conference />
   </Layout>
 );
 

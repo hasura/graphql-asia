@@ -14,7 +14,7 @@ const peterPiekarczyk = require('../Common/images/peter-piekarczyk.png');
 const gregMacwilliam = require('../Common/images/greg-macwilliam.png');
 const lauraHam = require('../Common/images/laura-ham.png');
 const zhifanLi = require('../Common/images/zhifan-li.png');
-// const bharatKashyap = require('../Common/images/bharat-kashyap.png');
+const bharatKashyap = require('../Common/images/bharat-kashyap.png');
 const toanNguyen = require('../Common/images/toan-nguyen.png');
 const pranayKalro = require('../Common/images/pranay-kalro.png');
 const tamasPiros = require('../Common/images/tamas-piros.png');
@@ -133,7 +133,7 @@ const speakersDetails = [
     ),
   },
   {
-    talkPageUrl: '/talks/connect-your-enterprise-to-cloud-with-hasura-and-apache-kafka/',
+    talkPageUrl: '/talks/connect-your-enterprise-systems-with-graphql-using-apache-kafka-and-hasura/',
     speakersName: 'Wojciech Trocki',
     speakersImg: wojciechTrocki,
     speakersDesignation: (
@@ -192,18 +192,18 @@ const speakersDetails = [
       </span>
     ),
   },
-  // {
-  //   talkPageUrl: '/talks/adding-bleeding-edge-tech-to-archaic-government-graphql-for-govtech/',
-  //   speakersName: 'Bharat Kashyap',
-  //   speakersImg: bharatKashyap,
-  //   speakersDesignation: (
-  //     <span>
-  //       Software Engineer,
-  //       <br />
-  //       Samagra Development Associates
-  //     </span>
-  //   ),
-  // },
+  {
+    talkPageUrl: '/talks/adding-bleeding-edge-tech-to-archaic-government-graphql-for-govtech/',
+    speakersName: 'Bharat Kashyap',
+    speakersImg: bharatKashyap,
+    speakersDesignation: (
+      <span>
+        Software Engineer,
+        <br />
+        Samagra Development Associates
+      </span>
+    ),
+  },
   {
     talkPageUrl: '/talks/a-tale-of-inherited-projects-and-why-we-kept-hasura/',
     speakersName: 'Brooke Swanson',
@@ -581,17 +581,17 @@ const talkDetailsPage = [
     ],
   },
   {
-    url: '/talks/connect-your-enterprise-to-cloud-with-hasura-and-apache-kafka/',
+    url: '/talks/connect-your-enterprise-systems-with-graphql-using-apache-kafka-and-hasura/',
     metaTags: {
-      title: 'Connect your enterprise to Cloud with Hasura and Apache Kafka',
+      title: 'Connect your enterprise systems with GraphQL using Apache Kafka and Hasura',
       canonicalUrl:
-        'https://graphql.asia/talks/connect-your-enterprise-to-cloud-with-hasura-and-apache-kafka/',
+        'https://graphql.asia/talks/connect-your-enterprise-systems-with-graphql-using-apache-kafka-and-hasura/',
       description:
         'When your infrastructure grow and your API gets out of control. Your manager tells you to implement GraphQL... this talk is going to show you the way.',
       metaImg:
-        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/connect-your-enterprise-to-cloud-with-hasura-and-apache-kafka.png',
+        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/connect-your-enterprise-systems-with-graphql-using-apache-kafka-and-hasura.png',
     },
-    title: 'Connect your enterprise to Cloud with Hasura and Apache Kafka',
+    title: 'Connect your enterprise systems with GraphQL using Apache Kafka and Hasura',
     speakersTitle: 'About the speakers',
     backLink: '/talks/',
     language: 'English',
@@ -828,49 +828,49 @@ const talkDetailsPage = [
       },
     ],
   },
-  // {
-  //   url: '/talks/adding-bleeding-edge-tech-to-archaic-government-graphql-for-govtech/',
-  //   metaTags: {
-  //     title: 'Adding bleeding-edge tech to archaic government: GraphQL for GovTech',
-  //     canonicalUrl:
-  //       'https://graphql.asia/talks/adding-bleeding-edge-tech-to-archaic-government-graphql-for-govtech/',
-  //     description:
-  //       'At the Central Tech Team at Samagra - a governance consulting team working in four different states in India - we\'ve been trying to create a culture of using open-source, scalable and fast (bleeding-edge) tech for government use cases. What we\'ve done so far - enable tracking and monitoring of student and teacher attendance in all public schools of Haryana; building the technology architecture behind Mission Prerna, Uttar Pradesh\'s mission to transform basic education and enable tech systems that allowed Himachal Pradesh to be declared the country\'s best state in terms of learning continuity in 2020, according to the Annual State of Education Report. How do we do it - and how does GraphQL fit into the picture?',
-  //     metaImg:
-  //       'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/adding-bleeding-edge-tech-to-archaic-government-graphql-for-govtech.png',
-  //   },
-  //   title: 'Adding bleeding-edge tech to archaic government: GraphQL for GovTech',
-  //   speakersTitle: 'About the speakers',
-  //   backLink: '/talks/',
-  //   language: 'English',
-  //   description: [
-  //     {
-  //       desc:
-  //         'At the Central Tech Team at Samagra - a governance consulting team working in four different states in India - we\'ve been trying to create a culture of using open-source, scalable and fast (bleeding-edge) tech for government use cases. What we\'ve done so far - enable tracking and monitoring of student and teacher attendance in all public schools of Haryana; building the technology architecture behind Mission Prerna, Uttar Pradesh\'s mission to transform basic education and enable tech systems that allowed Himachal Pradesh to be declared the country\'s best state in terms of learning continuity in 2020, according to the Annual State of Education Report. How do we do it - and how does GraphQL fit into the picture?',
-  //     },
-  //   ],
-  //   takeaways: [
-  //     {
-  //       desc: 'Some of the questions that I will pose in the talk will be relevant to both the GraphQL community as well as the open source community at large: What are the responses when we show the Hasura Console to government employees used to the Microsoft SQL Server? What are the issues, and how can we save exchequer money through open source - building better SQL Server to Postgres migration, for example. How can GraphQL stitching enable better federation for important government projects, like the National Health Stack? Hopefully get the community excited about things happening in the GovTech space and get a lot more people interested in contributing to thing we\'re building at CTT Samagra.'
-  //     },
-  //   ],
-  //   speakersList: [
-  //     {
-  //       speakersUrl: '/speakers/bharat-kashyap/',
-  //       speakersName: 'Bharat	Kashyap',
-  //       speakersImg: bharatKashyap,
-  //       speakersBio:
-  //         'Adding tech to gov at Samagra',
-  //       speakersDesignation: (
-  //         <span>
-  //           Software Engineer,
-  //           <br />
-  //           Samagra Development Associates
-  //         </span>
-  //       ),
-  //     },
-  //   ],
-  // },
+  {
+    url: '/talks/adding-bleeding-edge-tech-to-archaic-government-graphql-for-govtech/',
+    metaTags: {
+      title: 'Adding bleeding-edge tech to archaic government: GraphQL for GovTech',
+      canonicalUrl:
+        'https://graphql.asia/talks/adding-bleeding-edge-tech-to-archaic-government-graphql-for-govtech/',
+      description:
+        'At the Central Tech Team at Samagra - a governance consulting team working in four different states in India - we\'ve been trying to create a culture of using open-source, scalable and fast (bleeding-edge) tech for government use cases. What we\'ve done so far - enable tracking and monitoring of student and teacher attendance in all public schools of Haryana; building the technology architecture behind Mission Prerna, Uttar Pradesh\'s mission to transform basic education and enable tech systems that allowed Himachal Pradesh to be declared the country\'s best state in terms of learning continuity in 2020, according to the Annual State of Education Report. How do we do it - and how does GraphQL fit into the picture?',
+      metaImg:
+        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/adding-bleeding-edge-tech-to-archaic-government-graphql-for-govtech.png',
+    },
+    title: 'Adding bleeding-edge tech to archaic government: GraphQL for GovTech',
+    speakersTitle: 'About the speakers',
+    backLink: '/talks/',
+    language: 'English',
+    description: [
+      {
+        desc:
+          'At the Central Tech Team at Samagra - a governance consulting team working in four different states in India - we\'ve been trying to create a culture of using open-source, scalable and fast (bleeding-edge) tech for government use cases. What we\'ve done so far - enable tracking and monitoring of student and teacher attendance in all public schools of Haryana; building the technology architecture behind Mission Prerna, Uttar Pradesh\'s mission to transform basic education and enable tech systems that allowed Himachal Pradesh to be declared the country\'s best state in terms of learning continuity in 2020, according to the Annual State of Education Report. How do we do it - and how does GraphQL fit into the picture?',
+      },
+    ],
+    takeaways: [
+      {
+        desc: 'Some of the questions that I will pose in the talk will be relevant to both the GraphQL community as well as the open source community at large: What are the responses when we show the Hasura Console to government employees used to the Microsoft SQL Server? What are the issues, and how can we save exchequer money through open source - building better SQL Server to Postgres migration, for example. How can GraphQL stitching enable better federation for important government projects, like the National Health Stack? Hopefully get the community excited about things happening in the GovTech space and get a lot more people interested in contributing to thing we\'re building at CTT Samagra.'
+      },
+    ],
+    speakersList: [
+      {
+        speakersUrl: '/speakers/bharat-kashyap/',
+        speakersName: 'Bharat	Kashyap',
+        speakersImg: bharatKashyap,
+        speakersBio:
+          'Adding tech to gov at Samagra',
+        speakersDesignation: (
+          <span>
+            Software Engineer,
+            <br />
+            Samagra Development Associates
+          </span>
+        ),
+      },
+    ],
+  },
 
   {
     url: '/talks/a-tale-of-inherited-projects-and-why-we-kept-hasura/',
@@ -1001,6 +1001,214 @@ const talkDetailsPage = [
             Tesco
           </span>
         ),
+      },
+    ],
+  },
+  {
+    url: '/workshops/server-side-authentication-in-graphql/',
+    metaTags: {
+      title: 'Server-side Authentication in GraphQL',
+      canonicalUrl: 'https://graphql.asia/workshops/server-side-authentication-in-graphql/',
+      description:
+        'A hands-on workshop about handling authentication and authorization in GraphQL. During this 3 hour workshop you’ll learn how to add authentication to a GraphQL server using JWTs, and handle query responses with user roles. As a bonus we’ll be adding an authentication server with Auth0.',
+      metaImg:
+        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/server-side-authentication-in-graphql.png',
+    },
+    title: 'Server-side Authentication in GraphQL',
+    isWorkshop: true,
+    speakersTitle: 'Presented by',
+    backLink: '/workshops/',
+    description: [
+      {
+        desc:
+          'A hands-on workshop about handling authentication and authorization in GraphQL. During this 3 hour workshop you’ll learn how to add authentication to a GraphQL server using JWTs, and handle query responses with user roles. As a bonus we’ll be adding an authentication server with Auth0.',
+      },
+    ],
+    contents: [
+      {
+        title: 'The contents:',
+        list: ['Authentication with JWTs', 'Handling query responses and user roles', 'Auth0'],
+      },
+      {
+        title: 'Prerequisites:',
+        list: ['JavaScript (preferably TypeScript)', 'GraphQL'],
+      },
+    ],
+    speakersList: [
+      {
+        speakersUrl: '/speakers/roy-derks/',
+        speakersName: 'Roy Derks',
+        speakersImg: royDerks,
+        speakersBio:
+          'Roy Derks is a serial startup CTO, developer, author and conference speaker from Amsterdam. Currently leading the engineering teams at Vandebron, on a mission to provide the world with renewable energy.',
+        speakersDesignation: (
+          <span>
+            Leading the Engineering teams,
+            <br /> Vandebron
+          </span>
+        ),
+        speakersOrg: 'Vandebron',
+      },
+    ],
+  },
+  {
+    url: '/workshops/introduction-to-hasura/',
+    metaTags: {
+      title: 'Introduction to Hasura',
+      canonicalUrl: 'https://graphql.asia/workshops/introduction-to-hasura/',
+      description:
+        'Hasura makes developers superhuman and simplifies app development with its open-source real-time API engine to instantly create reusable, real-time GraphQL and REST APIs from your new and existing data',
+      metaImg: 'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/introduction-to-hasura.png',
+    },
+    title: 'Introduction to Hasura',
+    backLink: '/workshops/',
+    isWorkshop: true,
+    speakersTitle: 'Presented by',
+    description: [
+      {
+        desc:
+          'Hasura makes developers superhuman and simplifies app development with its open-source real-time API engine to instantly create reusable, real-time GraphQL and REST APIs from your new and existing data',
+      },
+      {
+        desc:
+          'This 90 minute hands-on workshop will help new users get familiar with Hasura by building a fully functional realtime backend with Hasura.',
+      },
+    ],
+    speakersList: [
+      {
+        speakersUrl: '/speakers/praveen-duriaraju/',
+        speakersName: 'Praveen Duriaraju',
+        speakersImg: praveenDuriaraju,
+        speakersDesignation: (
+          <span>
+            Developer Advocate,
+            <br />
+            Hasura
+          </span>
+        ),
+        speakersOrg: 'Hasura',
+      },
+    ],
+  },
+  {
+    url: '/workshops/graphql-in-the-jamstack/',
+    metaTags: {
+      title: 'GraphQL in the Jamstack',
+      canonicalUrl: 'https://graphql.asia/workshops/graphql-in-the-jamstack/',
+      description:
+        'The adoption rate of the Jamstack is increasing at a tremendous pace. At its core, sites created with the Jamstack utilise static sites generated by various tools. Some of these tools utilise GraphQL heavily from querying metadata to querying dynamic page content. As part of this workshop attendees will have the opportunity to familiarise themselves with Gatsby.js and learn how to build a Jamstack application while leveraging GraphQL and learning about the core pillars of the Jamstack.',
+      metaImg:
+        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-in-the-jamstack.png',
+    },
+    title: 'GraphQL in the Jamstack',
+    isWorkshop: true,
+    speakersTitle: 'Presented by',
+    backLink: '/workshops/',
+    description: [
+      {
+        desc:
+          'The adoption rate of the Jamstack is increasing at a tremendous pace. At its core, sites created with the Jamstack utilise static sites generated by various tools. Some of these tools utilise GraphQL heavily from querying metadata to querying dynamic page content. As part of this workshop attendees will have the opportunity to familiarise themselves with Gatsby.js and learn how to build a Jamstack application while leveraging GraphQL and learning about the core pillars of the Jamstack.',
+      },
+    ],
+    takeaways: [
+      {
+        desc: 'Attendees will be able to learn about the core principles of the Jamstack, while understanding how GraphQL can be utilised via Gatsby.js - a popular open source framework based on React.',
+      },
+    ],
+    speakersList: [
+      {
+        speakersUrl: '/speakers/tamas-piros/',
+        speakersName: 'Tamas Piros',
+        speakersImg: tamasPiros,
+        speakersBio:
+          'Tamas is a Google Developer Expert in Web Technologies and a seasoned Developer Evangelist. He is a passionate advocate for modern web technologies, helping people understand and unlock the latest & greatest features of web development.',
+        speakersDesignation: (
+          <span>
+            Developer Evangelist,
+            <br />
+            Cloudinary
+          </span>
+        ),
+        speakersOrg: 'Cloudinary',
+      },
+    ],
+  },
+  {
+    url: '/workshops/type-safe-graphql-apps-with-typescript/',
+    metaTags: {
+      title: 'Type-safe GraphQL apps with TypeScript',
+      canonicalUrl: 'https://graphql.asia/workshops/type-safe-graphql-apps-with-typescript/',
+      description:
+        'The adoption rate of the Jamstack is increasing at a tremendous pace. At its core, sites created with the Jamstack utilise static sites generated by various tools. Some of these tools utilise GraphQL heavily from querying metadata to querying dynamic page content. As part of this workshop attendees will have the opportunity to familiarise themselves with Gatsby.js and learn how to build a Jamstack application while leveraging GraphQL and learning about the core pillars of the Jamstack.',
+      metaImg:
+        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/type-safe-graphql-apps-with-typescript.png',
+    },
+    title: 'Type-safe GraphQL apps with TypeScript',
+    isWorkshop: true,
+    speakersTitle: 'Presented by',
+    backLink: '/workshops/',
+    description: [
+      {
+        desc:
+          'In this workshop we’re going to look at how to bring type-safety to our GraphQL apps using TypeScript. For our server, we’ll look at how we can share types between the schema, resolvers and data access layer. Then we’ll take a look at how to share those types across to our client application (we’ll use React in the workshop).',
+      },
+      {
+        desc:
+          'It\'ll be a hands on workshop, so be prepared to get ready to implement your own type safe JavaScript GraphQL application.',
+      },
+    ],
+    contents: [
+      {
+        title: 'Prerequisites:',
+        desc: <span>A VS Code <a href='https://code.visualstudio.com/docs/remote/containers' target='_blank' rel='noopener noreferrer'>Devcontainer</a> will be provided that contains all dependencies ready to go. If attendees are unable to use a VS Code Devcontainer, they will need to have</span>,
+        list: [
+          'Node.js 12',
+          'An editor',
+          <span>Latest version of the <a href='https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local#v2' target='_blank' rel='noopener noreferrer'>Azure Function Core Tools</a> to run the GraphQL server</span>
+        ],
+      },
+      {
+        desc: 'Some prior knowledge of TypeScript will be beneficial, but not required. An Azure account will be needed if they wish to deploy it at the end of the workshop.'
+      },
+    ],
+    takeaways: [
+      {
+        desc: 'At the end of the workshop, attendees should have an understanding of the options for creating type-safe GraphQL applications, and how to have that type-safety applied to the client and server components.',
+      },
+    ],
+    speakersList: [
+      {
+        speakersUrl: '/speakers/aaron-powell/',
+        speakersName: 'Aaron Powell',
+        speakersImg: aaronPowell,
+        speakersBio:
+          'Aaron is a Developer Advocate at Microsoft. Having spent 15 years doing web development he’s seen it all, from browser wars, the rise of AJAX and the fall of 20 JavaScript frameworks (and that was just yesterday!). Always tinkering with something new he explores crazy ideas like writing your own implementation of numbers in .NET, creating IoC in JavaScript or implementing tic-tac-toe using git commits. When not sitting at a computer he can be found running while pushing his two kids in a pram.',
+        speakersDesignation: (
+          <span>
+            Principal Cloud Advocate,
+            <br />
+            Microsoft
+          </span>
+        ),
+        speakersOrg: 'Microsoft',
+      },
+    ],
+  },
+  {
+    url: '/workshops/graphql-on-sql-server-with-hasura/',
+    metaTags: {
+      title: 'GraphQL on SQL Server with Hasura',
+      canonicalUrl: 'https://graphql.asia/workshops/graphql-on-sql-server-with-hasura/',
+      description: 'GraphQL on SQL Server with Hasura.',
+      metaImg: 'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-asia.png',
+    },
+    title: 'GraphQL on SQL Server with Hasura',
+    backLink: '/workshops/',
+    isWorkshop: true,
+    comingSoon: true,
+    description: [
+      {
+        desc: 'More info coming soon',
       },
     ],
   },
