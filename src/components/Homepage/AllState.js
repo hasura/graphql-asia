@@ -138,9 +138,9 @@ const speakersDetails = [
     speakersImg: wojciechTrocki,
     speakersDesignation: (
       <span>
-        Principal Software Engineer, EnterpriseAPI,
+        Principal Software Engineer, AeroGear,
         <br />
-        IBM
+        Red Hat
       </span>
     ),
   },
