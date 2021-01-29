@@ -871,7 +871,6 @@ const talkDetailsPage = [
       },
     ],
   },
-
   {
     url: '/talks/a-tale-of-inherited-projects-and-why-we-kept-hasura/',
     metaTags: {
@@ -1419,4 +1418,9 @@ const workshopDetailsPage = [
     ],
   },
 ];
+const scheduleDetails = [
+  {
+
+  }
+]
 export { speakersDetails, talkDetailsPage, workshopDetailsPage };
