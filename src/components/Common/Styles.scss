@@ -1109,6 +1109,7 @@ ul {
     }
   }
   .scheduleListWrapper {
+    margin-bottom: 0 !important;
     .scheduleList {
       display: grid;
       grid-template-columns: 160px 1fr;
