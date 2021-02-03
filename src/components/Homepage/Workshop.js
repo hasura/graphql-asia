@@ -2,7 +2,7 @@ import React, {Fragment} from "react";
 import {Link} from 'gatsby';
 import '../Common/Styles.scss';
 import IndivWorkshop from './IndivWorkshop';
-import { workshopDetailsPage } from '../Homepage/AllState.js'
+import { talkDetailsPage } from '../Homepage/AllState.js'
 const arrow = require('../Common/images/arrow.svg');
 const star = require('../Common/images/star.svg');
 const Workshop = props => {
@@ -12,9 +12,15 @@ const Workshop = props => {
         <div className='articleSubTitle'>Workshops</div>
         <ul>
           {
-            workshopDetailsPage.map((workshopList, index) => {
+            talkDetailsPage.map((workshopList, index) => {
               return (
-                <IndivWorkshop key={index} workshopList ={ workshopList } />
+                <Fragment key={index}>
+                  {
+                    workshopList.isWorkshop ? (
+                      <IndivWorkshop workshopList ={ workshopList } />
+                    ) : null
+                  }
+                </Fragment>
               )
             })
           }

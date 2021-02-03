@@ -16,8 +16,14 @@ const Talks = props => {
               return (
                 <Fragment key={index}>
                   {
-                    index < 6  ? (
-                      <IndivTalk talksList={talksList} />
+                    !talksList.isWorkshop ? (
+                      <Fragment>
+                        {
+                          index < 6  ? (
+                            <IndivTalk talksList={talksList} />
+                          ) : null
+                        }
+                      </Fragment>
                     ) : null
                   }
                 </Fragment>

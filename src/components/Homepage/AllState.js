@@ -290,6 +290,8 @@ const talkDetailsPage = [
     speakersTitle: 'About the speakers',
     backLink: '/talks/',
     language: 'English',
+    time: '08:00 am -	08:30 am',
+    talkType: 'Fireside Chat',
     description: [
       {
         desc: 'Coming Soon',
@@ -346,6 +348,8 @@ const talkDetailsPage = [
     speakersTitle: 'About the speaker',
     backLink: '/talks/',
     language: 'English',
+    time: '10:30 am -	10:55 am',
+    talkType: 'Session',
     description: [
       {
         desc:
@@ -389,6 +393,8 @@ const talkDetailsPage = [
     speakersTitle: 'About the speakers',
     backLink: '/talks/',
     language: 'English',
+    time: '11:50 am -	12:05 pm',
+    talkType: 'Session',
     description: [
       {
         desc:
@@ -446,6 +452,8 @@ const talkDetailsPage = [
     speakersTitle: 'About the speaker',
     backLink: '/talks/',
     language: 'English',
+    time: '08:30 am -	08:55 am',
+    talkType: 'Session',
     description: [
       {
         desc:
@@ -504,6 +512,8 @@ const talkDetailsPage = [
     speakersTitle: 'About the speakers',
     backLink: '/talks/',
     language: 'Japanese',
+    time: '12:10 pm -	12:35 pm',
+    talkType: 'Session',
     description: [
       {
         desc:
@@ -551,6 +561,8 @@ const talkDetailsPage = [
     speakersTitle: 'About the speakers',
     backLink: '/talks/',
     language: 'English',
+    time: '11:00 am -	11:25 am',
+    talkType: 'Session',
     description: [
       {
         desc:
@@ -595,6 +607,8 @@ const talkDetailsPage = [
     speakersTitle: 'About the speakers',
     backLink: '/talks/',
     language: 'English',
+    time: '12:15 pm -	12:30 pm',
+    talkType: 'Session',
     description: [
       {
         desc:
@@ -647,6 +661,8 @@ const talkDetailsPage = [
     speakersTitle: 'About the speakers',
     backLink: '/talks/',
     language: 'English',
+    time: '12:35 pm -	12:45 pm',
+    talkType: 'Lightning Talks',
     description: [
       {
         desc:
@@ -705,6 +721,8 @@ const talkDetailsPage = [
     speakersTitle: 'About the speakers',
     backLink: '/talks/',
     language: 'English',
+    time: '09:10 am -	09:35 am',
+    talkType: 'Session',
     description: [
       {
         desc:
@@ -749,6 +767,8 @@ const talkDetailsPage = [
     speakersTitle: 'About the speakers',
     backLink: '/talks/',
     language: 'English',
+    time: '11:45 am -	12:10 pm',
+    talkType: 'Session',
     description: [
       {
         desc:
@@ -796,6 +816,8 @@ const talkDetailsPage = [
     speakersTitle: 'About the speakers',
     backLink: '/talks/',
     language: 'Mandarin',
+    time: '11:40 am -	11:50 am',
+    talkType: 'Lightning Talks',
     description: [
       {
         desc:
@@ -843,6 +865,8 @@ const talkDetailsPage = [
     speakersTitle: 'About the speakers',
     backLink: '/talks/',
     language: 'English',
+    time: '12:05 pm -	12:15 pm',
+    talkType: 'Lightning Talks',
     description: [
       {
         desc:
@@ -886,6 +910,8 @@ const talkDetailsPage = [
     speakersTitle: 'About the speakers',
     backLink: '/talks/',
     language: 'English',
+    time: '09:35 am -	10:00 am',
+    talkType: 'Session',
     description: [
       {
         desc:
@@ -929,6 +955,8 @@ const talkDetailsPage = [
     speakersTitle: 'About the speakers',
     backLink: '/talks/',
     language: 'Vietnamese',
+    time: '10:00 am -	10:15 am',
+    talkType: 'Session',
     description: [
       {
         desc:
@@ -975,6 +1003,8 @@ const talkDetailsPage = [
     speakersTitle: 'About the speakers',
     backLink: '/talks/',
     language: 'English',
+    time: '10:55 am -	11:20 am',
+    talkType: 'Session',
     description: [
       {
         desc:
@@ -1003,6 +1033,7 @@ const talkDetailsPage = [
       },
     ],
   },
+
   {
     url: '/workshops/server-side-authentication-in-graphql/',
     metaTags: {
@@ -1017,6 +1048,9 @@ const talkDetailsPage = [
     isWorkshop: true,
     speakersTitle: 'Presented by',
     backLink: '/workshops/',
+    language: 'English',
+    time: '07:00 am -	10:00 am',
+    talkType: 'Workshop',
     description: [
       {
         desc:
@@ -1061,6 +1095,9 @@ const talkDetailsPage = [
     },
     title: 'Introduction to Hasura',
     backLink: '/workshops/',
+    language: 'English',
+    time: '07:00 am -	10:00 am',
+    talkType: 'Workshop',
     isWorkshop: true,
     speakersTitle: 'Presented by',
     description: [
@@ -1103,6 +1140,9 @@ const talkDetailsPage = [
     isWorkshop: true,
     speakersTitle: 'Presented by',
     backLink: '/workshops/',
+    language: 'English',
+    time: '07:00 am -	10:00 am',
+    talkType: 'Workshop',
     description: [
       {
         desc:
@@ -1146,6 +1186,9 @@ const talkDetailsPage = [
     isWorkshop: true,
     speakersTitle: 'Presented by',
     backLink: '/workshops/',
+    language: 'English',
+    time: '07:00 am -	10:00 am',
+    talkType: 'Workshop',
     description: [
       {
         desc:
@@ -1205,6 +1248,9 @@ const talkDetailsPage = [
     backLink: '/workshops/',
     isWorkshop: true,
     comingSoon: true,
+    language: 'English',
+    time: '07:00 am -	10:00 am',
+    talkType: 'Workshop',
     description: [
       {
         desc: 'More info coming soon',
@@ -1212,215 +1258,120 @@ const talkDetailsPage = [
     ],
   },
 ];
-const workshopDetailsPage = [
+const scheduleDetailsOne = [
+  {
+    type: 'break',
+    title: 'Conference Begins',
+    time: '10:25 am - 10:30 am',
+  },
+  {
+    url: '/talks/intelligent-caching-with-graphql-gateway-using-cdc/',
+    type: 'talk',
+  },
+  {
+    type: 'break',
+    title: '15 Minute Break',
+    time: '11:25 am - 11:40 am',
+  },
+  {
+    url: '/talks/client-side-migration-strategy-from-rest-to-graphql/',
+    type: 'talk',
+  },
+  {
+    url: '/talks/building-high-performing-applications-using-graphql-for-heterogeneous-system/',
+    type: 'talk',
+  },
+  {
+    type: 'break',
+    title: '15 Minute Break',
+    time: '11:50 am - 12:05 pm',
+  },
+  {
+    url: '/talks/adding-bleeding-edge-tech-to-archaic-government-graphql-for-govtech/',
+    type: 'talk',
+  },
+  {
+    url: '/talks/connect-your-enterprise-systems-with-graphql-using-apache-kafka-and-hasura/',
+    type: 'talk',
+  },
+];
+const scheduleDetailsTwo = [
+  {
+    url: '/talks/the-state-of-graphql/',
+    type: 'talk',
+  },
+  {
+    url: '/talks/graphql-error-handling-done-right/',
+    type: 'talk',
+  },
+  {
+    type: 'break',
+    title: '15 Minute Break',
+    time: '08:55 am - 09:10 am'
+  },
+  {
+    url: '/talks/reintroducing-schema-stitching-in-2021/',
+    type: 'talk',
+  },
+  {
+    url: '/talks/a-tale-of-inherited-projects-and-why-we-kept-hasura/',
+    type: 'talk',
+  },
+  {
+    url: '/talks/graphql-and-microservices-the-different-approaches-and-challenges/',
+    type: 'talk',
+  },
+  {
+    type: 'break',
+    title: '15 Minute Break',
+    time: '10:15 am - 10:30 am'
+  },
+  {
+    url: '/talks/evolution-of-graphql-at-tokopedia-with-increase-in-scale/',
+    type: 'talk',
+  },
+  {
+    url: '/talks/adopting-graphql-in-a-legacy-nodejs-api/',
+    type: 'talk',
+  },
+  {
+    type: 'break',
+    title: '15 Minute Break',
+    time: '11:30 am - 11:45 am'
+  },
+  {
+    url: '/talks/data-science-with-weaviate-and-graphql/',
+    type: 'talk',
+  },
+  {
+    url: '/talks/monorepo-development-using-hasura-role-and-graphql-code-generator/',
+    type: 'talk',
+  },
+  {
+    url: '/talks/graphql-wrong-answers-only/',
+    type: 'talk',
+  },
+];
+const workshopScheduleDetails = [
   {
     url: '/workshops/server-side-authentication-in-graphql/',
-    metaTags: {
-      title: 'Server-side Authentication in GraphQL',
-      canonicalUrl: 'https://graphql.asia/workshops/server-side-authentication-in-graphql/',
-      description:
-        'A hands-on workshop about handling authentication and authorization in GraphQL. During this 3 hour workshop you’ll learn how to add authentication to a GraphQL server using JWTs, and handle query responses with user roles. As a bonus we’ll be adding an authentication server with Auth0.',
-      metaImg:
-        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/server-side-authentication-in-graphql.png',
-    },
-    title: 'Server-side Authentication in GraphQL',
-    isWorkshop: true,
-    speakersTitle: 'Presented by',
-    backLink: '/workshops/',
-    description: [
-      {
-        desc:
-          'A hands-on workshop about handling authentication and authorization in GraphQL. During this 3 hour workshop you’ll learn how to add authentication to a GraphQL server using JWTs, and handle query responses with user roles. As a bonus we’ll be adding an authentication server with Auth0.',
-      },
-    ],
-    contents: [
-      {
-        title: 'The contents:',
-        list: ['Authentication with JWTs', 'Handling query responses and user roles', 'Auth0'],
-      },
-      {
-        title: 'Prerequisites:',
-        list: ['JavaScript (preferably TypeScript)', 'GraphQL'],
-      },
-    ],
-    speakersList: [
-      {
-        speakersUrl: '/speakers/roy-derks/',
-        speakersName: 'Roy Derks',
-        speakersImg: royDerks,
-        speakersBio:
-          'Roy Derks is a serial startup CTO, developer, author and conference speaker from Amsterdam. Currently leading the engineering teams at Vandebron, on a mission to provide the world with renewable energy.',
-        speakersDesignation: (
-          <span>
-            Leading the Engineering teams,
-            <br /> Vandebron
-          </span>
-        ),
-      },
-    ],
+    type: 'workshop',
   },
   {
     url: '/workshops/introduction-to-hasura/',
-    metaTags: {
-      title: 'Introduction to Hasura',
-      canonicalUrl: 'https://graphql.asia/workshops/introduction-to-hasura/',
-      description:
-        'Hasura makes developers superhuman and simplifies app development with its open-source real-time API engine to instantly create reusable, real-time GraphQL and REST APIs from your new and existing data',
-      metaImg: 'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/introduction-to-hasura.png',
-    },
-    title: 'Introduction to Hasura',
-    backLink: '/workshops/',
-    isWorkshop: true,
-    speakersTitle: 'Presented by',
-    description: [
-      {
-        desc:
-          'Hasura makes developers superhuman and simplifies app development with its open-source real-time API engine to instantly create reusable, real-time GraphQL and REST APIs from your new and existing data',
-      },
-      {
-        desc:
-          'This 90 minute hands-on workshop will help new users get familiar with Hasura by building a fully functional realtime backend with Hasura.',
-      },
-    ],
-    speakersList: [
-      {
-        speakersUrl: '/speakers/praveen-duriaraju/',
-        speakersName: 'Praveen Duriaraju',
-        speakersImg: praveenDuriaraju,
-        speakersDesignation: (
-          <span>
-            Developer Advocate,
-            <br />
-            Hasura
-          </span>
-        ),
-      },
-    ],
+    type: 'workshop',
   },
   {
     url: '/workshops/graphql-in-the-jamstack/',
-    metaTags: {
-      title: 'GraphQL in the Jamstack',
-      canonicalUrl: 'https://graphql.asia/workshops/graphql-in-the-jamstack/',
-      description:
-        'The adoption rate of the Jamstack is increasing at a tremendous pace. At its core, sites created with the Jamstack utilise static sites generated by various tools. Some of these tools utilise GraphQL heavily from querying metadata to querying dynamic page content. As part of this workshop attendees will have the opportunity to familiarise themselves with Gatsby.js and learn how to build a Jamstack application while leveraging GraphQL and learning about the core pillars of the Jamstack.',
-      metaImg:
-        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-in-the-jamstack.png',
-    },
-    title: 'GraphQL in the Jamstack',
-    isWorkshop: true,
-    speakersTitle: 'Presented by',
-    backLink: '/workshops/',
-    description: [
-      {
-        desc:
-          'The adoption rate of the Jamstack is increasing at a tremendous pace. At its core, sites created with the Jamstack utilise static sites generated by various tools. Some of these tools utilise GraphQL heavily from querying metadata to querying dynamic page content. As part of this workshop attendees will have the opportunity to familiarise themselves with Gatsby.js and learn how to build a Jamstack application while leveraging GraphQL and learning about the core pillars of the Jamstack.',
-      },
-    ],
-    takeaways: [
-      {
-        desc: 'Attendees will be able to learn about the core principles of the Jamstack, while understanding how GraphQL can be utilised via Gatsby.js - a popular open source framework based on React.',
-      },
-    ],
-    speakersList: [
-      {
-        speakersUrl: '/speakers/tamas-piros/',
-        speakersName: 'Tamas Piros',
-        speakersImg: tamasPiros,
-        speakersBio:
-          'Tamas is a Google Developer Expert in Web Technologies and a seasoned Developer Evangelist. He is a passionate advocate for modern web technologies, helping people understand and unlock the latest & greatest features of web development.',
-        speakersDesignation: (
-          <span>
-            Developer Evangelist,
-            <br />
-            Cloudinary
-          </span>
-        ),
-      },
-    ],
+    type: 'workshop',
   },
   {
     url: '/workshops/type-safe-graphql-apps-with-typescript/',
-    metaTags: {
-      title: 'Type-safe GraphQL apps with TypeScript',
-      canonicalUrl: 'https://graphql.asia/workshops/type-safe-graphql-apps-with-typescript/',
-      description:
-        'The adoption rate of the Jamstack is increasing at a tremendous pace. At its core, sites created with the Jamstack utilise static sites generated by various tools. Some of these tools utilise GraphQL heavily from querying metadata to querying dynamic page content. As part of this workshop attendees will have the opportunity to familiarise themselves with Gatsby.js and learn how to build a Jamstack application while leveraging GraphQL and learning about the core pillars of the Jamstack.',
-      metaImg:
-        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/type-safe-graphql-apps-with-typescript.png',
-    },
-    title: 'Type-safe GraphQL apps with TypeScript',
-    isWorkshop: true,
-    speakersTitle: 'Presented by',
-    backLink: '/workshops/',
-    description: [
-      {
-        desc:
-          'In this workshop we’re going to look at how to bring type-safety to our GraphQL apps using TypeScript. For our server, we’ll look at how we can share types between the schema, resolvers and data access layer. Then we’ll take a look at how to share those types across to our client application (we’ll use React in the workshop).',
-      },
-      {
-        desc:
-          'It\'ll be a hands on workshop, so be prepared to get ready to implement your own type safe JavaScript GraphQL application.',
-      },
-    ],
-    contents: [
-      {
-        title: 'Prerequisites:',
-        desc: <span>A VS Code <a href='https://code.visualstudio.com/docs/remote/containers' target='_blank' rel='noopener noreferrer'>Devcontainer</a> will be provided that contains all dependencies ready to go. If attendees are unable to use a VS Code Devcontainer, they will need to have</span>,
-        list: [
-          'Node.js 12',
-          'An editor',
-          <span>Latest version of the <a href='https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local#v2' target='_blank' rel='noopener noreferrer'>Azure Function Core Tools</a> to run the GraphQL server</span>
-        ],
-      },
-      {
-        desc: 'Some prior knowledge of TypeScript will be beneficial, but not required. An Azure account will be needed if they wish to deploy it at the end of the workshop.'
-      },
-    ],
-    takeaways: [
-      {
-        desc: 'At the end of the workshop, attendees should have an understanding of the options for creating type-safe GraphQL applications, and how to have that type-safety applied to the client and server components.',
-      },
-    ],
-    speakersList: [
-      {
-        speakersUrl: '/speakers/aaron-powell/',
-        speakersName: 'Aaron Powell',
-        speakersImg: aaronPowell,
-        speakersBio:
-          'Aaron is a Developer Advocate at Microsoft. Having spent 15 years doing web development he’s seen it all, from browser wars, the rise of AJAX and the fall of 20 JavaScript frameworks (and that was just yesterday!). Always tinkering with something new he explores crazy ideas like writing your own implementation of numbers in .NET, creating IoC in JavaScript or implementing tic-tac-toe using git commits. When not sitting at a computer he can be found running while pushing his two kids in a pram.',
-        speakersDesignation: (
-          <span>
-            Principal Cloud Advocate,
-            <br />
-            Microsoft
-          </span>
-        ),
-      },
-    ],
+    type: 'workshop',
   },
   {
     url: '/workshops/graphql-on-sql-server-with-hasura/',
-    metaTags: {
-      title: 'GraphQL on SQL Server with Hasura',
-      canonicalUrl: 'https://graphql.asia/workshops/graphql-on-sql-server-with-hasura/',
-      description: 'GraphQL on SQL Server with Hasura.',
-      metaImg: 'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-asia.png',
-    },
-    title: 'GraphQL on SQL Server with Hasura',
-    backLink: '/workshops/',
-    isWorkshop: true,
-    comingSoon: true,
-    description: [
-      {
-        desc: 'More info coming soon',
-      },
-    ],
+    type: 'workshop',
   },
 ];
-const scheduleDetails = [
-  {
-
-  }
-]
-export { speakersDetails, talkDetailsPage, workshopDetailsPage };
+export { speakersDetails, talkDetailsPage, scheduleDetailsOne, scheduleDetailsTwo, workshopScheduleDetails };
