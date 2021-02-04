@@ -44,7 +44,7 @@ const RegisterTopBanner = ({ location }) => {
               <span>
                 We will send you more information on workshop topics, speakers, schedule and how to
                 attend the conference around the{' '}
-                <span className="redColor">2rd week of February</span>.
+                <span className="redColor">2nd week of February</span>.
               </span>
             </li>
             <li>
