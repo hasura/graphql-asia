@@ -289,9 +289,6 @@ const IndivTalksPage = props => {
           </Link>
         </div>
       </div>
-      <div className='buttonWrapper btnFixedPos'>
-        <Link to='/register/'><button className='commonBtn darkBtn'>Register</button></Link>
-      </div>
     </Fragment>
   );
 };

@@ -13,11 +13,11 @@ body {
 }
 .btnFixedPos {
   position: fixed;
-  bottom: 14%;
+  bottom: 10%;
   right: 4%;
   .darkBtn {
-    width: 264px;
-    height: 64px;
+    width: 300px;
+    // height: 64px;
   }
 }
 .displayNone {
@@ -1190,6 +1190,12 @@ ul {
   }
 }
 @media (min-width: 901px) and (max-width: 1439px) {
+  .btnFixedPos {
+    right: 32px;
+    .darkBtn {
+      width: 250px;
+    }
+  }
   .commonBtn {
     font-size: 18px;
   }
@@ -1679,6 +1685,11 @@ ul {
   }
 }
 @media (min-width: 1920px) {
+  .btnFixedPos {
+    .darkBtn {
+      width: 400px;
+    }
+  }
   .sectionWrapper {
     padding: 120px 0;
   }
@@ -1848,6 +1859,11 @@ ul {
   }
 }
 @media (min-width: 3440px) {
+  .btnFixedPos {
+    .darkBtn {
+      width: 500px;
+    }
+  }
   .sectionWrapper {
     padding: 250px 0;
   }

@@ -11,11 +11,13 @@ const TopBanner = (props) => {
         Join us on 24th & 25th Feb for the third edition of GraphQL Asia happening online and free!
         And this time we're accepting talks & workshops in multiple Asian languages.
       </div>
+      {/*
       <div className="buttonWrapper">
         <Link to="/register/">
           <button className="commonBtn darkBtn">Register Now</button>
         </Link>
       </div>
+      */}
     </div>
   );
 };

@@ -174,6 +174,9 @@ const Layout = ({ children, location }) => {
       <div className="footerPattern">
         <img src={footerPattern} alt="pattern" />
       </div>
+      <div className='buttonWrapper btnFixedPos'>
+        <Link to='/register/'><button className='commonBtn darkBtn'>Register Now</button></Link>
+      </div>
     </div>
   );
 };
