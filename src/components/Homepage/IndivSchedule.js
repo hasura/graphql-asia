@@ -55,6 +55,9 @@ const IndivSchedule = ({indivTalks}) => {
         <div className='workshopArrow'>
           <img src={arrow} alt='Arrow' />
         </div>
+        <div className='articleDesc fontBold500 readMore'>
+          <span>Read More </span><span className='readMoreArrow'>→</span>
+        </div>
       </Link>
     </li>
   );

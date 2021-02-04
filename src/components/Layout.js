@@ -124,6 +124,11 @@ const Layout = ({ children, location }) => {
                 </Link>
               </li>
               <li>
+                <Link to='/#schedule' onClick={() => openMenuBar()}>
+                  Schedule
+                </Link>
+              </li>
+              <li>
                 <Link to="/code-of-conduct/" onClick={() => openMenuBar()}>
                   Code of Conduct
                 </Link>
