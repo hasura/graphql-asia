@@ -56,7 +56,7 @@ const Schedule = props => {
   });
 
   return (
-    <div id='schedule' className={'sectionWrapper' + ((!props.isLightMode) ? ' darkModeBorBottom' : ' lightModeBorBottom') + ((props.wdClass) ? ' wd80' : '')}>
+    <div id='schedule' className={'sectionWrapper' + ((props.wdClass) ? ' wd80' : '')}>
       <div className='scheduleWrapper'>
         <div className='scheduleHeader'>
           <div className='articleSubTitle'>Schedule</div>
