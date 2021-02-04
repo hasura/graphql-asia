@@ -21,7 +21,7 @@ body {
   }
 }
 .displayNone {
-  display: none;
+  display: none !important;
 }
 .navBarToggle {
   border-radius: 4px;
@@ -1100,6 +1100,7 @@ ul {
     .commonBtn {
       padding: 0px 15px;
       width: auto;
+      box-shadow: none;
     }
   }
   .removeBorBottom {
@@ -1116,7 +1117,7 @@ ul {
       display: grid;
       grid-template-columns: 160px 1fr;
       grid-gap: 0 60px;
-      padding: 15px 32px;
+      padding: 32px 32px;
       transition: all .3s ease-in-out;
       position: relative;
       .workshopArrow {
@@ -1161,6 +1162,7 @@ ul {
             padding-right: 24px;
             img {
               width: 68px;
+              filter: grayscale(100%);
             }
           }
         }
@@ -1622,6 +1624,15 @@ ul {
     grid-gap: 48px;
   }
 }
+@media (min-width: 1560px) {
+  .scheduleWrapper {
+    .scheduleListWrapper {
+      .scheduleList {
+        grid-template-columns: 250px 1fr;
+      }
+    }
+  }
+}
 @media (min-width: 1920px) {
   .sectionWrapper {
     padding: 120px 0;
@@ -1691,6 +1702,20 @@ ul {
     .darkBtn {
       width: auto;
       padding: 15px 50px;
+    }
+  }
+  .scheduleWrapper {
+    .scheduleHeader {
+      .buttonWrapper {
+        .commonBtn {
+          padding: 5px 40px;
+          width: 300px;
+          img {
+            width: 25px;
+            margin-right: 20px;
+          }
+        }
+      }
     }
   }
 }
@@ -1766,6 +1791,13 @@ ul {
           left: -18px;
           top: 7px;
         }
+      }
+    }
+  }
+  .scheduleWrapper {
+    .scheduleListWrapper {
+      .scheduleList {
+        grid-template-columns: 300px 1fr;
       }
     }
   }
