@@ -3,9 +3,12 @@ import Img from 'gatsby-image'
 import { Link } from 'gatsby'
 import information from '../assets/images/open_in_new.svg'
 class Speaker extends React.Component {
-  state = {
-    showTalkDetail: false,
-    showSpeakerDetail: false,
+  constructor(props) {
+    super(props)
+    this.state = {
+      showTalkDetail: false,
+      showSpeakerDetail: false,
+    }
   }
   render() {
     const speakerProps = this.props.speaker
