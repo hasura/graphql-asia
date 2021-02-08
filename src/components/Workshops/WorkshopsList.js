@@ -5,7 +5,7 @@ import { workshopDetailsPage } from '../Homepage/AllState.js'
 import IndivWorkshop from '../Homepage/IndivWorkshop';
 const lightBackArrow = require('../Common/images/back-arrow-light.svg');
 const darkBackArrow = require('../Common/images/back-arrow-dark.svg');
-const warning = require('../Common/images/warning.svg');
+const information = require('../Common/images/information.svg');
 const WorkshopsList = props => {
   const workshopsListState = workshopDetailsPage.map((workshops, index) => {
     return (
@@ -23,7 +23,7 @@ const WorkshopsList = props => {
       <div className='workshopWrapper'>
         <div className='articleSubTitle'>Workshops</div>
         <div className='articleDesc fontBold'>
-          <img src={warning} alt='Warning' />
+          <img src={information} alt='Information' />
           All workshops will start at 8 AM IST on 24th Feb
         </div>
         <ul>
