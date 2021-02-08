@@ -817,6 +817,8 @@ ul {
   width: 80%;
   .articleDesc {
     padding-bottom: 60px;
+    display: flex;
+    align-items: center;
     img {
       margin-right: 20px;
     }
@@ -866,6 +868,7 @@ ul {
       .articleDesc {
         padding-top: 16px;
         padding-bottom: 0;
+        display: block;
         a,
         span {
           color: #c63939;
