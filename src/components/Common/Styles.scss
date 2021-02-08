@@ -815,6 +815,12 @@ ul {
 }
 .workshopWrapper {
   width: 80%;
+  .articleDesc {
+    padding-bottom: 60px;
+    img {
+      margin-right: 20px;
+    }
+  }
   .articleSubTitle {
     padding-bottom: 20px;
   }
@@ -859,6 +865,7 @@ ul {
       }
       .articleDesc {
         padding-top: 16px;
+        padding-bottom: 0;
         a,
         span {
           color: #c63939;
@@ -1413,8 +1420,20 @@ ul {
   }
   .workshopWrapper {
     width: 100%;
+    .articleDesc {
+      display: flex;
+      align-items: flex-start;
+      padding-bottom: 20px;
+      img {
+        margin-top: 6px;
+        width: 20px;
+      }
+    }
     ul {
       li {
+        .articleDesc {
+          display: block;
+        }
         .readMore {
           display: flex;
           padding-top: 8px;
