@@ -109,17 +109,17 @@ const Layout = ({ children, location }) => {
           <div className="visibleMobile">
             <ul className="navBarULMobile articleDesc">
               <li>
-                <Link to="/#speakers" onClick={() => openMenuBar()}>
+                <Link to="/speakers/" onClick={() => openMenuBar()}>
                   Speakers
                 </Link>
               </li>
               <li>
-                <Link to="/#workshops" onClick={() => openMenuBar()}>
+                <Link to="/workshops/" onClick={() => openMenuBar()}>
                   Workshops
                 </Link>
               </li>
               <li>
-                <Link to="/#talks" onClick={() => openMenuBar()}>
+                <Link to="/talks/" onClick={() => openMenuBar()}>
                   Talks
                 </Link>
               </li>
@@ -133,6 +133,7 @@ const Layout = ({ children, location }) => {
                   Sponsorship
                 </Link>
               </li>
+              <li><Link to='/#about'>About</Link></li>
             </ul>
           </div>
         </div>
