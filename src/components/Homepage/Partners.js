@@ -39,7 +39,7 @@ const Partners = props => {
           </div>
         </div>
       </div>
-      <div className={'communityPartnersWrapper sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom')}>
+      <div id='community-partners' className={'communityPartnersWrapper sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom')}>
         <div className='articleSubTitle'>Community Partners</div>
         <div className='partnersBrandWrapper'>
           <a href='https://twitter.com/ReactBangalore' target='_blank' rel='noopener noreferrer'>
