@@ -2,8 +2,20 @@ import React from "react";
 import '../Common/Styles.scss';
 const reactBangaloreDark = require('../Common/images/react-bangalore-dark.svg');
 const graphQLBangaloreDark = require('../Common/images/graphql-bangalore-dark.svg');
+
+const womenCodeDark = require('../Common/images/women-code-dark.svg');
+const graphqlSingaporDark = require('../Common/images/graphql-singapor-dark.svg');
+const jsDark = require('../Common/images/js-dark.svg');
+const graphqlSydneyDark = require('../Common/images/graphql-sydney-dark.svg');
+
 const reactBangaloreLight = require('../Common/images/react-bangalore-light.svg');
 const graphQLBangaloreLight = require('../Common/images/graphql-bangalore-light.svg');
+
+const womenCodeLight = require('../Common/images/women-code-light.svg');
+const graphqlSingaporLight = require('../Common/images/graphql-singapor-light.svg');
+const jsLight = require('../Common/images/js-light.svg');
+const graphqlSydneyLight = require('../Common/images/graphql-sydney-light.svg');
+
 const download = require('../Common/images/download.svg');
 const downloadHover = require('../Common/images/download-hover.svg');
 
@@ -27,15 +39,31 @@ const Partners = props => {
           </div>
         </div>
       </div>
-      <div className={'communityPartnersWrapper sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom')}>
+      <div id='community-partners' className={'communityPartnersWrapper sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom')}>
         <div className='articleSubTitle'>Community Partners</div>
         <div className='partnersBrandWrapper'>
           <a href='https://twitter.com/ReactBangalore' target='_blank' rel='noopener noreferrer'>
             <img src={(!props.isLightMode) ? reactBangaloreDark : reactBangaloreLight} alt='React bangalore' />
           </a>
+          <a href='https://twitter.com/WWCodeManila' target='_blank' rel='noopener noreferrer'>
+            <img src={(!props.isLightMode) ? womenCodeDark : womenCodeLight} alt='Women code' />
+          </a>
+          <a href='https://www.meetup.com/GraphQL-SG/' target='_blank' rel='noopener noreferrer'>
+            <img src={(!props.isLightMode) ? graphqlSingaporDark : graphqlSingaporLight} alt='GraphQL singapore' />
+          </a>
+
           <a href='https://www.meetup.com/graphql-bangalore/' target='_blank' rel='noopener noreferrer'>
             <img src={(!props.isLightMode) ? graphQLBangaloreDark : graphQLBangaloreLight} alt='GraphQL bangalore' />
           </a>
+          <a href='https://www.meetup.com/jslovers/' target='_blank' rel='noopener noreferrer'>
+            <img src={(!props.isLightMode) ? jsDark : jsLight} alt='JS' />
+          </a>
+          <a href='https://www.meetup.com/GraphQL-Sydney/' target='_blank' rel='noopener noreferrer'>
+            <img src={(!props.isLightMode) ? graphqlSydneyDark : graphqlSydneyLight} alt='GraphQL sydney' />
+          </a>
+        </div>
+        <div className='partnersBrandWrapper removePaddBottom'>
+
         </div>
       </div>
     </div>
