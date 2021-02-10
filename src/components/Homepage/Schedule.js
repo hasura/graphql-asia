@@ -130,7 +130,7 @@ const Schedule = props => {
         <ul className={'scheduleListWrapper ' + ((currentTab === 'workshops') ? '' : 'displayNone')}>
           {dayOneWorkshop}
         </ul>
-        <ul className={'scheduleListWrapper ' + ((dayTab === 'dayTwo') ? '' : 'displayNone')}>
+        <ul className={'scheduleListWrapper ' + ((dayTab === 'dayTwo' && currentTab === 'talks') ? '' : 'displayNone')}>
           {dayTwoShedule}
         </ul>
       </div>

@@ -1392,7 +1392,7 @@ const scheduleDetailsOne = [
   {
     type: 'break',
     title: 'Conference Begins',
-    time: '10:25 am - 10:30 am',
+    time: '10:25 am',
   },
   {
     url: '/talks/developer-productivity-with-graphql/',
@@ -1418,7 +1418,7 @@ const scheduleDetailsOne = [
   {
     type: 'break',
     title: '15 Minute Break',
-    time: '12:15 am - 12:30 pm',
+    time: '12:15 pm - 12:30 pm',
   },
   {
     url: '/talks/adding-bleeding-edge-tech-to-archaic-government-graphql-for-govtech/',
@@ -1430,6 +1430,11 @@ const scheduleDetailsOne = [
   },
 ];
 const scheduleDetailsTwo = [
+  {
+    type: 'break',
+    title: 'Day 2 Begins',
+    time: '07:55 am',
+  },
   {
     url: '/talks/the-state-of-graphql/',
     type: 'talk',
