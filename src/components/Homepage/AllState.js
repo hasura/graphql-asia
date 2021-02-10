@@ -283,7 +283,7 @@ const speakersDetails = [
     speakersImg: jesseMartin,
     speakersDesignation: (
       <span>
-        Technical Product Marketers,
+        Technical Product Marketer,
         <br />
         Hasura
       </span>
@@ -1338,7 +1338,7 @@ const talkDetailsPage = [
       description:
         'Learn how to leverage GraphQL while keeping your stack in place with this hands-on workshop demonstrating the new multi-database support in Hasura. This workshop will show how to bring an existing MSSQL database into the Hasura engine and unlock all the benefits of GraphQL and Hasura\'s business-logic mapping layer. Existing knowledge of MSSQL will be helpful but not required as we\'ll focus most of our time on bringing the database into Hasura itself and mapping additional logic on top of this powerful stack.',
       metaImg:
-        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-asia.png',
+        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-on-sql-server-with-hasura.png',
     },
     title: 'GraphQL on SQL Server with Hasura',
     isWorkshop: true,
@@ -1378,7 +1378,7 @@ const talkDetailsPage = [
           'Jesse Martin is an experienced teacher and digital strategist, helping companies learn about new technologies and apply them to real-world problems. He\'s currently working in technical product marketing at Hasura Inc.',
         speakersDesignation: (
           <span>
-            Technical Product Marketers,
+            Technical Product Marketer,
             <br />
             Hasura
           </span>
