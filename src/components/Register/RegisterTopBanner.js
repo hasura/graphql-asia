@@ -44,7 +44,7 @@ const RegisterTopBanner = ({ location }) => {
               <span>
                 We will send you more information on workshop topics, speakers, schedule and how to
                 attend the conference around the{' '}
-                <span className="redColor">3rd week of January</span>.
+                <span className="redColor">2nd week of February</span>.
               </span>
             </li>
             <li>
@@ -66,7 +66,7 @@ const RegisterTopBanner = ({ location }) => {
             Sign up below
           </div>
           <MarketoForm
-            formId="1117"
+            formId="1143"
             marketoHost={marketoHost}
             id="631-HMN-492"
             styleClass="marketoFormWrapper"

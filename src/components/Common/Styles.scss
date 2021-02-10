@@ -372,7 +372,7 @@ ul {
       .mktoFormRow {
         .mktoFieldDescriptor {
           .mktoFieldWrap {
-            #Lbltemp1 {
+            #Lbltemp1, #Lbltemp2 {
               color: #181818;
             }
           }
@@ -492,7 +492,7 @@ ul {
       .mktoFormRow {
         .mktoFieldDescriptor {
           .mktoFieldWrap {
-            #Lbltemp1 {
+            #Lbltemp1, #Lbltemp2 {
               color: #f5e7d3;
             }
           }
@@ -774,8 +774,9 @@ ul {
   .partnersBrandWrapper {
     padding-top: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 60px 100px;
+    width: 80%;
     img {
       width: 100%;
     }
@@ -905,6 +906,15 @@ ul {
   min-height: 500px;
 }
 .workshopWrapper {
+  width: 80%;
+  .articleDesc {
+    padding-bottom: 60px;
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 20px;
+    }
+  }
   .articleSubTitle {
     padding-bottom: 20px;
   }
@@ -950,6 +960,8 @@ ul {
       }
       .articleDesc {
         padding-top: 16px;
+        padding-bottom: 0;
+        display: block;
         a,
         span {
           color: #c63939;
@@ -1519,10 +1531,6 @@ ul {
     .articleSectionTitle {
       padding-right: 0;
     }
-    .partnersBrandWrapper {
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 40px;
-    }
   }
   .footerWrapper {
     ul.articleDesc {
@@ -1619,9 +1627,22 @@ ul {
     }
   }
   .workshopWrapper {
+    width: 100%;
+    .articleDesc {
+      display: flex;
+      align-items: flex-start;
+      padding-bottom: 20px;
+      img {
+        margin-top: 6px;
+        width: 20px;
+      }
+    }
     ul {
       width: 100%;
       li {
+        .articleDesc {
+          display: block;
+        }
         .readMore {
           display: flex;
           padding-top: 8px;
@@ -1961,6 +1982,18 @@ ul {
   .modeChangeWrapper {
     img {
       width: 80px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .communityPartnersWrapper {
+    .articleSectionTitle {
+      padding-right: 0;
+    }
+    .partnersBrandWrapper {
+      width: 100%;
+      grid-template-columns: 1fr 1fr ;
+      grid-gap: 40px;
     }
   }
 }

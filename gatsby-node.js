@@ -21,6 +21,8 @@ const talkDetailsPage = [
   '/talks/graphql-and-microservices-the-different-approaches-and-challenges/',
   '/talks/adopting-graphql-in-a-legacy-nodejs-api/',
   '/talks/a-tale-of-inherited-projects-and-why-we-kept-hasura/',
+  '/talks/developer-productivity-with-graphql/',
+  '/talks/3factor-app-architecture-for-rapid-e-commerce-dev/',
 ];
 const workshopDetailsPage = [
   '/workshops/server-side-authentication-in-graphql/',

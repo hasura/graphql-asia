@@ -21,6 +21,7 @@ const tamasPiros = require('../Common/images/tamas-piros.png');
 const aaronPowell = require('../Common/images/aaron-powell.png');
 const praveenDuriaraju = require('../Common/images/praveen-duriaraju.png');
 const brookeSwanson = require('../Common/images/brooke-swanson.png');
+const jesseMartin = require('../Common/images/jesse-martin.png');
 const speakersDetails = [
   {
     talkPageUrl: '/talks/the-state-of-graphql/',
@@ -276,6 +277,18 @@ const speakersDetails = [
       </span>
     ),
   },
+  {
+    talkPageUrl: '/workshops/graphql-on-sql-server-with-hasura/',
+    speakersName: 'Jesse Martin',
+    speakersImg: jesseMartin,
+    speakersDesignation: (
+      <span>
+        Technical Product Marketers,
+        <br />
+        Hasura
+      </span>
+    ),
+  },
 ];
 const talkDetailsPage = [
   {
@@ -393,7 +406,7 @@ const talkDetailsPage = [
     speakersTitle: 'About the speakers',
     backLink: '/talks/',
     language: 'English',
-    time: '11:50 am -	12:05 pm',
+    time: '11:50 am -	12:15 pm',
     talkType: 'Session',
     description: [
       {
@@ -607,7 +620,7 @@ const talkDetailsPage = [
     speakersTitle: 'About the speakers',
     backLink: '/talks/',
     language: 'English',
-    time: '12:15 pm -	12:30 pm',
+    time: '12:40 pm -	13:05 pm',
     talkType: 'Session',
     description: [
       {
@@ -865,7 +878,7 @@ const talkDetailsPage = [
     speakersTitle: 'About the speakers',
     backLink: '/talks/',
     language: 'English',
-    time: '12:05 pm -	12:15 pm',
+    time: '12:30 pm -	12:40 pm',
     talkType: 'Lightning Talks',
     description: [
       {
@@ -1033,6 +1046,87 @@ const talkDetailsPage = [
       },
     ],
   },
+  {
+    url: '/talks/developer-productivity-with-graphql/',
+    metaTags: {
+      title: 'Developer Productivity with GraphQL',
+      canonicalUrl: 'https://graphql.asia/talks/developer-productivity-with-graphql/',
+      description: 'Coming Soon',
+      metaImg: 'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/developer-productivity-with-graphql.png',
+    },
+    title: 'Developer Productivity with GraphQL',
+    speakersTitle: 'About the speaker',
+    backLink: '/talks/',
+    language: 'English',
+    time: '10:30 am -	11:00 am',
+    talkType: 'Keynote',
+    description: [
+      {
+        desc: 'Coming Soon',
+      },
+    ],
+    takeaways: [
+      {
+        desc: 'Coming Soon',
+      },
+    ],
+    speakersList: [
+      {
+        speakersUrl: '/speakers/tanmai-gopal/',
+        speakersName: 'Tanmai Gopal',
+        speakersImg: tanmaiGopal,
+        speakersBio:
+          "Tanmai Gopal is the CEO and co-founder of Hasura. He is a StackOverflow powered fullstack developer whose areas of interest and work span React, GraphQL, Nodejs, Haskell, Docker, Postgres & Kubernetes. He is passionate about making it easy to build complex things and is the instructor of India's largest MOOC imad.tech with over 250,000 students.",
+        speakersDesignation: (
+          <span>
+            CEO / Co-founder,
+            <br />
+            Hasura
+          </span>
+        ),
+      },
+    ],
+  },
+  {
+    url: '/talks/3factor-app-architecture-for-rapid-e-commerce-dev/',
+    metaTags: {
+      title: '3factor app architecture for rapid e-commerce dev',
+      canonicalUrl: 'https://graphql.asia/talks/3factor-app-architecture-for-rapid-e-commerce-dev/',
+      description: 'Coming Soon',
+      metaImg: 'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/3factor-app-architecture-for-rapid-e-commerce-dev.png',
+    },
+    title: '3factor app architecture for rapid e-commerce dev',
+    speakersTitle: 'About the speaker',
+    backLink: '/talks/',
+    language: 'English',
+    time: '11:20 am -	11:30 am',
+    talkType: 'Lightning Talks',
+    description: [
+      {
+        desc: 'Coming Soon',
+      },
+    ],
+    takeaways: [
+      {
+        desc: 'Coming Soon',
+      },
+    ],
+    speakersList: [
+      {
+        speakersUrl: '/speakers/praveen-duriaraju/',
+        speakersName: 'Praveen Duriaraju',
+        speakersImg: praveenDuriaraju,
+        speakersDesignation: (
+          <span>
+            Developer Advocate,
+            <br />
+            Hasura
+          </span>
+        ),
+        speakersOrg: 'Hasura',
+      },
+    ],
+  },
 
   {
     url: '/workshops/server-side-authentication-in-graphql/',
@@ -1049,7 +1143,7 @@ const talkDetailsPage = [
     speakersTitle: 'Presented by',
     backLink: '/workshops/',
     language: 'English',
-    time: '07:00 am -	10:00 am',
+    time: '08:00 am -	10:30 am',
     talkType: 'Workshop',
     description: [
       {
@@ -1096,7 +1190,7 @@ const talkDetailsPage = [
     title: 'Introduction to Hasura',
     backLink: '/workshops/',
     language: 'English',
-    time: '07:00 am -	10:00 am',
+    time: '08:00 am -	10:30 am',
     talkType: 'Workshop',
     isWorkshop: true,
     speakersTitle: 'Presented by',
@@ -1141,7 +1235,7 @@ const talkDetailsPage = [
     speakersTitle: 'Presented by',
     backLink: '/workshops/',
     language: 'English',
-    time: '07:00 am -	10:00 am',
+    time: '08:00 am -	10:30 am',
     talkType: 'Workshop',
     description: [
       {
@@ -1187,7 +1281,7 @@ const talkDetailsPage = [
     speakersTitle: 'Presented by',
     backLink: '/workshops/',
     language: 'English',
-    time: '07:00 am -	10:00 am',
+    time: '08:00 am -	10:30 am',
     talkType: 'Workshop',
     description: [
       {
@@ -1241,19 +1335,55 @@ const talkDetailsPage = [
     metaTags: {
       title: 'GraphQL on SQL Server with Hasura',
       canonicalUrl: 'https://graphql.asia/workshops/graphql-on-sql-server-with-hasura/',
-      description: 'GraphQL on SQL Server with Hasura.',
-      metaImg: 'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-asia.png',
+      description:
+        'Learn how to leverage GraphQL while keeping your stack in place with this hands-on workshop demonstrating the new multi-database support in Hasura. This workshop will show how to bring an existing MSSQL database into the Hasura engine and unlock all the benefits of GraphQL and Hasura\'s business-logic mapping layer. Existing knowledge of MSSQL will be helpful but not required as we\'ll focus most of our time on bringing the database into Hasura itself and mapping additional logic on top of this powerful stack.',
+      metaImg:
+        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-asia.png',
     },
     title: 'GraphQL on SQL Server with Hasura',
-    backLink: '/workshops/',
     isWorkshop: true,
-    comingSoon: true,
+    speakersTitle: 'Presented by',
+    backLink: '/workshops/',
     language: 'English',
-    time: '07:00 am -	10:00 am',
+    time: '08:00 am -	10:30 am',
     talkType: 'Workshop',
     description: [
       {
-        desc: 'More info coming soon',
+        desc:
+          'Learn how to leverage GraphQL while keeping your stack in place with this hands-on workshop demonstrating the new multi-database support in Hasura. This workshop will show how to bring an existing MSSQL database into the Hasura engine and unlock all the benefits of GraphQL and Hasura\'s business-logic mapping layer. Existing knowledge of MSSQL will be helpful but not required as we\'ll focus most of our time on bringing the database into Hasura itself and mapping additional logic on top of this powerful stack.',
+      },
+    ],
+    contents: [
+      {
+        title: 'Prerequisites:',
+        list: [
+          'Familiarity with MSSQL or Postgres',
+        ],
+      },
+    ],
+    takeaways: [
+      {
+        list: [
+          'Learn how to add MSSQL to Hasura',
+          'Learn how Hasura Actions, Functions, and GraphQL can accelerate your time-to-market',
+        ],
+      },
+    ],
+    speakersList: [
+      {
+        speakersUrl: '/speakers/jesse-martin/',
+        speakersName: 'Jesse Martin',
+        speakersImg: jesseMartin,
+        speakersBio:
+          'Jesse Martin is an experienced teacher and digital strategist, helping companies learn about new technologies and apply them to real-world problems. He\'s currently working in technical product marketing at Hasura Inc.',
+        speakersDesignation: (
+          <span>
+            Technical Product Marketers,
+            <br />
+            Hasura
+          </span>
+        ),
+        speakersOrg: 'Hasura',
       },
     ],
   },
@@ -1263,6 +1393,10 @@ const scheduleDetailsOne = [
     type: 'break',
     title: 'Conference Begins',
     time: '10:25 am - 10:30 am',
+  },
+  {
+    url: '/talks/developer-productivity-with-graphql/',
+    type: 'talk',
   },
   {
     url: '/talks/intelligent-caching-with-graphql-gateway-using-cdc/',
@@ -1284,7 +1418,7 @@ const scheduleDetailsOne = [
   {
     type: 'break',
     title: '15 Minute Break',
-    time: '11:50 am - 12:05 pm',
+    time: '12:15 am - 12:30 pm',
   },
   {
     url: '/talks/adding-bleeding-edge-tech-to-archaic-government-graphql-for-govtech/',
@@ -1335,6 +1469,10 @@ const scheduleDetailsTwo = [
     type: 'talk',
   },
   {
+    url: '/talks/3factor-app-architecture-for-rapid-e-commerce-dev/',
+    type: 'talk',
+  },
+  {
     type: 'break',
     title: '15 Minute Break',
     time: '11:30 am - 11:45 am'
@@ -1353,10 +1491,10 @@ const scheduleDetailsTwo = [
   },
 ];
 const workshopScheduleDetails = [
-  {
-    url: '/workshops/server-side-authentication-in-graphql/',
-    type: 'workshop',
-  },
+  // {
+  //   url: '/workshops/server-side-authentication-in-graphql/',
+  //   type: 'workshop',
+  // },
   {
     url: '/workshops/introduction-to-hasura/',
     type: 'workshop',

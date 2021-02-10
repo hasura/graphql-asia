@@ -138,6 +138,7 @@ const Layout = ({ children, location }) => {
                   Sponsorship
                 </Link>
               </li>
+              <li><Link to='/#about'>About</Link></li>
             </ul>
           </div>
         </div>
