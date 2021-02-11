@@ -113,6 +113,18 @@ const Schedule = props => {
           <li className='scheduleList'>
             <div className='time articleSectionTitle fontBold'>
               TIME
+              <div className='istBtn articleDesc fontBold'>
+                IST
+                <div className='istBtnHover'>Indian Standard Time</div>
+              </div>
+              {/*
+              <CopyToClipboard text='Indian Standard Time' onCopy={onCopy}>
+                <div className='istBtn articleDesc fontBold'>
+                  IST
+                </div>
+                {renderCopyIcon()}
+              </CopyToClipboard>
+              */}
             </div>
             <div className='scheduleDetailsWrapper'>
               <div className='time articleSectionTitle fontBold'>

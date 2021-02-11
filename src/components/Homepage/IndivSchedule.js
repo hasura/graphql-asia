@@ -9,6 +9,10 @@ const IndivSchedule = ({indivTalks}) => {
       <Link to={indivTalks.url} className='scheduleList'>
         <div className='time articleDesc'>
           {indivTalks.time ? indivTalks.time : ''}
+          <div className='istBtnMobile articleDesc fontBold'>
+            IST
+            <div className='istBtnHover'>Indian Standard Time</div>
+          </div>
         </div>
         <div className='scheduleDetailsWrapper'>
           <div>
