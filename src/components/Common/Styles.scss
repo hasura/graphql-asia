@@ -1149,6 +1149,7 @@ ul {
       color: #C63939;
       display: flex;
       align-items: center;
+      line-height: normal;
       .istBtn {
         font-size: .6em;
         line-height: revert;
@@ -1175,6 +1176,7 @@ ul {
           text-align: center;
           border-radius: 4px;
           display: none;
+          font-size: .8em;
         }
       }
     }
@@ -1199,6 +1201,7 @@ ul {
           align-items: center;
           justify-content: center;
           position: relative;
+          font-size: 14px;
           &:hover {
             .istBtnHover {
               display: block;
@@ -1209,7 +1212,9 @@ ul {
             left: 50%;
             transform: translateX(-50%);
             top: -40px;
-            width: 175px;
+            width: max-content;
+            padding: 0 6px;
+            font-size: 14px;
             text-align: center;
             border-radius: 4px;
             display: none;
