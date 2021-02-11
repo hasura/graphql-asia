@@ -1170,7 +1170,8 @@ ul {
           left: 50%;
           transform: translateX(-50%);
           top: -40px;
-          width: 175px;
+          padding: 4px 6px;
+          width: max-content;
           text-align: center;
           border-radius: 4px;
           display: none;
@@ -1880,6 +1881,18 @@ ul {
           img {
             width: 25px;
             margin-right: 20px;
+          }
+        }
+      }
+    }
+    .scheduleListHeader, .scheduleListWrapper {
+      .scheduleList {
+        .articleSectionTitle, .articleDesc {
+          .istBtn {
+            max-height: 60px;
+            .istBtnHover {
+              padding: 0 12px;
+            }
           }
         }
       }
