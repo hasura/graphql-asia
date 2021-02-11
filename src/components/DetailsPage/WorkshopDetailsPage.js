@@ -4,11 +4,11 @@ import '../Common/Styles.scss';
 import { SEO } from '../seo';
 import Layout from '../Layout';
 import IndivTalksPage from './IndivTalksPage';
-import { workshopDetailsPage } from '../Homepage/AllState.js'
+import { talkDetailsPage } from '../Homepage/AllState.js'
 
 const WorkshopDetailsPage = props => {
   const detailsPageUrl = props.pageContext.slug;
-  const currentDetailsPageFilter = workshopDetailsPage.filter((b) => b.url === detailsPageUrl)
+  const currentDetailsPageFilter = talkDetailsPage.filter((b) => b.url === detailsPageUrl)
   const currentDetailsPage = currentDetailsPageFilter[0];
   // if (!currentDetailsPage) {
   //   if (typeof window !== undefined) {

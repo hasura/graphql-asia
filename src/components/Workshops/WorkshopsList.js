@@ -1,18 +1,18 @@
 import React, {Fragment} from "react";
 import {Link} from 'gatsby';
 import '../Common/Styles.scss';
-import { workshopDetailsPage } from '../Homepage/AllState.js'
+import { talkDetailsPage } from '../Homepage/AllState.js'
 import IndivWorkshop from '../Homepage/IndivWorkshop';
 const lightBackArrow = require('../Common/images/back-arrow-light.svg');
 const darkBackArrow = require('../Common/images/back-arrow-dark.svg');
 const information = require('../Common/images/information.svg');
 const WorkshopsList = props => {
-  const workshopsListState = workshopDetailsPage.map((workshops, index) => {
+  const workshopsListState = talkDetailsPage.map((workshopList, index) => {
     return (
       <Fragment key={index}>
         {
-          workshops.isWorkshop ? (
-            <IndivWorkshop workshopList={workshops} />
+          workshopList.isWorkshop ? (
+            <IndivWorkshop workshopList={workshopList} />
           ) : null
         }
       </Fragment>

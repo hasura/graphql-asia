@@ -13,12 +13,15 @@ body {
 }
 .btnFixedPos {
   position: fixed;
-  bottom: 14%;
+  bottom: 10%;
   right: 4%;
   .darkBtn {
-    width: 264px;
-    height: 64px;
+    width: 300px;
+    // height: 64px;
   }
+}
+.displayNone {
+  display: none !important;
 }
 .navBarToggle {
   border-radius: 4px;
@@ -234,7 +237,6 @@ ul {
 }
 .commonBtn {
   padding: 10px 20px;
-  width: calc(100% - 20px);
   font-size: 1.25em;
   line-height: 170%;
   text-align: center;
@@ -242,10 +244,10 @@ ul {
   transition: all 0.3s ease-in-out;
   border: 0;
   font-weight: bold;
-  // height: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
   img {
     margin-right: 8px;
   }
@@ -286,6 +288,16 @@ ul {
     }
   }
 }
+.darkRedBtn {
+  background-color: #c63939;
+  color: #f5e7d3;
+  border: 1px solid #c63939;
+}
+.transparentBtn {
+  background-color: transparent;
+  color: #F5E7D3;
+  border: 1px solid rgba(245, 231, 211, 0.5);
+}
 .lightBtn {
   background-color: #f5e7d3;
   color: #c63939;
@@ -320,6 +332,16 @@ ul {
 .lightModeLayout {
   background-color: #f5e7d3;
   background-image: url('./images/lighter-sqaure.svg');
+  .transparentBtn {
+    background-color: transparent;
+    color: #181818;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  .darkBlockBtn {
+    background-color: #181818;
+    color: #F5E7D3;
+    border: 1px solid #181818;
+  }
   .navBarToggle {
     .iconBar {
       background-color: #181818 !important;
@@ -396,10 +418,63 @@ ul {
       }
     }
   }
+  .scheduleWrapper {
+    .scheduleListHeader, .scheduleListWrapper {
+      .scheduleList {
+        .articleSectionTitle, .articleDesc {
+          .istBtn, .istBtnMobile {
+            background: rgba(0, 0, 0, 0.2);
+            .istBtnHover {
+              background-color: #181818;
+              color: #f5e7d3;
+            }
+          }
+        }
+      }
+    }
+    .scheduleListWrapper {
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      li {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        .scheduleList {
+          .talkTypes {
+            .talkBtn {
+              border: 1px solid rgba(0, 0, 0, 0.5);
+
+            }
+          }
+          &:hover {
+            background-color: #181818;
+            .articleDesc {
+              color: #f5e7d3;
+            }
+            .articleSectionTitle {
+              color: #f5e7d3;
+            }
+            .talkTypes {
+              .talkBtn {
+                border: 1px solid rgba(245, 231, 211, 0.5);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 .darkModeLayout {
   background-color: #000;
   background-image: url('./images/dark-square.svg');
+  .transparentBtn {
+    background-color: transparent;
+    color: #F5E7D3;
+    border: 1px solid rgba(245, 231, 211, 0.5);
+  }
+  .darkBlockBtn {
+    background-color: #F5E7D3;
+    color: #181818;
+    border: 1px solid #F5E7D3;
+  }
   .navBarToggle {
     .iconBar {
       background-color: #f5e7d3 !important;
@@ -469,6 +544,48 @@ ul {
               background-color: #f5e7d3;
               .articleDesc {
                 color: #181818;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .scheduleWrapper {
+    .scheduleListHeader, .scheduleListWrapper {
+      .scheduleList {
+        .articleSectionTitle, .articleDesc {
+          .istBtn, .istBtnMobile {
+            background: rgba(245, 231, 211, 0.2);
+            .istBtnHover {
+              background-color: #f5e7d3;
+              color: #181818;
+            }
+          }
+        }
+      }
+    }
+    .scheduleListWrapper {
+      border: 1px solid rgba(245, 231, 211, 0.5);
+      li {
+        border-bottom: 1px solid rgba(245, 231, 211, 0.5);
+        .scheduleList {
+          .talkTypes {
+            .talkBtn {
+              border: 1px solid rgba(245, 231, 211, 0.5);
+            }
+          }
+          &:hover {
+            background-color: #f5e7d3;
+            .articleDesc {
+              color: #181818;
+            }
+            .articleSectionTitle {
+              color: #181818;
+            }
+            .talkTypes {
+              .talkBtn {
+                border: 1px solid rgba(0, 0, 0, 0.5);
               }
             }
           }
@@ -828,6 +945,7 @@ ul {
     padding-bottom: 20px;
   }
   ul {
+    width: 80%;
     margin-bottom: 80px;
     li {
       padding: 24px 20px;
@@ -999,7 +1117,186 @@ ul {
     }
   }
 }
+.scheduleWrapper {
+  .scheduleHeader {
+    display: flex;
+    padding-bottom: 52px;
+    .buttonWrapper {
+      margin-left: auto;
+      display: flex;
+      .commonBtn {
+        width: 160px;
+        padding: 5px 10px;
+        img {
+          margin-top: 4px;
+        }
+      }
+    }
+  }
+  .dateTab {
+    display: flex;
+    .commonBtn {
+      padding: 0px 15px;
+      width: auto;
+      box-shadow: none;
+    }
+  }
+  .removeBorBottom {
+    border-bottom: 0 !important;
+  }
+  .scheduleListHeader {
+    .articleSectionTitle {
+      color: #C63939;
+      display: flex;
+      align-items: center;
+      line-height: normal;
+      .istBtn {
+        font-size: .6em;
+        line-height: revert;
+        padding: 4px 6px;
+        margin-left: 12px;
+        margin-top: 7px;
+        max-height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        &:hover {
+          .istBtnHover {
+            display: inline-table;
+          }
+        }
+        .istBtnHover {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          top: -40px;
+          padding: 4px 6px;
+          width: max-content;
+          text-align: center;
+          border-radius: 4px;
+          display: none;
+          font-size: .8em;
+        }
+      }
+    }
+  }
+  .scheduleListWrapper {
+    margin-bottom: 0 !important;
+    .scheduleList {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      grid-gap: 0 60px;
+      padding: 32px 32px;
+      transition: all .3s ease-in-out;
+      position: relative;
+      .articleDesc {
+        .istBtnMobile {
+          line-height: revert;
+          padding: 4px 6px;
+          margin-left: 12px;
+          margin-top: 0;
+          max-height: 25px;
+          display: none;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          font-size: 14px;
+          &:hover {
+            .istBtnHover {
+              display: block;
+            }
+          }
+          .istBtnHover {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: -40px;
+            width: max-content;
+            padding: 0 6px;
+            font-size: 14px;
+            text-align: center;
+            border-radius: 4px;
+            display: none;
+          }
+        }
+      }
+      .workshopArrow {
+        position: absolute;
+        right: 30px;
+        bottom: 0px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-out 0s;
+        img {
+          margin-right: 0px;
+        }
+      }
+      &:hover {
+        text-decoration: none;
+        .workshopArrow {
+          right: 0px;
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      &:last-child {
+        border-bottom: 0;
+      }
+      .scheduleDetailsWrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0 48px;
+        .talkTypes {
+          display: flex;
+          padding-top: 24px;
+          .talkBtn {
+            border: 1px solid rgba(245, 231, 211, 0.5);
+            margin-right: 12px;
+            padding: 0px 6px;
+            line-height: normal;
+          }
+        }
+        .speakersDetailsInfo {
+          display: flex;
+          .speakersImg {
+            padding-right: 24px;
+            img {
+              width: 68px;
+              filter: grayscale(100%);
+            }
+          }
+        }
+      }
+      .readMore {
+        display: none;
+        span {
+          color: #c63939;
+        }
+        .readMoreArrow {
+          margin-top: 3px;
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}
+.breakWrapper {
+  .articleDesc {
+    display: flex;
+    align-items: center;
+    img {
+      margin: 0 12px;
+    }
+  }
+}
 @media (min-width: 901px) and (max-width: 1439px) {
+  .btnFixedPos {
+    right: 32px;
+    .darkBtn {
+      width: 250px;
+    }
+  }
   .commonBtn {
     font-size: 18px;
   }
@@ -1430,6 +1727,7 @@ ul {
       }
     }
     ul {
+      width: 100%;
       li {
         .articleDesc {
           display: block;
@@ -1445,6 +1743,48 @@ ul {
       }
     }
   }
+  .breakWrapper {
+    .articleDesc {
+      display: flex;
+      align-items: center;
+      img {
+        display: none;
+      }
+    }
+  }
+  .scheduleWrapper {
+    .scheduleHeader {
+      display: block;
+      padding-bottom: 32px;
+      .articleSubTitle {
+        padding-bottom: 24px;
+      }
+    }
+    .scheduleListHeader {
+      display: none;
+    }
+    .scheduleListWrapper {
+      .scheduleList {
+        grid-template-columns: 1fr;
+        padding: 24px;
+        .articleDesc {
+          display: flex;
+          align-items: center;
+          .istBtnMobile {
+            display: flex;
+          }
+        }
+        .scheduleDetailsWrapper {
+          grid-template-columns: 1fr;
+          grid-gap: 40px 0;
+        }
+        .readMore {
+          display: flex;
+          padding-top: 12px;
+        }
+      }
+    }
+  }
 }
 @media (min-width: 1440px) {
   .mainGridWrapper {
@@ -1452,7 +1792,21 @@ ul {
     grid-gap: 48px;
   }
 }
+@media (min-width: 1560px) {
+  .scheduleWrapper {
+    .scheduleListWrapper {
+      .scheduleList {
+        grid-template-columns: 250px 1fr;
+      }
+    }
+  }
+}
 @media (min-width: 1920px) {
+  .btnFixedPos {
+    .darkBtn {
+      width: 400px;
+    }
+  }
   .sectionWrapper {
     padding: 120px 0;
   }
@@ -1521,6 +1875,32 @@ ul {
     .darkBtn {
       width: auto;
       padding: 15px 50px;
+    }
+  }
+  .scheduleWrapper {
+    .scheduleHeader {
+      .buttonWrapper {
+        .commonBtn {
+          padding: 5px 40px;
+          width: 300px;
+          img {
+            width: 25px;
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+    .scheduleListHeader, .scheduleListWrapper {
+      .scheduleList {
+        .articleSectionTitle, .articleDesc {
+          .istBtn {
+            max-height: 60px;
+            .istBtnHover {
+              padding: 0 12px;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -1599,8 +1979,20 @@ ul {
       }
     }
   }
+  .scheduleWrapper {
+    .scheduleListWrapper {
+      .scheduleList {
+        grid-template-columns: 300px 1fr;
+      }
+    }
+  }
 }
 @media (min-width: 3440px) {
+  .btnFixedPos {
+    .darkBtn {
+      width: 500px;
+    }
+  }
   .sectionWrapper {
     padding: 250px 0;
   }

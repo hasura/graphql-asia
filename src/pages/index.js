@@ -7,6 +7,7 @@ import Partners from '../components/Homepage/Partners';
 import JoinGraphQLCommunity from '../components/Homepage/JoinGraphQLCommunity';
 import Workshop from '../components/Homepage/Workshop';
 import Talks from '../components/Homepage/Talks';
+import Schedule from '../components/Homepage/Schedule';
 import { SEO } from '../components/seo';
 import Layout from '../components/Layout';
 const IndexPage = (props) => (
@@ -22,6 +23,7 @@ const IndexPage = (props) => (
     <Speakers />
     <Workshop />
     <Talks />
+    <Schedule />
     <Partners />
     <JoinGraphQLCommunity />
     <Conference />
