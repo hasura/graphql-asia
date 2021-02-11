@@ -1163,7 +1163,7 @@ ul {
         position: relative;
         &:hover {
           .istBtnHover {
-            display: block;
+            display: inline-table;
           }
         }
         .istBtnHover {
