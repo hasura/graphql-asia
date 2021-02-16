@@ -800,15 +800,12 @@ ul {
   .partnersBrandWrapper {
     padding-top: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 50px 50px;
-    width: 88%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 60px 100px;
+    width: 80%;
     img {
       width: 100%;
     }
-  }
-  .partnersBrandWrapperThreeGrid {
-    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 .joinGraphQLWrapper {

@@ -33,7 +33,7 @@ const Partners = props => {
     <div>
       <div id='sponsorship' className={'communityPartnersWrapper sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom')}>
         <div className='articleSubTitle'>Sponsors</div>
-        <div className='partnersBrandWrapper partnersBrandWrapperThreeGrid'>
+        <div className='partnersBrandWrapper'>
           <a href='https://www.atlassian.com/' target='_blank' rel='noopener noreferrer'>
             <img src={(!props.isLightMode) ? atlassianDark : atlassianLight} alt='React bangalore' />
           </a>
