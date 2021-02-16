@@ -33,7 +33,7 @@ const LeftSidebar = ({isLightMode, location}) => {
         <li className={((path === '/talks/') ? 'active' : '')}><Link to='/talks/'>Talks</Link></li>
         <li><Link to='/#schedule'>Schedule</Link></li>
         <li className={((path === '/code-of-conduct/') ? 'active' : '')}><Link to='/code-of-conduct/'>Code of Conduct</Link></li>
-        <li><Link to='/#sponsorship'>Sponsorship</Link></li>
+        <li><Link to='/#sponsorship'>Sponsors</Link></li>
         <li><Link to='/#about'>About</Link></li>
       </ul>
       <div className='leftSidebarFooterWrapper'>
