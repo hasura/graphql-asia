@@ -1145,7 +1145,7 @@ const talkDetailsPage = [
     speakersTitle: 'Presented by',
     backLink: '/workshops/',
     language: 'English',
-    time: '08:00 am -	10:30 am',
+    time: '12:30 pm -	03:30 pm',
     talkType: 'Workshop',
     description: [
       {
