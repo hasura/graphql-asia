@@ -295,6 +295,18 @@ const speakersDetails = [
       </span>
     ),
   },
+  {
+    talkPageUrl: '/workshops/building-distributed-graph/',
+    speakersName: 'Sandipan Biswas',
+    speakersImg: sandipanBiswas,
+    speakersDesignation: (
+      <span>
+        Software Developer,
+        <br />
+        Atlassian
+      </span>
+    ),
+  },
 ];
 const talkDetailsPage = [
   {
