@@ -22,6 +22,12 @@ const aaronPowell = require('../Common/images/aaron-powell.png');
 const praveenDuriaraju = require('../Common/images/praveen-duriaraju.png');
 const brookeSwanson = require('../Common/images/brooke-swanson.png');
 const jesseMartin = require('../Common/images/jesse-martin.png');
+
+const nikhilChandrappa = require('../Common/images/nikhil-chandrappa.png');
+const sandipanBiswas = require('../Common/images/sandipan-biswas.png');
+
+
+
 const speakersDetails = [
   {
     talkPageUrl: '/talks/the-state-of-graphql/',
@@ -182,14 +188,14 @@ const speakersDetails = [
     ),
   },
   {
-    talkPageUrl: '/talks/client-side-migration-strategy-from-rest-to-graphql/',
-    speakersName: 'Zhifan Li',
-    speakersImg: zhifanLi,
+    talkPageUrl: '/talks/scalable-and-resilient-graphql-subscriptions-with-distributed-sql-databases/',
+    speakersName: 'Nikhil Chandrappa',
+    speakersImg: nikhilChandrappa,
     speakersDesignation: (
       <span>
-        Senior Software Engineer,
+        Software Engineer Lead,
         <br />
-        Coinbase
+        Yugabyte
       </span>
     ),
   },
@@ -815,49 +821,45 @@ const talkDetailsPage = [
     ],
   },
   {
-    url: '/talks/client-side-migration-strategy-from-rest-to-graphql/',
+    url: '/talks/scalable-and-resilient-graphql-subscriptions-with-distributed-sql-databases/',
     metaTags: {
-      title: 'Client-side migration strategy: from REST to GraphQL',
+      title: 'Scalable and Resilient GraphQL Subscriptions with Distributed SQL Databases',
       canonicalUrl:
-        'https://graphql.asia/talks/client-side-migration-strategy-from-rest-to-graphql/',
+        'https://graphql.asia/talks/scalable-and-resilient-graphql-subscriptions-with-distributed-sql-databases/',
       description:
-        'Are you trying to get your client app ready for GraphQL adoption or just curious about what the migration journey could look like? This talk will go over the strategy to go from REST api to GraphQL on your React applications.',
+        'GraphQL subscriptions are seeing broad adoption in building event-driven microservices. Like any other tech stack, as end-user traffic increases, App developers will be faced to scale the workload and make workload highly available against infrastructure outages. GraphQL subscriptions are no different. In this talk, we will walk through steps for implementing resilient and scalable GraphQL subscriptions using Hasura Engine and YugabyteDB on Kubernetes. Components of the stack, including the database, can be linearly scaled independently of each other. In addition to linear scalability, GraphQL subscriptions will inherently become resilient against outages due to the fault tolerance and HA capabilities of distributed SQL databases.',
       metaImg:
-        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/client-side-migration-strategy-from-rest-to-graphql.png',
+        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/scalable-and-resilient-graphql-subscriptions-with-distributed-sql-databases.png',
     },
-    title: 'Client-side migration strategy: from REST to GraphQL',
+    title: 'Scalable and Resilient GraphQL Subscriptions with Distributed SQL Databases',
     speakersTitle: 'About the speakers',
     backLink: '/talks/',
-    language: 'Mandarin',
+    language: 'English',
     time: '11:40 am -	11:50 am',
     talkType: 'Lightning Talks',
     description: [
       {
         desc:
-          'Are you trying to get your client app ready for GraphQL adoption or just curious about what the migration journey could look like? This talk will go over the strategy to go from REST api to GraphQL on your React applications.',
+          'GraphQL subscriptions are seeing broad adoption in building event-driven microservices. Like any other tech stack, as end-user traffic increases, App developers will be faced to scale the workload and make workload highly available against infrastructure outages. GraphQL subscriptions are no different. In this talk, we will walk through steps for implementing resilient and scalable GraphQL subscriptions using Hasura Engine and YugabyteDB on Kubernetes. Components of the stack, including the database, can be linearly scaled independently of each other. In addition to linear scalability, GraphQL subscriptions will inherently become resilient against outages due to the fault tolerance and HA capabilities of distributed SQL databases.',
       },
     ],
     takeaways: [
       {
-        list: [
-          'How to structure your React app’s statement management for GraphQL',
-          'Tips on handling feature development and migration synchronously',
-          'Examples on various GraphQL client library integrations',
-        ]
+        desc: 'Ability to linearly scale the GraphQL subscriptions transparently with out any downtime for client apps.',
       },
     ],
     speakersList: [
       {
-        speakersUrl: '/speakers/zhifan-li/',
-        speakersName: 'Zhifan Li',
-        speakersImg: zhifanLi,
+        speakersUrl: '/speakers/nikhil-chandrappa/',
+        speakersName: 'Nikhil Chandrappa',
+        speakersImg: nikhilChandrappa,
         speakersBio:
-          'Zhifan Li is a senior software engineer at Coinbase, building experiences that onboard users to the crypto journey. She spent her early career building apps with GraphQL, and had a hard time switching back to working with REST endpoints. She enjoys trail running and cooking, when she is not convincing others to migrate to GraphQL.',
+          'Nikhil works in ecosystem engineering team at Yugabyte. He is leading the efforts on YugabyteDB integrations with open source developer tools like GraphQL, Spring Data, R2DBC, and Kubernetes. He also works with the developer community on the adoption of Distributed SQL databases in cloud native applications. Before joining Yugabyte, he worked as a senior data engineer at Pivotal, championing the cloud native data APIs and in-memory data grids for Fortune 500 customers. He has presented at major developer conferences, including Spring One, GraphQL Conferences. He is originally from Mysore, India, and has a master’s degree in Computer Engineering from Syracuse University.',
         speakersDesignation: (
           <span>
-            Senior Software Engineer,
+            Software Engineer Lead,
             <br />
-            Coinbase
+            Yugabyte
           </span>
         ),
       },
@@ -1387,6 +1389,52 @@ const talkDetailsPage = [
       },
     ],
   },
+  {
+    url: '/workshops/building-distributed-graph/',
+    metaTags: {
+      title: 'Building Distributed Graph',
+      canonicalUrl: 'https://graphql.asia/workshops/building-distributed-graph/',
+      description:
+        ' In this workshop we will go through building an enterprise-scale unified but distributed data graph. We will use various methodologies and frameworks to build data graph.',
+      metaImg:
+        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/building-distributed-graph.png',
+    },
+    title: 'Building Distributed Graph',
+    isWorkshop: true,
+    speakersTitle: 'Presented by',
+    backLink: '/workshops/',
+    language: 'English',
+    time: '08:00 am -	10:30 am',
+    talkType: 'Workshop',
+    description: [
+      {
+        desc:
+          'In this workshop we will go through building an enterprise-scale unified but distributed data graph. We will use various methodologies and frameworks to build data graph.',
+      },
+    ],
+    takeaways: [
+      {
+        desc: 'Attendees gets exposure to various ways to create distributed data graph',
+      },
+    ],
+    speakersList: [
+      {
+        speakersUrl: '/speakers/sandipan-biswas/',
+        speakersName: 'Sandipan Biswas',
+        speakersImg: sandipanBiswas,
+        speakersBio:
+          'Sandipan is a developer at Atlassian working on Jira Service Management focusing on Incident Management. He has experience building highly scalable, reliable, available distributed systems. He has worked on GraphQL to build incident management on top of Services exposed in Jira Service Management.',
+        speakersDesignation: (
+          <span>
+            Software Developer,
+            <br />
+            Atlassian
+          </span>
+        ),
+        speakersOrg: 'Atlassian',
+      },
+    ],
+  },
 ];
 const scheduleDetailsOne = [
   {
@@ -1408,7 +1456,7 @@ const scheduleDetailsOne = [
     time: '11:25 am - 11:40 am',
   },
   {
-    url: '/talks/client-side-migration-strategy-from-rest-to-graphql/',
+    url: '/talks/scalable-and-resilient-graphql-subscriptions-with-distributed-sql-databases/',
     type: 'talk',
   },
   {
@@ -1496,10 +1544,6 @@ const scheduleDetailsTwo = [
   },
 ];
 const workshopScheduleDetails = [
-  // {
-  //   url: '/workshops/server-side-authentication-in-graphql/',
-  //   type: 'workshop',
-  // },
   {
     url: '/workshops/introduction-to-hasura/',
     type: 'workshop',
@@ -1516,5 +1560,15 @@ const workshopScheduleDetails = [
     url: '/workshops/graphql-on-sql-server-with-hasura/',
     type: 'workshop',
   },
+  {
+    url: '/workshops/building-distributed-graph/',
+    type: 'workshop',
+  }
 ];
-export { speakersDetails, talkDetailsPage, scheduleDetailsOne, scheduleDetailsTwo, workshopScheduleDetails };
+const workshopScheduleDetailsTwo = [
+  {
+    url: '/workshops/server-side-authentication-in-graphql/',
+    type: 'workshop',
+  },
+]
+export { speakersDetails, talkDetailsPage, scheduleDetailsOne, scheduleDetailsTwo, workshopScheduleDetails, workshopScheduleDetailsTwo };
