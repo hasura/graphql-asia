@@ -16,7 +16,7 @@ const talkDetailsPage = [
   '/talks/graphql-wrong-answers-only/',
   '/talks/reintroducing-schema-stitching-in-2021/',
   '/talks/data-science-with-weaviate-and-graphql/',
-  '/talks/client-side-migration-strategy-from-rest-to-graphql/',
+  '/talks/scalable-and-resilient-graphql-subscriptions-with-distributed-sql-databases/',
   '/talks/adding-bleeding-edge-tech-to-archaic-government-graphql-for-govtech/',
   '/talks/graphql-and-microservices-the-different-approaches-and-challenges/',
   '/talks/adopting-graphql-in-a-legacy-nodejs-api/',
@@ -30,6 +30,7 @@ const workshopDetailsPage = [
   '/workshops/introduction-to-hasura/',
   '/workshops/graphql-in-the-jamstack/',
   '/workshops/type-safe-graphql-apps-with-typescript/',
+  '/workshops/building-distributed-graph/',
 ]
 const path = require("path");
 
