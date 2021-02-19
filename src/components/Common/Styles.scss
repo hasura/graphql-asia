@@ -810,6 +810,14 @@ ul {
       width: 80%;
     }
   }
+  .partnersBrandWrapperDisplay {
+    display: flex;
+    align-items: center;
+    grid-gap: 60px 70px;
+    .yugabite {
+      max-width: 240px;
+    }
+  }
 }
 .joinGraphQLWrapper {
   display: grid;
@@ -2116,6 +2124,9 @@ ul {
       width: 100%;
       grid-template-columns: 1fr 1fr ;
       grid-gap: 40px;
+    }
+    .partnersBrandWrapperDisplay {
+      grid-gap: 20px;
     }
   }
 }

@@ -25,6 +25,11 @@ const graphqlAmsterdamLight = require('../Common/images/graphql-amsterdam-light.
 const atlassianLight = require('../Common/images/atlassian-light.svg');
 const atlassianDark = require('../Common/images/atlassian-dark.svg');
 
+const yugabyteLight = require('../Common/images/yugabyte-light.png');
+const yugabyteDark = require('../Common/images/yugabyte-dark.png');
+
+
+
 const download = require('../Common/images/download.svg');
 const downloadHover = require('../Common/images/download-hover.svg');
 
@@ -33,9 +38,12 @@ const Partners = props => {
     <div>
       <div id='sponsorship' className={'communityPartnersWrapper sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom')}>
         <div className='articleSubTitle'>Sponsors</div>
-        <div className='partnersBrandWrapper'>
+        <div className='partnersBrandWrapper partnersBrandWrapperDisplay'>
           <a href='https://www.atlassian.com/' target='_blank' rel='noopener noreferrer'>
             <img className='wd80' src={(!props.isLightMode) ? atlassianDark : atlassianLight} alt='React bangalore' />
+          </a>
+          <a href='https://www.yugabyte.com//' target='_blank' rel='noopener noreferrer'>
+            <img className='yugabite' src={(!props.isLightMode) ? yugabyteDark : yugabyteLight} alt='React bangalore' />
           </a>
         </div>
         {/*
