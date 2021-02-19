@@ -86,7 +86,7 @@ const Partners = props => {
             <img src={(!props.isLightMode) ? graphQLBangaloreDark : graphQLBangaloreLight} alt='GraphQL bangalore' />
           </a>
           <a href='https://www.meetup.com/jslovers/' target='_blank' rel='noopener noreferrer'>
-            <img src={(!props.isLightMode) ? jsDark : jsLight} alt='JS' />
+            <img className='wd80' src={(!props.isLightMode) ? jsDark : jsLight} alt='JS' />
           </a>
           <a href='https://www.meetup.com/GraphQL-Sydney/' target='_blank' rel='noopener noreferrer'>
             <img src={(!props.isLightMode) ? graphqlSydneyDark : graphqlSydneyLight} alt='GraphQL sydney' />
