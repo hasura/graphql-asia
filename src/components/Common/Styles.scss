@@ -809,6 +809,22 @@ ul {
     .wd80 {
       width: 80%;
     }
+    .wd70 {
+      width: 70%;
+    }
+    .twoColumn {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
+  .partnersBrandWrapperDisplay {
+    display: flex;
+    align-items: center;
+    // grid-gap: 60px 80px;
+    .yugabite {
+      max-width: 240px;
+      margin-left: 80px;
+    }
   }
 }
 .joinGraphQLWrapper {
@@ -2116,6 +2132,9 @@ ul {
       width: 100%;
       grid-template-columns: 1fr 1fr ;
       grid-gap: 40px;
+    }
+    .partnersBrandWrapperDisplay {
+      grid-gap: 20px;
     }
   }
 }

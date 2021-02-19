@@ -25,6 +25,18 @@ const graphqlAmsterdamLight = require('../Common/images/graphql-amsterdam-light.
 const atlassianLight = require('../Common/images/atlassian-light.svg');
 const atlassianDark = require('../Common/images/atlassian-dark.svg');
 
+const yugabyteLight = require('../Common/images/yugabyte-light.png');
+const yugabyteDark = require('../Common/images/yugabyte-dark.png');
+
+const graphqlBangkokDark = require('../Common/images/graphql-bangkok-dark.svg');
+const reactDelhiDark = require('../Common/images/react-delhi-dark.svg');
+const reactPhilippinesDark = require('../Common/images/react-philippines-dark.svg');
+const graphqlWroclawDark = require('../Common/images/graphql-wroclaw-dark.svg');
+const graphqlBangkokLight = require('../Common/images/graphql-bangkok-light.svg');
+const reactDelhiLight = require('../Common/images/react-delhi-light.svg');
+const reactPhilippinesLight = require('../Common/images/react-philippines-light.svg');
+const graphqlWroclawLight = require('../Common/images/graphql-wroclaw-light.svg');
+
 const download = require('../Common/images/download.svg');
 const downloadHover = require('../Common/images/download-hover.svg');
 
@@ -33,9 +45,12 @@ const Partners = props => {
     <div>
       <div id='sponsorship' className={'communityPartnersWrapper sectionWrapper ' + ((!props.isLightMode) ? 'darkModeBorBottom' : 'lightModeBorBottom')}>
         <div className='articleSubTitle'>Sponsors</div>
-        <div className='partnersBrandWrapper'>
+        <div className='partnersBrandWrapper partnersBrandWrapperDisplay'>
           <a href='https://www.atlassian.com/' target='_blank' rel='noopener noreferrer'>
-            <img className='wd80' src={(!props.isLightMode) ? atlassianDark : atlassianLight} alt='React bangalore' />
+            <img className='wd70' src={(!props.isLightMode) ? atlassianDark : atlassianLight} alt='React bangalore' />
+          </a>
+          <a href='https://www.yugabyte.com//' target='_blank' rel='noopener noreferrer'>
+            <img className='yugabite' src={(!props.isLightMode) ? yugabyteDark : yugabyteLight} alt='React bangalore' />
           </a>
         </div>
         {/*
@@ -71,7 +86,7 @@ const Partners = props => {
             <img src={(!props.isLightMode) ? graphQLBangaloreDark : graphQLBangaloreLight} alt='GraphQL bangalore' />
           </a>
           <a href='https://www.meetup.com/jslovers/' target='_blank' rel='noopener noreferrer'>
-            <img src={(!props.isLightMode) ? jsDark : jsLight} alt='JS' />
+            <img className='wd80' src={(!props.isLightMode) ? jsDark : jsLight} alt='JS' />
           </a>
           <a href='https://www.meetup.com/GraphQL-Sydney/' target='_blank' rel='noopener noreferrer'>
             <img src={(!props.isLightMode) ? graphqlSydneyDark : graphqlSydneyLight} alt='GraphQL sydney' />
@@ -81,6 +96,19 @@ const Partners = props => {
           </a>
           <a href='https://www.meetup.com/Copenhagen-GraphQL-Meetup-Group/' target='_blank' rel='noopener noreferrer'>
             <img src={(!props.isLightMode) ? graphqlCopenhagenDark : graphqlCopenhagenLight} alt='GraphQL sydney' />
+          </a>
+
+          <a href='https://www.meetup.com/GraphQL-Bangkok/' target='_blank' rel='noopener noreferrer'>
+            <img src={(!props.isLightMode) ? graphqlBangkokDark : graphqlBangkokLight} alt='GraphQL sydney' />
+          </a>
+          <a href='https://reactjs.org.ph/' target='_blank' rel='noopener noreferrer'>
+            <img src={(!props.isLightMode) ? reactPhilippinesDark : reactPhilippinesLight} alt='GraphQL sydney' />
+          </a>
+          <a href='https://www.meetup.com/React-Delhi-NCR/' target='_blank' rel='noopener noreferrer'>
+            <img src={(!props.isLightMode) ? reactDelhiDark : reactDelhiLight} alt='GraphQL sydney' />
+          </a><br/>
+          <a href='https://www.meetup.com/pl-PL/GraphQL-Wroclaw/' className='twoColumn' target='_blank' rel='noopener noreferrer'>
+            <img  className='wd80' src={(!props.isLightMode) ? graphqlWroclawDark : graphqlWroclawLight} alt='GraphQL sydney' />
           </a>
         </div>
       </div>
