@@ -47,7 +47,7 @@ const Partners = props => {
         <div className='articleSubTitle'>Sponsors</div>
         <div className='partnersBrandWrapper partnersBrandWrapperDisplay'>
           <a href='https://www.atlassian.com/' target='_blank' rel='noopener noreferrer'>
-            <img className='wd80' src={(!props.isLightMode) ? atlassianDark : atlassianLight} alt='React bangalore' />
+            <img className='wd70' src={(!props.isLightMode) ? atlassianDark : atlassianLight} alt='React bangalore' />
           </a>
           <a href='https://www.yugabyte.com//' target='_blank' rel='noopener noreferrer'>
             <img className='yugabite' src={(!props.isLightMode) ? yugabyteDark : yugabyteLight} alt='React bangalore' />
