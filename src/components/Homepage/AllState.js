@@ -273,7 +273,7 @@ const speakersDetails = [
   },
   {
     talkPageUrl: '/workshops/introduction-to-hasura/',
-    speakersName: 'Praveen Duriaraju',
+    speakersName: 'Praveen Durairaju',
     speakersImg: praveenDuriaraju,
     speakersDesignation: (
       <span>
@@ -1128,7 +1128,7 @@ const talkDetailsPage = [
     speakersList: [
       {
         speakersUrl: '/speakers/praveen-duriaraju/',
-        speakersName: 'Praveen Duriaraju',
+        speakersName: 'Praveen Durairaju',
         speakersImg: praveenDuriaraju,
         speakersDesignation: (
           <span>
@@ -1220,8 +1220,8 @@ const talkDetailsPage = [
     ],
     speakersList: [
       {
-        speakersUrl: '/speakers/praveen-duriaraju/',
-        speakersName: 'Praveen Duriaraju',
+        speakersUrl: '/speakers/praveen-durairaju/',
+        speakersName: 'Praveen Durairaju',
         speakersImg: praveenDuriaraju,
         speakersDesignation: (
           <span>
