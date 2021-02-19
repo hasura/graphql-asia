@@ -809,6 +809,10 @@ ul {
     .wd80 {
       width: 80%;
     }
+    .twoColumn {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
   }
   .partnersBrandWrapperDisplay {
     display: flex;
