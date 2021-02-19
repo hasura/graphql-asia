@@ -2,9 +2,9 @@ import React from 'react';
 import {Link} from 'gatsby'
 import Layout from '../components/Layout';
 import { SEO } from '../components/seo';
-import CodeOfConductTopBanner from '../components/CodeOfConduct/CodeOfConductTopBanner';
-// import graphqlAsiaImg from '../images/graphqlAsiaLogo.png';
-const CodeOfConduct = props => {
+import JobsList from '../components/Jobs/JobsList';
+import graphqlAsiaImg from '../images/graphqlAsiaLogo.png';
+const Jobs = props => {
   return (
     <Layout location={props.location}>
       <SEO
@@ -13,9 +13,9 @@ const CodeOfConduct = props => {
         metaImg='https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-asia.png'
         canonicalLink='https://graphql.asia/'
       />
-      <CodeOfConductTopBanner />
+      <JobsList />
     </Layout>
   );
 }
 
-export default CodeOfConduct;
+export default Jobs;

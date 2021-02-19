@@ -1042,9 +1042,35 @@ ul {
   .pl-40 {
     padding-left: 40px;
   }
+  .pb-20 {
+    padding-bottom: 20px;
+  }
   .articleSubTitle {
     padding-top: 10px;
     padding-bottom: 24px;
+  }
+  .mainSubTitle {
+    padding-bottom: 60px;
+    font-size: 4.5em;
+    font-weight: 500;
+  }
+  .brandLogo {
+    padding-bottom: 40px;
+  }
+  .commonLink {
+    cursor: pointer;
+    display: inline-block;
+    .arrow {
+      height: 16px;
+      .arrowIcon {
+        height: 16px;
+      }
+      .arrowIconHover {
+        top: 7px;
+        left: -7px;
+        height: 2px;
+      }
+    }
   }
   .articleDesc {
     ul {
@@ -1697,6 +1723,10 @@ ul {
     }
     .articleSectionTitle {
       padding-bottom: 8px;
+    }
+    .mainSubTitle {
+      padding-bottom: 32px;
+      font-size: 40px;
     }
     .speakerDetails {
       .speakersProfile {
