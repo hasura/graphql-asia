@@ -1,4 +1,10 @@
 [[redirects]]
+  from = "/talks/3factor-app-architecture-for-rapid-e-commerce-dev/"
+  to = "/talks/3factor-app-an-accessible-design-pattern-for-serverless/"
+  status = 200
+  force = true
+  
+[[redirects]]
   from = "/2019/*"
   to = "https://graphql-asia-2019-site.netlify.app/:splat"
   status = 200
