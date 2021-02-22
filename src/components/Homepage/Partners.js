@@ -39,6 +39,10 @@ const graphqlWroclawLight = require('../Common/images/graphql-wroclaw-light.svg'
 
 const download = require('../Common/images/download.svg');
 const downloadHover = require('../Common/images/download-hover.svg');
+const stackhawkDark = require('../Common/images/stackhawk-dark.png');
+const stackhawkLight = require('../Common/images/stackhawk-light.png');
+
+
 
 const Partners = props => {
   return (
@@ -49,8 +53,11 @@ const Partners = props => {
           <a href='https://www.atlassian.com/' target='_blank' rel='noopener noreferrer'>
             <img className='wd70' src={(!props.isLightMode) ? atlassianDark : atlassianLight} alt='React bangalore' />
           </a>
-          <a href='https://www.yugabyte.com//' target='_blank' rel='noopener noreferrer'>
+          <a href='https://www.yugabyte.com/' target='_blank' rel='noopener noreferrer'>
             <img className='yugabite' src={(!props.isLightMode) ? yugabyteDark : yugabyteLight} alt='React bangalore' />
+          </a>
+          <a href='https://www.stackhawk.com/' target='_blank' rel='noopener noreferrer'>
+            <img className='yugabite' src={(!props.isLightMode) ? stackhawkDark : stackhawkLight} alt='React bangalore' />
           </a>
         </div>
         {/*
