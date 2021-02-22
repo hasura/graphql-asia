@@ -1102,14 +1102,14 @@ const talkDetailsPage = [
     ],
   },
   {
-    url: '/talks/3factor-app-architecture-for-rapid-e-commerce-dev/',
+    url: '/talks/3factor-app-an-accessible-design-pattern-for-serverless/',
     metaTags: {
-      title: '3factor app architecture for rapid e-commerce dev',
-      canonicalUrl: 'https://graphql.asia/talks/3factor-app-architecture-for-rapid-e-commerce-dev/',
-      description: 'Coming Soon',
-      metaImg: 'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/3factor-app-architecture-for-rapid-e-commerce-dev.png',
+      title: '3factor app: An Accessible Design Pattern for Serverless',
+      canonicalUrl: 'https://graphql.asia/talks/3factor-app-an-accessible-design-pattern-for-serverless/',
+      description: 'In this talk, I will showcase a pattern involving realtime graphQL, event-driven programming and serverless, called the 3factor app. The 3factor pattern is a super accessible pattern for every level of developer to start developing modern apps on serverless. We will see where traditional monolithic architectures fall short and how to build scalable and reliable apps using this pattern.  We will especially look at the advantages of using 3factor: from infinite scalability to uninterrupted disaster recovery. Then I will share how you, too, can get started using 3factor design patterns.',
+      metaImg: 'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/3factor-app-an-accessible-design-pattern-for-serverless.png',
     },
-    title: '3factor app architecture for rapid e-commerce dev',
+    title: '3factor app: An Accessible Design Pattern for Serverless',
     speakersTitle: 'About the speaker',
     backLink: '/talks/',
     language: 'English',
@@ -1117,12 +1117,7 @@ const talkDetailsPage = [
     talkType: 'Lightning Talks',
     description: [
       {
-        desc: 'Coming Soon',
-      },
-    ],
-    takeaways: [
-      {
-        desc: 'Coming Soon',
+        desc: 'In this talk, I will showcase a pattern involving realtime graphQL, event-driven programming and serverless, called the 3factor app. The 3factor pattern is a super accessible pattern for every level of developer to start developing modern apps on serverless. We will see where traditional monolithic architectures fall short and how to build scalable and reliable apps using this pattern.  We will especially look at the advantages of using 3factor: from infinite scalability to uninterrupted disaster recovery. Then I will share how you, too, can get started using 3factor design patterns.',
       },
     ],
     speakersList: [
@@ -1534,7 +1529,7 @@ const scheduleDetailsTwo = [
     type: 'talk',
   },
   {
-    url: '/talks/3factor-app-architecture-for-rapid-e-commerce-dev/',
+    url: '/talks/3factor-app-an-accessible-design-pattern-for-serverless/',
     type: 'talk',
   },
   {
