@@ -15,6 +15,9 @@ const TopBanner = (props) => {
         <Link to="/register/">
           <button className="commonBtn darkBtn">Register Now</button>
         </Link>
+        <Link to="/login/">
+          <button className="commonBtn lightBtn ml-20">Login</button>
+        </Link>
       </div>
     </div>
   );
