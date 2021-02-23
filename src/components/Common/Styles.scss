@@ -818,12 +818,15 @@ ul {
     }
   }
   .partnersBrandWrapperDisplay {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
     // grid-gap: 60px 80px;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-gap: 60px 50px;
+    align-items: center;
     .yugabite {
       max-width: 240px;
-      margin-left: 80px;
+      // margin-left: 80px;
     }
   }
 }
@@ -2164,7 +2167,14 @@ ul {
       grid-gap: 40px;
     }
     .partnersBrandWrapperDisplay {
-      grid-gap: 20px;
+      grid-gap: 50px;
+      grid-template-columns: 1fr;
+      a {
+        text-align: center;
+      }
+      .wd70 {
+        width: 40%;
+      }
     }
   }
 }
