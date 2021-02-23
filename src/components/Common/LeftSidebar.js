@@ -35,6 +35,7 @@ const LeftSidebar = ({isLightMode, location}) => {
         <li className={((path === '/code-of-conduct/') ? 'active' : '')}><Link to='/code-of-conduct/'>Code of Conduct</Link></li>
         <li><Link to='/#sponsorship'>Sponsors</Link></li>
         <li><Link to='/#about'>About</Link></li>
+        <li><Link to='/jobs/'>Jobs</Link></li>
       </ul>
       <div className='leftSidebarFooterWrapper'>
         <div className='poweredBrand'>

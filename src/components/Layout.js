@@ -139,6 +139,7 @@ const Layout = ({ children, location }) => {
                 </Link>
               </li>
               <li><Link to='/#about'>About</Link></li>
+              <li><Link to='/jobs/'>Jobs</Link></li>
             </ul>
           </div>
         </div>
