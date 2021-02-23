@@ -103,6 +103,9 @@ ul {
 .sectionWrapperBottom {
   padding-bottom: 100px;
 }
+.sectionWrapperBottomLarge {
+  padding-bottom: 160px;
+}
 .sectionWrapper {
   padding: 80px 0;
 }
@@ -1339,6 +1342,9 @@ ul {
   }
 }
 @media (min-width: 901px) and (max-width: 1439px) {
+  .sectionWrapperBottomLarge {
+    padding-bottom: 0px;
+  }
   .btnFixedPos {
     right: 32px;
     .darkBtn {
@@ -1399,6 +1405,9 @@ ul {
   }
 }
 @media (max-width: 900px) {
+  .sectionWrapperBottomLarge {
+    padding-bottom: 0px;
+  }
   .backBtnWrapper {
     .darkBtn {
       width: auto;
@@ -2146,6 +2155,9 @@ ul {
   }
 }
 @media (max-width: 767px) {
+  .sectionWrapperBottomLarge {
+    padding-bottom: 0px;
+  }
   .topBannerWrapper {
     .articleSectionTitle {
       padding-bottom: 0;

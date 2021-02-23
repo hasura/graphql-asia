@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { SEO } from '../components/seo';
-import Layout from '../components/Layout';
-import LoginTopBanner from '../components/Login/LoginTopBanner';
+import { SEO } from '../../components/seo';
+import Layout from '../../components/Layout';
+import NrTopBanner from '../../components/Login/NrTopBanner';
 
 const Login = ({ location }) => {
   return (
@@ -13,7 +13,7 @@ const Login = ({ location }) => {
         metaImg="https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-asia.png"
         canonicalLink="https://graphql.asia/login/nr/"
       />
-      <LoginTopBanner location={location} />
+      <NrTopBanner location={location} />
     </Layout>
   );
 };
