@@ -128,6 +128,7 @@ const Layout = ({ children, location }) => {
                   Schedule
                 </Link>
               </li>
+              <li><Link to='/jobs/'>Jobs</Link></li>
               <li>
                 <Link to="/code-of-conduct/" onClick={() => openMenuBar()}>
                   Code of Conduct
