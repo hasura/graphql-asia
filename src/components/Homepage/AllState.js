@@ -1354,7 +1354,7 @@ const talkDetailsPage = [
     speakersTitle: 'Presented by',
     backLink: '/workshops/',
     language: 'English',
-    time: '08:00 am -	10:30 am',
+    time: '12:30 pm -	03:30 pm',
     talkType: 'Workshop',
     description: [
       {
@@ -1564,10 +1564,6 @@ const workshopScheduleDetails = [
     type: 'workshop',
   },
   {
-    url: '/workshops/graphql-on-sql-server-with-hasura/',
-    type: 'workshop',
-  },
-  {
     url: '/workshops/building-distributed-graph/',
     type: 'workshop',
   }
@@ -1577,5 +1573,9 @@ const workshopScheduleDetailsTwo = [
     url: '/workshops/server-side-authentication-in-graphql/',
     type: 'workshop',
   },
+  {
+    url: '/workshops/graphql-on-sql-server-with-hasura/',
+    type: 'workshop',
+  }
 ]
 export { speakersDetails, talkDetailsPage, scheduleDetailsOne, scheduleDetailsTwo, workshopScheduleDetails, workshopScheduleDetailsTwo };
