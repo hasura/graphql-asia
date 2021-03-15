@@ -18,7 +18,7 @@ const IndexPage = (props) => (
       metaImg="https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-asia.png"
       canonicalLink="https://graphql.asia/"
     />
-    <TopBanner />
+    <TopBanner location={props.location} />
     {/* <Video /> */}
     <Speakers />
     <Workshop />
