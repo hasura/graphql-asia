@@ -10,14 +10,14 @@ const checkIcon = require('../Common/images/check-icon.svg');
 const TopBanner = (props) => {
   const [isAliId, setIsAliId] = useState(false);
   useEffect(() => {
-    const searchParams = new URLSearchParams(location.search);
+    const searchParams = new URLSearchParams(props.location.search);
 
     const searchAliId = searchParams.get('aliId');
 
     if (searchAliId || searchAliId === '') {
       setIsAliId(true);
     }
-  }, [location.search]);
+  }, [props.location.search]);
   return (
     <div className="topBannerWrapper sectionWrapperBottom">
       <div className="mainTitle">Asia's Largest GraphQL Conf is Back</div>
