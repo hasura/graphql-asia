@@ -11,7 +11,7 @@ const TopBanner = (props) => {
   const [isAliId, setIsAliId] = useState(false);
 
   useEffect(() => {
-    const searchParams = new URLSearchParams(location.search);
+    const searchParams = new URLSearchParams(props.location.search);
 
     const searchAliId = searchParams.get('aliId');
 
@@ -19,7 +19,7 @@ const TopBanner = (props) => {
       setIsAliId(true);
       // document.getElementById('marketo-form-id').scrollIntoView({ behavior: "smooth", block: "start", inline: "start" });
     }
-  }, [location.search]);
+  }, [props.location.search]);
   return (
     <div className="topBannerWrapper sectionWrapperBottom">
       <div className="mainTitle">Asia's Largest GraphQL Conf is Back</div>
