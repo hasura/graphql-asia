@@ -4,7 +4,7 @@ import Conference from '../components/Homepage/Conference';
 // import Video from '../components/Homepage/Video';
 import Speakers from '../components/Homepage/Speakers';
 import Partners from '../components/Homepage/Partners';
-import JoinGraphQLCommunity from '../components/Homepage/JoinGraphQLCommunity';
+// import JoinGraphQLCommunity from '../components/Homepage/JoinGraphQLCommunity';
 import Workshop from '../components/Homepage/Workshop';
 import Talks from '../components/Homepage/Talks';
 import Schedule from '../components/Homepage/Schedule';
@@ -25,7 +25,7 @@ const IndexPage = (props) => (
     <Talks />
     <Schedule />
     <Partners />
-    <JoinGraphQLCommunity />
+    {/* <JoinGraphQLCommunity /> */}
     <Conference />
   </Layout>
 );

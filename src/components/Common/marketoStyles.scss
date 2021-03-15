@@ -198,7 +198,7 @@
         color: #F5E7D3 !important;
         transition: all .2s ease-in-out;
         border: 0 !important;
-        height: 48px;
+        height: 56px;
         box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15);
         &:hover {
           background-color: rgba(92, 148, 200, 1);
@@ -229,7 +229,6 @@
   box-shadow: none;
   display: flex;
   position: relative;
-  height: 48px;
   .mktoFormRow {
     position: absolute;
     left: 0;
@@ -253,10 +252,9 @@
     width: 200px;
     .mktoButtonWrap {
       .mktoButton {
-        background-color: rgba(27,39,56,.8) !important;
-        color: #fff !important;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
         &:hover {
-          background-color: rgba(27,39,56,1) !important;
+          background-color: rgba(92, 148, 200, 0.1);
         }
       }
     }
@@ -331,6 +329,26 @@
       }
     }
   }
+  .subscribeNewsletterForm {
+    .mktoFormRow {
+      .mktoFieldDescriptor {
+        .mktoFieldWrap {
+          .mktoField {
+            height: 60px;
+          }
+        }
+      }
+    }
+    .mktoButtonRow {
+      width: auto;
+      .mktoButtonWrap {
+        .mktoButton {
+          height: 60px;
+        }
+      }
+    }
+  }
+
 }
 @media(min-width: 2560px) {
   .marketoFormWrapper {
@@ -383,6 +401,25 @@
       }
     }
   }
+  .subscribeNewsletterForm {
+    .mktoFormRow {
+      .mktoFieldDescriptor {
+        .mktoFieldWrap {
+          .mktoField {
+            height: 80px;
+          }
+        }
+      }
+    }
+    .mktoButtonRow {
+      width: auto;
+      .mktoButtonWrap {
+        .mktoButton {
+          height: 80px;
+        }
+      }
+    }
+  }
 }
 @media(min-width: 3440px) {
   .marketoFormWrapper {
@@ -431,6 +468,25 @@
         .mktoButton {
           font-size: 3.5em !important;
           height: auto;
+        }
+      }
+    }
+  }
+  .subscribeNewsletterForm {
+    .mktoFormRow {
+      .mktoFieldDescriptor {
+        .mktoFieldWrap {
+          .mktoField {
+            height: 80px;
+          }
+        }
+      }
+    }
+    .mktoButtonRow {
+      width: auto;
+      .mktoButtonWrap {
+        .mktoButton {
+          height: 80px;
         }
       }
     }
