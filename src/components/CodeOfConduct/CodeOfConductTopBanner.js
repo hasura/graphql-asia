@@ -4,9 +4,11 @@ import '../Common/Styles.scss';
 const CodeOfConductTopBanner = props => {
   return (
     <div className='codeOfContentWrapper sectionWrapperBottom mt-40'>
+      {/*
       <div className='buttonWrapper'>
         <Link to='/register/'><button className='commonBtn lightBtn mobileShow'>Register Now</button></Link>
       </div>
+      */}
       <div className='mainSubTitle'>
         Code of Conduct
       </div>
