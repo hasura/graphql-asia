@@ -24,6 +24,7 @@ const WorkshopsList = (props) => {
   return (
     <div id="workshops" className={'sectionWrapper removePaddTop' + (props.wdClass ? ' wd80' : '')}>
       <div className="workshopWrapper">
+        <h1 className="talk-heading">Video Recordings</h1>
         <div className="articleSubTitle">Workshops</div>
         <div className="articleDesc fontBold">
           <img src={information} alt="Information" />
