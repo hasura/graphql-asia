@@ -7,9 +7,9 @@ const arrow = require('../Common/images/arrow.svg');
 
 // const star = require('../Common/images/star.svg');
 
-const IndivWorkshop = ({ workshopList }) => {
+const IndivWorkshop = ({ workshopList, isLightMode }) => {
   return (
-    <li>
+    <li className={isLightMode ? 'lightModeBorder' : 'darkModeBorder'}>
       {/* <img src={star} alt="Star" /> */}
       <Link to={workshopList.url}>
         <div className="articleSectionTitle fontBold">{workshopList.title}</div>

@@ -5,12 +5,11 @@ import '../Common/Styles.scss';
 
 const arrow = require('../Common/images/arrow.svg');
 
-// const star = require('../Common/images/star.svg');
+const IndivTalk = (props) => {
+  const { talksList, isLightMode } = props;
 
-const IndivTalk = ({ talksList }) => {
   return (
-    <li>
-      {/* <img src={star} alt="Star" /> */}
+    <li className={isLightMode ? 'lightModeBorder' : 'darkModeBorder'}>
       <Link to={talksList.url}>
         <div className="articleSectionTitle fontBold">{talksList.title}</div>
         <div className="articleDesc fontBold500">

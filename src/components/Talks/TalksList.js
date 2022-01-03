@@ -13,7 +13,9 @@ const TalksList = (props) => {
   const talkListState = talkDetailsPage.map((talksList, index) => {
     return (
       <Fragment key={index}>
-        {!talksList.isWorkshop && <IndivTalk talksList={talksList} />}
+        {!talksList.isWorkshop && (
+          <IndivTalk talksList={talksList} isLightMode={props.isLightMode} />
+        )}
       </Fragment>
     );
   });

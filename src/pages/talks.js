@@ -1,7 +1,9 @@
 import React from 'react';
+
 import { SEO } from '../components/seo';
 import Layout from '../components/Layout';
 import TalksList from '../components/Talks/TalksList';
+
 const TalksPage = (props) => (
   <Layout location={props.location}>
     <SEO
@@ -10,7 +12,7 @@ const TalksPage = (props) => (
       metaImg="https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-asia.png"
       canonicalLink="https://graphql.asia/talks/"
     />
-    <TalksList />
+    <TalksList props={props} />
   </Layout>
 );
 
