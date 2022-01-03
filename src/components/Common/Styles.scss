@@ -1014,6 +1014,7 @@ ul {
       border: 1px solid #f5e7d3;
       width: 100%;
       max-width: 462px;
+      min-height: 327px;
       margin-bottom: 42px;
 
       img {
@@ -1027,9 +1028,11 @@ ul {
           text-decoration: none;
         }
       }
-      &:last-child {
-        border-bottom: 0 !important;
-      }
+
+      // &:last-child {
+      //   border-bottom: 0 !important;
+      // }
+
       &:hover {
         transition: all 0.3s ease-out 0s;
         .articleSectionTitle,
