@@ -140,6 +140,15 @@ ul {
 .darkModeBorder {
   border: 1px solid #f5e7d3;
 }
+
+.lightModeText {
+  color: #181818;
+}
+
+.darkModeText {
+  color: #f8f8f8;
+}
+
 .darkLine,
 .lightLine {
   width: 100%;
@@ -342,6 +351,13 @@ ul {
 .lightModeLayout {
   background-color: #f5e7d3;
   background-image: url('./images/lighter-sqaure.svg');
+
+  .lightModeBorder:hover {
+    .lightModeText {
+      color: #fff;
+    }
+  }
+
   .transparentBtn {
     background-color: transparent;
     color: #181818;
@@ -403,6 +419,7 @@ ul {
       li {
         &:hover {
           background-color: #000000;
+
           .articleSectionTitle {
             color: #f5e7d3;
           }
@@ -475,9 +492,17 @@ ul {
     }
   }
 }
+
 .darkModeLayout {
   background-color: #000;
   background-image: url('./images/dark-square.svg');
+
+  .darkModeBorder:hover {
+    .darkModeText {
+      color: #000;
+    }
+  }
+
   .transparentBtn {
     background-color: transparent;
     color: #f5e7d3;
@@ -594,12 +619,14 @@ ul {
           }
           &:hover {
             background-color: #f5e7d3;
+
             .articleDesc {
               color: #181818;
             }
             .articleSectionTitle {
               color: #181818;
             }
+
             .talkTypes {
               .talkBtn {
                 border: 1px solid rgba(0, 0, 0, 0.5);
@@ -1006,6 +1033,30 @@ ul {
     margin-bottom: 40px;
     justify-content: space-between;
 
+    .speaker-talk-card {
+      display: flex;
+      align-items: center;
+
+      img {
+        min-width: 50px;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 24px;
+        margin-right: 14px !important;
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        filter: grayscale(100%);
+      }
+
+      p {
+        font-weight: 600;
+        font-size: 1em;
+        line-height: 160%;
+      }
+    }
+
     li {
       padding: 28px 40px;
       position: relative;
@@ -1017,7 +1068,7 @@ ul {
       min-height: 327px;
       margin-bottom: 42px;
 
-      img {
+      .arrow-img {
         margin-top: 12px;
         margin-right: 20px;
         transform: translateX(-20px);
@@ -1037,9 +1088,10 @@ ul {
         transition: all 0.3s ease-out 0s;
         .articleSectionTitle,
         .articleDesc,
-        img {
+        .arrow-img {
           transform: translateX(0px);
         }
+
         .workshopArrow {
           margin-right: -1px;
           right: 0px;

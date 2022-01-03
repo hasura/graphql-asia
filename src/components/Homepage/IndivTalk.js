@@ -16,12 +16,14 @@ const IndivTalk = (props) => {
           <span>
             {talksList.speakersList && (
               <Fragment>
-                {talksList.speakersList.map((name, index) => {
+                {talksList.speakersList.map((speaker, index) => {
                   return (
-                    <Fragment key={index}>
-                      {name.speakersName}
-                      {index < talksList.speakersList.length - 1 ? ', ' : ''}
-                    </Fragment>
+                    <div key={index} className="speaker-talk-card">
+                      <img src={speaker.speakersImg} alt={speaker.speakersName} />
+                      <p className={isLightMode ? 'lightModeText' : 'darkModeText'}>
+                        {speaker.speakersName}
+                      </p>
+                    </div>
                   );
                 })}
               </Fragment>
@@ -33,7 +35,7 @@ const IndivTalk = (props) => {
           <span className="readMoreArrow">→</span>
         </div>
         <div className="workshopArrow">
-          <img src={arrow} alt="Arrow" />
+          <img src={arrow} alt="Arrow" className="arrow-img" />
         </div>
       </Link>
     </li>

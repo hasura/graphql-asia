@@ -36,21 +36,22 @@ const IndivWorkshop = ({ workshopList, isLightMode }) => {
             })}
           </Fragment>
         ) : null}
-        {!workshopList.comingSoon ? (
+        {!workshopList.comingSoon && (
           <div className="articleDesc fontBold500">
-            Presented by{' '}
             <span>
               {workshopList.speakersList.map((name, index) => {
                 return (
-                  <Fragment key={index}>
-                    {name.speakersName}
-                    {index < workshopList.speakersList.length - 1 ? ', ' : ''}
-                  </Fragment>
+                  <div key={index} className="speaker-talk-card">
+                    <img src={name.speakersImg} alt={name.speakersName} />
+                    <p className={isLightMode ? 'lightModeText' : 'darkModeText'}>
+                      {name.speakersName}
+                    </p>
+                  </div>
                 );
               })}
             </span>
           </div>
-        ) : null}
+        )}
         <div className="articleDesc fontBold500 readMore">
           <span>Read More </span>
           <span className="readMoreArrow">→</span>
