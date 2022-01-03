@@ -13,7 +13,7 @@ const TalksList = (props) => {
   const talkListState = talkDetailsPage.map((talksList, index) => {
     return (
       <Fragment key={index}>
-        {!talksList.isWorkshop ? <IndivTalk talksList={talksList} /> : null}
+        {!talksList.isWorkshop && <IndivTalk talksList={talksList} />}
       </Fragment>
     );
   });
