@@ -305,7 +305,7 @@ ul {
 }
 .transparentBtn {
   background-color: transparent;
-  color: #F5E7D3;
+  color: #f5e7d3;
   border: 1px solid rgba(245, 231, 211, 0.5);
 }
 .lightBtn {
@@ -349,7 +349,7 @@ ul {
   }
   .darkBlockBtn {
     background-color: #181818;
-    color: #F5E7D3;
+    color: #f5e7d3;
     border: 1px solid #181818;
   }
   .navBarToggle {
@@ -382,7 +382,8 @@ ul {
       .mktoFormRow {
         .mktoFieldDescriptor {
           .mktoFieldWrap {
-            #Lbltemp1, #Lbltemp2 {
+            #Lbltemp1,
+            #Lbltemp2 {
               color: #181818;
             }
           }
@@ -429,10 +430,13 @@ ul {
     }
   }
   .scheduleWrapper {
-    .scheduleListHeader, .scheduleListWrapper {
+    .scheduleListHeader,
+    .scheduleListWrapper {
       .scheduleList {
-        .articleSectionTitle, .articleDesc {
-          .istBtn, .istBtnMobile {
+        .articleSectionTitle,
+        .articleDesc {
+          .istBtn,
+          .istBtnMobile {
             background: rgba(0, 0, 0, 0.2);
             .istBtnHover {
               background-color: #181818;
@@ -450,7 +454,6 @@ ul {
           .talkTypes {
             .talkBtn {
               border: 1px solid rgba(0, 0, 0, 0.5);
-
             }
           }
           &:hover {
@@ -477,13 +480,13 @@ ul {
   background-image: url('./images/dark-square.svg');
   .transparentBtn {
     background-color: transparent;
-    color: #F5E7D3;
+    color: #f5e7d3;
     border: 1px solid rgba(245, 231, 211, 0.5);
   }
   .darkBlockBtn {
-    background-color: #F5E7D3;
+    background-color: #f5e7d3;
     color: #181818;
-    border: 1px solid #F5E7D3;
+    border: 1px solid #f5e7d3;
   }
   .navBarToggle {
     .iconBar {
@@ -515,7 +518,8 @@ ul {
       .mktoFormRow {
         .mktoFieldDescriptor {
           .mktoFieldWrap {
-            #Lbltemp1, #Lbltemp2 {
+            #Lbltemp1,
+            #Lbltemp2 {
               color: #f5e7d3;
             }
           }
@@ -562,10 +566,13 @@ ul {
     }
   }
   .scheduleWrapper {
-    .scheduleListHeader, .scheduleListWrapper {
+    .scheduleListHeader,
+    .scheduleListWrapper {
       .scheduleList {
-        .articleSectionTitle, .articleDesc {
-          .istBtn, .istBtnMobile {
+        .articleSectionTitle,
+        .articleDesc {
+          .istBtn,
+          .istBtnMobile {
             background: rgba(245, 231, 211, 0.2);
             .istBtnHover {
               background-color: #f5e7d3;
@@ -1217,12 +1224,12 @@ ul {
   }
   .scheduleListHeader {
     .articleSectionTitle {
-      color: #C63939;
+      color: #c63939;
       display: flex;
       align-items: center;
       line-height: normal;
       .istBtn {
-        font-size: .6em;
+        font-size: 0.6em;
         line-height: revert;
         padding: 4px 6px;
         margin-left: 12px;
@@ -1247,7 +1254,7 @@ ul {
           text-align: center;
           border-radius: 4px;
           display: none;
-          font-size: .8em;
+          font-size: 0.8em;
         }
       }
     }
@@ -1259,7 +1266,7 @@ ul {
       grid-template-columns: 160px 1fr;
       grid-gap: 0 60px;
       padding: 32px 32px;
-      transition: all .3s ease-in-out;
+      transition: all 0.3s ease-in-out;
       position: relative;
       .articleDesc {
         .istBtnMobile {
@@ -1975,9 +1982,11 @@ ul {
         }
       }
     }
-    .scheduleListHeader, .scheduleListWrapper {
+    .scheduleListHeader,
+    .scheduleListWrapper {
       .scheduleList {
-        .articleSectionTitle, .articleDesc {
+        .articleSectionTitle,
+        .articleDesc {
           .istBtn {
             max-height: 60px;
             .istBtnHover {
@@ -2203,7 +2212,6 @@ ul {
       padding-bottom: 48px;
     }
     .buttonWrapper {
-
       .lightBtn {
         width: 100%;
         position: static;
@@ -2220,7 +2228,7 @@ ul {
     }
     .partnersBrandWrapper {
       width: 100%;
-      grid-template-columns: 1fr 1fr ;
+      grid-template-columns: 1fr 1fr;
       grid-gap: 40px;
     }
     .partnersBrandWrapperDisplay {
@@ -2234,4 +2242,14 @@ ul {
       }
     }
   }
+}
+
+.talk-heading {
+  font-family: 'Darker Grotesque';
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 96%;
+  color: #c63939;
+  margin-bottom: 60px;
+  margin-top: 10px;
 }
