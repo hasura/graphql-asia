@@ -12,30 +12,32 @@ const IndivWorkshop = ({ workshopList, isLightMode }) => {
     <li className={isLightMode ? 'lightModeBorder' : 'darkModeBorder'}>
       {/* <img src={star} alt="Star" /> */}
       <Link to={workshopList.url}>
-        <div className="articleSectionTitle fontBold">{workshopList.title}</div>
-        {workshopList.description ? (
-          <Fragment>
-            {workshopList.description.map((desc, index) => {
-              return (
-                <div key={index} className="articleDesc pb-40">
-                  {desc.desc ? desc.desc : null}
-                  {desc.list ? (
-                    <ul>
-                      {desc.list.map((list, subIndex) => {
-                        return (
-                          <li key={subIndex}>
-                            {/* <img src={star} alt="star" /> */}
-                            {list}
-                          </li>
-                        );
-                      })}
-                    </ul>
-                  ) : null}
-                </div>
-              );
-            })}
-          </Fragment>
-        ) : null}
+        <div>
+          <div className="articleSectionTitle fontBold">{workshopList.title}</div>
+          {workshopList.description ? (
+            <Fragment>
+              {workshopList.description.map((desc, index) => {
+                return (
+                  <div key={index} className="articleDesc pb-40">
+                    {desc.desc ? desc.desc : null}
+                    {desc.list ? (
+                      <ul>
+                        {desc.list.map((list, subIndex) => {
+                          return (
+                            <li key={subIndex}>
+                              {/* <img src={star} alt="star" /> */}
+                              {list}
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    ) : null}
+                  </div>
+                );
+              })}
+            </Fragment>
+          ) : null}
+        </div>
         {!workshopList.comingSoon && (
           <div className="articleDesc fontBold500">
             <span>
