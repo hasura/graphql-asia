@@ -8,7 +8,7 @@ const lightBackArrow = require('../Common/images/back-arrow-light.svg');
 
 const darkBackArrow = require('../Common/images/back-arrow-dark.svg');
 
-const information = require('../Common/images/information.svg');
+// const information = require('../Common/images/information.svg');
 
 const WorkshopsList = (props) => {
   const workshopsListState = talkDetailsPage.map((workshopList, index) => {
@@ -26,10 +26,10 @@ const WorkshopsList = (props) => {
       <div className="workshopWrapper">
         <h1 className="talk-heading">Video Recordings</h1>
         <div className="articleSubTitle">Workshops</div>
-        <div className="articleDesc fontBold">
+        {/* <div className="articleDesc fontBold">
           <img src={information} alt="Information" />
           All workshops will start at 8 AM IST on 24th Feb
-        </div>
+        </div> */}
         <ul>{workshopsListState}</ul>
         <div className="backBtnWrapper">
           <div className={!props.isLightMode ? 'lightLine' : 'darkLine'}></div>
