@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   box-sizing: border-box;
   font-family: 'Darker Grotesque' !important;
@@ -1136,8 +1137,23 @@ ul {
     }
   }
 }
+
 /* Details page Starts*/
 .detailsPageWrapper {
+  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.2%;
+
+    iframe {
+      height: 100%;
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+  position: relative;
+  padding-bottom: 56.2%;
+
   width: 70%;
   .pb-40 {
     padding-bottom: 40px;
@@ -1150,7 +1166,7 @@ ul {
   }
   .articleSubTitle {
     padding-top: 10px;
-    padding-bottom: 24px;
+    padding-bottom: 45px;
     font-size: 3.375em !important;
     line-height: 1;
   }
