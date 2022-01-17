@@ -109,6 +109,11 @@ const Layout = ({ children, location }) => {
           <div className="visibleMobile">
             <ul className="navBarULMobile articleDesc">
               <li>
+                <Link to="/recordings/" onClick={() => openMenuBar()}>
+                  View Recordings
+                </Link>
+              </li>
+              <li>
                 <Link to="/speakers/" onClick={() => openMenuBar()}>
                   Speakers
                 </Link>
@@ -124,11 +129,11 @@ const Layout = ({ children, location }) => {
                 </Link>
               </li>
               <li>
-                <Link to='/#schedule' onClick={() => openMenuBar()}>
+                <Link to="/#schedule" onClick={() => openMenuBar()}>
                   Schedule
                 </Link>
               </li>
-              <li><Link to='/jobs/'>Jobs</Link></li>
+              {/* <li><Link to='/jobs/'>Jobs</Link></li> */}
               <li>
                 <Link to="/code-of-conduct/" onClick={() => openMenuBar()}>
                   Code of Conduct
@@ -139,7 +144,9 @@ const Layout = ({ children, location }) => {
                   Sponsors
                 </Link>
               </li>
-              <li><Link to='/#about'>About</Link></li>
+              <li>
+                <Link to="/#about">About</Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -161,7 +168,7 @@ const Layout = ({ children, location }) => {
         </div>
         <div className="mainGridWrapper">
           <div>
-            <LeftSidebar isLightMode={isLightMode} location={location}/>
+            <LeftSidebar isLightMode={isLightMode} location={location} />
           </div>
           <div>
             {children.map((child, index) => (

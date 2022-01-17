@@ -585,6 +585,8 @@ const talkDetailsPage = [
         ),
       },
     ],
+    isRecorded: true,
+    talkURL: 'https://player.vimeo.com/video/663273872?h=a98704f0b6',
   },
   {
     url: '/talks/intelligent-caching-with-graphql-gateway-using-cdc/',
@@ -630,6 +632,8 @@ const talkDetailsPage = [
         ),
       },
     ],
+    isRecorded: true,
+    talkURL: 'https://player.vimeo.com/video/663284951?h=6b23c69eb1',
   },
   {
     url: '/talks/connect-your-enterprise-systems-with-graphql-using-apache-kafka-and-hasura/',
@@ -684,6 +688,8 @@ const talkDetailsPage = [
         ),
       },
     ],
+    isRecorded: true,
+    talkURL: 'https://player.vimeo.com/video/663307378?h=f68bc8340e',
   },
   {
     url: '/talks/graphql-wrong-answers-only/',
@@ -743,6 +749,8 @@ const talkDetailsPage = [
         ),
       },
     ],
+    isRecorded: true,
+    talkURL: 'https://player.vimeo.com/video/662896964?h=afd10b0096',
   },
   {
     url: '/talks/reintroducing-schema-stitching-in-2021/',
@@ -836,6 +844,8 @@ const talkDetailsPage = [
         ),
       },
     ],
+    isRecorded: true,
+    talkURL: 'https://player.vimeo.com/video/662906899?h=1959fb0dd1',
   },
   {
     url: '/talks/scalable-and-resilient-graphql-subscriptions-with-distributed-sql-databases/',
@@ -882,6 +892,8 @@ const talkDetailsPage = [
         ),
       },
     ],
+    isRecorded: true,
+    talkURL: 'https://player.vimeo.com/video/663303290?h=9dacf211c0',
   },
   {
     url: '/talks/adding-bleeding-edge-tech-to-archaic-government-graphql-for-govtech/',
@@ -927,6 +939,8 @@ const talkDetailsPage = [
         ),
       },
     ],
+    isRecorded: true,
+    talkURL: 'https://player.vimeo.com/video/663289371?h=b8b47ad4ef',
   },
   {
     url: '/talks/a-tale-of-inherited-projects-and-why-we-kept-hasura/',
@@ -973,6 +987,8 @@ const talkDetailsPage = [
         ),
       },
     ],
+    isRecorded: true,
+    talkURL: 'https://player.vimeo.com/video/663265494?h=94b46d20b2',
   },
   {
     url: '/talks/graphql-and-microservices-the-different-approaches-and-challenges/',
@@ -1021,6 +1037,8 @@ const talkDetailsPage = [
         ),
       },
     ],
+    isRecorded: true,
+    talkURL: 'https://player.vimeo.com/video/663300974?h=bb0f01c14d',
   },
   {
     url: '/talks/adopting-graphql-in-a-legacy-nodejs-api/',
@@ -1065,6 +1083,8 @@ const talkDetailsPage = [
         ),
       },
     ],
+    isRecorded: true,
+    talkURL: 'https://player.vimeo.com/video/663306452?h=1458de57a4',
   },
   {
     url: '/talks/developer-productivity-with-graphql/',
@@ -1107,6 +1127,8 @@ const talkDetailsPage = [
         ),
       },
     ],
+    isRecorded: true,
+    talkURL: 'https://player.vimeo.com/video/662913456?h=9333023b13',
   },
   {
     url: '/talks/3factor-app-an-accessible-design-pattern-for-serverless/',
@@ -1146,6 +1168,8 @@ const talkDetailsPage = [
         speakersOrg: 'Hasura',
       },
     ],
+    isRecorded: true,
+    talkURL: 'https://player.vimeo.com/video/663263658?h=e2e5531ef4',
   },
 
   {

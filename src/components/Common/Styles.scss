@@ -2353,3 +2353,10 @@ ul {
   margin-bottom: 60px;
   margin-top: 10px;
 }
+
+@media (max-width: 800px) {
+  .talk-heading {
+    font-size: 46px;
+    margin-bottom: 40px;
+  }
+}
