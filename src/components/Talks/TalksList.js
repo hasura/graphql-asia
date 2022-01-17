@@ -1,36 +1,37 @@
-import React, {Fragment} from "react";
-import {Link} from 'gatsby';
+import React, { Fragment } from 'react';
+import { Link } from 'gatsby';
+
 import '../Common/Styles.scss';
-import { talkDetailsPage } from '../Homepage/AllState.js'
+import { talkDetailsPage } from '../Homepage/AllState.js';
 import IndivTalk from '../Homepage/IndivTalk';
+
 const lightBackArrow = require('../Common/images/back-arrow-light.svg');
+
 const darkBackArrow = require('../Common/images/back-arrow-dark.svg');
-const TalksList = props => {
+
+const TalksList = (props) => {
   const talkListState = talkDetailsPage.map((talksList, index) => {
     return (
       <Fragment key={index}>
-       {
-         !talksList.isWorkshop ? (
-           <IndivTalk talksList={talksList} />
-         ) : null
-       }
+        {!talksList.isWorkshop && (
+          <IndivTalk talksList={talksList} isLightMode={props.isLightMode} />
+        )}
       </Fragment>
+    );
+  });
 
-    )
-  })
   return (
-    <div id='workshops' className={'sectionWrapper removePaddTop' + ((props.wdClass) ? ' wd80' : '')}>
-      <div className='workshopWrapper'>
-        <div className='articleSubTitle'>Talks</div>
-        <ul>
-          {talkListState}
-        </ul>
-        <div className='backBtnWrapper'>
-          <div className={((!props.isLightMode) ? 'lightLine' : 'darkLine')}></div>
-          <Link to='/'>
-            <button className='commonBtn darkBtn'>
-              <img className='submitIcon mart-4' src={lightBackArrow} alt='Arrow' />
-              <img className='submitIconHover mart-4' src={darkBackArrow} alt='Arrow' />
+    <div id="workshops" className={'sectionWrapper removePaddTop' + (props.wdClass ? ' wd80' : '')}>
+      <div className="workshopWrapper">
+        <h1 className="talk-heading">Video Recordings</h1>
+        <div className="articleSubTitle">Talks</div>
+        <ul>{talkListState}</ul>
+        <div className="backBtnWrapper">
+          <div className={!props.isLightMode ? 'lightLine' : 'darkLine'}></div>
+          <Link to="/">
+            <button className="commonBtn darkBtn">
+              <img className="submitIcon mart-4" src={lightBackArrow} alt="Arrow" />
+              <img className="submitIconHover mart-4" src={darkBackArrow} alt="Arrow" />
               Back to Homepage
             </button>
           </Link>

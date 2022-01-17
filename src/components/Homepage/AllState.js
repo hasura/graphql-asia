@@ -26,8 +26,6 @@ const jesseMartin = require('../Common/images/jesse-martin.png');
 const nikhilChandrappa = require('../Common/images/nikhil-chandrappa.png');
 const sandipanBiswas = require('../Common/images/sandipan-biswas.png');
 
-
-
 const speakersDetails = [
   {
     talkPageUrl: '/talks/the-state-of-graphql/',
@@ -140,7 +138,8 @@ const speakersDetails = [
     ),
   },
   {
-    talkPageUrl: '/talks/connect-your-enterprise-systems-with-graphql-using-apache-kafka-and-hasura/',
+    talkPageUrl:
+      '/talks/connect-your-enterprise-systems-with-graphql-using-apache-kafka-and-hasura/',
     speakersName: 'Wojciech Trocki',
     speakersImg: wojciechTrocki,
     speakersDesignation: (
@@ -188,7 +187,8 @@ const speakersDetails = [
     ),
   },
   {
-    talkPageUrl: '/talks/scalable-and-resilient-graphql-subscriptions-with-distributed-sql-databases/',
+    talkPageUrl:
+      '/talks/scalable-and-resilient-graphql-subscriptions-with-distributed-sql-databases/',
     speakersName: 'Nikhil Chandrappa',
     speakersImg: nikhilChandrappa,
     speakersDesignation: (
@@ -308,6 +308,7 @@ const speakersDetails = [
     ),
   },
 ];
+
 const talkDetailsPage = [
   {
     url: '/talks/the-state-of-graphql/',
@@ -318,7 +319,7 @@ const talkDetailsPage = [
       metaImg: 'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/the-state-of-graphql.png',
     },
     title: 'The State of GraphQL ',
-    speakersTitle: 'About the speakers',
+    speakersTitle: 'Presented by',
     backLink: '/talks/',
     language: 'English',
     time: '08:00 am -	08:30 am',
@@ -363,6 +364,8 @@ const talkDetailsPage = [
         ),
       },
     ],
+    isRecorded: true,
+    talkURL: 'https://player.vimeo.com/video/663308000?h=1ca9e5d18a',
   },
   {
     url: '/talks/evolution-of-graphql-at-tokopedia-with-increase-in-scale/',
@@ -376,7 +379,7 @@ const talkDetailsPage = [
         'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/evolution-of-graphql-at-tokopedia-with-increase-in-scale.png',
     },
     title: 'Evolution of GraphQL@Tokopedia with increase in Scale',
-    speakersTitle: 'About the speaker',
+    speakersTitle: 'Presented by',
     backLink: '/talks/',
     language: 'English',
     time: '10:30 am -	10:55 am',
@@ -408,6 +411,8 @@ const talkDetailsPage = [
         ),
       },
     ],
+    isRecorded: true,
+    talkURL: 'https://player.vimeo.com/video/663287024?h=75dad0242b',
   },
   {
     url: '/talks/building-high-performing-applications-using-graphql-for-heterogeneous-system/',
@@ -421,7 +426,7 @@ const talkDetailsPage = [
         'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/building-high-performing-applications-using-graphql-for-heterogeneous-system.png',
     },
     title: 'Building high performing applications using GraphQL for heterogeneous system',
-    speakersTitle: 'About the speakers',
+    speakersTitle: 'Presented by',
     backLink: '/talks/',
     language: 'English',
     time: '11:50 am -	12:15 pm',
@@ -468,6 +473,8 @@ const talkDetailsPage = [
         ),
       },
     ],
+    isRecorded: true,
+    talkURL: 'https://player.vimeo.com/video/663275435?h=8b0eefd2a2',
   },
   {
     url: '/talks/graphql-error-handling-done-right/',
@@ -480,7 +487,7 @@ const talkDetailsPage = [
         'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-error-handling-done-right.png',
     },
     title: 'GraphQL Error Handling Done Right',
-    speakersTitle: 'About the speaker',
+    speakersTitle: 'Presented by',
     backLink: '/talks/',
     language: 'English',
     time: '08:30 am -	08:55 am',
@@ -527,6 +534,8 @@ const talkDetailsPage = [
         ),
       },
     ],
+    isRecorded: true,
+    talkURL: 'https://player.vimeo.com/video/663295574?h=6804f98cf5',
   },
   {
     url: '/talks/monorepo-development-using-hasura-role-and-graphql-code-generator/',
@@ -540,7 +549,7 @@ const talkDetailsPage = [
         'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/monorepo-development-using-hasura-role-and-graphql-code-generator.png',
     },
     title: 'Monorepo development using Hasura role and GraphQL Code Generator',
-    speakersTitle: 'About the speakers',
+    speakersTitle: 'Presented by',
     backLink: '/talks/',
     language: 'Japanese',
     time: '12:10 pm -	12:35 pm',
@@ -576,6 +585,8 @@ const talkDetailsPage = [
         ),
       },
     ],
+    isRecorded: true,
+    talkURL: 'https://player.vimeo.com/video/663273872?h=a98704f0b6',
   },
   {
     url: '/talks/intelligent-caching-with-graphql-gateway-using-cdc/',
@@ -589,7 +600,7 @@ const talkDetailsPage = [
         'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/intelligent-caching-with-graphql-gateway-using-cdc.png',
     },
     title: 'Intelligent Caching with GraphQL Gateway using CDC',
-    speakersTitle: 'About the speakers',
+    speakersTitle: 'Presented by',
     backLink: '/talks/',
     language: 'English',
     time: '11:00 am -	11:25 am',
@@ -602,8 +613,7 @@ const talkDetailsPage = [
     ],
     takeaways: [
       {
-        desc:
-          'Reducing downstream services load with intelligent gateway caching',
+        desc: 'Reducing downstream services load with intelligent gateway caching',
       },
     ],
     speakersList: [
@@ -622,6 +632,8 @@ const talkDetailsPage = [
         ),
       },
     ],
+    isRecorded: true,
+    talkURL: 'https://player.vimeo.com/video/663284951?h=6b23c69eb1',
   },
   {
     url: '/talks/connect-your-enterprise-systems-with-graphql-using-apache-kafka-and-hasura/',
@@ -635,7 +647,7 @@ const talkDetailsPage = [
         'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/connect-your-enterprise-systems-with-graphql-using-apache-kafka-and-hasura.png',
     },
     title: 'Connect your enterprise systems with GraphQL using Apache Kafka and Hasura',
-    speakersTitle: 'About the speakers',
+    speakersTitle: 'Presented by',
     backLink: '/talks/',
     language: 'English',
     time: '12:40 pm -	13:05 pm',
@@ -666,7 +678,7 @@ const talkDetailsPage = [
         speakersName: 'Wojciech Trocki',
         speakersImg: wojciechTrocki,
         speakersBio:
-          'I write GraphQL backends for living. In free time I\'m creating new ideas for GraphQL frontend libraries and tools. I have been maintaining numerous GraphQL libraries and creating starter templates for GraphQL and enterprise developers',
+          "I write GraphQL backends for living. In free time I'm creating new ideas for GraphQL frontend libraries and tools. I have been maintaining numerous GraphQL libraries and creating starter templates for GraphQL and enterprise developers",
         speakersDesignation: (
           <span>
             Principal Software Engineer, AeroGear,
@@ -676,20 +688,21 @@ const talkDetailsPage = [
         ),
       },
     ],
+    isRecorded: true,
+    talkURL: 'https://player.vimeo.com/video/663307378?h=f68bc8340e',
   },
   {
     url: '/talks/graphql-wrong-answers-only/',
     metaTags: {
       title: 'GraphQL: Wrong Answers Only!',
-      canonicalUrl:
-        'https://graphql.asia/talks/graphql-wrong-answers-only/',
+      canonicalUrl: 'https://graphql.asia/talks/graphql-wrong-answers-only/',
       description:
         'When your infrastructure grow and your API gets out of control. Your manager tells you to implement GraphQL... this talk is going to show you the way.',
       metaImg:
         'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-wrong-answers-only.png',
     },
     title: 'GraphQL: Wrong Answers Only!',
-    speakersTitle: 'About the speakers',
+    speakersTitle: 'Presented by',
     backLink: '/talks/',
     language: 'English',
     time: '12:35 pm -	12:45 pm',
@@ -697,16 +710,15 @@ const talkDetailsPage = [
     description: [
       {
         desc:
-          'We\'ve all made silly mistakes using GraphQL in the past. To prove it, here are all the *doh* moments Draftbit has had in the last 2 years of using it.',
+          "We've all made silly mistakes using GraphQL in the past. To prove it, here are all the *doh* moments Draftbit has had in the last 2 years of using it.",
       },
       {
-        desc:
-          'We\'ll make fun of me for totally missing the ball on:',
+        desc: "We'll make fun of me for totally missing the ball on:",
         list: [
           'Dataloader & over fetching data',
           'Incorrectly using resolvers',
-          'Writing custom non-graphql specific queries'
-        ]
+          'Writing custom non-graphql specific queries',
+        ],
       },
       {
         desc:
@@ -716,9 +728,9 @@ const talkDetailsPage = [
     takeaways: [
       {
         list: [
-          'We\'re all human beings and make mistakes',
+          "We're all human beings and make mistakes",
           'These are actual life lessons: learn how to use GraphQL better',
-        ]
+        ],
       },
     ],
     speakersList: [
@@ -726,7 +738,8 @@ const talkDetailsPage = [
         speakersUrl: '/speakers/peter-piekarczyk/',
         speakersName: 'Peter Piekarczyk',
         speakersImg: peterPiekarczyk,
-        speakersBio: 'Peter Piekarczyk has always been a builder. He started his first agency when he was 12 selling website templates on eBay. He\'s the co-founder and CTO of YC backed Draftbit, a platform that helps you build mobile apps with any backend (including Hasura!) Peter is Expo\'s first user and has helped grow the React Native community over the years.',
+        speakersBio:
+          "Peter Piekarczyk has always been a builder. He started his first agency when he was 12 selling website templates on eBay. He's the co-founder and CTO of YC backed Draftbit, a platform that helps you build mobile apps with any backend (including Hasura!) Peter is Expo's first user and has helped grow the React Native community over the years.",
         speakersDesignation: (
           <span>
             Co-Founder & CTO,
@@ -736,20 +749,21 @@ const talkDetailsPage = [
         ),
       },
     ],
+    isRecorded: true,
+    talkURL: 'https://player.vimeo.com/video/662896964?h=afd10b0096',
   },
   {
     url: '/talks/reintroducing-schema-stitching-in-2021/',
     metaTags: {
       title: 'Reintroducing Schema Stitching in 2021',
-      canonicalUrl:
-        'https://graphql.asia/talks/reintroducing-schema-stitching-in-2021/',
+      canonicalUrl: 'https://graphql.asia/talks/reintroducing-schema-stitching-in-2021/',
       description:
         'The Schema Stitching library was completely overhauled last year after becoming a project of The Guild. Learn about the new features it offers for building a distributed service graph, and how it has reemerged as a directly-comparable alternative to Apollo Federation.',
       metaImg:
         'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/reintroducing-schema-stitching-in-2021.png',
     },
     title: 'Reintroducing Schema Stitching in 2021',
-    speakersTitle: 'About the speakers',
+    speakersTitle: 'Presented by',
     backLink: '/talks/',
     language: 'English',
     time: '09:10 am -	09:35 am',
@@ -782,20 +796,21 @@ const talkDetailsPage = [
         ),
       },
     ],
+    isRecorded: true,
+    talkURL: 'https://player.vimeo.com/video/666669668?h=a612460bff',
   },
   {
     url: '/talks/data-science-with-weaviate-and-graphql/',
     metaTags: {
       title: 'Data Science with Weaviate and GraphQL',
-      canonicalUrl:
-        'https://graphql.asia/talks/data-science-with-weaviate-and-graphql/',
+      canonicalUrl: 'https://graphql.asia/talks/data-science-with-weaviate-and-graphql/',
       description:
-        'Weaviate is using GraphQL to provide user-friendly data interaction. Weaviate is a vector search engine, and all search (e.g. semantic, contextual) search is done via its GraphQL API. We\'ve put a lot of thought in the design of the GraphQL API, which results in good user and developer experience. In this talk, we will take you along in the journey of how our GraphQL implementation was shaped according to user needs and software requirements, and show a demo of the current design for Weaviate.',
+        "Weaviate is using GraphQL to provide user-friendly data interaction. Weaviate is a vector search engine, and all search (e.g. semantic, contextual) search is done via its GraphQL API. We've put a lot of thought in the design of the GraphQL API, which results in good user and developer experience. In this talk, we will take you along in the journey of how our GraphQL implementation was shaped according to user needs and software requirements, and show a demo of the current design for Weaviate.",
       metaImg:
         'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/data-science-with-weaviate-and-graphql.png',
     },
     title: 'Data Science with Weaviate and GraphQL',
-    speakersTitle: 'About the speakers',
+    speakersTitle: 'Presented by',
     backLink: '/talks/',
     language: 'English',
     time: '11:45 am -	12:10 pm',
@@ -803,7 +818,7 @@ const talkDetailsPage = [
     description: [
       {
         desc:
-          'Weaviate is using GraphQL to provide user-friendly data interaction. Weaviate is a vector search engine, and all search (e.g. semantic, contextual) search is done via its GraphQL API. We\'ve put a lot of thought in the design of the GraphQL API, which results in good user and developer experience. In this talk, we will take you along in the journey of how our GraphQL implementation was shaped according to user needs and software requirements, and show a demo of the current design for Weaviate.',
+          "Weaviate is using GraphQL to provide user-friendly data interaction. Weaviate is a vector search engine, and all search (e.g. semantic, contextual) search is done via its GraphQL API. We've put a lot of thought in the design of the GraphQL API, which results in good user and developer experience. In this talk, we will take you along in the journey of how our GraphQL implementation was shaped according to user needs and software requirements, and show a demo of the current design for Weaviate.",
       },
     ],
     takeaways: [
@@ -812,7 +827,7 @@ const talkDetailsPage = [
           'How to design a GraphQL API from user needs in data science.',
           'A very practical use case, all open source',
           'How to use the vector search engine Weaviate with GraphQL',
-        ]
+        ],
       },
     ],
     speakersList: [
@@ -821,7 +836,7 @@ const talkDetailsPage = [
         speakersName: 'Laura Ham',
         speakersImg: lauraHam,
         speakersBio:
-          'I am Laura Ham, community solution engineer at the startup SeMI Technologies. We are developing the open source vector search engine Weaviate, where I am responsible for the design of the technology for its users. Big part my work has been designing the GraphQL API, which I would like to share in this event and hear feedback. Next to working at SeMI, I am active in organizing meetups in the data science and UX field, and I tech coding to kids. I just graduated from my Master\'s degree in Human Computer Interaction.',
+          "I am Laura Ham, community solution engineer at the startup SeMI Technologies. We are developing the open source vector search engine Weaviate, where I am responsible for the design of the technology for its users. Big part my work has been designing the GraphQL API, which I would like to share in this event and hear feedback. Next to working at SeMI, I am active in organizing meetups in the data science and UX field, and I tech coding to kids. I just graduated from my Master's degree in Human Computer Interaction.",
         speakersDesignation: (
           <span>
             Community Solution Engineer,
@@ -831,6 +846,8 @@ const talkDetailsPage = [
         ),
       },
     ],
+    isRecorded: true,
+    talkURL: 'https://player.vimeo.com/video/662906899?h=1959fb0dd1',
   },
   {
     url: '/talks/scalable-and-resilient-graphql-subscriptions-with-distributed-sql-databases/',
@@ -844,7 +861,7 @@ const talkDetailsPage = [
         'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/scalable-and-resilient-graphql-subscriptions-with-distributed-sql-databases.png',
     },
     title: 'Scalable and Resilient GraphQL Subscriptions with Distributed SQL Databases',
-    speakersTitle: 'About the speakers',
+    speakersTitle: 'Presented by',
     backLink: '/talks/',
     language: 'English',
     time: '11:40 am -	11:50 am',
@@ -857,7 +874,8 @@ const talkDetailsPage = [
     ],
     takeaways: [
       {
-        desc: 'Ability to linearly scale the GraphQL subscriptions transparently with out any downtime for client apps.',
+        desc:
+          'Ability to linearly scale the GraphQL subscriptions transparently with out any downtime for client apps.',
       },
     ],
     speakersList: [
@@ -876,6 +894,8 @@ const talkDetailsPage = [
         ),
       },
     ],
+    isRecorded: true,
+    talkURL: 'https://player.vimeo.com/video/663303290?h=9dacf211c0',
   },
   {
     url: '/talks/adding-bleeding-edge-tech-to-archaic-government-graphql-for-govtech/',
@@ -884,12 +904,12 @@ const talkDetailsPage = [
       canonicalUrl:
         'https://graphql.asia/talks/adding-bleeding-edge-tech-to-archaic-government-graphql-for-govtech/',
       description:
-        'At the Central Tech Team at Samagra - a governance consulting team working in four different states in India - we\'ve been trying to create a culture of using open-source, scalable and fast (bleeding-edge) tech for government use cases. What we\'ve done so far - enable tracking and monitoring of student and teacher attendance in all public schools of Haryana; building the technology architecture behind Mission Prerna, Uttar Pradesh\'s mission to transform basic education and enable tech systems that allowed Himachal Pradesh to be declared the country\'s best state in terms of learning continuity in 2020, according to the Annual State of Education Report. How do we do it - and how does GraphQL fit into the picture?',
+        "At the Central Tech Team at Samagra - a governance consulting team working in four different states in India - we've been trying to create a culture of using open-source, scalable and fast (bleeding-edge) tech for government use cases. What we've done so far - enable tracking and monitoring of student and teacher attendance in all public schools of Haryana; building the technology architecture behind Mission Prerna, Uttar Pradesh's mission to transform basic education and enable tech systems that allowed Himachal Pradesh to be declared the country's best state in terms of learning continuity in 2020, according to the Annual State of Education Report. How do we do it - and how does GraphQL fit into the picture?",
       metaImg:
         'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/adding-bleeding-edge-tech-to-archaic-government-graphql-for-govtech.png',
     },
     title: 'Adding bleeding-edge tech to archaic government: GraphQL for GovTech',
-    speakersTitle: 'About the speakers',
+    speakersTitle: 'Presented by',
     backLink: '/talks/',
     language: 'English',
     time: '12:30 pm -	12:40 pm',
@@ -897,12 +917,13 @@ const talkDetailsPage = [
     description: [
       {
         desc:
-          'At the Central Tech Team at Samagra - a governance consulting team working in four different states in India - we\'ve been trying to create a culture of using open-source, scalable and fast (bleeding-edge) tech for government use cases. What we\'ve done so far - enable tracking and monitoring of student and teacher attendance in all public schools of Haryana; building the technology architecture behind Mission Prerna, Uttar Pradesh\'s mission to transform basic education and enable tech systems that allowed Himachal Pradesh to be declared the country\'s best state in terms of learning continuity in 2020, according to the Annual State of Education Report. How do we do it - and how does GraphQL fit into the picture?',
+          "At the Central Tech Team at Samagra - a governance consulting team working in four different states in India - we've been trying to create a culture of using open-source, scalable and fast (bleeding-edge) tech for government use cases. What we've done so far - enable tracking and monitoring of student and teacher attendance in all public schools of Haryana; building the technology architecture behind Mission Prerna, Uttar Pradesh's mission to transform basic education and enable tech systems that allowed Himachal Pradesh to be declared the country's best state in terms of learning continuity in 2020, according to the Annual State of Education Report. How do we do it - and how does GraphQL fit into the picture?",
       },
     ],
     takeaways: [
       {
-        desc: 'Some of the questions that I will pose in the talk will be relevant to both the GraphQL community as well as the open source community at large: What are the responses when we show the Hasura Console to government employees used to the Microsoft SQL Server? What are the issues, and how can we save exchequer money through open source - building better SQL Server to Postgres migration, for example. How can GraphQL stitching enable better federation for important government projects, like the National Health Stack? Hopefully get the community excited about things happening in the GovTech space and get a lot more people interested in contributing to thing we\'re building at CTT Samagra.'
+        desc:
+          "Some of the questions that I will pose in the talk will be relevant to both the GraphQL community as well as the open source community at large: What are the responses when we show the Hasura Console to government employees used to the Microsoft SQL Server? What are the issues, and how can we save exchequer money through open source - building better SQL Server to Postgres migration, for example. How can GraphQL stitching enable better federation for important government projects, like the National Health Stack? Hopefully get the community excited about things happening in the GovTech space and get a lot more people interested in contributing to thing we're building at CTT Samagra.",
       },
     ],
     speakersList: [
@@ -910,8 +931,7 @@ const talkDetailsPage = [
         speakersUrl: '/speakers/bharat-kashyap/',
         speakersName: 'Bharat	Kashyap',
         speakersImg: bharatKashyap,
-        speakersBio:
-          'Adding tech to gov at Samagra',
+        speakersBio: 'Adding tech to gov at Samagra',
         speakersDesignation: (
           <span>
             Software Engineer,
@@ -921,6 +941,8 @@ const talkDetailsPage = [
         ),
       },
     ],
+    isRecorded: true,
+    talkURL: 'https://player.vimeo.com/video/663289371?h=b8b47ad4ef',
   },
   {
     url: '/talks/a-tale-of-inherited-projects-and-why-we-kept-hasura/',
@@ -929,12 +951,12 @@ const talkDetailsPage = [
       canonicalUrl:
         'https://graphql.asia/talks/a-tale-of-inherited-projects-and-why-we-kept-hasura/',
       description:
-        'In late 2019 my team inherited a proof of concept system that felt impossible to pick apart. We had a tight deadline and looking at an infrastructure map that inexplicably included Kafka it was hard not to question the inclusion of a new piece of tech like Hasura. Couldn\'t everything be a simple REST service at the end of the day? Eventually we decided to cut our losses and start from scratch. The only thing that survived our hard refresh was Hasura. This talk will go through our journey, touching on: why we decided to keep Hasura, our learnings along the way, and the gotchas that, well got us.',
+        "In late 2019 my team inherited a proof of concept system that felt impossible to pick apart. We had a tight deadline and looking at an infrastructure map that inexplicably included Kafka it was hard not to question the inclusion of a new piece of tech like Hasura. Couldn't everything be a simple REST service at the end of the day? Eventually we decided to cut our losses and start from scratch. The only thing that survived our hard refresh was Hasura. This talk will go through our journey, touching on: why we decided to keep Hasura, our learnings along the way, and the gotchas that, well got us.",
       metaImg:
         'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/a-tale-of-inherited-projects-and-why-we-kept-hasura.png',
     },
     title: 'A Tale of Inherited Projects and why we kept Hasura',
-    speakersTitle: 'About the speakers',
+    speakersTitle: 'Presented by',
     backLink: '/talks/',
     language: 'English',
     time: '09:35 am -	10:00 am',
@@ -942,12 +964,13 @@ const talkDetailsPage = [
     description: [
       {
         desc:
-          'In late 2019 my team inherited a proof of concept system that felt impossible to pick apart. We had a tight deadline and looking at an infrastructure map that inexplicably included Kafka it was hard not to question the inclusion of a new piece of tech like Hasura. Couldn\'t everything be a simple REST service at the end of the day? Eventually we decided to cut our losses and start from scratch. The only thing that survived our hard refresh was Hasura. This talk will go through our journey, touching on: why we decided to keep Hasura, our learnings along the way, and the gotchas that, well got us.',
+          "In late 2019 my team inherited a proof of concept system that felt impossible to pick apart. We had a tight deadline and looking at an infrastructure map that inexplicably included Kafka it was hard not to question the inclusion of a new piece of tech like Hasura. Couldn't everything be a simple REST service at the end of the day? Eventually we decided to cut our losses and start from scratch. The only thing that survived our hard refresh was Hasura. This talk will go through our journey, touching on: why we decided to keep Hasura, our learnings along the way, and the gotchas that, well got us.",
       },
     ],
     takeaways: [
       {
-        desc: 'Hasura is a pretty neat sharp tool. A team full of RESTful veterans can level up in a GraphQL world quickly. The interplay between postgres + hasura (GraphQL) + React + a simple backend service, makes for a resilient, easy to support service.'
+        desc:
+          'Hasura is a pretty neat sharp tool. A team full of RESTful veterans can level up in a GraphQL world quickly. The interplay between postgres + hasura (GraphQL) + React + a simple backend service, makes for a resilient, easy to support service.',
       },
     ],
     speakersList: [
@@ -956,7 +979,7 @@ const talkDetailsPage = [
         speakersName: 'Brooke Swanson',
         speakersImg: brookeSwanson,
         speakersBio:
-          'I\'m a Madison, Wisconsin based software developer. In a non pandemic world you can find me in a local coffee shop, writing code, reading fantasy, or looking at cat pictures. I\'ve been closing parens professionally for a little over 3 years. Although I\'m based in the midwest I spend much of my time traveling.',
+          "I'm a Madison, Wisconsin based software developer. In a non pandemic world you can find me in a local coffee shop, writing code, reading fantasy, or looking at cat pictures. I've been closing parens professionally for a little over 3 years. Although I'm based in the midwest I spend much of my time traveling.",
         speakersDesignation: (
           <span>
             Software Engineer,
@@ -966,6 +989,8 @@ const talkDetailsPage = [
         ),
       },
     ],
+    isRecorded: true,
+    talkURL: 'https://player.vimeo.com/video/663265494?h=94b46d20b2',
   },
   {
     url: '/talks/graphql-and-microservices-the-different-approaches-and-challenges/',
@@ -974,12 +999,12 @@ const talkDetailsPage = [
       canonicalUrl:
         'https://graphql.asia/talks/graphql-and-microservices-the-different-approaches-and-challenges/',
       description:
-        'Microservices architecture aren\'t new for flexible, horizontal scaling system. GraphQL also adapts Microservices with the popular name GraphQL Federation. So, what are benefits and challenges between traditional Microservices and GraphQL Federation? Is GraphQL Federation the only approach to implement Microservices in GraphQL? Let\'s discuss in this talk.',
+        "Microservices architecture aren't new for flexible, horizontal scaling system. GraphQL also adapts Microservices with the popular name GraphQL Federation. So, what are benefits and challenges between traditional Microservices and GraphQL Federation? Is GraphQL Federation the only approach to implement Microservices in GraphQL? Let's discuss in this talk.",
       metaImg:
         'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-and-microservices-the-different-approaches-and-challenges.png',
     },
     title: 'GraphQL & Microservices - the different approaches & challenges',
-    speakersTitle: 'About the speakers',
+    speakersTitle: 'Presented by',
     backLink: '/talks/',
     language: 'Vietnamese',
     time: '10:00 am -	10:15 am',
@@ -987,14 +1012,14 @@ const talkDetailsPage = [
     description: [
       {
         desc:
-          'Microservices architecture aren\'t new for flexible, horizontal scaling system. GraphQL also adapts Microservices with the popular name GraphQL Federation. So, what are benefits and challenges between traditional Microservices and GraphQL Federation? Is GraphQL Federation the only approach to implement Microservices in GraphQL? Let\'s discuss in this talk.',
+          "Microservices architecture aren't new for flexible, horizontal scaling system. GraphQL also adapts Microservices with the popular name GraphQL Federation. So, what are benefits and challenges between traditional Microservices and GraphQL Federation? Is GraphQL Federation the only approach to implement Microservices in GraphQL? Let's discuss in this talk.",
       },
     ],
     takeaways: [
       {
         list: [
           'Benefits and Challenges between RESTful and GraphQL microservices',
-          'GraphQL Microservices approaches'
+          'GraphQL Microservices approaches',
         ],
       },
     ],
@@ -1004,7 +1029,7 @@ const talkDetailsPage = [
         speakersName: 'Toan Nguyen',
         speakersImg: toanNguyen,
         speakersBio:
-          'I\'m software engineer who interests in functional programming. I\'m grateful to work with brilliant team at Hasura who eagerly contributes to open source and GraphQL community',
+          "I'm software engineer who interests in functional programming. I'm grateful to work with brilliant team at Hasura who eagerly contributes to open source and GraphQL community",
         speakersDesignation: (
           <span>
             Software Engineer,
@@ -1014,20 +1039,21 @@ const talkDetailsPage = [
         ),
       },
     ],
+    isRecorded: true,
+    talkURL: 'https://player.vimeo.com/video/663300974?h=bb0f01c14d',
   },
   {
     url: '/talks/adopting-graphql-in-a-legacy-nodejs-api/',
     metaTags: {
       title: 'Adopting GraphQL in a legacy NodeJS API',
-      canonicalUrl:
-        'https://graphql.asia/talks/adopting-graphql-in-a-legacy-nodejs-api/',
+      canonicalUrl: 'https://graphql.asia/talks/adopting-graphql-in-a-legacy-nodejs-api/',
       description:
         'How a team in Tesco chose to follow iterative approach to adopting GraphQL and removing flakiness from their existing NodeJS endpoints',
       metaImg:
         'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/adopting-graphql-in-a-legacy-nodejs-api.png',
     },
     title: 'Adopting GraphQL in a legacy NodeJS API',
-    speakersTitle: 'About the speakers',
+    speakersTitle: 'Presented by',
     backLink: '/talks/',
     language: 'English',
     time: '10:55 am -	11:20 am',
@@ -1040,7 +1066,7 @@ const talkDetailsPage = [
     ],
     takeaways: [
       {
-        desc: 'Learn how to approach GraphQL adoption in an iterative manner.'
+        desc: 'Learn how to approach GraphQL adoption in an iterative manner.',
       },
     ],
     speakersList: [
@@ -1049,7 +1075,7 @@ const talkDetailsPage = [
         speakersName: 'Pranay	Kalro',
         speakersImg: pranayKalro,
         speakersBio:
-          'I\'m a frontend-architect at Tesco having experience building websites with varying foot-falls going up to thousands of hits per second',
+          "I'm a frontend-architect at Tesco having experience building websites with varying foot-falls going up to thousands of hits per second",
         speakersDesignation: (
           <span>
             Software Dev Engineer,
@@ -1059,6 +1085,8 @@ const talkDetailsPage = [
         ),
       },
     ],
+    isRecorded: true,
+    talkURL: 'https://player.vimeo.com/video/663306452?h=1458de57a4',
   },
   {
     url: '/talks/developer-productivity-with-graphql/',
@@ -1066,10 +1094,11 @@ const talkDetailsPage = [
       title: 'Developer Productivity with GraphQL',
       canonicalUrl: 'https://graphql.asia/talks/developer-productivity-with-graphql/',
       description: 'Coming Soon',
-      metaImg: 'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/developer-productivity-with-graphql.png',
+      metaImg:
+        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/developer-productivity-with-graphql.png',
     },
     title: 'Developer Productivity with GraphQL',
-    speakersTitle: 'About the speaker',
+    speakersTitle: 'Presented by',
     backLink: '/talks/',
     language: 'English',
     time: '10:30 am -	11:00 am',
@@ -1100,24 +1129,30 @@ const talkDetailsPage = [
         ),
       },
     ],
+    isRecorded: true,
+    talkURL: 'https://player.vimeo.com/video/662913456?h=9333023b13',
   },
   {
     url: '/talks/3factor-app-an-accessible-design-pattern-for-serverless/',
     metaTags: {
       title: '3factor app: An Accessible Design Pattern for Serverless',
-      canonicalUrl: 'https://graphql.asia/talks/3factor-app-an-accessible-design-pattern-for-serverless/',
-      description: 'In this talk, I will showcase a pattern involving realtime graphQL, event-driven programming and serverless, called the 3factor app. The 3factor pattern is a super accessible pattern for every level of developer to start developing modern apps on serverless. We will see where traditional monolithic architectures fall short and how to build scalable and reliable apps using this pattern.  We will especially look at the advantages of using 3factor: from infinite scalability to uninterrupted disaster recovery. Then I will share how you, too, can get started using 3factor design patterns.',
-      metaImg: 'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/3factor-app-an-accessible-design-pattern-for-serverless.png',
+      canonicalUrl:
+        'https://graphql.asia/talks/3factor-app-an-accessible-design-pattern-for-serverless/',
+      description:
+        'In this talk, I will showcase a pattern involving realtime graphQL, event-driven programming and serverless, called the 3factor app. The 3factor pattern is a super accessible pattern for every level of developer to start developing modern apps on serverless. We will see where traditional monolithic architectures fall short and how to build scalable and reliable apps using this pattern.  We will especially look at the advantages of using 3factor: from infinite scalability to uninterrupted disaster recovery. Then I will share how you, too, can get started using 3factor design patterns.',
+      metaImg:
+        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/3factor-app-an-accessible-design-pattern-for-serverless.png',
     },
     title: '3factor app: An Accessible Design Pattern for Serverless',
-    speakersTitle: 'About the speaker',
+    speakersTitle: 'Presented by',
     backLink: '/talks/',
     language: 'English',
     time: '11:20 am -	11:30 am',
     talkType: 'Lightning Talks',
     description: [
       {
-        desc: 'In this talk, I will showcase a pattern involving realtime graphQL, event-driven programming and serverless, called the 3factor app. The 3factor pattern is a super accessible pattern for every level of developer to start developing modern apps on serverless. We will see where traditional monolithic architectures fall short and how to build scalable and reliable apps using this pattern.  We will especially look at the advantages of using 3factor: from infinite scalability to uninterrupted disaster recovery. Then I will share how you, too, can get started using 3factor design patterns.',
+        desc:
+          'In this talk, I will showcase a pattern involving realtime graphQL, event-driven programming and serverless, called the 3factor app. The 3factor pattern is a super accessible pattern for every level of developer to start developing modern apps on serverless. We will see where traditional monolithic architectures fall short and how to build scalable and reliable apps using this pattern.  We will especially look at the advantages of using 3factor: from infinite scalability to uninterrupted disaster recovery. Then I will share how you, too, can get started using 3factor design patterns.',
       },
     ],
     speakersList: [
@@ -1135,6 +1170,8 @@ const talkDetailsPage = [
         speakersOrg: 'Hasura',
       },
     ],
+    isRecorded: true,
+    talkURL: 'https://player.vimeo.com/video/663263658?h=e2e5531ef4',
   },
 
   {
@@ -1194,7 +1231,8 @@ const talkDetailsPage = [
       canonicalUrl: 'https://graphql.asia/workshops/introduction-to-hasura/',
       description:
         'Hasura makes developers superhuman and simplifies app development with its open-source real-time API engine to instantly create reusable, real-time GraphQL and REST APIs from your new and existing data',
-      metaImg: 'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/introduction-to-hasura.png',
+      metaImg:
+        'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/introduction-to-hasura.png',
     },
     title: 'Introduction to Hasura',
     backLink: '/workshops/',
@@ -1254,7 +1292,8 @@ const talkDetailsPage = [
     ],
     takeaways: [
       {
-        desc: 'Attendees will be able to learn about the core principles of the Jamstack, while understanding how GraphQL can be utilised via Gatsby.js - a popular open source framework based on React.',
+        desc:
+          'Attendees will be able to learn about the core principles of the Jamstack, while understanding how GraphQL can be utilised via Gatsby.js - a popular open source framework based on React.',
       },
     ],
     speakersList: [
@@ -1299,26 +1338,51 @@ const talkDetailsPage = [
       },
       {
         desc:
-          'It\'ll be a hands on workshop, so be prepared to get ready to implement your own type safe JavaScript GraphQL application.',
+          "It'll be a hands on workshop, so be prepared to get ready to implement your own type safe JavaScript GraphQL application.",
       },
     ],
     contents: [
       {
         title: 'Prerequisites:',
-        desc: <span>A VS Code <a href='https://code.visualstudio.com/docs/remote/containers' target='_blank' rel='noopener noreferrer'>Devcontainer</a> will be provided that contains all dependencies ready to go. If attendees are unable to use a VS Code Devcontainer, they will need to have</span>,
+        desc: (
+          <span>
+            A VS Code{' '}
+            <a
+              href="https://code.visualstudio.com/docs/remote/containers"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Devcontainer
+            </a>{' '}
+            will be provided that contains all dependencies ready to go. If attendees are unable to
+            use a VS Code Devcontainer, they will need to have
+          </span>
+        ),
         list: [
           'Node.js 12',
           'An editor',
-          <span>Latest version of the <a href='https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local#v2' target='_blank' rel='noopener noreferrer'>Azure Function Core Tools</a> to run the GraphQL server</span>
+          <span>
+            Latest version of the{' '}
+            <a
+              href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local#v2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Azure Function Core Tools
+            </a>{' '}
+            to run the GraphQL server
+          </span>,
         ],
       },
       {
-        desc: 'Some prior knowledge of TypeScript will be beneficial, but not required. An Azure account will be needed if they wish to deploy it at the end of the workshop.'
+        desc:
+          'Some prior knowledge of TypeScript will be beneficial, but not required. An Azure account will be needed if they wish to deploy it at the end of the workshop.',
       },
     ],
     takeaways: [
       {
-        desc: 'At the end of the workshop, attendees should have an understanding of the options for creating type-safe GraphQL applications, and how to have that type-safety applied to the client and server components.',
+        desc:
+          'At the end of the workshop, attendees should have an understanding of the options for creating type-safe GraphQL applications, and how to have that type-safety applied to the client and server components.',
       },
     ],
     speakersList: [
@@ -1345,7 +1409,7 @@ const talkDetailsPage = [
       title: 'GraphQL on SQL Server with Hasura',
       canonicalUrl: 'https://graphql.asia/workshops/graphql-on-sql-server-with-hasura/',
       description:
-        'Learn how to leverage GraphQL while keeping your stack in place with this hands-on workshop demonstrating the new multi-database support in Hasura. This workshop will show how to bring an existing MSSQL database into the Hasura engine and unlock all the benefits of GraphQL and Hasura\'s business-logic mapping layer. Existing knowledge of MSSQL will be helpful but not required as we\'ll focus most of our time on bringing the database into Hasura itself and mapping additional logic on top of this powerful stack.',
+        "Learn how to leverage GraphQL while keeping your stack in place with this hands-on workshop demonstrating the new multi-database support in Hasura. This workshop will show how to bring an existing MSSQL database into the Hasura engine and unlock all the benefits of GraphQL and Hasura's business-logic mapping layer. Existing knowledge of MSSQL will be helpful but not required as we'll focus most of our time on bringing the database into Hasura itself and mapping additional logic on top of this powerful stack.",
       metaImg:
         'https://graphql-engine-cdn.hasura.io/assets/graphql-asia/graphql-on-sql-server-with-hasura.png',
     },
@@ -1359,15 +1423,13 @@ const talkDetailsPage = [
     description: [
       {
         desc:
-          'Learn how to leverage GraphQL while keeping your stack in place with this hands-on workshop demonstrating the new multi-database support in Hasura. This workshop will show how to bring an existing MSSQL database into the Hasura engine and unlock all the benefits of GraphQL and Hasura\'s business-logic mapping layer. Existing knowledge of MSSQL will be helpful but not required as we\'ll focus most of our time on bringing the database into Hasura itself and mapping additional logic on top of this powerful stack.',
+          "Learn how to leverage GraphQL while keeping your stack in place with this hands-on workshop demonstrating the new multi-database support in Hasura. This workshop will show how to bring an existing MSSQL database into the Hasura engine and unlock all the benefits of GraphQL and Hasura's business-logic mapping layer. Existing knowledge of MSSQL will be helpful but not required as we'll focus most of our time on bringing the database into Hasura itself and mapping additional logic on top of this powerful stack.",
       },
     ],
     contents: [
       {
         title: 'Prerequisites:',
-        list: [
-          'Familiarity with MSSQL or Postgres',
-        ],
+        list: ['Familiarity with MSSQL or Postgres'],
       },
     ],
     takeaways: [
@@ -1384,7 +1446,7 @@ const talkDetailsPage = [
         speakersName: 'Jesse Martin',
         speakersImg: jesseMartin,
         speakersBio:
-          'Jesse Martin is an experienced teacher and digital strategist, helping companies learn about new technologies and apply them to real-world problems. He\'s currently working in technical product marketing at Hasura Inc.',
+          "Jesse Martin is an experienced teacher and digital strategist, helping companies learn about new technologies and apply them to real-world problems. He's currently working in technical product marketing at Hasura Inc.",
         speakersDesignation: (
           <span>
             Technical Product Marketer,
@@ -1501,7 +1563,7 @@ const scheduleDetailsTwo = [
   {
     type: 'break',
     title: '15 Minute Break',
-    time: '08:55 am - 09:10 am'
+    time: '08:55 am - 09:10 am',
   },
   {
     url: '/talks/reintroducing-schema-stitching-in-2021/',
@@ -1518,7 +1580,7 @@ const scheduleDetailsTwo = [
   {
     type: 'break',
     title: '15 Minute Break',
-    time: '10:15 am - 10:30 am'
+    time: '10:15 am - 10:30 am',
   },
   {
     url: '/talks/evolution-of-graphql-at-tokopedia-with-increase-in-scale/',
@@ -1535,7 +1597,7 @@ const scheduleDetailsTwo = [
   {
     type: 'break',
     title: '15 Minute Break',
-    time: '11:30 am - 11:45 am'
+    time: '11:30 am - 11:45 am',
   },
   {
     url: '/talks/data-science-with-weaviate-and-graphql/',
@@ -1566,7 +1628,7 @@ const workshopScheduleDetails = [
   {
     url: '/workshops/building-distributed-graph/',
     type: 'workshop',
-  }
+  },
 ];
 const workshopScheduleDetailsTwo = [
   {
@@ -1576,6 +1638,13 @@ const workshopScheduleDetailsTwo = [
   {
     url: '/workshops/graphql-on-sql-server-with-hasura/',
     type: 'workshop',
-  }
-]
-export { speakersDetails, talkDetailsPage, scheduleDetailsOne, scheduleDetailsTwo, workshopScheduleDetails, workshopScheduleDetailsTwo };
+  },
+];
+export {
+  speakersDetails,
+  talkDetailsPage,
+  scheduleDetailsOne,
+  scheduleDetailsTwo,
+  workshopScheduleDetails,
+  workshopScheduleDetailsTwo,
+};

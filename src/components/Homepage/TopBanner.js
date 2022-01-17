@@ -1,14 +1,21 @@
-import React, {useState, useEffect} from 'react';
-import { Link } from 'gatsby';
+import React, { useState, useEffect } from 'react';
+
 import '../Common/Styles.scss';
 import MarketoForm from '../Common/marketoform';
+
 const marketoHost = 'https://page.hasura.io';
-const submitBtnIcon = require('../Common/images/submit-btn-icon.svg');
-const submitBtnIconHover = require('../Common/images/submit-btn-icon-hover.svg');
-const btnPattern = require('../Common/images/btn-pattern.svg');
+
+// const submitBtnIcon = require('../Common/images/submit-btn-icon.svg');
+
+// const submitBtnIconHover = require('../Common/images/submit-btn-icon-hover.svg');
+
+// const btnPattern = require('../Common/images/btn-pattern.svg');
+
 const checkIcon = require('../Common/images/check-icon.svg');
+
 const TopBanner = (props) => {
   const [isAliId, setIsAliId] = useState(false);
+
   useEffect(() => {
     const searchParams = new URLSearchParams(props.location.search);
 
@@ -25,9 +32,14 @@ const TopBanner = (props) => {
         Join us on 24th & 25th Feb for the third edition of GraphQL Asia happening online and free!
         And this time we're accepting talks & workshops in multiple Asian languages.
       </div>
-      { isAliId ? (
-        <div className={'checkMailWrapper articleDesc ' + ((!props.isLightMode) ? 'darkModeBorder' : 'lightModeBorder')}>
-          <img src={checkIcon} alt='check icon' />
+      {isAliId ? (
+        <div
+          className={
+            'checkMailWrapper articleDesc ' +
+            (!props.isLightMode ? 'darkModeBorder' : 'lightModeBorder')
+          }
+        >
+          <img src={checkIcon} alt="check icon" />
           Check your Email inbox for the video link
         </div>
       ) : (
@@ -37,8 +49,7 @@ const TopBanner = (props) => {
           id="631-HMN-492"
           styleClass="marketoFormWrapper subscribeNewsletterForm"
         />
-      )
-      }
+      )}
       {/*
       <div className="buttonWrapper">
         <Link to="/register/">

@@ -1,20 +1,23 @@
-import React, {Fragment} from "react";
-import { Link } from 'gatsby';
+import React from 'react';
+
 import '../Common/Styles.scss';
 import { SEO } from '../seo';
 import Layout from '../Layout';
 import IndivTalksPage from './IndivTalksPage';
-import { talkDetailsPage } from '../Homepage/AllState.js'
+import { talkDetailsPage } from '../Homepage/AllState.js';
 
-const TalkDetailsPage = props => {
+const TalkDetailsPage = (props) => {
   const detailsPageUrl = props.pageContext.slug;
-  const currentDetailsPageFilter = talkDetailsPage.filter((b) => b.url === detailsPageUrl)
+
+  const currentDetailsPageFilter = talkDetailsPage.filter((b) => b.url === detailsPageUrl);
+
   const currentDetailsPage = currentDetailsPageFilter[0];
   // if (!currentDetailsPage) {
   //   if (typeof window !== undefined) {
   //     window.location.href = "/404";
   //   }
   // }
+
   return (
     <Layout location={props.location}>
       <SEO
@@ -23,8 +26,9 @@ const TalkDetailsPage = props => {
         metaImg={currentDetailsPage.metaTags.metaImg}
         canonicalLink={currentDetailsPage.metaTags.canonicalUrl}
       />
-      <IndivTalksPage currentDetailsPage={currentDetailsPage}/>
+      <IndivTalksPage currentDetailsPage={currentDetailsPage} />
     </Layout>
   );
 };
+
 export default TalkDetailsPage;
