@@ -796,6 +796,8 @@ const talkDetailsPage = [
         ),
       },
     ],
+    isRecorded: true,
+    talkURL: 'https://player.vimeo.com/video/666669668?h=a612460bff',
   },
   {
     url: '/talks/data-science-with-weaviate-and-graphql/',
