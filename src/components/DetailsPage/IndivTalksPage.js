@@ -76,20 +76,24 @@ const IndivTalksPage = (props) => {
           <div className="articleSubTitle">{props.currentDetailsPage.title}</div>
         ) : null}
         {/* Video Player */}
-        <div className="videoWrapper">
-          <iframe
-            loading="lazy"
-            title="Test Title"
-            src="https://player.vimeo.com/video/581800212"
-            frameBorder="0"
-            allowFullScreen
-          ></iframe>
-        </div>
+        {props.currentDetailsPage.isRecorded && (
+          <div className="videoWrapper">
+            <iframe
+              loading="lazy"
+              title="Test Title"
+              src={props.currentDetailsPage.talkURL}
+              frameBorder="0"
+              width="640"
+              height="480"
+              allowFullScreen
+            ></iframe>
+          </div>
+        )}
         {props.currentDetailsPage.description ? (
           <Fragment>
             {props.currentDetailsPage.description.map((desc, index) => {
               return (
-                <div key={index} className="articleDesc pb-40 mt-40">
+                <div key={index} className="articleDesc pb-40  pt-30">
                   {desc.desc ? desc.desc : null}
                   {desc.list ? (
                     <ul>

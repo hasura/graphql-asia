@@ -308,6 +308,7 @@ const speakersDetails = [
     ),
   },
 ];
+
 const talkDetailsPage = [
   {
     url: '/talks/the-state-of-graphql/',
@@ -363,6 +364,8 @@ const talkDetailsPage = [
         ),
       },
     ],
+    isRecorded: true,
+    talkURL: 'https://player.vimeo.com/video/663308000?h=1ca9e5d18a',
   },
   {
     url: '/talks/evolution-of-graphql-at-tokopedia-with-increase-in-scale/',
@@ -408,6 +411,8 @@ const talkDetailsPage = [
         ),
       },
     ],
+    isRecorded: true,
+    talkURL: 'https://player.vimeo.com/video/663287024?h=75dad0242b',
   },
   {
     url: '/talks/building-high-performing-applications-using-graphql-for-heterogeneous-system/',
@@ -468,6 +473,8 @@ const talkDetailsPage = [
         ),
       },
     ],
+    isRecorded: true,
+    talkURL: 'https://player.vimeo.com/video/663275435?h=8b0eefd2a2',
   },
   {
     url: '/talks/graphql-error-handling-done-right/',
@@ -527,6 +534,8 @@ const talkDetailsPage = [
         ),
       },
     ],
+    isRecorded: true,
+    talkURL: 'https://player.vimeo.com/video/663295574?h=6804f98cf5',
   },
   {
     url: '/talks/monorepo-development-using-hasura-role-and-graphql-code-generator/',
