@@ -16,7 +16,7 @@
     "gatsby-plugin-sharp": "^2.0.22",
     "gatsby-source-filesystem": "^2.0.22",
     "gatsby-transformer-sharp": "^2.1.14",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "react": "^16.8.6",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^16.8.6",
